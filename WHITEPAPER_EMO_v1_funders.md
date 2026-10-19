@@ -21,13 +21,13 @@ What we still do *not* have is an instrument that tells us, in real time, **how 
 
 > **EMO v1.0 – the Emergent Mind Observatory – is that missing instrument?**
 
-EMO treats humanity plus its infrastructures as an **emergent mind** with measurable organismality, integrative information processing, global‑workspace “ignition” events, and a self‑model that should steer planetary trajectories.  Using the Universal Interface Action (UIA) as a mathematical backbone, EMO computes species‑level cognitive vital signs and maps them into a single, dimensionless “cognitive health” score for the human–Earth interface. :contentReference[oaicite:7]{index=7}  
+EMO treats humanity plus its infrastructures as an **emergent mind** with measurable organismality, integrative information processing, global‑workspace “ignition” events, and a self‑model that should steer planetary trajectories.  Using the Universal Interface Action (UIA) as a mathematical backbone, EMO computes species‑level cognitive vital signs and maps them into a single, dimensionless “cognitive health” score for the human–Earth interface.  
 
 EMO v1.0 is **not** a metaphor and **not** a static report. It is a **live observatory**:
 
-- Continuously ingesting multi‑stream data (planetary boundaries, DestinE outputs, GDELT, Wikipedia, OpenAlex, early‑warning coverage, emissions, conflict, trade, health). :contentReference[oaicite:8]{index=8}  
+- Continuously ingesting multi‑stream data (planetary boundaries, DestinE outputs, GDELT, Wikipedia, OpenAlex, early‑warning coverage, emissions, conflict, trade, health).  
 - Continuously computing species‑mind metrics – Organismality Index (OI), Synergy / O‑information (SΦ), Global Workspace Ignition (GWI), Self‑Model Fidelity (SMF), Information‑time (τ_I), reciprocity fluxes and planetary‑health indicators.   
-- Continuously aggregating these into a UIA‑based cognitive action density, *a*₍UIA₎, and a coarse‑grained Ȧ₍UIA₎ that behaves like a species‑level vital sign. :contentReference[oaicite:10]{index=10}  
+- Continuously aggregating these into a UIA‑based cognitive action density, *a*₍UIA₎, and a coarse‑grained Ȧ₍UIA₎ that behaves like a species‑level vital sign.  
 
 Our thesis is simple:
 
@@ -50,9 +50,9 @@ These systems collectively answer the question: Where are the physical risks? Ho
 
 They do **not** answer:
 
-- Are we acting more like a coherent organism or a fragmented swarm? (OI) :contentReference[oaicite:14]{index=14}  
-- Are our science, media, policy, and financial systems processing information synergistically, or locked into redundant loops? (SΦ / Ω) :contentReference[oaicite:15]{index=15}  
-- When a clear warning appears, does the global workspace “light up” – and does that ignition translate into policy and infrastructure? (GWI, SMF) :contentReference[oaicite:16]{index=16}  
+- Are we acting more like a coherent organism or a fragmented swarm? (OI)  
+- Are our science, media, policy, and financial systems processing information synergistically, or locked into redundant loops? (SΦ / Ω)  
+- When a clear warning appears, does the global workspace “light up” – and does that ignition translate into policy and infrastructure? (GWI, SMF)  
 - Is our validated predictive capacity accelerating or stalling? (τ_I)   
 - Are we using energy and computing to actually reduce risk and heal planetary boundaries, or just to rearrange deckchairs? (M_E, semantic efficiency)   
 
@@ -69,7 +69,7 @@ EMO exists to close that gap.
 EMO v1.0 is designed as a **dual twin**:
 
 - The **physical twin** (DestinE and other digital twins) simulates the Earth system – atmosphere, ocean, cryosphere, land, and selected human activities.   
-- The **cognitive twin** (EMO) measures how the species‑level mind responds to those simulations and to real‑world signals – attention, decisions, self‑models, and learning over time. :contentReference[oaicite:20]{index=20}  
+- The **cognitive twin** (EMO) measures how the species‑level mind responds to those simulations and to real‑world signals – attention, decisions, self‑models, and learning over time.  
 
 Together, they answer both sides of the key question:
 
@@ -79,7 +79,7 @@ In UIA language, EMO treats the human–Earth boundary as an interface Σ and ev
 
 > _a_₍UIA₎ = α 𝓡[g_I] + β ℓ²ℬ + γ τ_C dC/dt + δ (1/S₀)dS/dt + ε (1/I₀)dI/dt + η (M_E/M₀)
 
-combining informational curvature (𝓡), focusing (ℬ), coherence (C), entropy production (S), information gain (I), and semantic efficiency (M_E) into a **single dimensionless cognitive‑health indicator**. :contentReference[oaicite:21]{index=21}  
+combining informational curvature (𝓡), focusing (ℬ), coherence (C), entropy production (S), information gain (I), and semantic efficiency (M_E) into a **single dimensionless cognitive‑health indicator**.  
 
 EMO is the instrument that estimates these terms for the human–Earth interface and exposes them as actionable metrics.   
 
@@ -88,16 +88,16 @@ EMO is the instrument that estimates these terms for the human–Earth interface
 EMO v1.0 continuously computes and updates:
 
 - **OI – Organismality Index**  
-  Cooperation vs conflict at the species scale, built from treaties, compliance, sanctions, alliance stability, and conflict diffusion. Output: global, regional, and sectoral OI. :contentReference[oaicite:23]{index=23}  
+  Cooperation vs conflict at the species scale, built from treaties, compliance, sanctions, alliance stability, and conflict diffusion. Output: global, regional, and sectoral OI.  
 
 - **SΦ / Ω – Synergy / O‑information**  
-  Measures whether attention, science, conflict, and policy streams form synergy‑dominant or redundancy‑dominated manifolds. Output: synergy maps per domain/topic. :contentReference[oaicite:24]{index=24}  
+  Measures whether attention, science, conflict, and policy streams form synergy‑dominant or redundancy‑dominated manifolds. Output: synergy maps per domain/topic.  
 
 - **GWI – Global Workspace Ignition**  
-  Detects when the global workspace “lights up” around a topic: spikes across news, Wikipedia, search proxies, and social signals. Output: ignition timelines and maps. :contentReference[oaicite:25]{index=25}  
+  Detects when the global workspace “lights up” around a topic: spikes across news, Wikipedia, search proxies, and social signals. Output: ignition timelines and maps.  
 
 - **SMF – Self‑Model Fidelity**  
-  Quantifies whether self‑models (1.5 °C pathways, pandemic scenarios, other risk models) actually steer budgets, infrastructure, and policy. Output: SMF per domain (climate, health, early warnings). :contentReference[oaicite:26]{index=26}  
+  Quantifies whether self‑models (1.5 °C pathways, pandemic scenarios, other risk models) actually steer budgets, infrastructure, and policy. Output: SMF per domain (climate, health, early warnings).  
 
 - **τ_I – Information‑time**  
   Tracks the rate at which validated predictive skill improves across domains (e.g., ECMWF/C3S climate skill, health nowcasting, economic forecasting). Output: τ_I clocks and acceleration ratios.   
@@ -108,7 +108,7 @@ EMO v1.0 continuously computes and updates:
 All of these are wired into a **UIA Engine** that produces:
 
 - Time series of _a_₍UIA₎ (instantaneous cognitive density).  
-- Coarse‑grained Ȧ₍UIA₎ and **UIA bands** (healthy, unstable, pathological regimes for the species mind). :contentReference[oaicite:29]{index=29}  
+- Coarse‑grained Ȧ₍UIA₎ and **UIA bands** (healthy, unstable, pathological regimes for the species mind).  
 
 ### 3.3 Live architecture (already implemented)
 
@@ -122,7 +122,7 @@ EMO‑Core v1.0 is a working backend:
   - Forecast‑skill CSV mirroring for τ_I (e.g. ECMWF headline scores).  
 
 - **Metrics engine** (`emo/*.py`)  
-  OI, synergy, GWI, SMF, τ_I implemented in Python, reading from the data lake and writing metric tables. :contentReference[oaicite:32]{index=32}  
+  OI, synergy, GWI, SMF, τ_I implemented in Python, reading from the data lake and writing metric tables.  
 
 - **UIA engine** (`emo/uia_engine/*`)  
   Geometry, focusing, coherence, entropy, information, and semantic‑efficiency modules that map the metric stack into _a_₍UIA₎ and UIA bands.   
@@ -140,7 +140,7 @@ EMO‑Core v1.0 is a working backend:
 
 EMO already runs as:
 
-- A **daily / weekly/monthly/yearly pipeline suite** orchestrated via Prefect or Airflow. :contentReference[oaicite:35]{index=35}  
+- A **daily / weekly/monthly/yearly pipeline suite** orchestrated via Prefect or Airflow.  
 - A **REST API** consumable by DestinE frontends, early‑warning dashboards, and third‑party visualisations.  
 
 EMO v1.0 is therefore not speculative: the core infrastructure exists and can be put into continuous operation with modest resources.
@@ -181,7 +181,7 @@ UNDRR/WMO’s “Early Warnings for All” initiative has rapidly expanded multi
 EMO adds a **cognition layer** to this effort:
 
 - **Early Warning Cognition Index (EWCI):**  
-  Measures whether early warnings actually ignite attention (GWI), trigger coordination (OI), and steer resources (SMF), and how quickly (cognitive latency). :contentReference[oaicite:38]{index=38}  
+  Measures whether early warnings actually ignite attention (GWI), trigger coordination (OI), and steer resources (SMF), and how quickly (cognitive latency).  
 
 - **Coverage vs cognition maps:**  
   Places with good physical coverage but poor cognitive response, and vice versa.
@@ -229,8 +229,8 @@ For AI labs and regulators, this provides a way to connect **AI energy accountin
 As of this white paper, EMO‑Core v1.0 delivers:
 
 - **Architecture:** A five‑layer design (Interface Registry, Data Ingestion & Harmonisation, Reciprocity & UIA Engine, Species‑Mind & Planetary Health, Interface & Governance).   
-- **Live pipelines:** Daily (GDELT+Wikipedia), weekly (OpenAlex+OWID), monthly (OI & SMF inputs), yearly (τ_I inputs). :contentReference[oaicite:45]{index=45}  
-- **Metric engines:** OI, SΦ/Ω, GWI, SMF, τ_I, reciprocity fluxes. :contentReference[oaicite:46]{index=46}  
+- **Live pipelines:** Daily (GDELT+Wikipedia), weekly (OpenAlex+OWID), monthly (OI & SMF inputs), yearly (τ_I inputs).  
+- **Metric engines:** OI, SΦ/Ω, GWI, SMF, τ_I, reciprocity fluxes.  
 - **UIA engine (prototype):** Informational curvature, focusing indices, coherence, and entropy/information flows mapped into _a_₍UIA₎ and bands for the human–Earth interface.   
 - **DestinE hooks:** Working STAC/HDA client and hazard‑summary module.   
 - **API + dashboard:** FastAPI backend and a small but funder‑ready Next.js front‑end with a UIA gauge and dual‑twin scenario table.
@@ -238,7 +238,7 @@ As of this white paper, EMO‑Core v1.0 delivers:
 This is enough to:
 
 - Run EMO daily on a modest cloud VM.  
-- Produce prototype “State of the Emergent Mind” charts. :contentReference[oaicite:49]{index=49}  
+- Produce prototype “State of the Emergent Mind” charts.  
 - Demonstrate dual‑twin overlays for selected DestinE scenarios.
 
 ### 5.2 Next 18–24 months (programme build‑out)

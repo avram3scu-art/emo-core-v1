@@ -9,8 +9,8 @@ _A live cognitive layer for Planet Earth_
 **The cognitive twin for digital Earth**
 
 - Planetary boundaries and digital Earth twins now show what the planet is doing.  
-- EMO measures how well the *species mind* is thinking and acting in response. :contentReference[oaicite:2]{index=2}  
-- A continuous observatory of global cognition, built on the UIA framework – a universal action for interfaces like “Humanity ↔ Earth”. :contentReference[oaicite:3]{index=3}  
+- EMO measures how well the *species mind* is thinking and acting in response.  
+- A continuous observatory of global cognition, built on the UIA framework – a universal action for interfaces like “Humanity ↔ Earth”.  
 
 **Tagline:** _“We make the global brain measurable.”_
 
@@ -20,16 +20,16 @@ _A live cognitive layer for Planet Earth_
 
 **We have built a planetary nervous system. We have not built a planetary mind diagnostic.**
 
-- **Digital Earth twins** (e.g. DestinE) simulate climate, extremes, and adaptation scenarios. :contentReference[oaicite:4]{index=4}  
-- **Planetary boundary dashboards** show we are outside a safe & just operating space in at least six domains. :contentReference[oaicite:5]{index=5}  
-- **Early Warnings for All** is scaling global multi‑hazard coverage, but cognitive performance (attention, trust, behaviour) is largely unmeasured. :contentReference[oaicite:6]{index=6}  
+- **Digital Earth twins** (e.g. DestinE) simulate climate, extremes, and adaptation scenarios.  
+- **Planetary boundary dashboards** show we are outside a safe & just operating space in at least six domains.  
+- **Early Warnings for All** is scaling global multi‑hazard coverage, but cognitive performance (attention, trust, behaviour) is largely unmeasured.  
 
 What no one measures today:
 
 - Does the global workspace “ignite” when it should? (GWI)  
 - Do our self‑models (1.5 °C pathways, risk models) actually steer budgets and infrastructure? (SMF)  
 - Is our validated predictive capacity accelerating, or stalling? (τ_I)  
-- Are we acting more like a coherent organism than a fragmented swarm? (OI) :contentReference[oaicite:7]{index=7}  
+- Are we acting more like a coherent organism than a fragmented swarm? (OI)  
 
 **Without a species‑mind diagnostic, we can’t tell if humanity is cognitively keeping up with the crises it creates.**
 
@@ -45,12 +45,12 @@ What no one measures today:
   - Global Workspace Ignition (GWI)  
   - Self‑Model Fidelity (SMF)  
   - Information time (τ_I)  
-  - Reciprocity fluxes between human systems and planetary boundaries :contentReference[oaicite:8]{index=8}  
-- Maps them into a **UIA density** _a_UIA_ – a universal action for the “Humanity ↔ Earth” interface. :contentReference[oaicite:9]{index=9}  
+  - Reciprocity fluxes between human systems and planetary boundaries  
+- Maps them into a **UIA density** _a_UIA_ – a universal action for the “Humanity ↔ Earth” interface.  
 
 **Dual twin:**
 
-- DestinE: physical twin — “What is the Earth system doing?” :contentReference[oaicite:10]{index=10}  
+- DestinE: physical twin — “What is the Earth system doing?”  
 - EMO: cognitive twin — “How is the species mind responding, and is it adequate?”  
 
 ---
@@ -59,13 +59,13 @@ What no one measures today:
 
 **1. Planetary risk is outpacing governance**
 
-- Planetary boundaries are being breached faster than our institutions adapt. :contentReference[oaicite:11]{index=11}  
+- Planetary boundaries are being breached faster than our institutions adapt.  
 
 **2. Infrastructure is finally in place**
 
-- Horizon Europe is doubling down on **Excellent Science** (Pillar I): ERC, Marie‑Curie, and world‑class research infrastructures. :contentReference[oaicite:12]{index=12}  
-- Digital Earth twins like DestinE are becoming operational in Europe. :contentReference[oaicite:13]{index=13}  
-- Early warning coverage is expanding through EW4All and WMO/UNDRR. :contentReference[oaicite:14]{index=14}  
+- Horizon Europe is doubling down on **Excellent Science** (Pillar I): ERC, Marie‑Curie, and world‑class research infrastructures.  
+- Digital Earth twins like DestinE are becoming operational in Europe.  
+- Early warning coverage is expanding through EW4All and WMO/UNDRR.  
 
 **3. But cognition is still the blind spot**
 
@@ -112,7 +112,7 @@ Outputs:
   - GDELT (global news)  
   - Wikipedia Pageviews (attention/memory)  
   - OpenAlex (science)  
-  - Forecast skill feeds (e.g. ECMWF / C3S headline scores) :contentReference[oaicite:17]{index=17}  
+  - Forecast skill feeds (e.g. ECMWF / C3S headline scores)  
 
 - **Metric Engines**  
   - `emo.organismality`, `emo.synergy`, `emo.gwi`, `emo.smf`, `emo.info_time`  
@@ -138,7 +138,7 @@ Outputs:
 
 **Physical twin + cognitive twin on one screen**
 
-- DestinE Climate Adaptation & Extremes twins generate km‑scale hazard fields and scenarios. :contentReference[oaicite:18]{index=18}  
+- DestinE Climate Adaptation & Extremes twins generate km‑scale hazard fields and scenarios.  
 - EMO summarises each scenario into a **hazard fingerprint** (e.g. extreme heat characteristics) and overlays:  
   - OI, SMF, and synergy (Ω) for relevant periods  
   - GWI ignition counts for climate topics  
@@ -170,7 +170,7 @@ On a DestinE viewer or EMO dashboard you can see:
 
 **3. Research infrastructure**
 
-- Horizon Europe Pillar I “Research Infrastructures”‑class asset: a **standard cognitive layer** other projects can plug into. :contentReference[oaicite:19]{index=19}  
+- Horizon Europe Pillar I “Research Infrastructures”‑class asset: a **standard cognitive layer** other projects can plug into.  
 
 Target users:
 
@@ -197,7 +197,7 @@ Target users:
 
 **Phase III — Institutionalisation (Years 3–5)**
 
-- Recognise EMO as a standard cognitive overlay for Horizon Europe digital twins and risk dashboards. :contentReference[oaicite:20]{index=20}  
+- Recognise EMO as a standard cognitive overlay for Horizon Europe digital twins and risk dashboards.  
 - Annual “Planetary UIA Vital Signs” report.  
 - Long‑term polycentric governance structure.
 
@@ -207,17 +207,17 @@ Target users:
 
 **1. First‑of‑kind infrastructure**
 
-- No other system measures **species‑level cognition** with an explicit UIA‑based action functional. :contentReference[oaicite:21]{index=21}  
+- No other system measures **species‑level cognition** with an explicit UIA‑based action functional.  
 
 **2. Massive leverage**
 
 - A comparatively small, open infrastructure that **amplifies**:  
-  - €175B‑scale Horizon Europe investments (2028–2034 proposal). :contentReference[oaicite:22]{index=22}  
+  - €175B‑scale Horizon Europe investments (2028–2034 proposal).  
   - DestinE and global early warning programmes.  
 
 **3. Deep scientific novelty**
 
-- UIA ties together information geometry, focusing theory, entropy flows, and semantic efficiency into a single planetary cognitive health metric. :contentReference[oaicite:23]{index=23}  
+- UIA ties together information geometry, focusing theory, entropy flows, and semantic efficiency into a single planetary cognitive health metric.  
 
 **4. Strong narrative**
 
@@ -252,7 +252,7 @@ Target users:
   - To co‑develop dual‑twin overlays with DestinE and EW4All.  
 
 - **Strategic partners**  
-  - Horizon Europe / Research Infrastructures and ERC‑linked programmes. :contentReference[oaicite:24]{index=24}  
+  - Horizon Europe / Research Infrastructures and ERC‑linked programmes.  
   - UN agencies (UNDRR, WMO, WHO, UNEP).  
   - Frontier AI labs and governance bodies.
 

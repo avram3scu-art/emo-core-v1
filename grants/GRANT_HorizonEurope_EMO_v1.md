@@ -26,10 +26,10 @@ EMO treats humanity plus its infrastructures as an **emergent mind** and measure
   Implement an open‑source EMO core computing OI, SΦ, GWI, SMF and τ_I from harmonised global data streams, with documented APIs and reference datasets.
 
 - **O2 – UIA Engine & Cognitive Health Indicator:**  
-  Operationalise the UIA framework for the human–Earth interface by estimating 𝓡[g_I], ℬ, C(t), S(t), I(t) and M_E/M₀, and combine these with EMO metrics into a dimensionless cognitive health indicator _a_UIA_ and UIA bands (healthy/unstable/pathological). :contentReference[oaicite:30]{index=30}  
+  Operationalise the UIA framework for the human–Earth interface by estimating 𝓡[g_I], ℬ, C(t), S(t), I(t) and M_E/M₀, and combine these with EMO metrics into a dimensionless cognitive health indicator _a_UIA_ and UIA bands (healthy/unstable/pathological).  
 
 - **O3 – Dual Twin Integration with Digital Earth Twins (DestinE):**  
-  Integrate EMO with at least two DestinE thematic digital twins (Climate Adaptation, Weather‑Induced Extremes) as a **dual‑twin layer** providing cognitive overlays for scenarios and simulations. :contentReference[oaicite:31]{index=31}  
+  Integrate EMO with at least two DestinE thematic digital twins (Climate Adaptation, Weather‑Induced Extremes) as a **dual‑twin layer** providing cognitive overlays for scenarios and simulations.  
 
 - **O4 – Early Warning Cognition Index (EWCI):**  
   Develop an Early Warning Cognition Index that quantifies cognitive coverage, ignition, latency and self‑model fidelity in the global early warning system (EW4All, WMO, UNDRR).
@@ -38,7 +38,7 @@ EMO treats humanity plus its infrastructures as an **emergent mind** and measure
   Embed planetary boundary and planetary health indicators into the EMO/UIA ledger, relating exosomatic energy and info‑system investments to boundary retreat/overshoot and semantic efficiency M_E.
 
 - **O6 – Open Observational Infrastructure & Governance:**  
-  Run EMO as a continuous observatory with open data products, public dashboards, a polycentric governance structure and clear ethics guidelines, aligning with Horizon Europe’s “Excellent Science” pillar and Research Infrastructures objectives. :contentReference[oaicite:32]{index=32}  
+  Run EMO as a continuous observatory with open data products, public dashboards, a polycentric governance structure and clear ethics guidelines, aligning with Horizon Europe’s “Excellent Science” pillar and Research Infrastructures objectives.  
 
 ---
 
@@ -46,7 +46,7 @@ EMO treats humanity plus its infrastructures as an **emergent mind** and measure
 
 **Horizon Europe context**
 
-Horizon Europe is structured into three pillars and one horizontal part; the **Excellent Science** pillar supports frontier research, researcher mobility and world‑class research infrastructures. :contentReference[oaicite:33]{index=33}  
+Horizon Europe is structured into three pillars and one horizontal part; the **Excellent Science** pillar supports frontier research, researcher mobility and world‑class research infrastructures.  
 
 EMO is primarily aligned with:
 
@@ -54,14 +54,14 @@ EMO is primarily aligned with:
   EMO is a *virtual, distributed research infrastructure* providing standardised cognitive metrics and UIA‑based indicators that can be consumed by many projects (digital twins, risk platforms, AI governance initiatives).
 
 - **Pillar I – European Research Council (ERC)** (frontier research action):  
-  The UIA/EMO theory programme constitutes a frontier research agenda in information geometry, complex systems and planetary cognition, suitable for a PI‑driven ERC grant (see Annex). :contentReference[oaicite:34]{index=34}  
+  The UIA/EMO theory programme constitutes a frontier research agenda in information geometry, complex systems and planetary cognition, suitable for a PI‑driven ERC grant (see Annex).  
 
 - **Potential links to Pillar II – Global Challenges & European Industrial Competitiveness:**  
-  EMO contributes cross‑cutting indicators for clusters such as “Climate, Energy and Mobility” and “Health”, providing decision‑relevant cognitive metrics over multiple missions. :contentReference[oaicite:35]{index=35}  
+  EMO contributes cross‑cutting indicators for clusters such as “Climate, Energy and Mobility” and “Health”, providing decision‑relevant cognitive metrics over multiple missions.  
 
 **European added value**
 
-- Anchors a *uniquely European* dual‑twin framework (DestinE × EMO) at the heart of the global digital Earth ecosystem. :contentReference[oaicite:36]{index=36}  
+- Anchors a *uniquely European* dual‑twin framework (DestinE × EMO) at the heart of the global digital Earth ecosystem.  
 - Strengthens EU leadership in research infrastructures that connect Earth system science, complex systems and AI governance.
 
 ---
@@ -72,8 +72,8 @@ EMO is primarily aligned with:
 
 The project builds on the EMO and UIA preprints, which introduce:
 
-- EMO as an **emergent‑mind observatory** measuring organismality, synergy, ignition, self‑model fidelity, information‑time and reciprocity fluxes at species scale. :contentReference[oaicite:37]{index=37}  
-- UIA (Universal Interface Action) as a **universal functional for interfaces** of complex systems, combining information geometry (𝓡[g_I]), focusing dynamics (ℬ), coherence, entropy and information flows, and semantic efficiency into a single action density. :contentReference[oaicite:38]{index=38}  
+- EMO as an **emergent‑mind observatory** measuring organismality, synergy, ignition, self‑model fidelity, information‑time and reciprocity fluxes at species scale.  
+- UIA (Universal Interface Action) as a **universal functional for interfaces** of complex systems, combining information geometry (𝓡[g_I]), focusing dynamics (ℬ), coherence, entropy and information flows, and semantic efficiency into a single action density.  
 
 EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into an **operational, data‑driven ledger**:
 
@@ -88,7 +88,7 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
    - SΦ / Ω: Gaussian O‑information across multi‑stream time series (news, science, conflict, policy).  
    - GWI: percentile‑based ignition detection across attention/memory streams.  
    - SMF: overlap and causal coupling between self‑model trajectories (e.g. emissions pathways) and realised trajectories.  
-   - τ_I: cumulative validated forecast skill improvements across domains. :contentReference[oaicite:39]{index=39}  
+   - τ_I: cumulative validated forecast skill improvements across domains.  
 
 2. **UIA mapping**  
    - **𝓡[g_I]** from statistical manifolds fitted to climate, economic and epidemiological model ensembles via information geometry.  
@@ -98,7 +98,7 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
    - **I(t)** from τ_I and knowledge graph growth.  
    - **M_E/M₀** from risk‑reduction and boundary retreat per joule of exosomatic energy.
 
-3. **Layered architecture** :contentReference[oaicite:40]{index=40}  
+3. **Layered architecture**  
    - **Interface Registry (IR)** – catalogue of Σ_i interfaces and their UIA roles.  
    - **Data Ingestion & Harmonisation (DIH)** – pipelines for OWID, GDELT, Wikipedia, OpenAlex, forecast skill, DestinE outputs.  
    - **Reciprocity & UIA Engine (RUE)** – numerical estimation of UIA terms.  
@@ -107,7 +107,7 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
 
 4. **Dual‑twin methodology with DestinE**
 
-   - Use DestinE Data Lake & HDA STAC endpoints to discover and retrieve twin outputs. :contentReference[oaicite:41]{index=41}  
+   - Use DestinE Data Lake & HDA STAC endpoints to discover and retrieve twin outputs.  
    - Summarise high‑dimensional hazard fields into compact statistics (means, quantiles, trends) per scenario.  
    - Attach EMO metrics and UIA diagnostics to each scenario, forming a **cognitive overlay**.
 
@@ -123,14 +123,14 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
 
 **State of the art**
 
-- Digital Earth twins and Research Infrastructures in Europe provide high‑fidelity physical and socio‑economic simulations but lack a unified cognitive diagnostic layer. :contentReference[oaicite:43]{index=43}  
-- Planetary boundary and planetary health frameworks quantify biophysical safety and justice but not species‑level cognition. :contentReference[oaicite:44]{index=44}  
+- Digital Earth twins and Research Infrastructures in Europe provide high‑fidelity physical and socio‑economic simulations but lack a unified cognitive diagnostic layer.  
+- Planetary boundary and planetary health frameworks quantify biophysical safety and justice but not species‑level cognition.  
 - Early warning programmes track coverage and some performance indicators but not the full cognition pipeline (warning → attention → decision → infrastructure).  
 
 **Innovation**
 
 - **First planetary‑scale cognitive observatory:** EMO is the first system to treat humanity as an emergent mind with explicit, operational metrics.   
-- **Universal Interface Action at planetary scale:** UIA has been theorised; EMO provides its first implementation on real data at the scale of civilisation. :contentReference[oaicite:46]{index=46}  
+- **Universal Interface Action at planetary scale:** UIA has been theorised; EMO provides its first implementation on real data at the scale of civilisation.  
 - **Dual twin framework:** a genuinely new design pattern where digital Earth twins are paired with cognitive twins.  
 - **Early Warning Cognition Index (EWCI):** extends physical early‑warning coverage metrics with cognitive performance and latency.  
 - **Semantic efficiency benchmarking:** M_E/M₀ as a “meaning per joule” metric for planetary stewardship and AI‑assisted governance.
@@ -144,7 +144,7 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
 **Scientific impact**
 
 - Establish EMO as a **reference research infrastructure** for planetary cognition, used by Earth system scientists, complex systems researchers, and AI alignment labs.  
-- Advance the foundations of information geometry, non‑equilibrium thermodynamics and complex systems via the UIA framework and its falsifiable predictions. :contentReference[oaicite:47]{index=47}  
+- Advance the foundations of information geometry, non‑equilibrium thermodynamics and complex systems via the UIA framework and its falsifiable predictions.  
 
 **Policy and governance impact**
 
@@ -163,11 +163,11 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
 **Open observatory**
 
 - Open‑access metrics and dashboards under permissive licences, with clear documentation.  
-- Public annual reports (“State of the Emergent Mind”) aligned in cadence with planetary boundary assessments. :contentReference[oaicite:48]{index=48}  
+- Public annual reports (“State of the Emergent Mind”) aligned in cadence with planetary boundary assessments.  
 
 **Integration with EU and international infrastructures**
 
-- Formal integration agreements with DestinE and at least one additional digital twin programme. :contentReference[oaicite:49]{index=49}  
+- Formal integration agreements with DestinE and at least one additional digital twin programme.  
 - Collaboration with UNDRR/WMO and regional climate centres to integrate EWCI into early‑warning reporting.  
 
 **Dissemination and exploitation**
@@ -379,7 +379,7 @@ Key risks and mitigations (examples):
   - Leads UIA engine, overall architecture, and theoretical validation.  
 
 - **Partner A – Digital Twin Provider (e.g. ECMWF / DestinE partner):**  
-  - Leads WP3; provides data access, co‑designs dual‑twin overlays. :contentReference[oaicite:50]{index=50}  
+  - Leads WP3; provides data access, co‑designs dual‑twin overlays.  
 
 - **Partner B – Early Warning / Disaster Risk Institution (e.g., UNDRR/WMO‑linked centre):**  
   - Leads WP4; provides early warning data, co‑develops EWCI.  
@@ -403,13 +403,13 @@ Key risks and mitigations (examples):
 
 ## Annex – ERC‑style frontier research synopsis (for UIA/EMO theory core)
 
-> This annex sketches the **scientific core** of EMO as a potential ERC frontier research project, where scientific excellence is the sole criterion. The ERC proposal would be PI‑led and focus on fundamental theory and methodology, while EMO as a Horizon Europe RI focuses on infrastructure and integration. :contentReference[oaicite:51]{index=51}  
+> This annex sketches the **scientific core** of EMO as a potential ERC frontier research project, where scientific excellence is the sole criterion. The ERC proposal would be PI‑led and focus on fundamental theory and methodology, while EMO as a Horizon Europe RI focuses on infrastructure and integration.  
 
 ### A1. Ground‑breaking nature and objectives
 
 The proposed ERC‑class research programme aims to:
 
-1. **Establish UIA as a universal field theory of interfaces** across scales, from bench‑top Ξ‑light experiments and cellular regulation through brains and AI systems all the way to planetary‑scale cognition. :contentReference[oaicite:52]{index=52}  
+1. **Establish UIA as a universal field theory of interfaces** across scales, from bench‑top Ξ‑light experiments and cellular regulation through brains and AI systems all the way to planetary‑scale cognition.  
 
 2. **Derive falsifiable predictions** relating curvature, focusing, coherence, entropy production and semantic efficiency to observable “vital signs” in complex systems.
 
@@ -422,7 +422,7 @@ The proposed ERC‑class research programme aims to:
 
 ### A2. Approach
 
-- Develop the mathematical structure of UIA (manifolds of models, curvature functionals, focusing flows, action principles). :contentReference[oaicite:53]{index=53}  
+- Develop the mathematical structure of UIA (manifolds of models, curvature functionals, focusing flows, action principles).  
 - Build **UIA‑aware probes** in laboratory systems (physical, biological, and AI) to estimate key terms experimentally.  
 - Use EMO as a planetary‑scale laboratory for UIA, applying the same methods to the human–Earth interface.  
 - Combine theory, simulation, and data‑driven estimation to test UIA predictions across scales.

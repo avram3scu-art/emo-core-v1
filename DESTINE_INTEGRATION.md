@@ -6,7 +6,7 @@ _EMO v1.0 | DestinE integration note_
 
 Destination Earth (DestinE) is building high-resolution **digital twins of the Earth system**:
 a Digital Twin Engine (DTE), thematic digital twins (Climate Adaptation DT, Extremes DT),
-a Data Lake, and a Core Service Platform for users. :contentReference[oaicite:28]{index=28}  
+a Data Lake, and a Core Service Platform for users.  
 
 EMO v1.0 is the **cognitive twin**: a live observatory of species-level cognition that measures
 whether humanity’s emergent mind is actually learning, coordinating, and acting in time.   
@@ -22,12 +22,12 @@ DestinE exposes its Digital Twin outputs via the **DestinE Data Lake** and the H
 Data Access (HDA) service, including a STAC v2 API:
 
 - HDA root: `https://hda.data.destination-earth.eu`
-- STAC API: `https://hda.data.destination-earth.eu/stac/v2/` :contentReference[oaicite:30]{index=30}  
+- STAC API: `https://hda.data.destination-earth.eu/stac/v2/`  
 
 The two main DT collections EMO targets first are:
 
 - `EO.ECMWF.DAT.DT_CLIMATE_ADAPTATION` – Climate Change Adaptation Digital Twin
-- `EO.ECMWF.DAT.DT_EXTREMES` – Weather-Induced and Geophysical Extremes Digital Twin :contentReference[oaicite:31]{index=31}  
+- `EO.ECMWF.DAT.DT_EXTREMES` – Weather-Induced and Geophysical Extremes Digital Twin  
 
 On the EMO side, this repository provides:
 
@@ -42,7 +42,7 @@ These tables feed into:
 
 - The **Species-Mind & Planetary Health layer (SCL)** (e.g. climate SMF, GWI) and
 - The **UIA Engine (RUE)**, which uses DT ensembles to estimate 𝓡[g_I], ℬ, dS/dt, dI/dt
-  for the human–Earth interface. :contentReference[oaicite:32]{index=32}  
+  for the human–Earth interface.  
 
 ## 3. Minimal example (notebook / script)
 

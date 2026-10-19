@@ -25,7 +25,7 @@ def compute_focusing_bracket(
     Compute a highly simplified focusing bracket ℬ and its normalised
     version ~ℬ from time series of effective expansion, shear and vorticity.
 
-    In cosmological FLRW models, ~ℬ = 3(1+q). :contentReference[oaicite:29]{index=29}
+    In cosmological FLRW models, ~ℬ = 3(1+q).
     Here we treat expansion as a proxy H, with:
 
         ℬ ~ 3 H^2
