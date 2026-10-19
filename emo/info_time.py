@@ -1,8 +1,10 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
+import numpy as np
 import pandas as pd
+from scipy.stats import theilslopes
 
 
 @dataclass
@@ -11,48 +13,56 @@ class InfoTimeResult:
     Information-time τ_I result.
 
     tau_i:
-        Scalar clock in "information-time units".
+        Validated gain in predictive skill per time step: the lower bound of
+        the 95% confidence interval of the skill trend, floored at 0.
+        0 = no demonstrated improvement.
     total_positive_increments:
-        Sum of positive skill improvements.
+        Kept for backward compatibility: net skill gain over the record
+        (trend slope x span, floored at 0).
     """
 
     tau_i: float
     total_positive_increments: float
     metadata: dict[str, str]
+    slope: float = 0.0
+    slope_ci_low: float = 0.0
+    slope_ci_high: float = 0.0
+    extra: dict[str, float] = field(default_factory=dict)
 
 
 def compute_information_time(skill_series: pd.Series) -> InfoTimeResult:
     """
-    Compute a simple information-time τ_I from a forecast skill series.
-
-    Parameters
-    ----------
-    skill_series:
-        Time series of forecast skill (e.g., anomaly correlation),
-        where higher is better.
-
-    Returns
-    -------
-    InfoTimeResult
+    Information-time τ_I from a forecast-skill series (higher = better).
 
     Notes
     -----
-    EMO v0.1 defines τ_I as the cumulative sum of positive skill
-    improvements over time; we follow the same idea, normalising
-    by the time span.
+    v1.0 summed only the positive step-to-step changes. That counts every
+    upward wobble of noise as learning, so a flat noisy series scored 26x
+    higher than a steadily improving one. Here τ_I is the trend in skill,
+    estimated robustly (Theil–Sen slope with 95% interval), and only the part
+    of the improvement the data can actually support is credited:
+
+        τ_I = max(0, lower 95% bound of the slope)   [skill units per step]
+
+    Steps are the series' own sampling steps; for unevenly spaced data the
+    slope is per index step, not per calendar day.
     """
     s = skill_series.dropna().astype(float)
-    if s.empty:
-        return InfoTimeResult(0.0, 0.0, {"definition": "empty"})
+    n = len(s)
+    if n < 3:
+        return InfoTimeResult(0.0, 0.0, {"definition": "too_few_points"})
 
-    diffs = s.diff().fillna(0.0)
-    pos_increments = diffs.clip(lower=0.0)
-    total_pos = float(pos_increments.sum())
-
-    tau_i = total_pos / max(len(s) - 1, 1)
+    x = np.arange(n, dtype=float)
+    slope, _intercept, lo, hi = theilslopes(s.to_numpy(), x, alpha=0.95)
+    tau_i = max(0.0, float(lo))
+    net_gain = max(0.0, float(slope) * (n - 1))
 
     return InfoTimeResult(
         tau_i=tau_i,
-        total_positive_increments=total_pos,
-        metadata={"definition": "cum_positive_skill_v1.0"},
+        total_positive_increments=net_gain,
+        metadata={"definition": "theil_sen_lower_bound_v1.1", "units": "skill per step"},
+        slope=float(slope),
+        slope_ci_low=float(lo),
+        slope_ci_high=float(hi),
+        extra={"n_points": float(n)},
     )
