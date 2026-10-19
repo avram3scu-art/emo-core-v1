@@ -1,0 +1,64 @@
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+.build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Pytest / coverage
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Local env & secrets
+.env
+.env.*
+*.sqlite3
+
+# Data & logs
+data/*.parquet
+data/*.feather
+data/*.pkl
+data/*.nc
+logs/
+*.log
+
+# Docker
+docker-data/
