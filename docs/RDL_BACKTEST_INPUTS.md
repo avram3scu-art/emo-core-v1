@@ -86,3 +86,41 @@ Decision point: launch of the UNEP Partnership for Clean Fuels and Vehicles at t
 
 ### Concern noted before the run, and a secondary measure
 Predicted gain = gap x portfolio quality. A problem that is already half-solved has a small gap, so its predicted gain is small even if the remedy is very likely to work. Leaded petrol in 2002 had a smaller gap than climate (strong validation, deployment under way). The primary criterion may therefore fail for a reason that says nothing about whether RDL can recognise a tractable problem. The primary criterion stays as pre-registered. A secondary measure is added now, before the run: **portfolio quality = predicted gain / gap**, compared with climate 1997. The secondary measure cannot turn a primary fail into a pass.
+
+## D. RDL v0.3 held-out pair (written before the single run; engine frozen at 0749b78)
+Note: in v0.3, tractability depends only on the structure inputs; the bottleneck profile sets the remaining gap. The held-out criterion is decided by the structure inputs.
+
+### D1. European sulphur emissions, decision date 1985-07 (Helsinki Protocol)
+| Input | Value | Basis |
+|---|---|---|
+| n_major_actors | 10 | Vestreng et al., Atmos. Chem. Phys. 7:3663 (2007), Table 1, 1980 SO2 by country. Regrouped into 1985 states (USSR, Czechoslovakia, Yugoslavia): 9 states for 80% of 55.3 Tg, with Germany as one; East and West Germany were separate, so 10. With today's borders: 12 (sensitivity). Source dated after the decision; EMEP estimates existed at the time. |
+| substitutes | 0.5 | Flue-gas desulphurisation was in commercial use by 1985, and fuel switching (gas, nuclear, low-sulphur oil) was available for part of the uses. No dated cost figure was verified (**unverified**). Sensitivity: 0.25. |
+| economic_share | 0.10 | Same rule and source as climate: the activity is burning sulphur-bearing fossil fuels (Enerdata, energy spending about 10% of GDP; **dated after**). Sensitivity: 0.02 (if counted as abatement cost rather than fuel use). |
+
+| Score | Value | Basis |
+|---|---|---|
+| validation | 0.75 | Damage from long-range transport attributed (Swedish case study to the 1972 Stockholm conference; EMEP monitoring from 1977). |
+| translation | 0.5 | LRTAP Convention (1979) without targets; "30% club" non-binding pledge (Ottawa, March 1984). |
+| budget | 0.25 | Monitoring (EMEP) only. |
+| deployment | 0.75 | European SO2 55.3 Tg (1980) to 48.4 Tg (1985), -12.5% (Vestreng et al. Table 1). |
+| persistence | 0.5 | As for all cases. |
+| contradiction | 0.75 | Public coal subsidies documented in several emitting states (**specific source not verified**). |
+
+### D2. Chrysotile asbestos, global, decision date 2004-09 (first Rotterdam listing proposal)
+| Input | Value | Basis |
+|---|---|---|
+| n_major_actors | 8 | USGS Circular 1298 (Virta, 2006): "eight countries accounted for 82 percent of world apparent consumption in 2003" (China, Russia, India, Kazakhstan, Ukraine, Thailand, Brazil, Iran). Data year before the decision; publication after. |
+| substitutes | 0.5 | Substitutes (fibre cement with PVA or cellulose, other materials) in use in countries with bans (EU ban effective 2005), at higher cost for asbestos-cement products (**cost not verified**). Sensitivity: 0.75. |
+| economic_share | 0.001 | World consumption 2.11 Mt in 2003 (USGS); value of dependent goods not found; 0.1% of world GDP set as an upper bound (**unverified**), as for leaded petrol. |
+
+| Score | Value | Basis |
+|---|---|---|
+| validation | 1.0 | IARC Group 1 carcinogen (all forms, including chrysotile). |
+| translation | 0.5 | Binding national bans covering a minority of consumption; ILO Convention 162 (1986) regulates but does not ban. |
+| budget | 0.25 | No dedicated fund. |
+| deployment | 0.25 | Trend 1998-2003 cannot be computed: USGS revised 1998-2000 estimates between its 2003 and 2006 reports (2000: 1.48 million short tons; 2003: 2.11 Mt). Set to "rising 0-10%" (**unverified**). Sensitivity: 0.5. |
+| persistence | 0.5 | As for all cases. |
+| contradiction | 0.75 | Government funding of the pro-chrysotile Asbestos/Chrysotile Institute by Canada (**not verified here**). |
+
+### Criteria (from RDL_V03_PROTOCOL.md)
+Pass: tractability sulphur 1985 > chrysotile 2004, and sulphur 1985 > climate 1997 (0.182). The pre-stated sensitivity settings are reported; the verdict uses the primary values.
