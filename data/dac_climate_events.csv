@@ -1,0 +1,8 @@
+stage,id,date,date_precision,description,source
+diagnostic,charney_1979,1979-07-27,year_verified,"Charney report (US NAS): 3 +/- 1.5 C warming per CO2 doubling",https://en.wikipedia.org/wiki/Charney_Report
+diagnostic,ipcc_far_1990,1990-08-01,year_unverified,"IPCC First Assessment Report (IPCC created ~1988)",
+policy,unfccc_1992,1992-06-01,year_verified,"UN Framework Convention on Climate Change, Rio (framework, no binding cuts)",https://en.wikipedia.org/wiki/Kyoto_Protocol
+policy,kyoto_adopted,1997-12-11,day_verified,"Kyoto Protocol adopted (binding cuts for listed developed countries)",https://en.wikipedia.org/wiki/Kyoto_Protocol
+policy,kyoto_in_force,2005-02-16,day_verified,"Kyoto Protocol enters into force; first commitment period 2008-2012",https://en.wikipedia.org/wiki/Kyoto_Protocol
+policy,paris_adopted,2015-12-12,day_verified,"Paris Agreement adopted (NDCs not legally binding)",https://en.wikipedia.org/wiki/Paris_Agreement
+policy,paris_in_force,2016-11-04,day_verified,"Paris Agreement enters into force",https://en.wikipedia.org/wiki/Paris_Agreement
