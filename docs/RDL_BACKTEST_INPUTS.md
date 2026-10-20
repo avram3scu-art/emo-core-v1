@@ -58,3 +58,31 @@ Rules first, then values. Each value is set by the rule, not by judgement of the
 - The rules were written by someone who knows the outcomes; the level boundaries could be chosen to favour the expected result. They were written once, here, before any run.
 - Four values rest on sources dated after the decision or unverified (marked above).
 - Ozone n uses production; climate n uses emissions.
+
+## C. Held-out case: leaded petrol, decision date 2002-09
+Decision point: launch of the UNEP Partnership for Clean Fuels and Vehicles at the Johannesburg summit. Outcome known to the authors: global phase-out completed in 2021. Inputs use the same rules as above and were written before the single run.
+
+### Structure inputs
+| Input | Value | Basis |
+|---|---|---|
+| n_major_actors | 117 | UNEP: "At the time of its formation in 2002, 117 countries world-wide were still using leaded petrol." No consumption data by country was found, so the 80% rule cannot be applied; 117 is the upper bound (**rule not applied: flagged**). Sensitivity: 30. |
+| substitutes | 0.75 | Lovei, World Bank Environment Dept. Paper 040 (Aug 1996): phasing out lead costs "US$ 0.01-0.02 per liter of gasoline in the majority of refining capacity". Comparable cost for most uses; older engines needing valve protection keep it below 1. |
+| economic_share | 0.001 | Lovei (1996): one significant international supplier of lead additives (Associated Octel). No market value found; 0.1% of world GDP is set as an upper bound (**unverified**). |
+
+### Bottleneck profile
+| Score | Value | Basis |
+|---|---|---|
+| validation | 1.0 | Lead toxicity was settled science well before 2002. |
+| translation | 0.5 | Dakar Declaration (June 2001): non-binding target for sub-Saharan Africa; no global instrument. |
+| budget | 0.25 | Technical assistance (World Bank Clean Air Initiative) but no dedicated fund before the partnership. |
+| deployment | 0.75 | Leaded use falling 10-50% over 1997-2001: large users had banned it (EU, China, India around 2000). No global volume series found (**unverified**). Sensitivity: 1.0. |
+| persistence | 0.5 | As for all cases. |
+| contradiction | 0.25 | No subsidies to lead additives found. General fuel subsidies in some user countries are not subsidies to lead (**judgement, flagged**). |
+
+### Criteria (same as the protocol)
+- Discrimination: predicted gain for leaded petrol 2002 > climate 1997 (0.126).
+- Resemblance: at least 2 of the top 3 in {binding regulation, finance transfer, trade measures, substitute support}.
+- Fail if voluntary pledges are in the top 3.
+
+### Concern noted before the run, and a secondary measure
+Predicted gain = gap x portfolio quality. A problem that is already half-solved has a small gap, so its predicted gain is small even if the remedy is very likely to work. Leaded petrol in 2002 had a smaller gap than climate (strong validation, deployment under way). The primary criterion may therefore fail for a reason that says nothing about whether RDL can recognise a tractable problem. The primary criterion stays as pre-registered. A secondary measure is added now, before the run: **portfolio quality = predicted gain / gap**, compared with climate 1997. The secondary measure cannot turn a primary fail into a pass.
