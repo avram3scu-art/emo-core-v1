@@ -14,3 +14,12 @@
 3. Ozone-depleting substances (one global collective action; saturating)
    - `owid_ozone_depleting_substance_consumption.csv`: Our World in Data, consumption by gas, ODP tonnes; "World" = sum of gases.
      Source as given by OWID (UNEP Ozone Secretariat data). Years 1986–2021 for World.
+
+## Composition control (added 20 Oct 2026)
+- `openalex_single_country_2020_by_country.json`, `openalex_single_country_2025_by_country.json`: single-country articles by country.
+  Of the +1.10 M growth in single-country articles 2020→2025, China contributed +456 k (41%) and Indonesia +366 k (33%; likely
+  OpenAlex coverage expansion of Indonesian journals — inference, not verified).
+- `openalex_articles_multicountry_by_year_excl_CN_ID.json`, `openalex_articles_anycountry_by_year_excl_CN_ID.json`: same series
+  excluding any article with an author in China or Indonesia (filters authorships.countries:!CN and !ID).
+- Result: with all countries the share falls 18.5% (2020) → 16.7% (2025); excluding CN & ID it is 17.9% → 18.2% (plateau since 2021).
+  The apparent post-2020 decline is a composition/coverage effect. Use the excluded series for trend statements.
