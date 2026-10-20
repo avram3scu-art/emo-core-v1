@@ -1,0 +1,14 @@
+ozone_1985    no_structure  dominant=['translation', 'budget', 'deployment'] gap=0.694 gain=0.224 top3=[('substitute_support', 0.325), ('finance_transfer', 0.325), ('binding_regulation', 0.32)]
+ozone_1985    structure     dominant=['translation', 'budget', 'deployment'] gap=0.694 gain=0.16 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.2062)]
+climate_1997  no_structure  dominant=['deployment', 'contradiction'] gap=0.688 gain=0.224 top3=[('substitute_support', 0.325), ('finance_transfer', 0.325), ('trade_measures', 0.325)]
+climate_1997  structure     dominant=['deployment', 'contradiction'] gap=0.688 gain=0.126 top3=[('substitute_support', 0.2031), ('finance_transfer', 0.2031), ('trade_measures', 0.1412)]
+climate_2015  no_structure  dominant=['deployment', 'contradiction'] gap=0.688 gain=0.224 top3=[('substitute_support', 0.325), ('finance_transfer', 0.325), ('trade_measures', 0.325)]
+climate_2015  structure     dominant=['deployment', 'contradiction'] gap=0.688 gain=0.147 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.1535)]
+
+[no_structure] discrimination ozone>climate97: False (0.224 vs 0.224)
+[no_structure] resemblance (>=2 of ozone top3 in binding set): True ['substitute_support', 'finance_transfer', 'binding_regulation']
+[no_structure] pledges in top3 for: none
+
+[structure] discrimination ozone>climate97: True (0.16 vs 0.126)
+[structure] resemblance (>=2 of ozone top3 in binding set): True ['substitute_support', 'finance_transfer', 'binding_regulation']
+[structure] pledges in top3 for: none

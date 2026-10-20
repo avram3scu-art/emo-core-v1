@@ -46,3 +46,10 @@ Passing would show that RDL's rules are consistent with two historical cases and
 - Labels: no domain-independent policy-evaluation source was verified for the delivery, capacity or structure rules. They are documented assumptions, identical for all domains, written by authors who know the ozone and climate outcomes. This weakens the test: a pass would show internal consistency with history, not independent validation.
 
 Frozen at commit: 2c44071 (engine, generic library, labels and structure rules). Structure input values and bottleneck profiles: docs/RDL_BACKTEST_INPUTS.md, committed before the first run.
+
+## Result of the first run (2026-10-20, inputs at commit 9b9422f, unchanged)
+- Without structure inputs: discrimination **fails** (ozone 0.224 = climate-1997 0.224), as predicted.
+- With structure inputs: discrimination **passes** (ozone 0.160 > climate-1997 0.126; climate-2015 0.147). Resemblance **passes** (ozone top 3: substitute support, finance transfer, binding regulation). Voluntary pledges are in no top 3.
+- Swap test: ozone profile with climate-1997 structure gives 0.136; climate-1997 profile with ozone structure gives 0.159. The ranking follows the structure inputs, not the case.
+- Sensitivity (done after the run, not a pre-registered criterion): across 162 combinations of the flagged values, ozone stays ahead in 144. All 18 reversals have ozone substitutes = 0.25 and climate substitutes = 0.5. The pass rests on the substitutes input, the least well-sourced one; actor count and economic share barely move the result because the top-ranked instruments do not use them.
+- Resemblance passes with or without structure inputs, so it tests the delivery labels, not the inputs. It is a weak criterion.
