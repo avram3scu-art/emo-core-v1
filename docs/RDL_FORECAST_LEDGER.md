@@ -7,3 +7,6 @@ The only test of RDL whose outcomes nobody knows when the forecast is made.
 - Score: T from the RDL v0.4 indicators (docs/RDL_V04_PROTOCOL.md), coded by the author from public sources; p_forecast = T. Brier score against a constant 0.5 baseline, using analysis/score_forecast_ledger.py.
 - Limits stated now: five forecasts cannot validate anything; three of five have the same T (0.25), so the ledger barely discriminates; p = T is an uncalibrated mapping; the coding is the author's judgement, with notes. The ledger becomes informative only as it grows over years.
 - First resolution: F001 (IMO), by 31 Dec 2026.
+
+## Public registration
+Deposited on Zenodo on 2026-10-20: DOI 10.5281/zenodo.23507467 (version 1; ledger SHA-256 677eaf3428985802cc16b811e23584f3b73ff7a90b2474157cec39edbb803775). New forecasts and recorded outcomes are added as new versions of that record; the repository ledger and the deposit must have the same fingerprint for each version.
