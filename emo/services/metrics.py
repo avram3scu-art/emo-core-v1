@@ -166,13 +166,18 @@ class MetricEngine:
     def smf_from_dataframe(
         self,
         df: pd.DataFrame,
-        *args: Any,
+        model_col: str = "model",
+        realised_col: str = "realised",
         **kwargs: Any,
     ) -> dict[str, Any]:
         """
-        Compute Self-Model Fidelity (SMF) metrics from a dataframe.
+        Compute Self-Model Fidelity (SMF) from a dataframe with one column of model
+        expectations and one column of realised outcomes (time-indexed).
         """
-        result = compute_smf(df, *args, **kwargs)
+        missing = [c for c in (model_col, realised_col) if c not in df.columns]
+        if missing:
+            raise ValueError(f"smf_from_dataframe: missing column(s) {missing}")
+        result = compute_smf(df[model_col], df[realised_col], **kwargs)
         return _result_to_dict(result)
 
     def uia_from_series(

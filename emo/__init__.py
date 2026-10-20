@@ -48,10 +48,10 @@ def _export_from(module_name: str, names: list[str]) -> None:
 
 # Core metric functions (expected to be present in a v1.0 checkout)
 _export_from("organismality", ["compute_organismality_index"])
-_export_from("gwi", ["compute_gwi_for_topic"])
+_export_from("gwi", ["compute_gwi"])
 _export_from("smf", ["compute_smf"])
-_export_from("info_time", ["compute_information_time_from_skill"])
+_export_from("info_time", ["compute_information_time"])
 _export_from("reciprocity", ["compute_reciprocity_flux"])
 
 # Synergy helpers are optional; if the module or names are missing we just skip.
-_export_from("synergy", ["build_synergy_dataset", "compute_synergy_o_information"])
+_export_from("synergy", ["compute_gaussian_synergy"])
