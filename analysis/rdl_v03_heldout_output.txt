@@ -1,0 +1,21 @@
+sulphur_1985     gap=0.656 tractability=0.217 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('trade_measures', 0.1625)]
+chrysotile_2004  gap=0.688 tractability=0.234 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.215)]
+PRIMARY: sulphur > chrysotile: False; sulphur > climate_1997 (0.182): True
+
+Sensitivity (pre-stated values):
+  sulphur n=10 sub=0.5 share=0.1 -> 0.217 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.5 share=0.1 -> 0.217 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.5 share=0.02 -> 0.228 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.5 share=0.02 -> 0.228 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.25 share=0.1 -> 0.19 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.25 share=0.1 -> 0.19 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.25 share=0.02 -> 0.192 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=10 sub=0.25 share=0.02 -> 0.192 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.5 share=0.1 -> 0.215 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.5 share=0.1 -> 0.215 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.5 share=0.02 -> 0.227 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.5 share=0.02 -> 0.227 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.25 share=0.1 -> 0.188 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.25 share=0.1 -> 0.188 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.25 share=0.02 -> 0.191 | chrysotile sub=0.5 -> 0.234 | s>a False | s>clim97 True
+  sulphur n=12 sub=0.25 share=0.02 -> 0.191 | chrysotile sub=0.75 -> 0.27 | s>a False | s>clim97 True

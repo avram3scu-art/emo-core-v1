@@ -34,3 +34,10 @@ Passing would show consistency with five historical cases, three of them used in
 - 2026-10-20, development change 1 (chosen by the author among three written options). Rule: a recommended remedy must be able to close a material part of the gap, so only instruments with medium or high delivery effect enter the top 3; low-effect instruments (pledges, information, research) are reported separately as fallback. Consequences, stated plainly: (a) the "no pledges in a top 3" check now passes **by construction** and no longer tests anything, in development or held-out; (b) tractability for climate 1997 falls from 0.195 to 0.182 and for climate 2015 from 0.223 to 0.214; ozone and leaded unchanged.
 - Development run 2 (analysis/rdl_v03_development_output_run2.txt): all four checks pass. Observation: substitute support and finance transfer are the top two in every case, so the recommendation barely varies between cases; RDL v0.3 discriminates through tractability, not through what it recommends.
 - v0.3 frozen at this commit for the held-out run. Remaining held-out test: sulphur 1985 > chrysotile 2004, and sulphur 1985 > climate 1997 (0.182).
+
+## Held-out result (2026-10-20, engine 0749b78, inputs 46c15ca, run once)
+- Sulphur 1985 tractability 0.217; chrysotile 2004 0.234; climate 1997 0.182.
+- Sulphur > climate 1997: pass. **Sulphur > chrysotile: FAIL**, in all 16 pre-stated sensitivity settings.
+- **Verdict: RDL v0.3 fails its held-out test.**
+- Reason, as anticipated in the pre-registration: chrysotile has few consuming countries, substitutes, and a tiny economic share, so RDL rates it easy. What blocked it is not in RDL's inputs: Rotterdam listing needs consensus, and a few producer and consumer states have blocked it at every conference since 2004. RDL has no input for veto power or decision rules.
+- Across v0.2 and v0.3: two held-out failures with two different causes (gap scaling; missing veto structure). RDL is not a validated recommender. What survives: the measured gap as a diagnostic, and the finding that problem structure, not pipeline stage, drives tractability.
