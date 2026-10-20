@@ -53,3 +53,11 @@ Frozen at commit: 2c44071 (engine, generic library, labels and structure rules).
 - Swap test: ozone profile with climate-1997 structure gives 0.136; climate-1997 profile with ozone structure gives 0.159. The ranking follows the structure inputs, not the case.
 - Sensitivity (done after the run, not a pre-registered criterion): across 162 combinations of the flagged values, ozone stays ahead in 144. All 18 reversals have ozone substitutes = 0.25 and climate substitutes = 0.5. The pass rests on the substitutes input, the least well-sourced one; actor count and economic share barely move the result because the top-ranked instruments do not use them.
 - Resemblance passes with or without structure inputs, so it tests the delivery labels, not the inputs. It is a weak criterion.
+
+## Held-out case result (2026-10-20, inputs at commit c5d8ad9, run once)
+- Discrimination: **FAIL.** Leaded petrol 2002 predicted gain 0.119 < climate 1997 0.126. Fails in all four pre-stated sensitivity settings (0.108-0.121).
+- Resemblance: pass (substitute support, finance transfer, price instrument). Pledges: not in top 3.
+- Secondary measure (added before the run, cannot rescue the primary): portfolio quality 0.251 vs climate 0.183, so RDL rates the remedies for lead as more likely to work.
+- Diagnosis: the gain scales with the remaining gap, and in 2002 lead had a smaller gap (0.475 vs 0.688). RDL's "predicted gain" measures how much is left to fix times remedy quality; it does not measure tractability. The ozone-vs-climate pass did not expose this because their gaps were almost equal.
+- Second finding: binding regulation (national bans, which is how lead was in fact removed) is not in the top 3. The only dominant bottleneck was budget, so binding regulation got half relevance.
+- Overall: RDL as frozen at 2c44071 passes the two development cases and **fails the held-out case.** Any change made now is a new model version and needs a new held-out case.

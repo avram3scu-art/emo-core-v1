@@ -1,0 +1,9 @@
+climate_1997 reference: gain=0.126 quality=0.183
+PRIMARY       dominant=['budget'] gap=0.475 gain=0.119 quality=0.251 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('price_instrument', 0.1842)]
+              discrimination=False resemblance=True pledges_in_top3=False
+sens n=30     dominant=['budget'] gap=0.475 gain=0.121 quality=0.255 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('price_instrument', 0.1951)]
+              discrimination=False resemblance=True pledges_in_top3=False
+sens dep=1.0  dominant=['budget'] gap=0.431 gain=0.108 quality=0.251 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('price_instrument', 0.1842)]
+              discrimination=False resemblance=True pledges_in_top3=False
+sens both     dominant=['budget'] gap=0.431 gain=0.11 quality=0.255 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('price_instrument', 0.1951)]
+              discrimination=False resemblance=True pledges_in_top3=False
