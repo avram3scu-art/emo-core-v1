@@ -131,6 +131,7 @@ class BacktestResultV03:
     predicted_gain: float                      # continuity only; not used in criteria
     top3: list[tuple[str, float]]
     repairs: dict[str, list[str]]              # instrument -> dominant stages it targets
+    fallback: list[tuple[str, float]] = field(default_factory=list)  # low-effect: cannot close the gap
     refused: bool = False
     note: str = ""
 
@@ -146,9 +147,13 @@ def run_backtest_v03(profile: BottleneckProfile, structure: StructureInputs) -> 
         fm, em = structure_multiplier(inst, structure)
         scored.append((inst, round(_CAPACITY[inst.required_capacity] * fm * _DELIVERY[inst.delivery_effect] * em, 4)))
     scored.sort(key=lambda t: t[1], reverse=True)
-    top = scored[:3]
+    # Development change 1 (logged): a recommended remedy must be able to close a material part of
+    # the gap, so only medium/high delivery-effect instruments enter the top 3.
+    eligible = [t for t in scored if t[0].delivery_effect != "low"]
+    top = eligible[:3]
     tract = round(sum(v for _, v in top) / 3, 3)
     return BacktestResultV03(
+        fallback=[(i.option_id, v) for i, v in scored if i.delivery_effect == "low"],
         remaining_gap=gap, tractability=tract, predicted_gain=round(gap * tract, 3),
         top3=[(i.option_id, v) for i, v in top],
         repairs={i.option_id: sorted(dominant.intersection(i.target_bottlenecks)) for i, _ in top},

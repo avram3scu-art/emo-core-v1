@@ -1,0 +1,8 @@
+ozone_1985    gap=0.694 tractability=0.231 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.2062)]
+climate_1997  gap=0.688 tractability=0.182 top3=[('substitute_support', 0.2031), ('finance_transfer', 0.2031), ('trade_measures', 0.1412)]
+climate_2015  gap=0.688 tractability=0.214 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.1535)]
+leaded_2002   gap=0.475 tractability=0.263 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('binding_regulation', 0.2204)]
+PASS  ozone tractability > climate_1997
+PASS  leaded tractability > climate_1997
+PASS  no pledges in any top 3
+PASS  binding regulation in leaded top 3
