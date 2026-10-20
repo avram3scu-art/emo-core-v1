@@ -42,6 +42,7 @@ These are added as explicit inputs, valued from sources dated before each decisi
 Passing would show that RDL's rules are consistent with two historical cases and one held-out case. It would not show that RDL predicts the effect of new policies.
 
 ## Change log
-- (none yet)
+- 2026-10-20, before any historical case was run. The engine first ranked instruments by ease and speed (capacity, time to effect, evidence). Synthetic controls exposed two flaws: voluntary pledges ranked first in every structure, and a hard problem got a higher predicted gain than an easy one. Fix: instruments are now rated by a separate **delivery effect** label (size of behaviour change: binding regulation and price instruments high; substitute support, finance transfer and trade measures medium; pledges, information and research low), and finance transfer's effect scales with substitute availability. Found with synthetic structures only; no ozone or climate input had been prepared.
+- Labels: no domain-independent policy-evaluation source was verified for the delivery, capacity or structure rules. They are documented assumptions, identical for all domains, written by authors who know the ozone and climate outcomes. This weakens the test: a pass would show internal consistency with history, not independent validation.
 
 Frozen at commit: (to be filled when the library and labels are committed)
