@@ -30,4 +30,4 @@ The authors know both outcomes (sulphur fell steeply; chrysotile is still produc
 Passing would show consistency with five historical cases, three of them used in development. It would not show that RDL predicts the effect of new policies.
 
 ## Change log
-(empty)
+- 2026-10-20, development run 1 (code: emo/remedy/backtest.py run_backtest_v03; output: analysis/rdl_v03_development_output.txt). Tractability: leaded 0.263, ozone 0.231, climate 2015 0.223, climate 1997 0.195. Checks: ozone > climate 1997 PASS; leaded > climate 1997 PASS; binding regulation in leaded top 3 PASS; **no pledges in any top 3 FAIL** (pledges third for climate 1997 and 2015, score 0.18 = feasibility 0.9 x effect 0.2; binding regulation 0.126 and 0.153). Predicted in writing before the code was written. The held-out run is blocked until this is resolved; the resolution will be logged here.

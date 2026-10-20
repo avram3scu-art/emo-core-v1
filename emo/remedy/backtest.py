@@ -117,3 +117,39 @@ def run_backtest(profile: BottleneckProfile, structure: StructureInputs | None) 
     top = scored[:3]
     gain = round(gap * sum(v for _, _, v in top) / len(top), 3)
     return BacktestResult(gap, [(k, v) for k, v, _ in top], gain, structure is not None)
+
+
+# ---------------------------------------------------------------- RDL v0.3
+# See docs/RDL_V03_PROTOCOL.md. Same library, labels and structure rules as v0.2.
+# Changes: (1) tractability and remaining gap reported separately;
+#          (2) ranking by feasibility x effect only; stage link kept for explanation.
+
+@dataclass
+class BacktestResultV03:
+    remaining_gap: float
+    tractability: float
+    predicted_gain: float                      # continuity only; not used in criteria
+    top3: list[tuple[str, float]]
+    repairs: dict[str, list[str]]              # instrument -> dominant stages it targets
+    refused: bool = False
+    note: str = ""
+
+
+def run_backtest_v03(profile: BottleneckProfile, structure: StructureInputs) -> BacktestResultV03:
+    if not has_measured_data(profile):
+        return BacktestResultV03(0.0, 0.0, 0.0, [], {}, refused=True,
+                                 note="All inputs zero: missing data, not measured failure.")
+    gap = measured_gap(profile)
+    dominant = set(profile.dominant_bottlenecks)
+    scored = []
+    for inst in GENERIC_LIBRARY:
+        fm, em = structure_multiplier(inst, structure)
+        scored.append((inst, round(_CAPACITY[inst.required_capacity] * fm * _DELIVERY[inst.delivery_effect] * em, 4)))
+    scored.sort(key=lambda t: t[1], reverse=True)
+    top = scored[:3]
+    tract = round(sum(v for _, v in top) / 3, 3)
+    return BacktestResultV03(
+        remaining_gap=gap, tractability=tract, predicted_gain=round(gap * tract, 3),
+        top3=[(i.option_id, v) for i, v in top],
+        repairs={i.option_id: sorted(dominant.intersection(i.target_bottlenecks)) for i, _ in top},
+    )

@@ -1,0 +1,12 @@
+ozone_1985    gap=0.694 tractability=0.231 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('binding_regulation', 0.2062)]
+              full ranking=[('substitute_support', 0.244), ('finance_transfer', 0.244), ('binding_regulation', 0.206), ('voluntary_pledges', 0.18), ('information_reporting', 0.18), ('price_instrument', 0.172), ('trade_measures', 0.156), ('research_monitoring', 0.13)]
+climate_1997  gap=0.688 tractability=0.195 top3=[('substitute_support', 0.2031), ('finance_transfer', 0.2031), ('voluntary_pledges', 0.18)]
+              full ranking=[('substitute_support', 0.203), ('finance_transfer', 0.203), ('voluntary_pledges', 0.18), ('information_reporting', 0.18), ('trade_measures', 0.141), ('research_monitoring', 0.13), ('binding_regulation', 0.126), ('price_instrument', 0.093)]
+climate_2015  gap=0.688 tractability=0.223 top3=[('substitute_support', 0.2438), ('finance_transfer', 0.2438), ('voluntary_pledges', 0.18)]
+              full ranking=[('substitute_support', 0.244), ('finance_transfer', 0.244), ('voluntary_pledges', 0.18), ('information_reporting', 0.18), ('binding_regulation', 0.153), ('trade_measures', 0.143), ('research_monitoring', 0.13), ('price_instrument', 0.113)]
+leaded_2002   gap=0.475 tractability=0.263 top3=[('substitute_support', 0.2844), ('finance_transfer', 0.2844), ('binding_regulation', 0.2204)]
+              full ranking=[('substitute_support', 0.284), ('finance_transfer', 0.284), ('binding_regulation', 0.22), ('price_instrument', 0.184), ('voluntary_pledges', 0.18), ('information_reporting', 0.18), ('research_monitoring', 0.13), ('trade_measures', 0.106)]
+PASS  ozone tractability > climate_1997
+PASS  leaded tractability > climate_1997
+FAIL  no pledges in any top 3
+PASS  binding regulation in leaded top 3
