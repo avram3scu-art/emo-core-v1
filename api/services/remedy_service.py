@@ -18,7 +18,7 @@ from emo.remedy.learning import build_learning_report
 from emo.remedy.legitimacy import build_legitimacy_report
 from emo.remedy.portfolio_builder import build_remedy_portfolio
 from emo.remedy.scoring import score_portfolio
-from emo.remedy.simulation import simulate_remedy_pathways
+from emo.remedy.simulation import dac_profile, simulate_remedy_pathways
 from emo.remedy.tradeoffs import build_tradeoff_report
 
 
@@ -140,9 +140,12 @@ def build_remedy_simulation_result(payload: RemedyRequest) -> dict[str, Any]:
 
     return {
         "profile": asdict(pipeline["profile"]),
+        "dac_profile": dac_profile(pipeline["profile"]),
         "portfolio": asdict(pipeline["portfolio"]),
         "score": asdict(pipeline["score"]),
         "simulations": [asdict(item) for item in simulations],
+        "note": "Predicted gain uses the convenience gap scalar; RDL is not a validated recommender "
+                "(docs/RDL_V03_PROTOCOL.md). Read dac_profile for the case.",
     }
 
 

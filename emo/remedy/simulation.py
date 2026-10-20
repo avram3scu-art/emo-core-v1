@@ -8,8 +8,34 @@ from emo.models.remedy_simulation import RemedySimulationResult
 _PIPELINE = ("validation", "translation", "budget", "deployment", "persistence")
 
 
+def dac_profile(profile: BottleneckProfile) -> dict:
+    """
+    The DAC profile as a profile: no aggregation, no weights.
+
+    Each pipeline stage is reported with its own score and shortfall; contradiction is reported
+    separately because it runs against the pipeline rather than along it. The weakest stage(s)
+    are listed, not summed. This follows the DAC measurement rule that the profile "is not
+    aggregated into a scalar: no weighting is justified a priori, and its components do not
+    move together" (DAC manuscript, Section 2.8). Use this, not measured_gap, to describe a case.
+    """
+    stages = {k: round(float(getattr(profile, f"{k}_score")), 3) for k in _PIPELINE}
+    low = min(stages.values())
+    return {
+        "stages": stages,
+        "shortfalls": {k: round(1.0 - v, 3) for k, v in stages.items()},
+        "weakest_stages": sorted(k for k, v in stages.items() if v == low),
+        "contradiction": round(float(profile.contradiction_score), 3),
+        "has_data": has_measured_data(profile),
+    }
+
+
 def measured_gap(profile: BottleneckProfile) -> float:
     """
+    CONVENIENCE SCALAR, NOT A DAC MEASURE. Kept only because RDL v0.2/v0.3 (frozen, see
+    docs/RDL_BACKTEST_PROTOCOL.md and RDL_V03_PROTOCOL.md) were defined and tested with it.
+    It averages the stages with equal weights, which the DAC measurement rule does not justify;
+    the v0.2/v0.3 backtests found it added little. Describe cases with dac_profile().
+
     How far the diagnosis-to-action pipeline is from working, in [0, 1].
 
     0 = every stage performs fully and there is no contradiction (nothing to repair);
