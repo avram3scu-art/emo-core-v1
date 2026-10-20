@@ -135,6 +135,7 @@ def build_remedy_simulation_result(payload: RemedyRequest) -> dict[str, Any]:
     simulations = simulate_remedy_pathways(
         pipeline["portfolio"],
         pipeline["score"],
+        pipeline["profile"],
     )
 
     return {

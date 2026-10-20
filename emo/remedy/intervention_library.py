@@ -441,7 +441,11 @@ def get_intervention_options(
 
     v0.1 uses explicit mappings, not ML.
     """
-    options = DOMAIN_REMEDY_LIBRARY.get(domain, [])
+    if domain not in DOMAIN_REMEDY_LIBRARY:
+        raise ValueError(
+            f"Unknown RDL domain '{domain}'. Known domains: {sorted(DOMAIN_REMEDY_LIBRARY)}"
+        )
+    options = DOMAIN_REMEDY_LIBRARY[domain]
     if not dominant_bottlenecks:
         return options
 

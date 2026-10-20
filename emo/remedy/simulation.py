@@ -1,42 +1,88 @@
 from __future__ import annotations
 
+from emo.models.bottleneck_profile import BottleneckProfile
 from emo.models.portfolio_score import PortfolioScore
 from emo.models.remedy_portfolio import RemedyPortfolio
 from emo.models.remedy_simulation import RemedySimulationResult
+
+_PIPELINE = ("validation", "translation", "budget", "deployment", "persistence")
+
+
+def measured_gap(profile: BottleneckProfile) -> float:
+    """
+    How far the diagnosis-to-action pipeline is from working, in [0, 1].
+
+    0 = every stage performs fully and there is no contradiction (nothing to repair);
+    1 = every stage fails. Contradiction adds to the gap with half weight.
+    """
+    stages = [getattr(profile, f"{k}_score") for k in _PIPELINE]
+    shortfall = sum(1.0 - s for s in stages) / len(stages)
+    return round(min(1.0, shortfall + 0.5 * profile.contradiction_score * (1.0 - shortfall)), 3)
+
+
+def has_measured_data(profile: BottleneckProfile) -> bool:
+    """All-zero inputs mean 'no data' (missing scores are clamped to 0), not 'total failure'."""
+    stages = [getattr(profile, f"{k}_score") for k in _PIPELINE]
+    return any(s > 0 for s in stages) or profile.contradiction_score > 0
 
 
 def simulate_remedy_pathways(
     portfolio: RemedyPortfolio,
     score: PortfolioScore,
+    profile: BottleneckProfile | None = None,
 ) -> list[RemedySimulationResult]:
     """
-    v0.1 rule-based simulation.
+    v0.2 gap-bounded simulation.
 
-    Compare:
-    - do_nothing
-    - selected_portfolio
-    - high_friction
+    v0.1 returned fixed numbers: 'do nothing' was always 0.05 and the portfolio's gain came
+    only from labels on the interventions, so a system that already worked was still
+    predicted to improve by ~0.6, and an all-zero (no data) input got a confident answer.
 
-    This is intentionally modest and transparent.
+    v0.2 rules (still rule-based, not a causal model):
+    - expected gain = measured gap x portfolio effectiveness (score.expected_dac_gain);
+      a closed gap gives zero gain;
+    - 'do nothing' = no change (0.0);
+    - 'high friction' = gap x max(0, effectiveness - 0.25);
+    - without a measured profile, or with all-zero inputs, the simulation refuses and says
+      why, instead of returning numbers.
+    Effectiveness values are still label-based assumptions, not evidence-based effect sizes.
     """
+    if profile is None or not has_measured_data(profile):
+        reason = ("No bottleneck profile was supplied." if profile is None
+                  else "All bottleneck inputs are zero, which indicates missing data, not measured failure.")
+        return [
+            RemedySimulationResult(
+                scenario="insufficient_data",
+                expected_dac_improvement=0.0,
+                persistence_outlook=0.0,
+                contradiction_warning="Not assessed.",
+                narrative=f"Simulation not run. {reason} Supply measured DAC sub-scores.",
+                assumptions=["No estimate is produced without measured inputs."],
+            )
+        ]
+
+    gap = measured_gap(profile)
+    eff = max(0.0, min(1.0, score.expected_dac_gain))
+    gain = round(gap * eff, 3)
+    friction_gain = round(gap * max(0.0, eff - 0.25), 3)
+    common = [
+        f"Measured gap = {gap:.3f} (0 = nothing to repair).",
+        "Portfolio effectiveness is a label-based assumption, not an evidence-based effect size.",
+    ]
+
     do_nothing = RemedySimulationResult(
         scenario="do_nothing",
-        expected_dac_improvement=0.05,
-        persistence_outlook=0.20,
-        contradiction_warning="High likelihood of unresolved bottlenecks.",
-        narrative=(
-            "Without intervention, dominant bottlenecks are expected to persist "
-            "and DAC improvement remains minimal."
+        expected_dac_improvement=0.0,
+        persistence_outlook=round(profile.persistence_score, 3),
+        contradiction_warning=(
+            "High likelihood of unresolved bottlenecks." if gap >= 0.3 else "Little to repair."
         ),
-        assumptions=[
-            "No new remedy portfolio is activated.",
-            "Existing bottlenecks continue to shape response performance.",
-        ],
+        narrative="Without intervention, the measured gap is assumed to persist unchanged.",
+        assumptions=common + ["No new remedy portfolio is activated."],
     )
-
     selected_portfolio = RemedySimulationResult(
         scenario="selected_portfolio",
-        expected_dac_improvement=round(score.expected_dac_gain, 3),
+        expected_dac_improvement=gain,
         persistence_outlook=round(score.persistence_likelihood, 3),
         contradiction_warning=(
             "Moderate contradiction risk remains."
@@ -45,27 +91,16 @@ def simulate_remedy_pathways(
         ),
         narrative=(
             f"The selected portfolio ({', '.join(portfolio.sequence) or 'no sequence'}) "
-            "is expected to improve DAC relative to baseline under current assumptions."
+            f"could close up to {gain:.3f} of a measured gap of {gap:.3f}."
         ),
-        assumptions=[
-            "The selected portfolio is implemented as designed.",
-            "Feasibility and persistence remain close to current score assumptions.",
-        ],
+        assumptions=common + ["The selected portfolio is implemented as designed."],
     )
-
     high_friction = RemedySimulationResult(
         scenario="high_friction",
-        expected_dac_improvement=round(max(0.0, score.expected_dac_gain - 0.25), 3),
+        expected_dac_improvement=friction_gain,
         persistence_outlook=round(max(0.0, score.persistence_likelihood - 0.20), 3),
         contradiction_warning="High friction amplifies implementation and coordination risk.",
-        narrative=(
-            "Under high-friction conditions, the portfolio still helps, but gains are "
-            "reduced by coordination stress, resistance, or implementation drag."
-        ),
-        assumptions=[
-            "Coordination burden rises above the current baseline.",
-            "Persistence decays faster than expected.",
-        ],
+        narrative="Under high friction, effectiveness drops by 0.25 before scaling by the gap.",
+        assumptions=common + ["Coordination burden rises above the current baseline."],
     )
-
     return [do_nothing, selected_portfolio, high_friction]
