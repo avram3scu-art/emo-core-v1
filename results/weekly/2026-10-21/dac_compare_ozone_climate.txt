@@ -1,0 +1,8 @@
+            warning→binding     level vs baseline, years after binding treaty
+                    (years)        +5       +10       +20      latest
+Ozone                  13.2      -47%      -83%      -99%      -100% (2021)
+Climate                18.3       +8%      +29%      +48%       +58% (2024)
+
+Climate after Paris (2016-2024): +0.37 Gt CO2/yr [+0.22, +0.58]; peak so far 2024 (38.6 Gt)
+Climate: 50% cut from 1997 baseline not reached; emissions not yet past their peak.
+saved analysis/dac_ozone_vs_climate.png

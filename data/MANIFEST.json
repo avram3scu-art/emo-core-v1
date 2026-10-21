@@ -1,0 +1,102 @@
+{
+  "openalex_articles_anycountry_by_year.json": {
+    "source": "https://api.openalex.org/works?filter=countries_distinct_count:>0,type:article&group_by=publication_year",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "bb2f0a47ed6c1d9b7b478952b0c2ca66ac084d8677a475d9b842c52aaeb37e0b",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "openalex_articles_anycountry_by_year_excl_CN_ID.json": {
+    "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>0,type:article&group_by=publication_year",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "7645d4916afeb44a8dc32ee40c11d51254c0878504a5229f3600c7c2bed16b9b",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "openalex_articles_multicountry_by_year.json": {
+    "source": "https://api.openalex.org/works?filter=countries_distinct_count:>1,type:article&group_by=publication_year",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "5fb469c0d59b40b1946e1e25f834a54e8835aa27202cbe72d08a4d1c5829a4de",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "openalex_articles_multicountry_by_year_excl_CN_ID.json": {
+    "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>1,type:article&group_by=publication_year",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "3685fe9111213b242430c2047cd24364b869872df7da22f294b797e647daabeb",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "openalex_single_country_2020_by_country.json": {
+    "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2020,type:article&group_by=authorships.countries",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "a9a6a021e184ccbe18a885b442a123c6d39ff09a4a4c6e903093d533e8718b35",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "openalex_single_country_2025_by_country.json": {
+    "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
+    "kind": "openalex",
+    "status": "ok",
+    "changed": false,
+    "rows": 200,
+    "sha256": "1c767b4d855d700b0d465e3ac22c68707e992301a8f08bfc132c3a4aa39efa70",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "owid_annual_co2_emissions.csv": {
+    "source": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv?v=1&csvType=full&useColumnShortNames=false",
+    "kind": "owid",
+    "status": "ok",
+    "changed": false,
+    "rows": 29384,
+    "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "owid_foreign_aid_share_of_gni.csv": {
+    "source": "https://ourworldindata.org/grapher/foreign-aid-given-as-a-share-of-national-income.csv?v=1&csvType=full&useColumnShortNames=false",
+    "kind": "owid",
+    "status": "ok",
+    "changed": false,
+    "rows": 2114,
+    "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "owid_ozone_depleting_substance_consumption.csv": {
+    "source": "https://ourworldindata.org/grapher/ozone-depleting-substance-consumption.csv?v=1&csvType=full&useColumnShortNames=false",
+    "kind": "owid",
+    "status": "ok",
+    "changed": false,
+    "rows": 5642,
+    "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  },
+  "owid_ucdp_death_rate_armed_conflicts.csv": {
+    "source": "https://ourworldindata.org/grapher/death-rate-in-armed-conflicts.csv?v=1&csvType=full&useColumnShortNames=false",
+    "kind": "owid",
+    "status": "ok",
+    "changed": false,
+    "rows": 7561,
+    "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
+    "retrieved_at": "2026-10-21T08:45:12Z",
+    "last_changed_at": "2026-10-20 (initial download)"
+  }
+}
