@@ -7,3 +7,6 @@ Source: Our World in Data, "Death rate in armed conflicts based on where they oc
 https://ourworldindata.org/grapher/death-rate-in-armed-conflicts — based on the Uppsala Conflict Data Program (UCDP).
 Counts deaths of combatants and civilians due to fighting in interstate, intrastate, extrasystemic and non-state
 conflicts and one-sided violence; excludes deaths from disease and starvation. Downloaded 20 Oct 2026. CC BY 4.0 (OWID).
+
+## Weekly refresh
+These files are refreshed weekly by `.github/workflows/weekly-refresh.yml`; retrieval dates, hashes and changes are in `data/MANIFEST.json` and `results/weekly/`. Figures quoted in this README are from the 20 Oct 2026 download unless stated otherwise.

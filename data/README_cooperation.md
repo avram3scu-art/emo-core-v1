@@ -23,3 +23,6 @@
   excluding any article with an author in China or Indonesia (filters authorships.countries:!CN and !ID).
 - Result: with all countries the share falls 18.5% (2020) → 16.7% (2025); excluding CN & ID it is 17.9% → 18.2% (plateau since 2021).
   The apparent post-2020 decline is a composition/coverage effect. Use the excluded series for trend statements.
+
+## Weekly refresh
+These files are refreshed weekly by `.github/workflows/weekly-refresh.yml`; retrieval dates, hashes and changes are in `data/MANIFEST.json` and `results/weekly/`. Figures quoted in this README are from the 20 Oct 2026 download unless stated otherwise.
