@@ -42,9 +42,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/avradri/emo-core-v1"
-Source = "https://github.com/avradri/emo-core-v1"
-Issues = "https://github.com/avradri/emo-core-v1/issues"
+Homepage = "https://github.com/avram3scu-art/emo-core-v1"
+Source = "https://github.com/avram3scu-art/emo-core-v1"
+Issues = "https://github.com/avram3scu-art/emo-core-v1/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
