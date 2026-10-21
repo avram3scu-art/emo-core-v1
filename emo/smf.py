@@ -101,7 +101,7 @@ def compute_smf(
         return SMFResult(0.0, 0, {"definition": "constant_series"})
 
     rng = np.random.default_rng(seed)
-    shifts = rng.integers(min_overlap, n - min_overlap + 1, size=n_surrogates) if n > 2 * min_overlap else []
+    shifts: np.ndarray | list[int] = rng.integers(min_overlap, n - min_overlap + 1, size=n_surrogates) if n > 2 * min_overlap else []
     null_max = np.array(
         [np.max(_lagged_corrs(m, np.roll(r, int(s)), max_lag, min_overlap)) for s in shifts]
     )
