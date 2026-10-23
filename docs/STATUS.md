@@ -2,7 +2,33 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 3 (2026-10-23) — the public page
+## Last session: 4 (2026-10-23) — related work
+
+**Done when met: yes.** Every gap sentence in README and the three white papers is now backed by an entry in `docs/RELATED_WORK.md` or removed (register G1–G12 in that file). README had none.
+
+**Checked first:** Monday 26 Oct's scheduled run cannot be checked yet (today is Fri 23 Oct). Carried to session 5.
+
+**Done** (2d31d9e)
+- `docs/RELATED_WORK.md`: nine entries (SDG 17.14.1; Sovereign ESG portal; WGI; Miles et al. 2002; Breitmeier, Young, Zürn 2006; Breitmeier, Underdal, Young 2011; OxCGRT; early-warning effectiveness; ESG Project). Each: what was opened, measures, method, coverage, overlap, what EMO adds. Unopened items marked unverified.
+- White papers (v1.0, v1.1 md, docx): 10 gap claims removed or reworded, 1 kept and backed (behaviour after warnings, E8), "Uniqueness" section replaced. Full rewrite still session 15.
+- No pre-registration: no hypothesis tested.
+
+**Results**
+- "No instrument measures how humanity responds" is false: policy coherence, governance quality, regime effectiveness and response timing are all measured elsewhere.
+- What EMO does that none of the opened sources does: an open, weekly re-run series of dated warning→policy→delivery lags (DAC). Same question as the regime-effectiveness literature, different form; overlap with Miles 2002 (ozone, ch. 6) is high.
+- Not opened: full texts of Miles 2002, Breitmeier 2006/2011; Sovereign ESG portal itself; WGI 2025 methodology; Global Status of MHEWS 2025 report; Pattberg et al. 2014. No full-text database searched; no novelty claim made.
+
+**Open questions**
+- Do Miles 2002 or the IRD already report dated lags? Needs the full texts (library access).
+- `ci.yml` still does not run on `emo-2026-10` (carried over).
+
+**Adrian must do**
+- Nothing required. Optional: library access to Miles 2002 and Breitmeier et al. 2006 would let entries E4–E6 be completed.
+
+## Next session
+Session 5 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: 3 (2026-10-23) — the public page
 
 **Done when met: yes.** Live at https://avram3scu-art.github.io/emo-core-v1/ after Adrian enabled Pages (Source: GitHub Actions) by hand. Re-run of 39918662082 deployed the page built from e16d394 (07:50 UTC); run 39920616723, with no edits, rebuilt it from 2419c6d (07:53 UTC). Both checked by fetching the page.
 
