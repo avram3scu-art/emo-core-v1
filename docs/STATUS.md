@@ -36,8 +36,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Eight one-off workflows (`probe_*.yml`, `smf_steo*.yml`, `smf_spf.yml`, `smf_ip.yml`), manual only: keep or delete?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
+**Review after close (same day, Adrian's request).** Rerun: weekly Action 39951627726 → 387cd99, 102 tests pass, all analysis outputs unchanged (only timestamps); the six SMF analyses rerun from committed data reproduce their result files exactly. Improvements found, not yet made: (1) README pillar table and public page (`scripts/build_site.py`) still say GWI and SMF were "not yet run on a real case", "57 passing tests", and UIA "weights 1.0" (a_UIA retired in session 5); (2) `ci.yml` push trigger still excludes `emo-2026-10`; (3) GWI pageview fetch still lacks `redirects=1` (future fetches only; frozen files untouched); (4) eight one-off workflows could be one; (5) SMF results not on the public page.
+
 **Adrian must do**
-- Nothing. Optional: decide on the one-off workflows.
+- Nothing. Optional: decide on the one-off workflows and whether to fix (1)–(5) before session 8.
 
 ## Next session
 Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
