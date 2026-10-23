@@ -63,7 +63,8 @@ def compute_smf(
         when the lag is known in advance. If a search is used, the score is
         corrected for it (see Notes).
     n_surrogates:
-        Number of circular-shift surrogates for the null distribution.
+        Maximum number of circular-shift surrogates for the null; each distinct
+        shift is used at most once (see Notes).
 
     Notes
     -----
@@ -76,9 +77,19 @@ def compute_smf(
       but breaks any real relation);
     - smf_score = max(0, (best_corr - null95) / (1 - null95)), where null95 is
       the 95th percentile of the surrogate maxima;
-    - p_value = fraction of surrogates reaching best_corr.
+    - p_value = (1 + surrogates reaching best_corr) / (1 + surrogates).
 
     Unrelated series therefore score 0 about 95% of the time.
+
+    v1.2 (2026-10-23): the admissible shifts are [min_overlap, n - min_overlap],
+    which for short series are few (n = 25 gives 6). v1.1 drew 199 shifts with
+    replacement from that set and counted repeats as independent, so it could
+    report p = 0.005 where the honest floor was 1/7. Now each distinct shift is
+    used at most once: all of them when there are no more than `n_surrogates`,
+    otherwise `n_surrogates` drawn without replacement. `extra["n_null"]` is the
+    number of surrogates used and `extra["p_min"]` = 1 / (1 + n_null), the
+    smallest p-value the series can produce. If p_min exceeds the chosen alpha,
+    the series is too short for the test, whatever the data.
     """
     if model.empty or realised.empty:
         return SMFResult(0.0, 0, {"definition": "empty"})
@@ -101,7 +112,11 @@ def compute_smf(
         return SMFResult(0.0, 0, {"definition": "constant_series"})
 
     rng = np.random.default_rng(seed)
-    shifts: np.ndarray | list[int] = rng.integers(min_overlap, n - min_overlap + 1, size=n_surrogates) if n > 2 * min_overlap else []
+    admissible = np.arange(min_overlap, n - min_overlap + 1) if n > 2 * min_overlap else np.array([], dtype=int)
+    if len(admissible) > n_surrogates:
+        shifts = rng.choice(admissible, size=n_surrogates, replace=False)
+    else:
+        shifts = admissible
     null_max = np.array(
         [np.max(_lagged_corrs(m, np.roll(r, int(s)), max_lag, min_overlap)) for s in shifts]
     )
@@ -115,9 +130,14 @@ def compute_smf(
     return SMFResult(
         smf_score=float(min(score, 1.0)),
         lag_days=best_lag,
-        metadata={"definition": "lag_corrected_corr_v1.1"},
+        metadata={"definition": "lag_corrected_corr_v1.2"},
         best_corr=best,
         null_corr_95=null95,
         p_value=p_value,
-        extra={"n_points": float(n), "max_lag": float(max_lag)},
+        extra={
+            "n_points": float(n),
+            "max_lag": float(max_lag),
+            "n_null": float(len(null_max)),
+            "p_min": 1.0 / (1 + len(null_max)),
+        },
     )

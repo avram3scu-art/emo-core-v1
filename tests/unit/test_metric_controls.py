@@ -63,6 +63,23 @@ def test_smf_detects_a_model_that_tracks_reality_with_a_lag():
     assert r.p_value <= 0.05
 
 
+def test_smf_null_uses_each_shift_once_and_reports_the_p_floor():
+    # n = 25 annual points: admissible shifts 10..15, i.e. 6 distinct surrogates.
+    rng = np.random.default_rng(0)
+    x = np.cumsum(rng.normal(size=25))
+    r = compute_smf(pd.Series(x), pd.Series(x + 0.1 * rng.normal(size=25)), n_surrogates=199)
+    assert r.extra["n_null"] == 6
+    assert r.extra["p_min"] == 1 / 7
+    assert r.p_value >= 1 / 7  # v1.1 could report 1/200 here
+
+
+def test_smf_null_is_capped_without_replacement_for_long_series():
+    rng = np.random.default_rng(1)
+    r = compute_smf(pd.Series(rng.normal(size=400)), pd.Series(rng.normal(size=400)), n_surrogates=99)
+    assert r.extra["n_null"] == 99
+    assert r.extra["p_min"] == 0.01
+
+
 # --- Information-time ---------------------------------------------------
 
 def test_tau_i_is_zero_for_flat_noisy_skill():
