@@ -96,4 +96,33 @@ holds only with these months, this is said.
 
 ## 7. Result
 
-Not yet run.
+Single run 2026-10-23: Action 39941453995, code 1677108, data and output
+7fc7696 (`results/smf_steo/result.txt`). 186 of 186 editions parsed, none
+dropped (FFTCCO2 in 67, TETCCO2 in 119). Values checked for plausibility
+only (monthly totals 322–534 Mt).
+
+**Verdict: PASS** by the pre-registered rule.
+
+| | primary (n = 186) | without 2020-03..2021-12 (n = 164, no weight) |
+|---|---|---|
+| corr (model, realised) | 0.393 | −0.006 |
+| null_corr_95 | 0.168 | 0.202 |
+| SMF | 0.271 | 0.000 |
+| p (n_null, p_min) | 0.0104 (95, 0.0104) | 0.345 (83, 0.0119) |
+| MSE_model / MSE_naive | 0.345 | 0.417 |
+| naive vs realised corr | −0.301 | −0.188 |
+| verdict by §6 | PASS | FAIL (p, SMF) |
+
+**What the pass rests on.** Outside the pandemic months the forecasts'
+12-month changes are uncorrelated with what happened (r = −0.006). The whole
+correlation comes from 2020–21: editions from spring 2020 forecast the 2021
+rebound. The pass therefore shows that SMF detects one large, foreseen
+swing, not that EIA tracks ordinary year-to-year variation.
+
+**Benchmark weaker than intended.** Persistence is anti-correlated with the
+outcome (12-month changes revert), so beating it on MSE (condition 3) was
+easy in both samples. A "no change" forecast (naive = 0) would have been the
+stronger benchmark; it was not pre-registered and was not computed.
+
+**p at its floor.** p = 0.0104 equals p_min: with n = 186, `smf.py` admits
+95 distinct shifts, and none reached the observed correlation.

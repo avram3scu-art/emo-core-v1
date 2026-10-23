@@ -2,7 +2,31 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 7 (2026-10-23) — SMF on a real case
+## Last session: 7b (2026-10-23) — SMF on a real case, redefined
+
+**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months.
+
+**Done**
+- `emo/smf.py` v1.2 (9dc38eb): each shift once, honest p, `n_null`/`p_min`; 102 tests pass (run 39940150931).
+- Case changed with Adrian's approval: EIA STEO monthly forecasts (12 months ahead) vs EIA MER Table 11.1, 12-month log changes. Layout checked without values (runs 39940687789, 39940799124). Protocol pre-registered 14b06b2 (draft 5a88999); PASS also requires beating persistence on MSE (Adrian's choice).
+- Code 1677108 (`scripts/fetch_steo_smf.py`, `analysis/smf_steo.py`, one-off `smf_steo.yml`); single run 39941453995 → 7fc7696. 186/186 editions parsed.
+
+**Results**
+- Primary: r = 0.393, SMF = 0.271, p = 0.0104 (= p_min), MSE ratio 0.345 → PASS.
+- Without 2020-03..2021-12: r = −0.006, SMF = 0, p = 0.345 → no fidelity outside the pandemic swing.
+- Persistence turned out anti-correlated with outcomes, so the MSE condition was weak.
+
+**Open questions**
+- Does the pass survive a "no change" benchmark and other leads (6, 18 months)? Needs a new pre-registration; the data are now opened.
+- Probe workflow `probe_layout.yml` and one-off `smf_steo.yml` stay in the repo; neither runs on schedule.
+
+**Adrian must do**
+- Nothing.
+
+## Next session
+Session 8 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: 7 (2026-10-23) — SMF on a real case
 
 **Done when met: no.** Stopped before pre-registration: the test as specified cannot give a valid pass/fail with `emo/smf.py`. No data opened, nothing computed.
 
