@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-23T12:13:30Z",
+  "run_at": "2026-10-23T12:24:45Z",
   "sources": [
     {
       "file": "owid_annual_co2_emissions.csv",
@@ -10,7 +10,7 @@
       "changed": false,
       "rows": 29384,
       "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -22,7 +22,7 @@
       "changed": false,
       "rows": 5642,
       "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -34,7 +34,7 @@
       "changed": false,
       "rows": 2114,
       "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -46,7 +46,7 @@
       "changed": false,
       "rows": 7561,
       "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -58,7 +58,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "9724f11e9b2b84d0fb15073c87573c6fd4c714cc9aa3a35e3177b71e72c1b068",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -70,7 +70,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "b8e50050c6882a42cff14c8754ed9b5ce7bd6d2b3cf7691e402c5d474d70a062",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -82,7 +82,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "d5e0dbc3420c079b4c3247271db87531b81030b5637aba6ea8786cb7dae203f5",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -94,7 +94,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "735b3a2d0899c12f6c0cb59e539c1f7f91d3f9664e06dc37aaca1cbbb1ad7e52",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -106,7 +106,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "6dbb974cf78b646a3450eae55570ec1da7e43c96312d33cd1ab5ff80898818da",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -118,7 +118,7 @@
       "changed": false,
       "rows": 200,
       "sha256": "fd7df21614abfea44d3ac60905b119f6b7e53a74a618675327ecc136bbc7094a",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T10:36:08Z"
     },
     {
@@ -130,7 +130,7 @@
       "changed": false,
       "rows": 1988,
       "sha256": "75202780ce56c8458f16fbef5fb8a026b99b00878dbb95c458211b3e6ef125b4",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T09:17:51Z"
     },
     {
@@ -142,7 +142,7 @@
       "changed": false,
       "rows": 89136,
       "sha256": "cb40fda4dcb178424b537dc48011d3b532e7822e34bd872f24dd65ceef3b7eb2",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T09:17:51Z"
     },
     {
@@ -154,7 +154,7 @@
       "changed": false,
       "rows": 104289,
       "sha256": "6189e773baa6ecd432cf1ce4fc21a23b417ff97ad473e77e3a5971ec719dbdb3",
-      "downloaded_at": "2026-10-23T12:13:30Z",
+      "downloaded_at": "2026-10-23T12:24:45Z",
       "last_changed_at": "2026-10-23T09:37:07Z"
     }
   ]
