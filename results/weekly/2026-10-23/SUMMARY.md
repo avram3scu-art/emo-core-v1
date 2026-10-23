@@ -40,4 +40,4 @@ Note: the subtitle of `dac_ozone_vs_climate.png` states fixed percentages (ozone
 
 ## Tests
 
-- pytest: 96 passed, 1 warning in 13.92s
+- pytest: 96 passed, 1 warning in 14.06s
