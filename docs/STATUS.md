@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 7 (2026-10-23) — SMF on a real case
 
-**Closed 2026-10-23, 14:50.** Session 7 plus same-day review, fixes and lint (summary below). Final state: weekly run 39952996639 (103 tests), CI 39956184040 green (tests, mypy, ruff), page shows SMF section 5 (checked by Adrian on his phone).
+**Closed 2026-10-23, 14:55** (after a partial logic re-audit of sessions 1–6, below). Session 7 plus same-day review, fixes and lint (summary below). Final state: weekly run 39952996639 (103 tests), CI 39956184040 green (tests, mypy, ruff), page shows SMF section 5 (checked by Adrian on his phone).
 
 **Done when met: yes**, with the case redefined by Adrian (EIA monthly series instead of OWID annual). Results in `docs/SMF_PROTOCOL.md` §7–§12; each test committed before its data and run once.
 
@@ -57,7 +57,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Nothing.
 
 ## Next session
-Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page. Small open fix worth doing at any session start: add the recorded GWI outputs (sessions 6, 6c) to the weekly frozen-output check.
 
 ## Previous session: GWI calibration test (2026-10-23, UIA follow-up)
 

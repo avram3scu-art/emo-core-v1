@@ -27,3 +27,4 @@
 | 2026-10-23 | 7 lint | Clear ruff lint debt | yes | 8c80d6c | 52 issues (28 auto, 24 by hand, style only); CI green: tests, mypy, ruff |
 | 2026-10-23 | 7 final close | SMF on a real case + review, fixes, lint | yes | c8cf591 | SMF fidelity at 3-6 months, none for energy/IP at 12 since 2010; README/page corrected; CI green; next: session 8 |
 | 2026-10-23 | 7 audit | Logic re-audit of sessions 1-6 (partial: GWI tests and weekly gate) | partial | a169ee1 | no logic error found; GWI Fisher p optimistic (clustering); GWI recorded outputs not frozen-checked; tau_I, DAC, organismality, sessions 4-5 not audited |
+| 2026-10-23 | 7 closed | Session 7 with review, fixes, lint, partial re-audit | yes | 29f89d7 | all work pushed; next: session 8; open: freeze GWI recorded outputs, audit tau_I/DAC/organismality/sessions 4-5 |
