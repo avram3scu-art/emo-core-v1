@@ -62,3 +62,6 @@ logs/
 
 # Docker
 docker-data/
+
+# Built public page (rebuilt by the weekly Action, not committed)
+site/

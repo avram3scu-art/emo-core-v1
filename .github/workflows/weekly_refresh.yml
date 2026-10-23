@@ -19,6 +19,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: weekly-refresh
@@ -27,6 +29,8 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    outputs:
+      committed_ok: ${{ steps.run.outputs.commit_allowed }}
     timeout-minutes: 60
 
     steps:
@@ -90,3 +94,40 @@ jobs:
         run: |
           echo "The weekly run reported problems; see the summary above."
           exit 1
+
+  # Public page: rebuilt and published only after a successful run (the refresh
+  # job fails, and this job is skipped, whenever the run found problems).
+  pages:
+    needs: refresh
+    if: needs.refresh.result == 'success' && needs.refresh.outputs.committed_ok == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout (branch head, including this run's commit)
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Build page
+        run: python scripts/build_site.py --out site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload page
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy page
+        id: deploy
+        uses: actions/deploy-pages@v4
