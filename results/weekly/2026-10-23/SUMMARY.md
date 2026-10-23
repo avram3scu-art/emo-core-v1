@@ -34,10 +34,11 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 - `dac_compare_ozone_climate`: unchanged since 2026-10-21
 - `organismality_plane`: unchanged since 2026-10-21
 - `information_time_nhc`: unchanged since 2026-10-21
+  - figure `analysis/information_time_nhc.png` changed; copy kept in this folder
 - `score_forecast_ledger`: unchanged since 2026-10-21
 
 Note: the subtitle of `dac_ozone_vs_climate.png` states fixed percentages (ozone -99 % in 20 years, CO₂ +48 %). If `dac_compare_ozone_climate` changed, check that text.
 
 ## Tests
 
-- pytest: 96 passed, 1 warning in 13.46s
+- pytest: 96 passed, 1 warning in 8.06s
