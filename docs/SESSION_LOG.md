@@ -23,3 +23,4 @@
 | 2026-10-23 | 7g | SMF forecaster vs variable: industrial production, EIA and SPF (§12) | yes | 2c18760 | pre-registered reading "forecaster effect", undone by exploratory checks: since 2010 SPF also worse than no change at a year; design flaw (period, definition) |
 | 2026-10-23 | 7 close | SMF on a real case (EIA CO2, electricity, IP; SPF unemployment, IP) | yes | 97d4ff4 | short-horizon fidelity detected; since 2010 no energy/IP forecast beats no change at a year; §12 forecaster-effect reading not supported |
 | 2026-10-23 | 7 review | Review and rerun of sessions 1-7 | yes | 387cd99 | all outputs reproduce; 102 tests pass; 5 improvements listed in STATUS (stale README/page claims, ci.yml, GWI redirects, workflows, SMF on page) |
+| 2026-10-23 | 7 fixes | Review fixes (1)-(5) | yes | 2a0a16a | README/page corrected, SMF on page, CI on default branch (tests pass, ruff lint fails on old debt), redirects option, one manual workflow; 103 tests pass |

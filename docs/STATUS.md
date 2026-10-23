@@ -36,10 +36,18 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Eight one-off workflows (`probe_*.yml`, `smf_steo*.yml`, `smf_spf.yml`, `smf_ip.yml`), manual only: keep or delete?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
-**Review after close (same day, Adrian's request).** Rerun: weekly Action 39951627726 → 387cd99, 102 tests pass, all analysis outputs unchanged (only timestamps); the six SMF analyses rerun from committed data reproduce their result files exactly. Improvements found, not yet made: (1) README pillar table and public page (`scripts/build_site.py`) still say GWI and SMF were "not yet run on a real case", "57 passing tests", and UIA "weights 1.0" (a_UIA retired in session 5); (2) `ci.yml` push trigger still excludes `emo-2026-10`; (3) GWI pageview fetch still lacks `redirects=1` (future fetches only; frozen files untouched); (4) eight one-off workflows could be one; (5) SMF results not on the public page.
+**Review after close (same day, Adrian's request).** Rerun: weekly Action 39951627726 → 387cd99, 102 tests pass, all analysis outputs unchanged (only timestamps); the six SMF analyses rerun from committed data reproduce their result files exactly. Improvements found and made (2a0a16a, test fix 29d2205): see below.
+
+**Fixes (same day, Adrian's request)**
+- (1) README pillar table, intro and test note corrected (weekly Action exists; GWI and SMF results; UIA a_UIA retired; 102 → 103 tests); public page "not yet measured" list corrected.
+- (5) Public page section 5: SMF primary results copied from `results/smf_*/result.txt`; page test checks it. Deployed at 29d2205 (GitHub deployment record); a fetch of the page returned a cached older copy, so the page was not checked visually.
+- (2) `ci.yml` now runs on pushes to `emo-2026-10`: tests and mypy pass; **ruff lint fails** on existing lint debt (run 39952816621; output not readable from the session). Not fixed.
+- (3) `_pageviews_csv(..., follow_redirects=False)`: redirects followed only when asked, so the session-6/6c files are fetched as before; new test.
+- (4) Ten one-off workflows replaced by `one_off.yml` (manual, choice of job, commits only if asked); checked with probe-spf (run 39952550960). Recorded run IDs refer to the old files, kept in git history.
+- Failure on record: my new test helper shadowed `_Resp` and broke 3 refresh tests (CI 39952543332, weekly 39952555284 blocked, nothing committed); fixed by renaming. Weekly 39952996639: 103 passed, page rebuilt.
 
 **Adrian must do**
-- Nothing. Optional: decide on the one-off workflows and whether to fix (1)–(5) before session 8.
+- Nothing. Optional: decide whether to clear the ruff lint debt (CI red until then).
 
 ## Next session
 Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
