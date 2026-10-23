@@ -1,0 +1,12 @@
+{
+  "editions_elec.csv": {
+    "source_url": "https://www.eia.gov/outlooks/steo/archives/{mon}{yy}_base.xlsx|.xls, sheet 7atab",
+    "downloaded_at": "2026-10-23T11:38:44+00:00",
+    "sha256": "4a553de1985a5fbaebc04d016ecdb57fada86472f61bb90abc1d3dc4419aae36"
+  },
+  "T07_06.csv": {
+    "source_url": "https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T07.06",
+    "downloaded_at": "2026-10-23T11:38:44+00:00",
+    "sha256": "0dc0f6834c1dea6601529fd33e74dea533030502c53fa632eb19c041d6a9b249"
+  }
+}

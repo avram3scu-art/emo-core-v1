@@ -1,0 +1,32 @@
+
+=== lead h=3: editions expected 195, used 195, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=173 T 2010-04..2026-06
+    corr=0.573 null95=0.148 smf=0.499 p=0.0112 n_null=88 p_min=0.0112
+    MSE_model/MSE_zero=0.638  MSE_model/MSE_persistence=0.428
+    verdict: PASS
+  [full sample, no weight] n=195 T 2010-04..2026-06
+    corr=0.575 null95=0.103 smf=0.526 p=0.0099 n_null=100 p_min=0.0099
+    MSE_model/MSE_zero=0.658  MSE_model/MSE_persistence=0.441
+    verdict: PASS (no weight)
+
+=== lead h=6: editions expected 192, used 192, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=170 T 2010-07..2026-06
+    corr=0.535 null95=0.137 smf=0.461 p=0.0114 n_null=87 p_min=0.0114
+    MSE_model/MSE_zero=0.698  MSE_model/MSE_persistence=0.368
+    verdict: PASS
+  [full sample, no weight] n=192 T 2010-07..2026-06
+    corr=0.533 null95=0.150 smf=0.451 p=0.0102 n_null=97 p_min=0.0102
+    MSE_model/MSE_zero=0.717  MSE_model/MSE_persistence=0.390
+    verdict: PASS (no weight)
+
+=== lead h=12: editions expected 186, used 186, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=164 T 2011-01..2026-06
+    corr=0.062 null95=0.159 smf=0.000 p=0.1905 n_null=83 p_min=0.0119
+    MSE_model/MSE_zero=1.119  MSE_model/MSE_persistence=0.438
+    verdict: FAIL (p<0.0167, SMF>0, MSE_model<MSE_zero not met)
+  [full sample, no weight] n=186 T 2011-01..2026-06
+    corr=0.098 null95=0.118 smf=0.000 p=0.0833 n_null=95 p_min=0.0104
+    MSE_model/MSE_zero=1.085  MSE_model/MSE_persistence=0.427
+    verdict: FAIL (p<0.0167, SMF>0, MSE_model<MSE_zero not met) (no weight)
+
+codes used: {'EXTCPUS': np.int64(345), 'ELTCTWH': np.int64(228)}
