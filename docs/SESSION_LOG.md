@@ -12,4 +12,4 @@
 | 2026-10-23 | 6c | GWI calibration test (docs/GWI_CALIBRATION_PROTOCOL.md) | yes | 7fec9bd | FAIL: threshold held in 2026 and kept discrimination, but "Prime number" ignited at 0.0134 > 0.010; GWI does not score He's I |
 | 2026-10-23 | 6c close | GWI calibration: close-out and next step | yes | 4420ddf | advice: stop GWI-as-I work, optional clustering diagnostic, go to session 7 (SMF) |
 | 2026-10-23 | 6c diag | GWI calibration exploratory diagnostics (protocol §8) | yes | (see STATUS) | Prime number ignitions = September academic-year effect; Mitochondrion likely a July-2026 redirect (unverified); session-6 PASS holds split by month |
-2026-10-23 | 7 | SMF on a real case | no | (this commit) | Stopped before pre-registration: smf.py null degenerate on annual data (n=25 → 6 distinct shifts; reported p overstated); no data opened
+| 2026-10-23 | 7 | SMF on a real case | no | 8605b0b | Stopped before pre-registration: smf.py null degenerate on annual data (n=25 → 6 distinct shifts; reported p overstated); no data opened |
