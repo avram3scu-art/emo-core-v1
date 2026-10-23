@@ -21,9 +21,8 @@ The world has built a planetary nervous system.
 
 These infrastructures tell us, with increasing fidelity, **what the planet is doing**.
 
-What we still do *not* have is an instrument that tells us, in real time, **how well the human species is thinking and acting in response**.
+Other instruments already measure parts of how societies respond: policy-coherence mechanisms (SDG 17.14.1), governance quality (WGI), regime effectiveness, and pandemic response stringency (OxCGRT); see `docs/RELATED_WORK.md`. EMO asks a narrower question: how long a scientific warning takes to become policy and then measured physical delivery.
 
-> **EMO v1.0 – the Emergent Mind Observatory – is that missing instrument?**
 
 EMO treats humanity plus its infrastructures as an **emergent mind** with measurable organismality, integrative information processing, global‑workspace “ignition” events, and a self‑model that should steer planetary trajectories.  Using the Universal Interface Action (UIA) as a mathematical backbone, EMO computes species‑level cognitive vital signs and maps them into a single, dimensionless “cognitive health” score for the human–Earth interface.  
 
@@ -42,7 +41,7 @@ This white paper explains why EMO must run **continuously**, how EMO‑Core v1.0
 
 ---
 
-## 2. The gap: sensors and twins without a species‑mind diagnostic
+## 2. Context: what existing systems measure
 
 The last decade has given us unprecedented instruments:
 
@@ -52,7 +51,7 @@ The last decade has given us unprecedented instruments:
 
 These systems collectively answer the question: Where are the physical risks? How are they evolving?**  
 
-They do **not** answer:
+EMO's metrics ask the questions below. Physical-risk systems are not built to answer them, but related measures of response exist (docs/RELATED_WORK.md), and most of these EMO metrics have not yet run on real data (see `README.md`):
 
 - Are we acting more like a coherent organism or a fragmented swarm? (OI)  
 - Are our science, media, policy, and financial systems processing information synergistically, or locked into redundant loops? (SΦ / Ω)  
@@ -60,9 +59,7 @@ They do **not** answer:
 - Is our validated predictive capacity accelerating or stalling? (τ_I)   
 - Are we using energy and computing to actually reduce risk and heal planetary boundaries, or just to rearrange deckchairs? (M_E, semantic efficiency)   
 
-Without a **species‑mind diagnostic**, we are flying blind about our own collective cognition. We can see hazard fields and emissions with exquisite detail, but we do not know whether our global brain is *learning* from them, *coordinating* around them, or actively *working against* them.
 
-EMO exists to close that gap.
 
 ---
 
@@ -212,7 +209,6 @@ This makes it possible to say, quantitatively:
 
 > “We are burning X joules and Y trillion dollars per year on ‘planetary stewardship’. EMO estimates that only Z% of that budget is actually moving us back towards safe‑and‑just boundaries.”
 
-That kind of **semantic‑efficiency view** is currently missing from major dashboards.
 
 ### 4.4 AI governance & societal alignment
 
@@ -313,14 +309,13 @@ EMO is a **leverage play**:
 - One comparatively small, open infrastructure project that amplifies the impact of **billions of euros** in digital‑twin, early‑warning, and risk‑analytics investments.  
 - A single UIA‑based ledger that allows diverse funders (climate, AI, health, resilience) to see how their programmes interact at the level of species‑mind cognition.   
 
-### 7.3 Uniqueness
+### 7.3 Related work
 
-As far as we know, EMO is the **only project** that:
+No uniqueness is claimed. A search limited to named sources (docs/RELATED_WORK.md) found closely related work on policy coherence, regime effectiveness, response tracking, early warning and governance fragmentation. EMO's framing:
 
 - Treats humanity explicitly as an emergent mind and operationalises that framing into measurable metrics (OI, SΦ, GWI, SMF, τ_I) and a UIA density.   
 - Connects bench‑top reciprocity experiments, AI semantics‑per‑joule, and planetary governance into a single universal interface action.   
 
-Supporting EMO is therefore a way to **shape an entirely new category**: planetary‑scale cognitive infrastructure.
 
 ---
 
@@ -346,7 +341,7 @@ We are seeking:
 
 In 2023, the Earth Commission wrote that justice is a prerequisite for a safe and just Earth system, and that we still have a window to change course.  In 2025, UN leadership reiterated that multi‑hazard early‑warning systems can dramatically reduce disaster losses, but only if they are used.   
 
-The missing piece is a **continuous instrument** that tells us, at a planetary scale, whether our species‑level cognition is keeping up with the crises we are creating—and whether the billions we invest in data, models, and institutions are actually improving that cognition.
+EMO proposes a **continuous instrument** that asks whether collective response is keeping up with the crises we are creating. What it computes today is listed in `README.md`; related work is in `docs/RELATED_WORK.md`.
 
 The Emergent Mind Observatory is designed to be that instrument.
 
