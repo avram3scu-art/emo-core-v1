@@ -27,7 +27,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - p sits at p_min for the passes (≈ 0.011): ~87 distinct shifts, none reached the observed correlation.
 
 **Open questions**
-- Is the decay within a year specific to EIA? A second forecaster would need its own pre-registration.
+- Is the decay within a year specific to EIA? Search after close (3 web queries, not exhaustive): no second forecaster found with archived monthly CO2 forecast editions; results returned only EIA material. Unverified candidates outside CO2: ENTSO-E load forecasts (Transparency Platform, API token needed), OPEC monthly oil demand forecasts (PDF only). Stopped there, no protocol.
 - One-off workflows (`probe_layout.yml`, `smf_steo*.yml`) stay in the repo, manual only; delete or keep?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
