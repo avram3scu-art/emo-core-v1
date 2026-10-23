@@ -34,7 +34,8 @@ for year in range(2010, 2025):
                          "code": code, "F_T": float(row.iloc[cols[T]]), "F_Tm12": float(row.iloc[cols[Tm]])})
         except Exception as e:
             dropped.append(f"{stem}: {type(e).__name__}: {e}")
-out = Path("data/sources/eia_steo_co2_h18"); out.mkdir(parents=True, exist_ok=True)
+out = Path("data/sources/eia_steo_co2_h18")
+out.mkdir(parents=True, exist_ok=True)
 pd.DataFrame(rows).to_csv(out / "editions_h18.csv", index=False)
 (out / "dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
 print(f"rows {len(rows)}, dropped {len(dropped)}")

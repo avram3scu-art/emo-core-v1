@@ -89,11 +89,13 @@ def main():
                 rows.append(edition(year, mi))
             except Exception as e:
                 dropped.append(f"{MON[mi]}{year % 100:02d}: {type(e).__name__}: {e}")
-    out = Path("data/sources/eia_steo_co2"); out.mkdir(parents=True, exist_ok=True)
+    out = Path("data/sources/eia_steo_co2")
+    out.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(out / "editions.csv", index=False)
     (out / "dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
     mer_raw = get(MER)
-    mout = Path("data/sources/eia_mer_t11_01"); mout.mkdir(parents=True, exist_ok=True)
+    mout = Path("data/sources/eia_mer_t11_01")
+    mout.mkdir(parents=True, exist_ok=True)
     (mout / "T11_01.csv").write_bytes(mer_raw)
     now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
     src = {"eia_steo_co2/editions.csv": {"source_url": BASE + "{mon}{yy}_base.xlsx|.xls, sheet 9atab",

@@ -58,7 +58,8 @@ for year in range(2010, 2027):
             except Exception as e:
                 dropped.append(f"{stem}: h={h}: {type(e).__name__}: {e}")
 
-out = Path("data/sources/smf_ip"); out.mkdir(parents=True, exist_ok=True)
+out = Path("data/sources/smf_ip")
+out.mkdir(parents=True, exist_ok=True)
 pd.DataFrame(rows).to_csv(out / "steo_ip_editions.csv", index=False)
 (out / "steo_dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
 now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")

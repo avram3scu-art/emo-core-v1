@@ -9,7 +9,8 @@ UA = {"User-Agent": "emo-core-v1 SMF test (github.com/avram3scu-art/emo-core-v1)
 SPF = ("https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/"
        "historical-data/medianLevel.xlsx?sc_lang=en&hash=E52F5DEF4551C3EBD24031A04CE6E98A")
 FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE"
-out = Path("data/sources/spf_unemp"); out.mkdir(parents=True, exist_ok=True)
+out = Path("data/sources/spf_unemp")
+out.mkdir(parents=True, exist_ok=True)
 now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
 src = {}
 for name, url in (("medianLevel.xlsx", SPF), ("UNRATE.csv", FRED)):

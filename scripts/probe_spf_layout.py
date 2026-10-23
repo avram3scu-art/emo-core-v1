@@ -7,7 +7,9 @@ import urllib.request
 import pandas as pd
 
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}
-get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
+def get(u):
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
+
 SPF = ("https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/"
        "historical-data/medianLevel.xlsx?sc_lang=en&hash=E52F5DEF4551C3EBD24031A04CE6E98A")
 try:

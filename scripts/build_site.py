@@ -76,7 +76,8 @@ def build(out: Path):
     rel = run.relative_to(ROOT).as_posix()
     status = json.loads((run / "status.json").read_text())
     man = json.loads((ROOT / "data/MANIFEST.json").read_text())
-    read = lambda name: (run / f"{name}.txt").read_text().strip() if (run / f"{name}.txt").exists() else "(no output)"
+    def read(name):
+        return (run / f"{name}.txt").read_text().strip() if (run / f"{name}.txt").exists() else "(no output)"
     try:
         sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     except OSError:
@@ -88,7 +89,7 @@ def build(out: Path):
         shutil.copy(ROOT / "analysis" / fig, out / fig)
 
     def numbers(name):
-        txt = "\n".join(l for l in read(name).splitlines() if not l.startswith("saved "))
+        txt = "\n".join(ln for ln in read(name).splitlines() if not ln.startswith("saved "))
         return f'<a class="out" href="{BLOB}{rel}/{name}.txt" title="open the output file">{esc(txt)}</a>'
 
     def figure(fname, alt):
@@ -107,13 +108,15 @@ def build(out: Path):
         if not f.exists():
             return ""
         keep, lines, take = [], f.read_text().splitlines(), 0
-        for l in lines:
-            if l.startswith(("===", "#####")) and "Profile" not in l:
-                keep.append(l.strip())
-            elif "[PRIMARY" in l:
-                keep.append(l.strip()); take = 3
+        for ln in lines:
+            if ln.startswith(("===", "#####")) and "Profile" not in ln:
+                keep.append(ln.strip())
+            elif "[PRIMARY" in ln:
+                keep.append(ln.strip())
+                take = 3
             elif take:
-                keep.append("  " + l.strip()); take -= 1
+                keep.append("  " + ln.strip())
+                take -= 1
         txt = title + "\n" + "\n".join(keep)
         return f'<a class="out" href="{BLOB}{esc(path)}" title="open the output file">{esc(txt)}</a>'
 

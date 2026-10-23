@@ -59,7 +59,7 @@ def test_valid_update_is_written(tmp_path, monkeypatch):
     new_csv = OLD_CSV + b"World,OWID_WRL,2022,3\n"
     new_oa = {"meta": {"notice": "x"}, "group_by": [{"key": "2020", "count": 10},
                                                      {"key": "2021", "count": 12}]}
-    data = _setup(tmp_path, monkeypatch, new_csv, new_oa)
+    _setup(tmp_path, monkeypatch, new_csv, new_oa)
     res = refresh.refresh()
     assert all(s["status"] == "ok" and s["changed"] for s in res["sources"] if s["kind"] in ("owid", "openalex"))
     f = next(iter(refresh.OWID))
@@ -70,7 +70,7 @@ def test_valid_update_is_written(tmp_path, monkeypatch):
 
 def test_header_change_keeps_committed_file(tmp_path, monkeypatch):
     bad = b"Entity,Code,Year,Other\nWorld,OWID_WRL,2020,9\nWorld,OWID_WRL,2021,9\n"
-    data = _setup(tmp_path, monkeypatch, bad, {"group_by": []})
+    _setup(tmp_path, monkeypatch, bad, {"group_by": []})
     res = refresh.refresh()
     assert all(s["status"] == "failed" for s in res["sources"] if s["kind"] in ("owid", "openalex"))
     assert refresh.path_for(next(iter(refresh.OWID))).read_bytes() == OLD_CSV

@@ -7,7 +7,9 @@ import urllib.request
 import pandas as pd
 
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}
-get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
+def get(u):
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
+
 for name in ("jan10_base.xls", "jan15_base.xlsx", "jan20_base.xlsx", "oct26_base.xlsx"):
     try:
         book = pd.read_excel(io.BytesIO(get("https://www.eia.gov/outlooks/steo/archives/" + name)), sheet_name=None, header=None)
@@ -16,7 +18,7 @@ for name in ("jan10_base.xls", "jan15_base.xlsx", "jan20_base.xlsx", "oct26_base
         for i in range(len(df)):
             labs = [str(v).strip() for v in df.iloc[i, :2].tolist() if isinstance(v, str)]
             if labs and re.search(r"industrial|production|manufactur|index|unemploy|source|forecast", " ".join(labs), re.I):
-                print(f"  row {i}: {' | '.join(l[:150] for l in labs)}")
+                print(f"  row {i}: {' | '.join(lab[:150] for lab in labs)}")
     except Exception as e:
         print(name, "FAILED", type(e).__name__, e)
 SPF = ("https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/"
