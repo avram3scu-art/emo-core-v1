@@ -1,0 +1,9 @@
+editions expected 90, used 90, dropped 0
+[PRIMARY (without 2020-03..2021-12)] n=78 T 2011-07..2025-12
+  corr=-0.214 null95=0.214 smf=0.000 p=0.8571 n_null=41 p_min=0.0238
+  MSE_model/MSE_zero=1.239
+  verdict: FAIL (p<0.05, SMF>0, MSE_model<MSE_zero not met)
+[full sample, no weight] n=90 T 2011-07..2025-12
+  corr=0.026 null95=0.293 smf=0.000 p=0.5625 n_null=47 p_min=0.0208
+  MSE_model/MSE_zero=1.093
+  verdict: FAIL (p<0.05, SMF>0, MSE_model<MSE_zero not met) (no weight)
