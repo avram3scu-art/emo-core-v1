@@ -15,7 +15,7 @@ coefficient 1.0. That is a weighted sum with chosen weights, which `CLAUDE.md` f
 |---|---|---|---|---|
 | R, informational curvature | "Gradient" is set to −θ; the skill metric is read but never used, so R depends only on the sampled parameters. log det(F)/dim is not the scalar curvature of a Fisher metric. | No. There is no defined parametric model of the human–Earth interface whose Fisher metric could be estimated. | None possible | **Not measurable. Drop.** |
 | B, focusing | B̃ is hard-coded to 3.0; B = 3·mean(H)²; shear and vorticity arguments are ignored. "Expansion H" has no definition at this interface. | No observable defined. | None | **Not measurable. Drop.** |
-| C, coherence | Rolling mean of GWI, clipped to [0,1]. | Only if GWI passes on real data (session 6: Wikipedia pageviews, public). Pageview coverage starts July 2015 (corrected in session 6 from "mid-2000s"; source: pageviews.wmcloud.org Langviews FAQ, opened in session 6). | Session 6's control windows | **Conditional on session 6.** |
+| C, coherence | Rolling mean of GWI, clipped to [0,1]. | Only if GWI passes on real data (session 6: Wikipedia pageviews, public). Pageview coverage starts July 2015 (corrected in session 6 from "mid-2000s"; source: pageviews.wmcloud.org Langviews FAQ, opened in session 6). | Session 6's control windows (event-level only) | **Conditional on session 6.** Updated in §5: not usable as a level; stays retired with a_UIA. |
 | S, entropy rate | Shannon entropy of normalised planetary-boundary indicators: measures how evenly the indicators are spread, not an entropy rate. Changes with the indicator set and normalisation. | Partly: some indicators (CO₂, ODS) in OWID. No public annual series for all boundaries found (not searched). | None that makes the quantity meaningful | **Computable but meaningless. Drop.** |
 | I, information rate | Positive differences of a skill series. Clipping at zero makes pure noise look like gain (biased upward). | Yes, but via `emo/info_time.py` (τ_I), not this code: NHC track errors 1970–2025 and ECMWF headline scores are in `data/`. | τ_I has slope CIs and a year-shuffle control (`analysis/information_time_nhc.py`) | **Measurable today, as τ_I. Keep; move to F.** |
 | M_E, semantic efficiency | Sum of risk reduction / sum of energy. | No. Neither risk reduction attributable to governance action nor the energy spent on it exists as a public series. | None | **Not measurable. Drop.** |
@@ -30,7 +30,7 @@ UIA is redefined as the profile (I, C, F, E, D; He), reported side by side, neve
 
 | Letter | Meaning | Candidate measure | Exists today? |
 |---|---|---|---|
-| I | information integration | synergy (session 8), GWI (session 6) | No (untested) |
+| I | information integration | synergy (session 8), GWI (session 6) | GWI: event detection passed for one hazard class (session 6); not yet usable to score I (§5). Synergy: untested |
 | C | coordination | cooperation axis of the organismality plane | Yes (`analysis/organismality_plane.py`) |
 | F | feedback, self-modelling | τ_I (yes); SMF (session 7) | Partly |
 | E | resources | DAC budget sublayer at warning date | Partly |
@@ -88,3 +88,36 @@ Adrian's decision (2026-10-23, 11:04 Brussels): **Option C.**
   fall after the start of pageview coverage. Then a new protocol section, committed before any scoring,
   states the prediction, statistic and fail condition.
 - Session 12 (the He direction test) is postponed until that trigger is met.
+
+## 5. Update after session 6 (2026-10-23, UIA follow-up)
+
+GWI passed its pre-registered event test (`docs/GWI_PROTOCOL.md` §7: 14/21 event windows vs 9/275
+controls, Fisher p = 2.3e-13; placebo p = 0.061). Decision recorded here, since a pass does not by
+itself make GWI usable for UIA.
+
+**What the pass shows.** Ignition days fall in hurricane-landfall windows far more often than in
+control windows. Both sets use the same threshold, so the result holds even though the threshold is
+miscalibrated. It is a statement about *timing relative to controls*, for one hazard class and one article.
+
+**What it does not show.** `compute_gwi` expected 0.012 false ignitions under independent streams and
+found 95 (test) and 15 (placebo). The binomial threshold is not a calibrated false-alarm rate on real
+streams. Any use of GWI as a *level* (how much ignition, or how coherent attention is, at a given
+date) inherits that miscalibration: the level mixes real ignition with shared cross-language news-cycle
+co-movement.
+
+**Decisions.**
+1. *a_UIA's C (coherence = rolling mean of GWI):* **not usable**. It is a level, so the session-6 pass
+   does not support it. It stays retired with a_UIA.
+2. *Naming:* a_UIA's C (coherence) is not the He profile's C (coordination). GWI belongs to He's **I**
+   (information integration), not to C. The He C remains the organismality cooperation axis.
+3. *GWI in He's I:* **not yet usable for scoring.** Scoring I at a warning date needs a level, which needs
+   calibration first. GWI may score I only after a separate pre-registered calibration test passes, with:
+   - a null that keeps the streams' shared co-movement (e.g. per-stream circular-shift surrogates, or the
+     placebo article's ignition rate as the baseline), fixed before data;
+   - calibration chosen on data already opened (pageviews to 2025-12-31) and tested only on pageviews
+     not yet opened (2026-01-01 onward);
+   - pass: false-ignition rate on held-out control windows within the nominal rate stated in advance.
+4. *Coverage still binds:* pageviews start July 2015, so GWI cannot score I for either coded DAC case
+   (ozone 1974/1985; climate pre-2015). This leaves the §4 trigger unchanged.
+
+No UIA or GWI data were opened for this update; it uses only the committed session-6 result.

@@ -2,7 +2,25 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 6 (2026-10-23) — GWI on real attention data
+## Last session: UIA follow-up (2026-10-23, between sessions 6 and 7)
+
+**Done when met: yes.** Adrian asked for the UIA consequences of the GWI pass to be decided in a UIA session; recorded in `docs/UIA_PROTOCOL.md` §5. No data opened.
+
+**Results**
+- a_UIA's C (rolling mean of GWI) stays not usable: GWI passed on timing vs controls, but its binomial threshold is uncalibrated (95 ignitions vs 0.012 expected), so a GWI *level* is not a measurement. C stays retired with a_UIA.
+- GWI belongs to the He letter I, not C (a_UIA "coherence" ≠ He "coordination").
+- GWI may score I only after a pre-registered calibration test: a null that keeps shared co-movement, calibrated on pageviews to 2025, tested on 2026 pageviews not yet opened.
+
+**Open questions**
+- Which null for calibration: per-stream circular shifts, or the placebo article as baseline? To be fixed in that protocol.
+
+**Adrian must do**
+- Nothing.
+
+## Next session
+Session 7 (`docs/PLAN.md`), unchanged. First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: 6 (2026-10-23) — GWI on real attention data
 
 **Done when met: yes.** Result in `docs/GWI_PROTOCOL.md` §7: **PASS**.
 
