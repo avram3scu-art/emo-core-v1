@@ -2,7 +2,30 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 2 (2026-10-23) — the weekly GitHub Action
+## Last session: 3 (2026-10-23) — the public page
+
+**Done when met: no.** The page builds and the Action is wired to publish it, but GitHub Pages is not enabled on the repository, so nothing is live yet. One setting, by hand (below).
+
+**Checked first:** Monday 26 Oct's scheduled run has not happened (session held Fri 23 Oct). Latest run instead: 9dc72e6 ("Weekly run 2026-10-23: all checks passed").
+
+**Done** (36dae27)
+- `scripts/build_site.py`: static `site/index.html` from the newest `results/weekly/<date>/`, `data/MANIFEST.json`, the forecast ledger and the two figures. Computes nothing; copies numbers. Sections: what EMO does not yet measure; organismality plane; τ_I from NHC track errors; DAC ozone vs climate; forecast ledger with DOI 10.5281/zenodo.23507467 and its SHA-256. Each block links to its output file, script, input data (retrieval date, hash) and upstream source.
+- `tests/test_build_site.py`: sections present, every repository link resolves to a real file.
+- `weekly_refresh.yml`: new `pages` job, runs only if the refresh job succeeded and committed (`commit_allowed`); builds and deploys with actions/deploy-pages. `site/` is not committed.
+- No pre-registration: no hypothesis tested.
+
+**Results**
+- Run 39918662082: refresh succeeded and committed (9dc72e6); `pages` failed at Configure Pages: "Resource not accessible by integration" (the token may not create a Pages site). Session API also refused (403).
+- Until Pages is enabled, every weekly run will show as failed because of this job, though data are still committed.
+- τ_I has no figure; it is shown as its number table only.
+
+**Adrian must do**
+- Settings → Pages → Build and deployment → Source: **GitHub Actions**. Then Actions → Weekly refresh → Run workflow. Page URL: https://avram3scu-art.github.io/emo-core-v1/
+
+## Next session
+Session 3 close-out first: after Pages is enabled, confirm the page is live and that a second run changes it (run date and commit line) without edits. Then session 4 (`docs/PLAN.md`).
+
+## Previous session: 2 (2026-10-23) — the weekly GitHub Action
 
 **Done when met: yes.** Two manual runs committed without help: runs 39917084473 → ef78159 and 39917096846 → 6b9fe0a ("Weekly run 2026-10-23: all checks passed").
 
