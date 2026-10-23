@@ -1,0 +1,12 @@
+{
+  "medianLevel.xlsx": {
+    "source_url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/historical-data/medianLevel.xlsx?sc_lang=en&hash=E52F5DEF4551C3EBD24031A04CE6E98A",
+    "downloaded_at": "2026-10-23T11:44:59+00:00",
+    "sha256": "d296e737331c406f7680414504a0d005472743709387f8fda6d969a1d2200977"
+  },
+  "UNRATE.csv": {
+    "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE",
+    "downloaded_at": "2026-10-23T11:44:59+00:00",
+    "sha256": "621ff6fadf50910cb7a21ee20ba610c247cb043b29b4e05c4c1a72fadca2a06c"
+  }
+}
