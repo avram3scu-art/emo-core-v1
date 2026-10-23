@@ -126,3 +126,33 @@ stronger benchmark; it was not pre-registered and was not computed.
 
 **p at its floor.** p = 0.0104 equals p_min: with n = 186, `smf.py` admits
 95 distinct shifts, and none reached the observed correlation.
+
+## 8. Follow-up test: other leads and a "no change" benchmark (pre-registration)
+
+Registered 2026-10-23 after §7, at Adrian's request. **Not blind:** the STEO
+and MER values for lead 12 were opened in §7, and its result without
+2020–21 (r = −0.006) is known. Leads 3 and 6 and the "no change" benchmark
+have not been computed. Nothing in §2–§7 is changed.
+
+**Question.** Outside the pandemic swing, do EIA's forecasts track realised
+12-month changes better than chance and better than forecasting no change?
+
+**Series.** For edition e (published month P) and lead h ∈ {3, 6, 12}:
+target T = P + h; model_h(T) = ln F_e(T) − ln F_e(T − 12);
+realised(T) = ln R(T) − ln R(T − 12); same sources and row rule as §3.
+For h = 12 this is §4's series. Editions January 2010 to P = June 2026 − h
+(so T ≤ 2026-06). An edition lacking a needed month is dropped for that lead;
+more than 10% dropped for a lead → that lead is not run (§4 rule).
+
+**Primary sample.** T outside 2020-03..2021-12.
+
+**Benchmark.** No change: zero(T) = 0, MSE_zero = mean(realised²).
+
+**Statistic.** `compute_smf(model_h, realised, max_lag_days=0, n_surrogates=999, seed=0)`.
+
+**Pass / fail, per lead (three tests, Bonferroni α = 0.05/3 = 0.0167):**
+PASS_h if p < 0.0167, SMF > 0 and MSE_model < MSE_zero. Reported as a profile
+of three verdicts, never combined into one score. Also reported, no weight:
+the full sample (with 2020–21) for each lead, and the §6 persistence MSE.
+
+**Result.** Not yet run.
