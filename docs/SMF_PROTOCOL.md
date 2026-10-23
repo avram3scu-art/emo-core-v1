@@ -1,7 +1,5 @@
 # SMF on a real case: pre-registration
 
-**DRAFT, awaiting Adrian's approval. Not yet the pre-registration: the registered version is the commit that removes this line.**
-
 Session 7 (`docs/PLAN.md`), redefined 2026-10-23 with Adrian's approval: the
 realised series is EIA monthly CO2, not OWID annual CO2 (§1). Code:
 `emo/smf.py` v1.2 (9dc38eb). This file is committed before any data value is
@@ -74,19 +72,27 @@ Lag fixed at 0, because the lead is fixed by design (§4).
 
 ## 6. Pass / fail
 
-**PASS** if p_value < 0.05 (one-sided, as computed by `compute_smf`) and
-smf_score > 0. Otherwise **FAIL**. Reported either way: n, best_corr,
-null_corr_95, smf_score, p_value, n_null, p_min, dropped editions.
+Persistence benchmark: naive(T) = ln R(P) − ln R(P − 12), the 12-month change
+last observed at publication (current MER vintage). Errors are computed on the
+months T where model, naive and realised all exist:
+MSE_model = mean((model − realised)²), MSE_naive = mean((naive − realised)²).
 
-**Secondary, reported, carry no weight on the verdict:**
+**PASS** if all three hold:
 
-- (a) Without the pandemic: the same statistic with T from 2020-03 to 2021-12
-  removed. If the primary passes only with these months, this is said.
-- (b) Persistence benchmark: naive(T) = ln R(P) − ln R(P − 12), the
-  12-month change last observed at publication (current MER vintage). SMF of
-  naive vs realised and mean squared error of model and naive are reported. If
-  STEO does not beat persistence on MSE, a pass shows only that the forecasts
-  carry the autocorrelation of emissions growth, not that EIA adds skill.
+1. p_value < 0.05 (one-sided, as computed by `compute_smf`);
+2. smf_score > 0;
+3. MSE_model < MSE_naive (STEO beats persistence; chosen by Adrian on
+   2026-10-23 so that a pass cannot come from the autocorrelation of emissions
+   growth alone).
+
+Otherwise **FAIL**, and the file says which condition failed.
+
+Reported either way: n, best_corr, null_corr_95, smf_score, p_value, n_null,
+p_min, MSE_model, MSE_naive, SMF of naive vs realised, dropped editions.
+
+**Secondary, reported, no weight on the verdict:** the same three numbers
+(p, SMF, MSE ratio) with T from 2020-03 to 2021-12 removed. If the verdict
+holds only with these months, this is said.
 
 ## 7. Result
 
