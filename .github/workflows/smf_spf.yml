@@ -1,0 +1,30 @@
+name: SMF SPF unemployment (run once, docs/SMF_PROTOCOL.md §11)
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  smf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "${{ github.ref_name }}"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11"}
+      - run: pip install numpy pandas openpyxl xlrd
+      - name: Fetch
+        run: python scripts/fetch_spf_smf.py > fetch.txt 2>&1; grep -v -i warning fetch.txt | grep -v "book = " | tail -3
+      - name: Run
+        env: {PYTHONPATH: .}
+        run: |
+          mkdir -p results/smf_spf
+          python analysis/smf_spf.py > results/smf_spf/result.txt 2>&1 || true
+          cp fetch.txt results/smf_spf/fetch.txt
+          echo "::notice title=smf::$(sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g' results/smf_spf/result.txt | cut -c1-6000)"
+      - name: Commit data and result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources/spf_unemp results/smf_spf
+          git commit -m "SMF SPF test: data and result (single run)" || exit 0
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
