@@ -17,3 +17,4 @@
 | 2026-10-23 | 7b | SMF on EIA STEO vs MER (redefined case) | yes | 7fc7696 | PASS (r=0.39, p=0.010, beats persistence) but r=-0.01 without 2020-21; carried by the pandemic swing |
 | 2026-10-23 | 7c | SMF follow-up: leads 3/6/12 vs no change, without 2020-21 (§8) | yes | c32cfa9 | PASS h=3 (r=0.53), PASS h=6 (r=0.52), FAIL h=12 (r=-0.01, worse than no change) |
 | 2026-10-23 | 7d | SMF lead 18 (§9) | yes | 9cb5ded | FAIL: r=-0.21, p=0.86, MSE 24% worse than no change; profile 3 PASS, 6 PASS, 12 FAIL, 18 FAIL |
+| 2026-10-23 | 7 close | SMF on a real case (redefined: EIA STEO vs MER) | yes | 20da6c5 | smf.py v1.2 null fix; SMF PASS at leads 3 and 6, FAIL at 12 and 18 (lead-12 pass only via 2020-21) |

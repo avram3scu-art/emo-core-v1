@@ -2,57 +2,40 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 7b (2026-10-23) — SMF on a real case, redefined
+## Last session: 7 (2026-10-23) — SMF on a real case
 
-**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months; follow-up §8–§9: PASS at leads 3 and 6, FAIL at 12 and 18.
+**Done when met: yes**, with the case redefined by Adrian (EIA monthly CO2 instead of OWID annual). Results in `docs/SMF_PROTOCOL.md` §7–§9.
 
 **Done**
-- `emo/smf.py` v1.2 (9dc38eb): each shift once, honest p, `n_null`/`p_min`; 102 tests pass (run 39940150931).
-- Case changed with Adrian's approval: EIA STEO monthly forecasts (12 months ahead) vs EIA MER Table 11.1, 12-month log changes. Layout checked without values (runs 39940687789, 39940799124). Protocol pre-registered 14b06b2 (draft 5a88999); PASS also requires beating persistence on MSE (Adrian's choice).
-- Code 1677108 (`scripts/fetch_steo_smf.py`, `analysis/smf_steo.py`, one-off `smf_steo.yml`); single run 39941453995 → 7fc7696. 186/186 editions parsed.
+- Stopped the original task before pre-registration (8605b0b): on annual OWID CO2 the circular-shift null cannot reach p < 0.05 below 38 points, and no published annual emissions path is that long.
+- `emo/smf.py` v1.2 (9dc38eb): each admissible shift used once, honest p, `n_null`/`p_min` reported; 2 new tests; 102 pass (run 39940150931 → 2141fe9).
+- Layout-only probe of STEO and MER files, no values printed (`scripts/probe_steo_layout.py`, runs 39940687789, 39940799124).
+- Three pre-registered tests, each committed before its data and run once:
+  - §7 lead 12 vs persistence: protocol 14b06b2 (draft 5a88999), code 1677108, run 39941453995 → 7fc7696.
+  - §8 leads 3/6/12 vs "no change", without 2020-03..2021-12: protocol 6f95ad8, code 30a0a48, run 39942987695 → c32cfa9.
+  - §9 lead 18: protocol f6519cd, code b5ed83b, run 39944422318 → 9cb5ded.
 
 **Results**
-- Primary: r = 0.393, SMF = 0.271, p = 0.0104 (= p_min), MSE ratio 0.345 → PASS.
-- Without 2020-03..2021-12: r = −0.006, SMF = 0, p = 0.345 → no fidelity outside the pandemic swing.
-- Persistence turned out anti-correlated with outcomes, so the MSE condition was weak.
+- §7: PASS (r = 0.39, p = 0.010, MSE 0.35 × persistence), but r = −0.01 without 2020–21: carried by the pandemic swing. Persistence was anti-correlated with outcomes, so that benchmark was weak.
+- §8–§9 primary (without 2020–21, vs "no change"): lead 3 PASS (r = 0.53, MSE −24%), lead 6 PASS (r = 0.52, −19%), lead 12 FAIL (r = −0.01, +18%), lead 18 FAIL (r = −0.21, +24%).
+- SMF detects real fidelity; EIA's model of US emissions is faithful only within about six months.
+- Failures on record: original annual test not runnable (smf.py v1.1 null defect); §7 pass not robust; leads 12 and 18 fail.
 
-**Follow-up (same day, Adrian's request):** pre-registered §8 (6f95ad8, not blind for lead 12), code 30a0a48, single run 39942987695 → c32cfa9. Without 2020-21, vs "no change", Bonferroni α = 0.0167: lead 3 PASS (r = 0.53, MSE −24%), lead 6 PASS (r = 0.52, MSE −19%), lead 12 FAIL (r = −0.01, MSE +18%). SMF detects fidelity at short leads; this self-model has none at 12 months outside the pandemic.
-
-**Lead 18 (same day):** pre-registered §9 (f6519cd), code b5ed83b, run 39944422318 → 9cb5ded. Jan–Jun editions only (90). FAIL: r = −0.21, p = 0.86, MSE 24% worse than "no change"; full sample also FAIL. Profile: 3 PASS, 6 PASS, 12 FAIL, 18 FAIL.
+**Limits**
+- One agency both forecasts and measures; this is EIA's model of the US, not a wider self-model.
+- Realised values are today's revised MER vintage. §8 lead 12 and §9 were not blind (lead-12 values opened in §7).
+- p sits at p_min for the passes (≈ 0.011): ~87 distinct shifts, none reached the observed correlation.
 
 **Open questions**
-- Is the decay specific to EIA, or general? A second forecaster (another agency's own-country forecasts) would need its own pre-registration.
-- Probe workflow `probe_layout.yml` and one-off `smf_steo.yml` stay in the repo; neither runs on schedule.
+- Is the decay within a year specific to EIA? A second forecaster would need its own pre-registration.
+- One-off workflows (`probe_layout.yml`, `smf_steo*.yml`) stay in the repo, manual only; delete or keep?
+- `ci.yml` still does not run on `emo-2026-10` (carried over).
 
 **Adrian must do**
 - Nothing.
 
 ## Next session
-Session 8 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
-
-## Previous session: 7 (2026-10-23) — SMF on a real case
-
-**Done when met: no.** Stopped before pre-registration: the test as specified cannot give a valid pass/fail with `emo/smf.py`. No data opened, nothing computed.
-
-**Checked first:** Monday 26 Oct's scheduled run cannot be checked yet (today is Fri 23 Oct). Carried to the next session.
-
-**Why it cannot be met**
-- The realised series (OWID CO2) is annual. `compute_smf` returns no null below 21 points and draws circular shifts only in [min_overlap, n − min_overlap], min_overlap = max(10, n//4). Distinct shifts: n = 21 → 2, n = 25 → 6, n = 30 → 11; ≥ 19 (honest p ≤ 0.05) needs n ≥ 38.
-- Its p-value counts 199 draws of those few shifts as independent, so it reports p ≈ 0.005 where the honest floor is 1/(k+1) (0.14 at n = 25). Defect in the code, not the data.
-- No published annual emissions path covers ≥ 38 realised years (would need publication ≤ 1986). RCP paths start after 2005 (< 21 points); SRES is decadal.
-- Construct issue: correlation is scale-free and circular shifts break trends, so two rising series "pass" without any level fidelity. A test in levels would mainly restate "both go up".
-
-**Fix done (same day, Adrian's request):** `emo/smf.py` v1.2 (9dc38eb): each admissible shift used at most once; `extra["n_null"]` and `extra["p_min"]` reported; 2 new tests. Run 39940150931 → 2141fe9: 102 passed, all checks passed. Consequence: a correlation SMF on ≤ 37 annual points cannot reach p < 0.05; the fix makes that visible, it does not make the annual test possible.
-
-**Open questions (for Adrian)**
-- ~~Fix `smf.py` first~~ (done, 9dc38eb) (enumerate all admissible shifts, honest p, minimum-p check), as its own pre-registered session?
-- Then either a monthly self-model with hundreds of points (e.g. EIA Short-Term Energy Outlook vintages vs realised monthly US CO2; deviates from "OWID CO2") or a level-fidelity statistic (error vs a naive persistence forecast) instead of correlation.
-
-**Adrian must do**
-- Choose how session 7 is redefined (or skipped).
-
-## Next session
-Session 7 redefined by Adrian, or session 8 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
 
 ## Previous session: GWI calibration test (2026-10-23, UIA follow-up)
 
