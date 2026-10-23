@@ -26,3 +26,4 @@
 | 2026-10-23 | 7 fixes | Review fixes (1)-(5) | yes | 2a0a16a | README/page corrected, SMF on page, CI on default branch (tests pass, ruff lint fails on old debt), redirects option, one manual workflow; 103 tests pass |
 | 2026-10-23 | 7 lint | Clear ruff lint debt | yes | 8c80d6c | 52 issues (28 auto, 24 by hand, style only); CI green: tests, mypy, ruff |
 | 2026-10-23 | 7 final close | SMF on a real case + review, fixes, lint | yes | c8cf591 | SMF fidelity at 3-6 months, none for energy/IP at 12 since 2010; README/page corrected; CI green; next: session 8 |
+| 2026-10-23 | 7 audit | Logic re-audit of sessions 1-6 (partial: GWI tests and weekly gate) | partial | (this commit) | no logic error found; GWI Fisher p optimistic (clustering); GWI recorded outputs not frozen-checked; tau_I, DAC, organismality, sessions 4-5 not audited |

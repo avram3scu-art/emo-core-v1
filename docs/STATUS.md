@@ -48,6 +48,11 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - (4) Ten one-off workflows replaced by `one_off.yml` (manual, choice of job, commits only if asked); checked with probe-spf (run 39952550960). Recorded run IDs refer to the old files, kept in git history.
 - Failure on record: my new test helper shadowed `_Resp` and broke 3 refresh tests (CI 39952543332, weekly 39952555284 blocked, nothing committed); fixed by renaming. Weekly 39952996639: 103 passed, page rebuilt.
 
+**Logic re-audit of sessions 1–6 (same day, Adrian's request; partial).** Read against their protocols: `analysis/gwi_hurricanes.py`, `emo/gwi.py` (`compute_gwi`, `coincidence_fraction`, `calibrate_fraction_threshold`), the commit gate in `scripts/weekly_run.py`. No logic error found: events derived by rule from HURDAT2 (first landfall ≥ 96 kt, wind column checked), baselines use only past days (shift 1, 56-day median), control blocks are disjoint 5-day windows > 10 days from any event, calibration threshold set on training data only, gate requires tests + ledger hash + frozen RDL outputs + all analyses. Weak points (no change made):
+- GWI's Fisher test treats windows as independent; ignitions cluster in time, so p (2.3e-13) is optimistic. The effect (14/21 vs 9/275) is large enough that this does not change the verdict.
+- The pre-registered GWI results (sessions 6, 6c) are re-run weekly on refetched pageviews but, unlike RDL, not checked against their recorded output; a silent drift (Wikimedia revisions) would overwrite them. Suggested fix: add them to the frozen-output check.
+- Not audited: τ_I (`emo/info_time.py`, NHC), DAC ozone vs climate, organismality plane, the session-4 related-work entries and the session-5 UIA audit claims.
+
 **Adrian must do**
 - Nothing.
 
