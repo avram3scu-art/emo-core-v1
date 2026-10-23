@@ -25,3 +25,4 @@
 | 2026-10-23 | 7 review | Review and rerun of sessions 1-7 | yes | 387cd99 | all outputs reproduce; 102 tests pass; 5 improvements listed in STATUS (stale README/page claims, ci.yml, GWI redirects, workflows, SMF on page) |
 | 2026-10-23 | 7 fixes | Review fixes (1)-(5) | yes | 2a0a16a | README/page corrected, SMF on page, CI on default branch (tests pass, ruff lint fails on old debt), redirects option, one manual workflow; 103 tests pass |
 | 2026-10-23 | 7 lint | Clear ruff lint debt | yes | 8c80d6c | 52 issues (28 auto, 24 by hand, style only); CI green: tests, mypy, ruff |
+| 2026-10-23 | 7 final close | SMF on a real case + review, fixes, lint | yes | c8cf591 | SMF fidelity at 3-6 months, none for energy/IP at 12 since 2010; README/page corrected; CI green; next: session 8 |
