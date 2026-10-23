@@ -121,3 +121,7 @@ co-movement.
    (ozone 1974/1985; climate pre-2015). This leaves the §4 trigger unchanged.
 
 No UIA or GWI data were opened for this update; it uses only the committed session-6 result.
+
+**Calibration test result (2026-10-23): FAIL** (`docs/GWI_CALIBRATION_PROTOCOL.md` §7). The calibrated
+threshold held in time but not across articles ("Prime number" 0.0134 vs ≤ 0.010). GWI therefore does
+**not** score I. A new calibration design would need its own pre-registration; it is not proposed here.

@@ -9,3 +9,4 @@
 | 2026-10-23 | 5 | UIA audit (docs/UIA_PROTOCOL.md) | yes | ff9d692 | Option C: a_UIA retired, He profile defined, prediction deferred to ≥8 DAC cases; session 12 postponed |
 | 2026-10-23 | 6 | GWI on real attention data (docs/GWI_PROTOCOL.md) | yes | 5e343fc | PASS: 14/21 event windows vs 9/275 controls, p=2.3e-13; placebo p=0.061 (thin); 2 runs blocked by stale tests first |
 | 2026-10-23 | 6b | UIA follow-up: consequences of GWI pass (docs/UIA_PROTOCOL.md §5) | yes | (this commit) | a_UIA's C stays not usable (GWI level uncalibrated); GWI moves to He's I, usable only after a pre-registered calibration test on unopened 2026 pageviews |
+| 2026-10-23 | 6c | GWI calibration test (docs/GWI_CALIBRATION_PROTOCOL.md) | yes | 7fec9bd | FAIL: threshold held in 2026 and kept discrimination, but "Prime number" ignited at 0.0134 > 0.010; GWI does not score He's I |

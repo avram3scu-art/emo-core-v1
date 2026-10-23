@@ -2,7 +2,29 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: UIA follow-up (2026-10-23, between sessions 6 and 7)
+## Last session: GWI calibration test (2026-10-23, UIA follow-up)
+
+**Done when met: yes.** Pre-registered (db843a4) before the held-out pageviews were fetched; run once (Action 39933057718, code 803d614, results 7fec9bd); result in `docs/GWI_CALIBRATION_PROTOCOL.md` §7: **FAIL**.
+
+**Done**
+- `emo/gwi.py`: `coincidence_fraction` (per-stream scale frozen on training) and `calibrate_fraction_threshold`; 3 unit tests. `analysis/gwi_calibration.py`, run weekly. Weekly Action fetches the new file `wikipedia_pageviews_gwi_calibration.csv` (session-6 file untouched).
+
+**Results**
+- Calibrated threshold f_cal = 6 of 12 streams (q = 0.005). Held in time (Photosynthesis 2026: 1/291) and kept discrimination (14/21 events vs 12/275 controls, p = 2.5e-12), but failed across articles: "Prime number" 53/3,944 = 0.0134 > 0.010; "Pythagorean theorem" 0.0023.
+- "Mitochondrion" returned one stream only (interlanguage links missing; cause not checked) and was dropped.
+- Consequence: GWI does not score He's I (`docs/UIA_PROTOCOL.md` §5). Session-6 GWI PASS unchanged.
+
+**Open questions**
+- Why did "Mitochondrion" return no interlanguage links?
+- Would a per-article null (each article calibrated on its own past) transfer? Needs a new pre-registration.
+
+**Adrian must do**
+- Nothing.
+
+## Next session
+Session 7 (`docs/PLAN.md`), unchanged. First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: UIA follow-up (2026-10-23, between sessions 6 and 7)
 
 **Done when met: yes.** Adrian asked for the UIA consequences of the GWI pass to be decided in a UIA session; recorded in `docs/UIA_PROTOCOL.md` §5. No data opened.
 

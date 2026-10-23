@@ -86,4 +86,33 @@ topics; it does not show that GWI measures "information integration" in the He s
 
 ## 7. Results
 
-(Empty until the single run.)
+Single run: Action run 39933057718 (2026-10-23), code at 803d614, results committed by the Action in
+7fec9bd (`results/weekly/2026-10-23/gwi_calibration.txt`; data in
+`data/sources/wikipedia_pageviews_gwi_calibration/`). 100 tests pass.
+
+| | Streams | Ignition days / days | Rate | ≤ 2q = 0.010 |
+|---|---|---|---|---|
+| Reference "Photosynthesis", training 2016–2025 | 12 | 15 / 3,653 | 0.0041 | (target q = 0.005) |
+| Reference, 2026 (time held out) | 12 | 1 / 291 | 0.0034 | yes |
+| "Prime number", 2016-01-01 … 2026-10-18 | 12 | 53 / 3,944 | **0.0134** | **no** |
+| "Pythagorean theorem", same period | 12 | 9 / 3,944 | 0.0023 | yes |
+| "Mitochondrion" | 1 | dropped (< 8 streams) | — | — |
+
+f_cal = 0.5 (k = 6 of 12). The binomial k_min on the reference was also 6, so calibration did not change the
+threshold for this article; for "Tropical cyclone" it lowers k from 7 to 6.
+
+Discrimination with the calibrated rule (session-6 events, seen data): 118 ignition days; events hit
+14/21 = 0.667; Jun–Nov controls 12/275 = 0.044; Fisher p = 2.5e-12. Kept.
+[no weight] Placebo rerun: 15 ignition days; events 2/21; controls 4/275; p = 0.061.
+[no weight] 2026 only: "Prime number" 1/291, "Pythagorean theorem" 0/291.
+
+**RESULT: FAIL** — condition 1 fails ("Prime number" 0.0134 > 0.010). Conditions 2 and 3 hold.
+
+Read with these limits:
+- The failure is in articles, not in time: the threshold held on 2026 for the reference and both
+  held-out articles, but one ordinary topic ignites 2.7 times the target over 2016–2026. A threshold
+  tuned on one article does not transfer to every other article.
+- "Mitochondrion" contributed only one stream: its interlanguage links were not returned (cause not
+  checked; possibly a redirect). Two held-out articles remained, so the test was testable by §3.
+- Consequence (§5): GWI does not score the He letter I. The session-6 event result stands; it is a
+  contrast with control windows and never relied on the threshold's nominal rate.
