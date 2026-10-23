@@ -13,7 +13,7 @@ def test_site_builds_with_sections_and_valid_links(tmp_path):
     for needle in ("What EMO does not yet measure", "Organismality plane", "NHC", "ozone vs climate",
                    "forecast ledger", "10.5281/zenodo.23507467"):
         assert needle in html, needle
-    for fig in ("organismality_plane.png", "dac_ozone_vs_climate.png"):
+    for fig in ("organismality_plane.png", "dac_ozone_vs_climate.png", "information_time_nhc.png"):
         assert (tmp_path / fig).exists()
     paths = set(re.findall(r'/blob/[^/"]+/([^"]+)"', html))
     assert paths

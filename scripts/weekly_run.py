@@ -36,7 +36,7 @@ ANALYSES = {
     "dac_ozone": [],
     "dac_compare_ozone_climate": ["analysis/dac_ozone_vs_climate.png"],
     "organismality_plane": ["analysis/organismality_plane.png"],
-    "information_time_nhc": [],  # NHC data is transcribed by hand; not refreshed
+    "information_time_nhc": ["analysis/information_time_nhc.png"],  # NHC data is transcribed by hand; not refreshed
     "score_forecast_ledger": [],
 }
 

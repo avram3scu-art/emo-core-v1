@@ -83,7 +83,7 @@ def build(out: Path):
     built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     out.mkdir(parents=True, exist_ok=True)
-    for fig in ("organismality_plane.png", "dac_ozone_vs_climate.png"):
+    for fig in ("organismality_plane.png", "dac_ozone_vs_climate.png", "information_time_nhc.png"):
         shutil.copy(ROOT / "analysis" / fig, out / fig)
 
     def numbers(name):
@@ -147,9 +147,10 @@ y: death rate in armed conflicts per 100,000 (UCDP via OWID), inverted. A descri
 <h2>2. Information-time τ_I from NHC hurricane track errors</h2>
 <p>How fast the error of official Atlantic track forecasts falls, by lead time, 1970–2025 (τ_I as % per year, 95% CI).
 The control shuffles years and should find τ_I &gt; 0 only rarely.</p>
+{figure('information_time_nhc.png', 'NHC track errors and tau_I by lead time')}
 {numbers('information_time_nhc')}
 {provenance([
-    'script ' + link('analysis/information_time_nhc.py') + ' · metric ' + link('emo/info_time.py' if (ROOT / 'emo/info_time.py').exists() else 'emo/info_time'),
+    'figure ' + link('analysis/information_time_nhc.png') + ' · script ' + link('analysis/information_time_nhc.py') + ' · metric ' + link('emo/info_time.py' if (ROOT / 'emo/info_time.py').exists() else 'emo/info_time'),
     'data file ' + link('data/nhc_atlantic_official_track_errors_1970_2025.csv') + ' (transcribed from the NHC PDF; not refreshed automatically) · notes ' + link('data/README_nhc.md'),
     'source ' + ext(NHC_SOURCE, 'NHC verification, annual official track errors'),
 ])}
