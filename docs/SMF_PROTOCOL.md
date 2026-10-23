@@ -239,4 +239,20 @@ MSE_model < MSE_zero). Full sample reported, no weight.
 electricity profile is PASS at 3 and 6, FAIL at 12. Any other profile is
 reported as "differs", with the leads that differ.
 
-**Result.** Not yet run.
+**Result.** Single run 2026-10-23: Action 39946280348, code 427966a, data and
+output 7031a64 (`results/smf_steo_elec/result.txt`). No edition dropped
+(EXTCPUS in 345 rows, ELTCTWH in 228).
+
+| lead h | n | corr | SMF | p (p_min) | MSE_model / MSE_zero | verdict |
+|---|---|---|---|---|---|---|
+| 3 | 173 | 0.573 | 0.499 | 0.0112 (0.0112) | 0.638 | **PASS** |
+| 6 | 170 | 0.535 | 0.461 | 0.0114 (0.0114) | 0.698 | **PASS** |
+| 12 | 164 | 0.062 | 0.000 | 0.191 (0.0119) | 1.119 | **FAIL** (all three) |
+
+Full sample, no weight: PASS at 3 and 6, FAIL at 12.
+
+**Comparison: same horizon as CO2** by the rule stated above. EIA's forecasts
+of US electricity sales track 12-month changes at 3 and 6 months and beat "no
+change" (MSE −36% and −30%); at 12 months they are uncorrelated and 12%
+worse than "no change". The decay within a year holds for two EIA variables;
+whether it holds beyond EIA is untested (§8 note; no second forecaster found).

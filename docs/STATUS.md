@@ -28,7 +28,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Open questions**
 - Is the decay within a year specific to EIA? Search after close (3 web queries, not exhaustive): no second forecaster found with archived monthly CO2 forecast editions; results returned only EIA material. Unverified candidates outside CO2: ENTSO-E load forecasts (Transparency Platform, API token needed), OPEC monthly oil demand forecasts (PDF only). Stopped there, no protocol.
-- One-off workflows (`probe_layout.yml`, `smf_steo*.yml`) stay in the repo, manual only; delete or keep?
+- Electricity check (same day, §10): probe run 39946118805, protocol 950ad46, code 427966a, run 39946280348 → 7031a64. Retail sales: 3 PASS (r = 0.57), 6 PASS (r = 0.54), 12 FAIL (r = 0.06, MSE +12%): same horizon as CO2. Second EIA variable, not a second forecaster.
+- One-off workflows (`probe_layout.yml`, `probe_elec_layout.yml`, `smf_steo*.yml`) stay in the repo, manual only; delete or keep?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
 **Adrian must do**
