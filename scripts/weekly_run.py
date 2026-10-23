@@ -38,6 +38,7 @@ ANALYSES = {
     "organismality_plane": ["analysis/organismality_plane.png"],
     "information_time_nhc": ["analysis/information_time_nhc.png"],  # NHC data is transcribed by hand; not refreshed
     "score_forecast_ledger": [],
+    "gwi_hurricanes": [],  # pre-registered test, docs/GWI_PROTOCOL.md
 }
 
 # Frozen RDL runs: (script, recorded output, line filter). Output must match exactly.

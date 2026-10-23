@@ -67,6 +67,9 @@ OPENALEX = {
 }
 OPENALEX_URL = "https://api.openalex.org/works?{query}"
 
+# NHC HURDAT2 Atlantic best track, pinned file (GWI test events, docs/GWI_PROTOCOL.md §2)
+HURDAT2 = {"hurdat2_atlantic.txt": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt"}
+
 
 def path_for(fname: str) -> Path:
     """Each download keeps its own folder: data/sources/<stem>/<fname>."""
@@ -119,6 +122,14 @@ def _openalex_check(old: dict, new: dict) -> tuple[int, str | None]:
     return len(gn), None
 
 
+def _hurdat_check(new: bytes) -> tuple[int, str | None]:
+    lines = new.decode("utf-8", "replace").splitlines()
+    storms = [ln for ln in lines if ln.startswith("AL") and len(ln.split(",")[0].strip()) == 8]
+    if not storms or not any(s.split(",")[0].strip().endswith("2025") for s in storms):
+        return len(storms), "no storm headers, or no 2025 storms"
+    return len(storms), None
+
+
 def refresh() -> dict:
     now = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     man_path = DATA / "MANIFEST.json"
@@ -168,6 +179,25 @@ def refresh() -> dict:
                 if secret:
                     detail = detail.replace(secret, "***")
             entry.update(status="failed", detail=detail[:300], changed=False)
+        report.append(entry)
+
+    for fname, url in HURDAT2.items():
+        path = path_for(fname)
+        entry = {"file": fname, "path": str(path.relative_to(DATA.parent)), "source": url, "kind": "hurdat2"}
+        try:
+            new = _get(url).content
+            rows, problem = _hurdat_check(new)
+            old = path.read_bytes() if path.exists() else None
+            if problem:
+                entry.update(status="failed", detail=problem, changed=False)
+            else:
+                changed = new != old
+                if changed:
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_bytes(new)
+                entry.update(status="ok", changed=changed, rows=rows, sha256=_sha(new))
+        except Exception as exc:
+            entry.update(status="failed", detail=str(exc)[:300], changed=False)
         report.append(entry)
 
     for e in report:

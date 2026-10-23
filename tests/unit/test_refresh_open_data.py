@@ -14,6 +14,16 @@ _spec.loader.exec_module(refresh)
 OLD_CSV = b"Entity,Code,Year,Value\nWorld,OWID_WRL,2020,1\nWorld,OWID_WRL,2021,2\n"
 
 
+HURDAT_SAMPLE = (
+    b"AL092017,             HARVEY,     3,\n"
+    b"20170825, 1800,  , HU, 27.4N,  96.6W, 110,  941,\n"
+    b"20170826, 0300, L, HU, 28.0N,  97.1W, 115,  937,\n"
+    b"20170830, 0800, L, TS, 29.8N,  93.5W,  40,  993,\n"
+    b"AL012025,             ALPHA,      1,\n"
+    b"20250701, 0000,  , TD, 20.0N,  80.0W,  30, 1008,\n"
+)
+
+
 class _Resp:
     def __init__(self, content: bytes):
         self.content = content
@@ -35,6 +45,8 @@ def _setup(tmp_path, monkeypatch, owid_new: bytes, oa_new: dict):
         refresh.path_for(f).write_text(json.dumps(old_oa))
 
     def fake_get(url):
+        if "nhc.noaa.gov" in url:
+            return _Resp(HURDAT_SAMPLE)
         if "ourworldindata" in url:
             return _Resp(owid_new)
         return _Resp(json.dumps(oa_new).encode())
@@ -93,3 +105,15 @@ def test_api_key_never_reaches_manifest(tmp_path, monkeypatch, secret):
     monkeypatch.setattr(refresh, "_get", boom)
     refresh.refresh()
     assert secret not in (tmp_path / "data/MANIFEST.json").read_text()
+
+
+def test_hurdat_check_and_gwi_event_rule(tmp_path):
+    assert refresh._hurdat_check(HURDAT_SAMPLE) == (2, None)
+    assert refresh._hurdat_check(b"nothing")[1] is not None
+    spec = importlib.util.spec_from_file_location("gwi_h", ROOT / "analysis/gwi_hurricanes.py")
+    gwi_h = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gwi_h)
+    f = tmp_path / "h.txt"
+    f.write_bytes(HURDAT_SAMPLE)
+    ev = gwi_h.landfall_events(f)
+    assert [(str(d.date()), n) for d, n in ev] == [("2017-08-26", "Harvey (AL092017)")]
