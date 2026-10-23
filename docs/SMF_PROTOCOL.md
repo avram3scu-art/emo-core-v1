@@ -297,4 +297,27 @@ reach p < 0.0167).
 and 2 quarters and FAIL at 4. Any other profile is reported as "differs",
 with the horizons that differ.
 
-**Result.** Not yet run.
+**Result.** Single run 2026-10-23: Action 39948229129, code 8aa3234, data and
+output 8baf911 (`results/smf_spf/result.txt`). Dropped: 0, 0, 5 surveys
+(the 5 early surveys without UNEMP6; 2% < 10%).
+
+| horizon | n | corr | SMF | p (p_min) | MSE_model / MSE_zero | verdict |
+|---|---|---|---|---|---|---|
+| 1 quarter | 223 | 0.853 | 0.801 | 0.0087 (0.0087) | 0.309 | **PASS** |
+| 2 quarters | 222 | 0.815 | 0.748 | 0.0088 (0.0088) | 0.377 | **PASS** |
+| 4 quarters | 215 | 0.753 | 0.678 | 0.0090 (0.0090) | 0.490 | **PASS** |
+
+Primary sample (without 2020Q1..2021Q4). Full sample, no weight: PASS at all
+three (corr 0.66, 0.64, 0.68). Surveys from 2010Q1 only, no weight: corr
+0.82, 0.88, 0.92, MSE ratio 0.29, 0.24, 0.21, but p = 0.031–0.032 = p_min
+(n ≈ 56), so FAIL on the p condition, as expected.
+
+**Comparison: differs** by the rule stated above, at 4 quarters: the SPF
+keeps fidelity at about 12 months (r = 0.75, MSE 51% below "no change"),
+where EIA's CO2 and electricity forecasts had none. The decay within a year
+is therefore not a general property of forecasters; it holds for EIA's two
+energy variables. Because forecaster and variable both changed, this run
+cannot say whether the difference comes from the forecaster or from
+unemployment being easier to forecast a year ahead (its changes are
+persistent, while energy use swings with weather and prices). "No change" is
+also a weaker benchmark for a persistent series.

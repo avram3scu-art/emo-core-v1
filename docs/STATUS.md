@@ -27,9 +27,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - p sits at p_min for the passes (≈ 0.011): ~87 distinct shifts, none reached the observed correlation.
 
 **Open questions**
-- Is the decay within a year specific to EIA? Search after close (3 web queries, not exhaustive): no second forecaster found with archived monthly CO2 forecast editions; results returned only EIA material. Unverified candidates outside CO2: ENTSO-E load forecasts (Transparency Platform, API token needed), OPEC monthly oil demand forecasts (PDF only). Stopped there, no protocol.
+- Is the decay within a year specific to EIA? Partly answered by §11 (SPF keeps fidelity at 12 months). Search after close (3 web queries, not exhaustive): no second forecaster found with archived monthly CO2 forecast editions; results returned only EIA material. Unverified candidates outside CO2: ENTSO-E load forecasts (Transparency Platform, API token needed), OPEC monthly oil demand forecasts (PDF only). Stopped there, no protocol.
 - Electricity check (same day, §10): probe run 39946118805, protocol 950ad46, code 427966a, run 39946280348 → 7031a64. Retail sales: 3 PASS (r = 0.57), 6 PASS (r = 0.54), 12 FAIL (r = 0.06, MSE +12%): same horizon as CO2. Second EIA variable, not a second forecaster.
-- One-off workflows (`probe_layout.yml`, `probe_elec_layout.yml`, `smf_steo*.yml`) stay in the repo, manual only; delete or keep?
+- Second forecaster (same day, §11): SPF median unemployment, probe 39948050223, protocol 8fb4c79, code 8aa3234, run 39948229129 → 8baf911. PASS at 1, 2 and 4 quarters (r = 0.85, 0.82, 0.75; MSE 31–49% of "no change"): differs from EIA at 12 months. Forecaster and variable both changed, so the cause of the difference is open.
+- One-off workflows (`probe_layout.yml`, `probe_elec_layout.yml`, `probe_spf_layout.yml`, `smf_steo*.yml`, `smf_spf.yml`) stay in the repo, manual only; delete or keep?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
 **Adrian must do**
