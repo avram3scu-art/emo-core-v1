@@ -15,9 +15,9 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Consequence: GWI does not score He's I (`docs/UIA_PROTOCOL.md` §5). Session-6 GWI PASS unchanged.
 
 **Open questions**
-- Why did "Mitochondrion" return no interlanguage links?
+- Why did "Mitochondrion" return no interlanguage links? Checked (§8 of the calibration protocol): English views drop ~85% on 10–12 July 2026, consistent with a page move making the title a redirect (query does not follow redirects). Not verified; a session fetch still showed the old title.
 - Would a per-article null (each article calibrated on its own past) transfer? Needs a new pre-registration.
-- Optional diagnostic, no weight on the verdict: do the 53 "Prime number" ignitions cluster on a few dates (real attention, so not a true placebo) or scatter (threshold does not transfer)? Not run.
+- "Prime number" diagnostic, done (no weight): 50 of 53 ignitions in September, weekdays only, 8 of 11 years: academic-year start, a calendar driver the 56-day baseline does not remove. Redesign would need a seasonal baseline. Session-6 PASS survives a September split (Sep 6/6 vs 5/34, p = 1.2e-4; other months 8/15 vs 4/241, p = 7.0e-9), but September is a weak spot.
 - Any redesign must not be tuned on the now-opened articles: new articles (≥10, chosen by rule) and dates after 2026-10-18 only. Not a priority: GWI cannot score either coded DAC case (warnings before July 2015).
 
 **Adrian must do**

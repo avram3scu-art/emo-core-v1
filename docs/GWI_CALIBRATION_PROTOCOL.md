@@ -116,3 +116,28 @@ Read with these limits:
   checked; possibly a redirect). Two held-out articles remained, so the test was testable by §3.
 - Consequence (§5): GWI does not score the He letter I. The session-6 event result stands; it is a
   contrast with control windows and never relied on the threshold's nominal rate.
+
+## 8. Exploratory diagnostics after the result (no weight; verdict in §7 unchanged)
+
+Run 2026-10-23 in the session on the committed data; not pre-registered.
+
+**"Mitochondrion" (one stream).** Only the English stream was written: the English interlanguage-link
+query returned no links. English views of the title fall about 85 % between 10 and 12 July 2026
+(monthly median ~900/day in June, ~150–170/day from July to October). That pattern fits the title
+becoming a redirect after a page move, and the query (no `redirects=1`) returns no links for a
+redirect. **Not verified:** the English article fetched in this session still showed the title
+"Mitochondrion" (that fetch may be cached). Cause therefore open. Pre-2026 data are unaffected.
+A future fetch should follow redirects; it would not change this run.
+
+**"Prime number" (53 ignition days).** Not scattered, not tied to news: 50 of 53 fall in September,
+all on Monday–Friday, in 22 short runs, in 8 of the 11 years. This is the start of the academic year,
+shared by most of the 12 editions; the 56-day rolling-median baseline lags a seasonal step-up, so it
+reads as a coincident excursion. The calibration did not fail at random: it failed on a calendar driver
+the protocol named as a known limit (§6). A redesign would need a seasonal baseline (same weeks of
+earlier years), pre-registered and tested on articles and dates not yet opened.
+
+**Check on the session-6 GWI pass (exploratory).** Because hurricanes also peak in September: with the
+session-6 rule, September control windows were hit 5/34 vs 4/241 for other June–November controls,
+so September is a weak spot. Split by month, the event contrast still holds: September events 6/6 vs
+controls 5/34 (Fisher one-sided p = 1.2e-4); other months 8/15 vs 4/241 (p = 7.0e-9). The session-6
+PASS is not explained by the calendar effect, but its September contrast is weaker than the pooled one.
