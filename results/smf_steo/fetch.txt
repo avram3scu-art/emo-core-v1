@@ -1,0 +1,85 @@
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_steo_smf.py:56: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(raw), sheet_name=None, header=None)
+editions parsed 186, dropped 0

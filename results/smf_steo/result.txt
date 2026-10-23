@@ -1,0 +1,12 @@
+editions expected 186, parsed 186, dropped 0
+codes used: {'TETCCO2': np.int64(119), 'FFTCCO2': np.int64(67)}
+[primary] n=186 T 2011-01..2026-06
+  best_corr=0.393 null_corr_95=0.168 smf=0.271 p=0.0104 n_null=95 p_min=0.0104
+  MSE_model=0.002841 MSE_naive=0.008225 ratio=0.345
+  naive vs realised: corr=-0.301 smf=0.000 p=0.9792
+  verdict: PASS
+[secondary: without 2020-03..2021-12 (no weight)] n=164 T 2011-01..2026-06
+  best_corr=-0.006 null_corr_95=0.202 smf=0.000 p=0.3452 n_null=83 p_min=0.0119
+  MSE_model=0.002000 MSE_naive=0.004796 ratio=0.417
+  naive vs realised: corr=-0.188 smf=0.000 p=0.8929
+  verdict: FAIL (p<0.05, SMF>0 not met)
