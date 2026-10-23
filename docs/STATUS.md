@@ -14,8 +14,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - No published annual emissions path covers ≥ 38 realised years (would need publication ≤ 1986). RCP paths start after 2005 (< 21 points); SRES is decadal.
 - Construct issue: correlation is scale-free and circular shifts break trends, so two rising series "pass" without any level fidelity. A test in levels would mainly restate "both go up".
 
+**Fix done (same day, Adrian's request):** `emo/smf.py` v1.2 (9dc38eb): each admissible shift used at most once; `extra["n_null"]` and `extra["p_min"]` reported; 2 new tests. Run 39940150931 → 2141fe9: 102 passed, all checks passed. Consequence: a correlation SMF on ≤ 37 annual points cannot reach p < 0.05; the fix makes that visible, it does not make the annual test possible.
+
 **Open questions (for Adrian)**
-- Fix `smf.py` first (enumerate all admissible shifts, honest p, minimum-p check), as its own pre-registered session?
+- ~~Fix `smf.py` first~~ (done, 9dc38eb) (enumerate all admissible shifts, honest p, minimum-p check), as its own pre-registered session?
 - Then either a monthly self-model with hundreds of points (e.g. EIA Short-Term Energy Outlook vintages vs realised monthly US CO2; deviates from "OWID CO2") or a level-fidelity statistic (error vs a naive persistence forecast) instead of correlation.
 
 **Adrian must do**
