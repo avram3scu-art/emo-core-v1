@@ -15,3 +15,4 @@
 | 2026-10-23 | 7 | SMF on a real case | no | 8605b0b | Stopped before pre-registration: smf.py null degenerate on annual data (n=25 → 6 distinct shifts; reported p overstated); no data opened |
 | 2026-10-23 | 7a | smf.py null fix | yes | 9dc38eb | each shift once, honest p, p_min reported; 102 tests pass (run 39940150931) |
 | 2026-10-23 | 7b | SMF on EIA STEO vs MER (redefined case) | yes | 7fc7696 | PASS (r=0.39, p=0.010, beats persistence) but r=-0.01 without 2020-21; carried by the pandemic swing |
+| 2026-10-23 | 7c | SMF follow-up: leads 3/6/12 vs no change, without 2020-21 (§8) | yes | c32cfa9 | PASS h=3 (r=0.53), PASS h=6 (r=0.52), FAIL h=12 (r=-0.01, worse than no change) |

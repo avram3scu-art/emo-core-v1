@@ -155,4 +155,23 @@ PASS_h if p < 0.0167, SMF > 0 and MSE_model < MSE_zero. Reported as a profile
 of three verdicts, never combined into one score. Also reported, no weight:
 the full sample (with 2020–21) for each lead, and the §6 persistence MSE.
 
-**Result.** Not yet run.
+**Result.** Single run 2026-10-23: Action 39942987695, code 30a0a48, data and
+output c32cfa9 (`results/smf_steo_leads/result.txt`). No edition dropped
+for any lead. Lead 12 reproduces §7 exactly (parser cross-check).
+
+| lead h | n | corr | SMF | p (p_min) | MSE_model / MSE_zero | verdict |
+|---|---|---|---|---|---|---|
+| 3 | 173 | 0.532 | 0.466 | 0.0112 (0.0112) | 0.758 | **PASS** |
+| 6 | 170 | 0.518 | 0.450 | 0.0114 (0.0114) | 0.809 | **PASS** |
+| 12 | 164 | −0.006 | 0.000 | 0.345 (0.0119) | 1.185 | **FAIL** (all three) |
+
+Primary sample (without 2020-03..2021-12). Full sample, no weight: PASS at
+all three leads (corr 0.64, 0.61, 0.39).
+
+**Reading.** SMF detects real fidelity at 3 and 6 months: EIA's forecasts
+track ordinary 12-month changes and beat "no change", by 24% and 19% in MSE.
+At 12 months, outside the pandemic, the forecasts are worse than "no change"
+(MSE 18% higher) and uncorrelated with the outcome. The §7 pass at lead 12
+was the pandemic swing. Fidelity of this self-model decays to zero within a
+year. p sits at p_min for leads 3 and 6: no shift reached the observed
+correlation; with ~87 distinct shifts the p-value cannot go lower.

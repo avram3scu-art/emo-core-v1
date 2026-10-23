@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 7b (2026-10-23) — SMF on a real case, redefined
 
-**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months.
+**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months; follow-up §8: PASS at leads 3 and 6, FAIL at 12.
 
 **Done**
 - `emo/smf.py` v1.2 (9dc38eb): each shift once, honest p, `n_null`/`p_min`; 102 tests pass (run 39940150931).
@@ -16,8 +16,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Without 2020-03..2021-12: r = −0.006, SMF = 0, p = 0.345 → no fidelity outside the pandemic swing.
 - Persistence turned out anti-correlated with outcomes, so the MSE condition was weak.
 
+**Follow-up (same day, Adrian's request):** pre-registered §8 (6f95ad8, not blind for lead 12), code 30a0a48, single run 39942987695 → c32cfa9. Without 2020-21, vs "no change", Bonferroni α = 0.0167: lead 3 PASS (r = 0.53, MSE −24%), lead 6 PASS (r = 0.52, MSE −19%), lead 12 FAIL (r = −0.01, MSE +18%). SMF detects fidelity at short leads; this self-model has none at 12 months outside the pandemic.
+
 **Open questions**
-- Does the pass survive a "no change" benchmark and other leads (6, 18 months)? Needs a new pre-registration; the data are now opened.
+- Lead 18 not tested (Jul–Dec editions do not reach 18 months).
 - Probe workflow `probe_layout.yml` and one-off `smf_steo.yml` stay in the repo; neither runs on schedule.
 
 **Adrian must do**
