@@ -20,3 +20,4 @@
 | 2026-10-23 | 7 close | SMF on a real case (redefined: EIA STEO vs MER) | yes | 20da6c5 | smf.py v1.2 null fix; SMF PASS at leads 3 and 6, FAIL at 12 and 18 (lead-12 pass only via 2020-21) |
 | 2026-10-23 | 7e | SMF on STEO electricity retail sales (§10) | yes | 7031a64 | same horizon as CO2: PASS 3 and 6 months, FAIL 12 |
 | 2026-10-23 | 7f | SMF on SPF unemployment, second forecaster (§11) | yes | 8baf911 | PASS at 1, 2, 4 quarters (r=0.85/0.82/0.75): differs from EIA at 12 months; forecaster and variable both changed |
+| 2026-10-23 | 7g | SMF forecaster vs variable: industrial production, EIA and SPF (§12) | yes | 2c18760 | pre-registered reading "forecaster effect", undone by exploratory checks: since 2010 SPF also worse than no change at a year; design flaw (period, definition) |

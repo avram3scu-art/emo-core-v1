@@ -369,4 +369,36 @@ seed=0)`; PASS_h if p < 0.0167, SMF > 0, MSE_model < MSE_zero; >10% dropped
 - EIA PASS, SPF FAIL → reported as found, no reading.
 Shorter leads are reported as profiles alongside.
 
-**Result.** Not yet run.
+**Result.** Single run 2026-10-23: Action 39948712388, code e3aef93, data and
+output 2c18760 (`results/smf_ip/result.txt`). SPF sheet INDPROD matched the
+assumed layout. Dropped: EIA 0; SPF 0, 0, 5.
+
+| forecaster, lead | n | corr | SMF | p (p_min) | MSE_model / MSE_zero | verdict |
+|---|---|---|---|---|---|---|
+| EIA 3 months | 173 | 0.715 | 0.641 | 0.0112 (0.0112) | 0.496 | PASS |
+| EIA 6 months | 170 | 0.562 | 0.420 | 0.0114 (0.0114) | 0.760 | PASS |
+| EIA 12 months | 164 | 0.201 | 0.000 | 0.262 (0.0119) | 1.387 | **FAIL** |
+| SPF 1 quarter | 223 | 0.682 | 0.605 | 0.0087 (0.0087) | 0.495 | PASS |
+| SPF 2 quarters | 222 | 0.635 | 0.516 | 0.0088 (0.0088) | 0.560 | PASS |
+| SPF 4 quarters | 215 | 0.588 | 0.510 | 0.0090 (0.0090) | 0.604 | **PASS** |
+
+Primary samples (without 2020–21). **By the pre-registered rule: forecaster
+effect** (EIA FAIL at 12 months, SPF PASS at 4 quarters, same variable).
+
+**Exploratory checks, computed after the run, no weight** (not
+pre-registered; the data were already open):
+
+| SPF 4 quarters, without 2020–21 | n | corr | p (p_min) | MSE_model / MSE_zero |
+|---|---|---|---|---|
+| (i) §12 definition, surveys 2010Q1+ (EIA's period) | 55 | 0.418 | 0.032 (0.032) | 1.092 |
+| (ii) change from the current quarter (ln INDPROD6 − ln INDPROD2), all surveys | 215 | 0.459 | 0.0090 (0.0090) | 0.742 |
+| (iii) (ii), surveys 2010Q1+ | 55 | 0.335 | 0.032 (0.032) | 1.245 |
+
+They weaken the reading. In EIA's period (i) the SPF also forecasts IP worse
+than "no change" a year ahead, as EIA does; its 4-quarter pass rests on
+1969–2009. And part of the SPF's skill comes from the quarter it partly
+observes when surveyed: without it (ii) the margin over "no change" shrinks
+from 40% to 26%. The two forecasters were not compared over the same period
+with the same change definition, and that is the design flaw of §12. What
+survives: on IP since 2010, neither forecaster beats "no change" at a year
+(EIA pre-registered, SPF exploratory). A forecaster effect is not shown.
