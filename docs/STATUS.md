@@ -4,38 +4,40 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 7 (2026-10-23) — SMF on a real case
 
-**Done when met: yes**, with the case redefined by Adrian (EIA monthly CO2 instead of OWID annual). Results in `docs/SMF_PROTOCOL.md` §7–§9.
+**Done when met: yes**, with the case redefined by Adrian (EIA monthly series instead of OWID annual). Results in `docs/SMF_PROTOCOL.md` §7–§12; each test committed before its data and run once.
 
 **Done**
-- Stopped the original task before pre-registration (8605b0b): on annual OWID CO2 the circular-shift null cannot reach p < 0.05 below 38 points, and no published annual emissions path is that long.
-- `emo/smf.py` v1.2 (9dc38eb): each admissible shift used once, honest p, `n_null`/`p_min` reported; 2 new tests; 102 pass (run 39940150931 → 2141fe9).
-- Layout-only probe of STEO and MER files, no values printed (`scripts/probe_steo_layout.py`, runs 39940687789, 39940799124).
-- Three pre-registered tests, each committed before its data and run once:
-  - §7 lead 12 vs persistence: protocol 14b06b2 (draft 5a88999), code 1677108, run 39941453995 → 7fc7696.
-  - §8 leads 3/6/12 vs "no change", without 2020-03..2021-12: protocol 6f95ad8, code 30a0a48, run 39942987695 → c32cfa9.
-  - §9 lead 18: protocol f6519cd, code b5ed83b, run 39944422318 → 9cb5ded.
+- Original task stopped before pre-registration (8605b0b): on annual OWID CO2 the circular-shift null cannot reach p < 0.05 below 38 points.
+- `emo/smf.py` v1.2 (9dc38eb): each admissible shift used once, honest p, `n_null`/`p_min` reported; 102 tests pass (run 39940150931).
+- Layout-only probes, no values printed: STEO/MER (39940687789, 39940799124), electricity (39946118805), SPF (39948050223), industrial production (39948495201).
+- Tests (protocol → code → run → data/result):
+  - §7 EIA CO2, lead 12 vs persistence: 14b06b2 → 1677108 → 39941453995 → 7fc7696.
+  - §8 EIA CO2, leads 3/6/12 vs "no change", without 2020–21: 6f95ad8 → 30a0a48 → 39942987695 → c32cfa9.
+  - §9 EIA CO2, lead 18: f6519cd → b5ed83b → 39944422318 → 9cb5ded.
+  - §10 EIA electricity sales: 950ad46 → 427966a → 39946280348 → 7031a64.
+  - §11 SPF unemployment: 8fb4c79 → 8aa3234 → 39948229129 → 8baf911.
+  - §12 industrial production, EIA and SPF: 834d39c → e3aef93 → 39948712388 → 2c18760; record 97d4ff4.
+- Second-forecaster search (3 web queries): no other archived monthly CO2 forecaster found.
 
-**Results**
-- §7: PASS (r = 0.39, p = 0.010, MSE 0.35 × persistence), but r = −0.01 without 2020–21: carried by the pandemic swing. Persistence was anti-correlated with outcomes, so that benchmark was weak.
-- §8–§9 primary (without 2020–21, vs "no change"): lead 3 PASS (r = 0.53, MSE −24%), lead 6 PASS (r = 0.52, −19%), lead 12 FAIL (r = −0.01, +18%), lead 18 FAIL (r = −0.21, +24%).
-- SMF detects real fidelity; EIA's model of US emissions is faithful only within about six months.
-- Failures on record: original annual test not runnable (smf.py v1.1 null defect); §7 pass not robust; leads 12 and 18 fail.
+**Results (primary samples: without 2020–21, vs "no change")**
+- EIA CO2: 3 m PASS, 6 m PASS, 12 m FAIL, 18 m FAIL. The §7 lead-12 pass (vs persistence) came only from 2020–21.
+- EIA electricity: 3 m PASS, 6 m PASS, 12 m FAIL.
+- SPF unemployment (1968–2026): PASS at 1, 2, 4 quarters.
+- Industrial production: EIA 3 m PASS, 6 m PASS, 12 m FAIL; SPF PASS at 1, 2, 4 quarters → pre-registered reading "forecaster effect". Exploratory checks (no weight) undo it: since 2010 the SPF is also worse than "no change" a year ahead (MSE 1.09); its pass rests on 1969–2009 and on the partly observed survey quarter.
+- Overall: SMF detects real fidelity at short horizons. Since 2010, no tested forecast of an energy or industrial variable beats "no change" a year ahead; whether that is forecaster, variable or period is not resolved.
+- Failures on record: original annual test not runnable (v1.1 null defect); §7 pass not robust; §12 design flaw (periods and change definitions differ).
 
 **Limits**
-- One agency both forecasts and measures; this is EIA's model of the US, not a wider self-model.
-- Realised values are today's revised MER vintage. §8 lead 12 and §9 were not blind (lead-12 values opened in §7).
-- p sits at p_min for the passes (≈ 0.011): ~87 distinct shifts, none reached the observed correlation.
+- EIA both forecasts and measures; STEO macro forecasts rest on an outside model (unverified). Realised values are current revised vintages. §8 lead 12, §9 and §12 exploratory checks were not blind.
+- Passes sit at p_min (≈ 0.009–0.011): no shift reached the observed correlation.
 
 **Open questions**
-- Is the decay within a year specific to EIA? Partly answered by §11 (SPF keeps fidelity at 12 months). Search after close (3 web queries, not exhaustive): no second forecaster found with archived monthly CO2 forecast editions; results returned only EIA material. Unverified candidates outside CO2: ENTSO-E load forecasts (Transparency Platform, API token needed), OPEC monthly oil demand forecasts (PDF only). Stopped there, no protocol.
-- Electricity check (same day, §10): probe run 39946118805, protocol 950ad46, code 427966a, run 39946280348 → 7031a64. Retail sales: 3 PASS (r = 0.57), 6 PASS (r = 0.54), 12 FAIL (r = 0.06, MSE +12%): same horizon as CO2. Second EIA variable, not a second forecaster.
-- Second forecaster (same day, §11): SPF median unemployment, probe 39948050223, protocol 8fb4c79, code 8aa3234, run 39948229129 → 8baf911. PASS at 1, 2 and 4 quarters (r = 0.85, 0.82, 0.75; MSE 31–49% of "no change"): differs from EIA at 12 months. Forecaster and variable both changed, so the cause of the difference is open.
-- Forecaster vs variable (same day, §12): industrial production, EIA and SPF. Probe 39948495201, protocol 834d39c, code e3aef93, run 39948712388 → 2c18760. Pre-registered reading: forecaster effect (EIA 12 m FAIL, SPF 4 q PASS). Exploratory checks (no weight) undo it: since 2010 the SPF is also worse than "no change" on IP at a year (MSE 1.09), and its long-sample pass rests on 1969–2009 and on the partly observed survey quarter. Design flaw: periods and change definitions differ. Open: same-period, same-definition comparison (needs new pre-registration; data opened).
-- One-off workflows (`probe_layout.yml`, `probe_elec_layout.yml`, `probe_spf_layout.yml`, `probe_ip_layout.yml`, `smf_steo*.yml`, `smf_spf.yml`, `smf_ip.yml`) stay in the repo, manual only; delete or keep?
+- Same-period (2010+), same-definition EIA vs SPF comparison: SPF n ≈ 55 gives p_min ≈ 0.032 > 0.0167, so it can describe but not pass; needs a new pre-registration (data opened).
+- Eight one-off workflows (`probe_*.yml`, `smf_steo*.yml`, `smf_spf.yml`, `smf_ip.yml`), manual only: keep or delete?
 - `ci.yml` still does not run on `emo-2026-10` (carried over).
 
 **Adrian must do**
-- Nothing.
+- Nothing. Optional: decide on the one-off workflows.
 
 ## Next session
 Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
