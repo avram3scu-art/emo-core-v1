@@ -256,3 +256,45 @@ of US electricity sales track 12-month changes at 3 and 6 months and beat "no
 change" (MSE −36% and −30%); at 12 months they are uncorrelated and 12%
 worse than "no change". The decay within a year holds for two EIA variables;
 whether it holds beyond EIA is untested (§8 note; no second forecaster found).
+
+## 11. A forecaster other than EIA: Survey of Professional Forecasters (pre-registration)
+
+Registered 2026-10-23 after §10, at Adrian's request. Question: is the loss
+of fidelity within a year (§8–§10) specific to EIA? No second CO2 or energy
+forecaster with archived machine-readable monthly editions was found
+(`docs/STATUS.md`, session 7). The nearest candidate is a different forecaster
+of a different US quantity: the median forecast of the US unemployment rate
+in the Philadelphia Fed's Survey of Professional Forecasters (SPF), quarterly
+since 1968. This changes both forecaster and variable; a difference from EIA
+cannot be attributed to either alone.
+
+**Layout checked beforehand, values never opened:** run 39948050223
+(`scripts/probe_spf_layout.py`). `medianLevel.xlsx`
+(`https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/historical-data/medianLevel.xlsx?sc_lang=en&hash=E52F5DEF4551C3EBD24031A04CE6E98A`),
+sheet UNEMP: YEAR, QUARTER, UNEMP1..UNEMP6, surveys 1968Q4 to 2026Q3, 232
+rows (UNEMP6 missing in 5). Realised: FRED UNRATE
+(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE`), monthly
+1948-01 to 2026-09. Prior expectation (from general knowledge, unverified):
+short-horizon unemployment forecasts are usually skilful.
+
+**Series.** Survey in quarter q. UNEMP1 is the forecasters' value for q − 1
+(last observed), UNEMP3, UNEMP4, UNEMP6 the forecasts for q + 1, q + 2,
+q + 4. R = quarterly mean of monthly UNRATE (current vintage). For
+h ∈ {1, 2, 4} quarters (≈ 3, 6, 12 months), target T = q + h:
+model_h(T) = UNEMP(h+2) − UNEMP1; realised(T) = R(T) − R(q − 1). Changes in
+percentage points; the rate is seasonally adjusted, so no seasonal step.
+Surveys 1968Q4 onward with T ≤ 2026Q3; a survey missing a needed value is
+dropped for that horizon (>10% dropped → not run).
+
+**Sample, benchmark, statistic, pass / fail:** as §8. Primary sample without
+T in 2020Q1..2021Q4; benchmark "no change" (MSE_zero = mean(realised²));
+`compute_smf(model, realised, max_lag_days=0, n_surrogates=999, seed=0)`;
+PASS_h if p < 0.0167, SMF > 0 and MSE_model < MSE_zero. Reported, no weight:
+full sample; surveys 2010Q1 onward only (EIA's period; expected too short to
+reach p < 0.0167).
+
+**Comparison (stated before the run).** "Same horizon as EIA" if PASS at 1
+and 2 quarters and FAIL at 4. Any other profile is reported as "differs",
+with the horizons that differ.
+
+**Result.** Not yet run.
