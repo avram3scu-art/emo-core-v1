@@ -16,6 +16,8 @@
 | openalex_articles_anycountry_by_year_excl_CN_ID.json | ok | no | 200 |
 | openalex_single_country_2020_by_country.json | ok | no | 200 |
 | openalex_single_country_2025_by_country.json | ok | no | 200 |
+| hurdat2_atlantic.txt | ok | yes | 1988 |
+| wikipedia_pageviews_gwi.csv | ok | yes | 89136 |
 
 Not refreshed by design (manual or hand-coded): NHC track errors, DAC event dates, forecast ledger.
 
@@ -34,11 +36,11 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 - `dac_compare_ozone_climate`: unchanged since 2026-10-21
 - `organismality_plane`: unchanged since 2026-10-21
 - `information_time_nhc`: unchanged since 2026-10-21
-  - figure `analysis/information_time_nhc.png` changed; copy kept in this folder
 - `score_forecast_ledger`: unchanged since 2026-10-21
+- `gwi_hurricanes`: first recorded run
 
 Note: the subtitle of `dac_ozone_vs_climate.png` states fixed percentages (ozone -99 % in 20 years, CO₂ +48 %). If `dac_compare_ozone_climate` changed, check that text.
 
 ## Tests
 
-- pytest: 96 passed, 1 warning in 8.06s
+- pytest: 97 passed, 1 warning in 7.56s
