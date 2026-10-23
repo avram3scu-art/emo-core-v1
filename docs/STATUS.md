@@ -12,7 +12,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - `docs/STATUS.md` and `docs/SESSION_LOG.md` created.
 
 **Not done**
-- Default branch is still `main`. The session's GitHub access does not allow settings changes (HTTP 403). Adrian must change it by hand (steps below).
+- Nothing outstanding. The default branch could not be changed from the session (settings writes blocked, HTTP 403); Adrian changed it by hand, and `emo-2026-10` was confirmed as the default branch at close (09:05, 23 Oct). `main` kept.
 
 **Found**
 - `emo-2026-10` head was 691d3fe, not 9428f24: one extra commit (21 Oct) updating project URLs in pyproject.toml after the transfer. Harmless.
@@ -20,7 +20,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Other documents still claim a live system: `WHITEPAPER_EMO_v1_*`, `LIVE_PIPELINES.md`, `DESTINE_INTEGRATION.md`, `deck/`, `docs/DAC_V0_1_ISSUES.md`. README flags them; rewrite is session 15.
 
 **Adrian must do**
-1. github.com/avram3scu-art/emo-core-v1 → Settings → General → Default branch → click the switch-branches icon → choose `emo-2026-10` → Update → confirm. Do not delete `main`.
+- Nothing for session 1.
 
 ## Open questions
 - 82 defined vs 57 passing tests: are 25 failing, skipped, or was 57 counted before tests were added?
