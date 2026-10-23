@@ -35,12 +35,12 @@ The narrow thing EMO does today that none of the opened sources does: publish, a
 
 ### E3. Worldwide Governance Indicators (WGI)
 
-- **Opened:** WGI FAQ page, World Bank: https://www.worldbank.org/en/publication/worldwide-governance-indicators/frequently-asked-questions. The 2025 methodology revision PDF was found but **not opened**.
+- **Opened:** WGI FAQ page, World Bank: https://www.worldbank.org/en/publication/worldwide-governance-indicators/frequently-asked-questions; and *The Worldwide Governance Indicators: Revised Methodology for Measuring Governance Using Perception Data* (World Bank DECIG, December 2025; Jiang, Jain, Romano, Boyce), PDF supplied by Adrian, 23 Oct 2026: https://www.worldbank.org/content/dam/sites/govindicators/doc/The%20Worldwide%20Governance%20Indicators%202025%20Methodology%20Revision.pdf
 - **What it measures:** six perception-based dimensions: Voice and Accountability, Political Stability, Government Effectiveness, Regulatory Quality, Rule of Law, Control of Corruption.
-- **How:** 35 sources (14 surveys, 21 expert assessments), rescaled and combined by an Unobserved Components Model; 90% confidence intervals; dimensions are not combined into one score.
-- **Coverage:** 200+ economies, from 1996; annual since 2002.
+- **How:** 35 sources (surveys and expert assessments), 400+ individual indicators rescaled to 0–1 and averaged within source and dimension, then combined by an Unobserved Components Model whose weights reflect each source's estimated precision; 90% confidence intervals. The 2025 revision lets the global average vary over time and maps estimates onto an absolute 0–100 scale anchored by two hypothetical benchmark countries (all representative sources at 1, or all at 0). The six dimensions are not combined into one index (paper: too broad to interpret meaningfully). Historical estimates recalculated back to 1996.
+- **Coverage:** 200+ economies, annually 1996–2024 (2025 paper); the FAQ says the 2026 edition covers data through 2025.
 - **EMO overlap:** none in substance. WGI is national and perception-based; EMO's running analyses are global and outcome-based.
-- **What EMO adds:** not comparable. Note: WGI already follows the rule EMO adopted (report dimensions separately, give uncertainty). EMO should cite it as precedent, not as a gap.
+- **What EMO adds:** not comparable. WGI already follows the rule EMO adopted (dimensions reported separately, with uncertainty), and since 2025 it can show global trends over time. EMO should cite it as precedent, not as a gap.
 
 ### E4. Regime effectiveness: Miles et al. (2002), the Oslo-Seattle project
 
@@ -103,8 +103,8 @@ The narrow thing EMO does today that none of the opened sources does: publish, a
 
 ## Not opened / flags
 
-- Full texts of Miles et al. 2002, Breitmeier et al. 2006 and 2011 (catalogue records and abstract only).
-- Sovereign ESG portal itself; WGI 2025 methodology PDF; Global Status of MHEWS 2025 report.
+- Full texts of Miles et al. 2002, Breitmeier et al. 2006 and 2011 (catalogue records and abstract only). Adrian has no access; the 2006 book costs about €74. Not bought: the white papers no longer claim a gap that depends on them.
+- Sovereign ESG portal itself; Global Status of MHEWS 2025 report. (WGI 2025 methodology: opened 23 Oct, supplied by Adrian.)
 - Pattberg et al. 2014; Kim 2013; any ESG Project indicator set beyond the two items above.
 - Forecast-verification literature (relevant to τ_I) and science-of-science work (relevant to a white-paper claim): not in this session's list, not searched.
 

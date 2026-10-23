@@ -16,7 +16,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Results**
 - "No instrument measures how humanity responds" is false: policy coherence, governance quality, regime effectiveness and response timing are all measured elsewhere.
 - What EMO does that none of the opened sources does: an open, weekly re-run series of dated warning→policy→delivery lags (DAC). Same question as the regime-effectiveness literature, different form; overlap with Miles 2002 (ozone, ch. 6) is high.
-- Not opened: full texts of Miles 2002, Breitmeier 2006/2011; Sovereign ESG portal itself; WGI 2025 methodology; Global Status of MHEWS 2025 report; Pattberg et al. 2014. No full-text database searched; no novelty claim made.
+- Not opened: full texts of Miles 2002, Breitmeier 2006/2011; Sovereign ESG portal itself; Global Status of MHEWS 2025 report; Pattberg et al. 2014. No full-text database searched; no novelty claim made.
 
 **Open questions**
 - Do Miles 2002 or the IRD already report dated lags? Needs the full texts (library access).
