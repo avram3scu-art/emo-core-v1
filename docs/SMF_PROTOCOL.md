@@ -321,3 +321,52 @@ cannot say whether the difference comes from the forecaster or from
 unemployment being easier to forecast a year ahead (its changes are
 persistent, while energy use swings with weather and prices). "No change" is
 also a weaker benchmark for a persistent series.
+
+## 12. Separating forecaster from variable: industrial production (pre-registration)
+
+Registered 2026-10-23 after §11, at Adrian's request. §11 changed forecaster
+and variable at once. Here both forecasters forecast the same variable, US
+total industrial production (IP):
+
+| | energy (CO2, electricity) | unemployment | industrial production |
+|---|---|---|---|
+| EIA STEO | §8, §10: fidelity lost by 12 months | – | **this test** |
+| SPF | – | §11: kept at 4 quarters | **this test** |
+
+**Layout checked beforehand, values never opened:** run 39948495201
+(`scripts/probe_ip_layout.py`): STEO sheet 9atab row `ZOTOIUS` "Total
+Industrial Production" in January 2010, 2015, 2020 and October 2026 (index
+base year changes between editions). The SPF and FRED lines of that probe were
+cut off in the annotation; the SPF sheet `INDPROD` is assumed to follow the
+UNEMP layout (INDPROD1..INDPROD6); if it does not, that forecaster is not run
+and this is recorded. Realised: FRED INDPRO
+(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO`), monthly, current
+vintage. Caveat: STEO's macro forecasts are built on an outside macroeconomic
+model (S&P Global, per STEO documentation; unverified this session), so
+"EIA" here means the forecast EIA publishes, not necessarily EIA's own model.
+
+**EIA series:** as §8, with F_e = row `ZOTOIUS` and R = FRED INDPRO:
+model(T) = ln F_e(T) − ln F_e(T − 12), realised(T) = ln R(T) − ln R(T − 12),
+leads 3, 6, 12 months, editions January 2010 to P = June 2026 − h. Log
+changes within one edition cancel its base year.
+
+**SPF series:** as §11, in logs: model = ln INDPROD(h+2) − ln INDPROD1,
+realised = ln R(T) − ln R(q − 1), R = quarterly mean of INDPRO (complete
+quarters), horizons 1, 2, 4 quarters, surveys 1968Q4 onward, T ≤ 2026Q3.
+
+**Sample, benchmark, statistic, pass / fail:** as §8 and §11, for each
+forecaster separately: without T in 2020-03..2021-12 (EIA) or 2020Q1..2021Q4
+(SPF); "no change"; `compute_smf(..., max_lag_days=0, n_surrogates=999,
+seed=0)`; PASS_h if p < 0.0167, SMF > 0, MSE_model < MSE_zero; >10% dropped
+→ not run. Full samples reported, no weight.
+
+**Reading rule (stated before the run), on the 12-month / 4-quarter verdict:**
+- EIA FAIL, SPF PASS → forecaster effect: on the same variable, EIA's
+  published forecast loses fidelity within a year and the SPF does not.
+- both FAIL → variable effect: IP, like energy, has no 12-month fidelity in
+  either forecaster; the §11 difference came from unemployment.
+- both PASS → EIA's energy failure is specific to energy variables.
+- EIA PASS, SPF FAIL → reported as found, no reading.
+Shorter leads are reported as profiles alongside.
+
+**Result.** Not yet run.
