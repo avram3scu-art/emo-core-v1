@@ -16,7 +16,8 @@
     "organismality_plane": "unchanged since 2026-10-21",
     "information_time_nhc": "unchanged since 2026-10-21",
     "score_forecast_ledger": "unchanged since 2026-10-21",
-    "gwi_hurricanes": "first recorded run"
+    "gwi_hurricanes": "first recorded run",
+    "gwi_calibration": "first recorded run"
   },
   "previous": "2026-10-21"
 }
