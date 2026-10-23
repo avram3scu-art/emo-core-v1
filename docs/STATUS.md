@@ -18,6 +18,11 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Run 39918662082: refresh succeeded and committed (9dc72e6); `pages` failed at Configure Pages: "Resource not accessible by integration" (the token may not create a Pages site). Session API also refused (403).
 - τ_I has no figure; it is shown as its number table only.
 
+**Open questions**
+- `tests/test_build_site.py` was run here only as a plain function (no pytest in this environment); its pytest result on GitHub was not inspected this session.
+- `actions/configure-pages@v5` targets Node 20 (deprecation warning in run 39918662082); upgrade when a newer major is available.
+- `ci.yml` still does not run on `emo-2026-10` (carried over from session 2).
+
 **Adrian must do**
 - Nothing. (Leave Actions log retention at its current value; do not set it to 7 days.)
 
