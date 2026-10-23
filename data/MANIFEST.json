@@ -4,66 +4,66 @@
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:>0,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "bb2f0a47ed6c1d9b7b478952b0c2ca66ac084d8677a475d9b842c52aaeb37e0b",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "3cf7029dccdd4c3470a1a1eb5ce587ba42c85d5f659faf5e3ff760471104d58f",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "openalex_articles_anycountry_by_year_excl_CN_ID.json": {
     "path": "data/sources/openalex_articles_anycountry_by_year_excl_CN_ID/openalex_articles_anycountry_by_year_excl_CN_ID.json",
     "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>0,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "7645d4916afeb44a8dc32ee40c11d51254c0878504a5229f3600c7c2bed16b9b",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "3764f8672e9218c891585fcc05f722d76ca0e2ad21c6d9142e701a4111d28086",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "openalex_articles_multicountry_by_year.json": {
     "path": "data/sources/openalex_articles_multicountry_by_year/openalex_articles_multicountry_by_year.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:>1,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "5fb469c0d59b40b1946e1e25f834a54e8835aa27202cbe72d08a4d1c5829a4de",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "9d854f0a9bdf93b0a04e9f87c6b28732f43636e6efcd33d856292c796715ccb9",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "openalex_articles_multicountry_by_year_excl_CN_ID.json": {
     "path": "data/sources/openalex_articles_multicountry_by_year_excl_CN_ID/openalex_articles_multicountry_by_year_excl_CN_ID.json",
     "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>1,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "3685fe9111213b242430c2047cd24364b869872df7da22f294b797e647daabeb",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "a77d30e6776b4ef1c4fc217987d81b1d3f87217b988e89559b51d2fea4752bc1",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "openalex_single_country_2020_by_country.json": {
     "path": "data/sources/openalex_single_country_2020_by_country/openalex_single_country_2020_by_country.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2020,type:article&group_by=authorships.countries",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "a9a6a021e184ccbe18a885b442a123c6d39ff09a4a4c6e903093d533e8718b35",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "151195f6b52e545e6f80dd14e0ae160ba5e5850a7ce689576e3d6983fa376848",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "openalex_single_country_2025_by_country.json": {
     "path": "data/sources/openalex_single_country_2025_by_country/openalex_single_country_2025_by_country.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "1c767b4d855d700b0d465e3ac22c68707e992301a8f08bfc132c3a4aa39efa70",
-    "downloaded_at": "2026-10-21T08:45:12Z",
-    "last_changed_at": "2026-10-20 (initial download)"
+    "sha256": "186ce81493ad6ce0cd86bc3856c7f6ba5278ae0fbb1d25d22a0ec0e4e26be083",
+    "downloaded_at": "2026-10-23T07:14:02Z",
+    "last_changed_at": "2026-10-23T07:14:02Z"
   },
   "owid_annual_co2_emissions.csv": {
     "path": "data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv",
@@ -73,7 +73,7 @@
     "changed": false,
     "rows": 29384,
     "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
-    "downloaded_at": "2026-10-21T08:45:12Z",
+    "downloaded_at": "2026-10-23T07:14:02Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_foreign_aid_share_of_gni.csv": {
@@ -84,7 +84,7 @@
     "changed": false,
     "rows": 2114,
     "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
-    "downloaded_at": "2026-10-21T08:45:12Z",
+    "downloaded_at": "2026-10-23T07:14:02Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_ozone_depleting_substance_consumption.csv": {
@@ -95,7 +95,7 @@
     "changed": false,
     "rows": 5642,
     "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
-    "downloaded_at": "2026-10-21T08:45:12Z",
+    "downloaded_at": "2026-10-23T07:14:02Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_ucdp_death_rate_armed_conflicts.csv": {
@@ -106,7 +106,7 @@
     "changed": false,
     "rows": 7561,
     "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
-    "downloaded_at": "2026-10-21T08:45:12Z",
+    "downloaded_at": "2026-10-23T07:14:02Z",
     "last_changed_at": "2026-10-20 (initial download)"
   }
 }

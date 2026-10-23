@@ -1,0 +1,10 @@
+Warning -> binding policy (Montreal Protocol, 1987-09-16):
+  molina_rowland_1974     13.2 years  (year_verified)
+  farman_1985              2.4 years  (month_verified)
+
+Delivery: world CFC + halon consumption, 1986 baseline 1,302,532 ODP t
+  50% reduction reached in 1993: 6 yr after policy, 19 yr after first warning
+  90% reduction reached in 2001: 14 yr after policy, 27 yr after first warning
+  99% reduction reached in 2008: 21 yr after policy, 34 yr after first warning
+
+Conversion: 1 binding treaty for 2 validated warnings; universal ratification (198 parties).
