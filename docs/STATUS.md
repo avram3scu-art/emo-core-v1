@@ -41,13 +41,13 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Fixes (same day, Adrian's request)**
 - (1) README pillar table, intro and test note corrected (weekly Action exists; GWI and SMF results; UIA a_UIA retired; 102 → 103 tests); public page "not yet measured" list corrected.
 - (5) Public page section 5: SMF primary results copied from `results/smf_*/result.txt`; page test checks it. Deployed at 29d2205 (GitHub deployment record); a fetch of the page returned a cached older copy, so the page was not checked visually.
-- (2) `ci.yml` now runs on pushes to `emo-2026-10`: tests and mypy pass; **ruff lint fails** on existing lint debt (run 39952816621; output not readable from the session). Not fixed.
+- (2) `ci.yml` now runs on pushes to `emo-2026-10`: tests and mypy pass; ruff lint failed (run 39952816621), then fixed: `ruff-autofix.yml` now reports issues (run 39956062452 → aecfb77, 28 auto-fixed of 52; most came from session-7 scripts), the other 24 fixed by hand (8c80d6c). CI 39956184040: tests, mypy and ruff all pass. `analysis/` stays excluded from lint (frozen scripts).
 - (3) `_pageviews_csv(..., follow_redirects=False)`: redirects followed only when asked, so the session-6/6c files are fetched as before; new test.
 - (4) Ten one-off workflows replaced by `one_off.yml` (manual, choice of job, commits only if asked); checked with probe-spf (run 39952550960). Recorded run IDs refer to the old files, kept in git history.
 - Failure on record: my new test helper shadowed `_Resp` and broke 3 refresh tests (CI 39952543332, weekly 39952555284 blocked, nothing committed); fixed by renaming. Weekly 39952996639: 103 passed, page rebuilt.
 
 **Adrian must do**
-- Nothing. Optional: decide whether to clear the ruff lint debt (CI red until then).
+- Nothing.
 
 ## Next session
 Session 8: synergy on real streams (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
