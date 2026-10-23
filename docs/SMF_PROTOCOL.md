@@ -207,3 +207,36 @@ even the pandemic swing is not foreseen.
 
 **Profile across §8–§9 (primary samples):** lead 3 PASS, 6 PASS, 12 FAIL,
 18 FAIL. At 18 months the forecasts are 24% worse than "no change".
+
+## 10. Second STEO variable: electricity retail sales (pre-registration)
+
+Registered 2026-10-23 after §9, at Adrian's request. Question: is the CO2
+profile (§8: PASS at 3 and 6 months, FAIL at 12) specific to CO2, or does
+EIA's model of US electricity use show the same horizon? Same forecaster, so
+this does not answer whether the decay is general beyond EIA. Electricity is
+not independent of CO2 (power plants are part of energy CO2).
+
+**Layout checked beforehand, values never opened:** run 39946118805
+(`scripts/probe_steo_elec_layout.py`). STEO table 7a, retail sales row:
+`EXTCPUS` in billion kWh per day (January 2010), `ELTCTWH` in billion kWh
+(January 2020, October 2026). MER Table 7.6
+(`https://www.eia.gov/totalenergy/data/browser/csv.php?tbl=T07.06`),
+Description "Electricity Sales to Ultimate Customers, Total", million kWh.
+
+**Series.** As §8 with F_e = the 7atab retail-sales row: `ELTCTWH` if
+present, otherwise `EXTCPUS` multiplied by the number of days in its month
+(per-day → monthly total). realised = MER 7.6 total, monthly rows only.
+Leads h ∈ {3, 6, 12}; editions January 2010 to P = June 2026 − h; an edition
+lacking the row or a needed month is dropped for that lead; >10% dropped →
+that lead not run.
+
+**Sample, benchmark, statistic, pass / fail:** exactly §8 (without T in
+2020-03..2021-12; "no change"; `compute_smf(..., max_lag_days=0,
+n_surrogates=999, seed=0)`; PASS_h if p < 0.0167, SMF > 0 and
+MSE_model < MSE_zero). Full sample reported, no weight.
+
+**Comparison (stated before the run).** "Same horizon as CO2" if the
+electricity profile is PASS at 3 and 6, FAIL at 12. Any other profile is
+reported as "differs", with the leads that differ.
+
+**Result.** Not yet run.
