@@ -197,4 +197,13 @@ over that order.
 MSE_model < MSE_zero. Full sample reported, no weight. Expected p_min ≈ 0.024
 (n ≈ 78).
 
-**Result.** Not yet run.
+**Result.** Single run 2026-10-23: Action 39944422318, code b5ed83b, data and
+output 9cb5ded (`results/smf_steo_h18/result.txt`). 90 of 90 editions used.
+
+**FAIL** on all three conditions. Primary (n = 78): corr −0.214, SMF 0,
+p = 0.857 (p_min 0.024), MSE_model / MSE_zero = 1.239. Full sample (n = 90,
+no weight): corr 0.026, p = 0.56, MSE ratio 1.093, also FAIL; at 18 months
+even the pandemic swing is not foreseen.
+
+**Profile across §8–§9 (primary samples):** lead 3 PASS, 6 PASS, 12 FAIL,
+18 FAIL. At 18 months the forecasts are 24% worse than "no change".

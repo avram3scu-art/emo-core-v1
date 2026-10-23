@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 7b (2026-10-23) — SMF on a real case, redefined
 
-**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months; follow-up §8: PASS at leads 3 and 6, FAIL at 12.
+**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §7: **PASS** (primary), carried by the pandemic months; follow-up §8–§9: PASS at leads 3 and 6, FAIL at 12 and 18.
 
 **Done**
 - `emo/smf.py` v1.2 (9dc38eb): each shift once, honest p, `n_null`/`p_min`; 102 tests pass (run 39940150931).
@@ -18,8 +18,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Follow-up (same day, Adrian's request):** pre-registered §8 (6f95ad8, not blind for lead 12), code 30a0a48, single run 39942987695 → c32cfa9. Without 2020-21, vs "no change", Bonferroni α = 0.0167: lead 3 PASS (r = 0.53, MSE −24%), lead 6 PASS (r = 0.52, MSE −19%), lead 12 FAIL (r = −0.01, MSE +18%). SMF detects fidelity at short leads; this self-model has none at 12 months outside the pandemic.
 
+**Lead 18 (same day):** pre-registered §9 (f6519cd), code b5ed83b, run 39944422318 → 9cb5ded. Jan–Jun editions only (90). FAIL: r = −0.21, p = 0.86, MSE 24% worse than "no change"; full sample also FAIL. Profile: 3 PASS, 6 PASS, 12 FAIL, 18 FAIL.
+
 **Open questions**
-- Lead 18 not tested (Jul–Dec editions do not reach 18 months).
+- Is the decay specific to EIA, or general? A second forecaster (another agency's own-country forecasts) would need its own pre-registration.
 - Probe workflow `probe_layout.yml` and one-off `smf_steo.yml` stay in the repo; neither runs on schedule.
 
 **Adrian must do**
