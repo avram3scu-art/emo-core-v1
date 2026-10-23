@@ -36,7 +36,25 @@ HURDAT2 only, and copied into §2.1 and committed before the pageview fetch is a
 
 ### 2.1 Event list
 
-(Filled in from the first run, before pageviews are fetched.)
+Derived by `analysis/gwi_hurricanes.py` in Action run 39930507770 (2026-10-23, from commit ff9bb04;
+HURDAT2 fetched by that run). No pageviews had been fetched. n = 21, no merges:
+
+| Date (UTC) | Storm | | Date (UTC) | Storm |
+|---|---|---|---|---|
+| 2016-10-04 | Matthew (AL142016) | | 2021-08-21 | Grace (AL072021) |
+| 2016-11-24 | Otto (AL162016) | | 2021-08-29 | Ida (AL092021) |
+| 2017-08-26 | Harvey (AL092017) | | 2022-09-20 | Fiona (AL072022) |
+| 2017-09-06 | Irma (AL112017) | | 2022-09-27 | Ian (AL092022) |
+| 2017-09-19 | Maria (AL152017) | | 2023-08-30 | Idalia (AL102023) |
+| 2018-10-10 | Michael (AL142018) | | 2024-07-01 | Beryl (AL022024) |
+| 2019-09-01 | Dorian (AL052019) | | 2024-09-27 | Helene (AL092024) |
+| 2020-08-27 | Laura (AL132020) | | 2024-10-10 | Milton (AL142024) |
+| 2020-10-28 | Zeta (AL282020) | | 2024-11-06 | Rafael (AL182024) |
+| 2020-11-03 | Eta (AL292020) | | 2025-10-28 | Melissa (AL132025) |
+| 2020-11-17 | Iota (AL312020) | | | |
+
+That run did not commit (three unrelated refresh tests assumed only OWID/OpenAlex sources; fixed
+in the commit that adds this list).
 
 Testability condition: fewer than 8 events → the test is recorded as **not testable** (no pass, no fail).
 

@@ -61,7 +61,7 @@ def test_valid_update_is_written(tmp_path, monkeypatch):
                                                      {"key": "2021", "count": 12}]}
     data = _setup(tmp_path, monkeypatch, new_csv, new_oa)
     res = refresh.refresh()
-    assert all(s["status"] == "ok" and s["changed"] for s in res["sources"])
+    assert all(s["status"] == "ok" and s["changed"] for s in res["sources"] if s["kind"] in ("owid", "openalex"))
     f = next(iter(refresh.OWID))
     assert refresh.path_for(f).read_bytes() == new_csv
     g = json.loads(refresh.path_for(next(iter(refresh.OPENALEX))).read_text())
@@ -72,7 +72,7 @@ def test_header_change_keeps_committed_file(tmp_path, monkeypatch):
     bad = b"Entity,Code,Year,Other\nWorld,OWID_WRL,2020,9\nWorld,OWID_WRL,2021,9\n"
     data = _setup(tmp_path, monkeypatch, bad, {"group_by": []})
     res = refresh.refresh()
-    assert all(s["status"] == "failed" for s in res["sources"])
+    assert all(s["status"] == "failed" for s in res["sources"] if s["kind"] in ("owid", "openalex"))
     assert refresh.path_for(next(iter(refresh.OWID))).read_bytes() == OLD_CSV
 
 
@@ -81,7 +81,7 @@ def test_large_row_loss_is_rejected(tmp_path, monkeypatch):
     oa = {"group_by": [{"key": "2020", "count": 10}]}
     _setup(tmp_path, monkeypatch, shrunk, oa)
     res = refresh.refresh()
-    assert all(s["status"] == "failed" and "retained" in s["detail"] for s in res["sources"])
+    assert all(s["status"] == "failed" and "retained" in s["detail"] for s in res["sources"] if s["kind"] in ("owid", "openalex"))
 
 
 def test_unchanged_content_is_not_rewritten(tmp_path, monkeypatch):
@@ -89,9 +89,9 @@ def test_unchanged_content_is_not_rewritten(tmp_path, monkeypatch):
                                                        {"key": "2021", "count": 11}]}
     _setup(tmp_path, monkeypatch, OLD_CSV, oa)
     res = refresh.refresh()
-    assert all(s["status"] == "ok" and not s["changed"] for s in res["sources"])
+    assert all(s["status"] == "ok" and not s["changed"] for s in res["sources"] if s["kind"] in ("owid", "openalex"))
     man = json.loads((tmp_path / "data/MANIFEST.json").read_text())
-    assert all(v["last_changed_at"].startswith("2026-10-20") for v in man.values())
+    assert all(v["last_changed_at"].startswith("2026-10-20") for v in man.values() if v["kind"] in ("owid", "openalex"))
 
 
 @pytest.mark.parametrize("secret", ["KEY123"])
