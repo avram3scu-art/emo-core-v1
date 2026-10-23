@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 3 (2026-10-23) — the public page
 
-**Done when met: no.** The page builds and the Action is wired to publish it, but GitHub Pages is not enabled on the repository, so nothing is live yet. One setting, by hand (below).
+**Done when met: yes.** Live at https://avram3scu-art.github.io/emo-core-v1/ after Adrian enabled Pages (Source: GitHub Actions) by hand. Re-run of 39918662082 deployed the page built from e16d394 (07:50 UTC); run 39920616723, with no edits, rebuilt it from 2419c6d (07:53 UTC). Both checked by fetching the page.
 
 **Checked first:** Monday 26 Oct's scheduled run has not happened (session held Fri 23 Oct). Latest run instead: 9dc72e6 ("Weekly run 2026-10-23: all checks passed").
 
@@ -16,14 +16,13 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Results**
 - Run 39918662082: refresh succeeded and committed (9dc72e6); `pages` failed at Configure Pages: "Resource not accessible by integration" (the token may not create a Pages site). Session API also refused (403).
-- Until Pages is enabled, every weekly run will show as failed because of this job, though data are still committed.
 - τ_I has no figure; it is shown as its number table only.
 
 **Adrian must do**
-- Settings → Pages → Build and deployment → Source: **GitHub Actions**. Then Actions → Weekly refresh → Run workflow. Page URL: https://avram3scu-art.github.io/emo-core-v1/
+- Nothing. (Leave Actions log retention at its current value; do not set it to 7 days.)
 
 ## Next session
-Session 3 close-out first: after Pages is enabled, confirm the page is live and that a second run changes it (run date and commit line) without edits. Then session 4 (`docs/PLAN.md`).
+Session 4 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
 
 ## Previous session: 2 (2026-10-23) — the weekly GitHub Action
 
