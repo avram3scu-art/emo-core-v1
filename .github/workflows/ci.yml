@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches:
+      - emo-2026-10
       - main
       - master
       - feature/dac-mode-and-snapshot-query-params

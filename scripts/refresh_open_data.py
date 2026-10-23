@@ -144,8 +144,13 @@ PV_CAL_SETS = {
 }
 
 
-def _pageviews_csv(sets: dict | None = None, strict: bool = True) -> tuple[bytes, int]:
-    """sets: name -> (en title, start, end). strict: missing edition raises; else it is skipped."""
+def _pageviews_csv(sets: dict | None = None, strict: bool = True, follow_redirects: bool = False) -> tuple[bytes, int]:
+    """sets: name -> (en title, start, end). strict: missing edition raises; else it is skipped.
+
+    follow_redirects: resolve the English title through redirects (page moves) before
+    reading interlanguage links and pageviews. Off by default so that the files of the
+    pre-registered tests (session 6, 6c) are fetched exactly as before; new sets should
+    pass True (a page move hid "Mitochondrion" in 6c, see GWI_CALIBRATION_PROTOCOL.md §8)."""
     from urllib.parse import quote
 
     if sets is None:
@@ -155,8 +160,10 @@ def _pageviews_csv(sets: dict | None = None, strict: bool = True) -> tuple[bytes
     w.writerow(["set", "lang", "title", "date", "views"])
     rows = 0
     for which, (en_title, start, end) in sets.items():
-        page = _get(LANGLINKS_URL.format(title=quote(en_title))).json()["query"]["pages"][0]
-        titles = {"en": en_title} | {ll["lang"]: ll["title"] for ll in page.get("langlinks", [])}
+        url = LANGLINKS_URL.format(title=quote(en_title)) + ("&redirects=1" if follow_redirects else "")
+        page = _get(url).json()["query"]["pages"][0]
+        en = page.get("title", en_title) if follow_redirects else en_title
+        titles = {"en": en} | {ll["lang"]: ll["title"] for ll in page.get("langlinks", [])}
         missing = [lg for lg in PV_LANGS if lg not in titles]
         if missing and strict:
             raise RuntimeError(f"{which}: no interlanguage link for {missing}")

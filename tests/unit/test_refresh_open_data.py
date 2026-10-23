@@ -117,3 +117,34 @@ def test_hurdat_check_and_gwi_event_rule(tmp_path):
     f.write_bytes(HURDAT_SAMPLE)
     ev = gwi_h.landfall_events(f)
     assert [(str(d.date()), n) for d, n in ev] == [("2017-08-26", "Harvey (AL092017)")]
+
+
+class _Resp:
+    def __init__(self, data):
+        self._d = data
+
+    def json(self):
+        return self._d
+
+
+def _fake_get(seen):
+    def get(url):
+        seen.append(url)
+        if "api.php" in url:
+            moved = "redirects=1" in url
+            return _Resp({"query": {"pages": [{"title": "Mitochondria" if moved else "Mitochondrion",
+                                               "langlinks": [{"lang": lg, "title": "X"} for lg in refresh.PV_LANGS if lg != "en"]}]}})
+        return _Resp({"items": [{"timestamp": "2026010100", "views": 1}]})
+    return get
+
+
+def test_pageviews_follow_redirects_only_when_asked(monkeypatch):
+    seen = []
+    monkeypatch.setattr(refresh, "_get", _fake_get(seen))
+    sets = {"s": ("Mitochondrion", "20260101", "20260101")}
+    refresh._pageviews_csv(sets)
+    assert "redirects=1" not in seen[0] and any("/Mitochondrion/" in u for u in seen)  # frozen behaviour
+    seen.clear()
+    out, _ = refresh._pageviews_csv(sets, follow_redirects=True)
+    assert "redirects=1" in seen[0] and any("/Mitochondria/" in u for u in seen)
+    assert b"Mitochondria" in out

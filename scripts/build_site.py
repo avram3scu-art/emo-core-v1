@@ -28,9 +28,10 @@ NHC_SOURCE = "https://www.nhc.noaa.gov/verification/pdfs/1970-present_OFCL_ATL_a
 
 NOT_MEASURED = [
     ("Continuous observation", "Only a weekly batch run exists (this page). No stream, no dashboard, no real-time ingestion."),
-    ("Attention streams", "GDELT and Wikipedia attention series have never been ingested."),
-    ("UIA (interface density)", "Code exists, but all six weights are set to 1.0 and no term is measured from real data."),
-    ("GWI and SMF", "Pass noise controls on synthetic data; not yet run on a real case."),
+    ("Attention streams", "Wikipedia pageviews are fetched only for fixed article sets used in GWI tests; GDELT has never been ingested."),
+    ("UIA (interface density)", "The a_UIA scalar is retired; UIA is redefined as the He profile and is not yet scored."),
+    ("GWI levels", "GWI timing passed on hurricane landfalls, but its threshold failed cross-article calibration, so no GWI level is a measurement."),
+    ("Long-range self-model fidelity", "SMF finds fidelity in EIA and SPF forecasts at 3-6 months; EIA energy forecasts show none at 12 months (section 5)."),
     ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their held-out tests; v0.4 waits for data. "
                      "The ledger below records forecasts only; none has resolved."),
     ("DAC beyond two cases", "Ozone vs climate only on this page; DAC event dates are hand-coded by one coder and not refreshed automatically."),
@@ -100,6 +101,28 @@ def build(out: Path):
         f"<td>{esc(r['registered'])}</td><td>{esc(r['resolve_by'])}</td><td>{esc(r['p_forecast'])}</td>"
         f"<td>{' '.join(ext(u.strip(), f'[{i+1}]') for i, u in enumerate(r['status_source'].split(';')) if u.strip())}</td></tr>"
         for r in rows)
+
+    def smf_primary(path, title):
+        f = ROOT / path
+        if not f.exists():
+            return ""
+        keep, lines, take = [], f.read_text().splitlines(), 0
+        for l in lines:
+            if l.startswith(("===", "#####")) and "Profile" not in l:
+                keep.append(l.strip())
+            elif "[PRIMARY" in l:
+                keep.append(l.strip()); take = 3
+            elif take:
+                keep.append("  " + l.strip()); take -= 1
+        txt = title + "\n" + "\n".join(keep)
+        return f'<a class="out" href="{BLOB}{esc(path)}" title="open the output file">{esc(txt)}</a>'
+
+    smf_blocks = "".join(smf_primary(pth, t) for pth, t in (
+        ("results/smf_steo_leads/result.txt", "EIA STEO, US energy CO2 (vs EIA Monthly Energy Review)"),
+        ("results/smf_steo_elec/result.txt", "EIA STEO, US electricity retail sales"),
+        ("results/smf_spf/result.txt", "Survey of Professional Forecasters, US unemployment rate (vs FRED UNRATE)"),
+        ("results/smf_ip/result.txt", "Industrial production: EIA STEO and SPF (vs FRED INDPRO). Pre-registered reading 'forecaster effect' is not supported by later checks; see protocol section 12."),
+    ))
 
     result = "all checks passed" if status.get("ok") else ("tests passed; some downloads failed" if status.get("commit_allowed") else "problems found")
     nm = "".join(f"<li><b>{esc(a)}.</b> {esc(b)}</li>" for a, b in NOT_MEASURED)
@@ -175,6 +198,20 @@ checked unchanged in every weekly run. These are forecasts of a failed-and-untes
 {numbers('score_forecast_ledger')}
 {provenance([
     'ledger ' + link('data/rdl_forecast_ledger.csv') + ' · scoring ' + link('analysis/score_forecast_ledger.py') + ' · protocol ' + link('docs/RDL_FORECAST_LEDGER.md'),
+])}
+
+<h2>5. Self-Model Fidelity on real forecasts</h2>
+<p>Does a published forecast track what then happens? Correlation of forecast and realised changes against a circular-shift null,
+plus the forecast error against a "no change" forecast. Each test was pre-registered and run once; results are fixed, not re-run weekly.
+Primary samples exclude 2020-21 except where stated.</p>
+{smf_blocks}
+{provenance([
+    'protocol and results ' + link('docs/SMF_PROTOCOL.md') + ' (sections 7-12) · metric ' + link('emo/smf.py'),
+    'scripts ' + link('analysis/smf_steo_leads.py') + ', ' + link('analysis/smf_steo_elec.py') + ', ' + link('analysis/smf_spf.py') + ', ' + link('analysis/smf_ip.py'),
+    'sources ' + ext('https://www.eia.gov/outlooks/steo/', 'EIA Short-Term Energy Outlook archives') + ', '
+    + ext('https://www.eia.gov/totalenergy/data/monthly/', 'EIA Monthly Energy Review') + ', '
+    + ext('https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters', 'Survey of Professional Forecasters') + ', '
+    + ext('https://fred.stlouisfed.org/', 'FRED'),
 ])}
 
 <h2>Data retrieved this week</h2>
