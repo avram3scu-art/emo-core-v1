@@ -175,3 +175,26 @@ At 12 months, outside the pandemic, the forecasts are worse than "no change"
 was the pandemic swing. Fidelity of this self-model decays to zero within a
 year. p sits at p_min for leads 3 and 6: no shift reached the observed
 correlation; with ~87 distinct shifts the p-value cannot go lower.
+
+## 9. Lead 18 months (pre-registration)
+
+Registered 2026-10-23 after §8, at Adrian's request. Not blind: lead 12
+failed outside 2020–21 (§8), so a fail at 18 months is the expected outcome;
+the test records it rather than assume it. Lead-18 values not yet computed.
+
+**Editions.** Only January–June editions reach 18 months (a STEO forecasts to
+December of the next year). Editions January–June of 2010–2024 (T ≤ 2026-06),
+90 expected; >10% dropped → not run.
+
+**Series, sample, benchmark, statistic:** as §8 with h = 18
+(model(T) = ln F_e(T) − ln F_e(T − 12), T = P + 18, T − 12 = P + 6); primary
+sample without T in 2020-03..2021-12; benchmark "no change";
+`compute_smf(..., max_lag_days=0, n_surrogates=999, seed=0)`. The series holds
+only July–December target months, taken in time order; the circular shift runs
+over that order.
+
+**Pass / fail.** One new test, α = 0.05: PASS if p < 0.05, SMF > 0 and
+MSE_model < MSE_zero. Full sample reported, no weight. Expected p_min ≈ 0.024
+(n ≈ 78).
+
+**Result.** Not yet run.
