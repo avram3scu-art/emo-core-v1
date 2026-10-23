@@ -1,5 +1,9 @@
 """
 UIA aggregation engine for EMO-Core.
+
+DEPRECATED (session 5, 2026-10-23): a_UIA is a weighted sum with chosen weights
+and none of its terms is measured from real data. See docs/UIA_PROTOCOL.md.
+Kept for reference only; no claim may rest on it.
 """
 
 from __future__ import annotations

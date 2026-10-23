@@ -1,3 +1,5 @@
+"""DEPRECATED (session 5): /v1/uia/* serves a_UIA, retired in docs/UIA_PROTOCOL.md."""
+
 from __future__ import annotations
 
 from dataclasses import asdict

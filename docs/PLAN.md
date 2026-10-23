@@ -252,6 +252,8 @@ Done when: protocol committed and message ready; agreement is computed in a late
 
 ### Session 12: the He direction test
 
+Postponed (session 5 decision, Option C): runs only once DAC holds at least 8 coded cases with warning dates after pageview coverage starts. See docs/UIA_PROTOCOL.md §4.
+
 ```text
 Session 12 task: first test of He = f(I, C, F, E) - D.
 Using docs/UIA_PROTOCOL.md: score I, C, F, E and D at the warning date for every coded DAC case, using only data dated before the warning. Commit the scores. Then test the pre-registered direction (higher I, C, F, E and lower D reach delivery sooner) with the stated statistic. Report the result whatever it is; with few cases, say what it cannot show.
