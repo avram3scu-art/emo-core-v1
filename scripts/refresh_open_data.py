@@ -122,6 +122,43 @@ def _openalex_check(old: dict, new: dict) -> tuple[int, str | None]:
     return len(gn), None
 
 
+# Wikipedia pageviews for the GWI test (docs/GWI_PROTOCOL.md §3). Fixed range for reproducibility.
+PV_LANGS = ["en", "es", "fr", "de", "it", "pt", "nl", "pl", "ru", "ja", "zh", "ko"]
+PV_SETS = {"test": "Tropical cyclone", "placebo": "Photosynthesis"}
+PV_FILE = "wikipedia_pageviews_gwi.csv"
+PV_RANGE = ("20151101", "20251231")
+LANGLINKS_URL = ("https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllimit=500"
+                 "&format=json&formatversion=2&titles={title}")
+PV_URL = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{lang}.wikipedia/"
+          "all-access/user/{title}/daily/{start}/{end}")
+
+
+def _pageviews_csv() -> tuple[bytes, int]:
+    from urllib.parse import quote
+
+    out = io.StringIO()
+    w = csv.writer(out, lineterminator="\n")
+    w.writerow(["set", "lang", "title", "date", "views"])
+    rows = 0
+    for which, en_title in PV_SETS.items():
+        page = _get(LANGLINKS_URL.format(title=quote(en_title))).json()["query"]["pages"][0]
+        titles = {"en": en_title} | {ll["lang"]: ll["title"] for ll in page.get("langlinks", [])}
+        missing = [lg for lg in PV_LANGS if lg not in titles]
+        if missing:
+            raise RuntimeError(f"{which}: no interlanguage link for {missing}")
+        for lg in PV_LANGS:
+            t = titles[lg].replace(" ", "_")
+            url = PV_URL.format(lang=lg, title=quote(t, safe=""), start=PV_RANGE[0], end=PV_RANGE[1])
+            items = _get(url).json().get("items", [])
+            if not items:
+                raise RuntimeError(f"{which}/{lg}: no pageview items")
+            for it in items:
+                d = str(it["timestamp"])[:8]
+                w.writerow([which, lg, titles[lg], f"{d[:4]}-{d[4:6]}-{d[6:]}", int(it["views"])])
+                rows += 1
+    return out.getvalue().encode(), rows
+
+
 def _hurdat_check(new: bytes) -> tuple[int, str | None]:
     lines = new.decode("utf-8", "replace").splitlines()
     storms = [ln for ln in lines if ln.startswith("AL") and len(ln.split(",")[0].strip()) == 8]
@@ -199,6 +236,22 @@ def refresh() -> dict:
         except Exception as exc:
             entry.update(status="failed", detail=str(exc)[:300], changed=False)
         report.append(entry)
+
+    path = path_for(PV_FILE)
+    entry = {"file": PV_FILE, "path": str(path.relative_to(DATA.parent)),
+             "source": PV_URL.format(lang="<lang>", title="<title>", start=PV_RANGE[0], end=PV_RANGE[1])
+             + " ; titles via " + LANGLINKS_URL.format(title="<en title>"), "kind": "wikipedia_pageviews"}
+    try:
+        new, rows = _pageviews_csv()
+        old = path.read_bytes() if path.exists() else None
+        changed = new != old
+        if changed:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(new)
+        entry.update(status="ok", changed=changed, rows=rows, sha256=_sha(new))
+    except Exception as exc:
+        entry.update(status="failed", detail=str(exc)[:300], changed=False)
+    report.append(entry)
 
     for e in report:
         prev = manifest.get(e["file"], {})
