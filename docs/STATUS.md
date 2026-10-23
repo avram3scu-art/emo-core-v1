@@ -16,10 +16,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Results**
 - Run 39918662082: refresh succeeded and committed (9dc72e6); `pages` failed at Configure Pages: "Resource not accessible by integration" (the token may not create a Pages site). Session API also refused (403).
-- τ_I has no figure; it is shown as its number table only.
+- τ_I figure added after close (5562329): `analysis/information_time_nhc.py` also saves `information_time_nhc.png` (data and per-lead τ_I with 95% CI, same numbers as its table; text output unchanged). Run 39921357715 rebuilt it and the page (251395f).
+- New page test passes on GitHub: pytest 96 passed (95 + `test_build_site`).
 
 **Open questions**
-- `tests/test_build_site.py` was run here only as a plain function (no pytest in this environment); its pytest result on GitHub was not inspected this session.
 - `actions/configure-pages@v5` targets Node 20 (deprecation warning in run 39918662082); upgrade when a newer major is available.
 - `ci.yml` still does not run on `emo-2026-10` (carried over from session 2).
 
