@@ -2,7 +2,34 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 5 (2026-10-23) — UIA audit
+## Last session: 6 (2026-10-23) — GWI on real attention data
+
+**Done when met: yes.** Result in `docs/GWI_PROTOCOL.md` §7: **PASS**.
+
+**Checked first:** Monday 26 Oct's scheduled run cannot be checked yet (today is Fri 23 Oct). Carried to session 7.
+
+**Done**
+- Protocol committed before data (ae3b507); event list fixed from NHC HURDAT2 by rule, n = 21 Atlantic major-hurricane landfalls 2016–2025 (08b99ab); then pageview fetch added (31e7fa5).
+- Weekly Action now fetches HURDAT2 (pinned file) and Wikipedia daily pageviews (12 editions, "Tropical cyclone" + placebo "Photosynthesis", fixed range 2015-11-01..2025-12-31); `analysis/gwi_hurricanes.py` runs weekly. Action now writes status, pytest and GWI lines as annotations (logs and artifacts are not readable from the session).
+- Run 39930743235 → 5e343fc ("all checks passed"), 97 tests pass, page redeployed.
+
+**Results**
+- Test: 14/21 event windows hit vs 9/275 Jun–Nov controls, Fisher p = 2.3e-13. Placebo: 2/21 vs 4/275, p = 0.061. PASS by the pre-registered rule.
+- Weak points: placebo margin thin (0.061 vs 0.05); 95 ignitions vs 0.012 expected under independence, so `compute_gwi`'s binomial threshold is not calibrated on real streams; misses cluster on Central American landfalls.
+- Failure on record: run 39930253098 / 39930507770 did not commit (three refresh tests assumed only OWID/OpenAlex sources); fixed in 08b99ab.
+- Pageview coverage starts July 2015 (pageviews.wmcloud.org FAQ, opened); `docs/UIA_PROTOCOL.md` says mid-2000s (wrong, not edited this session).
+
+**Open questions**
+- Does GWI pass for a second hazard class (earthquakes/tsunamis), and with per-language baselines that model the shared news cycle?
+- UCDP start year still unverified. `ci.yml` still does not run on `emo-2026-10`.
+
+**Adrian must do**
+- Nothing.
+
+## Next session
+Session 7 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: 5 (2026-10-23) — UIA audit
 
 **Done when met: yes.** Adrian chose Option C; decision and `docs/UIA_PROTOCOL.md` committed (ff9d692) before any UIA data was opened.
 

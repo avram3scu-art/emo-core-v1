@@ -1,8 +1,8 @@
 # GWI protocol (session 6, 2026-10-23)
 
-Status: pre-registered. Committed before any attention data was fetched or opened. No pageview
-file exists in this repository at the time of this commit. Section 7 (results) is filled in after
-the single run and is never edited afterwards except to add later weekly re-runs below it.
+Status: pre-registered, then run once; result in §7. Protocol committed in ae3b507 and the event
+list in 08b99ab, both before any pageview data was fetched (fetch added in 31e7fa5). Section 7 is
+never edited afterwards except to add later weekly re-runs that differ.
 
 ## 1. Question
 
@@ -118,4 +118,32 @@ not independent (shared news cycle), which `compute_gwi` does not model; one haz
 
 ## 7. Results
 
-(Filled in after the single run.)
+Single run: Action run 39930743235 (2026-10-23), code at 31e7fa5, results committed by the
+Action in 5e343fc (`results/weekly/2026-10-23/gwi_hurricanes.txt`; pageviews in
+`data/sources/wikipedia_pageviews_gwi/`, sha256 cb40fda4dcb17842…). All 12 streams kept in both sets.
+
+| | Test ("Tropical cyclone") | Placebo ("Photosynthesis") |
+|---|---|---|
+| Ignition days (of 3,653) | 95 | 15 |
+| k_min (of 12 streams) | 7 | 6 |
+| Event windows hit, H | 14/21 = 0.667 | 2/21 = 0.095 |
+| Control windows hit, Jun–Nov, F | 9/275 = 0.033 | 4/275 = 0.015 |
+| Fisher one-sided p | 2.3e-13 | 0.061 |
+| [no weight] all-year controls hit | 10/644 = 0.016 | 4/644 = 0.006 |
+
+Events not hit (7): Otto 2016, Michael 2018, Zeta 2020, Eta 2020, Iota 2020, Grace 2021, Rafael 2024.
+Placebo hits: Maria 2017, Helene 2024.
+
+**RESULT: PASS** (H ≥ 0.5; p < 0.05; placebo p ≥ 0.05).
+
+Read with these limits:
+- The placebo margin is thin (p = 0.061 against the 0.05 line). Two placebo hits inside event
+  windows suggest some Wikipedia-wide co-movement; the pass is by the pre-registered rule, not by a wide margin.
+- `compute_gwi` expected 0.012 false ignitions under independence but found 95 (test) and 15
+  (placebo): the language streams are not independent. Its binomial threshold is therefore not a
+  calibrated false-alarm rate on real data; only the comparison with control windows carries the result.
+- Misses concentrate on Central American landfalls (Otto, Eta, Iota, Rafael, Grace) and late
+  seasons; hits concentrate on U.S. and large Caribbean landfalls. GWI here measures where
+  multilingual Wikipedia attention goes, which is not uniform across affected populations.
+- One hazard class, one concept article; not a test of GWI as a general measure of "global
+  workspace". Weekly re-runs will reproduce this (fixed data range) and are listed below if they differ.

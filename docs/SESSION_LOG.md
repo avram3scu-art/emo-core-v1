@@ -7,3 +7,4 @@
 | 2026-10-23 | 3 | public page (GitHub Pages, rebuilt by weekly Action) | yes (Pages enabled by Adrian by hand) | 36dae27 | page changed after run 39920616723 without edits (e16d394 → 2419c6d) |
 | 2026-10-23 | 4 | related work (docs/RELATED_WORK.md) | yes | 2d31d9e | 10 white-paper gap claims removed/reworded, 1 backed; key full texts not opened |
 | 2026-10-23 | 5 | UIA audit (docs/UIA_PROTOCOL.md) | yes | ff9d692 | Option C: a_UIA retired, He profile defined, prediction deferred to ≥8 DAC cases; session 12 postponed |
+| 2026-10-23 | 6 | GWI on real attention data (docs/GWI_PROTOCOL.md) | yes | 5e343fc | PASS: 14/21 event windows vs 9/275 controls, p=2.3e-13; placebo p=0.061 (thin); 2 runs blocked by stale tests first |
