@@ -1,0 +1,17 @@
+{
+  "steo_ip_editions.csv": {
+    "source_url": "https://www.eia.gov/outlooks/steo/archives/{mon}{yy}_base.xlsx|.xls, sheet 9atab, row ZOTOIUS",
+    "downloaded_at": "2026-10-23T11:59:06+00:00",
+    "sha256": "06f17945678b8bd43e2b3795cd7cb361534f1f13ccc1276f775caf85e7a2bd7b"
+  },
+  "medianLevel.xlsx": {
+    "source_url": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/historical-data/medianLevel.xlsx?sc_lang=en&hash=E52F5DEF4551C3EBD24031A04CE6E98A",
+    "downloaded_at": "2026-10-23T11:59:06+00:00",
+    "sha256": "d296e737331c406f7680414504a0d005472743709387f8fda6d969a1d2200977"
+  },
+  "INDPRO.csv": {
+    "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDPRO",
+    "downloaded_at": "2026-10-23T11:59:06+00:00",
+    "sha256": "0fc53a503386efaf83f17cf0cc6d77b3980830a91c9dfa9ebab97b4cf1aa5feb"
+  }
+}

@@ -1,0 +1,68 @@
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/openpyxl/worksheet/header_footer.py:48: UserWarning: Cannot parse header or footer so it will be ignored
+  warn("""Cannot parse header or footer so it will be ignored""")
+##### EIA STEO, ZOTOIUS
+
+=== EIA lead 3 months: editions expected 195, used 195, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=173 T 2010-04..2026-06
+    corr=0.715 null95=0.206 smf=0.641 p=0.0112 n_null=88 p_min=0.0112
+    MSE_model/MSE_zero=0.496
+    verdict: PASS
+  [full sample] n=195 T 2010-04..2026-06
+    corr=0.650 null95=0.207 smf=0.558 p=0.0099 n_null=100 p_min=0.0099
+    MSE_model/MSE_zero=0.741
+    verdict: PASS (no weight)
+
+=== EIA lead 6 months: editions expected 192, used 192, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=170 T 2010-07..2026-06
+    corr=0.562 null95=0.244 smf=0.420 p=0.0114 n_null=87 p_min=0.0114
+    MSE_model/MSE_zero=0.760
+    verdict: PASS
+  [full sample] n=192 T 2010-07..2026-06
+    corr=0.512 null95=0.208 smf=0.384 p=0.0102 n_null=97 p_min=0.0102
+    MSE_model/MSE_zero=0.963
+    verdict: PASS (no weight)
+
+=== EIA lead 12 months: editions expected 186, used 186, dropped 0
+  [PRIMARY (without 2020-03..2021-12)] n=164 T 2011-01..2026-06
+    corr=0.201 null95=0.491 smf=0.000 p=0.2619 n_null=83 p_min=0.0119
+    MSE_model/MSE_zero=1.387
+    verdict: FAIL (p<0.0167, SMF>0, MSE_model<MSE_zero not met)
+  [full sample] n=186 T 2011-01..2026-06
+    corr=0.233 null95=0.321 smf=0.000 p=0.1354 n_null=95 p_min=0.0104
+    MSE_model/MSE_zero=1.223
+    verdict: FAIL (p<0.0167, SMF>0, MSE_model<MSE_zero not met) (no weight)
+
+##### SPF median, INDPROD
+
+=== SPF horizon 1 quarter(s) (INDPROD3): surveys expected 231, used 231, dropped 0
+  [PRIMARY (without 2020Q1..2021Q4)] n=223 T 1969-01..2026-07
+    corr=0.682 null95=0.195 smf=0.605 p=0.0087 n_null=114 p_min=0.0087
+    MSE_model/MSE_zero=0.495
+    verdict: PASS
+  [full sample] n=231 T 1969-01..2026-07
+    corr=0.661 null95=0.099 smf=0.623 p=0.0084 n_null=118 p_min=0.0084
+    MSE_model/MSE_zero=0.537
+    verdict: PASS (no weight)
+
+=== SPF horizon 2 quarter(s) (INDPROD4): surveys expected 230, used 230, dropped 0
+  [PRIMARY (without 2020Q1..2021Q4)] n=222 T 1969-04..2026-07
+    corr=0.635 null95=0.246 smf=0.516 p=0.0088 n_null=113 p_min=0.0088
+    MSE_model/MSE_zero=0.560
+    verdict: PASS
+  [full sample] n=230 T 1969-04..2026-07
+    corr=0.627 null95=0.121 smf=0.576 p=0.0085 n_null=117 p_min=0.0085
+    MSE_model/MSE_zero=0.589
+    verdict: PASS (no weight)
+
+=== SPF horizon 4 quarter(s) (INDPROD6): surveys expected 228, used 223, dropped 5
+  [PRIMARY (without 2020Q1..2021Q4)] n=215 T 1969-10..2026-07
+    corr=0.588 null95=0.159 smf=0.510 p=0.0090 n_null=110 p_min=0.0090
+    MSE_model/MSE_zero=0.604
+    verdict: PASS
+  [full sample] n=223 T 1969-10..2026-07
+    corr=0.597 null95=0.238 smf=0.471 p=0.0087 n_null=114 p_min=0.0087
+    MSE_model/MSE_zero=0.630
+    verdict: PASS (no weight)
+
+##### Profile (primary): {'EIA 3m': 'PASS', 'EIA 6m': 'PASS', 'EIA 12m': 'FAIL', 'SPF 1q': 'PASS', 'SPF 2q': 'PASS', 'SPF 4q': 'PASS'}
+Reading rule (§12): forecaster effect

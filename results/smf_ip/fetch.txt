@@ -1,0 +1,85 @@
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_ip_smf.py:31: Pandas4Warning: The xlrd engine is deprecated and will be removed in a future version. Use the calamine engine instead, by setting engine='calamine'.
+  book = pd.read_excel(io.BytesIO(get(BASE + stem + ext)), sheet_name=None, header=None)
+STEO rows 573, dropped 0
