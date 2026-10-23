@@ -1,8 +1,14 @@
 """Fetch inputs for SMF on electricity retail sales (docs/SMF_PROTOCOL.md §10).
 STEO 7atab: ELTCTWH (bkWh) if present, else EXTCPUS (bkWh/day) x days in month.
 Leads 3, 6, 12; editions Jan 2010 .. Mar 2026. Realised: MER Table 7.6."""
-import calendar, datetime as dt, hashlib, io, json, sys
+import calendar
+import datetime as dt
+import hashlib
+import io
+import json
+import sys
 from pathlib import Path
+
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -57,7 +63,7 @@ pd.DataFrame(rows).to_csv(out / "editions_elec.csv", index=False)
 (out / "dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
 mer_raw = get(MER)
 (out / "T07_06.csv").write_bytes(mer_raw)
-now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
 (out / "SOURCES.json").write_text(json.dumps({
     "editions_elec.csv": {"source_url": BASE + "{mon}{yy}_base.xlsx|.xls, sheet 7atab", "downloaded_at": now,
                           "sha256": hashlib.sha256((out / "editions_elec.csv").read_bytes()).hexdigest()},

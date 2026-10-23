@@ -5,8 +5,15 @@ else FFTCCO2), the edition's value for its own month P and for P + 12.
 MER Table 11.1: raw CSV. Writes data/sources/eia_steo_co2/editions.csv,
 data/sources/eia_mer_t11_01/T11_01.csv and data/sources/eia_smf_SOURCES.json
 (own file; data/MANIFEST.json belongs to the weekly run)."""
-import datetime as dt, hashlib, io, json, re, time, urllib.request
+import datetime as dt
+import hashlib
+import io
+import json
+import re
+import time
+import urllib.request
 from pathlib import Path
+
 import pandas as pd
 
 UA = {"User-Agent": "emo-core-v1 SMF test (github.com/avram3scu-art/emo-core-v1)"}
@@ -88,7 +95,7 @@ def main():
     mer_raw = get(MER)
     mout = Path("data/sources/eia_mer_t11_01"); mout.mkdir(parents=True, exist_ok=True)
     (mout / "T11_01.csv").write_bytes(mer_raw)
-    now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
     src = {"eia_steo_co2/editions.csv": {"source_url": BASE + "{mon}{yy}_base.xlsx|.xls, sheet 9atab",
                                          "downloaded_at": now, "sha256": hashlib.sha256((out / "editions.csv").read_bytes()).hexdigest()},
            "eia_mer_t11_01/T11_01.csv": {"source_url": MER, "downloaded_at": now, "sha256": hashlib.sha256(mer_raw).hexdigest()}}

@@ -15,7 +15,7 @@ import json
 import os
 import shutil
 import subprocess
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -81,7 +81,7 @@ def build(out: Path):
         sha = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     except OSError:
         sha = ""
-    built = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    built = datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC")
 
     out.mkdir(parents=True, exist_ok=True)
     for fig in ("organismality_plane.png", "dac_ozone_vs_climate.png", "information_time_nhc.png"):

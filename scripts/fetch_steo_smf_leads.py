@@ -1,12 +1,17 @@
 """Fetch inputs for the SMF follow-up (docs/SMF_PROTOCOL.md §8): for each STEO
 edition Jan 2010 .. Mar 2026 and lead h in (3, 6, 12), the edition's values for
 T = P + h and T - 12 (total CO2 row of 9atab). Reuses the §7 parser."""
-import datetime as dt, hashlib, io, json, sys
+import datetime as dt
+import hashlib
+import io
+import json
+import sys
 from pathlib import Path
+
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
-from fetch_steo_smf import BASE, MON, MER, get, month_columns  # noqa: E402
+from fetch_steo_smf import BASE, MER, MON, get, month_columns  # noqa: E402
 
 LEADS = (3, 6, 12)
 
@@ -55,7 +60,7 @@ pd.DataFrame(rows).to_csv(out / "editions_leads.csv", index=False)
 (out / "dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
 mer_raw = get(MER)
 (out / "T11_01.csv").write_bytes(mer_raw)
-now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
 (out / "SOURCES.json").write_text(json.dumps({
     "editions_leads.csv": {"source_url": BASE + "{mon}{yy}_base.xlsx|.xls, sheet 9atab", "downloaded_at": now,
                            "sha256": hashlib.sha256((out / "editions_leads.csv").read_bytes()).hexdigest()},

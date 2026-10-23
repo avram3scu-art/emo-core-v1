@@ -1,8 +1,14 @@
 """Fetch inputs for SMF on industrial production (docs/SMF_PROTOCOL.md §12):
 STEO 9atab row ZOTOIUS (leads 3, 6, 12; editions Jan 2010 .. Mar 2026), SPF
 medianLevel.xlsx (sheet INDPROD used), FRED INDPRO."""
-import datetime as dt, hashlib, io, json, sys, urllib.request
+import datetime as dt
+import hashlib
+import io
+import json
+import sys
+import urllib.request
 from pathlib import Path
+
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -55,7 +61,7 @@ for year in range(2010, 2027):
 out = Path("data/sources/smf_ip"); out.mkdir(parents=True, exist_ok=True)
 pd.DataFrame(rows).to_csv(out / "steo_ip_editions.csv", index=False)
 (out / "steo_dropped.txt").write_text("\n".join(dropped) + ("\n" if dropped else ""))
-now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+now = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
 src = {"steo_ip_editions.csv": {"source_url": BASE + "{mon}{yy}_base.xlsx|.xls, sheet 9atab, row ZOTOIUS", "downloaded_at": now,
                                 "sha256": hashlib.sha256((out / "steo_ip_editions.csv").read_bytes()).hexdigest()}}
 for name, url in (("medianLevel.xlsx", SPF), ("INDPRO.csv", FRED)):

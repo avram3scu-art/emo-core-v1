@@ -1,7 +1,9 @@
 """Fetch inputs for SMF lead 18 (docs/SMF_PROTOCOL.md §9): Jan-Jun STEO editions
 2010-2024, values for T = P + 18 and T - 12 = P + 6. Same parser as §7/§8."""
-import io, sys
+import io
+import sys
 from pathlib import Path
+
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))

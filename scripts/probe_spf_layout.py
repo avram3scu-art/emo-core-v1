@@ -1,8 +1,11 @@
 """Layout-only probe (session 7f): SPF medianLevel.xlsx sheet names, UNEMP sheet
 column names and survey-date range; FRED UNRATE CSV header and date range.
 Never prints forecast or data values."""
-import io, urllib.request
+import io
+import urllib.request
+
 import pandas as pd
+
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}
 get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
 SPF = ("https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/"

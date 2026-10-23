@@ -2,7 +2,11 @@
 table 9a carry a total CO2 row (code), and what are its first/last date column
 labels and column count. For MER T11.01: column names, descriptions, date range.
 Never prints data values, so it can run before the SMF protocol is registered."""
-import io, re, sys, urllib.request
+import io
+import re
+import sys
+import urllib.request
+
 import pandas as pd
 
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}

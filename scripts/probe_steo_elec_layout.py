@@ -1,7 +1,12 @@
 """Layout-only probe (session 7e): electricity rows of STEO table 7a (codes and
 labels, with any unit lines) and MER Table 7.6 descriptions/units. No values."""
-import io, re, sys, urllib.request
+import io
+import re
+import sys
+import urllib.request
+
 import pandas as pd
+
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}
 get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=60).read()
 for name in sys.argv[1:]:

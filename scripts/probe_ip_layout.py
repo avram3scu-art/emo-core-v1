@@ -1,7 +1,11 @@
 """Layout-only probe (session 7g): industrial-production rows in STEO table 9a,
 SPF INDPROD columns, FRED INDPRO range. Never prints data values."""
-import io, re, sys, urllib.request
+import io
+import re
+import urllib.request
+
 import pandas as pd
+
 UA = {"User-Agent": "emo-core-v1 layout probe (github.com/avram3scu-art/emo-core-v1)"}
 get = lambda u: urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=90).read()
 for name in ("jan10_base.xls", "jan15_base.xlsx", "jan20_base.xlsx", "oct26_base.xlsx"):
