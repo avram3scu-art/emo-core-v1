@@ -2,7 +2,33 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 4 (2026-10-23) — related work
+## Last session: 5 (2026-10-23) — UIA audit
+
+**Done when met: yes.** Adrian chose Option C; decision and `docs/UIA_PROTOCOL.md` committed (ff9d692) before any UIA data was opened.
+
+**Checked first:** Monday 26 Oct's scheduled run cannot be checked yet (today is Fri 23 Oct). Carried to session 6.
+
+**Done** (ff9d692)
+- Audit of the six a_UIA terms against real public data: R and B not measurable (code ignores the skill metric; B̃ hard-coded 3.0); S computable but meaningless (evenness of indicators, not an entropy rate); M_E not measurable; C conditional on GWI (session 6); I measurable only as τ_I (`emo/info_time.py`), the UIA version is biased upward by clipping.
+- a_UIA retired: deprecation notes in `emo/uia_engine/aggregate.py` and `api/routers/uia.py`. UIA redefined as the He profile (I, C, F, E, D; He), never summed. D may not contain DAC lags (He is a DAC lag).
+- No He prediction pre-registered: trigger is ≥8 DAC cases with warning dates after pageview coverage starts. Session 12 postponed (note in `docs/PLAN.md`).
+
+**Results**
+- 1 of 6 a_UIA terms measurable today, 1 conditional, 4 not. The white paper's single UIA gauge has no measured basis.
+- The planned He test was blocked by n = 2–3 (no rank test can reach p < 0.05), a known outcome (ozone faster than climate), and ozone warnings (1974, 1985) predating pageview data.
+
+**Open questions**
+- Start years of Wikipedia pageview coverage and UCDP data: from memory, unverified; check in session 6.
+- Could a per-country I and F make Option B (Montreal Protocol countries) testable?
+- `ci.yml` still does not run on `emo-2026-10` (carried over).
+
+**Adrian must do**
+- Nothing.
+
+## Next session
+Session 6 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: 4 (2026-10-23) — related work
 
 **Done when met: yes.** Every gap sentence in README and the three white papers is now backed by an entry in `docs/RELATED_WORK.md` or removed (register G1–G12 in that file). README had none.
 
