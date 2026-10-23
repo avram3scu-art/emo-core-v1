@@ -89,6 +89,15 @@ jobs:
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
+      - name: Annotate problems and GWI result (readable through the API)
+        if: always()
+        run: |
+          f=$(ls -d results/weekly/*/ 2>/dev/null | sort | tail -1)
+          [ -f "$f/status.json" ] && echo "::notice title=status::$(python -c "import json,sys;d=json.load(open('$f/status.json'));print('ok=',d['ok'],'commit_allowed=',d['commit_allowed'],'problems=',d['problems'])")"
+          [ -f "$f/gwi_hurricanes.txt" ] && echo "::notice title=gwi_hurricanes::$(sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g' "$f/gwi_hurricanes.txt")"
+          [ -f "$f/pytest.txt" ] && echo "::notice title=pytest::$(grep -E 'FAILED|ERROR|passed|failed' "$f/pytest.txt" | tail -8 | sed ':a;N;$!ba;s/\n/%0A/g')"
+          true
+
       - name: Fail if the run found problems
         if: steps.run.outcome != 'success'
         run: |

@@ -92,6 +92,9 @@ def control_blocks(events, season_only: bool):
 
 
 def main() -> int:
+    if not HURDAT.exists():
+        print(f"HURDAT2 file not available ({HURDAT.relative_to(ROOT)}): events not derived, test not run.")
+        return 0
     events = landfall_events()
     print(f"Events (rule: first landfall >= {MIN_KT} kt per storm, {START.date()}..{END.date()}, "
           f"windows +/-{HALF} d merged): n = {len(events)}")
