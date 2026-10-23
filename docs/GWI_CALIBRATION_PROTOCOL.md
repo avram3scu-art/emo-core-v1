@@ -127,6 +127,12 @@ query returned no links. English views of the title fall about 85 % between 10 a
 becoming a redirect after a page move, and the query (no `redirects=1`) returns no links for a
 redirect. **Not verified:** the English article fetched in this session still showed the title
 "Mitochondrion" (that fetch may be cached). Cause therefore open. Pre-2026 data are unaffected.
+Verification attempt (same day): the page info, the interlanguage-link API and the pageviews API are
+not reachable from the session; a fetch of `/wiki/Mitochondria` returned the same article, with
+internal links naming it "Mitochondria", no "redirected from" note and no edit date. Evidence is
+mixed and the fetch tool summarises pages rather than showing them raw, so the move is still
+**not verified**. A decisive check is the English pageviews of "Mitochondria" from July 2026, which
+only the Action can fetch.
 A future fetch should follow redirects; it would not change this run.
 
 **"Prime number" (53 ignition days).** Not scattered, not tied to news: 50 of 53 fall in September,
