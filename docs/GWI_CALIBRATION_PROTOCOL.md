@@ -133,6 +133,14 @@ internal links naming it "Mitochondria", no "redirected from" note and no edit d
 mixed and the fetch tool summarises pages rather than showing them raw, so the move is still
 **not verified**. A decisive check is the English pageviews of "Mitochondria" from July 2026, which
 only the Action can fetch.
+
+**Verified** (one-off manual workflow `check_wiki_title.yml`, run 39934649530, English Wikipedia API
+move log and page info): the English article "Mitochondrion" was moved to "Mitochondria" on
+2026-06-29 14:26 UTC (round-robin swap, per a requested move opened 23 June 2026). "Mitochondrion"
+is now an 89-byte redirect. The fetch asks for interlanguage links without following redirects, so it
+got none: this is why only the English stream was written. The views of the old title fell gradually
+from late June and stepped down on 10–12 July (likely search engines updating; not checked). The
+daily-views step of that workflow printed nothing (a quoting error); not needed for the verdict.
 A future fetch should follow redirects; it would not change this run.
 
 **"Prime number" (53 ignition days).** Not scattered, not tied to news: 50 of 53 fall in September,
