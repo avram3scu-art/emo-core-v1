@@ -119,7 +119,7 @@ def test_hurdat_check_and_gwi_event_rule(tmp_path):
     assert [(str(d.date()), n) for d, n in ev] == [("2017-08-26", "Harvey (AL092017)")]
 
 
-class _Resp:
+class _JsonResp:
     def __init__(self, data):
         self._d = data
 
@@ -132,9 +132,9 @@ def _fake_get(seen):
         seen.append(url)
         if "api.php" in url:
             moved = "redirects=1" in url
-            return _Resp({"query": {"pages": [{"title": "Mitochondria" if moved else "Mitochondrion",
+            return _JsonResp({"query": {"pages": [{"title": "Mitochondria" if moved else "Mitochondrion",
                                                "langlinks": [{"lang": lg, "title": "X"} for lg in refresh.PV_LANGS if lg != "en"]}]}})
-        return _Resp({"items": [{"timestamp": "2026010100", "views": 1}]})
+        return _JsonResp({"items": [{"timestamp": "2026010100", "views": 1}]})
     return get
 
 
