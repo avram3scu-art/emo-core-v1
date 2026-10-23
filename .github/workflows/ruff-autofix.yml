@@ -29,7 +29,9 @@ jobs:
 
       - name: Run Ruff auto-fix
         run: |
-          ruff check . --fix
+          echo "::notice title=before::$(ruff check . --statistics 2>&1 | tail -30 | sed ':a;N;$!ba;s/\n/%0A/g')"
+          ruff check . --fix || true
+          echo "::notice title=remaining::$(ruff check . --output-format=concise 2>&1 | tail -60 | sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g')"
 
       - name: Commit and push changes
         run: |
