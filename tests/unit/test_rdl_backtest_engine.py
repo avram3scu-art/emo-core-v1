@@ -25,7 +25,9 @@ def test_easy_structure_beats_hard_structure():
 def test_binding_regulation_ranks_higher_when_structure_is_easy():
     easy = StructureInputs(n_major_actors=5, substitutes=0.9, economic_share=0.005)
     hard = StructureInputs(n_major_actors=200, substitutes=0.1, economic_share=0.8)
-    rank = lambda r: [k for k, _ in r.top3]
+    def rank(r):
+        return [k for k, _ in r.top3]
+
     assert "binding_regulation" in rank(run_backtest(_p(), easy))
     assert "binding_regulation" not in rank(run_backtest(_p(), hard))
 

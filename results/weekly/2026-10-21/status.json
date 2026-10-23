@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "ok": true,
+  "problems": [],
+  "ledger_ok": true,
+  "reproducibility": {
+    "rdl_backtest_run": true,
+    "rdl_backtest_heldout": true,
+    "rdl_v03_development": true,
+    "rdl_v03_heldout": true
+  },
+  "analyses": {
+    "dac_ozone": "first recorded run",
+    "dac_compare_ozone_climate": "first recorded run",
+    "organismality_plane": "first recorded run",
+    "information_time_nhc": "first recorded run",
+    "score_forecast_ledger": "first recorded run"
+  },
+  "previous": null
+}

@@ -53,6 +53,9 @@ include = ["emo*", "api*", "orchestration*"]
 [tool.ruff]
 line-length = 88
 target-version = "py311"
+# analysis/ holds frozen, pre-registered scripts (see docs/RDL_*); they are not
+# reformatted for style, so their recorded outputs stay tied to unchanged code.
+extend-exclude = ["analysis"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
