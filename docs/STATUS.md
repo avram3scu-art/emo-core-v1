@@ -17,11 +17,11 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Test: 14/21 event windows hit vs 9/275 Jun–Nov controls, Fisher p = 2.3e-13. Placebo: 2/21 vs 4/275, p = 0.061. PASS by the pre-registered rule.
 - Weak points: placebo margin thin (0.061 vs 0.05); 95 ignitions vs 0.012 expected under independence, so `compute_gwi`'s binomial threshold is not calibrated on real streams; misses cluster on Central American landfalls.
 - Failure on record: run 39930253098 / 39930507770 did not commit (three refresh tests assumed only OWID/OpenAlex sources); fixed in 08b99ab.
-- Pageview coverage starts July 2015 (pageviews.wmcloud.org FAQ, opened); `docs/UIA_PROTOCOL.md` says mid-2000s (wrong, not edited this session).
+- Pageview coverage starts July 2015 (pageviews.wmcloud.org FAQ, opened); `docs/UIA_PROTOCOL.md` said mid-2000s; corrected after close.
 
 **Open questions**
 - Does GWI pass for a second hazard class (earthquakes/tsunamis), and with per-language baselines that model the shared news cycle?
-- UCDP start year still unverified. `ci.yml` still does not run on `emo-2026-10`.
+- UCDP start year still unverified. (Pageview start: July 2015, verified.) `ci.yml` still does not run on `emo-2026-10`.
 
 **Adrian must do**
 - Nothing.
