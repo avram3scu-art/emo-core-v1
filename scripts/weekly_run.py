@@ -39,6 +39,7 @@ ANALYSES = {
     "information_time_nhc": ["analysis/information_time_nhc.png"],  # NHC data is transcribed by hand; not refreshed
     "score_forecast_ledger": [],
     "gwi_hurricanes": [],  # pre-registered test, docs/GWI_PROTOCOL.md
+    "gwi_calibration": [],  # pre-registered test, docs/GWI_CALIBRATION_PROTOCOL.md
 }
 
 # Frozen RDL runs: (script, recorded output, line filter). Output must match exactly.

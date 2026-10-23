@@ -133,25 +133,41 @@ PV_URL = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{lang
           "all-access/user/{title}/daily/{start}/{end}")
 
 
-def _pageviews_csv() -> tuple[bytes, int]:
+# GWI calibration (docs/GWI_CALIBRATION_PROTOCOL.md §3): separate file; session-6 file untouched.
+# Each entry: set name -> (English title, start, end). Missing interlanguage links drop the edition.
+PV_CAL_FILE = "wikipedia_pageviews_gwi_calibration.csv"
+PV_CAL_SETS = {
+    "reference_2026": ("Photosynthesis", "20251101", "20261018"),
+    "heldout_mitochondrion": ("Mitochondrion", "20151101", "20261018"),
+    "heldout_pythagorean": ("Pythagorean theorem", "20151101", "20261018"),
+    "heldout_prime": ("Prime number", "20151101", "20261018"),
+}
+
+
+def _pageviews_csv(sets: dict | None = None, strict: bool = True) -> tuple[bytes, int]:
+    """sets: name -> (en title, start, end). strict: missing edition raises; else it is skipped."""
     from urllib.parse import quote
 
+    if sets is None:
+        sets = {k: (v, *PV_RANGE) for k, v in PV_SETS.items()}
     out = io.StringIO()
     w = csv.writer(out, lineterminator="\n")
     w.writerow(["set", "lang", "title", "date", "views"])
     rows = 0
-    for which, en_title in PV_SETS.items():
+    for which, (en_title, start, end) in sets.items():
         page = _get(LANGLINKS_URL.format(title=quote(en_title))).json()["query"]["pages"][0]
         titles = {"en": en_title} | {ll["lang"]: ll["title"] for ll in page.get("langlinks", [])}
         missing = [lg for lg in PV_LANGS if lg not in titles]
-        if missing:
+        if missing and strict:
             raise RuntimeError(f"{which}: no interlanguage link for {missing}")
-        for lg in PV_LANGS:
+        for lg in [x for x in PV_LANGS if x in titles]:
             t = titles[lg].replace(" ", "_")
-            url = PV_URL.format(lang=lg, title=quote(t, safe=""), start=PV_RANGE[0], end=PV_RANGE[1])
+            url = PV_URL.format(lang=lg, title=quote(t, safe=""), start=start, end=end)
             items = _get(url).json().get("items", [])
             if not items:
-                raise RuntimeError(f"{which}/{lg}: no pageview items")
+                if strict:
+                    raise RuntimeError(f"{which}/{lg}: no pageview items")
+                continue
             for it in items:
                 d = str(it["timestamp"])[:8]
                 w.writerow([which, lg, titles[lg], f"{d[:4]}-{d[4:6]}-{d[6:]}", int(it["views"])])
@@ -237,21 +253,25 @@ def refresh() -> dict:
             entry.update(status="failed", detail=str(exc)[:300], changed=False)
         report.append(entry)
 
-    path = path_for(PV_FILE)
-    entry = {"file": PV_FILE, "path": str(path.relative_to(DATA.parent)),
-             "source": PV_URL.format(lang="<lang>", title="<title>", start=PV_RANGE[0], end=PV_RANGE[1])
-             + " ; titles via " + LANGLINKS_URL.format(title="<en title>"), "kind": "wikipedia_pageviews"}
-    try:
-        new, rows = _pageviews_csv()
-        old = path.read_bytes() if path.exists() else None
-        changed = new != old
-        if changed:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_bytes(new)
-        entry.update(status="ok", changed=changed, rows=rows, sha256=_sha(new))
-    except Exception as exc:
-        entry.update(status="failed", detail=str(exc)[:300], changed=False)
-    report.append(entry)
+    for fname, sets, strict in [(PV_FILE, None, True), (PV_CAL_FILE, PV_CAL_SETS, False)]:
+        path = path_for(fname)
+        src = PV_URL.format(lang="<lang>", title="<title>", start="<start>", end="<end>")
+        rng = f"{PV_RANGE[0]}-{PV_RANGE[1]}" if sets is None else "; ".join(
+            f"{t} {a}-{b}" for t, a, b in sets.values())
+        entry = {"file": fname, "path": str(path.relative_to(DATA.parent)),
+                 "source": src + " (" + rng + ") ; titles via " + LANGLINKS_URL.format(title="<en title>"),
+                 "kind": "wikipedia_pageviews"}
+        try:
+            new, rows = _pageviews_csv(sets, strict)
+            old = path.read_bytes() if path.exists() else None
+            changed = new != old
+            if changed:
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(new)
+            entry.update(status="ok", changed=changed, rows=rows, sha256=_sha(new))
+        except Exception as exc:
+            entry.update(status="failed", detail=str(exc)[:300], changed=False)
+        report.append(entry)
 
     for e in report:
         prev = manifest.get(e["file"], {})

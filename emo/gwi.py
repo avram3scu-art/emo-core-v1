@@ -105,3 +105,40 @@ def compute_gwi(
         expected_false_events=expected_false,
         extra={"excursion_rate": p, "n_streams": float(n), "n_times": float(t)},
     )
+
+
+def coincidence_fraction(
+    r: pd.DataFrame,
+    train_start: str | pd.Timestamp,
+    train_end: str | pd.Timestamp,
+    z_threshold: float = 2.0,
+) -> pd.Series:
+    """
+    Share of streams in excursion on each day, with per-stream median and MAD
+    frozen on the training period and applied unchanged to every day
+    (docs/GWI_CALIBRATION_PROTOCOL.md §2).
+    """
+    train = r.loc[pd.Timestamp(train_start):pd.Timestamp(train_end)]
+    med = train.median()
+    mad = (train - med).abs().median() * 1.4826
+    mad = mad.where(mad > 0, train.std(ddof=0)).replace(0, np.nan)
+    z = (r - med) / mad
+    exc = (z > z_threshold) & z.notna()
+    n_valid = z.notna().sum(axis=1).replace(0, np.nan)
+    return (exc.sum(axis=1) / n_valid).fillna(0.0).rename("g")
+
+
+def calibrate_fraction_threshold(g_train: pd.Series, n_streams: int, q: float) -> float:
+    """
+    Smallest k/n (k = 1..n) such that the share of training days with g >= k/n
+    is <= q. Returns inf if no k qualifies (then no day can ignite).
+    """
+    g = g_train.dropna().to_numpy()
+    if len(g) == 0 or n_streams < 1:
+        return float("inf")
+    eps = 1e-9
+    for k in range(1, n_streams + 1):
+        f = k / n_streams
+        if np.mean(g >= f - eps) <= q:
+            return f
+    return float("inf")
