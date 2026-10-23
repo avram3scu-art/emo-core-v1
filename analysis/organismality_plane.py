@@ -20,9 +20,9 @@ root = Path(__file__).resolve().parents[1]
 g = lambda f: {int(x["key"]): x["count"] for x in json.load(open(root / f))["group_by"]}
 # Excluding China and Indonesia: their 2020-25 single-country growth (and OpenAlex coverage
 # changes for Indonesia) otherwise creates an artificial dip in the share. See data/README_cooperation.md.
-m = g("data/openalex_articles_multicountry_by_year_excl_CN_ID.json")
-a = g("data/openalex_articles_anycountry_by_year_excl_CN_ID.json")
-d = pd.read_csv(root / "data/owid_ucdp_death_rate_armed_conflicts.csv")
+m = g("data/sources/openalex_articles_multicountry_by_year_excl_CN_ID/openalex_articles_multicountry_by_year_excl_CN_ID.json")
+a = g("data/sources/openalex_articles_anycountry_by_year_excl_CN_ID/openalex_articles_anycountry_by_year_excl_CN_ID.json")
+d = pd.read_csv(root / "data/sources/owid_ucdp_death_rate_armed_conflicts/owid_ucdp_death_rate_armed_conflicts.csv")
 conf = d[d.Entity == "World"].set_index("Year")[d.columns[3]]
 years = list(range(1989, 2026))
 x = np.array([100 * m[y] / a[y] for y in years])

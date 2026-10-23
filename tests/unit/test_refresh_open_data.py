@@ -25,12 +25,14 @@ class _Resp:
 def _setup(tmp_path, monkeypatch, owid_new: bytes, oa_new: dict):
     data = tmp_path / "data"
     data.mkdir()
+    monkeypatch.setattr(refresh, "DATA", data)
     for f in refresh.OWID:
-        (data / f).write_bytes(OLD_CSV)
+        refresh.path_for(f).parent.mkdir(parents=True, exist_ok=True)
+        refresh.path_for(f).write_bytes(OLD_CSV)
     old_oa = {"meta": {}, "group_by": [{"key": "2020", "count": 10}, {"key": "2021", "count": 11}]}
     for f in refresh.OPENALEX:
-        (data / f).write_text(json.dumps(old_oa))
-    monkeypatch.setattr(refresh, "DATA", data)
+        refresh.path_for(f).parent.mkdir(parents=True, exist_ok=True)
+        refresh.path_for(f).write_text(json.dumps(old_oa))
 
     def fake_get(url):
         if "ourworldindata" in url:
@@ -49,8 +51,8 @@ def test_valid_update_is_written(tmp_path, monkeypatch):
     res = refresh.refresh()
     assert all(s["status"] == "ok" and s["changed"] for s in res["sources"])
     f = next(iter(refresh.OWID))
-    assert (data / f).read_bytes() == new_csv
-    g = json.loads((data / next(iter(refresh.OPENALEX))).read_text())
+    assert refresh.path_for(f).read_bytes() == new_csv
+    g = json.loads(refresh.path_for(next(iter(refresh.OPENALEX))).read_text())
     assert "notice" not in g["meta"]
 
 
@@ -59,7 +61,7 @@ def test_header_change_keeps_committed_file(tmp_path, monkeypatch):
     data = _setup(tmp_path, monkeypatch, bad, {"group_by": []})
     res = refresh.refresh()
     assert all(s["status"] == "failed" for s in res["sources"])
-    assert (data / next(iter(refresh.OWID))).read_bytes() == OLD_CSV
+    assert refresh.path_for(next(iter(refresh.OWID))).read_bytes() == OLD_CSV
 
 
 def test_large_row_loss_is_rejected(tmp_path, monkeypatch):

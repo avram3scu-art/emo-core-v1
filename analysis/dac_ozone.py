@@ -19,7 +19,7 @@ from emo.models.diagnostic_event import DiagnosticEvent  # noqa: E402
 from emo.models.policy_instrument import PolicyInstrument  # noqa: E402
 
 ev = pd.read_csv(root / "data/dac_ozone_events.csv").set_index("id")
-z = pd.read_csv(root / "data/owid_ozone_depleting_substance_consumption.csv")
+z = pd.read_csv(root / "data/sources/owid_ozone_depleting_substance_consumption/owid_ozone_depleting_substance_consumption.csv")
 w = z[z.Entity == "World"].set_index("Year")
 deliv = (w["Chlorofluorocarbons (CFCs)"] + w["Halons"]).sort_index()
 base = deliv.loc[1986]

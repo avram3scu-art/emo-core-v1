@@ -12,10 +12,10 @@ import pandas as pd
 from scipy.stats import theilslopes
 
 root = Path(__file__).resolve().parents[1]
-z = pd.read_csv(root / "data/owid_ozone_depleting_substance_consumption.csv")
+z = pd.read_csv(root / "data/sources/owid_ozone_depleting_substance_consumption/owid_ozone_depleting_substance_consumption.csv")
 zw = z[z.Entity == "World"].set_index("Year")
 ozone = (zw["Chlorofluorocarbons (CFCs)"] + zw["Halons"]).sort_index()
-c = pd.read_csv(root / "data/owid_annual_co2_emissions.csv")
+c = pd.read_csv(root / "data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv")
 co2 = c[c.Entity == "World"].set_index("Year")[c.columns[3]].sort_index() / 1e9  # Gt CO2
 
 cases = {

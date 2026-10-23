@@ -15,8 +15,9 @@ Safety rules, in order:
   3. Manually transcribed or hand-coded files (NHC, DAC events, the RDL
      forecast ledger) are never touched here.
 
-Writes data/MANIFEST.json (source URL, retrieval time, sha256, row count,
-changed flag, status) and prints one JSON status line for the weekly runner.
+Each series lives in its own folder, data/sources/<name>/<name>.<ext>.
+Writes data/MANIFEST.json (folder path, source URL, download date, sha256, row
+count, changed flag, status) and prints one JSON status line for the weekly runner.
 
 Optional environment: OPENALEX_API_KEY, OPENALEX_MAILTO.
 Run from the repository root: python scripts/refresh_open_data.py
@@ -65,6 +66,11 @@ OPENALEX = {
         "filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
 }
 OPENALEX_URL = "https://api.openalex.org/works?{query}"
+
+
+def path_for(fname: str) -> Path:
+    """Each download keeps its own folder: data/sources/<stem>/<fname>."""
+    return DATA / "sources" / Path(fname).stem / fname
 
 
 def _get(url: str, tries: int = 4) -> requests.Response:
@@ -121,8 +127,8 @@ def refresh() -> dict:
 
     for fname, slug in OWID.items():
         url = OWID_URL.format(slug=slug)
-        path = DATA / fname
-        entry = {"file": fname, "source": url, "kind": "owid"}
+        path = path_for(fname)
+        entry = {"file": fname, "path": str(path.relative_to(DATA.parent)), "source": url, "kind": "owid"}
         try:
             new = _get(url).content
             old = path.read_bytes()
@@ -141,8 +147,8 @@ def refresh() -> dict:
     key, mailto = os.environ.get("OPENALEX_API_KEY"), os.environ.get("OPENALEX_MAILTO")
     for fname, query in OPENALEX.items():
         q = query + (f"&api_key={key}" if key else "") + (f"&mailto={mailto}" if mailto else "")
-        path = DATA / fname
-        entry = {"file": fname, "source": OPENALEX_URL.format(query=query), "kind": "openalex"}
+        path = path_for(fname)
+        entry = {"file": fname, "path": str(path.relative_to(DATA.parent)), "source": OPENALEX_URL.format(query=query), "kind": "openalex"}
         try:
             payload = _get(OPENALEX_URL.format(query=q)).json()
             payload.get("meta", {}).pop("notice", None)  # per-request text, not data
@@ -167,10 +173,10 @@ def refresh() -> dict:
     for e in report:
         prev = manifest.get(e["file"], {})
         if e["status"] == "ok":
-            e["retrieved_at"] = now
+            e["downloaded_at"] = now
             e["last_changed_at"] = now if e["changed"] else prev.get("last_changed_at", "2026-10-20 (initial download)")
         else:
-            e["retrieved_at"] = prev.get("retrieved_at", "2026-10-20 (initial download)")
+            e["downloaded_at"] = prev.get("downloaded_at", prev.get("retrieved_at", "2026-10-20 (initial download)"))
             e["last_changed_at"] = prev.get("last_changed_at", "2026-10-20 (initial download)")
             e["last_attempt_at"] = now
         manifest[e["file"]] = {k: v for k, v in e.items() if k != "file"}

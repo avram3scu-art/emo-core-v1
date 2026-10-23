@@ -163,16 +163,24 @@ def main() -> int:
     (out / "pytest.txt").write_text(txt)
     tail = [ln for ln in txt.splitlines() if ln.strip()][-1:] or ["(no output)"]
     md.append(f"- pytest: {tail[0]}")
-    if code != 0:
+    tests_ok = code == 0
+    if not tests_ok:
         problems.append("tests failed")
 
     ok = not problems
+    # Gate for committing: unit tests pass, frozen records hold, every analysis ran.
+    # A failed download is not a gate: its committed file is kept unchanged.
+    gate = tests_ok and ledger_ok and all(repro.values()) and "FAILED" not in analyses.values()
     md = md[:2] + [f"**Result: {'all checks passed' if ok else 'PROBLEMS - ' + '; '.join(problems)}**", ""] + md[2:]
     (out / "SUMMARY.md").write_text("\n".join(md) + "\n")
-    status = {"date": today, "ok": ok, "problems": problems, "ledger_ok": ledger_ok,
+    status = {"date": today, "ok": ok, "commit_allowed": gate, "problems": problems, "ledger_ok": ledger_ok,
               "reproducibility": repro, "analyses": analyses, "previous": prev.name if prev else None}
     (out / "status.json").write_text(json.dumps(status, indent=2) + "\n")
     print("\n".join(md))
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if gh_out:
+        with open(gh_out, "a") as fh:
+            fh.write(f"commit_allowed={'true' if gate else 'false'}\nok={'true' if ok else 'false'}\nresult_dir={out.relative_to(ROOT)}\n")
     return 0 if ok else 1
 
 

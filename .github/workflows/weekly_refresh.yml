@@ -1,9 +1,12 @@
-name: Weekly open-data refresh
+name: Weekly refresh
 
-# Refreshes the open data in data/ (OWID CO2, ozone-depleting substances, aid,
-# conflict; OpenAlex co-authorship counts), reruns the analyses, checks the
-# frozen RDL records and the forecast ledger hash, runs the tests, and commits
-# a dated record to results/weekly/<date>/. See scripts/weekly_run.py.
+# Once a week (and on manual run): download the OWID series (annual CO2,
+# ozone-depleting substances, foreign aid share, armed-conflict deaths) and the
+# OpenAlex co-authorship counts (incl. the series excluding CN and ID), each into
+# its own folder under data/sources/, with source URL and download date in
+# data/MANIFEST.json; rerun the analysis scripts, check the frozen RDL records,
+# run the unit tests. Changed data and figures are committed with a dated message
+# ONLY if the tests pass (scripts/weekly_run.py decides; see commit_allowed).
 #
 # Optional settings (repository Settings -> Secrets and variables -> Actions):
 #   secret   OPENALEX_API_KEY  own OpenAlex budget instead of the shared free one
@@ -11,14 +14,12 @@ name: Weekly open-data refresh
 
 on:
   schedule:
-    - cron: "23 5 * * 1"   # Mondays 05:23 UTC (07:23 Brussels summer time)
+    - cron: "23 5 * * 1"   # Mondays 05:23 UTC
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [emo-2026-10]
     paths:
-      - .github/workflows/weekly-refresh.yml
-      - scripts/refresh_open_data.py
-      - scripts/weekly_run.py
+      - .github/workflows/weekly_refresh.yml
 
 permissions:
   contents: write
@@ -35,8 +36,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-        with:
-          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -49,7 +48,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install ".[dev]" matplotlib
 
-      - name: Weekly run
+      - name: Weekly run (download, analyses, tests)
         id: run
         continue-on-error: true
         env:
@@ -64,24 +63,29 @@ jobs:
           f=$(ls -d results/weekly/*/ 2>/dev/null | sort | tail -1)
           if [ -n "$f" ]; then cat "$f/SUMMARY.md" >> "$GITHUB_STEP_SUMMARY"; fi
 
-      - name: Commit dated results
-        if: always()
+      - name: Keep results of a blocked run
+        if: steps.run.outputs.commit_allowed != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-run-not-committed
+          path: results/weekly/
+          retention-days: 90
+
+      - name: Commit changed data and figures (only if tests pass)
+        if: steps.run.outputs.commit_allowed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data results analysis/*.png
-          if git diff --cached --quiet; then
-            echo "Nothing to commit"
-            exit 0
-          fi
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
           day=$(date -u +%Y-%m-%d)
-          result=$([ "${{ steps.run.outcome }}" = "success" ] && echo "all checks passed" || echo "problems, see SUMMARY.md")
-          git commit -m "Weekly run $day: $result"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          note=$([ "${{ steps.run.outputs.ok }}" = "true" ] && echo "all checks passed" || echo "tests passed; some downloads failed, see SUMMARY.md")
+          git commit -m "Weekly run $day: $note"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Fail if the run found problems
         if: steps.run.outcome != 'success'
         run: |
-          echo "The weekly run reported problems; see results/weekly/*/SUMMARY.md"
+          echo "The weekly run reported problems; see the summary above."
           exit 1

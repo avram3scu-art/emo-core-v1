@@ -19,7 +19,7 @@ Rules first, then values. Each value is set by the rule, not by judgement of the
 
 ### Sources and flags
 - Ozone n = 12: RFF, 1 Feb 1983, "a dozen countries account for 80 percent of CFC production". Dated before the decision. Note: this counts production; the climate counts are emissions. Cross-check from data/owid_ozone_depleting_substance_consumption.csv: 6 countries for 80% of CFC + halon consumption in 1986 (dated after the decision; first year in the file).
-- Climate n = 20 (1996) and 19 (2014): computed from data/owid_annual_co2_emissions.csv, countries only.
+- Climate n = 20 (1996) and 19 (2014): computed from data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv, countries only.
 - Ozone substitutes = 0.5: RFF 1983, "All substitutes require compromise of some performance characteristics"; aerosol propellant uses had already been replaced in the US after its 1978 aerosol ban (not separately sourced here: **unverified**). Christian Science Monitor, 9 Aug 1989: substitutes "two to five times more expensive" (**dated after the decision**).
 - Climate 1997 substitutes = 0.25: no dated source attached yet (**unverified**); the rule is applied on the common description of renewables in 1997 as costlier for nearly all uses.
 - Climate 2015 substitutes = 0.5: Lazard LCOE v9.0, reported by RenewEconomy on 18 Nov 2015: best-case unsubsidised wind $32/MWh and utility solar $58/MWh, cheaper than gas and coal. This covers electricity only, which is part of the uses. Dated inside the decision month, before Paris (30 Nov 2015).
@@ -51,7 +51,7 @@ Rules first, then values. Each value is set by the rule, not by judgement of the
 - Validation. Ozone: international assessment existed; the Antarctic hole (Farman et al., May 1985) was observed but not attributed to CFCs until later. Climate 1997: IPCC Second Assessment (1995), "balance of evidence suggests a discernible human influence". Climate 2015: IPCC AR5 (2013), human influence "extremely likely" the dominant cause.
 - Translation. Ozone: Vienna Convention (March 1985), no targets. Climate 1997: UNFCCC (1992), non-binding aim to return to 1990 levels. Climate 2015: Kyoto second period covered a minority of emissions and was not in force.
 - Budget. Ozone: research only. Climate 1997: Global Environment Facility (1991). Climate 2015: Green Climate Fund (capitalised 2014).
-- Deployment. Ozone: CFC-11 + CFC-12 production 646,642 t (1979) to 694,462 t (1984), +7.4% (AFEAS production table, via unfccc.int; compiled after the decision from producers' own reports). Climate 1997: world CO2 23.21 to 24.23 Gt (1991-1996), +4.4%. Climate 2015: 31.51 to 35.47 Gt (2009-2014), +12.5% (both from data/owid_annual_co2_emissions.csv).
+- Deployment. Ozone: CFC-11 + CFC-12 production 646,642 t (1979) to 694,462 t (1984), +7.4% (AFEAS production table, via unfccc.int; compiled after the decision from producers' own reports). Climate 1997: world CO2 23.21 to 24.23 Gt (1991-1996), +4.4%. Climate 2015: 31.51 to 35.47 Gt (2009-2014), +12.5% (both from data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv).
 - Contradiction. Ozone: no CFC subsidies known. Climate: fossil-fuel subsidies were documented by the 1990s (e.g. OECD and World Bank estimates; **specific report not verified**) and by 2015 (IEA estimates; **not verified here**).
 
 ## Known weaknesses, stated before running

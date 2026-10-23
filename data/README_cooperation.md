@@ -25,4 +25,6 @@
   The apparent post-2020 decline is a composition/coverage effect. Use the excluded series for trend statements.
 
 ## Weekly refresh
-These files are refreshed weekly by `.github/workflows/weekly-refresh.yml`; retrieval dates, hashes and changes are in `data/MANIFEST.json` and `results/weekly/`. Figures quoted in this README are from the 20 Oct 2026 download unless stated otherwise.
+These files are refreshed weekly by `.github/workflows/weekly_refresh.yml`; retrieval dates, hashes and changes are in `data/MANIFEST.json` and `results/weekly/`. Figures quoted in this README are from the 20 Oct 2026 download unless stated otherwise.
+
+Location: each file is in its own folder, `data/sources/<file name without extension>/`; source URL and download date are in `data/MANIFEST.json`.
