@@ -2,7 +2,29 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: GWI calibration test (2026-10-23, UIA follow-up)
+## Last session: 7 (2026-10-23) — SMF on a real case
+
+**Done when met: no.** Stopped before pre-registration: the test as specified cannot give a valid pass/fail with `emo/smf.py`. No data opened, nothing computed.
+
+**Checked first:** Monday 26 Oct's scheduled run cannot be checked yet (today is Fri 23 Oct). Carried to the next session.
+
+**Why it cannot be met**
+- The realised series (OWID CO2) is annual. `compute_smf` returns no null below 21 points and draws circular shifts only in [min_overlap, n − min_overlap], min_overlap = max(10, n//4). Distinct shifts: n = 21 → 2, n = 25 → 6, n = 30 → 11; ≥ 19 (honest p ≤ 0.05) needs n ≥ 38.
+- Its p-value counts 199 draws of those few shifts as independent, so it reports p ≈ 0.005 where the honest floor is 1/(k+1) (0.14 at n = 25). Defect in the code, not the data.
+- No published annual emissions path covers ≥ 38 realised years (would need publication ≤ 1986). RCP paths start after 2005 (< 21 points); SRES is decadal.
+- Construct issue: correlation is scale-free and circular shifts break trends, so two rising series "pass" without any level fidelity. A test in levels would mainly restate "both go up".
+
+**Open questions (for Adrian)**
+- Fix `smf.py` first (enumerate all admissible shifts, honest p, minimum-p check), as its own pre-registered session?
+- Then either a monthly self-model with hundreds of points (e.g. EIA Short-Term Energy Outlook vintages vs realised monthly US CO2; deviates from "OWID CO2") or a level-fidelity statistic (error vs a naive persistence forecast) instead of correlation.
+
+**Adrian must do**
+- Choose how session 7 is redefined (or skipped).
+
+## Next session
+Session 7 redefined by Adrian, or session 8 (`docs/PLAN.md`). First check that Monday 26 Oct's scheduled run committed and redeployed the page.
+
+## Previous session: GWI calibration test (2026-10-23, UIA follow-up)
 
 **Done when met: yes.** Pre-registered (db843a4) before the held-out pageviews were fetched; run once (Action 39933057718, code 803d614, results 7fec9bd); result in `docs/GWI_CALIBRATION_PROTOCOL.md` §7: **FAIL**.
 
