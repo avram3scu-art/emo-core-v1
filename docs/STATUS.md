@@ -17,6 +17,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Open questions**
 - Why did "Mitochondrion" return no interlanguage links?
 - Would a per-article null (each article calibrated on its own past) transfer? Needs a new pre-registration.
+- Optional diagnostic, no weight on the verdict: do the 53 "Prime number" ignitions cluster on a few dates (real attention, so not a true placebo) or scatter (threshold does not transfer)? Not run.
+- Any redesign must not be tuned on the now-opened articles: new articles (≥10, chosen by rule) and dates after 2026-10-18 only. Not a priority: GWI cannot score either coded DAC case (warnings before July 2015).
 
 **Adrian must do**
 - Nothing.
