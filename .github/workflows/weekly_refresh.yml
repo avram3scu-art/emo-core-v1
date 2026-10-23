@@ -16,10 +16,6 @@ on:
   schedule:
     - cron: "23 5 * * 1"   # Mondays 05:23 UTC
   workflow_dispatch:
-  push:
-    branches: [emo-2026-10]
-    paths:
-      - .github/workflows/weekly_refresh.yml
 
 permissions:
   contents: write
@@ -36,6 +32,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          # Branch head, not the triggering commit: a queued run must start from
+          # the previous run's commit, or both write the same files and the push
+          # conflicts (seen on 23 Oct 2026, run 39916346571).
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v6
