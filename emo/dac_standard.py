@@ -102,7 +102,8 @@ def _check_case(case: dict[str, Any], errors: list[str]) -> tuple[date | None, d
         elif not isinstance(case[key], typ) or (typ is str and not _is_text(case[key])):
             errors.append(f"case: '{key}' must be a non-empty {typ.__name__}")
     win = case.get("observation_window", {})
-    start = end = None
+    start: date | None = None
+    end: date | None = None
     if isinstance(win, dict):
         start, end = _parse_date(win.get("start")), _parse_date(win.get("end"))
         if start is None or end is None:
