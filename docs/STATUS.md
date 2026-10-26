@@ -18,19 +18,25 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Synergy: S = +0.0012 bits; null 2.5–97.5% −0.029 to +0.017; p_syn = 0.215, p_red = 0.785; TC p = 0.59. Untransformed series TC 0.50 bits, all shared trend. "Synergy passes noise controls" holds for synthetic data only.
 - Failures on record: two fetch failures (unkeyed OpenAlex search ≈100 calls/day, per OpenAlex docs); my protocol assumption that two Wikipedia titles sum to one attention stream was wrong (titles swapped 2019–2021); my first audit list wrongly called RDL `backtest`/`bottlenecks` unused (corrected).
 
+**Follow-up after close (09:25–09:45, Adrian's request): open items done**
+- README and plan: synergy = synthetic-only pass, real-stream FAIL; `synergy_resume.yml` deleted (81caa80).
+- Weekly cron: no scheduled run has ever fired in this repo (cause unknown). Tuesday 05:47 UTC backup trigger added; it skips itself if a weekly result from the last 5 days exists (81caa80).
+- τ_I: optional block-bootstrap interval, default unchanged (b6d5de6). On NHC data improvement stays demonstrated at every lead (48 h: 3.63%/yr [3.34, 3.91]); weak at 96/120 h (~5 blocks).
+- NHC table checked against NHC's PDF: 368/368 cells match; permanent test (0cd462f; PDF job run 40292776083).
+- `analysis/`: synergy helper tests, compile check, pyflakes-only CI check; it found one f-string issue in my synergy script, fixed (output unchanged).
+- Failures on record: the first CI with the new check failed (40292329460, the f-string); the first NHC job failed at apt-get (40292369127).
+- Final: CI green on 0cd462f; weekly run 40293170796 → 51b060b, all checks passed, RDL and GWI frozen runs reproduce, **76 tests** (103 − 33 deleted API tests + 6 new), page redeployed.
+
 **Open questions**
-- Monday 26 Oct weekly cron did not fire (only the manual run). Check whether next Monday's fires.
-- README/plan row "synergy passes noise controls" needs "synthetic only; failed on real streams".
+- Will a scheduled run fire on Monday 2 Nov, or the Tuesday 3 Nov backup? If neither, the scheduler is not working for this repo.
 - Tested but unused, kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Delete?
-- `analysis/` has no tests and is excluded from lint and mypy. τ_I interval ignores autocorrelation. NHC table hand-transcribed, unchecked against the PDF.
-- `synergy_resume.yml` is idle (daily no-op); delete.
-- Proposal, not in the plan: a static `results.json` on GitHub Pages, written by the weekly Action, instead of a running API (after sessions 9–10). Adrian to decide.
+- Proposal, not in the plan: static `results.json` on GitHub Pages instead of a running API (after sessions 9–10).
 
 **Adrian must do**
-- Nothing. Optional: decide on the `results.json` proposal.
+- Nothing. Optional: decide on `results.json`.
 
 ## Next session
-Session 9: DAC standard (`docs/PLAN.md`). First check whether Monday 2 Nov's scheduled weekly run fired.
+Session 9: DAC standard (`docs/PLAN.md`). First check whether the Monday 2 Nov or Tuesday 3 Nov scheduled run fired.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 
