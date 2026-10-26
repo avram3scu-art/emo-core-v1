@@ -1,3 +1,5 @@
+> **Outdated (26 Oct 2026):** the API, dashboard, orchestration, ingestion and DestinE hooks described here were deleted (never run). Rewrite: plan session 15.
+
 cat > ARCHITECTURE.md <<'EOF'
 # EMO-Core Architecture
 

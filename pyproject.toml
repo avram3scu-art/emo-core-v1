@@ -26,9 +26,6 @@ dependencies = [
   "SQLAlchemy>=2.0",
   "alembic>=1.13",
   "psycopg2-binary>=2.9",
-  "fastapi>=0.115",
-  "uvicorn[standard]>=0.30",
-  "prefect>=2.16",
   "loguru>=0.7",
 ]
 
@@ -48,7 +45,7 @@ Issues = "https://github.com/avram3scu-art/emo-core-v1/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["emo*", "api*", "orchestration*"]
+include = ["emo*"]
 
 [tool.ruff]
 line-length = 88

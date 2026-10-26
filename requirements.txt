@@ -19,11 +19,8 @@ alembic>=1.13
 psycopg2-binary>=2.9
 
 # API
-fastapi>=0.115
-uvicorn[standard]>=0.30
 
 # Orchestration (future DIH layer)
-prefect>=2.16
 
 # Logging
 loguru>=0.7

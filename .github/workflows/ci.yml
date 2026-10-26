@@ -41,7 +41,7 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          mypy emo api orchestration
+          mypy emo
 
       - name: Lint (ruff)
         run: |

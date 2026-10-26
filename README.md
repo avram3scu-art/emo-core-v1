@@ -12,7 +12,7 @@ Author: Adrian N. Avramescu (independent researcher, Antwerp). Plan of work: [`d
 | EMO metrics (OI, τ_I, synergy, GWI, SMF) | Organismality plane 1989–2025; τ_I from NHC hurricane track errors (3–4% a year); GWI ignites on Atlantic hurricane landfalls in Wikipedia pageviews (pre-registered PASS); SMF detects forecast fidelity in EIA and SPF forecasts at 3–6 months, none for energy at 12 months (pre-registered) | GWI threshold failed cross-article calibration, so a GWI level is not a measurement; synergy not yet run on real streams; GDELT never ingested | [`docs/GWI_PROTOCOL.md`](docs/GWI_PROTOCOL.md), [`docs/GWI_CALIBRATION_PROTOCOL.md`](docs/GWI_CALIBRATION_PROTOCOL.md), [`docs/SMF_PROTOCOL.md`](docs/SMF_PROTOCOL.md); [`analysis/`](analysis/) scripts; 102 passing tests (weekly run, 23 Oct 2026) |
 | RDL (remedies) | Forecast ledger of 5 dated forecasts, public on Zenodo | v0.2 and v0.3 failed their held-out tests; v0.4 waits for Oslo–Seattle or IRD data | [`docs/RDL_*`](docs/); DOI [10.5281/zenodo.23507467](https://doi.org/10.5281/zenodo.23507467) |
 | UIA (interface density) | 1 of the 6 a_UIA terms measurable (I, as τ_I) | a_UIA scalar retired (session 5); UIA redefined as the He profile (I, C, F, E, D), not yet scored; GWI may not score I (calibration failed) | [`docs/UIA_PROTOCOL.md`](docs/UIA_PROTOCOL.md) |
-| Continuous running | Weekly GitHub Action since 23 Oct 2026: refresh, analyses, tests; commits only if tests pass; rebuilds the public page | No streaming or daily ingestion; Prefect and Airflow files have never run | [`.github/workflows/weekly_refresh.yml`](.github/workflows/weekly_refresh.yml), [`orchestration/`](orchestration/) |
+| Continuous running | Weekly GitHub Action since 23 Oct 2026: refresh, analyses, tests; commits only if tests pass; rebuilds the public page | No streaming or daily ingestion; the never-run Prefect/Airflow scaffolding was deleted on 26 Oct 2026 | [`.github/workflows/weekly_refresh.yml`](.github/workflows/weekly_refresh.yml) |
 
 Note on tests: 102 pass in the weekly run of 23 Oct 2026 (`results/weekly/2026-10-23/pytest.txt`); the earlier figure of 57 was counted on 21 Oct 2026 before later tests were added.
 
@@ -23,11 +23,10 @@ The white papers in this repository (`WHITEPAPER_EMO_v1_*`) describe a live obse
 ## What is in the repository
 
 - `emo/` — Python package: metric functions (OI, synergy, GWI, SMF, τ_I), a first-cut UIA engine (`emo/uia_engine`), DAC lag, conversion and persistence code, and RDL (`emo/remedy`).
-- `api/` — FastAPI service exposing the metrics. Not deployed anywhere.
 - `analysis/` — scripts that produce the real-data results above, with their outputs.
 - `docs/` — DAC, RDL, UIA, GWI and SMF protocols, the forecast ledger, the plan and the status.
 - `tests/` — unit and integration tests.
-- `orchestration/`, `dashboard/`, `Dockerfile` — scaffolding that has never run in production.
+- Deleted 26 Oct 2026 (never run, unused by any analysis; kept in git history): `api/`, `dashboard/`, `orchestration/`, `Dockerfile`, `emo/ingestion/`, `emo/twin_hooks/`, unused RDL remedy files. See `docs/AUDIT_2026-10-26.md`.
 
 ## Run it locally
 
