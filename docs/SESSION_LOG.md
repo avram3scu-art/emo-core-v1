@@ -30,3 +30,4 @@
 | 2026-10-23 | 7 closed | Session 7 with review, fixes, lint, partial re-audit | yes | 29f89d7 | all work pushed; next: session 8; open: freeze GWI recorded outputs, audit tau_I/DAC/organismality/sessions 4-5 |
 | 2026-10-26 | 8 | Synergy (Gaussian O-information) on real climate streams | no | e4c160c | Pre-registered and coded before data; OpenAlex fetch hit HTTP 429 twice (runs 40283263805, 40283537981); not run, data unseen |
 | 2026-10-26 | 8 follow-up | Resumable fetch, daily resume job | no (pending fetch) | 0a6c697 | 101/120 OpenAlex months cached unopened; synergy_resume.yml finishes fetch and runs analysis once |
+| 2026-10-26 | 8 completed | Synergy on real climate streams | yes | 93fb72a | FAIL: no structure beyond circular-shift null (p_syn 0.215); fetch finished with OPENALEX_API_KEY |

@@ -106,11 +106,30 @@ fake inputs only (no structure found, as expected).
   job `synergy_resume.yml` (06:17 UTC), which runs the analysis once when the fetch is
   complete and then does nothing.
 
+- Adrian added the repository secret `OPENALEX_API_KEY` (free key; keyless search is capped
+  at about a tenth of the keyed budget, per the OpenAlex authentication guide, opened).
+  Code e4fb711 uses it if set and never stores it. Run 40288775279 fetched the remaining
+  19 months and the other streams and ran the analysis once (record 93fb72a). Key checked
+  absent from all committed files.
+
 ## 10. Result
 
-**Not run.** Under §7 the one allowed fix is used and the fetch still fails, so the test
-was not run. No data of the three streams has been opened; §2–§5 remain valid and blind.
+**FAIL: no higher-order structure distinguishable from the null.**
 
-To run it, a further fetch fix needs Adrian's decision (it goes beyond §7): e.g. an
-`OPENALEX_API_KEY` secret, or spreading the 120 calls over two days. The design (§2–§5)
-would stay unchanged; the amendment would be recorded here before the new run.
+- S_obs = +0.0012 bits (Ω = −0.0012). Null (N = 7,310 shift pairs): mean −0.0037,
+  2.5–97.5% range −0.0291 to +0.0174. p_syn = 0.215, p_red = 0.785.
+- Data: T = 120; no missing months; policy had 3 zero months (none absent from the facet).
+
+Without weight on the verdict:
+- Total correlation 0.076 bits vs null 95th percentile 0.204 (p = 0.59): after removing
+  trend and season, the three streams share no information beyond what aligned noise
+  with their own autocorrelation produces.
+- Residual correlations: science–policy −0.03, science–attention −0.31, policy–attention
+  −0.06. The −0.31 is not significant against the shift null (slow drifts).
+- Untransformed ln(c+1): TC = 0.50 bits, S = −0.028 (redundancy-leaning). A naive
+  analysis would have reported strong shared information; it is shared trend.
+
+Reading: on this domain and window, the synergy index finds nothing. The session-1 claim
+"synergy passes noise controls" holds only for synthetic data. This does not show that
+synergy is absent between science, policy and attention in general: one domain, monthly
+resolution, and Gaussian O-information only sees linear structure.

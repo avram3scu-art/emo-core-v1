@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Last session: 8 (2026-10-26) — synergy on real streams
 
-**Done when met: no.** Test pre-registered and coded before data, but the data fetch failed twice; result recorded as "not run" in `docs/SYNERGY_PROTOCOL.md` §9–§10.
+**Done when met: yes** (after follow-up). Result in `docs/SYNERGY_PROTOCOL.md` §10: **FAIL**, no higher-order structure distinguishable from the null (S = +0.0012 bits, p_syn = 0.215, p_red = 0.785; TC p = 0.59). Raw untransformed series show TC 0.50 bits, all shared trend.
 
 **Checked first:** Monday 26 Oct's scheduled weekly run (cron 05:23 UTC) had not run by ~07:15 UTC; last weekly run is still 39952996639 (23 Oct, manual). GitHub may delay scheduled runs; check again next session.
 
@@ -27,8 +27,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Follow-up (same day, 08:30):** Adrian left the fix to Claude. Chosen: resumable fetch, no API key (0a6c697, amendment in protocol §9 before data). Run 40286109947 cached 101/120 months, committed unopened (be7028b). Daily Action `synergy_resume.yml` (06:17 UTC) fetches the rest and runs the analysis once when complete.
 
+**Completion (08:55):** Adrian added secret `OPENALEX_API_KEY`; fetch uses it if set, never stores it (e4fb711). Run 40288775279 completed the fetch and ran the analysis once (93fb72a). `synergy_resume.yml` now does nothing (result exists); can be deleted.
+
 ## Next session
-Read the verdict in `results/synergy_climate/result.txt` and copy it into `docs/SYNERGY_PROTOCOL.md` §10 (session 8 done when met), then session 9 (`docs/PLAN.md`). If the job is still at 101/120 after two days, the cap is not daily: then an API key is needed.
+Session 9 (`docs/PLAN.md`). Open: README/plan row still says "synergy passes noise controls" without "synthetic only; failed on real streams" (session 15 rewrite, or a one-line fix); weekly cron did not fire on 26 Oct, check again.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 
