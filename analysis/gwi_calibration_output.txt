@@ -1,0 +1,20 @@
+Pre-registered: docs/GWI_CALIBRATION_PROTOCOL.md; q = 0.005; z > 2.0; training 2016-01-01..2025-12-31
+
+[reference Photosynthesis] streams: de, en, es, fr, it, ja, ko, nl, pl, pt, ru, zh; excluded: none
+  f_cal = 0.5000 (k = 6 of 12); [no weight] binomial k_min = 6; training rate 15/3653 = 0.0041
+  2026 (time held out): 1/291 = 0.0034; <= 0.01: True
+
+[Mitochondrion] dropped: 1 streams (< 8)
+
+[Prime number] streams: de, en, es, fr, it, ja, ko, nl, pl, pt, ru, zh; excluded: none
+  rate 2016-01-01..2026-10-18: 53/3944 = 0.0134; <= 0.01: False
+  [no weight] 2026 only: 1/291 = 0.0034
+
+[Pythagorean theorem] streams: de, en, es, fr, it, ja, ko, nl, pl, pt, ru, zh; excluded: none
+  rate 2016-01-01..2026-10-18: 9/3944 = 0.0023; <= 0.01: True
+  [no weight] 2026 only: 0/291 = 0.0000
+
+[Tropical cyclone, session-6 events, calibrated rule] ignition days 118; events hit 14/21 = 0.667; controls 12/275 = 0.044; Fisher p = 2.535e-12
+  [no weight] placebo rerun: ignition days 15; events hit 2/21; controls 4/275; p = 0.06055
+
+RESULT: FAIL (held-out articles <= 2q: False; 2026 <= 2q: True; discrimination kept: True)

@@ -38,11 +38,9 @@ ANALYSES = {
     "organismality_plane": ["analysis/organismality_plane.png"],
     "information_time_nhc": ["analysis/information_time_nhc.png"],  # NHC data is transcribed by hand; not refreshed
     "score_forecast_ledger": [],
-    "gwi_hurricanes": [],  # pre-registered test, docs/GWI_PROTOCOL.md
-    "gwi_calibration": [],  # pre-registered test, docs/GWI_CALIBRATION_PROTOCOL.md
 }
 
-# Frozen RDL runs: (script, recorded output, line filter). Output must match exactly.
+# Frozen runs (RDL, GWI): (script, recorded output, line filter). Output must match exactly.
 # rdl_v03_development: the code now carries the logged effect-floor rule, so it
 # reproduces development run 2, whose recorded file omits the "full ranking"
 # lines. Development run 1 (rdl_v03_development_output.txt) predates that rule
@@ -52,6 +50,11 @@ REPRO = [
     ("rdl_backtest_heldout", "analysis/rdl_backtest_heldout_output.txt", None),
     ("rdl_v03_development", "analysis/rdl_v03_development_output_run2.txt", "full ranking="),
     ("rdl_v03_heldout", "analysis/rdl_v03_heldout_output.txt", None),
+    # Pre-registered GWI tests (sessions 6, 6c), frozen 2026-10-26 from their recorded runs
+    # (5e343fc, 7fec9bd). Pageviews are refetched weekly; a Wikimedia revision that changes
+    # the result now blocks the commit instead of silently overwriting the record.
+    ("gwi_hurricanes", "analysis/gwi_hurricanes_output.txt", None),
+    ("gwi_calibration", "analysis/gwi_calibration_output.txt", None),
 ]
 NOT_RUN = {
     "rdl_v04_test": "needs the Oslo-Seattle / IRD component file (requested 20 Oct 2026, not received)",
@@ -115,7 +118,7 @@ def main() -> int:
     if not ledger_ok:
         problems.append("forecast ledger changed")
 
-    # 3. Reproducibility of frozen RDL runs
+    # 3. Reproducibility of frozen runs (RDL, GWI)
     repro = {}
     for script, recorded, drop in REPRO:
         code, txt = run([sys.executable, f"analysis/{script}.py"])
@@ -156,8 +159,6 @@ def main() -> int:
             if sha(ROOT / f) != before[f]:
                 shutil.copy2(ROOT / f, out / Path(f).name)
                 md.append(f"  - figure `{f}` changed; copy kept in this folder")
-    md += ["", "Note: the subtitle of `dac_ozone_vs_climate.png` states fixed percentages "
-           "(ozone -99 % in 20 years, CO₂ +48 %). If `dac_compare_ozone_climate` changed, check that text."]
 
     # 5. Tests
     md += ["", "## Tests", ""]

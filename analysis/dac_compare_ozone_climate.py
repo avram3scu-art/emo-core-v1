@@ -18,9 +18,20 @@ ozone = (zw["Chlorofluorocarbons (CFCs)"] + zw["Halons"]).sort_index()
 c = pd.read_csv(root / "data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv")
 co2 = c[c.Entity == "World"].set_index("Year")[c.columns[3]].sort_index() / 1e9  # Gt CO2
 
+
+
+def _event_year(f: str, event_id: str) -> float:
+    """Decimal year of an event, read from the DAC event file (single source of dates)."""
+    e = pd.read_csv(root / "data" / f).set_index("id")
+    d = pd.Timestamp(e.loc[event_id, "date"])
+    return d.year + (d.dayofyear - 1) / (366 if d.is_leap_year else 365)
+
+
 cases = {
-    "Ozone": dict(series=ozone, warn=1974.5, obs=1985.4, binding=1987.7, base_year=1986, unit="ODP t"),
-    "Climate": dict(series=co2, warn=1979.6, obs=None, binding=1997.9, base_year=1997, unit="Gt CO2"),
+    "Ozone": dict(series=ozone, warn=_event_year("dac_ozone_events.csv", "molina_rowland_1974"),
+                  binding=_event_year("dac_ozone_events.csv", "montreal_protocol"), base_year=1986, unit="ODP t"),
+    "Climate": dict(series=co2, warn=_event_year("dac_climate_events.csv", "charney_1979"),
+                    binding=_event_year("dac_climate_events.csv", "kyoto_adopted"), base_year=1997, unit="Gt CO2"),
 }
 print(f"{'':10s}{'warning→binding':>17s}{'level vs baseline, years after binding treaty':>50s}")
 print(f"{'':10s}{'(years)':>17s}{'+5':>10s}{'+10':>10s}{'+20':>10s}{'latest':>12s}")
@@ -39,7 +50,16 @@ s = co2.loc[2016:2024]
 sl, _, lo, hi = theilslopes(s.values, s.index)
 print(f"\nClimate after Paris (2016-2024): {sl:+.2f} Gt CO2/yr [{lo:+.2f}, {hi:+.2f}]; "
       f"peak so far {co2.idxmax()} ({co2.max():.1f} Gt)")
-print("Climate: 50% cut from 1997 baseline not reached; emissions not yet past their peak.")
+peak_is_latest = co2.idxmax() == co2.index.max()
+print("Climate: the highest emissions year is the latest year in the data; no peak yet observed."
+      if peak_is_latest else f"Climate: emissions peaked in {co2.idxmax()} so far.")
+print("Scope: Montreal bound all parties; Kyoto bound only listed developed countries, while delivery\n"
+      "here is world CO2. The two rows are the same arithmetic, not equally binding commitments.")
+
+
+def _level(k: dict, h: int) -> float:
+    s = k["series"]
+    return 100 * (s.loc[int(np.floor(k["binding"])) + h] / s.loc[k["base_year"]] - 1)
 
 # Figure: level relative to the baseline, by years since the first binding treaty
 import matplotlib
@@ -66,7 +86,8 @@ ax.grid(True, color=GRID, lw=0.8)
 for sp in ax.spines.values(): sp.set_visible(False)
 ax.tick_params(colors=MUTED, labelsize=8.5, length=0)
 fig.suptitle("Warning to delivery: ozone vs climate", x=0.08, ha="left", fontsize=13, color=INK)
-ax.set_title("Same measurement. Ozone consumption fell 99% in 20 years; CO₂ emissions rose 48%.",
+oz20, cl20 = _level(cases["Ozone"], 20), _level(cases["Climate"], 20)
+ax.set_title(f"After 20 years: ozone consumption {oz20:+.0f}%, CO₂ {cl20:+.0f}% (Kyoto bound fewer parties).",
              loc="left", fontsize=9.5, color=MUTED, pad=8)
 fig.text(0.08, 0.01, "Ozone: world CFC + halon consumption (OWID/UNEP), 1986 = 100. Climate: world fossil CO₂ (OWID/Global Carbon Project), 1997 = 100.",
          fontsize=6.8, color=MUTED)

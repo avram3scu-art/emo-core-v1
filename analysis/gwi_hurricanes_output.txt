@@ -1,0 +1,38 @@
+Events (rule: first landfall >= 96 kt per storm, 2016-01-01..2025-12-31, windows +/-2 d merged): n = 21
+  2016-10-04  Matthew (AL142016)
+  2016-11-24  Otto (AL162016)
+  2017-08-26  Harvey (AL092017)
+  2017-09-06  Irma (AL112017)
+  2017-09-19  Maria (AL152017)
+  2018-10-10  Michael (AL142018)
+  2019-09-01  Dorian (AL052019)
+  2020-08-27  Laura (AL132020)
+  2020-10-28  Zeta (AL282020)
+  2020-11-03  Eta (AL292020)
+  2020-11-17  Iota (AL312020)
+  2021-08-21  Grace (AL072021)
+  2021-08-29  Ida (AL092021)
+  2022-09-20  Fiona (AL072022)
+  2022-09-27  Ian (AL092022)
+  2023-08-30  Idalia (AL102023)
+  2024-07-01  Beryl (AL022024)
+  2024-09-27  Helene (AL092024)
+  2024-10-10  Milton (AL142024)
+  2024-11-06  Rafael (AL182024)
+  2025-10-28  Melissa (AL132025)
+
+[test] streams used: de, en, es, fr, it, ja, ko, nl, pl, pt, ru, zh; excluded (>5% zero days): none
+  ignition days: 95 of 3653; k_min = 7 of 12; excursion rate p = 0.0665; expected false ignitions = 0.012
+  event windows hit: 14/21 = 0.667
+  control windows hit (Jun-Nov): 9/275 = 0.033; Fisher one-sided p = 2.306e-13
+  [no weight] control windows hit (all year): 10/644 = 0.016
+  events hit: 2016-10-04, 2017-08-26, 2017-09-06, 2017-09-19, 2019-09-01, 2020-08-27, 2021-08-29, 2022-09-20, 2022-09-27, 2023-08-30, 2024-07-01, 2024-09-27, 2024-10-10, 2025-10-28
+
+[placebo] streams used: de, en, es, fr, it, ja, ko, nl, pl, pt, ru, zh; excluded (>5% zero days): none
+  ignition days: 15 of 3653; k_min = 6 of 12; excursion rate p = 0.0295; expected false ignitions = 0.002
+  event windows hit: 2/21 = 0.095
+  control windows hit (Jun-Nov): 4/275 = 0.015; Fisher one-sided p = 0.06055
+  [no weight] control windows hit (all year): 4/644 = 0.006
+  events hit: 2017-09-19, 2024-09-27
+
+RESULT: PASS (H >= 0.5: True; p < 0.05: True; placebo p >= 0.05: True)
