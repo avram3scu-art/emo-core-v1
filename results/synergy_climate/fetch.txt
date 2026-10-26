@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_synergy_climate.py", line 74, in <module>
+    main()
+  File "/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_synergy_climate.py", line 60, in main
+    science[a[:7]] = {"url": url, "count": json.loads(get(url))["meta"]["count"]}
+                                                      ^^^^^^^^
+  File "/home/runner/work/emo-core-v1/emo-core-v1/scripts/fetch_synergy_climate.py", line 42, in get
+    raise RuntimeError(f"{url}: {last}")
+RuntimeError: https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-05-01,to_publication_date:2024-05-31: HTTP Error 429: Too Many Requests
