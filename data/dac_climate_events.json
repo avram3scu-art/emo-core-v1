@@ -1,0 +1,114 @@
+{
+  "standard_version": "1.0",
+  "case": {
+    "case_id": "climate",
+    "t0_event_id": "charney_1979",
+    "t0_institution": "US National Academy of Sciences (Charney report)",
+    "t0_rule": "First diagnostic event in the original event file",
+    "alternative_t0": [
+      "ipcc_far_1990"
+    ],
+    "response_scale": "International treaty system (all parties); national acts not coded",
+    "start_rule": "First treaty adoption with binding cuts; frameworks without binding cuts excluded",
+    "end_point": "not coded (no dated delivery events in the original file)",
+    "inclusion_rules": {
+      "binding_act": "Adoption of the first treaty with binding cuts"
+    },
+    "observation_window": {
+      "start": "1979-01-01",
+      "end": "2026-10-26",
+      "reason": "From the t0 year to the conversion date"
+    },
+    "source_pool": {
+      "searched": [
+        "sources listed per event in the original CSV"
+      ],
+      "search_date": "2026-10-26",
+      "not_accessed": [],
+      "case_selection_reason": "Existing EMO comparison case (analysis/dac_compare_ozone_climate.py)"
+    },
+    "coding": {
+      "coders": 1,
+      "agreement": null,
+      "rules_fixed_before_coding": false
+    },
+    "computation": {
+      "code": "scripts/convert_dac_csv.py; emo/dac_standard.py"
+    }
+  },
+  "events": [
+    {
+      "event_id": "charney_1979",
+      "sublayer": "validation",
+      "date_status": "window",
+      "date_earliest": "1979-01-01",
+      "date_latest": "1979-12-31",
+      "source_wording": "date given as 1979-07-27, precision 'year_verified' in the original file",
+      "description": "Charney report (US NAS): 3 +/- 1.5 C warming per CO2 doubling",
+      "source": "https://en.wikipedia.org/wiki/Charney_Report",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "ipcc_far_1990",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "1990-01-01",
+      "date_latest": "1990-12-31",
+      "source_wording": "date given as 1990-08-01, precision 'year_unverified' in the original file",
+      "description": "IPCC First Assessment Report (IPCC created ~1988)",
+      "source": "no source given",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "unfccc_1992",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "1992-01-01",
+      "date_latest": "1992-12-31",
+      "source_wording": "date given as 1992-06-01, precision 'year_verified' in the original file",
+      "description": "UN Framework Convention on Climate Change, Rio (framework, no binding cuts)",
+      "source": "https://en.wikipedia.org/wiki/Kyoto_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "kyoto_adopted",
+      "sublayer": "binding_act",
+      "date_status": "exact",
+      "date_earliest": "1997-12-11",
+      "date_latest": "1997-12-11",
+      "description": "Kyoto Protocol adopted (binding cuts for listed developed countries)",
+      "source": "https://en.wikipedia.org/wiki/Kyoto_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "kyoto_in_force",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2005-02-16",
+      "date_latest": "2005-02-16",
+      "description": "Kyoto Protocol enters into force; first commitment period 2008-2012",
+      "source": "https://en.wikipedia.org/wiki/Kyoto_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "paris_adopted",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2015-12-12",
+      "date_latest": "2015-12-12",
+      "description": "Paris Agreement adopted (NDCs not legally binding)",
+      "source": "https://en.wikipedia.org/wiki/Paris_Agreement",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "paris_in_force",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2016-11-04",
+      "date_latest": "2016-11-04",
+      "description": "Paris Agreement enters into force",
+      "source": "https://en.wikipedia.org/wiki/Paris_Agreement",
+      "source_type": "secondary"
+    }
+  ]
+}

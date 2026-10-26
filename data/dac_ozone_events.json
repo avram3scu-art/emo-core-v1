@@ -1,0 +1,116 @@
+{
+  "standard_version": "1.0",
+  "case": {
+    "case_id": "ozone",
+    "t0_event_id": "molina_rowland_1974",
+    "t0_institution": "Molina & Rowland (Nature), first published diagnosis",
+    "t0_rule": "First diagnostic event in the original event file",
+    "alternative_t0": [
+      "farman_1985"
+    ],
+    "response_scale": "International treaty system (all parties); national acts not coded",
+    "start_rule": "First treaty adoption with binding cuts; frameworks without binding cuts excluded",
+    "end_point": "not coded (no dated delivery events in the original file)",
+    "inclusion_rules": {
+      "binding_act": "Adoption of the first treaty with binding cuts"
+    },
+    "observation_window": {
+      "start": "1974-01-01",
+      "end": "2026-10-26",
+      "reason": "From the t0 year to the conversion date"
+    },
+    "source_pool": {
+      "searched": [
+        "sources listed per event in the original CSV"
+      ],
+      "search_date": "2026-10-26",
+      "not_accessed": [],
+      "case_selection_reason": "Existing EMO comparison case (analysis/dac_compare_ozone_climate.py)"
+    },
+    "coding": {
+      "coders": 1,
+      "agreement": null,
+      "rules_fixed_before_coding": false
+    },
+    "computation": {
+      "code": "scripts/convert_dac_csv.py; emo/dac_standard.py"
+    }
+  },
+  "events": [
+    {
+      "event_id": "molina_rowland_1974",
+      "sublayer": "validation",
+      "date_status": "window",
+      "date_earliest": "1974-01-01",
+      "date_latest": "1974-12-31",
+      "source_wording": "date given as 1974-06-28, precision 'year_verified' in the original file",
+      "description": "Molina & Rowland: CFCs destroy stratospheric ozone (Nature 249, 810-812)",
+      "source": "https://undsci.berkeley.edu/ozone-depletion-uncovering-the-hidden-hazard-of-hairspray/putting-the-pieces-together/",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "farman_1985",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "1985-05-01",
+      "date_latest": "1985-05-31",
+      "source_wording": "date given as 1985-05-01, precision 'month_verified' in the original file",
+      "description": "Farman, Gardiner & Shanklin: Antarctic ozone hole (Nature 315, 207-210, doi:10.1038/315207a0)",
+      "source": "https://nora.nerc.ac.uk/id/eprint/523353",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "vienna_convention",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "1985-01-01",
+      "date_latest": "1985-12-31",
+      "source_wording": "date given as 1985-03-22, precision 'year_verified' in the original file",
+      "description": "Vienna Convention for the Protection of the Ozone Layer (framework, no binding cuts)",
+      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "montreal_protocol",
+      "sublayer": "binding_act",
+      "date_status": "exact",
+      "date_earliest": "1987-09-16",
+      "date_latest": "1987-09-16",
+      "description": "Montreal Protocol agreed (binding phase-down)",
+      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "montreal_in_force",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "1989-01-01",
+      "date_latest": "1989-01-01",
+      "description": "Montreal Protocol enters into force",
+      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "developed_cfc_phaseout",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "1996-01-01",
+      "date_latest": "1996-12-31",
+      "source_wording": "date given as 1996-01-01, precision 'year_verified' in the original file",
+      "description": "CFC phase-out deadline, developed countries",
+      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+      "source_type": "secondary"
+    },
+    {
+      "event_id": "developing_cfc_phaseout",
+      "sublayer": "context",
+      "date_status": "window",
+      "date_earliest": "2010-01-01",
+      "date_latest": "2010-12-31",
+      "source_wording": "date given as 2010-01-01, precision 'year_verified' in the original file",
+      "description": "CFC phase-out deadline, developing countries",
+      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+      "source_type": "secondary"
+    }
+  ]
+}

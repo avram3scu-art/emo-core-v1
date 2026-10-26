@@ -69,3 +69,12 @@ Missing and censored sublayers are listed separately at the top level. No weight
 **Statistic.** The binding_act `lag_from_t0` range; the exact-day lag implied by the CSV dates.
 
 **Pass if** both converted files validate **and** each case's range contains the exact-day lag the comparison script uses. **Reported either way:** the range width, i.e. how much the "year-verified" precision of the warning dates widens the lag.
+
+**Result (run 2026-10-26, after a4de996): PASS.**
+
+| Case | Exact-day lag used by the comparison script | binding_act lag range (standard) |
+|---|---|---|
+| Ozone (Molina–Rowland → Montreal) | 4,828 d (13.2 y) | 4,642 – 5,006 d |
+| Climate (Charney → Kyoto) | 6,712 d (18.4 y) | 6,555 – 6,919 d |
+
+Both files validate. The year-level precision of both warning dates widens each lag by 364 days (about ±0.5 y); the comparison script's single values hide this. Every t0 and binding-act source in both files is secondary (encyclopaedia or educational pages); one context row (IPCC FAR) has no source. Neither weakens the ~5-year difference between the cases, but both would have to be fixed before the files met the standard's spirit, not only its format.

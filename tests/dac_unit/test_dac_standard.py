@@ -157,3 +157,11 @@ def test_schema_matches_validator_constants():
     assert set(ev["properties"]) == set(ds.EVENT_REQUIRED) | set(ds.EVENT_OPTIONAL)
     assert schema["properties"]["case"]["required"] == list(ds.CASE_REQUIRED)
     assert schema["properties"]["standard_version"]["const"] == ds.STANDARD_VERSION
+
+
+@pytest.mark.parametrize("name, exact", [("ozone", 4828), ("climate", 6712)])
+def test_converted_case_files_reproduce_comparison_lag(name, exact):
+    """docs/DAC_STANDARD.md §5: converted files validate and contain the script's lag."""
+    prof = ds.compute_profile(ds.load_event_file(ROOT / "data" / f"dac_{name}_events.json"))
+    lag = prof["profiles"][0]["sublayers"]["binding_act"]["lag_from_t0"]
+    assert lag["min_days"] <= exact <= lag["max_days"]
