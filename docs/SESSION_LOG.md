@@ -39,4 +39,4 @@
 | 2026-10-26 | 8 follow-up | Clean-up, results.json, scheduler starter test | yes | ee01bc6 | 59 files deleted, deps 15->5, 57 tests green; results.json on page; Claude scheduled task failed as starter (disabled); sessions start the weekly run |
 | 2026-10-26 | 8 follow-up | External weekly starter | yes | (this commit) | cron-job.org + fine-grained token; test run 40329335301 succeeded; GitHub cron fires late, not never (correction) |
 | 2026-10-26 | 8 closed (final) | Session 8 incl. audit, clean-up, external weekly starter | yes | 9bb7771 | cron-job.org starts the weekly run (tested twice); token valid to 26 Oct 2027; 57 tests green |
-| 2026-10-26 | extra | Test the test: Science of Truth simulations committed; He calibration | yes | (this commit) | Option A rule unusable (FPR ~50%); T-D usable at n = 30; trigger of 8 gives power 0.34–0.55 |
+| 2026-10-26 | extra | Test the test: Science of Truth simulations committed; He calibration | yes | 5c50e32 | Option A rule unusable (FPR ~50%); T-D usable at n = 30; trigger of 8 gives power 0.34–0.55 |
