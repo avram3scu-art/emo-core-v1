@@ -6,7 +6,7 @@ These rules bind every session in this repository. If a session prompt conflicts
 
 1. Read this file, `docs/STATUS.md`, and the entry for the current session in `docs/PLAN.md`.
 2. Work on that session's task only. Stop when its "done when" is met, or say plainly why it cannot be met.
-3. GitHub fires no scheduled runs for this repository (diagnosed 26 Oct 2026; two probes, 0 runs). Check the latest weekly run (`gh run list -w weekly_refresh.yml -L 1`). If it is older than 7 days, start it (`gh workflow run weekly_refresh.yml --ref emo-2026-10`) and report its result before the task; if the last one failed, say so first. (A Claude scheduled task was tried as a starter and failed two tests; it is disabled.)
+3. The weekly run is started every Monday 07:41 Brussels by an external scheduler (cron-job.org job "EMO weekly run", Adrian's account), which calls GitHub's workflow-dispatch API with a fine-grained token limited to Actions on this repo (set up and tested 26 Oct 2026, run 40329335301). GitHub's own cron also exists but is unreliable here (the 26 Oct Monday run fired six hours late; 5-minute probes never fired); its gate skips it when a run from the last 5 days exists. Check the latest weekly run (`gh run list -w weekly_refresh.yml -L 1`): if it is older than 7 days, start it (`gh workflow run weekly_refresh.yml --ref emo-2026-10`), report its result before the task, and tell Adrian the external starter may have failed (token expired?); if the last one failed, say so first.
 
 ## Before closing: review (every session)
 

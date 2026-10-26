@@ -39,8 +39,12 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - CI green on ee01bc6; weekly run 40308922444 → 6b85f75: all checks passed, **57 tests** (76 − tests of deleted code), RDL and GWI frozen runs reproduce, page redeployed. `results.json` live copy not opened from here (github.io not reachable).
 - **Failure on record:** the Claude scheduled task "EMO weekly run starter" did not start a run in two tests (11:36, 11:45; sessions ended in ~15 s, output not visible); my earlier report that it fixed the scheduler was premature. Disabled. CLAUDE.md start step 3 corrected: each session starts the weekly run if the last is older than 7 days.
 
+**Weekly starter fixed (13:00–14:20).** Adrian created a fine-grained GitHub token (Actions read/write, this repo only) and a cron-job.org job "EMO weekly run" (Mondays 07:41 Brussels, POST to the workflow-dispatch API). First test 401 (token pasted wrongly), second 204; GitHub side confirmed: run 40329335301 (workflow_dispatch, 13:17:42 UTC) succeeded, refresh and page. The disabled Claude scheduled task was deleted.
+- **Correction to my diagnosis:** GitHub's scheduler is not dead but unreliable. The Monday 05:23 UTC cron fired at 11:15 UTC (run 40313738746, six hours late; its gate skipped the work), while the 5-minute probes never fired. "Fires no scheduled runs" was too strong.
+
 **Open questions**
-- Reliable weekly start without a session. Reason: Adrian's decision (needs his accounts): an external scheduler (e.g. cron-job.org) calling GitHub's workflow-dispatch API with a fine-grained token, and/or a GitHub support ticket about the scheduler.
+- Expiry date of the GitHub token behind the cron-job.org job. Reason: Adrian's decision (he set it; the date should be noted so the token is renewed in time).
+- First unattended Monday start. Reason: needs time (check on 2 Nov at session start, CLAUDE.md step 3).
 - Cleaner attention stream for synergy. Reason: scope (needs a new domain, since the climate streams are now opened, and a new pre-registration; a full session).
 - DAC docs (`docs/DAC_ARCHITECTURE.md`, `DAC_V0_1_*`, `DAC_METRICS.md`) may describe deleted API code. Reason: scope (session 9 works on DAC and should check them).
 
@@ -51,7 +55,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Nothing required. Optional: the two decisions above.
 
 ## Next session
-Session 9: DAC standard (`docs/PLAN.md`). First (CLAUDE.md start step 3): start the weekly run if the last one is older than 7 days.
+Session 9: DAC standard (`docs/PLAN.md`). First (CLAUDE.md start step 3): confirm the 2 Nov run started by cron-job.org succeeded.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 
