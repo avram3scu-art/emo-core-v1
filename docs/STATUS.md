@@ -23,10 +23,12 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Carried: add GWI outputs (sessions 6, 6c) to the frozen-output check; Monday's scheduled run.
 
 **Adrian must do**
-- Decide the fetch fix. If API key: create one at OpenAlex and add it as repository secret `OPENALEX_API_KEY`.
+- Nothing.
+
+**Follow-up (same day, 08:30):** Adrian left the fix to Claude. Chosen: resumable fetch, no API key (0a6c697, amendment in protocol §9 before data). Run 40286109947 cached 101/120 months, committed unopened (be7028b). Daily Action `synergy_resume.yml` (06:17 UTC) fetches the rest and runs the analysis once when complete.
 
 ## Next session
-Finish session 8 (record the amendment, run once), then session 9 (`docs/PLAN.md`).
+Read the verdict in `results/synergy_climate/result.txt` and copy it into `docs/SYNERGY_PROTOCOL.md` §10 (session 8 done when met), then session 9 (`docs/PLAN.md`). If the job is still at 101/120 after two days, the cap is not daily: then an API key is needed.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 

@@ -101,6 +101,11 @@ fake inputs only (no structure found, as expected).
   unopened and the next run fetches only the missing months (one run per day until all
   120 are in). The analysis refuses to run while any month is missing. §2–§5 unchanged.
 
+- Run 40286109947 (code 0a6c697): 101 of 120 months cached, committed unopened
+  (be7028b); analysis refused (inputs incomplete). Remaining months fetched by the daily
+  job `synergy_resume.yml` (06:17 UTC), which runs the analysis once when the fetch is
+  complete and then does nothing.
+
 ## 10. Result
 
 **Not run.** Under §7 the one allowed fix is used and the fetch still fails, so the test
