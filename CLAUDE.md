@@ -6,7 +6,7 @@ These rules bind every session in this repository. If a session prompt conflicts
 
 1. Read this file, `docs/STATUS.md`, and the entry for the current session in `docs/PLAN.md`.
 2. Work on that session's task only. Stop when its "done when" is met, or say plainly why it cannot be met.
-3. The weekly run is started by the Claude scheduled task "EMO weekly run starter" (Mondays 07:41 Brussels), because GitHub fires no scheduled runs for this repository (diagnosed 26 Oct 2026). Check that the latest weekly run is from the past 7 days and succeeded; if not, say so first.
+3. GitHub fires no scheduled runs for this repository (diagnosed 26 Oct 2026; two probes, 0 runs). Check the latest weekly run (`gh run list -w weekly_refresh.yml -L 1`). If it is older than 7 days, start it (`gh workflow run weekly_refresh.yml --ref emo-2026-10`) and report its result before the task; if the last one failed, say so first. (A Claude scheduled task was tried as a starter and failed two tests; it is disabled.)
 
 ## Before closing: review (every session)
 

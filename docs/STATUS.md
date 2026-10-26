@@ -33,12 +33,16 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Session closed 2026-10-26, 11:00.** Key commits: 5b1d894 (synergy result), 7be95c0 (audit), 48e75e0 (DAC/GWI fixes), 4507783 (deletion), 0cd462f (NHC check), b5cd080 (scheduler probes), 2910790 (rules).
 
+**Follow-up after close (11:35–12:00, Adrian: "do it now if we can, your decision; delete anything unnecessary")**
+- Deleted (ee01bc6): a_UIA engine (retired in session 5), unused OI and reciprocity functions, `emo/harmonize` (except `time_alignment`), `inference`, `reporting`, `services`, `ew_hooks`, `config`, `data_sources`, `models/domain_profile`, session-7 layout probes, unsourced `data/ecmwf_headline_scores.csv`, the demo notebook, `ARCHITECTURE.md`, `LIVE_PIPELINES.md`, `DESTINE_INTEGRATION.md`, `README_DAC.md`, `docs/dashboard/`, and their tests. `emo/__init__.py` now imports its four functions directly. DAC unit tests moved to `tests/dac_unit/`. Dependencies trimmed from 15 to 5 (numpy, pandas, scipy, requests, matplotlib). 59 files, ~2,600 lines.
+- `results.json`: machine-readable copy of the public page (same texts and file links; computes nothing), built with the page, tested against the committed files, linked from the page.
+- CI green on ee01bc6; weekly run 40308922444 → 6b85f75: all checks passed, **57 tests** (76 − tests of deleted code), RDL and GWI frozen runs reproduce, page redeployed. `results.json` live copy not opened from here (github.io not reachable).
+- **Failure on record:** the Claude scheduled task "EMO weekly run starter" did not start a run in two tests (11:36, 11:45; sessions ended in ~15 s, output not visible); my earlier report that it fixed the scheduler was premature. Disabled. CLAUDE.md start step 3 corrected: each session starts the weekly run if the last is older than 7 days.
+
 **Open questions**
-- Did the test firing of "EMO weekly run starter" report "already ran"? Reason: needs time (Adrian's notification; at the latest the 2 Nov firing, which will fail visibly if the task cannot reach the repo).
-- Tested but unused modules kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Reason: Adrian's decision (delete or keep).
-- Static `results.json` on GitHub Pages instead of a running API, after sessions 9–10. Reason: Adrian's decision (add to the plan or not).
-- Synergy attention stream is a weak proxy (title swaps 2019–2021); a cleaner attention stream would need a new pre-registered test. Reason: scope (not this plan's task).
-- GitHub's scheduler failure is not reported to GitHub. Reason: Adrian's decision (a support ticket needs his account).
+- Reliable weekly start without a session. Reason: Adrian's decision (needs his accounts): an external scheduler (e.g. cron-job.org) calling GitHub's workflow-dispatch API with a fine-grained token, and/or a GitHub support ticket about the scheduler.
+- Cleaner attention stream for synergy. Reason: scope (needs a new domain, since the climate streams are now opened, and a new pre-registration; a full session).
+- DAC docs (`docs/DAC_ARCHITECTURE.md`, `DAC_V0_1_*`, `DAC_METRICS.md`) may describe deleted API code. Reason: scope (session 9 works on DAC and should check them).
 
 **Review points and Adrian's answer**
 - Pre-closing review adds a short exchange per session (allowance cost). Adrian: "It's worth it."
@@ -47,7 +51,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Nothing required. Optional: the two decisions above.
 
 ## Next session
-Session 9: DAC standard (`docs/PLAN.md`). First check (CLAUDE.md start step 3) that the 2 Nov weekly run started by the scheduled task succeeded.
+Session 9: DAC standard (`docs/PLAN.md`). First (CLAUDE.md start step 3): start the weekly run if the last one is older than 7 days.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 

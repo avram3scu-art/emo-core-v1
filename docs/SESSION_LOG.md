@@ -36,3 +36,4 @@
 | 2026-10-26 | 8 follow-up | Close remaining audit items | yes | 0cd462f | README/plan synergy fixed; weekly backup trigger; tau_I block CI (result holds); NHC 368/368 cells match PDF; analysis checks; weekly 51b060b all passed, 76 tests |
 | 2026-10-26 | 8 follow-up | Diagnose weekly cron | yes | b5cd080 | GitHub fires no schedules for this repo (0 in 46 min, 2 probes); weekly run now started by a Claude scheduled task, Mondays 07:41 Brussels |
 | 2026-10-26 | 8 closed (final) | Synergy, audit, fixes, deletion, scheduler fix, rules | yes | 2910790 | Synergy FAIL; GitHub fires no schedules here, weekly run now started by a Claude scheduled task; CLAUDE.md: pre-closing review and reasons for not done |
+| 2026-10-26 | 8 follow-up | Clean-up, results.json, scheduler starter test | yes | ee01bc6 | 59 files deleted, deps 15->5, 57 tests green; results.json on page; Claude scheduled task failed as starter (disabled); sessions start the weekly run |
