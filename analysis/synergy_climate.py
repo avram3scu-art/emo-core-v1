@@ -111,7 +111,7 @@ def main() -> None:
     print(f"T = {T}; zero-count months (science, policy, attention): "
           f"{int((counts.science == 0).sum())}, {int((counts.policy == 0).sum())}, {int((counts.attention == 0).sum())}")
     print(f"notes: {notes}")
-    print(f"monthly count range: " + "; ".join(f"{c} {counts[c].min()}..{counts[c].max()}" for c in counts))
+    print("monthly count range: " + "; ".join(f"{c} {counts[c].min()}..{counts[c].max()}" for c in counts))
     print(f"S_obs (synergy index, bits) = {s_obs:.4f}   Omega = {obs.o_information_bits:.4f}")
     print(f"null: N = {n}; S_null mean {s_null.mean():.4f}, 2.5% {np.quantile(s_null, .025):.4f}, "
           f"97.5% {np.quantile(s_null, .975):.4f}")

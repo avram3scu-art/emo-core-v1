@@ -43,10 +43,10 @@ jobs:
             smf-elec)   f=fetch_steo_smf_elec; a=smf_steo_elec; r=smf_steo_elec; paths="data/sources/eia_steo_elec" ;;
             smf-spf)    f=fetch_spf_smf; a=smf_spf; r=smf_spf; paths="data/sources/spf_unemp" ;;
             smf-ip)     f=fetch_ip_smf; a=smf_ip; r=smf_ip; paths="data/sources/smf_ip" ;;
-            nhc-pdf)    sudo apt-get install -y -qq poppler-utils >/dev/null; mkdir -p results/nhc_check
+            nhc-pdf)    pip install -q pdfplumber; mkdir -p results/nhc_check
                         code=$(curl -sSL -A "Mozilla/5.0 (emo-core-v1 audit)" -o nhc.pdf -w "%{http_code}" "https://www.nhc.noaa.gov/verification/pdfs/1970-present_OFCL_ATL_annual_trk_errors_noTDs.pdf" 2>&1 || true)
                         echo "::notice title=nhc-download::HTTP $code; $(file nhc.pdf 2>&1 | cut -c1-200)"
-                        sha256sum nhc.pdf > results/nhc_check/pdf.sha256; pdftotext -layout nhc.pdf results/nhc_check/nhc_pdf.txt
+                        sha256sum nhc.pdf > results/nhc_check/pdf.sha256; python -c "import pdfplumber,sys; p=pdfplumber.open('nhc.pdf'); open('results/nhc_check/nhc_pdf.txt','w').write(chr(12).join(pg.extract_text(layout=True) or '' for pg in p.pages))"
                         head -c 3000 results/nhc_check/nhc_pdf.txt > out.txt; echo "paths=results/nhc_check" >> "$GITHUB_ENV"; paths="" ;;
             synergy-climate) f=fetch_synergy_climate; a=synergy_climate; r=synergy_climate; paths="data/sources/synergy_climate" ;;
           esac
