@@ -220,11 +220,49 @@ Primary samples exclude 2020-21 except where stated.</p>
 <h2>Data retrieved this week</h2>
 <p class="meta">All series with retrieval date, change flag and hash: {link('data/MANIFEST.json')}. Tests in this run: {esc(read('pytest').splitlines()[-1] if read('pytest') else '')}
 ({link(rel + '/pytest.txt', 'log')}).</p>
+<p class="meta">Machine-readable copy of this page: <a href="results.json">results.json</a> (same numbers and file links; rebuilt with the page).</p>
 </body></html>
 """
     (out / "index.html").write_text(page)
     (out / ".nojekyll").write_text("")
+    (out / "results.json").write_text(json.dumps(
+        results_json(run, rel, status, man, sha, built, rows, ledger_hash, read), indent=1) + "\n")
     return out / "index.html"
+
+
+# Pre-registered tests: (name, protocol, recorded result file). Recorded files are the
+# frozen records; results.json copies their text, it computes nothing.
+PREREGISTERED = [
+    ("gwi_hurricanes", "docs/GWI_PROTOCOL.md", "analysis/gwi_hurricanes_output.txt"),
+    ("gwi_calibration", "docs/GWI_CALIBRATION_PROTOCOL.md", "analysis/gwi_calibration_output.txt"),
+    ("smf_eia_co2_lead12", "docs/SMF_PROTOCOL.md", "results/smf_steo/result.txt"),
+    ("smf_eia_co2_leads", "docs/SMF_PROTOCOL.md", "results/smf_steo_leads/result.txt"),
+    ("smf_eia_co2_lead18", "docs/SMF_PROTOCOL.md", "results/smf_steo_h18/result.txt"),
+    ("smf_eia_electricity", "docs/SMF_PROTOCOL.md", "results/smf_steo_elec/result.txt"),
+    ("smf_spf_unemployment", "docs/SMF_PROTOCOL.md", "results/smf_spf/result.txt"),
+    ("smf_industrial_production", "docs/SMF_PROTOCOL.md", "results/smf_ip/result.txt"),
+    ("synergy_climate", "docs/SYNERGY_PROTOCOL.md", "results/synergy_climate/result.txt"),
+]
+
+
+def results_json(run, rel, status, man, sha, built, rows, ledger_hash, read):
+    """Machine-readable copy of the page: the same numbers, with the same file links."""
+    analyses = [n for n in ("dac_ozone", "dac_compare_ozone_climate", "organismality_plane",
+                            "information_time_nhc", "score_forecast_ledger") if (run / f"{n}.txt").exists()]
+    return {
+        "about": "EMO public results. Copied from committed files; nothing is computed here. "
+                 "Each text links to its file in the repository.",
+        "built": built, "commit": sha, "repository": BLOB.rstrip("/"),
+        "weekly_run": {"folder": rel, "status": status},
+        "measurements": {n: {"file": f"{rel}/{n}.txt", "text": read(n)} for n in analyses},
+        "preregistered_tests": [
+            {"name": n, "protocol": proto, "file": f, "text": (ROOT / f).read_text().strip()}
+            for n, proto, f in PREREGISTERED if (ROOT / f).exists()
+        ],
+        "forecast_ledger": {"file": "data/rdl_forecast_ledger.csv", "sha256": ledger_hash,
+                            "doi": "10.5281/zenodo.23507467", "rows": rows},
+        "data_sources": man,
+    }
 
 
 if __name__ == "__main__":

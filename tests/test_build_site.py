@@ -19,3 +19,15 @@ def test_site_builds_with_sections_and_valid_links(tmp_path):
     assert paths
     missing = [p for p in paths if not (ROOT / p).exists()]
     assert not missing, missing
+
+
+def test_results_json_matches_committed_files(tmp_path):
+    import json
+
+    build_site.build(tmp_path)
+    data = json.loads((tmp_path / "results.json").read_text())
+    assert len(data["preregistered_tests"]) == len(build_site.PREREGISTERED)
+    for t in data["preregistered_tests"]:
+        assert (ROOT / t["file"]).read_text().strip() == t["text"]
+        assert (ROOT / t["protocol"]).exists()
+    assert data["forecast_ledger"]["doi"] == "10.5281/zenodo.23507467"

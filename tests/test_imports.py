@@ -1,14 +1,7 @@
-def test_import_core_packages() -> None:
-    """
-    Basic smoke test: make sure the main packages import cleanly.
+def test_package_imports_and_exports() -> None:
+    import emo
+    import emo.metrics.dac.lag  # noqa: F401
+    import emo.remedy.backtest  # noqa: F401
 
-    This is the first thing a lab tech lead or CI will hit.
-    """
-    import emo  # noqa: F401
-    import emo.gwi  # noqa: F401
-    import emo.info_time  # noqa: F401
-    import emo.organismality  # noqa: F401
-    import emo.reciprocity  # noqa: F401
-    import emo.smf  # noqa: F401
-    import emo.synergy  # noqa: F401
-    import emo.uia_engine.aggregate  # noqa: F401
+    for name in ["compute_gwi", "compute_smf", "compute_information_time", "compute_gaussian_synergy"]:
+        assert callable(getattr(emo, name)), name

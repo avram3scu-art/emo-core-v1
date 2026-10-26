@@ -14,19 +14,9 @@ authors = [{ name = "Adrian Avramescu" }]
 dependencies = [
   "numpy>=1.26",
   "pandas>=2.2",
-  "xarray>=2024.1",
   "scipy>=1.13",
-  "scikit-learn>=1.5",
-  "statsmodels>=0.14",
   "requests>=2.32",
-  "httpx>=0.27",
-  "python-dotenv>=1.0",
-  "pydantic>=2.7",
-  "pydantic-settings>=2.4",
-  "SQLAlchemy>=2.0",
-  "alembic>=1.13",
-  "psycopg2-binary>=2.9",
-  "loguru>=0.7",
+  "matplotlib>=3.8",
 ]
 
 [project.optional-dependencies]
@@ -35,7 +25,6 @@ dev = [
   "mypy>=1.11",
   "ruff>=0.6",
   "types-requests",
-  "types-python-dateutil",
 ]
 
 [project.urls]

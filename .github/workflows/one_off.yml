@@ -1,7 +1,8 @@
 name: One-off analyses (manual)
 
-# Reproduces the one-off runs of session 7 (docs/SMF_PROTOCOL.md §7-§12) and their
-# layout probes. These replace ten single-purpose workflow files (probe_*.yml, smf_*.yml),
+# Reproduces the one-off runs of session 7 (docs/SMF_PROTOCOL.md §7-§12) and session 8
+# (docs/SYNERGY_PROTOCOL.md), and the NHC PDF check. Session-7 layout probes were deleted
+# on 26 Oct 2026 (git history). These replace ten single-purpose workflow files (probe_*.yml, smf_*.yml),
 # whose recorded runs are listed in docs/SMF_PROTOCOL.md; the old files remain in git history.
 # Re-running refetches current data vintages, so results can differ from the record.
 # Nothing is committed unless `commit` is set; the recorded results are never overwritten
@@ -13,7 +14,7 @@ on:
         description: Which analysis
         required: true
         type: choice
-        options: [probe-steo, probe-elec, probe-spf, probe-ip, smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip, synergy-climate, nhc-pdf]
+        options: [smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip, synergy-climate, nhc-pdf]
       commit:
         description: Commit the refetched data and result (overwrites the recorded files)
         type: boolean
@@ -33,10 +34,6 @@ jobs:
         env: {PYTHONPATH: ".", JOB: "${{ inputs.job }}"}
         run: |
           case "$JOB" in
-            probe-steo) python scripts/probe_steo_layout.py jan07_base.xls jan08_base.xls jan09_base.xls jan10_base.xls jan13_base.xls oct26_base.xlsx > out.txt 2>/dev/null; paths="" ;;
-            probe-elec) python scripts/probe_steo_elec_layout.py jan10_base.xls jan20_base.xlsx oct26_base.xlsx > out.txt 2>/dev/null; paths="" ;;
-            probe-spf)  python scripts/probe_spf_layout.py > out.txt 2>/dev/null; paths="" ;;
-            probe-ip)   python scripts/probe_ip_layout.py > out.txt 2>/dev/null; paths="" ;;
             smf-co2-lead12) f=fetch_steo_smf; a=smf_steo; r=smf_steo; paths="data/sources/eia_steo_co2 data/sources/eia_mer_t11_01 data/sources/eia_smf_SOURCES.json" ;;
             smf-co2-leads)  f=fetch_steo_smf_leads; a=smf_steo_leads; r=smf_steo_leads; paths="data/sources/eia_steo_co2_leads" ;;
             smf-co2-lead18) f=fetch_steo_smf_h18; a=smf_steo_h18; r=smf_steo_h18; paths="data/sources/eia_steo_co2_h18 data/sources/eia_steo_co2_leads" ;;
