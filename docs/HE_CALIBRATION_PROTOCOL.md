@@ -58,5 +58,47 @@ n of the best test is a proposal for the §4 trigger; changing the trigger is Ad
 
 ## 6. Result
 
-(Filled after the single run; code `analysis/he_calibration.py`, output
-`analysis/he_calibration_output.txt`.)
+Single run, 26 Oct 2026, ~3 min, in Claude's workspace (not CI). Code `analysis/he_calibration.py`
+(committed 65a4a36 before the run), output `analysis/he_calibration_output.txt`. Evidence class:
+pre-registered, synthetic.
+
+**False-positive rate at β = 0** (range over n = 8–30, both λ, both m):
+
+| Test | FPR | Verdict |
+|---|---|---|
+| T-A (Option A sign rule) | 0.41–0.52 | **fails at every n**: about one study in two "passes" when there is nothing to find |
+| T-B (any letter, uncorrected) | 0.07–0.21 | fails; worse with more letters |
+| T-C (Holm) | 0.03–0.05 | holds |
+| T-D (mean τ, permutation) | 0.04–0.05 | holds |
+
+At n = 3 no test except T-A can reject at all (T-B–T-D: 0.000), as `docs/UIA_PROTOCOL.md` §3 stated.
+
+**Power at β = 0.5** (best calibrated test, T-D; m = 5):
+
+| n | λ = 0 | λ = 0.5 |
+|---|---|---|
+| 8 | 0.55 | 0.34 |
+| 12 | 0.78 | 0.51 |
+| 20 | 0.96 | 0.75 |
+| 30 | 1.00 | 0.92 |
+
+With m = 3 power is lower (n = 30: 0.98 / 0.87). T-C is calibrated but has lower power than T-D in
+every cell with β > 0; T-D is the better test.
+
+**Usable (criteria §4):** T-A never; T-B never; T-C at n = 30 for m = 5 only; **T-D at n = 30**
+(m = 3 and m = 5). Between 20 and 30 the grid has no point, so the true threshold for T-D lies in
+(20, 30].
+
+**Expectations (§4) vs result:** all four held: T-A unusable, T-B over-rejects and worsens with m,
+T-D holds its rate, 8 cases too few (power 0.34–0.55 at β = 0.5).
+
+**What this shows and does not show.** It rules out the Option A rule and uncorrected per-letter
+tests for any He direction test, and shows that the current trigger (8 cases) gives a test that
+would miss a real β = 0.5 effect about half the time or more. It does not show that β = 0.5 is
+realistic: if letters relate to He more weakly, more than 30 cases are needed (β = 0.3, n = 30:
+power 0.52–0.86). A shared factor among letters (λ = 0.5, e.g. a common calendar trend) costs
+power; dating letters before the warning (UIA rule) does not remove such a factor.
+
+**Proposal for Adrian's decision (not applied):** (1) pre-register T-D, not the Option A rule, as
+the He statistic; (2) raise the §4 trigger from 8 to about 30 coded cases, or accept and state a
+power of roughly 0.5 at 8 cases, labelling that run a pilot that cannot fail informatively.

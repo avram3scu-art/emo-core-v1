@@ -2,6 +2,15 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## Extra work, 26 Oct 2026 (20:30–21:10): test the test
+
+Outside the session plan, at Adrian's request ("It's all about EMO"; yes to commit; "Do it" for the He calibration). Does not replace F1–F8.
+
+- `analysis/test_the_test/`: Science of Truth trial-design simulations from today's chat, with origin and checksums (7bddd2b). Exploratory, synthetic.
+- He direction test calibration: protocol (1039b08) → code (65a4a36) → single run → result in `docs/HE_CALIBRATION_PROTOCOL.md` §6. **Result:** the UIA §3 Option A sign rule gives 41–52% false positives at any n (unusable); the mean-τ permutation test (T-D) holds 5%; at the current trigger of 8 cases its power for a β = 0.5 effect is 0.34–0.55; usable (≥ 0.80) only at n = 30 in the grid.
+
+**Open (Adrian's decision):** adopt T-D as the He statistic, and raise the UIA §4 trigger from 8 to about 30 coded cases or label an 8-case run a pilot. Not applied.
+
 ## Last session: 8 (2026-10-26) — synergy on real streams, then audit
 
 **Closed 2026-10-26, 09:20. Done when met: yes.** Result in `docs/SYNERGY_PROTOCOL.md` §10: **FAIL**, no higher-order structure distinguishable from the null.
