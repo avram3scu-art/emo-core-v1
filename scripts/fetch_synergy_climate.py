@@ -51,15 +51,25 @@ def main() -> None:
         (OUT / name).write_bytes(raw)
         src[name] = {"source_url": url, "downloaded_at": now, "sha256": hashlib.sha256(raw).hexdigest()}
 
-    science = {}
+    # Resumable (protocol §9 amendment): each month is saved as it arrives; a 429 stops the
+    # run with the partial cache kept, and the next run fetches only the missing months.
+    cache = OUT / "openalex_climate_change_monthly.json"
+    science = json.loads(cache.read_text()) if cache.exists() else {}
     for y in YEARS:
         for m in range(1, 13):
             a = f"{y}-{m:02d}-01"
+            if a[:7] in science:
+                continue
             b = f"{y}-{m:02d}-{calendar.monthrange(y, m)[1]:02d}"
             url = OPENALEX.format(a=a, b=b).replace(" ", "%20").replace('"', "%22")
             url += "&mailto=avram3scu-art@users.noreply.github.com"
-            time.sleep(1.0)  # pace: run 40283263805 hit HTTP 429
-            science[a[:7]] = {"url": url, "count": json.loads(get(url))["meta"]["count"]}
+            time.sleep(1.0)
+            try:
+                science[a[:7]] = {"url": url, "count": json.loads(get(url, tries=3))["meta"]["count"]}
+            except RuntimeError:
+                cache.write_text(json.dumps(science, indent=1, sort_keys=True) + "\n")
+                print(f"partial: {len(science)} of 120 OpenAlex months cached; rerun later")
+                return
     raw = (json.dumps(science, indent=1, sort_keys=True) + "\n").encode()
     save("openalex_climate_change_monthly.json", OPENALEX, raw)
 

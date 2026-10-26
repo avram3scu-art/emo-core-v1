@@ -96,6 +96,11 @@ fake inputs only (no structure found, as expected).
   suggests a per-client cap on OpenAlex search queries, not a burst limit (inference,
   not verified).
 
+- Amendment (Adrian's go-ahead, 2026-10-26, before any data seen): resumable fetch. Each
+  OpenAlex month is cached as it arrives; on HTTP 429 the partial cache is committed
+  unopened and the next run fetches only the missing months (one run per day until all
+  120 are in). The analysis refuses to run while any month is missing. §2–§5 unchanged.
+
 ## 10. Result
 
 **Not run.** Under §7 the one allowed fix is used and the fetch still fails, so the test
