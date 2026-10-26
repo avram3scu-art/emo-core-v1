@@ -228,6 +228,10 @@ Pre-register in docs/SYNERGY_PROTOCOL.md: one domain, at least three real stream
 Done when: the result is in the protocol file.
 ```
 
+### Fix sessions F1–F8 (between 9 and 10)
+
+Prompts for Claude and tasks for Adrian: `docs/FIX_PLAN.md` (from `docs/AUDIT_2026-10-26b.md`). Session 10 starts only after they are closed.
+
 ### Session 9: DAC standard
 
 ```text
