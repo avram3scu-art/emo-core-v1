@@ -28,3 +28,4 @@
 | 2026-10-23 | 7 final close | SMF on a real case + review, fixes, lint | yes | c8cf591 | SMF fidelity at 3-6 months, none for energy/IP at 12 since 2010; README/page corrected; CI green; next: session 8 |
 | 2026-10-23 | 7 audit | Logic re-audit of sessions 1-6 (partial: GWI tests and weekly gate) | partial | a169ee1 | no logic error found; GWI Fisher p optimistic (clustering); GWI recorded outputs not frozen-checked; tau_I, DAC, organismality, sessions 4-5 not audited |
 | 2026-10-23 | 7 closed | Session 7 with review, fixes, lint, partial re-audit | yes | 29f89d7 | all work pushed; next: session 8; open: freeze GWI recorded outputs, audit tau_I/DAC/organismality/sessions 4-5 |
+| 2026-10-26 | 8 | Synergy (Gaussian O-information) on real climate streams | no | e4c160c | Pre-registered and coded before data; OpenAlex fetch hit HTTP 429 twice (runs 40283263805, 40283537981); not run, data unseen |

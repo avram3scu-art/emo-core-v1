@@ -90,6 +90,17 @@ fake inputs only (no structure found, as expected).
   (record 6b3aa09). Fix used once under §7: one-second pacing between OpenAlex calls,
   polite-pool `mailto`, longer retries. No change to §2–§5.
 
+- Run 40283537981 (code 213d3ef): FAILED at fetch, identically. HTTP 429 again at 2024-05
+  (the 101st of 120 OpenAlex calls) after 8 retries over ~18 min; nothing saved, no value
+  seen, S_obs not computed (record 6f20bdb). Stopping at the same call in both runs
+  suggests a per-client cap on OpenAlex search queries, not a burst limit (inference,
+  not verified).
+
 ## 10. Result
 
-(to be filled after the single run)
+**Not run.** Under §7 the one allowed fix is used and the fetch still fails, so the test
+was not run. No data of the three streams has been opened; §2–§5 remain valid and blind.
+
+To run it, a further fetch fix needs Adrian's decision (it goes beyond §7): e.g. an
+`OPENALEX_API_KEY` secret, or spreading the 120 calls over two days. The design (§2–§5)
+would stay unchanged; the amendment would be recorded here before the new run.

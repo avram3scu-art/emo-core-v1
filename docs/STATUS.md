@@ -2,7 +2,33 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 7 (2026-10-23) — SMF on a real case
+## Last session: 8 (2026-10-26) — synergy on real streams
+
+**Done when met: no.** Test pre-registered and coded before data, but the data fetch failed twice; result recorded as "not run" in `docs/SYNERGY_PROTOCOL.md` §9–§10.
+
+**Checked first:** Monday 26 Oct's scheduled weekly run (cron 05:23 UTC) had not run by ~07:15 UTC; last weekly run is still 39952996639 (23 Oct, manual). GitHub may delay scheduled runs; check again next session.
+
+**Done**
+- Protocol committed before data (e4c160c): climate change, monthly 2016–2025, three streams (OpenAlex "climate change" articles; Federal Register rules/proposed rules/presidential documents; en.wikipedia pageviews Climate change + Global warming), residuals of ln(c+1) on trend + month dummies, circular-shift null on two streams (every admissible pair), two tails at 0.025.
+- Code before data (b27400e): `scripts/fetch_synergy_climate.py`, `analysis/synergy_climate.py`, job `synergy-climate` in `one_off.yml`. Checked on random fake inputs only.
+- Run 40283263805: OpenAlex HTTP 429 at 2024-05, nothing saved (6b3aa09). Fix under §7 (213d3ef): pacing, mailto, longer retries.
+- Run 40283537981: same 429 at the same call (101 of 120), nothing saved (6f20bdb).
+
+**Results**
+- None. No stream value was seen; the pre-registration stays blind and usable.
+- Failure on record: fetch design assumed unkeyed OpenAlex search would allow 120 calls; it allowed 100 twice (cause inferred, not verified).
+
+**Open questions**
+- Which fetch fix: an `OPENALEX_API_KEY` secret, or the 120 calls split over two days? Needs Adrian's decision (beyond the protocol's one allowed fix).
+- Carried: add GWI outputs (sessions 6, 6c) to the frozen-output check; Monday's scheduled run.
+
+**Adrian must do**
+- Decide the fetch fix. If API key: create one at OpenAlex and add it as repository secret `OPENALEX_API_KEY`.
+
+## Next session
+Finish session 8 (record the amendment, run once), then session 9 (`docs/PLAN.md`).
+
+## Previous session: 7 (2026-10-23) — SMF on a real case
 
 **Closed 2026-10-23, 14:55** (after a partial logic re-audit of sessions 1–6, below). Session 7 plus same-day review, fixes and lint (summary below). Final state: weekly run 39952996639 (103 tests), CI 39956184040 green (tests, mypy, ruff), page shows SMF section 5 (checked by Adrian on his phone).
 
