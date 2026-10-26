@@ -1,1 +1,1 @@
-partial: 101 of 120 OpenAlex months cached; rerun later
+fetched ['openalex_climate_change_monthly.json', 'fedreg_climate_change_monthly.json', 'pageviews_en_Climate_change_monthly.json', 'pageviews_en_Global_warming_monthly.json']

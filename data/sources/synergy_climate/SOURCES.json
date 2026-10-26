@@ -1,0 +1,22 @@
+{
+  "openalex_climate_change_monthly.json": {
+    "source_url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:\"climate change\",type:article,from_publication_date:{a},to_publication_date:{b}",
+    "downloaded_at": "2026-10-26T07:55:34+00:00",
+    "sha256": "310ce5e161d1231915367817de0d1502c281cb303a5b4c62cc811756f501fd26"
+  },
+  "fedreg_climate_change_monthly.json": {
+    "source_url": "https://www.federalregister.gov/api/v1/documents/facets/monthly?conditions%5Bterm%5D=%22climate+change%22&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=PRESDOCU&conditions%5Bpublication_date%5D%5Bgte%5D=2016-01-01&conditions%5Bpublication_date%5D%5Blte%5D=2025-12-31",
+    "downloaded_at": "2026-10-26T07:55:34+00:00",
+    "sha256": "800b48387a32f94d4d25b035687da94fd8f222d6b037c9eac0dc7fc681b6eaf0"
+  },
+  "pageviews_en_Climate_change_monthly.json": {
+    "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Climate_change/monthly/2016010100/2025123100",
+    "downloaded_at": "2026-10-26T07:55:34+00:00",
+    "sha256": "d18c3c445bb78d27d54e6a66f407bcf38e2f51bbf6679418d286ca0a225754fd"
+  },
+  "pageviews_en_Global_warming_monthly.json": {
+    "source_url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Global_warming/monthly/2016010100/2025123100",
+    "downloaded_at": "2026-10-26T07:55:34+00:00",
+    "sha256": "1d50c25869e5d7773fa98215f71ec833c15f31109f4f4193c4548cfdd0c27c69"
+  }
+}

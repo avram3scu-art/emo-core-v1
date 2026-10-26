@@ -1,16 +1,12 @@
-Traceback (most recent call last):
-  File "/home/runner/work/emo-core-v1/emo-core-v1/analysis/synergy_climate.py", line 128, in <module>
-    main()
-  File "/home/runner/work/emo-core-v1/emo-core-v1/analysis/synergy_climate.py", line 82, in main
-    counts, notes = load()
-                    ^^^^^^
-  File "/home/runner/work/emo-core-v1/emo-core-v1/analysis/synergy_climate.py", line 32, in load
-    fr = json.loads((SRC / "fedreg_climate_change_monthly.json").read_text())
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 1058, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/pathlib.py", line 1044, in open
-    return io.open(self, mode, buffering, encoding, errors, newline)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'data/sources/synergy_climate/fedreg_climate_change_monthly.json'
+Synergy on real streams: climate change, monthly 2016-01..2025-12 (docs/SYNERGY_PROTOCOL.md)
+T = 120; zero-count months (science, policy, attention): 0, 3, 0
+notes: {'policy_months_absent_from_facet_set_to_0': 0}
+monthly count range: science 1255..10730; policy 0..44; attention 62191..651151
+S_obs (synergy index, bits) = 0.0012   Omega = -0.0012
+null: N = 7310; S_null mean -0.0037, 2.5% -0.0291, 97.5% 0.0174
+p_syn = 0.2150   p_red = 0.7851
+VERDICT: FAIL - no higher-order structure distinguishable from the null
+-- no weight on verdict --
+TC_obs = 0.0761 bits; null 95% 0.2040; p_tc = 0.5942
+residual correlations: sci-pol -0.030, sci-att -0.308, pol-att -0.059
+raw ln(c+1), no detrending: S = -0.0281, TC = 0.5029
