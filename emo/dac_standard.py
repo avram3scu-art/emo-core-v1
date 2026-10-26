@@ -168,7 +168,7 @@ def _check_event(i: int, ev: Any, errors: list[str], win: tuple[date | None, dat
         "upper_bound": (False, True),
         "missing": (False, False),
         "censored": (False, False),
-    }.get(status)
+    }.get(status or "")
     if need is not None:
         if need[0] != (raw_e is not None) or need[1] != (raw_l is not None):
             errors.append(
