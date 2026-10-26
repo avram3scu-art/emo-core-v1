@@ -32,3 +32,4 @@
 | 2026-10-26 | 8 follow-up | Resumable fetch, daily resume job | no (pending fetch) | 0a6c697 | 101/120 OpenAlex months cached unopened; synergy_resume.yml finishes fetch and runs analysis once |
 | 2026-10-26 | 8 completed | Synergy on real climate streams | yes | 93fb72a | FAIL: no structure beyond circular-shift null (p_syn 0.215); fetch finished with OPENALEX_API_KEY |
 | 2026-10-26 | audit | Audit sessions 1-8 and code; fixes 1-2 | yes | 48e75e0 | DAC text computed, GWI frozen; weekly run eb5eb71 all checks passed |
+| 2026-10-26 | 8 closed | Synergy on real streams; audit; fixes; deletion of never-run code | yes | 4507783 | Synergy FAIL (p_syn 0.215); DAC text fixed, GWI frozen; 89 files deleted; weekly eb5eb71 all checks passed |

@@ -2,37 +2,35 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Last session: 8 (2026-10-26) — synergy on real streams
+## Last session: 8 (2026-10-26) — synergy on real streams, then audit
 
-**Done when met: yes** (after follow-up). Result in `docs/SYNERGY_PROTOCOL.md` §10: **FAIL**, no higher-order structure distinguishable from the null (S = +0.0012 bits, p_syn = 0.215, p_red = 0.785; TC p = 0.59). Raw untransformed series show TC 0.50 bits, all shared trend.
-
-**Checked first:** Monday 26 Oct's scheduled weekly run (cron 05:23 UTC) had not run by ~07:15 UTC; last weekly run is still 39952996639 (23 Oct, manual). GitHub may delay scheduled runs; check again next session.
+**Closed 2026-10-26, 09:20. Done when met: yes.** Result in `docs/SYNERGY_PROTOCOL.md` §10: **FAIL**, no higher-order structure distinguishable from the null.
 
 **Done**
-- Protocol committed before data (e4c160c): climate change, monthly 2016–2025, three streams (OpenAlex "climate change" articles; Federal Register rules/proposed rules/presidential documents; en.wikipedia pageviews Climate change + Global warming), residuals of ln(c+1) on trend + month dummies, circular-shift null on two streams (every admissible pair), two tails at 0.025.
-- Code before data (b27400e): `scripts/fetch_synergy_climate.py`, `analysis/synergy_climate.py`, job `synergy-climate` in `one_off.yml`. Checked on random fake inputs only.
-- Run 40283263805: OpenAlex HTTP 429 at 2024-05, nothing saved (6b3aa09). Fix under §7 (213d3ef): pacing, mailto, longer retries.
-- Run 40283537981: same 429 at the same call (101 of 120), nothing saved (6f20bdb).
+- Synergy test: protocol before data (e4c160c); code before data (b27400e). Fetch failed twice on OpenAlex HTTP 429 (runs 40283263805, 40283537981; nothing saved). Resumable fetch, amendment recorded before data (0a6c697); 101/120 months cached unopened (be7028b). Adrian added secret `OPENALEX_API_KEY` (key used, never stored: e4fb711); run 40288775279 completed fetch and analysis once (93fb72a); recorded (5b1d894).
+- Audit of sessions 1–8 and the code: `docs/AUDIT_2026-10-26.md` (7be95c0; correction a047f00). Synergy attention-stream caveat added as protocol §11.
+- Fix 1 (48e75e0): DAC comparison reads dates from event files, computes its peak clause and subtitle, drops the unsourced "50% cut" sentence, adds a scope note (Kyoto bound fewer parties). Climate lag 18.3 → 18.4 y (exact dates).
+- Fix 2 (48e75e0): GWI runs (sessions 6, 6c) moved into the weekly frozen-output check.
+- Deletion (4507783): `api/`, `dashboard/`, `orchestration/`, Dockerfile, docker-compose, `emo/ingestion/`, `emo/twin_hooks/`, 11 unused RDL files, API tests; fastapi/uvicorn/prefect dropped; README and ARCHITECTURE notes. 89 files, ~4,700 lines. CI green on 4507783.
+- Weekly run started by hand, 40289771653 → eb5eb71: all checks passed, 103 tests, RDL and GWI frozen runs reproduce, page redeployed.
 
 **Results**
-- None. No stream value was seen; the pre-registration stays blind and usable.
-- Failure on record: fetch design assumed unkeyed OpenAlex search would allow 120 calls; it allowed 100 twice (cause inferred, not verified).
+- Synergy: S = +0.0012 bits; null 2.5–97.5% −0.029 to +0.017; p_syn = 0.215, p_red = 0.785; TC p = 0.59. Untransformed series TC 0.50 bits, all shared trend. "Synergy passes noise controls" holds for synthetic data only.
+- Failures on record: two fetch failures (unkeyed OpenAlex search ≈100 calls/day, per OpenAlex docs); my protocol assumption that two Wikipedia titles sum to one attention stream was wrong (titles swapped 2019–2021); my first audit list wrongly called RDL `backtest`/`bottlenecks` unused (corrected).
 
 **Open questions**
-- Which fetch fix: an `OPENALEX_API_KEY` secret, or the 120 calls split over two days? Needs Adrian's decision (beyond the protocol's one allowed fix).
-- Carried: add GWI outputs (sessions 6, 6c) to the frozen-output check; Monday's scheduled run.
+- Monday 26 Oct weekly cron did not fire (only the manual run). Check whether next Monday's fires.
+- README/plan row "synergy passes noise controls" needs "synthetic only; failed on real streams".
+- Tested but unused, kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Delete?
+- `analysis/` has no tests and is excluded from lint and mypy. τ_I interval ignores autocorrelation. NHC table hand-transcribed, unchecked against the PDF.
+- `synergy_resume.yml` is idle (daily no-op); delete.
+- Proposal, not in the plan: a static `results.json` on GitHub Pages, written by the weekly Action, instead of a running API (after sessions 9–10). Adrian to decide.
 
 **Adrian must do**
-- Nothing.
-
-**Follow-up (same day, 08:30):** Adrian left the fix to Claude. Chosen: resumable fetch, no API key (0a6c697, amendment in protocol §9 before data). Run 40286109947 cached 101/120 months, committed unopened (be7028b). Daily Action `synergy_resume.yml` (06:17 UTC) fetches the rest and runs the analysis once when complete.
-
-**Completion (08:55):** Adrian added secret `OPENALEX_API_KEY`; fetch uses it if set, never stores it (e4fb711). Run 40288775279 completed the fetch and ran the analysis once (93fb72a). `synergy_resume.yml` now does nothing (result exists); can be deleted.
-
-**Audit (09:00, Adrian's request):** `docs/AUDIT_2026-10-26.md` (7be95c0). Fixes 1–2 done (48e75e0): DAC comparison text computed from data with a scope note; GWI outputs frozen. Weekly run 40289771653 (manual; Monday's cron had not fired) → eb5eb71: all checks passed, 103 tests, both GWI runs reproduce, page redeployed. The GWI calibration pageview file changed on refetch but the result did not. Open from the audit: unused code surface (keep, `legacy/`, or delete), `analysis/` untested and unlinted, τ_I CI ignores autocorrelation, NHC table hand-transcribed.
+- Nothing. Optional: decide on the `results.json` proposal.
 
 ## Next session
-Session 9 (`docs/PLAN.md`). Open: README/plan row still says "synergy passes noise controls" without "synthetic only; failed on real streams" (session 15 rewrite, or a one-line fix); weekly cron did not fire on 26 Oct, check again.
+Session 9: DAC standard (`docs/PLAN.md`). First check whether Monday 2 Nov's scheduled weekly run fired.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 
