@@ -308,7 +308,7 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
     ids = sorted(contested)
     combos = [dict(zip(ids, c)) for c in itertools.product(*(sorted(contested[i]) for i in ids))] or [{}]
 
-    profiles = []
+    profiles: list[dict[str, Any]] = []
     for combo in combos:
         chosen = [
             ev for ev in events
@@ -341,7 +341,7 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
             for d in deliveries if d.get("pairs_with") in orders
         ]
         primary = [d for d in deliveries if d["end_point"] == case["end_point"]]
-        unpaired = None
+        unpaired: dict[str, int | None] | None = None
         if orders and primary:
             unpaired = _lag_range(_first(list(orders.values()), win_start), _first(primary, win_start))
         secondary = sorted({d["end_point"] for d in deliveries} - {case["end_point"]})
