@@ -34,3 +34,4 @@
 | 2026-10-26 | audit | Audit sessions 1-8 and code; fixes 1-2 | yes | 48e75e0 | DAC text computed, GWI frozen; weekly run eb5eb71 all checks passed |
 | 2026-10-26 | 8 closed | Synergy on real streams; audit; fixes; deletion of never-run code | yes | 4507783 | Synergy FAIL (p_syn 0.215); DAC text fixed, GWI frozen; 89 files deleted; weekly eb5eb71 all checks passed |
 | 2026-10-26 | 8 follow-up | Close remaining audit items | yes | 0cd462f | README/plan synergy fixed; weekly backup trigger; tau_I block CI (result holds); NHC 368/368 cells match PDF; analysis checks; weekly 51b060b all passed, 76 tests |
+| 2026-10-26 | 8 follow-up | Diagnose weekly cron | yes | b5cd080 | GitHub fires no schedules for this repo (0 in 46 min, 2 probes); weekly run now started by a Claude scheduled task, Mondays 07:41 Brussels |

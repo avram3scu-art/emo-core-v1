@@ -27,8 +27,10 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Failures on record: the first CI with the new check failed (40292329460, the f-string); the first NHC job failed at apt-get (40292369127).
 - Final: CI green on 0cd462f; weekly run 40293170796 → 51b060b, all checks passed, RDL and GWI frozen runs reproduce, **76 tests** (103 − 33 deleted API tests + 6 new), page redeployed.
 
+**Scheduler diagnosis (09:40–10:45):** GitHub fires no scheduled runs for this repository. A 5-minute probe (d17ef03) and a renamed probe on off-peak minutes (b5cd080 removes both) produced 0 runs in 46 minutes; the run history (last 100 runs, both accounts) contains no `schedule` event ever. Repo is public, not a fork, Actions active, default branch correct, pushes frequent: none of the documented causes apply. Fix: GitHub's scheduler is no longer relied on. A Claude scheduled task "EMO weekly run starter" (Mondays 07:41 Brussels, first 2 Nov) starts `weekly_refresh.yml` by manual dispatch unless a run exists from the last 5 days, and reports success/failure by push notification. Test firing sent 26 Oct; its result was not visible from this session. GitHub's cron lines stay as a second path.
+
 **Open questions**
-- Will a scheduled run fire on Monday 2 Nov, or the Tuesday 3 Nov backup? If neither, the scheduler is not working for this repo.
+- Did the test firing of "EMO weekly run starter" report "already ran"? Confirm from its notification; if it could not reach the repo, the 2 Nov firing will fail visibly.
 - Tested but unused, kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Delete?
 - Proposal, not in the plan: static `results.json` on GitHub Pages instead of a running API (after sessions 9–10).
 
