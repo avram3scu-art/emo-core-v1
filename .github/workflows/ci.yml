@@ -46,3 +46,7 @@ jobs:
       - name: Lint (ruff)
         run: |
           ruff check .
+
+      - name: Bug check of analysis/ (pyflakes rules only; no reformatting of frozen scripts)
+        run: |
+          ruff check --isolated --select F --target-version py311 analysis

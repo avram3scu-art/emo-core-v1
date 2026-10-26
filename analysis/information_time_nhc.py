@@ -32,6 +32,13 @@ for lead in [12, 24, 36, 48, 72, 96, 120]:
           f"{pct(rl.slope):>6.2f}% [{pct(rl.slope_ci_low):5.2f},{pct(rl.slope_ci_high):5.2f}]")
     rows.append((lead, s, pct(rl.slope), pct(rl.slope_ci_low), pct(rl.slope_ci_high)))
 
+print("\n[robust] 95% CI from a moving-block bootstrap (block 5 years, 2000 resamples), "
+      "which allows for autocorrelated years; same point estimates as above:")
+for lead, ser, mid_pct, *_ in rows:
+    rb = compute_information_time(-np.log(ser), ci="block", block=5, n_boot=2000, seed=0)
+    print(f"{lead:>4}h  {mid_pct:6.2f}%/yr  [{pct(rb.slope_ci_low):5.2f}, {pct(rb.slope_ci_high):5.2f}]  "
+          f"improvement still demonstrated: {rb.tau_i > 0}")
+
 s = d[(d.lead_h == 48) & (d.n_forecasts >= 10)].set_index("year").error_nmi.sort_index()
 rng = np.random.default_rng(0)
 z = [compute_information_time(pd.Series(-rng.permutation(s.values))).tau_i for _ in range(200)]
