@@ -40,6 +40,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Failure on record:** the Claude scheduled task "EMO weekly run starter" did not start a run in two tests (11:36, 11:45; sessions ended in ~15 s, output not visible); my earlier report that it fixed the scheduler was premature. Disabled. CLAUDE.md start step 3 corrected: each session starts the weekly run if the last is older than 7 days.
 
 **Weekly starter fixed (13:00–14:20).** Adrian created a fine-grained GitHub token (Actions read/write, this repo only) and a cron-job.org job "EMO weekly run" (Mondays 07:41 Brussels, POST to the workflow-dispatch API). First test 401 (token pasted wrongly), second 204; GitHub side confirmed: run 40329335301 (workflow_dispatch, 13:17:42 UTC) succeeded, refresh and page. The disabled Claude scheduled task was deleted.
+- Token regenerated (old one revoked) with a one-year expiry; test 204 → run 40330816177 (13:28 UTC) succeeded.
 - **Correction to my diagnosis:** GitHub's scheduler is not dead but unreliable. The Monday 05:23 UTC cron fired at 11:15 UTC (run 40313738746, six hours late; its gate skipped the work), while the 5-minute probes never fired. "Fires no scheduled runs" was too strong.
 
 **Open questions**
@@ -50,9 +51,13 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Review points and Adrian's answer**
 - Pre-closing review adds a short exchange per session (allowance cost). Adrian: "It's worth it."
+- Open items after the first close: Adrian: "do it now if we can, your decision; delete anything unnecessary" → clean-up, `results.json`, external weekly starter (above).
+- Failures of my own today, on record: wrong attention-stream assumption (synergy); first audit list miscounted RDL files as unused; reported the Claude scheduled task as a fix before testing it; "GitHub fires no scheduled runs" overstated.
+
+**Session closed 2026-10-26, 14:35** (final). Key commits since the first close: ee01bc6 (clean-up, results.json), 343d6ef (starter correction), 709b9da (cron-job.org starter), 9bb7771 (token expiry). State: CI green, weekly run 40330816177 succeeded, 57 tests.
 
 **Adrian must do**
-- Nothing required. Optional: the two decisions above.
+- Nothing.
 
 ## Next session
 Session 9: DAC standard (`docs/PLAN.md`). First (CLAUDE.md start step 3): confirm the 2 Nov run started by cron-job.org succeeded.

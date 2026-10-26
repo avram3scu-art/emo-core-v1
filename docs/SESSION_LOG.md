@@ -38,3 +38,4 @@
 | 2026-10-26 | 8 closed (final) | Synergy, audit, fixes, deletion, scheduler fix, rules | yes | 2910790 | Synergy FAIL; GitHub fires no schedules here, weekly run now started by a Claude scheduled task; CLAUDE.md: pre-closing review and reasons for not done |
 | 2026-10-26 | 8 follow-up | Clean-up, results.json, scheduler starter test | yes | ee01bc6 | 59 files deleted, deps 15->5, 57 tests green; results.json on page; Claude scheduled task failed as starter (disabled); sessions start the weekly run |
 | 2026-10-26 | 8 follow-up | External weekly starter | yes | (this commit) | cron-job.org + fine-grained token; test run 40329335301 succeeded; GitHub cron fires late, not never (correction) |
+| 2026-10-26 | 8 closed (final) | Session 8 incl. audit, clean-up, external weekly starter | yes | 9bb7771 | cron-job.org starts the weekly run (tested twice); token valid to 26 Oct 2027; 57 tests green |
