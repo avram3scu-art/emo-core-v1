@@ -9,7 +9,12 @@ Outside the session plan, at Adrian's request ("It's all about EMO"; yes to comm
 - `analysis/test_the_test/`: Science of Truth trial-design simulations from today's chat, with origin and checksums (7bddd2b). Exploratory, synthetic.
 - He direction test calibration: protocol (1039b08) → code (65a4a36) → single run → result in `docs/HE_CALIBRATION_PROTOCOL.md` §6. **Result:** the UIA §3 Option A sign rule gives 41–52% false positives at any n (unusable); the mean-τ permutation test (T-D) holds 5%; at the current trigger of 8 cases its power for a β = 0.5 effect is 0.34–0.55; usable (≥ 0.80) only at n = 30 in the grid.
 
-**Open (Adrian's decision):** adopt T-D as the He statistic, and raise the UIA §4 trigger from 8 to about 30 coded cases or label an 8-case run a pilot. Not applied.
+**Decision applied (20:49, Adrian: "Record and apply everything necessary to EMO"):** He statistic = T-D; Option A rule retired; trigger 8 → 24 coded cases; 8–23 cases = pilot (`docs/UIA_PROTOCOL.md` §6, 727c500).
+**Follow-up (20:41–21:15):** He calibration made a frozen run in the weekly check and reproduced exactly on GitHub (run 40389674340); unit test for the exact Kendall null; amendment 1 (grid n 22–28 and 40–60) pre-registered (7457d89) and run: T-D usable from 24 cases; weak links (β = 0.3) with a shared trend need more than 60. First amendment run aborted (no message), rerun identical on its common part; both on record.
+
+**Open**
+- Measure the shared trend among He letters on real data before choosing n for a weak-link test. Reason: scope (needs coded cases; part of session 12's pre-registration).
+- Reaching 24 coded DAC cases: currently 2 (ozone, climate). Reason: needs time (DAC coding, sessions 10–11 and the second coder).
 
 ## Last session: 8 (2026-10-26) — synergy on real streams, then audit
 

@@ -144,8 +144,8 @@ everything necessary to EMO") applies the calibration's proposal:
 4. **Runs with 8–23 cases are pilots.** They may be run, but are labelled pilot in advance: a
    non-significant result there cannot count as evidence against He.
 5. **Stated limit of the trigger.** 24 cases is enough only for a strong link (β = 0.5). For a
-   weaker link (β = 0.3) at 40 cases, power with a shared trend among letters is 0.60–0.64; the
-   60-case result is pending (`docs/HE_CALIBRATION_PROTOCOL.md` §7, rerun in progress). The
+   weaker link (β = 0.3) with a shared trend among letters, power is 0.60–0.64 at 40 cases and
+   0.78–0.80 at 60 (`docs/HE_CALIBRATION_PROTOCOL.md` §9), so 60 cases still fall short. The
    pre-registration for session 12 must state the effect size it is powered for.
 6. **New requirement for the pre-registration:** measure and report the shared trend among letters
    (e.g. correlation of each letter with the case's warning year), because it is the factor that

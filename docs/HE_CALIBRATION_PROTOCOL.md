@@ -122,3 +122,24 @@ Expectation written now: Part A threshold near 24–26 for m = 5 and 26–30 for
 
 From 26 Oct 2026 `analysis/he_calibration.py` is a frozen run in `scripts/weekly_run.py`: the weekly
 run must reproduce `analysis/he_calibration_output.txt` exactly, or the commit is blocked.
+
+## 9. Result of amendment 1 (§7)
+
+Run in Claude's workspace, 26 Oct 2026. **First run aborted** after 50 of 64 result lines (process
+ended with no error message; cause unknown, likely the workspace stopping a long background job).
+Rerun once, same code and seed, complete; its first 50 lines are byte-identical to the aborted
+run's, so the abort did not change any result. Output `analysis/he_calibration_grid2_output.txt`.
+
+**Part A (T-D usable, §4 criteria):** smallest n = **24** for both m = 3 and m = 5 (22: power
+0.76–0.79 with a shared trend, just short). False positives 3.5–5.9% in every cell.
+
+**Part B (β = 0.3, T-D):** FPR within limit everywhere. Power without a shared trend:
+0.84–0.95 at n = 40, 0.94–0.99 at n = 60. With a shared trend (λ = 0.5): 0.60–0.64 at n = 40,
+0.78–0.80 at n = 60, so **not reached even at 60** (m = 5: 0.799).
+
+**Expectations (§7) vs result:** Part A threshold came lower than expected for m = 3 (24, not
+26–30); for m = 5 as expected. Part B as expected: 60 cases reach 0.80 without a shared trend,
+not with one.
+
+**Consequence:** the shared trend among letters, not the number of letters, decides how many cases
+a weak-link test needs. Measuring it (UIA §6 point 6) comes before choosing n.
