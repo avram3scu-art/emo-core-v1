@@ -52,3 +52,20 @@ Missing and censored sublayers are listed separately at the top level. No weight
 - Existing `data/dac_ozone_events.csv` and `data/dac_climate_events.csv` are not in this format. Reason: scope (one task per session).
 - Counter-measure direction (restricting or easing) is in `description`, not a field. Reason: not attempted; add a field if a case needs it.
 - The JSON Schema cannot express the cross-field rules; only the validator enforces them. A test keeps the schema's enums and required lists equal to the validator's.
+
+## 5. Conversion check: ozone and climate (pre-registered 2026-10-26, before conversion)
+
+**Purpose.** Show that the existing event files can be expressed in this standard and that the profile reproduces the warning-to-binding lag used by `analysis/dac_compare_ozone_climate.py`. This is a reproduction check, not a scientific test: the CSVs are already open and their values are on record.
+
+**Data.** `data/dac_ozone_events.csv`, `data/dac_climate_events.csv` (unchanged). Converted by `scripts/convert_dac_csv.py` to `data/dac_ozone_events.json`, `data/dac_climate_events.json`.
+
+**Mapping rules (fixed now).**
+- t0: the first diagnostic event in the file (ozone `molina_rowland_1974`, climate `charney_1979`); other diagnostic events → `context`, listed in `alternative_t0`.
+- `binding_act`: the treaty adoption with binding cuts named in the comparison script (`montreal_protocol`, `kyoto_adopted`). All other policy rows (frameworks without binding cuts, entry into force, phase-out deadlines, Paris) → `context`. No delivery is coded: the files contain no dated delivery events.
+- Dates: `day_verified` → exact; `month_verified` → window over that calendar month; `year_verified` and `year_unverified` → window over that calendar year. `source_wording` records the original precision label.
+- `source_type`: `primary` only if the source is the original document or official record; encyclopaedia and educational pages → `secondary`; empty source → row kept, source text "no source given", `secondary`.
+- Coding: 1 coder; `rules_fixed_before_coding: false` (the CSVs were coded in earlier sessions). Window: 1 Jan of the t0 year to 26 Oct 2026.
+
+**Statistic.** The binding_act `lag_from_t0` range; the exact-day lag implied by the CSV dates.
+
+**Pass if** both converted files validate **and** each case's range contains the exact-day lag the comparison script uses. **Reported either way:** the range width, i.e. how much the "year-verified" precision of the warning dates widens the lag.
