@@ -2,6 +2,21 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## Fix session F4 (2026-10-26, 21:15–21:40): CI readability — done when met: yes, except deleting the probe branch
+
+- pytest results now appear as annotations in CI and in the weekly run: one error annotation per failing test (with its first error line) and the summary line as a notice.
+- Proved with a deliberate failure on branch `f4-probe`: CI run 40394061138 and weekly run 40394065117 both showed "1 failed, 91 passed" and the FAILED line through the annotations API; the weekly run correctly blocked its commit.
+- Test count recorded: **91 passing** (README fixed; it had 57 and 102 in two places).
+
+**Not done**
+- Delete branch `f4-probe`. Reason: Adrian's decision/permission — the session's proxy refuses branch deletion (HTTP 403). Adrian: GitHub → Branches → delete `f4-probe`.
+
+**Review points**
+- `actions/upload-artifact@v4` runs on deprecated Node 20 (warning in run 40394065117); upgrading is a one-line change, not tested here (scope).
+- `ubuntu-latest` moves to Ubuntu 26 from 19 Oct 2026 (runner notice); frozen outputs could change with new library builds — the weekly frozen check would catch it.
+
+**Next:** F1 (Adrian brings the DAC paper files), then F2, F3, F5–F7.
+
 ## Extra work, 26 Oct 2026 (20:30–21:10): test the test
 
 Outside the session plan, at Adrian's request ("It's all about EMO"; yes to commit; "Do it" for the He calibration). Does not replace F1–F8.
