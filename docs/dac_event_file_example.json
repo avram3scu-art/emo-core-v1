@@ -1,0 +1,40 @@
+{
+  "standard_version": "1.0",
+  "case": {
+    "case_id": "SYNTHETIC-EXAMPLE",
+    "t0_event_id": "warning",
+    "t0_institution": "Synthetic agency (illustration only, not a real case)",
+    "t0_rule": "First formal declaration by the designated international body",
+    "alternative_t0": ["first national alert"],
+    "response_scale": "One national government; acts of other levels coded as context",
+    "start_rule": "Firm order = signed contract with quantity and price; inquiries, options and single-mission purchases excluded",
+    "end_point": "national distribution level",
+    "inclusion_rules": {
+      "firm_order": "First signed contract",
+      "binding_act": "First legally binding act published in the official journal",
+      "delivery": "First delivery recorded at the end point",
+      "dedicated_funding": "First budget line dedicated to the response",
+      "counter_measure": "First act restricting or easing the response"
+    },
+    "observation_window": {"start": "2020-01-01", "end": "2020-06-30", "reason": "Synthetic: first wave"},
+    "source_pool": {
+      "searched": ["synthetic official journal"],
+      "search_date": "2026-10-26",
+      "not_accessed": [],
+      "case_selection_reason": "Synthetic example for the standard; not data"
+    },
+    "coding": {"coders": 1, "agreement": null, "rules_fixed_before_coding": true},
+    "computation": {"code": "emo/dac_standard.py"}
+  },
+  "events": [
+    {"event_id": "warning", "sublayer": "validation", "date_status": "exact", "date_earliest": "2020-01-30", "date_latest": "2020-01-30", "description": "Synthetic declaration", "source": "synthetic", "source_type": "primary"},
+    {"event_id": "order1", "sublayer": "firm_order", "date_status": "exact", "date_earliest": "2020-02-10", "date_latest": "2020-02-10", "description": "Synthetic first order", "source": "synthetic", "source_type": "primary"},
+    {"event_id": "order2", "sublayer": "firm_order", "date_status": "window", "date_earliest": "2020-03-01", "date_latest": "2020-03-07", "source_wording": "in the first week of March", "description": "Synthetic second order", "source": "synthetic", "source_type": "secondary"},
+    {"event_id": "act", "sublayer": "binding_act", "date_status": "exact", "date_earliest": "2020-03-15", "date_latest": "2020-03-15", "reading": "A", "description": "Synthetic act, reading A: date of signature", "source": "synthetic", "source_type": "primary"},
+    {"event_id": "act", "sublayer": "binding_act", "date_status": "exact", "date_earliest": "2020-03-20", "date_latest": "2020-03-20", "reading": "B", "description": "Synthetic act, reading B: date of publication", "source": "synthetic", "source_type": "primary"},
+    {"event_id": "del1", "sublayer": "delivery", "date_status": "exact", "date_earliest": "2020-03-27", "date_latest": "2020-03-27", "pairs_with": "order1", "end_point": "national distribution level", "description": "Synthetic delivery of order1", "source": "synthetic", "source_type": "primary"},
+    {"event_id": "del1_provider", "sublayer": "delivery", "date_status": "lower_bound", "date_earliest": "2020-03-31", "source_wording": "not before the end of March", "end_point": "provider level", "description": "Synthetic delivery at a secondary end point", "source": "synthetic", "source_type": "secondary"},
+    {"event_id": "funding", "sublayer": "dedicated_funding", "date_status": "missing", "description": "No dated source found", "source": "synthetic search", "source_type": "secondary"},
+    {"event_id": "counter", "sublayer": "counter_measure", "date_status": "censored", "description": "None within the window", "source": "synthetic search", "source_type": "primary"}
+  ]
+}

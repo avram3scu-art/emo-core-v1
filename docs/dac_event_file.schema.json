@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "emo-core-v1/docs/dac_event_file.schema.json",
+  "title": "DAC event file",
+  "description": "Structural schema for a DAC event file (docs/DAC_STANDARD.md). Cross-field rules (t0, pairing, readings, windows, inclusion rules) are enforced by emo/dac_standard.py, not by this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "standard_version",
+    "case",
+    "events"
+  ],
+  "properties": {
+    "standard_version": {
+      "const": "1.0"
+    },
+    "case": {
+      "type": "object",
+      "required": [
+        "case_id",
+        "t0_event_id",
+        "t0_institution",
+        "t0_rule",
+        "alternative_t0",
+        "response_scale",
+        "start_rule",
+        "end_point",
+        "inclusion_rules",
+        "observation_window",
+        "source_pool",
+        "coding",
+        "computation"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string"
+        },
+        "t0_event_id": {
+          "type": "string"
+        },
+        "t0_institution": {
+          "type": "string"
+        },
+        "t0_rule": {
+          "type": "string"
+        },
+        "alternative_t0": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "response_scale": {
+          "type": "string"
+        },
+        "start_rule": {
+          "type": "string"
+        },
+        "end_point": {
+          "type": "string"
+        },
+        "inclusion_rules": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "observation_window": {
+          "type": "object",
+          "required": [
+            "start",
+            "end",
+            "reason"
+          ],
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date"
+            },
+            "end": {
+              "type": "string",
+              "format": "date"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "source_pool": {
+          "type": "object",
+          "required": [
+            "searched",
+            "search_date",
+            "not_accessed",
+            "case_selection_reason"
+          ],
+          "properties": {
+            "searched": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "search_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "not_accessed": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "case_selection_reason": {
+              "type": "string"
+            }
+          }
+        },
+        "coding": {
+          "type": "object",
+          "required": [
+            "coders",
+            "agreement",
+            "rules_fixed_before_coding"
+          ],
+          "properties": {
+            "coders": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "agreement": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "rules_fixed_before_coding": {
+              "type": "boolean"
+            }
+          }
+        },
+        "computation": {
+          "type": "object",
+          "required": [
+            "code"
+          ],
+          "properties": {
+            "code": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "sublayer",
+          "date_status",
+          "description",
+          "source",
+          "source_type"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sublayer": {
+            "enum": [
+              "validation",
+              "firm_order",
+              "binding_act",
+              "dedicated_funding",
+              "delivery",
+              "counter_measure",
+              "reversal",
+              "institutionalisation",
+              "persistence",
+              "context"
+            ]
+          },
+          "date_status": {
+            "enum": [
+              "exact",
+              "window",
+              "lower_bound",
+              "upper_bound",
+              "missing",
+              "censored"
+            ]
+          },
+          "date_earliest": {
+            "type": "string",
+            "format": "date"
+          },
+          "date_latest": {
+            "type": "string",
+            "format": "date"
+          },
+          "source_wording": {
+            "type": "string",
+            "description": "Verbatim wording of the source for an imprecise date"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1,
+            "description": "URL or full citation"
+          },
+          "source_type": {
+            "enum": [
+              "primary",
+              "secondary"
+            ]
+          },
+          "reading": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Label of one reading of a contested date; each reading is a separate row with the same event_id"
+          },
+          "pairs_with": {
+            "type": "string",
+            "description": "event_id of the firm_order this delivery fulfils; omit if unpaired"
+          },
+          "end_point": {
+            "type": "string",
+            "description": "Distribution level at which the delivery is recorded"
+          }
+        }
+      }
+    }
+  }
+}
