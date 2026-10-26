@@ -139,18 +139,18 @@ Twenty-four sessions in four phases; each ends with something in the repository 
 
 ## How every session starts and ends
 
-Every session is a new conversation with avram3scu-art/emo-core-v1 as its repository. Paste the opening block, then that session's prompt below; finish with the closing block, so the work is recorded in the repo, not only in the chat.
+Every session is a new conversation with avram3scu-art/emo-core-v1 as its repository. Paste the opening block, then that session's prompt below. When the task is done, Claude gives a short review (more to do, changes, improvements; see CLAUDE.md) and waits for your answer; then paste the closing block, so the work is recorded in the repo, not only in the chat. (Blocks revised 26 Oct 2026.)
 
 **Opening block (paste first, every session):**
 
 ```text
-EMO session [N]. Repository: avram3scu-art/emo-core-v1. Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session [N] in docs/PLAN.md, and follow them. One task only this session: the one below. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+EMO session [N]. Repository: avram3scu-art/emo-core-v1. Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session [N] in docs/PLAN.md, and follow them. One task only this session: the one below. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Test or verify anything you can within the session before calling it open. When the task is done, give me the review from CLAUDE.md (more of this task now, changes or improvements, your own mistakes) and wait for my answer before closing. Keep replies short; I am on a limited weekly allowance.
 ```
 
 **Closing block (paste at the end, every session):**
 
 ```text
-Close the session. (1) Update docs/STATUS.md: date, session number, what was done, commits, results including failures, open questions, and the next session. (2) Append one row to docs/SESSION_LOG.md: date | session | task | done when met (yes/no) | key commit | note. (3) Commit and push. (4) Give me five lines: done, not done, result, next session, anything I must do.
+Close the session. (1) Update docs/STATUS.md: date, session number, what was done, commits, results including failures, open questions each with its reason (scope, my decision, needs time, not attempted), the review's improvement points and my answer, and the next session. (2) Append one row to docs/SESSION_LOG.md: date | session | task | done when met (yes/no) | key commit | note. (3) If a rule changed, update CLAUDE.md. Commit and push. (4) Give me six lines: done; not done, each with its reason; result; could still do or improve; next session; anything I must do.
 ```
 
 After each session, also fill one row of the Usage log tab in EMO_weekly_plan_and_tools.xlsx (allowance left before and after).

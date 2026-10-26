@@ -6,6 +6,26 @@ These rules bind every session in this repository. If a session prompt conflicts
 
 1. Read this file, `docs/STATUS.md`, and the entry for the current session in `docs/PLAN.md`.
 2. Work on that session's task only. Stop when its "done when" is met, or say plainly why it cannot be met.
+3. The weekly run is started by the Claude scheduled task "EMO weekly run starter" (Mondays 07:41 Brussels), because GitHub fires no scheduled runs for this repository (diagnosed 26 Oct 2026). Check that the latest weekly run is from the past 7 days and succeeded; if not, say so first.
+
+## Before closing: review (every session)
+
+When the task's "done when" is met, or cannot be met, and before the closing routine, give Adrian a short review and wait for his answer:
+
+1. **More of this task now?** What could still be done on this session's task, and roughly what it costs.
+2. **Change or improve?** Anything in the method, code, data, plan or these rules that should change, with the reason. Point out weaknesses in the session's own work, including Claude's own mistakes.
+3. **Test before calling it open.** Anything that can be tested or verified within the session (a probe, a rerun, a check against the source) is done before it is listed as open, unless Adrian says otherwise.
+
+Do not extend the task without Adrian's yes. If a review point changes these rules, update this file in the same session.
+
+## "Not done" always gives its reason
+
+Every item reported as not done or open names one reason:
+
+- **Scope**: outside this session's task (rule: one task per session).
+- **Adrian's decision**: irreversible, costly or his call (deleting, keys, accounts, money, method choices).
+- **Needs time**: can only be verified later (e.g. a weekly schedule), with the date of the check.
+- **Not attempted**: could have been done now but was not. Say so plainly; this is Claude's shortfall, not a limit.
 
 ## Science rules
 
@@ -27,10 +47,10 @@ Do not add "no AI tool is listed as an author". Manuscripts carry "Adrian N. Avr
 
 ## Closing routine (every session)
 
-1. Update `docs/STATUS.md`: date, session number, what was done, commits, results including failures, open questions, next session.
+1. Update `docs/STATUS.md`: date, session number, what was done, commits, results including failures, open questions (each with its reason), the review's improvement points and Adrian's answer, next session.
 2. Append one row to `docs/SESSION_LOG.md`: date | session | task | done when met (yes/no) | key commit | note.
-3. Commit and push.
-4. Report in five lines: done, not done, result, next session, anything Adrian must do.
+3. If a rule changed, update this file. Commit and push.
+4. Report in six lines: done; not done (each with its reason); result; could still do or improve; next session; anything Adrian must do.
 
 ## Style
 
