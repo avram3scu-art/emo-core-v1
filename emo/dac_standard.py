@@ -307,7 +307,7 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
         if ev.get("reading") is not None:
             contested.setdefault(ev["event_id"], []).append(ev["reading"])
     ids = sorted(contested)
-    combos = [dict(zip(ids, c)) for c in itertools.product(*(sorted(contested[i]) for i in ids))] or [{}]
+    combos = [dict(zip(ids, c, strict=True)) for c in itertools.product(*(sorted(contested[i]) for i in ids))] or [{}]
 
     profiles: list[dict[str, Any]] = []
     for combo in combos:
