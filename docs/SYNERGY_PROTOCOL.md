@@ -133,3 +133,10 @@ Reading: on this domain and window, the synergy index finds nothing. The session
 "synergy passes noise controls" holds only for synthetic data. This does not show that
 synergy is absent between science, policy and attention in general: one domain, monthly
 resolution, and Gaussian O-information only sees linear structure.
+
+## 11. Post-result audit (2026-10-26, no change to the verdict)
+
+The §2 assumption that summing the two titles keeps one attention stream is false: the
+titles swapped across 2019–2021 and the sum falls about fivefold (two articles before, one
+after). The verdict stands, since the null keeps each stream's own breaks, but `attention`
+is a weak proxy. See `docs/AUDIT_2026-10-26.md` items 1–2.
