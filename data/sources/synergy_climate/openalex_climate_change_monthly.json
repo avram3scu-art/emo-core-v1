@@ -1,0 +1,406 @@
+{
+ "2016-01": {
+  "count": 5830,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-01-01,to_publication_date:2016-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-02": {
+  "count": 1255,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-02-01,to_publication_date:2016-02-29&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-03": {
+  "count": 1635,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-03-01,to_publication_date:2016-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-04": {
+  "count": 1640,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-04-01,to_publication_date:2016-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-05": {
+  "count": 1388,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-05-01,to_publication_date:2016-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-06": {
+  "count": 1700,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-06-01,to_publication_date:2016-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-07": {
+  "count": 1368,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-07-01,to_publication_date:2016-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-08": {
+  "count": 1377,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-08-01,to_publication_date:2016-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-09": {
+  "count": 1474,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-09-01,to_publication_date:2016-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-10": {
+  "count": 1517,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-10-01,to_publication_date:2016-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-11": {
+  "count": 1568,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-11-01,to_publication_date:2016-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2016-12": {
+  "count": 1930,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2016-12-01,to_publication_date:2016-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-01": {
+  "count": 5425,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-01-01,to_publication_date:2017-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-02": {
+  "count": 1285,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-02-01,to_publication_date:2017-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-03": {
+  "count": 1759,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-03-01,to_publication_date:2017-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-04": {
+  "count": 1625,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-04-01,to_publication_date:2017-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-05": {
+  "count": 1484,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-05-01,to_publication_date:2017-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-06": {
+  "count": 1703,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-06-01,to_publication_date:2017-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-07": {
+  "count": 1467,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-07-01,to_publication_date:2017-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-08": {
+  "count": 1416,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-08-01,to_publication_date:2017-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-09": {
+  "count": 1631,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-09-01,to_publication_date:2017-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-10": {
+  "count": 1563,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-10-01,to_publication_date:2017-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-11": {
+  "count": 1592,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-11-01,to_publication_date:2017-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2017-12": {
+  "count": 2088,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2017-12-01,to_publication_date:2017-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-01": {
+  "count": 5521,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-01-01,to_publication_date:2018-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-02": {
+  "count": 1516,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-02-01,to_publication_date:2018-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-03": {
+  "count": 1763,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-03-01,to_publication_date:2018-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-04": {
+  "count": 1898,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-04-01,to_publication_date:2018-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-05": {
+  "count": 1705,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-05-01,to_publication_date:2018-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-06": {
+  "count": 1806,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-06-01,to_publication_date:2018-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-07": {
+  "count": 1689,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-07-01,to_publication_date:2018-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-08": {
+  "count": 1581,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-08-01,to_publication_date:2018-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-09": {
+  "count": 1690,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-09-01,to_publication_date:2018-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-10": {
+  "count": 1721,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-10-01,to_publication_date:2018-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-11": {
+  "count": 1705,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-11-01,to_publication_date:2018-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2018-12": {
+  "count": 2080,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2018-12-01,to_publication_date:2018-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-01": {
+  "count": 5898,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-01-01,to_publication_date:2019-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-02": {
+  "count": 1696,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-02-01,to_publication_date:2019-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-03": {
+  "count": 1946,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-03-01,to_publication_date:2019-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-04": {
+  "count": 1996,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-04-01,to_publication_date:2019-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-05": {
+  "count": 1945,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-05-01,to_publication_date:2019-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-06": {
+  "count": 2065,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-06-01,to_publication_date:2019-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-07": {
+  "count": 1977,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-07-01,to_publication_date:2019-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-08": {
+  "count": 1880,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-08-01,to_publication_date:2019-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-09": {
+  "count": 1910,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-09-01,to_publication_date:2019-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-10": {
+  "count": 2043,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-10-01,to_publication_date:2019-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-11": {
+  "count": 2236,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-11-01,to_publication_date:2019-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2019-12": {
+  "count": 2609,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2019-12-01,to_publication_date:2019-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-01": {
+  "count": 6674,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-01-01,to_publication_date:2020-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-02": {
+  "count": 1934,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-02-01,to_publication_date:2020-02-29&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-03": {
+  "count": 2269,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-03-01,to_publication_date:2020-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-04": {
+  "count": 2171,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-04-01,to_publication_date:2020-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-05": {
+  "count": 2291,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-05-01,to_publication_date:2020-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-06": {
+  "count": 2584,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-06-01,to_publication_date:2020-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-07": {
+  "count": 2502,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-07-01,to_publication_date:2020-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-08": {
+  "count": 2311,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-08-01,to_publication_date:2020-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-09": {
+  "count": 2624,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-09-01,to_publication_date:2020-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-10": {
+  "count": 2583,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-10-01,to_publication_date:2020-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-11": {
+  "count": 2533,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-11-01,to_publication_date:2020-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2020-12": {
+  "count": 3137,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2020-12-01,to_publication_date:2020-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-01": {
+  "count": 6291,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-01-01,to_publication_date:2021-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-02": {
+  "count": 2425,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-02-01,to_publication_date:2021-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-03": {
+  "count": 2923,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-03-01,to_publication_date:2021-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-04": {
+  "count": 2710,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-04-01,to_publication_date:2021-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-05": {
+  "count": 2643,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-05-01,to_publication_date:2021-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-06": {
+  "count": 3132,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-06-01,to_publication_date:2021-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-07": {
+  "count": 2832,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-07-01,to_publication_date:2021-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-08": {
+  "count": 2729,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-08-01,to_publication_date:2021-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-09": {
+  "count": 2996,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-09-01,to_publication_date:2021-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-10": {
+  "count": 3125,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-10-01,to_publication_date:2021-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-11": {
+  "count": 2837,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-11-01,to_publication_date:2021-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2021-12": {
+  "count": 3374,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2021-12-01,to_publication_date:2021-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-01": {
+  "count": 6068,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-01-01,to_publication_date:2022-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-02": {
+  "count": 2643,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-02-01,to_publication_date:2022-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-03": {
+  "count": 3232,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-03-01,to_publication_date:2022-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-04": {
+  "count": 2825,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-04-01,to_publication_date:2022-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-05": {
+  "count": 2950,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-05-01,to_publication_date:2022-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-06": {
+  "count": 3396,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-06-01,to_publication_date:2022-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-07": {
+  "count": 2937,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-07-01,to_publication_date:2022-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-08": {
+  "count": 3136,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-08-01,to_publication_date:2022-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-09": {
+  "count": 3362,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-09-01,to_publication_date:2022-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-10": {
+  "count": 3573,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-10-01,to_publication_date:2022-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-11": {
+  "count": 3452,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-11-01,to_publication_date:2022-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2022-12": {
+  "count": 4314,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2022-12-01,to_publication_date:2022-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-01": {
+  "count": 6559,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-01-01,to_publication_date:2023-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-02": {
+  "count": 3200,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-02-01,to_publication_date:2023-02-28&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-03": {
+  "count": 3815,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-03-01,to_publication_date:2023-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-04": {
+  "count": 3275,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-04-01,to_publication_date:2023-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-05": {
+  "count": 3531,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-05-01,to_publication_date:2023-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-06": {
+  "count": 4076,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-06-01,to_publication_date:2023-06-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-07": {
+  "count": 3622,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-07-01,to_publication_date:2023-07-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-08": {
+  "count": 3526,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-08-01,to_publication_date:2023-08-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-09": {
+  "count": 3985,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-09-01,to_publication_date:2023-09-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-10": {
+  "count": 3806,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-10-01,to_publication_date:2023-10-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-11": {
+  "count": 4076,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-11-01,to_publication_date:2023-11-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2023-12": {
+  "count": 4773,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2023-12-01,to_publication_date:2023-12-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2024-01": {
+  "count": 8426,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-01-01,to_publication_date:2024-01-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2024-02": {
+  "count": 3949,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-02-01,to_publication_date:2024-02-29&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2024-03": {
+  "count": 4376,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-03-01,to_publication_date:2024-03-31&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2024-04": {
+  "count": 4283,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-04-01,to_publication_date:2024-04-30&mailto=avram3scu-art@users.noreply.github.com"
+ },
+ "2024-05": {
+  "count": 4255,
+  "url": "https://api.openalex.org/works?per_page=1&filter=title_and_abstract.search:%22climate%20change%22,type:article,from_publication_date:2024-05-01,to_publication_date:2024-05-31&mailto=avram3scu-art@users.noreply.github.com"
+ }
+}
