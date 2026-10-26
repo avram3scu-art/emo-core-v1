@@ -102,3 +102,23 @@ power; dating letters before the warning (UIA rule) does not remove such a facto
 **Proposal for Adrian's decision (not applied):** (1) pre-register T-D, not the Option A rule, as
 the He statistic; (2) raise the §4 trigger from 8 to about 30 coded cases, or accept and state a
 power of roughly 0.5 at 8 cases, labelling that run a pilot that cannot fail informatively.
+
+## 7. Amendment 1 (pre-registered 26 Oct 2026, before its run): fill the grid
+
+Two gaps in §6: the T-D threshold lies somewhere in (20, 30], and power for a weaker link
+(β = 0.3) was below 0.80 at every n tested. Same model, tests, criteria and code as §2–§4
+(functions imported unchanged from `analysis/he_calibration.py`); new seed 20261030;
+code `analysis/he_calibration_grid2.py`, output `analysis/he_calibration_grid2_output.txt`.
+
+- Part A: n ∈ {22, 24, 26, 28}; β ∈ {0, 0.5}; λ ∈ {0, 0.5}; m ∈ {3, 5}.
+  Reported: smallest n in {20 (from §6), 22, …, 30 (from §6)} at which T-D is usable (§4 criteria).
+- Part B: n ∈ {40, 60}; β ∈ {0, 0.3}; λ ∈ {0, 0.5}; m ∈ {3, 5}.
+  Reported: whether T-D reaches power ≥ 0.80 at β = 0.3 (both λ) with FPR ≤ 0.060.
+
+Expectation written now: Part A threshold near 24–26 for m = 5 and 26–30 for m = 3 (driven by
+λ = 0.5); Part B: n = 60 reaches 0.80 at β = 0.3 for λ = 0 but probably not for λ = 0.5.
+
+## 8. Reproduction in CI
+
+From 26 Oct 2026 `analysis/he_calibration.py` is a frozen run in `scripts/weekly_run.py`: the weekly
+run must reproduce `analysis/he_calibration_output.txt` exactly, or the commit is blocked.

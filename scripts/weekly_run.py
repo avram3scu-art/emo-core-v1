@@ -55,6 +55,8 @@ REPRO = [
     # the result now blocks the commit instead of silently overwriting the record.
     ("gwi_hurricanes", "analysis/gwi_hurricanes_output.txt", None),
     ("gwi_calibration", "analysis/gwi_calibration_output.txt", None),
+    # He calibration (docs/HE_CALIBRATION_PROTOCOL.md section 6), synthetic, ~3 min; frozen 2026-10-26.
+    ("he_calibration", "analysis/he_calibration_output.txt", None),
 ]
 NOT_RUN = {
     "rdl_v04_test": "needs the Oslo-Seattle / IRD component file (requested 20 Oct 2026, not received)",
