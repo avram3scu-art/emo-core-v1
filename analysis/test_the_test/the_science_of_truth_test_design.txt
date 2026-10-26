@@ -1,0 +1,921 @@
+THE SCIENCE OF TRUTH
+MATHEMATICAL TEST DESIGN
+
+Adrian N. Avramescu
+
+Preregistered Simulation Protocol (Draft)
+
+============================================================
+1. PURPOSE
+============================================================
+
+The objective is not to assume that The Science of Truth works.
+
+The objective is to construct a test capable of detecting whether
+a structured educational program improves students' ability to
+evaluate evidence, reason critically, recognize uncertainty, and
+revise conclusions when presented with new information.
+
+We must distinguish three different questions:
+
+A. MATHEMATICAL VALIDITY
+   Are the equations and statistical procedures internally
+   consistent under their stated assumptions?
+
+B. COMPUTATIONAL VALIDITY
+   Does a simulation implement the intended statistical model
+   and produce the expected behavior across repeated trials?
+
+C. EMPIRICAL VALIDITY
+   Does teaching The Science of Truth actually improve students'
+   reasoning compared with ordinary teaching?
+
+A mathematical proof cannot establish an empirical educational
+effect without empirical premises and evidence.
+
+A simulation can test our statistical procedure under specified
+conditions. It cannot establish that those conditions accurately
+represent real classrooms.
+
+Therefore, the first task is to test the test itself.
+
+
+============================================================
+2. THE CENTRAL HYPOTHESIS
+============================================================
+
+Let:
+
+    T = structured Science of Truth curriculum
+    C = ordinary curriculum or comparison condition
+    Y = independently assessed reasoning performance
+
+The primary research question is:
+
+    Does T produce better reasoning outcomes than C?
+
+Define the average treatment effect:
+
+    tau = E[Y(1) - Y(0)]
+
+where:
+
+    Y(1) = outcome under the Science of Truth curriculum
+    Y(0) = outcome under the comparison curriculum
+
+The primary null hypothesis is:
+
+    H0: tau = 0
+
+The primary alternative hypothesis is:
+
+    H1: tau != 0
+
+A directional hypothesis could instead be preregistered:
+
+    H0: tau <= 0
+    H1: tau > 0
+
+However, the choice between a one-sided and two-sided test must
+be made before examining the results.
+
+For the initial design, use a two-sided significance level:
+
+    alpha = 0.05
+
+This means that, under the null model and the assumptions of the
+statistical test, the probability of a false-positive rejection
+should be approximately 5%.
+
+
+============================================================
+3. WHAT MUST BE MEASURED?
+============================================================
+
+The primary outcome must not simply ask whether students agree
+with the curriculum's principles.
+
+That would risk measuring conformity rather than reasoning.
+
+Instead, develop an independently assessed reasoning test
+containing unfamiliar problems.
+
+Possible assessment components include:
+
+    1. Distinguishing observations from interpretations.
+    2. Identifying unsupported conclusions.
+    3. Evaluating the relevance and reliability of evidence.
+    4. Recognizing uncertainty and limitations.
+    5. Comparing competing explanations.
+    6. Identifying confounding variables.
+    7. Updating a conclusion when new evidence appears.
+    8. Recognizing when evidence is insufficient to decide.
+
+The assessment should include questions where the scientifically
+appropriate answer is to reject a claim, accept a claim
+provisionally, or suspend judgment.
+
+The assessment must not reward agreement with any particular
+philosophy, political position, religion, or worldview.
+
+Before the main trial, the assessment should be piloted to
+evaluate reliability, age appropriateness, and whether it measures
+the intended abilities.
+
+Whenever feasible, assessors should be blinded to each student's
+group assignment.
+
+
+============================================================
+4. PROPOSED EXPERIMENTAL DESIGN
+============================================================
+
+The design proceeds in two stages: a pilot (feasibility) study,
+followed by a cluster-randomized controlled trial whose sample
+size is set from the pilot's measured values.
+
+Simulation (Section 8) showed that the originally proposed
+80 classrooms would likely be underpowered once realistic
+departures from the idealized model are combined. The trial
+size therefore cannot responsibly be fixed in advance.
+
+STAGE 1: PILOT STUDY
+
+The pilot does not test whether the curriculum works.
+It estimates the quantities that determine whether a full
+trial is feasible and how large it must be:
+
+    1. Intraclass correlation of the reasoning assessment.
+    2. Reliability of the assessment.
+    3. Baseline/follow-up correlation.
+    4. Implementation fidelity in treatment classrooms.
+    5. Contamination of comparison classrooms.
+    6. Attrition rate, separately in each arm.
+    7. Number of classes taught per teacher.
+
+The pilot must not be used to estimate or report the
+treatment effect as evidence of benefit.
+
+STAGE 2: MAIN TRIAL
+
+Unit of randomization:
+
+    The unit of randomization is the classroom if each teacher
+    teaches only one participating class.
+
+    If teachers teach more than one participating class, the
+    teacher (or the school) is the unit of randomization, and
+    all of that teacher's classes receive the same condition.
+
+    Simulation showed that randomizing classrooms while ignoring
+    shared teachers raised the false-positive rate from 5% to
+    approximately 8%.
+
+Sample size:
+
+    Determined after the pilot, by simulation using the pilot's
+    estimates, so that the trial has at least 80% power to
+    detect the preregistered minimum educationally meaningful
+    effect AFTER allowing for expected fidelity and
+    contamination.
+
+    For planning only: under the optimistic profile in
+    Section 8, roughly 160 classrooms were needed. Under the
+    moderate profile, more than 320 were needed.
+
+Attrition:
+
+    Retention procedures must be specified in advance.
+    Attrition must be reported separately for each arm.
+
+    A preregistered sensitivity analysis (for example, bounds
+    on the treatment effect under plausible selective dropout)
+    must accompany the primary result.
+
+    Simulation showed that 15% attrition concentrated among
+    struggling treated students produced a spurious effect of
+    approximately +0.13 to +0.15 SD. A larger trial does not
+    reduce this bias.
+
+PROCEDURE
+
+    1. Complete and report the pilot study.
+    2. Fix the sample size, primary analysis and decision
+       rules; preregister them.
+    3. Recruit participating classrooms or teachers.
+    4. Obtain appropriate institutional approval and consent.
+    5. Measure baseline reasoning performance.
+    6. Randomly assign units to T or C.
+    7. Deliver the two instructional conditions.
+    8. Record implementation fidelity, contamination and
+       attendance throughout.
+    9. Administer the follow-up assessment with blinded scoring.
+   10. Analyze according to original assignment.
+   11. Report all preregistered outcomes, attrition by arm,
+       sensitivity analyses and deviations.
+   12. Make anonymized data and analysis code available whenever
+       ethically and legally possible.
+
+The comparison group should receive ordinary teaching or a
+carefully specified alternative program.
+
+The study should not deliberately deprive children of necessary
+educational support.
+
+
+============================================================
+5. STATISTICAL MODEL
+============================================================
+
+For student i in classroom j, define:
+
+    Y_ij,0 = baseline reasoning score
+    Y_ij,1 = follow-up reasoning score
+    T_j    = classroom treatment assignment
+
+A simple primary model is:
+
+    Y_ij,1 = a + tau*T_j + b*Y_ij,0 + u_j + e_ij
+
+where:
+
+    a     = intercept
+    tau   = treatment effect
+    b     = baseline adjustment coefficient
+    u_j   = classroom-level variation
+    e_ij  = individual-level variation
+
+The coefficient tau estimates the adjusted average difference
+between the two instructional conditions.
+
+Because treatment is assigned by classroom, the analysis must
+account for the dependence between students in the same classroom.
+
+Possible methods include:
+
+    A. A prespecified mixed-effects model.
+    B. A cluster-level analysis with appropriate adjustment.
+    C. Randomization-based inference respecting classroom
+       assignment.
+    D. Cluster-robust inference with suitable small-sample
+       corrections.
+
+The final method should be selected before the trial begins.
+
+The simple simulation below uses classroom means and an ordinary
+least-squares regression. It is an initial computational check,
+not the final analysis plan for a real trial.
+
+
+ANALYSIS DECISIONS SUPPORTED BY SIMULATION
+
+    Primary analysis:
+        Ordinary least squares on means at the unit of
+        randomization (classroom or teacher), adjusted for the
+        baseline mean.
+
+    Confirmatory analysis:
+        Randomization inference on baseline-adjusted residuals,
+        permuting at the unit of randomization.
+
+    Excluded:
+        Student-level regression that ignores clustering.
+        In simulation its false-positive rate was 17% to 40%
+        instead of 5%.
+
+
+============================================================
+6. INITIAL SIMULATION ASSUMPTIONS
+============================================================
+
+The first simulation investigates three possible true effects:
+
+    tau = 0.00 standard deviations
+    tau = 0.20 standard deviations
+    tau = 0.30 standard deviations
+
+Interpretation:
+
+    0.00 = no true treatment effect
+    0.20 = a small illustrative positive effect
+    0.30 = a larger illustrative positive effect
+
+These values are hypothetical. They are not claims about the
+actual effectiveness of the curriculum.
+
+Additional assumptions:
+
+    Number of classrooms:              80
+    Students per classroom:             17
+    Intraclass correlation (ICC):       0.10
+    Baseline/follow-up correlation:     0.60
+    Significance threshold:             0.05
+    Simulation repetitions:             3,000
+
+The intraclass correlation represents the degree to which
+students in the same classroom resemble one another.
+
+The baseline/follow-up correlation represents the association
+between students' initial and later scores.
+
+The assumptions must be varied in further simulations.
+
+NOTE:
+
+The Section 7 script uses 17 students per classroom directly
+and does not model attrition. Attrition, unequal class sizes,
+teacher effects and the other departures listed in Section 9
+are simulated by the additional scripts described in Section 7,
+with results in Section 8.
+
+
+============================================================
+7. REPRODUCIBLE PYTHON SIMULATION
+============================================================
+
+Requirements:
+
+    Python 3
+    numpy
+    scipy
+
+Install dependencies with:
+
+    python -m pip install numpy scipy
+
+Save the following as:
+
+    simulate_trial.py
+
+------------------------------------------------------------
+
+import numpy as np
+from scipy.stats import t as student_t
+
+
+def simulate_trial(
+    tau,
+    rng,
+    n_classes=80,
+    n_students=17,
+    icc=0.10,
+    rho=0.60
+):
+    """
+    Simulate a simplified classroom-randomized trial.
+
+    tau:
+        True standardized treatment effect.
+
+    rng:
+        NumPy random-number generator.
+
+    n_classes:
+        Total number of randomized classrooms.
+
+    n_students:
+        Students observed per classroom.
+
+    icc:
+        Assumed classroom-level variance proportion.
+
+    rho:
+        Assumed baseline/follow-up correlation parameter.
+    """
+
+    if n_classes % 2 != 0:
+        raise ValueError("n_classes must be even.")
+
+    if not 0 <= icc < 1:
+        raise ValueError("icc must be in [0, 1).")
+
+    if not 0 <= rho < 1:
+        raise ValueError("rho must be in [0, 1).")
+
+    # Randomly assign half of the classrooms to each condition.
+    treatment = np.repeat(
+        [0, 1],
+        n_classes // 2
+    )
+    rng.shuffle(treatment)
+
+    # Baseline scores: classroom and individual components.
+    class_baseline = rng.normal(size=n_classes)
+    individual_baseline = rng.normal(
+        size=(n_classes, n_students)
+    )
+
+    y0 = (
+        np.sqrt(icc) * class_baseline[:, None]
+        + np.sqrt(1 - icc) * individual_baseline
+    )
+
+    # Independent classroom and individual components for
+    # follow-up noise.
+    class_followup = rng.normal(size=n_classes)
+    individual_followup = rng.normal(
+        size=(n_classes, n_students)
+    )
+
+    noise = (
+        np.sqrt(icc) * class_followup[:, None]
+        + np.sqrt(1 - icc) * individual_followup
+    )
+
+    # Generate follow-up outcomes.
+    y1 = (
+        rho * y0
+        + np.sqrt(1 - rho**2) * noise
+        + tau * treatment[:, None]
+    )
+
+    # Analyze classroom means.
+    baseline_mean = y0.mean(axis=1)
+    followup_mean = y1.mean(axis=1)
+
+    X = np.column_stack([
+        np.ones(n_classes),
+        treatment,
+        baseline_mean
+    ])
+
+    beta = np.linalg.solve(
+        X.T @ X,
+        X.T @ followup_mean
+    )
+
+    residual = followup_mean - X @ beta
+
+    df = n_classes - X.shape[1]
+
+    variance = (residual @ residual) / df
+
+    covariance = variance * np.linalg.inv(X.T @ X)
+
+    se = np.sqrt(covariance[1, 1])
+
+    statistic = beta[1] / se
+
+    p_value = 2 * student_t.sf(
+        abs(statistic),
+        df
+    )
+
+    return beta[1], p_value
+
+
+def run_simulation(
+    repetitions=3000,
+    effects=(0.00, 0.20, 0.30),
+    seed=20261026
+):
+    rng = np.random.default_rng(seed)
+
+    print("THE SCIENCE OF TRUTH")
+    print("INITIAL SIMULATION RESULTS")
+    print("----------------------------------------")
+
+    for tau in effects:
+
+        results = [
+            simulate_trial(tau, rng)
+            for _ in range(repetitions)
+        ]
+
+        estimates = np.array([
+            result[0] for result in results
+        ])
+
+        significant = np.array([
+            result[1] < 0.05
+            for result in results
+        ])
+
+        rejection_rate = significant.mean()
+
+        monte_carlo_se = np.sqrt(
+            rejection_rate
+            * (1 - rejection_rate)
+            / repetitions
+        )
+
+        print(
+            f"True effect: {tau:.2f} SD | "
+            f"Rejection rate: {rejection_rate:.4f} | "
+            f"Monte Carlo SE: {monte_carlo_se:.4f} | "
+            f"Mean estimate: {estimates.mean():.4f}"
+        )
+
+
+if __name__ == "__main__":
+    run_simulation()
+
+------------------------------------------------------------
+
+
+ADDITIONAL SIMULATION SCRIPTS
+
+Two further scripts extend the simulation above and produce
+the results reported in Sections 8.2 and 8.3:
+
+    sweep_trial.py
+        Departures from the Section 6 model one at a time
+        (Section 9, items A-K), each analyzed four ways.
+        Writes sweep_results.csv. Seed 20261026.
+
+    combined_trial.py
+        Three planning profiles that combine departures, across
+        80 to 320 classrooms. Requires sweep_trial.py in the
+        same folder. Writes combined_results.csv. Seed 20261027.
+
+Run with:
+
+    python sweep_trial.py
+    python combined_trial.py
+
+Both require only numpy and scipy.
+
+
+============================================================
+8. SIMULATION RESULTS
+============================================================
+
+All results are conditional on modelled assumptions. They test
+the statistical procedure, not the curriculum. Scripts are
+described in Section 7 (seeds 20261026 and 20261027).
+
+8.1 REPRODUCTION OF THE INITIAL SIMULATION
+
+The Section 7 script reproduced its reported results exactly:
+
+    True effect     Rejection rate     Mean estimate
+    0.00 SD             4.53%              0.002
+    0.20 SD            80.50%              0.201
+    0.30 SD            98.73%              0.301
+
+This calibration is close to guaranteed by construction:
+normal errors and equal cluster sizes analyzed by ordinary least
+squares on cluster means is the setting in which the t-test is
+exact. It confirms the code, not the design.
+
+8.2 SINGLE DEPARTURES (2,000 trials per condition)
+
+False-positive control:
+    The primary analysis stayed near 5% under varied ICC and
+    rho, random and baseline-related attrition, unequal class
+    sizes, heavy-tailed scores, measurement error, and 20
+    classrooms.
+
+Power at 0.20 SD fell from 82% to:
+
+    ICC 0.20                     60%
+    rho 0.40                     71%
+    Assessment reliability 0.60  67%
+    Fidelity 75%                 56%
+    Fidelity 50%                 29%
+    Contamination 40%            63%
+
+Power at 0.10 SD under ideal conditions: 31%.
+
+Failures:
+
+    Differential attrition (low-outcome treated students leave):
+        15%: bias +0.13 SD, false-positive rate 47%
+        25%: bias +0.20 SD, false-positive rate 77%
+
+    Two classes per teacher, analyzed at classroom level:
+        false-positive rate 8.2%.
+        Analysis at teacher level restored 4.1%, with power
+        reduced to 49%.
+
+    Student-level analysis ignoring clustering:
+        false-positive rate 17% to 40%.
+
+8.3 COMBINED DEPARTURES (1,000 trials per condition)
+
+Three planning profiles combined several departures.
+Fidelity and contamination reduce a true 0.20 SD effect to the
+delivered intention-to-treat effect shown.
+
+    Profile       Delivered   80 cl.  120   160   240   320
+    Optimistic    0.17        55%     73%   87%   96%   99%
+    Moderate      0.14        22%     33%   43%   60%   72%
+    Pessimistic   0.11        14%     16%   22%   31%   38%
+
+    Optimistic:  ICC .10, rho .6, reliability .8, fidelity 90%,
+                 contamination 10%, attrition 15%
+    Moderate:    ICC .15, rho .5, reliability .7, fidelity 80%,
+                 contamination 20%, attrition 15%,
+                 2 classes per teacher
+    Pessimistic: ICC .20, rho .4, reliability .6, fidelity 70%,
+                 contamination 30%, attrition 20%,
+                 2 classes per teacher
+
+These profile values are planning assumptions, not estimates
+from the literature or from classrooms.
+
+The false-positive rate remained between 4% and 7%.
+The optimistic profile initially ran at 6-7%. A check with
+10,000 trials per condition (seed 20261028), at 80 and 160
+classrooms, with and without unequal sizes and attrition, gave
+4.6% to 5.4% for every analysis. The earlier excess was Monte
+Carlo noise.
+
+With 15% differential attrition added to the moderate profile,
+the estimated effect of a curriculum with no true effect was
+about +0.15 SD at both 80 and 320 classrooms. The false-positive
+rate rose from 30% to 79% as the trial grew.
+
+INTERPRETATION
+
+    1. The test is well calibrated under most departures.
+    2. The 80-classroom design is underpowered under all but
+       the most optimistic assumptions.
+    3. Fidelity, contamination and assessment reliability
+       determine power more cheaply than added classrooms.
+    4. Differential attrition is the principal threat to
+       validity, and it cannot be cured by sample size.
+
+
+============================================================
+9. WHAT MUST BE TESTED NEXT?
+============================================================
+
+STATUS: Items A-G and I-K have been simulated (Section 8).
+Item H (fidelity) was simulated as a parameter, but recording
+fidelity in real classrooms remains an empirical task.
+The items are retained here as the checklist the design
+must continue to satisfy.
+
+The initial simulation is insufficient for a definitive design.
+
+The next simulation must investigate the following conditions.
+
+A. FALSE-POSITIVE CONTROL
+
+Test whether the false-positive rate remains close to 5% when
+the true effect is zero.
+
+Repeat under different assumptions and analysis methods.
+
+B. STATISTICAL POWER
+
+Estimate the probability of detecting effects of:
+
+    0.00 SD
+    0.10 SD
+    0.20 SD
+    0.30 SD
+
+C. INTRACLASS CORRELATION
+
+Investigate:
+
+    ICC = 0.05
+    ICC = 0.10
+    ICC = 0.20
+
+D. BASELINE/FOLLOW-UP CORRELATION
+
+Investigate:
+
+    rho = 0.40
+    rho = 0.60
+    rho = 0.80
+
+E. ATTRITION
+
+Begin with 20 students per classroom and explicitly simulate
+follow-up loss of:
+
+    5%
+    15%
+    25%
+
+Investigate both random attrition and attrition related to
+baseline scores or treatment assignment.
+
+Differential attrition may bias the treatment estimate and
+must not be treated merely as a reduction in sample size.
+
+F. UNEQUAL CLASSROOM SIZES
+
+Real classrooms will not all have the same number of students.
+
+Test whether the analysis remains reliable when classroom sizes
+vary substantially.
+
+G. TEACHER EFFECTS
+
+Teachers differ in experience, instructional skill, enthusiasm,
+and adherence to the curriculum.
+
+The simulation should distinguish teacher variation from
+classroom variation where the design permits it.
+
+H. IMPLEMENTATION FIDELITY
+
+A curriculum may fail because its underlying theory is incorrect,
+because the teaching materials are inadequate, or because the
+program is not delivered as intended.
+
+Record implementation fidelity so these possibilities can be
+examined rather than conflated.
+
+I. CONTAMINATION
+
+Students or teachers in the comparison group may encounter
+elements of the intervention.
+
+Simulate contamination and examine its effect on estimates.
+
+J. OUTCOME MEASUREMENT
+
+The assessment may be noisy, unreliable, or inadvertently biased
+toward the intervention.
+
+Investigate the consequences of measurement error and assess
+whether independent scoring improves reliability.
+
+K. ANALYSIS ROBUSTNESS
+
+Compare the prespecified primary method with suitable alternatives,
+including randomization-based inference and appropriate
+mixed-effects or cluster-adjusted methods.
+
+Alternative analyses should diagnose robustness, not be used
+to select whichever result appears most favorable.
+
+
+============================================================
+10. PREREGISTRATION AND DECISION RULES
+============================================================
+
+Before collecting outcome data, publish or timestamp:
+
+    1. The research question.
+    2. The primary and secondary outcomes.
+    3. The intervention and comparison conditions.
+    4. The randomization procedure.
+    5. The statistical analysis plan.
+    6. The minimum educationally meaningful effect.
+    7. The planned sample size and its assumptions.
+    8. The treatment of missing data.
+    9. The exclusion criteria.
+   10. The rules for reporting deviations.
+
+Define the minimum educationally meaningful effect before
+examining the results.
+
+Statistical significance alone does not establish educational
+importance.
+
+The results should be interpreted using effect estimates,
+confidence intervals, assessment quality, implementation data,
+and the prespecified decision criteria.
+
+POSSIBLE OUTCOMES
+
+OUTCOME 1: EVIDENCE OF BENEFIT
+
+The intervention produces a sufficiently precise positive effect
+that meets the preregistered criteria for educational importance.
+
+Conclusion:
+
+    The results support further evaluation of the curriculum.
+
+Do not conclude that the program works for every age, school,
+subject, or educational context.
+
+OUTCOME 2: INCONCLUSIVE EVIDENCE
+
+The estimated effect is uncertain, or the confidence interval
+includes both negligible and meaningful effects.
+
+Conclusion:
+
+    The study does not establish whether the intervention
+    produces a meaningful benefit.
+
+A larger or improved study may be justified.
+
+OUTCOME 3: EVIDENCE AGAINST A MEANINGFUL BENEFIT
+
+The confidence interval is sufficiently narrow to exclude the
+preregistered minimum meaningful benefit.
+
+Conclusion:
+
+    The results count against the claim that the intervention
+    achieves that level of benefit under the tested conditions.
+
+OUTCOME 4: EVIDENCE OF HARM OR UNINTENDED CONSEQUENCES
+
+The intervention worsens outcomes or creates identifiable
+problems, such as reduced openness to correction or increased
+overconfidence.
+
+Conclusion:
+
+    Investigate the cause, report the finding, and revise or
+    discontinue the intervention as appropriate.
+
+No outcome should be reinterpreted merely to protect the original
+proposal.
+
+
+============================================================
+11. WHAT WOULD COUNT AS A MATHEMATICAL PROOF?
+============================================================
+
+We must be precise about the word "proof."
+
+MATHEMATICS CAN PROVE:
+
+    - Algebraic properties of a specified model.
+    - Consequences that logically follow from stated assumptions.
+    - Certain properties of an estimator under stated conditions.
+    - Formal bounds or guarantees when their assumptions hold.
+
+COMPUTATIONAL SIMULATION CAN INVESTIGATE:
+
+    - Whether code behaves as intended.
+    - Approximate false-positive rates under simulated conditions.
+    - Approximate power under specified effect sizes.
+    - Bias, coverage, and robustness across modeled scenarios.
+
+EMPIRICAL RESEARCH CAN INVESTIGATE:
+
+    - Whether students actually improve.
+    - Whether improvements persist over time.
+    - Whether the program generalizes across classrooms.
+    - Whether the benefits justify the costs.
+    - Whether unintended effects occur.
+
+REPLICATION CAN INVESTIGATE:
+
+    - Whether independent researchers obtain compatible results.
+    - Whether findings persist in different populations and settings.
+
+None of these methods substitutes completely for the others.
+
+
+============================================================
+12. FINAL POSITION
+============================================================
+
+The Science of Truth is currently a proposed educational
+framework, not an experimentally established educational
+intervention.
+
+Simulation has tested the proposed test. Its findings are:
+
+    The planned analysis controls false positives under most
+    modelled conditions.
+
+    An 80-classroom trial would most likely end inconclusive
+    under realistic conditions.
+
+    Selective attrition could produce an apparent benefit where
+    none exists, and a larger trial would make that error more
+    likely to reach significance, not less.
+
+These are findings about the study design. They say nothing
+about whether the curriculum works.
+
+The next steps are, in order:
+
+    1. Specify the curriculum clearly enough that another
+       educator can implement it without depending on the
+       founder's personal interpretation.
+
+    2. Develop and pilot the reasoning assessment, and establish
+       its reliability.
+
+    3. Conduct a pilot study to estimate ICC, fidelity,
+       contamination and attrition by arm.
+
+    4. Fix the trial size by simulation using the pilot
+       estimates.
+
+    5. Have the design reviewed independently and preregister it
+       before any outcome data are collected.
+
+The final principle is unchanged:
+
+    We must not design a test that protects the idea.
+
+    We must design a test that gives the idea a fair opportunity
+    to succeed or fail.
+
+    If the evidence contradicts the proposal, revise the proposal.
+
+    If the evidence supports it, replicate the result.
+
+    If the evidence remains insufficient, admit that we do not
+    yet know.
+
+The simulations have already applied this principle once: they
+showed that the original design could not deliver a fair test,
+and the design has been revised accordingly.
