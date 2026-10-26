@@ -13,7 +13,7 @@ on:
         description: Which analysis
         required: true
         type: choice
-        options: [probe-steo, probe-elec, probe-spf, probe-ip, smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip]
+        options: [probe-steo, probe-elec, probe-spf, probe-ip, smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip, synergy-climate]
       commit:
         description: Commit the refetched data and result (overwrites the recorded files)
         type: boolean
@@ -43,6 +43,7 @@ jobs:
             smf-elec)   f=fetch_steo_smf_elec; a=smf_steo_elec; r=smf_steo_elec; paths="data/sources/eia_steo_elec" ;;
             smf-spf)    f=fetch_spf_smf; a=smf_spf; r=smf_spf; paths="data/sources/spf_unemp" ;;
             smf-ip)     f=fetch_ip_smf; a=smf_ip; r=smf_ip; paths="data/sources/smf_ip" ;;
+            synergy-climate) f=fetch_synergy_climate; a=synergy_climate; r=synergy_climate; paths="data/sources/synergy_climate" ;;
           esac
           if [ -n "$paths" ]; then
             python scripts/$f.py > fetch.txt 2>&1 || true

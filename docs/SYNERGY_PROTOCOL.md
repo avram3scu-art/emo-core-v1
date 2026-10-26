@@ -63,6 +63,9 @@ analysis would be driven by shared trend).
 ## 7. Failure modes fixed in advance
 
 - A stream with a missing month, or any fetch error: test not run; recorded as such.
+  Exception (added before data, with the code): a month absent from the Federal Register
+  monthly facet means zero documents, not missing data; it is set to 0 and the number of
+  such months is reported.
 - A code fault that stops the run before S_obs is computed may be fixed once; the failed
   run and the fix are recorded. No change to §2–§5 after data are opened.
 
@@ -75,6 +78,10 @@ analysis would be driven by shared trend).
 - OpenAlex counts for recent months are still being indexed (drift seen in session 2).
 - A PASS shows structure beyond aligned noise in one domain, not that EMO's "emergent
   mind" reading of synergy is right.
+
+Code: `scripts/fetch_synergy_climate.py`, `analysis/synergy_climate.py`; Action
+`one_off.yml`, job `synergy-climate`, run with `commit` on. Checked before data on random
+fake inputs only (no structure found, as expected).
 
 ## 9. Result
 
