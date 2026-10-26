@@ -7,7 +7,7 @@ Turns the minimum reporting standard of the DAC manuscript into a machine-checke
 - Example (synthetic, not data): `docs/dac_event_file_example.json`
 - Tests: `tests/dac_unit/test_dac_standard.py`
 
-**Source of the fields.** The reporting-standard table of the DAC manuscript as last revised on 20 Oct 2026 (`manuscript_v2_anon.md`, where it is numbered Table 3; an earlier draft numbered it Table 4 and lacked the end-point and pairing rows). Read from the session record of that revision, not from a file in this repository; the manuscript is not in the repo.
+**Source of the fields.** The reporting-standard table of the DAC manuscript as last revised on 20 Oct 2026 (`manuscript_v2_anon.md`, where it is numbered Table 3; an earlier draft numbered it Table 4 and lacked the end-point and pairing rows). The table text is in `docs/sources/dac_manuscript_reporting_standard.md`; the manuscript itself is not yet in the repo.
 
 ## 1. Table field → where it lives
 

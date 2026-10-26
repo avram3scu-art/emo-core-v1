@@ -7,6 +7,7 @@ These rules bind every session in this repository. If a session prompt conflicts
 1. Read this file, `docs/STATUS.md`, and the entry for the current session in `docs/PLAN.md`.
 2. Work on that session's task only. Stop when its "done when" is met, or say plainly why it cannot be met.
 3. The weekly run is started every Monday 07:41 Brussels by an external scheduler (cron-job.org job "EMO weekly run", Adrian's account), which calls GitHub's workflow-dispatch API with a fine-grained token limited to Actions on this repo (set up and tested 26 Oct 2026, run 40329335301). GitHub's own cron also exists but is unreliable here (the 26 Oct Monday run fired six hours late; 5-minute probes never fired); its gate skips it when a run from the last 5 days exists. Check the latest weekly run (`gh run list -w weekly_refresh.yml -L 1`): if it is older than 7 days, start it (`gh workflow run weekly_refresh.yml --ref emo-2026-10`), report its result before the task, and tell Adrian the external starter may have failed (token expired?); if the last one failed, say so first. The token expires **26 Oct 2027**: from 19 Oct 2027, remind Adrian at session start to renew it.
+4. **The repository is the only memory.** Everything a session needs (data, event files, manuscripts, protocols, earlier results, decisions) must be found in this repo. Do not rely on past chats, Claude's memory or Adrian's recollection. If something needed is not in the repo, say so first, name it, and record the gap in `docs/STATUS.md`. A past chat may be used only to locate an item; the item is then committed to the repo before it is used, with its origin noted.
 
 ## Before closing: review (every session)
 
@@ -45,8 +46,18 @@ Use this wording in papers, grant applications and releases:
 
 Do not add "no AI tool is listed as an author". Manuscripts carry "Adrian N. Avramescu" under the title.
 
+## Recording (every session, as the work happens)
+
+Adrian does not keep records; Claude does. Every test, simulation, probe, run, conversion, fetch and failed attempt is recorded in the repo in the same session, never only in the chat or Claude's workspace:
+
+- **Index:** one row per item in `docs/RECORD.md`: date | session | type | what | protocol | code | data | result (PASS/FAIL/error) | commit or run ID.
+- **Files:** protocol, code, input data (or a fetch script plus checksum when the data cannot be committed), outputs and figures are committed; a GitHub run ID alone is not a record.
+- **Sources:** every external source opened is listed with URL and access date in the file that uses it; a source supplied by Adrian is committed (or, if it cannot be, its absence is recorded).
+- **Decisions:** Adrian's choices and their reasons go in `docs/STATUS.md` when made.
+
 ## Closing routine (every session)
 
+0. Check the record: `git status` is clean (nothing created or used is left uncommitted); every item of the session has a row in `docs/RECORD.md`; nothing the next session needs exists only outside the repo. Report any gap.
 1. Update `docs/STATUS.md`: date, session number, what was done, commits, results including failures, open questions (each with its reason), the review's improvement points and Adrian's answer, next session.
 2. Append one row to `docs/SESSION_LOG.md`: date | session | task | done when met (yes/no) | key commit | note.
 3. If a rule changed, update this file. Commit and push.
