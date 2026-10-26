@@ -29,16 +29,25 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Scheduler diagnosis (09:40–10:45):** GitHub fires no scheduled runs for this repository. A 5-minute probe (d17ef03) and a renamed probe on off-peak minutes (b5cd080 removes both) produced 0 runs in 46 minutes; the run history (last 100 runs, both accounts) contains no `schedule` event ever. Repo is public, not a fork, Actions active, default branch correct, pushes frequent: none of the documented causes apply. Fix: GitHub's scheduler is no longer relied on. A Claude scheduled task "EMO weekly run starter" (Mondays 07:41 Brussels, first 2 Nov) starts `weekly_refresh.yml` by manual dispatch unless a run exists from the last 5 days, and reports success/failure by push notification. Test firing sent 26 Oct; its result was not visible from this session. GitHub's cron lines stay as a second path.
 
+**Rules (10:55):** At Adrian's request, CLAUDE.md gained a pre-closing review (more of this task now; changes or improvements, including Claude's own mistakes; test before calling anything open), a reason for every "not done" (scope, Adrian's decision, needs time, not attempted), and a start-of-session weekly-run check. Opening and closing blocks in `docs/PLAN.md` revised; closing report is now six lines (2910790).
+
+**Session closed 2026-10-26, 11:00.** Key commits: 5b1d894 (synergy result), 7be95c0 (audit), 48e75e0 (DAC/GWI fixes), 4507783 (deletion), 0cd462f (NHC check), b5cd080 (scheduler probes), 2910790 (rules).
+
 **Open questions**
-- Did the test firing of "EMO weekly run starter" report "already ran"? Confirm from its notification; if it could not reach the repo, the 2 Nov firing will fail visibly.
-- Tested but unused, kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Delete?
-- Proposal, not in the plan: static `results.json` on GitHub Pages instead of a running API (after sessions 9–10).
+- Did the test firing of "EMO weekly run starter" report "already ran"? Reason: needs time (Adrian's notification; at the latest the 2 Nov firing, which will fail visibly if the task cannot reach the repo).
+- Tested but unused modules kept: `emo/harmonize`, `inference`, `reporting`, `services`, `ew_hooks`. Reason: Adrian's decision (delete or keep).
+- Static `results.json` on GitHub Pages instead of a running API, after sessions 9–10. Reason: Adrian's decision (add to the plan or not).
+- Synergy attention stream is a weak proxy (title swaps 2019–2021); a cleaner attention stream would need a new pre-registered test. Reason: scope (not this plan's task).
+- GitHub's scheduler failure is not reported to GitHub. Reason: Adrian's decision (a support ticket needs his account).
+
+**Review points and Adrian's answer**
+- Pre-closing review adds a short exchange per session (allowance cost). Adrian: "It's worth it."
 
 **Adrian must do**
-- Nothing. Optional: decide on `results.json`.
+- Nothing required. Optional: the two decisions above.
 
 ## Next session
-Session 9: DAC standard (`docs/PLAN.md`). First check whether the Monday 2 Nov or Tuesday 3 Nov scheduled run fired.
+Session 9: DAC standard (`docs/PLAN.md`). First check (CLAUDE.md start step 3) that the 2 Nov weekly run started by the scheduled task succeeded.
 
 ## Previous session: 7 (2026-10-23) — SMF on a real case
 
