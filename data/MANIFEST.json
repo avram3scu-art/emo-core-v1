@@ -7,7 +7,7 @@
     "changed": false,
     "rows": 1988,
     "sha256": "75202780ce56c8458f16fbef5fb8a026b99b00878dbb95c458211b3e6ef125b4",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-23T09:17:51Z"
   },
   "openalex_articles_anycountry_by_year.json": {
@@ -15,66 +15,66 @@
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:>0,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "b8e50050c6882a42cff14c8754ed9b5ce7bd6d2b3cf7691e402c5d474d70a062",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "8f984db857e65f135c402067a139a270ed9e290474c81a09cc0422a7cec8241a",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "openalex_articles_anycountry_by_year_excl_CN_ID.json": {
     "path": "data/sources/openalex_articles_anycountry_by_year_excl_CN_ID/openalex_articles_anycountry_by_year_excl_CN_ID.json",
     "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>0,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "735b3a2d0899c12f6c0cb59e539c1f7f91d3f9664e06dc37aaca1cbbb1ad7e52",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "651f4b0fbf2d1d3bcbffe30464e3a4b3bd0c202db8bbe1cbe404f379c44e829a",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "openalex_articles_multicountry_by_year.json": {
     "path": "data/sources/openalex_articles_multicountry_by_year/openalex_articles_multicountry_by_year.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:>1,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "9724f11e9b2b84d0fb15073c87573c6fd4c714cc9aa3a35e3177b71e72c1b068",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "b578f8f8a2950573a61d837c07fb5bb5627a06f01d6154db86c9da37878e7f58",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "openalex_articles_multicountry_by_year_excl_CN_ID.json": {
     "path": "data/sources/openalex_articles_multicountry_by_year_excl_CN_ID/openalex_articles_multicountry_by_year_excl_CN_ID.json",
     "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>1,type:article&group_by=publication_year",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "d5e0dbc3420c079b4c3247271db87531b81030b5637aba6ea8786cb7dae203f5",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "0b8a7455d8f5b19dbd7027831e61d3e67503ce295689d0ff9e773fc967f4f3af",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "openalex_single_country_2020_by_country.json": {
     "path": "data/sources/openalex_single_country_2020_by_country/openalex_single_country_2020_by_country.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2020,type:article&group_by=authorships.countries",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "6dbb974cf78b646a3450eae55570ec1da7e43c96312d33cd1ab5ff80898818da",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "6d6a4e6290c8a8c00bcdb327bad4ef1aa7d4cf51e6c3fb7d582a09f711852f1f",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "openalex_single_country_2025_by_country.json": {
     "path": "data/sources/openalex_single_country_2025_by_country/openalex_single_country_2025_by_country.json",
     "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
     "kind": "openalex",
     "status": "ok",
-    "changed": false,
+    "changed": true,
     "rows": 200,
-    "sha256": "fd7df21614abfea44d3ac60905b119f6b7e53a74a618675327ecc136bbc7094a",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T10:36:08Z"
+    "sha256": "da55ffb3f1a450477bb313c88db8b906f3c331856e67c4a37d78b0dca11dfd69",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   },
   "owid_annual_co2_emissions.csv": {
     "path": "data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv",
@@ -84,7 +84,7 @@
     "changed": false,
     "rows": 29384,
     "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_foreign_aid_share_of_gni.csv": {
@@ -95,7 +95,7 @@
     "changed": false,
     "rows": 2114,
     "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_ozone_depleting_substance_consumption.csv": {
@@ -106,7 +106,7 @@
     "changed": false,
     "rows": 5642,
     "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "owid_ucdp_death_rate_armed_conflicts.csv": {
@@ -117,7 +117,7 @@
     "changed": false,
     "rows": 7561,
     "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-20 (initial download)"
   },
   "wikipedia_pageviews_gwi.csv": {
@@ -128,7 +128,7 @@
     "changed": false,
     "rows": 89136,
     "sha256": "cb40fda4dcb178424b537dc48011d3b532e7822e34bd872f24dd65ceef3b7eb2",
-    "downloaded_at": "2026-10-23T12:24:45Z",
+    "downloaded_at": "2026-10-26T08:05:16Z",
     "last_changed_at": "2026-10-23T09:17:51Z"
   },
   "wikipedia_pageviews_gwi_calibration.csv": {
@@ -136,10 +136,10 @@
     "source": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/<lang>.wikipedia/all-access/user/<title>/daily/<start>/<end> (Photosynthesis 20251101-20261018; Mitochondrion 20151101-20261018; Pythagorean theorem 20151101-20261018; Prime number 20151101-20261018) ; titles via https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllimit=500&format=json&formatversion=2&titles=<en title>",
     "kind": "wikipedia_pageviews",
     "status": "ok",
-    "changed": false,
-    "rows": 104289,
-    "sha256": "6189e773baa6ecd432cf1ce4fc21a23b417ff97ad473e77e3a5971ec719dbdb3",
-    "downloaded_at": "2026-10-23T12:24:45Z",
-    "last_changed_at": "2026-10-23T09:37:07Z"
+    "changed": true,
+    "rows": 104290,
+    "sha256": "7d4057ca3547536643fd4334fe59a93ce3241ff3291f96252b5366f9f6304724",
+    "downloaded_at": "2026-10-26T08:05:16Z",
+    "last_changed_at": "2026-10-26T08:05:16Z"
   }
 }
