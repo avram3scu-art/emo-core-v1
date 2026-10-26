@@ -6,6 +6,7 @@ import calendar
 import datetime as dt
 import hashlib
 import json
+import os
 import time
 import urllib.parse
 import urllib.request
@@ -63,9 +64,11 @@ def main() -> None:
             b = f"{y}-{m:02d}-{calendar.monthrange(y, m)[1]:02d}"
             url = OPENALEX.format(a=a, b=b).replace(" ", "%20").replace('"', "%22")
             url += "&mailto=avram3scu-art@users.noreply.github.com"
+            key = os.environ.get("OPENALEX_API_KEY")
             time.sleep(1.0)
             try:
-                science[a[:7]] = {"url": url, "count": json.loads(get(url, tries=3))["meta"]["count"]}
+                got = get(url + (f"&api_key={key}" if key else ""), tries=3)  # key never stored
+                science[a[:7]] = {"url": url, "count": json.loads(got)["meta"]["count"]}
             except RuntimeError:
                 cache.write_text(json.dumps(science, indent=1, sort_keys=True) + "\n")
                 print(f"partial: {len(science)} of 120 OpenAlex months cached; rerun later")

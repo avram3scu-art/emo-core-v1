@@ -26,7 +26,7 @@ jobs:
         run: pip install numpy pandas
       - name: Fetch, and analyse only when complete
         if: steps.gate.outputs.done != '1'
-        env: {PYTHONPATH: "."}
+        env: {PYTHONPATH: ".", OPENALEX_API_KEY: "${{ secrets.OPENALEX_API_KEY }}"}
         run: |
           mkdir -p results/synergy_climate
           python scripts/fetch_synergy_climate.py > results/synergy_climate/fetch.txt 2>&1 || true
