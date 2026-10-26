@@ -1,0 +1,963 @@
+# Abstract
+
+Response to early warning is usually dated by when it began, not by when
+it reached the people it was meant for. This article measures
+diagnostic-to-actuation coupling (DAC), a profile of dated events from a
+validated warning to delivered response, with explicit rules for firm
+commitments, delivery end points, counter-measures between levels of
+government and imprecise or contested dates. It applies the profile to
+the procurement of personal protective equipment after the WHO
+declaration of 30 January 2020 in Belgium, France, Germany, the
+Netherlands, Sweden and at European Union level, using 57 dated events
+from parliamentary inquiries and official reconstructions and five
+Belgian federal mask orders paired with their own delivery. Testimony
+places Belgium’s first order on 31 January or on 4 March; it was
+delivered from 27 March under both readings, after an order placed on 15
+March. The five orders, placed over 27 days (60 under the earlier
+reading), were delivered within 17 days, with paired lags of 5–23 days
+(5–56). The total delay of the first order is known; its division into
+decision and conversion is not. First deliveries in Belgium, Germany and
+the Netherlands fell within six days of one another, although first
+orders were up to seven weeks apart. France, the only case with a
+national stock, delivered first; the EU level delivered last. Measuring
+response by its start, or by unpaired intervals, can misread where delay
+lies. Event files and code are openly available.
+
+**Keywords:** early warning; crisis management; warning-response gap;
+COVID-19; personal protective equipment; procurement
+
+**Practitioner points**
+
+- When a response starts says little about when it arrives. Record the
+  date of each firm order and the date on which that same order was
+  delivered, not only the first measure taken.
+- In Belgium in 2020, the first order of FFP2 masks was delivered on the
+  same day whether it had been placed on 31 January or on 4 March, and
+  after an order placed on 15 March. Under a supply constraint an early
+  order does not by itself bring early delivery, and domestic production
+  created during the crisis came months later.
+
+# 1. Introduction
+
+The gap between early warning and response is one of the oldest problems
+in crisis management, from the “warning-response problem” of preventive
+diplomacy (George & Holl, 1997) to late response to clear drought
+warnings in the Horn of Africa (Hillier & Dempsey, 2012) and the costs
+of neglected warnings traced in *Late lessons from early warnings*
+(European Environment Agency, 2001, 2013); reviews of conflict early
+warning still call the link to action the field’s central weakness
+(Muggah & Whitlock, 2022). Assessing the EU’s response to COVID-19, Boin
+and Rhinard (2023) describe a warning paradox: the threat was flagged
+quickly while action lagged. Work on transboundary crises explains why
+the link is hard to make when response depends on several levels of
+government (Ansell et al., 2010), and comparative work traces national
+variation in pandemic responses to policy capacity (Capano et al.,
+2020).
+
+That such a delay can be divided into parts is not new: Friedman (1948)
+divided the lag of stabilisation policy into recognition, decision and
+effect, the origin of the familiar distinction between “inside” and
+“outside” lags. What has been missing in crisis management is the
+measurement of those parts with dated records. During COVID-19, the
+Oxford COVID-19 Government Response Tracker coded government measures
+daily in more than 180 countries (Hale et al., 2021), and time-to-event
+analyses estimated how quickly governments introduced containment
+(Siedschlag & Yan, 2020). Such datasets record when measures were
+adopted; they were not designed to record procurement or delivery
+(Lindström, 2023). Anticipatory action reports the same gap: the
+timeliness of action still lacks a defined measure (Chaves-Gonzalez et
+al., 2022).
+
+This article measures the gap where it can be dated: the procurement and
+delivery of personal protective equipment (PPE) for health systems in
+the first months of COVID-19. European countries faced the same
+validated warning and the same collapse of supply, centred on China,
+which produced about half of the world’s surgical masks (Gereffi, 2020)
+and whose exports to the EU fell in early 2020 while member states
+restricted their own (Bown, 2022). The goods are broadly standardised,
+although the mix of masks, respirators and gowns differed, and the
+first-wave response was reconstructed in detail by parliamentary
+inquiries. In the United Kingdom, the National Audit Office found that
+much PPE ordered from new suppliers “took a long time to be delivered”
+(National Audit Office, 2020, para. 2.22), but gave no paired
+order-to-delivery dates.
+
+We measure the response with diagnostic-to-actuation coupling (DAC), a
+profile of dated events and intervals, from first firm order to first
+verified delivery, computed from public event files under explicit
+inclusion rules, with imprecise dates carried as windows and contested
+dates recorded under each reading. We apply it to Belgium, France,
+Germany, the Netherlands and Sweden, and to the EU level.
+
+The central findings come from Belgium, the one case in which firm
+orders can be paired with the deliveries of those same orders. Testimony
+to the Belgian parliamentary inquiry places the first firm order of
+500,000 FFP2 respirators either on 31 January 2020 or, from 3M, on 4
+March; the masks could be delivered only from 27 March under either
+account. The total delay is therefore established, but how it divides
+between deciding and receiving is not: 1 day and 56 days under one
+reading, 34 days and 23 days under the other. Four later federal orders,
+placed between 15 and 31 March, were delivered between 20 March and 6
+April, one of them before the first order. Across cases, the first
+deliveries to a distribution level in the three import-dependent
+countries with dated deliveries fell within six days of one another,
+although their first orders were up to seven weeks apart. France, the
+only case with a national stock, delivered first; the EU level delivered
+last.
+
+The article makes three contributions. It specifies a reproducible
+profile of how a validated warning becomes delivered response, with
+rules for imprecise and contested dates and for pairing orders with
+their own deliveries. It shows with official records that an early order
+need not bring early delivery under a supply constraint, and that the
+division of the warning paradox into decision and conversion can be
+unidentified even where its total is known. And it shows that unpaired
+intervals and starts recorded without a stated rule can change the
+reading of a case. Sections 2 and 3 define the profile and the data,
+Section 4 reports results, Section 5 examines three explanations, and
+Sections 6 and 7 discuss implications and limits.
+
+# 2. The DAC profile
+
+DAC is measured not as a single score but as a profile of dated events
+and the intervals between them. Every event in the event file carries a
+date, a sublayer, a description and a source, so that every value can be
+traced to a document and recomputed by others.
+
+**2.1 Validation threshold.** Let t0 be the date on which a danger is
+institutionally validated by a body with recognised authority for the
+hazard, here the WHO declaration of a Public Health Emergency of
+International Concern on 30 January 2020. Because every lag from t0
+depends on the threshold, the rule for t0 is fixed before coding and an
+alternative threshold is reported (Section 4.6).
+
+**2.2 Response scale.** The profile describes one responding system at a
+stated scale: a national government or the EU level. Coding is therefore
+scale-dependent. A national export ban is translation in the profile of
+the country that adopts it and a counter-measure in the profile of the
+EU, to whose coordinated response it runs contrary. Fragmentation is
+visible only from the scale at which coordination is attempted.
+
+**2.3 Sublayers.** Each sublayer is defined by an inclusion rule.
+
+- *First firm order*: the first purchase order or contract placed by an
+  authority at the response scale for the means of response, intended
+  for general supply. Inquiries, options and purchases whose documented
+  use was a single mission are excluded. At EU level, where procurement
+  proceeds by tender on behalf of member states, the first tender is
+  recorded separately and is not a firm order.
+- *Translation*: the first legally binding act at the response scale
+  concerning the response. Translation is optional: a response can reach
+  delivery without any binding act, and its absence is recorded, not
+  imputed.
+- *Budget*: the first funding legally earmarked for the response.
+  Guarantees without a stated amount are recorded but not counted.
+- *Deployment*: the first verified physical delivery to the first
+  distribution level below the responding authority (regions, provinces,
+  municipalities, Länder or pharmacies acting as distribution points).
+  Offers, contracts and announced arrivals are excluded. A delivery to
+  providers (hospitals, practitioners) is recorded as a secondary end
+  point where the source dates it.
+- *Institutionalisation*: the first permanent body or programme created
+  for the hazard. Temporary task forces are recorded but not counted.
+
+**2.4 Counter-measures and reversals.** A counter-measure is an act by
+one level of the system against the response of another level. It is
+coded in either direction: upward, as a national export ban against a
+common market, or downward, as the requisition in France on 5 April 2020
+by representatives of the central state of goods ordered by local
+authorities for their own care staff (Sénat, 2020). Counter-measures are
+dated from onset to withdrawal. A reversal is a delivery that is
+withdrawn or proves unusable, dated from onset to the end of the
+episode.
+
+**2.5 Persistence.** The duration of the operational response from
+activation to its end or succession, reported per case and not compared,
+because the instruments differ.
+
+**2.6 Lags, intervals and pairing.** For each sublayer, the lag is its
+date minus t0, in days. Intervals between sublayers do not depend on the
+choice of threshold. The interval from first firm order to first
+delivery is *unpaired*: the first delivery need not consist of goods
+from the first order, because it can draw on donations, regional
+purchases or other orders. Where a source links a delivery to the order
+it fulfils, the interval between them is a *paired lag*, and only a
+paired lag measures the conversion of a decision into delivery.
+
+**2.7 Imprecise, missing, censored and contested dates.** A date known
+only as “not before” or “not after” is recorded as a sourced lower or
+upper bound, and a date known to fall within a period as a window. Where
+no lower bound is sourced, the window opens at t0. A sublayer not
+reached by the end of the observation window is right-censored; one
+whose event plausibly occurred but has no dated source is missing. None
+is imputed. Where sources contradict one another, each reading is
+recorded and every result is reported under each. Statistics are
+evaluated over all dates consistent with the windows and reported as
+ranges.
+
+**2.8 Sources and representation.** Each source is classed as primary
+(legal act, official record, testimony or an inquiry chronology citing
+them) or secondary. Warnings and non-binding declarations describe how a
+system represents a danger, not how it acts on it, and are not
+sublayers.
+
+The profile is not aggregated into a scalar: no weighting is justified a
+priori, and its components do not move together.
+
+# 3. Data
+
+## 3.1 Cases and source pool
+
+The analysis covers the first response to COVID-19 in five EU member
+states (Belgium, France, Germany, the Netherlands and Sweden) and at EU
+level, from t0 to the end of the first wave. Cases were selected by the
+availability of an official reconstruction, so that every case rests on
+the same kind of source rather than on press reports. For Belgium, the
+source is the chronology annexed to the report of the Chamber’s special
+committee on COVID-19 (Chamber of Representatives, 2021a, Annex 5),
+which records each event with the testimony or document that supports it
+and flags contradicted claims, together with the verbatim records of the
+hearings it cites (Chamber of Representatives, 2021b, 2021c). For
+France, it is the report of the Senate commission of inquiry (Sénat,
+2020); for the Netherlands, the factual reconstruction of PPE
+procurement prepared for the Ministry of Health, Welfare and Sport with
+the Netherlands School of Public Administration (Ministerie van VWS,
+2021); and for Sweden, the Corona Commission’s chapter on protective
+equipment (SOU 2021:89). For Germany, no comparable chronology was
+found; the case rests on federal government answers to parliamentary
+questions (Deutscher Bundestag, 2020a, 2020b), the notification of the
+federal export ban (European Commission, 2020c) and one press report
+(Deutsches Ärzteblatt, 2020a). The EU-level case rests on legal acts and
+official records.
+
+## 3.2 Coding
+
+*First firm order.* The rule of Section 2.3 was fixed after a first
+round of coding showed that a looser rule (“first recorded action”)
+moved Belgium’s start by more than a month (Section 4.5). It is applied
+identically to all cases. France’s first order, of 30 January 2020, had
+general supply as its stated purpose but was used mainly for the medical
+teams sent to Wuhan and the quarantine of repatriated nationals (Sénat,
+2020); under the single-mission rule its start is the second order, of 7
+February, for 28.4 million FFP2 respirators for hospitals, care homes
+and community practice. For Germany, the source dates the start of
+federal procurement through the procurement offices of three ministries
+(28 February) but no individual order, so the first order is coded as a
+window from that date to the first delivery. For Sweden, no order date
+is given, so the window opens at t0. The Belgian order is contested
+(Section 4.2) and coded under both readings.
+
+*First delivery.* The uniform end point is the first delivery to a
+distribution level: municipalities in Belgium, pharmacies supplying
+health professionals in France, the Länder and associations of statutory
+health insurance physicians in Germany, the regional networks of acute
+care in the Netherlands, and regions and municipalities in Sweden.
+Belgium’s first delivery to general hospitals is recorded as the
+secondary end point.
+
+*Binding acts.* Binding acts are reported for each case but not
+compared, because their content differs: an export ban in Germany, a
+requisition decree in France, a decree proclaiming the federal phase of
+crisis management in Belgium and an ordinance on the distribution of
+medical supplies in Sweden.
+
+*Windows.* Where a source fixes a date only within limits, it is coded
+as a window; for example, “the week before the week of 17 March” becomes
+9–15 March.
+
+## 3.3 Supply-side events
+
+Three dated supply events are recorded. China’s daily mask output was
+about 10 million units on 1 February 2020 and 116 million on 29 February
+(day 30), against about 20 million before the epidemic, figures reported
+on 2 March (National Health Commission of China, 2020). Between 1 March
+and 5 April (days 31–66), China exported 3.86 billion masks according to
+its customs administration (Yicai Global, 2020). From 1 April (day 62),
+exports of masks and other PPE required proof of Chinese registration
+and of compliance with the importing country’s standards (Ministry of
+Commerce of China et al., 2020).
+
+## 3.4 Event files
+
+Table 1 summarises the event files. Windows are coded as two bound
+entries, some events are coded under two roles, and the files include
+thresholds and events outside the PPE domain, so the number of
+substantive dated events is smaller than the number of entries. The
+cross-case comparison rests on 16 dates or windows: the first firm order
+and the first delivery of each case, the first EU joint-procurement
+delivery bound and the two readings of the Belgian first order with its
+delivery.
+
+**Table 1. Event files.**
+
+| Case        | Main source                                     | Entries | Primary | Secondary | Undated | Substantive dated events |
+|-------------|-------------------------------------------------|---------|---------|-----------|---------|--------------------------|
+| Belgium     | Chamber special committee, Annex 5 and hearings | 18      | 16      | 1         | 1       | 13                       |
+| France      | Senate commission of inquiry                    | 12      | 10      | 0         | 2       | 6                        |
+| Germany     | Bundestag papers, federal records               | 14      | 10      | 4         | 0       | 9                        |
+| Netherlands | VWS/NSOB reconstruction                         | 14      | 12      | 0         | 2       | 8                        |
+| Sweden      | Corona Commission, SOU 2021:89                  | 12      | 10      | 0         | 2       | 6                        |
+| EU level    | EU legal acts and records                       | 21      | 13      | 8         | 0       | 15                       |
+| **Total**   |                                                 | **91**  | **71**  | **13**    | **7**   | **57**                   |
+
+*Note.* Substantive dated events exclude thresholds, events coded under
+a second role, the second bound of each window and, at EU level, four
+events concerning vaccines.
+
+A separate order file records the eight Belgian federal orders for which
+the committee’s chronology gives both an order date and a first-delivery
+date, all taken from the testimony and written annexes of the head of
+the federal medical stock (Saniport). Five are orders of masks from
+commercial suppliers and form the paired series analysed in Section 4.2;
+one order of gloves is reported separately; one order whose recorded
+delivery precedes its recorded order, flagged by the committee as
+contradictory, is excluded; and one is an order from a new domestic
+producer. The origin of the goods is not stated for any of them.
+
+## 3.5 Stock at t0
+
+Only France held a national stock of PPE at t0: 99 million surgical
+masks and no FFP2 respirators, as reported to the minister on 24 January
+2020 (Sénat, 2020). Belgium’s federal strategic stock had been destroyed
+(Chamber of Representatives, 2021a). In the Netherlands there was no
+national stock; care institutions held their own (Ministerie van VWS,
+2021). In Germany, the federal government stated that stockpiling for a
+pandemic was a task of the Länder (Deutscher Bundestag, 2020b). In
+Sweden, a survey of acute hospitals at the end of January found no
+buffer stocks in the regions (SOU 2021:89).
+
+# 4. Results
+
+## 4.1 Profiles
+
+Table 2 and Figure 1 give the profile of each case.
+
+**Table 2. First firm order, first binding act and first delivery (days
+from t0 = 30 January 2020).**
+
+| Case        | Stock at t0 | First firm order | First binding act | First delivery                         | Order to delivery, unpaired | Paired lag                             |
+|-------------|-------------|------------------|-------------------|----------------------------------------|-----------------------------|----------------------------------------|
+| France      | Yes         | 8 (alt. 0)       | 33                | 39–45                                  | n.c. (stock)                | —                                      |
+| Belgium     | No          | 34 (A: 1)        | 43                | 46                                     | 12 (A: 45)                  | 23 (A: 56); five orders 5–23 (A: 5–56) |
+| Germany     | No          | 29–51            | 34                | 51–52                                  | 0–23                        | —                                      |
+| Netherlands | No          | 36–39            | none found        | 51                                     | 12–15                       | —                                      |
+| Sweden      | No          | 0–61             | 46                | 41–61                                  | 0–61                        | —                                      |
+| EU level    | —           | tender 29        | 44                | 86 (stockpile); joint procurement ≥ 62 | —                           | —                                      |
+
+*Note.* First delivery is to a distribution level (Section 3.2). A:
+reading A of the contested Belgian testimony (Section 4.2). n.c.: not
+comparable, because the first French deliveries most plausibly came from
+the stock. —: not applicable or no paired record.
+
+\[Figure 1 about here\]
+
+## 4.2 Belgium: orders paired with their own deliveries
+
+The Belgian record contains the only firm orders in the sample that can
+be followed to their own delivery. The head of the federal medical stock
+(Saniport) told the inquiry that the first orders of FFP2 masks were
+placed with 3M on 4 March 2020 and could be delivered only from 27 March
+(Chamber of Representatives, 2021b). In the hearing of the chair of the
+federal Risk Management Group, the order of 500,000 FFP2 masks was dated
+to 31 January (Chamber of Representatives, 2021c); the committee’s
+chronology also records an option on the same masks on 4 February and
+flags the conflicting entries as contradicted (Chamber of
+Representatives, 2021a, Annex 5, entries 716, 760 and 1052). Under
+reading A, the order was placed on day 1; under reading B, on day 34.
+Delivery, on day 57, is the same under both, so the paired lag is 56 or
+23 days. Which is correct cannot be decided from the record: the
+division of the delay into a decision lag and a conversion lag is not
+identified, while their sum is.
+
+Four later orders by the same service can be followed in the same way
+(Table 3; Figure 2). Across the five orders, order dates span 27 days
+(60 under reading A) and delivery dates 17 days (20 March to 6 April).
+Later orders were in general delivered later (Spearman +0.72 under both
+readings, descriptive only), but the first order was overtaken by an
+order of surgical masks placed eleven days later (44 under reading A),
+and an FFP2 order of 23 March overtook one of 16 March. Lags were
+shorter for surgical masks (5 and 6 days) than for FFP2 respirators
+(10–23 days, or up to 56). An order from a new national producer, placed
+on 20 March, was first delivered in early August.
+
+**Table 3. Belgian federal orders paired with their own first delivery
+(days from t0).**
+
+| Order | Goods               | Supplier              | Order             | First delivery | Paired lag         |
+|-------|---------------------|-----------------------|-------------------|----------------|--------------------|
+| 1     | 500,000 FFP2        | 3M                    | 34 (reading A: 1) | 57             | 23 (reading A: 56) |
+| 2     | 10,000,000 surgical | Life                  | 45                | 50             | 5                  |
+| 3     | 1,000,000 FFP2      | Ultrazonic            | 46                | 67             | 21                 |
+| 4     | 3,000,000 FFP2      | Life                  | 53                | 63             | 10                 |
+| 5     | 2,200,000 surgical  | XML                   | 61                | 67             | 6                  |
+| 6     | surgical and FFP2   | new national producer | 50                | 184–198        | 134–148            |
+
+*Note.* Source: Chamber of Representatives (2021a), Annex 5, entries
+716, 719, 720, 722, 726 and 742, citing the testimony and annexes of the
+head of Saniport (Chamber of Representatives, 2021b); order 1 under
+reading A from entry 1052 (Chamber of Representatives, 2021c). Order 6
+was placed with a new domestic producer. Delivery dates are as reported
+by the purchasing service. One order of 2.7 million FFP2 masks (entry
+723), whose recorded delivery precedes its recorded order, and one order
+of gloves (entry 725; lag 5 days) are not shown.
+
+\[Figure 2 about here\]
+
+Belgium’s first delivery to a distribution level, to municipalities on
+16 March (day 46), and to general hospitals on 20 March (day 50), came
+before the 3M masks arrived, from federal and provincial sources that
+the chronology does not trace to an order; from 11 March, a Defence
+depot held recently shipped equipment, not a pre-existing stock (Chamber
+of Representatives, 2021a, Annex 5). The unpaired interval from first
+order to first delivery, 12 days under reading B, is therefore not a
+conversion lag: it joins an order to a delivery of other goods.
+
+## 4.3 Firm orders and deliveries across cases
+
+Under reading B, the dated first orders of the import-dependent
+countries fall on or after day 29: Germany between days 29 and 51,
+Belgium on day 34 and the Netherlands between days 36 and 39; Sweden’s
+order cannot be dated. Under reading A, Belgium ordered on day 1.
+France’s first order for general supply came on day 8, from French
+manufacturers.
+
+First deliveries to a distribution level came on day 46 in Belgium, days
+51–52 in Germany and day 51 in the Netherlands, within 5–6 days of one
+another. Their first orders were 2–17 days apart under reading B and
+35–50 days apart under reading A. Sweden’s first delivery falls between
+days 41 and 61. France, the only case with a national stock, delivered
+first (days 39–45), most plausibly from that stock; the sources do not
+say which order or stock supplied the first pharmacy deliveries. No
+dated first delivery of an import-dependent country came before day 46,
+16 days after the recovery of Chinese output was reported; Sweden’s
+window opens on day 41.
+
+## 4.4 Unpaired intervals and rank
+
+The unpaired intervals from first order to first delivery are 12–15 days
+in the Netherlands, 0–23 days in Germany and 12 days in Belgium (45
+under reading A). For the Netherlands and Germany, the sources do not
+link the first delivery to the first order, so these intervals cannot be
+read as conversion lags; the Belgian case shows how far they can depart
+from one.
+
+Whether earlier orders were followed by earlier deliveries cannot be
+determined. Over all dates consistent with the windows, the Spearman
+rank correlation between order and delivery dates reaches +1.00 in every
+combination of cases and readings examined, and its lower end ranges
+from −0.80 to +0.60. With three to five cases, these values are
+descriptive only.
+
+## 4.5 Sensitivity to the start rule
+
+Under a looser rule counting the first recorded action of any kind,
+Belgium’s start moves to day 1 (an inquiry to a manufacturer on 29
+January and a purchase of 1,080 FFP2 respirators for a repatriation
+flight on 31 January), France’s to day 0 and the Netherlands’ to day 36,
+and Belgium’s unpaired interval rises from 12 to 45 days. The contested
+testimony moves Belgium by the same amount under the firm-order rule.
+Whether Belgium reads as an early starter with slow conversion or an
+average starter with faster conversion therefore depends on what counts
+as a start and on which witness is believed. Only the date of delivery
+is robust to both.
+
+## 4.6 The EU level and sensitivity to t0
+
+The EU’s first operational step, the first Joint Procurement call on 28
+February (day 29), was a tender rather than a firm order. It did not
+lead to the award of a contract, as a contract award notice of 12 March
+(day 42) recorded (McEvoy & Ferri, 2020). The first binding EU act,
+making exports of PPE subject to authorisation, followed on day 44
+(European Commission, 2020a), and the rescEU medical stockpile was
+created on day 49 (European Commission, 2020b). The first verified
+delivery of EU-financed PPE, from the rescEU stockpile, came on day 86
+(European Parliament, 2020); jointly procured equipment cannot have been
+delivered before April (day 62), when the contracts first operated
+(McEvoy & Ferri, 2020). The EU level was the slowest of the six cases to
+reach delivery.
+
+Taking the WHO characterisation of COVID-19 as a pandemic on 11 March
+2020 as t0 shifts every lag from t0 by 41 days. Intervals between
+events, including the paired lags of Section 4.2, are unchanged.
+
+# 5. Three explanations
+
+Three explanations of the pattern in Section 4 are considered, each with
+the observations that would contradict it.
+
+## 5.1 A common supply constraint
+
+If delivery was governed mainly by the recovery of supply, three
+predictions follow. No import-dependent country should have received PPE
+in quantity before Chinese output recovered (day 30) plus a transport
+lag. First deliveries should cluster in the period of rising exports,
+whatever the date of the first order. And an order placed early, while
+supply was collapsed, should not be delivered early.
+
+The observations are consistent with all three. No dated
+import-dependent first delivery precedes day 46 (Sweden’s window opens
+on day 41), and all fall within the period of the export surge (days
+31–66), before China’s export controls. The sources document Chinese
+origin for the first Dutch consignment (Ministerie van VWS, 2021), for
+most masks procured by the German federal government (Deutscher
+Bundestag, 2020a) and for some Swedish purchases (SOU 2021:89). China
+supplied 92% of the EU’s face-mask imports in the first half of 2020
+(Eurostat, 2020b), and EU imports from China rose by €6.8 billion
+between March and April, driven mainly by masks and other protective
+textiles (Eurostat, 2020a). First deliveries in the three countries with
+dated deliveries clustered within six days, although their orders were
+weeks apart.
+
+The third prediction is the one that could have failed, and the Belgian
+orders test it. Under reading A, Belgium placed a firm order on day 1,
+when Chinese daily output was about half its pre-epidemic level, and
+received it on day 57, seven days after an order placed on day 45. Under
+reading B, the same order, placed on day 34, was still overtaken by the
+order of day 45. Either way, the earliest order bought no earlier
+delivery than orders placed weeks later, which is what the explanation
+predicts and what a delay driven only by decisions would not produce.
+The test is not decisive. The testimony on the first order is contested;
+the sources do not state where any of the goods were made; the first
+order was for FFP2 respirators and the order that overtook it was for
+surgical masks, which converted faster throughout; and the series comes
+from one purchasing service.
+
+## 5.2 The timing of alarm in Europe
+
+The first locally acquired case in Lombardy was identified on 20
+February 2020 (day 21; Cereda et al., 2021). If governments ordered when
+domestic alarm rose, orders would cluster in late February and early
+March for that reason alone, and under reading B the dated orders do.
+Alarm and recovering supply therefore make the same prediction for the
+timing of orders, nine days apart. They differ on delivery. Alarm
+explains when governments ordered, not why deliveries converged when
+orders did not, and it does not explain the Belgian case under reading
+A, in which an order placed three weeks before the outbreak in Lombardy
+was delivered with the others. The evidence is consistent with alarm as
+a driver of decisions and with supply as a constraint on delivery; the
+two are complementary rather than rival.
+
+## 5.3 Waiting for joint procurement
+
+A third explanation is that governments delayed national orders while
+waiting for the first EU Joint Procurement call, launched on day 29. It
+can be partly tested, because that call ended without a contract (day
+42). Belgium (day 34 under reading B, day 1 under reading A) and the
+Netherlands (days 36–39) placed firm orders before that outcome was
+known, so the explanation is not supported for them. Germany’s window
+(days 29–51) and Sweden’s undated order do not allow the test. The
+explanation cannot be excluded for those two cases.
+
+## 5.4 Pre-existing stock and what remains untested
+
+France, the only case with a national stock and domestic manufacturers
+able to take early orders, delivered first. With one stocked case, stock
+is confounded with everything else that distinguishes France, including
+a national agency with its own distribution system and a requisition
+decree on day 33. Further cases can test whether, other things equal,
+systems with stocks at t0 deliver earlier than import-dependent systems
+that order at the same time. The Belgian record adds one contrast: masks
+ordered in March from a new national producer took 134–148 days to reach
+first delivery. Domestic production helped France because it already
+existed; created during the crisis, it came too late for the first wave.
+Further tests need per-order records of order date, supplier origin and
+arrival date, which the Belgian record shows can be assembled from
+public sources.
+
+# 6. Discussion
+
+## 6.1 The warning paradox in two parts, and the limits of the division
+
+Following Friedman’s (1948) distinction between the lag before action
+and the lag between action and its effects, the warning paradox of Boin
+and Rhinard (2023) divides into a decision lag, from validated warning
+to firm order, and a conversion lag, from firm order to the delivery of
+that order. The Belgian case shows both the value and the fragility of
+the division. The total for its first order, 57 days, is established;
+its parts, 1 and 56 days or 34 and 23, are not. A study that took either
+reading as given would locate the delay in government hesitation or in
+the market, from the same record. Nor was the conversion lag a constant:
+across Belgian orders it ranged from 5 to 23 days with product and
+supplier. Across cases, deliveries converged while orders diverged, and
+in Belgium the earliest order was overtaken by later ones, which a
+binding supply constraint would produce and a delay driven by decisions
+alone would not. On this evidence, at least part of the warning paradox
+in this domain lay outside the responding governments, and its share
+cannot be fixed without paired records.
+
+## 6.2 Implications for preparedness
+
+If delivery was constrained by supply, an earlier decision would have
+brought earlier delivery only for a government able to buy from
+suppliers who could deliver: in early 2020, a stock or domestic
+manufacturers already in production. The one case that had both
+delivered first, although its lead is confounded with other features of
+its system (Section 5.4), and capacity created during the crisis arrived
+months later. The inquiries drew the same lesson. The Belgian report
+documents the destruction of the federal strategic stock (Chamber of
+Representatives, 2021a); the Swedish Corona Commission concluded that
+national preparedness stocks are needed as a complement to those within
+the EU (SOU 2022:10); and Germany adopted a National Health Protection
+Reserve (Deutsches Ärzteblatt, 2020b). The profile offers a way to check
+that judgement in the next crisis with dated, paired records.
+
+## 6.3 Implications for the measurement of response
+
+Response datasets record when governments adopted measures, and they
+were built for that purpose. For questions about capacity, the profiles
+show three reasons why adoption dates are not enough. A response that
+begins early can arrive no earlier than one that begins late. The start
+itself depends on a coding rule that is rarely stated and, even under a
+stated rule, on contested evidence. And an interval from the first order
+to the first delivery joins events that may not belong together.
+Datasets that record response timing would gain from stating what counts
+as a start, from recording firm commitments separately from preparatory
+steps, from fixing a common delivery end point, and from linking
+deliveries to the orders they fulfil where records allow.
+
+## 6.4 The EU level and the scale of coordination
+
+The EU level reached delivery last; its role in 2020 complemented
+national procurement rather than replacing it (European Court of
+Auditors, 2021), and the profile does not explain its pace. The
+scale-dependent coding shows a tension a single-scale measure would
+miss. Germany’s export ban of 4 March is translation in the German
+profile and a counter-measure in the EU profile; Bown (2022) traces how
+such restrictions, including on shipments to Italy, led to the EU-wide
+authorisation regime of 15 March. The same act can count as fast
+conversion at one scale and as fragmentation at another, a normative
+trade-off that the measurement makes visible and dated but does not
+settle.
+
+## 6.5 Faster is not always better
+
+The profile does not say how fast is desirable. A warning that proves
+false makes fast actuation a cost, a finite budget may justify
+converting one warning slowly to convert another quickly, and speed can
+be bought by overriding other levels of government, as the French
+requisition of goods ordered by local authorities shows. Profiles should
+be read alongside the accuracy of the warning, the legitimacy of the
+response and its opportunity cost.
+
+# 7. Limits
+
+*Cases and selection.* Six cases, five of them responses by member
+states to one event, cannot support statistical inference, and the rank
+correlations of Section 4.4 are descriptive. Cases were selected by the
+availability of an official reconstruction, and countries that produced
+one may differ from those that did not.
+
+*Pairing.* Paired lags could be established only in Belgium, for five
+orders of masks from one purchasing service. Their delivery dates are
+those reported by that service, not receipt records checked
+independently, and the origin of the goods is not stated. The finding
+that the first order was overtaken holds under both readings of the
+contested testimony, but it compares an order of FFP2 respirators with
+one of surgical masks.
+
+*Sources.* Most cases rest on one official reconstruction, which
+reflects the questions its authors asked. The German case rests on
+parliamentary papers and one press report, its first order known only
+within a window and its first delivery dated to a weekend. Thirteen of
+84 dated entries rest on secondary sources.
+
+*Coding.* All event files were coded by one person. The firm-order rule
+was fixed after a first round of coding had shown that a looser rule
+changed Belgium’s start by a month. Both codings are reported, but the
+possibility that the rule was shaped by the data cannot be excluded;
+independent double coding under rules fixed in advance is the necessary
+next step.
+
+*Dates and end points.* Several dates are known only within windows,
+Sweden’s widely so. The uniform end point, first delivery to a
+distribution level, is the earliest point that all sources date, but
+distribution levels differ in what they are; Belgium’s provider-level
+delivery came four days after its distribution-level delivery. First
+delivery measures the onset of supply, not its sufficiency.
+
+*Explanations.* The evidence for a supply constraint is aggregate
+(Chinese official output and export figures and EU trade statistics, not
+shipment records), and the origin of the Belgian orders is not stated.
+It establishes timing consistent with the explanation, not a causal
+link.
+
+*Threshold.* t0 is a global declaration applied to national and EU
+responses. The paired lags are invariant to the choice; lags from t0 are
+not.
+
+Table 4 sets out the minimum information a study using the profile
+should report, so that profiles built by others can be compared with
+those reported here.
+
+**Table 4. Minimum reporting standard for DAC studies.**
+
+| Field                         | Minimum information                                                                                                                              |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Validation (t0)               | Event used as t0; issuing institution; rule for choosing it; alternative thresholds tested                                                       |
+| Response scale                | System whose response is profiled; how acts of other levels are coded                                                                            |
+| Start rule                    | What counts as a firm commitment; what is excluded (inquiries, options, single-mission purchases)                                                |
+| End point                     | Level of the distribution system at which delivery is recorded, identical across cases; secondary end points                                     |
+| Pairing                       | Whether each delivery is linked to the order it fulfils; paired and unpaired intervals reported separately                                       |
+| Inclusion rules               | Rule for each further sublayer: binding act, dedicated funding, counter-measure in either direction, reversal, institutionalisation, persistence |
+| Event file                    | Every event with date, sublayer, description, source and source type                                                                             |
+| Imprecise and contested dates | Bounds and windows with their source wording; each reading of contested evidence; results under each                                             |
+| Missing and censored          | Reported separately from each other and from bounded values; none imputed                                                                        |
+| Source pool                   | Sources searched, date of search, documents that could not be accessed, reason for case selection                                                |
+| Coding                        | Number of coders; agreement; whether rules were fixed before coding                                                                              |
+| Computation                   | Event files and code public, with a persistent identifier                                                                                        |
+
+# 8. Conclusion
+
+The warning-response gap is usually measured by when a response began.
+Measured with dated and paired records, the first European response to
+COVID-19 in the supply of protective equipment shows why that is not
+enough. In Belgium, the one case in which orders can be followed to
+their own deliveries, the first order of FFP2 masks was delivered from
+27 March whether it had been placed on 31 January or on 4 March, a week
+after an order placed on 15 March; five orders placed over 27 days (60
+under the earlier reading) were delivered within 17 days. Across the
+import-dependent countries with dated deliveries, first deliveries fell
+within six days of one another while first orders were weeks apart.
+France, with a stock and domestic manufacturers, delivered first; the EU
+level delivered last.
+
+These findings rest on six cases and on the paired orders of one
+country, and they do not establish causes. They do show what a measure
+of delivery can see and a measure of starts cannot: that an early
+decision need not bring early delivery under a supply constraint, that
+the division of a delay into decision and conversion can be unidentified
+even where the total is known, and that the reading of a case can depend
+on unstated coding choices. The method needs nothing that the public
+record does not already contain. The next test is the one these cases
+could run only in one country: whether systems that order early, or hold
+stocks, deliver earlier than systems that order late, measured with
+orders paired to their deliveries under rules fixed before the data are
+collected.
+
+# Declarations
+
+**Declaration of AI-assisted technologies.** AI language models (OpenAI
+ChatGPT and Anthropic Claude) were used to help draft and edit
+manuscript text, to locate and check publicly available sources, to
+extract dated events from official reports, and to write the scripts
+that compute the profiles, the comparisons and Figure 1. All inputs were
+the author’s own manuscript text, publicly available reference
+literature and public legal and institutional records. All AI-assisted
+outputs, including every date, figure and reference, were verified by
+the author. All scientific claims and interpretations are the author’s
+own.
+
+**Conflict of interest.** The author declares no conflict of interest.
+
+**Data availability.** The six event files, the Belgian order file and
+the scripts that compute every value in Tables 1–3 and Sections 4 and 5,
+and that draw Figures 1 and 2, are openly available in a public
+repository and archived with a persistent identifier; the links are
+withheld here for double-blind review and are given on the title page.
+An anonymised copy is provided to reviewers as supporting information.
+
+# References
+
+Ansell, C., Boin, A., & Keller, A. (2010). Managing transboundary
+crises: Identifying the building blocks of an effective response system.
+*Journal of Contingencies and Crisis Management, 18*(4), 195–207.
+https://doi.org/10.1111/j.1468-5973.2010.00620.x
+
+Boin, A., & Rhinard, M. (2023). Crisis management performance and the
+European Union: The case of COVID-19. *Journal of European Public
+Policy, 30*(4), 655–675. https://doi.org/10.1080/13501763.2022.2141304
+
+Bown, C. P. (2022). How COVID-19 medical supply shortages led to
+extraordinary trade and industrial policy. *Asian Economic Policy
+Review, 17*(1), 114–135. https://doi.org/10.1111/aepr.12359
+
+Capano, G., Howlett, M., Jarvis, D. S. L., Ramesh, M., & Goyal, N.
+(2020). Mobilizing policy (in)capacity to fight COVID-19: Understanding
+variations in state responses. *Policy and Society, 39*(3), 285–308.
+https://doi.org/10.1080/14494035.2020.1787628
+
+Cereda, D., Manica, M., Tirani, M., Rovida, F., Demicheli, V., et
+al. (2021). The early phase of the COVID-19 epidemic in Lombardy, Italy.
+*Epidemics, 37*, 100528. https://doi.org/10.1016/j.epidem.2021.100528
+
+Chamber of Representatives of Belgium. (2021a). *Rapport fait au nom de
+la commission spéciale chargée d’examiner la gestion de l’épidémie de
+COVID-19 par la Belgique* (DOC 55 1394/002, 13 September 2021).
+https://www.dekamer.be/flwb/pdf/55/1394/55K1394002.pdf
+
+Chamber of Representatives of Belgium. (2021b). *Commission spéciale
+COVID-19: Compte rendu de l’audition du 12 février 2021, matin*
+\[Verbatim record of the hearing of 12 February 2021, CRIV 55 K022\].
+https://www.dekamer.be/kvvcr/pdf_sections/pri/covid/Comm%20Aanpak_GestionCOVID19_20210212_AM.pdf
+
+Chamber of Representatives of Belgium. (2021c). *Commission spéciale
+COVID-19: Compte rendu de l’audition du 19 avril 2021* \[Verbatim record
+of the hearing of 19 April 2021, CRIV 55 K040\].
+https://www.dekamer.be/kvvcr/pdf_sections/pri/covid/Comm%20Aanpak_GestionCOVID19_20210419.pdf
+
+Chaves-Gonzalez, J., Milano, L., Omtzigt, D.-J., Pfister, D., Poirier,
+J., Pople, A., Wittig, J., & Zommers, Z. (2022). Anticipatory action:
+Lessons for the future. *Frontiers in Climate, 4*.
+https://doi.org/10.3389/fclim.2022.932336
+
+Deutscher Bundestag. (2020a). *Antwort der Bundesregierung* \[Federal
+government answer on the procurement of protective equipment\]
+(Drucksache 19/21798, 21 August 2020).
+https://dserver.bundestag.de/btd/19/217/1921798.pdf
+
+Deutscher Bundestag. (2020b). *Antwort der Bundesregierung* \[Federal
+government answer on protective equipment and pandemic stockpiling\]
+(Drucksache 19/19047, 7 May 2020).
+https://dserver.bundestag.de/btd/19/190/1919047.pdf
+
+Deutsches Ärzteblatt. (2020a, March 27). *Coronakrise: Erstes
+Schutzmaterial erreicht die Ärzte.*
+https://www.aerzteblatt.de/news/coronakrise-erstes-schutzmaterial-erreicht-die-aerzte-49100b20-c0c8-448b-8ceb-f4f6d1d6b0b1
+
+Deutsches Ärzteblatt. (2020b, November 26). *Nationale Reserve für
+Schutzausrüstung soll in drei Phasen anlaufen.*
+https://www.aerzteblatt.de/nachrichten/118733/Nationale-Reserve-fuer-Schutzausruestung-soll-in-drei-Phasen-anlaufen
+
+European Commission. (2020a). Commission Implementing Regulation (EU)
+2020/402 of 14 March 2020 making the exportation of certain products
+subject to the production of an export authorisation. *Official Journal
+of the European Union, L 77I*, 15 March 2020.
+https://eur-lex.europa.eu/eli/reg_impl/2020/402/oj
+
+European Commission. (2020b). Commission Implementing Decision (EU)
+2020/414 of 19 March 2020 amending Implementing Decision (EU) 2019/570
+as regards medical stockpiling rescEU capacities. *Official Journal of
+the European Union, L 82I*, 19 March 2020.
+https://eur-lex.europa.eu/eli/dec_impl/2020/414/oj
+
+European Commission. (2020c). *Notification 2020/0104/D: Order
+restricting foreign trade in certain goods (medical protective
+equipment)* \[Notification under Directive (EU) 2015/1535, received 4
+March 2020\].
+
+European Court of Auditors. (2021). *The EU’s initial contribution to
+the public health response to COVID-19* (Review No 01/2021).
+
+European Environment Agency. (2001). *Late lessons from early warnings:
+The precautionary principle 1896–2000* (Environmental issue report No
+22; P. Harremoës, D. Gee, M. MacGarvin, A. Stirling, J. Keys, B. Wynne,
+& S. Guedes Vaz, Eds.). Office for Official Publications of the European
+Communities.
+
+European Environment Agency. (2013). *Late lessons from early warnings:
+Science, precaution, innovation* (EEA Report No 1/2013). Publications
+Office of the European Union.
+
+European Parliament. (2020). *Coronavirus: Delivery of medical equipment
+from rescEU reserve in Italy, 25 April 2020* \[Photo record\].
+https://multimedia.europarl.europa.eu/en/photo/coronavirus-delivery-of-medical-equipment-from-resceu-reserve-in-italyon-25-april-2020-ffp2-protecti_20200425_P043686-850895
+
+Eurostat. (2020a, June 22). *Impact of the COVID-19 on EU trade with
+China* \[Eurostat news\].
+https://ec.europa.eu/eurostat/de/web/products-eurostat-news/-/edn-20200622-1
+
+Eurostat. (2020b, October 6). *Which country imported the most face
+masks?* \[Eurostat news\].
+https://ec.europa.eu/eurostat/web/products-eurostat-news/-/ddn-20201006-1
+
+Friedman, M. (1948). A monetary and fiscal framework for economic
+stability. *American Economic Review, 38*(3), 245–264.
+
+George, A. L., & Holl, J. E. (1997). *The warning-response problem and
+missed opportunities in preventive diplomacy.* Carnegie Corporation of
+New York.
+
+Gereffi, G. (2020). What does the COVID-19 pandemic teach us about
+global value chains? The case of medical supplies. *Journal of
+International Business Policy, 3*(3), 287–301.
+https://doi.org/10.1057/s42214-020-00062-w
+
+Hale, T., Angrist, N., Goldszmidt, R., Kira, B., Petherick, A.,
+Phillips, T., Webster, S., Cameron-Blake, E., Hallas, L., Majumdar, S.,
+& Tatlow, H. (2021). A global panel database of pandemic policies
+(Oxford COVID-19 Government Response Tracker). *Nature Human Behaviour,
+5*(4), 529–538. https://doi.org/10.1038/s41562-021-01079-8
+
+Hillier, D., & Dempsey, B. (2012). *A dangerous delay: The cost of late
+response to early warnings in the 2011 drought in the Horn of Africa.*
+Oxfam International & Save the Children.
+
+Lindström, M. (2023). The COVID-19 pandemic and the timing of government
+response: A comparison of four Nordic countries March–June 2020.
+*Scandinavian Journal of Public Health, 51*(5), 754–758.
+https://doi.org/10.1177/14034948231171201
+
+McEvoy, E., & Ferri, D. (2020). The role of the Joint Procurement
+Agreement during the COVID-19 pandemic: Assessing its usefulness and
+discussing its potential to support a European Health Union. *European
+Journal of Risk Regulation, 11*(4), 851–863.
+https://doi.org/10.1017/err.2020.91
+
+Ministerie van Volksgezondheid, Welzijn en Sport. (2021).
+*Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen,
+januari–juli 2020* \[Programmadirectie Nafase COVID-19, with the
+Nederlandse School voor Openbaar Bestuur; adopted 9 April 2021\].
+https://www.eerstekamer.nl/overig/20230914/interactieve_tijdlijn_persoonlijke/document
+
+Ministry of Commerce of China, General Administration of Customs, &
+National Medical Products Administration. (2020). *Announcement No. 5 of
+2020* \[On the orderly export of medical supplies; 31 March 2020,
+effective 1 April 2020\].
+https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2020/art_80fb50993ff44cefb306a2e795ccc259.html
+
+Muggah, R., & Whitlock, M. (2022). Reflections on the evolution of
+conflict early warning. *Stability: International Journal of Security
+and Development, 10*(1). https://doi.org/10.5334/sta.857
+
+National Audit Office. (2020). *The supply of personal protective
+equipment (PPE) during the COVID-19 pandemic* (HC 961, Session
+2019–2021, 25 November 2020).
+https://www.nao.org.uk/wp-content/uploads/2020/11/The-supply-of-personal-protective-equipment-PPE-during-the-COVID-19-pandemic.pdf
+
+National Health Commission of China. (2020, March 2). *China’s daily
+mask output exceeds 110 million units* \[Xinhua report\].
+https://en.nhc.gov.cn/2020-03/03/c_77258.htm
+
+Sénat. (2020). *Rapport fait au nom de la commission d’enquête pour
+l’évaluation des politiques publiques face aux grandes pandémies à la
+lumière de la crise sanitaire de la covid-19 et de sa gestion* (Rapport
+n° 199, 2020–2021; C. Deroche, B. Jomier, & S. Vermeillet, rapporteurs;
+8 December 2020). https://www.senat.fr/rap/r20-199-1/r20-199-11.pdf
+
+Siedschlag, I., & Yan, W. (2020). *Containing the COVID-19 pandemic:
+What determined the speed of government interventions?* (ESRI Working
+Paper No 680). Economic and Social Research Institute.
+
+SOU 2021:89. (2021). *Sverige under pandemin: Volym 1, Smittspridning
+och smittskydd* \[Interim report of the Corona Commission\]. Statens
+offentliga utredningar.
+https://regeringen.se/contentassets/e1c4a1033b9042fe96c0b2a3f453ff1d/sverige-under-pandemin-volym-1_webb-1.pdf
+
+SOU 2022:10. (2022). *Sverige under pandemin* \[Final report of the
+Corona Commission; 17 February 2022\]. Statens offentliga utredningar.
+https://data.riksdagen.se/dokument/HAB310.html
+
+Yicai Global. (2020, April 6). *China has exported 3.86 billion face
+masks worldwide.*
+https://yicaiglobal.com/news/china-has-exported-386-billion-face-masks-worldwide
+
+# Figure legends
+
+**Figure 1.** First firm order, first binding act and first delivery of
+PPE to a distribution level for each case, in days from 30 January 2020.
+Filled symbols mark exact dates; bars with open ends mark windows; the
+open circle with an arrow marks a lower bound; the cross marks the EU’s
+first tender, which is not a firm order. The grey lines and diamond show
+the Belgian 3M order and its delivery on day 57 under reading B (solid,
+order day 34) and reading A (dotted, order day 1). Dashed vertical lines
+mark dated supply events in China; the shaded band is the period over
+which China exported 3.86 billion masks.
+
+**Figure 2.** Belgian federal orders of masks from commercial suppliers,
+each paired with the first delivery of that same order, in days from 30
+January 2020. Squares mark orders and circles first deliveries; labels
+give the paired lag. The open square and dotted line show the first
+order under reading A of the contested testimony (31 January); the solid
+line on the same row shows reading B (4 March). The shaded band is the
+period over which China exported 3.86 billion masks; the dashed line
+marks China’s export controls.

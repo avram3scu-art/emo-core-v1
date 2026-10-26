@@ -1,6 +1,6 @@
 # DAC manuscript: minimum reporting standard (copied text)
 
-Origin: Adrian's DAC manuscript, revision of 20 Oct 2026 (`manuscript_v2_anon.md`, numbered Table 3), copied on 26 Oct 2026 (session 9) from the conversation in which it was written; the manuscript file itself is not in this repo (gap recorded in `docs/STATUS.md`). An earlier draft numbered it Table 4 with fewer rows (no end point, no pairing, no contested readings).
+Origin: Adrian's DAC manuscript, revision of 20 Oct 2026 (`manuscript_v2_anon.md`, numbered Table 3), copied on 26 Oct 2026 (session 9) from the conversation in which it was written; the manuscript Adrian supplied on 26 Oct 2026 is now in `docs/sources/DAC_JCCM_manuscript_anonymised.docx` (text: `.md`, via pandoc), where the same table is Table 4 with identical rows; Adrian is not sure it is the last version. An earlier draft numbered it Table 4 with fewer rows (no end point, no pairing, no contested readings).
 
 **Table 3. Minimum reporting standard for DAC studies.**
 
