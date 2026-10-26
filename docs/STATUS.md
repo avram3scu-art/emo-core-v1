@@ -43,7 +43,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Correction to my diagnosis:** GitHub's scheduler is not dead but unreliable. The Monday 05:23 UTC cron fired at 11:15 UTC (run 40313738746, six hours late; its gate skipped the work), while the 5-minute probes never fired. "Fires no scheduled runs" was too strong.
 
 **Open questions**
-- Expiry date of the GitHub token behind the cron-job.org job. Reason: Adrian's decision (he set it; the date should be noted so the token is renewed in time).
+- GitHub token behind the cron-job.org job **expires 25 Nov 2026** (30 days). Reason: Adrian's decision: regenerate with a longer expiry (or renew before 25 Nov) and paste the new value into the job's Authorization header.
 - First unattended Monday start. Reason: needs time (check on 2 Nov at session start, CLAUDE.md step 3).
 - Cleaner attention stream for synergy. Reason: scope (needs a new domain, since the climate streams are now opened, and a new pre-registration; a full session).
 - DAC docs (`docs/DAC_ARCHITECTURE.md`, `DAC_V0_1_*`, `DAC_METRICS.md`) may describe deleted API code. Reason: scope (session 9 works on DAC and should check them).
