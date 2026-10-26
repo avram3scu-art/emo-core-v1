@@ -10,15 +10,15 @@
 | owid_ozone_depleting_substance_consumption.csv | ok | no | 5642 |
 | owid_foreign_aid_share_of_gni.csv | ok | no | 2114 |
 | owid_ucdp_death_rate_armed_conflicts.csv | ok | no | 7561 |
-| openalex_articles_multicountry_by_year.json | ok | yes | 200 |
-| openalex_articles_anycountry_by_year.json | ok | yes | 200 |
-| openalex_articles_multicountry_by_year_excl_CN_ID.json | ok | yes | 200 |
-| openalex_articles_anycountry_by_year_excl_CN_ID.json | ok | yes | 200 |
-| openalex_single_country_2020_by_country.json | ok | yes | 200 |
-| openalex_single_country_2025_by_country.json | ok | yes | 200 |
+| openalex_articles_multicountry_by_year.json | ok | no | 200 |
+| openalex_articles_anycountry_by_year.json | ok | no | 200 |
+| openalex_articles_multicountry_by_year_excl_CN_ID.json | ok | no | 200 |
+| openalex_articles_anycountry_by_year_excl_CN_ID.json | ok | no | 200 |
+| openalex_single_country_2020_by_country.json | ok | no | 200 |
+| openalex_single_country_2025_by_country.json | ok | no | 200 |
 | hurdat2_atlantic.txt | ok | no | 1988 |
 | wikipedia_pageviews_gwi.csv | ok | no | 89136 |
-| wikipedia_pageviews_gwi_calibration.csv | ok | yes | 104290 |
+| wikipedia_pageviews_gwi_calibration.csv | ok | yes | 104289 |
 
 Not refreshed by design (manual or hand-coded): NHC track errors, DAC event dates, forecast ledger.
 
@@ -51,12 +51,27 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 +here is world CO2. The two rows are the same arithmetic, not equally binding commitments.
 ```
 
-  - figure `analysis/dac_ozone_vs_climate.png` changed; copy kept in this folder
 - `organismality_plane`: unchanged since 2026-10-23
-  - figure `analysis/organismality_plane.png` changed; copy kept in this folder
-- `information_time_nhc`: unchanged since 2026-10-23
+- `information_time_nhc`: changed since 2026-10-23
+
+```diff
+--- 2026-10-23
++++ 2026-10-26
+@@ -8,0 +9,9 @@
++
++[robust] 95% CI from a moving-block bootstrap (block 5 years, 2000 resamples), which allows for autocorrelated years; same point estimates as above:
++  12h    2.33%/yr  [ 2.04,  2.62]  improvement still demonstrated: True
++  24h    3.05%/yr  [ 2.69,  3.41]  improvement still demonstrated: True
++  36h    3.95%/yr  [ 3.61,  4.31]  improvement still demonstrated: True
++  48h    3.63%/yr  [ 3.34,  3.91]  improvement still demonstrated: True
++  72h    3.71%/yr  [ 3.43,  3.99]  improvement still demonstrated: True
++  96h    3.65%/yr  [ 3.30,  4.11]  improvement still demonstrated: True
++ 120h    3.06%/yr  [ 2.68,  3.51]  improvement still demonstrated: True
+```
+
+  - figure `analysis/information_time_nhc.png` changed; copy kept in this folder
 - `score_forecast_ledger`: unchanged since 2026-10-23
 
 ## Tests
 
-- pytest: 103 passed, 1 warning in 7.98s
+- pytest: 76 passed in 7.00s

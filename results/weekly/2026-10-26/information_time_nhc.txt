@@ -6,4 +6,13 @@
   72h 1971-2025  54          -7.17 [ -8.19, -6.30]   6.30   3.71% [ 3.37, 4.11]
   96h 2001-2025  25          -5.29 [ -6.90, -3.49]   3.49   3.65% [ 2.56, 4.78]
  120h 2001-2025  25          -6.12 [ -9.28, -3.23]   3.23   3.06% [ 1.71, 4.35]
+
+[robust] 95% CI from a moving-block bootstrap (block 5 years, 2000 resamples), which allows for autocorrelated years; same point estimates as above:
+  12h    2.33%/yr  [ 2.04,  2.62]  improvement still demonstrated: True
+  24h    3.05%/yr  [ 2.69,  3.41]  improvement still demonstrated: True
+  36h    3.95%/yr  [ 3.61,  4.31]  improvement still demonstrated: True
+  48h    3.63%/yr  [ 3.34,  3.91]  improvement still demonstrated: True
+  72h    3.71%/yr  [ 3.43,  3.99]  improvement still demonstrated: True
+  96h    3.65%/yr  [ 3.30,  4.11]  improvement still demonstrated: True
+ 120h    3.06%/yr  [ 2.68,  3.51]  improvement still demonstrated: True
 control, 48 h, years shuffled: tau_I > 0 in 4.0% of 200 runs
