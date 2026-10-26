@@ -120,7 +120,13 @@ jobs:
           [ -f "$f/status.json" ] && echo "::notice title=status::$(python -c "import json,sys;d=json.load(open('$f/status.json'));print('ok=',d['ok'],'commit_allowed=',d['commit_allowed'],'problems=',d['problems'])")"
           [ -f "$f/gwi_hurricanes.txt" ] && echo "::notice title=gwi_hurricanes::$(sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g' "$f/gwi_hurricanes.txt")"
           [ -f "$f/gwi_calibration.txt" ] && echo "::notice title=gwi_calibration::$(sed ':a;N;$!ba;s/%/%25/g;s/\n/%0A/g' "$f/gwi_calibration.txt")"
-          [ -f "$f/pytest.txt" ] && echo "::notice title=pytest::$(grep -E 'FAILED|ERROR|passed|failed' "$f/pytest.txt" | tail -8 | sed ':a;N;$!ba;s/\n/%0A/g')"
+          if [ -f "$f/pytest.txt" ]; then
+            grep -E '^(FAILED|ERROR) ' "$f/pytest.txt" | head -20 | while IFS= read -r l; do
+              echo "::error title=pytest::${l//%/%25}"
+            done
+            s=$(grep -E '[0-9]+ (passed|failed|error|errors|skipped)' "$f/pytest.txt" | tail -1)
+            echo "::notice title=pytest summary::${s:-no summary line (pytest did not finish)}"
+          fi
           true
 
       - name: Fail if the run found problems

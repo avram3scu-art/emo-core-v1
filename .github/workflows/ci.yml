@@ -35,7 +35,20 @@ jobs:
         env:
           PYTHONPATH: .
         run: |
-          pytest -q
+          set -o pipefail
+          pytest -q 2>&1 | tee pytest.txt
+
+      # Readable without log access (FIX_PLAN F4): one error annotation per failing test
+      # with its first error line (pytest's short summary), and the summary line as a notice.
+      - name: Test results as annotations
+        if: always()
+        run: |
+          [ -f pytest.txt ] || exit 0
+          grep -E '^(FAILED|ERROR) ' pytest.txt | head -20 | while IFS= read -r l; do
+            echo "::error title=pytest::${l//%/%25}"
+          done
+          s=$(grep -E '[0-9]+ (passed|failed|error|errors|skipped)' pytest.txt | tail -1)
+          echo "::notice title=pytest summary::${s:-no summary line (pytest did not finish)}"
 
       - name: Type check (mypy)
         env:
