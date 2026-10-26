@@ -40,3 +40,4 @@
 | 2026-10-26 | 8 follow-up | External weekly starter | yes | (this commit) | cron-job.org + fine-grained token; test run 40329335301 succeeded; GitHub cron fires late, not never (correction) |
 | 2026-10-26 | 8 closed (final) | Session 8 incl. audit, clean-up, external weekly starter | yes | 9bb7771 | cron-job.org starts the weekly run (tested twice); token valid to 26 Oct 2027; 57 tests green |
 | 2026-10-26 | extra | Test the test: Science of Truth simulations committed; He calibration | yes | 5c50e32 | Option A rule unusable (FPR ~50%); T-D usable at n = 30; trigger of 8 gives power 0.34–0.55 |
+| 2026-10-26 | extra (follow-up) | He calibration in CI; decision applied; amendment 1 | yes | e100c80 | T-D usable from 24 cases; trigger raised 8 -> 24; weekly run reproduces he_calibration |
