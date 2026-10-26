@@ -18,7 +18,7 @@
 | openalex_single_country_2025_by_country.json | ok | no | 200 |
 | hurdat2_atlantic.txt | ok | no | 1988 |
 | wikipedia_pageviews_gwi.csv | ok | no | 89136 |
-| wikipedia_pageviews_gwi_calibration.csv | ok | yes | 104289 |
+| wikipedia_pageviews_gwi_calibration.csv | ok | no | 104289 |
 
 Not refreshed by design (manual or hand-coded): NHC track errors, DAC event dates, forecast ledger.
 
@@ -69,9 +69,8 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 + 120h    3.06%/yr  [ 2.68,  3.51]  improvement still demonstrated: True
 ```
 
-  - figure `analysis/information_time_nhc.png` changed; copy kept in this folder
 - `score_forecast_ledger`: unchanged since 2026-10-23
 
 ## Tests
 
-- pytest: 76 passed in 7.00s
+- pytest: 57 passed in 8.88s
