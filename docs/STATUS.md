@@ -29,6 +29,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Completion (08:55):** Adrian added secret `OPENALEX_API_KEY`; fetch uses it if set, never stores it (e4fb711). Run 40288775279 completed the fetch and ran the analysis once (93fb72a). `synergy_resume.yml` now does nothing (result exists); can be deleted.
 
+**Audit (09:00, Adrian's request):** `docs/AUDIT_2026-10-26.md` (7be95c0). Fixes 1–2 done (48e75e0): DAC comparison text computed from data with a scope note; GWI outputs frozen. Weekly run 40289771653 (manual; Monday's cron had not fired) → eb5eb71: all checks passed, 103 tests, both GWI runs reproduce, page redeployed. The GWI calibration pageview file changed on refetch but the result did not. Open from the audit: unused code surface (keep, `legacy/`, or delete), `analysis/` untested and unlinted, τ_I CI ignores autocorrelation, NHC table hand-transcribed.
+
 ## Next session
 Session 9 (`docs/PLAN.md`). Open: README/plan row still says "synergy passes noise controls" without "synthetic only; failed on real streams" (session 15 rewrite, or a one-line fix); weekly cron did not fire on 26 Oct, check again.
 
