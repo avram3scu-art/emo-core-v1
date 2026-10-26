@@ -31,6 +31,7 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 - `rdl_v03_heldout` reproduces `analysis/rdl_v03_heldout_output.txt`.
 - `gwi_hurricanes` reproduces `analysis/gwi_hurricanes_output.txt`.
 - `gwi_calibration` reproduces `analysis/gwi_calibration_output.txt`.
+- `he_calibration` reproduces `analysis/he_calibration_output.txt`.
 - `rdl_v04_test` not run: needs the Oslo-Seattle / IRD component file (requested 20 Oct 2026, not received).
 
 ## Analyses
@@ -73,4 +74,4 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 
 ## Tests
 
-- pytest: 57 passed in 14.13s
+- pytest: 91 passed in 5.80s

@@ -10,7 +10,8 @@
     "rdl_v03_development": true,
     "rdl_v03_heldout": true,
     "gwi_hurricanes": true,
-    "gwi_calibration": true
+    "gwi_calibration": true,
+    "he_calibration": true
   },
   "analyses": {
     "dac_ozone": "unchanged since 2026-10-23",
