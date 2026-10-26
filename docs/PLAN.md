@@ -258,7 +258,7 @@ Done when: protocol committed and message ready; agreement is computed in a late
 
 ### Session 12: the He direction test
 
-Postponed (session 5 decision, Option C): runs only once DAC holds at least 8 coded cases with warning dates after pageview coverage starts. See docs/UIA_PROTOCOL.md §4.
+Postponed (session 5 decision, Option C): runs only once DAC holds at least 24 coded cases with warning dates after pageview coverage starts (raised from 8 on 26 Oct 2026 after the He calibration; statistic T-D; 8–23 cases = pilot). See docs/UIA_PROTOCOL.md §4 and §6, docs/HE_CALIBRATION_PROTOCOL.md.
 
 ```text
 Session 12 task: first test of He = f(I, C, F, E) - D.

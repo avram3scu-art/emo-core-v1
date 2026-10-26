@@ -84,7 +84,7 @@ Adrian's decision (2026-10-23, 11:04 Brussels): **Option C.**
 - a_UIA is retired: `emo/uia_engine/aggregate.py` and `/v1/uia/*` are deprecated; no claim may rest on them.
 - UIA is defined as the He profile of §2, with the rules fixed there (no circularity, data dated before
   warning, failed metrics drop out).
-- **No He prediction is pre-registered yet.** Trigger: DAC holds at least 8 coded cases whose warning dates
+- **No He prediction is pre-registered yet.** Trigger (raised to 24 on 2026-10-26, see §6): DAC holds at least 8 coded cases whose warning dates
   fall after the start of pageview coverage. Then a new protocol section, committed before any scoring,
   states the prediction, statistic and fail condition.
 - Session 12 (the He direction test) is postponed until that trigger is met.
@@ -125,3 +125,28 @@ No UIA or GWI data were opened for this update; it uses only the committed sessi
 **Calibration test result (2026-10-23): FAIL** (`docs/GWI_CALIBRATION_PROTOCOL.md` §7). The calibrated
 threshold held in time but not across articles ("Prime number" 0.0134 vs ≤ 0.010). GWI therefore does
 **not** score I. A new calibration design would need its own pre-registration; it is not proposed here.
+
+## 6. Update after the He calibration (2026-10-26)
+
+Source: `docs/HE_CALIBRATION_PROTOCOL.md` §6–§7 (synthetic, pre-registered; reproduced in CI by the
+weekly run 40389674340). Adrian's decision (26 Oct 2026, 20:49 Brussels: "Record and apply
+everything necessary to EMO") applies the calibration's proposal:
+
+1. **Statistic for the He direction test: T-D.** Mean Kendall τ between each measured letter and
+   −lag (D sign-flipped), one-sided permutation test over cases (letters permuted together),
+   α = 0.05. It held 3.5–5.9% false positives in every cell tested.
+2. **The §3 Option A rule is retired.** "At least half the measured letters with the predicted
+   sign" passes 41–52% of the time when nothing is there, at every n. Uncorrected per-letter tests
+   (7–23%) are also excluded.
+3. **Trigger raised from 8 to 24 coded cases** (warning dates after pageview coverage, unchanged).
+   At 24 cases T-D reaches ≥ 0.80 power for β = 0.5 with 3 or 5 letters, including a shared trend
+   among letters (λ = 0.5). At 8 cases power was 0.34–0.55.
+4. **Runs with 8–23 cases are pilots.** They may be run, but are labelled pilot in advance: a
+   non-significant result there cannot count as evidence against He.
+5. **Stated limit of the trigger.** 24 cases is enough only for a strong link (β = 0.5). For a
+   weaker link (β = 0.3) at 40 cases, power with a shared trend among letters is 0.60–0.64; the
+   60-case result is pending (`docs/HE_CALIBRATION_PROTOCOL.md` §7, rerun in progress). The
+   pre-registration for session 12 must state the effect size it is powered for.
+6. **New requirement for the pre-registration:** measure and report the shared trend among letters
+   (e.g. correlation of each letter with the case's warning year), because it is the factor that
+   costs most power.
