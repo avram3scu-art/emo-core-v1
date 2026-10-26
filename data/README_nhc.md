@@ -7,6 +7,7 @@ Source: National Hurricane Center, "Average NHC Atlantic Track Forecast Errors (
 https://www.nhc.noaa.gov/verification/pdfs/1970-present_OFCL_ATL_annual_trk_errors_noTDs.pdf
 (verification based on the NHC best track database as of 5/12/26; homogeneous with best-track CLIPER5; includes subtropical storms).
 Transcribed by machine from the PDF text layer (pdftotext -layout); row counts and spot values checked against the PDF.
+Full check 2026-10-26: all 368 cells match the PDF text (one-off job `nhc-pdf`, run 40292776083; text and PDF SHA-256 in `results/nhc_check/`); `tests/test_nhc_transcription.py` keeps it checked.
 
 Coverage notes from NHC: 36-h forecasts began in 1988; 96-h and 120-h forecasts began in 2001.
 Public domain (US federal government work).
