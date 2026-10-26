@@ -31,14 +31,14 @@ PV = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipe
       "all-access/user/{title}/monthly/2016010100/2025123100")
 
 
-def get(url: str, tries: int = 4) -> bytes:
+def get(url: str, tries: int = 8) -> bytes:
     last = None
     for i in range(tries):
         try:
             return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120).read()
         except Exception as exc:  # noqa: BLE001
             last = exc
-            time.sleep(10 * (i + 1))
+            time.sleep(30 * (i + 1))
     raise RuntimeError(f"{url}: {last}")
 
 
@@ -57,6 +57,8 @@ def main() -> None:
             a = f"{y}-{m:02d}-01"
             b = f"{y}-{m:02d}-{calendar.monthrange(y, m)[1]:02d}"
             url = OPENALEX.format(a=a, b=b).replace(" ", "%20").replace('"', "%22")
+            url += "&mailto=avram3scu-art@users.noreply.github.com"
+            time.sleep(1.0)  # pace: run 40283263805 hit HTTP 429
             science[a[:7]] = {"url": url, "count": json.loads(get(url))["meta"]["count"]}
     raw = (json.dumps(science, indent=1, sort_keys=True) + "\n").encode()
     save("openalex_climate_change_monthly.json", OPENALEX, raw)

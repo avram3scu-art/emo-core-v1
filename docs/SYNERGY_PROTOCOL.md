@@ -83,6 +83,13 @@ Code: `scripts/fetch_synergy_climate.py`, `analysis/synergy_climate.py`; Action
 `one_off.yml`, job `synergy-climate`, run with `commit` on. Checked before data on random
 fake inputs only (no structure found, as expected).
 
-## 9. Result
+## 9. Runs
+
+- Run 40283263805 (code b27400e): FAILED at fetch. OpenAlex returned HTTP 429 (rate limit)
+  at month 2024-05; nothing was saved, no value was seen, S_obs was not computed
+  (record 6b3aa09). Fix used once under §7: one-second pacing between OpenAlex calls,
+  polite-pool `mailto`, longer retries. No change to §2–§5.
+
+## 10. Result
 
 (to be filled after the single run)
