@@ -40,8 +40,10 @@ jobs:
       - name: Type check (mypy)
         env:
           PYTHONPATH: .
+        # Errors are also emitted as annotations, readable without log access.
         run: |
-          mypy emo
+          set -o pipefail
+          mypy emo | sed -E 's/^([^:]+):([0-9]+): error: (.*)$/::error file=\1,line=\2::\3/'
 
       - name: Lint (ruff)
         run: |
