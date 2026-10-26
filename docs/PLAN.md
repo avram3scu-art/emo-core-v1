@@ -13,7 +13,9 @@ DAC is the strongest pillar and UIA the weakest; none of the four runs on its ow
 | Pillar | Works on real data today | Not yet working | Evidence |
 |---|---|---|---|
 | DAC (warning to delivered response) | Ozone vs climate lags (OWID); five-country PPE profiles from parliamentary inquiries | Only one coder; only Belgium has orders paired with deliveries | JCCM manuscript under review; dac_ozone_vs_climate.png |
-| EMO metrics (OI, τ_I, synergy, GWI, SMF) | Organismality plane 1989–2025; τ_I from NHC hurricane track errors (3–4% a year); synergy, GWI and SMF pass noise controls | GDELT and Wikipedia attention streams never ingested; SMF and GWI not yet run on a real case | analysis/ scripts; 57 passing tests |
+| EMO metrics (OI, τ_I, synergy, GWI, SMF) | Organismality plane 1989–2025; τ_I from NHC hurricane track errors (3–4% a year); synergy, GWI and SMF pass noise controls (synthetic) | GDELT and Wikipedia attention streams never ingested; SMF and GWI not yet run on a real case | analysis/ scripts; 57 passing tests |
+
+Starting state above as of 23 Oct 2026. Since then: GWI PASS (session 6), calibration FAIL (6c); SMF passes at short horizons (7); synergy FAIL on real streams (8). Current state: `README.md` and `docs/STATUS.md`.
 | RDL (remedies) | Forecast ledger of 5 dated forecasts, public on Zenodo | v0.2 and v0.3 failed their held-out tests; v0.4 waits for Oslo–Seattle or IRD data | docs/RDL_*; DOI 10.5281/zenodo.23507467 |
 | UIA (interface density) | Code exists (emo/uia_engine, about 450 lines) | All six weights set to 1.0; no term measured from real data; no test of what it predicts | emo/uia_engine/aggregate.py |
 | Continuous running | Nothing | No scheduler deployed; Prefect and Airflow files exist but have never run | orchestration/ |

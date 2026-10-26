@@ -15,6 +15,7 @@ name: Weekly refresh
 on:
   schedule:
     - cron: "23 5 * * 1"   # Mondays 05:23 UTC
+    - cron: "47 5 * * 2"   # Tuesdays 05:47 UTC: backup, skipped if this week's run exists
   workflow_dispatch:
 
 permissions:
@@ -27,7 +28,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # GitHub may delay or skip scheduled runs (the Monday 26 Oct 2026 run never fired), so a
+  # Tuesday backup exists. A scheduled run is skipped if a weekly result from the last
+  # 5 days is already committed; manual runs always go ahead.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "${{ github.ref_name }}"}
+      - id: check
+        run: |
+          last=$(ls results/weekly 2>/dev/null | sort | tail -1)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -n "$last" ] && \
+             [ $(( ($(date -u +%s) - $(date -u -d "$last" +%s)) / 86400 )) -lt 5 ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"; echo "::notice::skipped: weekly result $last exists"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
   refresh:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     outputs:
       committed_ok: ${{ steps.run.outputs.commit_allowed }}
