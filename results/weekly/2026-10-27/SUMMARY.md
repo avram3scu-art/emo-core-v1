@@ -44,4 +44,4 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 
 ## Tests
 
-- pytest: 91 passed in 5.82s
+- pytest: 91 passed in 8.27s
