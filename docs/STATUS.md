@@ -12,7 +12,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Decision (2026-10-27, 06:35):** Adrian asked for a combined DAC/EMO/UIA/RDL paper "ready for publication". Claude stopped (CLAUDE.md: conflicts with the one-task rule and the F1–F7 gate; audit R1, S1, S3 and the He trigger make a combined paper unsupportable today). Adrian chose **keep order**: F1 → F2, F3, F5, F6, F7 → combined version as session 15 ("EMO: what runs today"), with editor review and no same-day sending.
 
 **Not done**
-- Delete branch `f4-probe` (now also carries a merge of these workflows). Reason: Adrian's decision/permission (proxy refuses branch deletion, HTTP 403).
+- ~~Delete branch `f4-probe`~~ **Done by Adrian, 27 Oct 2026 07:44** (confirmed by the branch list: emo-2026-10, main, original-upload).
 
 ## Fix session F4 (2026-10-26, 21:15–21:40): CI readability — done when met: yes, except deleting the probe branch
 

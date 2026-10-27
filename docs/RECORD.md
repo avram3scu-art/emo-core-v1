@@ -41,3 +41,4 @@ Rows start at session 9 (26 Oct 2026). Sessions 1–8 are recorded in `docs/STAT
 | 2026-10-27 | F4 follow-up | check | Weekly run on emo-2026-10 with new actions and pinned runner | — | same | — | PASS (91 tests, frozen runs reproduce, page deployed) but still warned: configure-pages v5 and deploy-pages v4 on Node 20 | run 40451922643 → 898364c |
 | 2026-10-27 | F4 follow-up | CI change | configure-pages v6, deploy-pages v5 | — | `weekly_refresh.yml` | — | done | c19567b |
 | 2026-10-27 | F4 follow-up | check | Weekly run after the second change | — | same | — | PASS: 91 tests, all frozen runs reproduce, page deployed, no Node 20 warning | run 40452754211 |
+| 2026-10-27 | F4 follow-up | check | Branch f4-probe deleted by Adrian on GitHub; branch list read through the API | — | — | — | PASS: f4-probe absent | — |
