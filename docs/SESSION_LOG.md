@@ -42,3 +42,4 @@
 | 2026-10-26 | extra | Test the test: Science of Truth simulations committed; He calibration | yes | 5c50e32 | Option A rule unusable (FPR ~50%); T-D usable at n = 30; trigger of 8 gives power 0.34–0.55 |
 | 2026-10-26 | extra (follow-up) | He calibration in CI; decision applied; amendment 1 | yes | e100c80 | T-D usable from 24 cases; trigger raised 8 -> 24; weekly run reproduces he_calibration |
 | 2026-10-26 | F4 | CI readability: pytest results as annotations | yes (probe branch deletion left to Adrian) | 6df6a83 | deliberate failure read via annotations in CI (40394061138) and weekly (40394065117); 91 tests |
+| 2026-10-27 | F4 follow-up | Node 24 actions; runners pinned to ubuntu-24.04 | yes | 37f58f4 | weekly 40452754211 green, no Node 20 warnings; f4-probe branch deletion left to Adrian |
