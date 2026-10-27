@@ -27,13 +27,17 @@ concurrency:
   group: weekly-refresh
   cancel-in-progress: false
 
+# Runners pinned to ubuntu-24.04 (27 Oct 2026): ubuntu-latest moves to Ubuntu 26 from
+# 19 Oct 2026, and new library builds could change the frozen outputs. Move deliberately,
+# with a weekly run whose frozen check passes, not silently.
+
 jobs:
   # Primary start: cron-job.org calls workflow_dispatch every Monday 07:41 Brussels (CLAUDE.md).
   # GitHub's own schedule is unreliable here (26 Oct 2026: Monday run fired six hours late), so
   # it is a fallback with a Tuesday backup. A scheduled run is skipped if a weekly result from the last
   # 5 days is already committed; manual runs always go ahead.
   gate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       run: ${{ steps.check.outputs.run }}
     steps:
@@ -52,7 +56,7 @@ jobs:
   refresh:
     needs: gate
     if: needs.gate.outputs.run == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       committed_ok: ${{ steps.run.outputs.commit_allowed }}
     timeout-minutes: 60
@@ -94,7 +98,7 @@ jobs:
 
       - name: Keep results of a blocked run
         if: steps.run.outputs.commit_allowed != 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: weekly-run-not-committed
           path: results/weekly/
@@ -140,7 +144,7 @@ jobs:
   pages:
     needs: refresh
     if: needs.refresh.result == 'success' && needs.refresh.outputs.committed_ok == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -164,9 +168,11 @@ jobs:
           enablement: true
 
       - name: Upload page
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site
+          # v5 drops hidden files by default; keep site/.nojekyll as before.
+          include-hidden-files: true
 
       - name: Deploy page
         id: deploy
