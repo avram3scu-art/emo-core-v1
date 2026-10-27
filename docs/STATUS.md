@@ -43,6 +43,40 @@ Outside the session plan, at Adrian's request ("It's all about EMO"; yes to comm
 - Measure the shared trend among He letters on real data before choosing n for a weak-link test. Reason: scope (needs coded cases; part of session 12's pre-registration).
 - Reaching 24 coded DAC cases: currently 2 (ozone, climate). Reason: needs time (DAC coding, sessions 10–11 and the second coder).
 
+## Session 9 (2026-10-26, 14:41–16:05; closed 2026-10-27 08:15) — DAC standard
+
+**Done when met: yes.** Tests pass in CI including malformed-file and per-rule rejections (CI 40334445714 on 3494540; first readable count, 91 tests, came later from F4).
+
+**Done**
+- `docs/DAC_STANDARD.md`, `docs/dac_event_file.schema.json`, synthetic `docs/dac_event_file_example.json`, validator and profile `emo/dac_standard.py` (profile per reading of contested dates: lag ranges per sublayer, paired and unpaired order-to-delivery intervals, missing and censored listed apart; no scalar, enforced by a test), tests `tests/dac_unit/test_dac_standard.py` (a89d48b → 3494540).
+- Adrian's "1 – yes": ozone/climate converted to the standard (`scripts/convert_dac_csv.py`, `data/dac_{ozone,climate}_events.json`); check pre-registered (a4de996) before conversion; **PASS** (c70276e): 4,828 d ∈ [4,642; 5,006], 6,712 d ∈ [6,555; 6,919]. The year-precise warning dates widen each lag by 364 days; every t0 and binding-act source is secondary.
+- Rules (Adrian's request): repository is the only memory; every test, run and attempt recorded in `docs/RECORD.md`; closing step 0 checks the record; PLAN.md opening/closing blocks updated (1b7b81d).
+- Sources: reporting-standard table copied to `docs/sources/` (1b7b81d); DAC manuscript supplied by Adrian committed (de47250); 15 attachments checksummed and identified, `docs/sources/SOURCES_SUPPLIED.md` (0a9af0d).
+- Second audit of sessions 0–9 and the repo, `docs/AUDIT_2026-10-26b.md` (109c8a9); fix sessions F1–F8 with prompts for Claude and tasks for Adrian, `docs/FIX_PLAN.md` (6d77b36).
+- CI: mypy and ruff errors as annotations (5a5ca46, 8bdde1a).
+
+**Failures on record**
+- Six red CI runs before green (40333436686 … 40334306373): two blind mypy guesses, then visible errors fixed. Cause: no package index in Claude's workspace, CI logs unreadable (403).
+- Standard built from a non-final manuscript version (the final one, "Decision or Supply?", adds an "Identification" row).
+- PPE event files not found: not in any repo, not on the web (two searches); they existed only in a past chat's workspace.
+- I told Adrian the event files could be downloaded from the old chat before checking which file cards it holds.
+
+**Open questions**
+- PPE event files, Belgian order file and scripts absent; the manuscript's data statement may promise files that are not public. Reason: Adrian's decision and files (F1; F8 if nothing is recovered).
+- "Identification" row missing from the standard. Reason: scope (F7), needs the final manuscript from F1.
+- Seven supplied PDFs recorded by checksum only, not committed (~60 MB; Sudhof report marked "VS – Nur für den Dienstgebrauch"; journal papers' licences). Reason: Adrian's decision.
+- Ozone/climate t0 and binding-act sources are secondary. Reason: scope (F7).
+- Old DAC docs describe deleted code. Reason: scope (F2).
+- `emo/metrics/dac/` duplicates part of the new module. Reason: scope (F7).
+
+**Review points and Adrian's answers**
+- More of the task (PPE + ozone/climate conversion): "1 – yes" → ozone/climate done; PPE blocked on files.
+- Adrian: "I am not an AI … everything needs to be recorded by you … inside the repo" → recording rule.
+- Event files: Adrian supplied the manuscript and 15 files, then chose "2" (look for the files) → past-chat search: no repository was created; final manuscript exists only in that chat.
+- Adrian asked for an audit of sessions 1–9 and the repo, and prompts for each fix → audit and FIX_PLAN.
+
+**Next session:** F1 (Adrian first brings the DAC paper's submission facts and every file card from the chat "Combining DAC EMO UIA RDL"), then F2, F3, F5–F7 (F4 done); session 10 after them.
+
 ## Last session: 8 (2026-10-26) — synergy on real streams, then audit
 
 **Closed 2026-10-26, 09:20. Done when met: yes.** Result in `docs/SYNERGY_PROTOCOL.md` §10: **FAIL**, no higher-order structure distinguishable from the null.
