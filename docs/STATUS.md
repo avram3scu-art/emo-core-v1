@@ -9,6 +9,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Tested: blocked weekly run on `f4-probe` uploaded its artifact with v7 (40451857575); weekly runs on emo-2026-10 passed (40451922643, then 40452754211 with no Node 20 warning left); 91 tests; page deployed.
 - My shortfall: the first change missed configure-pages and deploy-pages (caught by the warning in run 40451922643, fixed in c19567b).
 
+**Decision (2026-10-27, 06:35):** Adrian asked for a combined DAC/EMO/UIA/RDL paper "ready for publication". Claude stopped (CLAUDE.md: conflicts with the one-task rule and the F1–F7 gate; audit R1, S1, S3 and the He trigger make a combined paper unsupportable today). Adrian chose **keep order**: F1 → F2, F3, F5, F6, F7 → combined version as session 15 ("EMO: what runs today"), with editor review and no same-day sending.
+
 **Not done**
 - Delete branch `f4-probe` (now also carries a merge of these workflows). Reason: Adrian's decision/permission (proxy refuses branch deletion, HTTP 403).
 
