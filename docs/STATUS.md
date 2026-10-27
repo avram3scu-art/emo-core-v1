@@ -2,6 +2,16 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## F4 follow-up (2026-10-27, 05:48–06:30): Adrian's "YES" to the review points
+
+- All GitHub actions now run on Node 24 (upload-artifact v7, upload-pages-artifact v5, configure-pages v6, deploy-pages v5; ruff-autofix checkout v5 / setup-python v6). `include-hidden-files: true` keeps `site/.nojekyll`.
+- Runners pinned to `ubuntu-24.04` in every workflow, so the Ubuntu 26 move of `ubuntu-latest` cannot change frozen outputs silently. Moving to Ubuntu 26 later is a deliberate change, checked by a weekly run.
+- Tested: blocked weekly run on `f4-probe` uploaded its artifact with v7 (40451857575); weekly runs on emo-2026-10 passed (40451922643, then 40452754211 with no Node 20 warning left); 91 tests; page deployed.
+- My shortfall: the first change missed configure-pages and deploy-pages (caught by the warning in run 40451922643, fixed in c19567b).
+
+**Not done**
+- Delete branch `f4-probe` (now also carries a merge of these workflows). Reason: Adrian's decision/permission (proxy refuses branch deletion, HTTP 403).
+
 ## Fix session F4 (2026-10-26, 21:15–21:40): CI readability — done when met: yes, except deleting the probe branch
 
 - pytest results now appear as annotations in CI and in the weekly run: one error annotation per failing test (with its first error line) and the summary line as a notice.
