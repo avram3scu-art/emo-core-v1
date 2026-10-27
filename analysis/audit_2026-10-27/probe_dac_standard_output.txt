@@ -1,0 +1,7 @@
+[GAP] P1 standard_version null: valid=True (expected False) 
+[GAP] P2 unknown case key: valid=True (expected False) 
+[GAP] P3 primary-end-point delivery missing, secondary dated: valid=False (expected True) 1 error(s): sublayer 'delivery' is both dated and missing
+[ok ] P4 paired order missing: valid=True (expected True) 
+      paired list = []  -> GAP: pair silently dropped
+[GAP] P5 contested t0 with a lower-bound reading: valid=True (expected False) 
+      profile B binding_act lag = {'min_days': None, 'max_days': 55}

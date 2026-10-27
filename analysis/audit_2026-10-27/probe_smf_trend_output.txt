@@ -1,0 +1,3 @@
+white noise (control): rejection rate at alpha 0.05 = 0.055 (11/200)
+independent random walks: rejection rate at alpha 0.05 = 0.320 (64/200)
+independent linear trends + noise: rejection rate at alpha 0.05 = 1.000 (200/200)
