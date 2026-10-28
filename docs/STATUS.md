@@ -10,6 +10,19 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
 
+## Fix session F12 (2026-10-28, 16:07–16:14) — manuscript argument rewrite
+
+**Done when met: yes.** `docs/sources/dac_paper/Decision_or_Supply_manuscript_F12_revised.docx` and `docs/MANUSCRIPT_F12_CHANGES.md` committed (93558a2); validated, every edit tracked; CI 40713501264.
+
+**Done**
+- 26 tracked changes on the accepted F9 text: novelty narrowed to the test, Auditor General of Canada (2021, Exhibit 10.7) added (§1, §2.3, Table 1, references; text committed with sha256); cross-case reframed to "every import-dependent first delivery in days 41–61, inside the export surge"; M0 bounded, EU rival "not supported" (no source shows either proposed); §7 limits (author's check pending; databases not searched); option reading moved to notes.
+
+**Open (each with reason)**
+- Declaration "verified by the author" must become true before submission. Reason: Adrian's check pending (his decision, F10).
+- §4.2 verdict-term definition and summary paragraph changed (forced by Table 4), although the prompt excluded §4.2. Reason: recorded deviation; numbers unchanged.
+
+**Review and Adrian's answer:** recommended close and F13; Adrian sent the F13 prompt (16:14), taken as close. STATUS for F12 written at the start of F13 (closing routine not run at the end of F12: Claude's omission, recorded).
+
 ## Fix session F11 (2026-10-28, 15:58–16:06) — literature and records search
 
 **Done when met: yes.** `docs/LIT_SEARCH_F11.md` committed with both conclusions (7e1165f).
