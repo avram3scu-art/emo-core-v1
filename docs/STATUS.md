@@ -4,11 +4,31 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7. Next: F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (100), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1 (Belgium). Next: F8.2 France, then DE, NL, SE, EU and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (103), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.1 (2026-10-28, 10:53–11:00) — PPE recoding, Belgium
+
+**Done when met: yes.** Coding rules committed before coding (c72013b); Belgian event file and order file validated and committed; CI 40668404946.
+
+**Done**
+- `docs/DAC_PPE_CODING.md`: blindness statement (Belgium coded with its key result known → pre-registered on known history; FR/DE/SE first orders known from §3.1), rules per sublayer, sources, comparison protocol; three rules added during coding, dated, before any profile (§5).
+- Belgian Chamber report DOC 55 1394/002 fetched (sha256 identical to Adrian's copy), `scripts/fetch_dac_ppe_sources.py`; Annex 5 text committed (`data/sources/dac_ppe/BE_annex5.txt`).
+- `data/dac_ppe/BE.json` (30 events), `BE_orders.csv` (9 rows: 7 orders, 3M under 3 readings), `BE_profile.json`; `scripts/dac_ppe_outputs.py`; tests: files valid, profile current, every cited row exists on its page with the event's date.
+- Profile: first firm order t0 + 1 / 5 / 34 d (3M readings A/B/C); first delivery to municipalities 16 Mar (t0 + 46 d); paired lags surgical 5–6 d, FFP2 10–56 d, gloves 5 d; Pan Scope pair undatable (date contradicted in source); binding act, funding, institutionalisation missing.
+- Claude's mistakes, fixed: two wrong row citations (row 65 was a cross-reference, row 44 guessed); citation test added (cannot tell apart two same-day rows on one page).
+
+**Open (each with reason)**
+- Moniteur belge not searched for a binding PPE act. Reason: scope (one source per sitting); before the comparison (~30 min).
+- Hearing records cited by Annex 5 (mainly CRIV K022) not opened. Reason: scope; before the comparison (~45 min).
+- 16 Mar municipal delivery is from one province, federal and provincial goods mixed. Reason: Claude recommended keeping it, flagged for the comparison.
+
+**Review and Adrian's answer:** recommended close, France next; Adrian "Close" (11:00).
+
+**Next:** F8.2 — France (fetch Sénat report no. 199, code FR); then DE, NL, SE, EU; then the pre-registered comparison; then session 10.
 
 ## Fix session F7 (2026-10-28, 10:34–10:51) — DAC clean-up
 
