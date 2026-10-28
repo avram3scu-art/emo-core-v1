@@ -60,6 +60,8 @@ MANUAL = [
     ("docs/DAC_PPE_CODING.md", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/dac_ppe_outputs.py", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/weekly_run.py", "", "code comment or ordinal"),
+    ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "not ready", "negation: verdict that the manuscript is not ready"),
+    ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "first verified delivery", "DAC term for the delivery end point (manuscript §2.1)"),
 ]
 
 

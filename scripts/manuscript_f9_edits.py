@@ -141,7 +141,8 @@ def edits(x: str) -> str:
                 "of the month.")
     x = tracked(x, "Binding acts are reported but not compared, because their content differs.",
                 "Binding acts are reported but not compared, because their content differs. The event files were coded under rules "
-                "fixed before coding, but by a coder who already knew the Belgian result and several first-order codings, so every "
+                "fixed before coding, by one coder, an AI model (Claude), with every cited phrase checked automatically against its "
+                "source page; the coder already knew the Belgian result and several first-order codings, so every "
                 "coded date and lag is a test on known history, not a blind test; the cross-case statistics are exploratory.")
     # --- Section 3.2 and Table 2
     x = tracked(x, "A separate order file records the eight Belgian federal orders for which the chronology gives both an order date and a first-delivery date, all from the testimony and annexes of the head of the federal medical stock (Saniport).",
@@ -235,8 +236,9 @@ def edits(x: str) -> str:
                 "In 2020, the one case with a stock and domestic manufacturers in production delivered early,")
     # --- Section 7
     x = tracked(x, "All files were coded by one person, and the firm-order rule was fixed after a first round of coding.",
-                "All files were coded by one person under rules fixed before coding, but with the Belgian result and several "
-                "first-order codings already known to the coder, so they are a test on known history, not a blind test.")
+                "All files were coded by an AI model (Claude) under rules fixed before coding, with every cited phrase checked "
+                "automatically against its source page; no human has yet recoded them, and the Belgian result and several "
+                "first-order codings were known beforehand, so they are a test on known history, not a blind test.")
     # --- Section 8
     x = tracked(x, "Across five countries and the EU level, deliveries converged while orders diverged, as a supply constraint would predict, but unpaired dates cannot test it.",
                 "Across five countries and the EU level, first deliveries in the import-dependent countries fell within days of one "
