@@ -1,0 +1,466 @@
+{
+  "standard_version": "1.1",
+  "case_id": "BE",
+  "t0_event_id": "who_pheic",
+  "end_point": "municipalities",
+  "missing": [
+    "binding_act",
+    "dedicated_funding",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {
+    "order_3M_ffp2": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "identification_note": "Paired federal orders of the same good on different dates (FFP2, surgical masks) can test a delay common to the purchasing service (equal lags for orders of different goods placed together) and, per good, decision-limited vs supply-limited delay only if order dates are spread more widely than delivery variation and placed before supply recovered (Proposition 1). Deliveries are to the federal stock, not to municipalities, so paired lags are measured at that secondary end point.",
+  "profiles": [
+    {
+      "reading": {
+        "order_3M_ffp2": "A"
+      },
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 1,
+            "max_days": 1
+          },
+          "first_event_ids": [
+            "order_3M_ffp2"
+          ],
+          "n_events": 7
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 46,
+            "max_days": 46
+          },
+          "first_event_ids": [
+            "del_communes"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [
+        {
+          "order_id": "order_3M_ffp2",
+          "delivery_id": "del_3M_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 56,
+            "max_days": 56
+          }
+        },
+        {
+          "order_id": "order_life_surgical",
+          "delivery_id": "del_life_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_ultrazonic_ffp2",
+          "delivery_id": "del_ultrazonic_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 21,
+            "max_days": 21
+          }
+        },
+        {
+          "order_id": "order_life_ffp2",
+          "delivery_id": "del_life_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 10,
+            "max_days": 10
+          }
+        },
+        {
+          "order_id": "order_erard_gloves",
+          "delivery_id": "del_erard_gloves",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "gloves",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_xml_surgical",
+          "delivery_id": "del_xml_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 6,
+            "max_days": 6
+          }
+        }
+      ],
+      "undatable_pairs": [
+        {
+          "order_id": "order_panscope_ffp2",
+          "delivery_id": "del_panscope_ffp2",
+          "reason": "delivery date missing"
+        }
+      ],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 45,
+        "max_days": 45
+      },
+      "secondary_end_points": {
+        "federal stock (supplier delivery to SPF/Peutie)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        },
+        "hospitals (providers)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        }
+      },
+      "identification": {
+        "FFP2 respirators": {
+          "n_paired_orders": 3,
+          "order_date_spread": {
+            "min_days": 52,
+            "max_days": 52
+          },
+          "minimum_for_separation_met": true
+        },
+        "gloves": {
+          "n_paired_orders": 1,
+          "order_date_spread": {
+            "min_days": 0,
+            "max_days": 0
+          },
+          "minimum_for_separation_met": false
+        },
+        "surgical masks": {
+          "n_paired_orders": 2,
+          "order_date_spread": {
+            "min_days": 16,
+            "max_days": 16
+          },
+          "minimum_for_separation_met": true
+        }
+      }
+    },
+    {
+      "reading": {
+        "order_3M_ffp2": "B"
+      },
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 5,
+            "max_days": 5
+          },
+          "first_event_ids": [
+            "order_3M_ffp2"
+          ],
+          "n_events": 7
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 46,
+            "max_days": 46
+          },
+          "first_event_ids": [
+            "del_communes"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [
+        {
+          "order_id": "order_3M_ffp2",
+          "delivery_id": "del_3M_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 52,
+            "max_days": 52
+          }
+        },
+        {
+          "order_id": "order_life_surgical",
+          "delivery_id": "del_life_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_ultrazonic_ffp2",
+          "delivery_id": "del_ultrazonic_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 21,
+            "max_days": 21
+          }
+        },
+        {
+          "order_id": "order_life_ffp2",
+          "delivery_id": "del_life_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 10,
+            "max_days": 10
+          }
+        },
+        {
+          "order_id": "order_erard_gloves",
+          "delivery_id": "del_erard_gloves",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "gloves",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_xml_surgical",
+          "delivery_id": "del_xml_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 6,
+            "max_days": 6
+          }
+        }
+      ],
+      "undatable_pairs": [
+        {
+          "order_id": "order_panscope_ffp2",
+          "delivery_id": "del_panscope_ffp2",
+          "reason": "delivery date missing"
+        }
+      ],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 41,
+        "max_days": 41
+      },
+      "secondary_end_points": {
+        "federal stock (supplier delivery to SPF/Peutie)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        },
+        "hospitals (providers)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        }
+      },
+      "identification": {
+        "FFP2 respirators": {
+          "n_paired_orders": 3,
+          "order_date_spread": {
+            "min_days": 48,
+            "max_days": 48
+          },
+          "minimum_for_separation_met": true
+        },
+        "gloves": {
+          "n_paired_orders": 1,
+          "order_date_spread": {
+            "min_days": 0,
+            "max_days": 0
+          },
+          "minimum_for_separation_met": false
+        },
+        "surgical masks": {
+          "n_paired_orders": 2,
+          "order_date_spread": {
+            "min_days": 16,
+            "max_days": 16
+          },
+          "minimum_for_separation_met": true
+        }
+      }
+    },
+    {
+      "reading": {
+        "order_3M_ffp2": "C"
+      },
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 34,
+            "max_days": 34
+          },
+          "first_event_ids": [
+            "order_3M_ffp2"
+          ],
+          "n_events": 7
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 46,
+            "max_days": 46
+          },
+          "first_event_ids": [
+            "del_communes"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [
+        {
+          "order_id": "order_3M_ffp2",
+          "delivery_id": "del_3M_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 23,
+            "max_days": 23
+          }
+        },
+        {
+          "order_id": "order_life_surgical",
+          "delivery_id": "del_life_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_ultrazonic_ffp2",
+          "delivery_id": "del_ultrazonic_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 21,
+            "max_days": 21
+          }
+        },
+        {
+          "order_id": "order_life_ffp2",
+          "delivery_id": "del_life_ffp2",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "FFP2 respirators",
+          "interval": {
+            "min_days": 10,
+            "max_days": 10
+          }
+        },
+        {
+          "order_id": "order_erard_gloves",
+          "delivery_id": "del_erard_gloves",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "gloves",
+          "interval": {
+            "min_days": 5,
+            "max_days": 5
+          }
+        },
+        {
+          "order_id": "order_xml_surgical",
+          "delivery_id": "del_xml_surgical",
+          "order_end_point": "municipalities",
+          "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+          "good": "surgical masks",
+          "interval": {
+            "min_days": 6,
+            "max_days": 6
+          }
+        }
+      ],
+      "undatable_pairs": [
+        {
+          "order_id": "order_panscope_ffp2",
+          "delivery_id": "del_panscope_ffp2",
+          "reason": "delivery date missing"
+        }
+      ],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 12,
+        "max_days": 12
+      },
+      "secondary_end_points": {
+        "federal stock (supplier delivery to SPF/Peutie)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        },
+        "hospitals (providers)": {
+          "delivery_lag_from_t0": {
+            "min_days": 50,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        }
+      },
+      "identification": {
+        "FFP2 respirators": {
+          "n_paired_orders": 3,
+          "order_date_spread": {
+            "min_days": 19,
+            "max_days": 19
+          },
+          "minimum_for_separation_met": true
+        },
+        "gloves": {
+          "n_paired_orders": 1,
+          "order_date_spread": {
+            "min_days": 0,
+            "max_days": 0
+          },
+          "minimum_for_separation_met": false
+        },
+        "surgical masks": {
+          "n_paired_orders": 2,
+          "order_date_spread": {
+            "min_days": 16,
+            "max_days": 16
+          },
+          "minimum_for_separation_met": true
+        }
+      }
+    }
+  ]
+}

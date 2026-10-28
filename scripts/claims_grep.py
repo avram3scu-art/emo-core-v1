@@ -58,6 +58,7 @@ MANUAL = [
     ("docs/GWI_PROTOCOL.md", "first such record", "ordinal"),
     ("docs/RDL_V04_PROTOCOL.md", "two first", "ordinal"),
     ("docs/DAC_PPE_CODING.md", "validated", "means: passed by the validator emo/dac_standard.py"),
+    ("scripts/dac_ppe_outputs.py", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/weekly_run.py", "", "code comment or ordinal"),
 ]
 

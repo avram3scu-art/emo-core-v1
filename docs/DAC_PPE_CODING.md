@@ -16,7 +16,7 @@ Each later F8 session records whether it opened anything of the manuscript beyon
 ## 2. Coding rules (from the manuscript's §2.1 and §3.1 text and DAC standard v1.1)
 
 - **t0:** WHO declaration of a Public Health Emergency of International Concern, 30 January 2020 (exact). **Alternative t0** (rule chosen here; the manuscript's §4.3 alternative was not read): WHO's characterisation of COVID-19 as a pandemic, 11 March 2020.
-- **Observation window:** 2020-01-30 to 2020-06-30 (first wave). Events after it are `censored`.
+- **Observation window:** 2020-01-01 to 2020-06-30 (first wave; opened at 2020-01-01 on 28 Oct, see §5). Events after it are `censored`.
 - **Response scale:** one national government (federal level for BE and DE), or the EU institutions for the EU file. Acts of other levels are `context`; an act of one level against another's response is a `counter_measure` in the file of the level it targets.
 - **firm_order:** first purchase order or contract for PPE (masks, respirators, gowns, gloves, goggles) intended for general supply. Excluded: inquiries, options, framework calls without a purchase, purchases documented for a single mission. An EU joint-procurement tender is `context` in national files and a firm order in the EU file only when a contract is signed.
 - **binding_act:** first legally binding act concerning the PPE response (requisition, export ban, price cap, procurement derogation). Recorded, not compared across cases.
@@ -47,3 +47,8 @@ Each later F8 session records whether it opened anything of the manuscript beyon
 4. Report **every** difference with its kind: (a) different source, (b) different rule or reading, (c) coding error in the new file, (d) error in the manuscript. A new file is not changed after the tables are opened, except to correct a type-(c) error, which is then listed with before and after.
 5. Agreement is reported per item as a profile (same / overlapping windows / different), never as one score.
 6. The result decides the data statement: the paper may cite these files only for items that agree or whose differences are explained.
+
+## 5. Rules added during coding (dated; before any profile was computed)
+
+- **2026-10-28, Belgium.** (a) A date that the source itself flags as contradicted, with no alternative date given (Annex 5 "Contrad. dat."), is coded `missing`; the recorded value goes in the description. Applies to the Pan Scope delivery ("livraison le 19 mars 2020" for an order of 23 March, row 723). (b) Every dated statement in the chronology about the same order is a reading, including statements by members of the committee recorded in a hearing: the 3M order of 500,000 FFP2 has three readings (31 Jan, row 1052; 4 Feb "option sur/commande", row 760; 4 Mar "première commande", row 716; rows 760 and 716 are cross-flagged "Contradict."). (c) Annex 5 cites its source per row (hearing record CRIV K0xx or written answers); the coded `source` gives the report, PDF page, row number and that cited source. Hearing records themselves were not opened (scope: one source per sitting).
+- **2026-10-28, all cases.** Observation window opens 2020-01-01 instead of at t0, so that events before t0 (e.g. the 29 January inquiry to 3M) can be recorded as `context`. It does not change any lag: windows without a sourced lower bound still open at t0 (set explicitly as `date_earliest` = 2020-01-30), and no pre-t0 event enters the profile. Found when the Belgian file failed validation; changed before any profile was computed.
