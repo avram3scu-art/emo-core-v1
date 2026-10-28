@@ -76,7 +76,7 @@ def justify(path: str, line: str) -> str:
 
 
 def main() -> int:
-    out = subprocess.run(["git", "grep", "-I", "-i", "-n", "-E", WORDS, "--", ".", *EXCLUDE],
+    out = subprocess.run(["git", "grep", "--untracked", "-I", "-i", "-n", "-E", WORDS, "--", ".", *EXCLUDE],
                          capture_output=True, text=True, check=True).stdout.splitlines()
     rows, bad = [], 0
     for hit in out:
