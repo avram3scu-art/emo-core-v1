@@ -54,7 +54,7 @@ Do not add "no AI tool is listed as an author". Manuscripts carry "Adrian N. Avr
 
 Adrian does not keep records; Claude does. Every test, simulation, probe, run, conversion, fetch and failed attempt is recorded in the repo in the same session, never only in the chat or Claude's workspace:
 
-- **Index:** one row per item in `docs/RECORD.md`: date | session | type | what | protocol | code | data | result (PASS/FAIL/error) | commit or run ID.
+- **Index:** one row per item in `docs/RECORD.md`: date | session | type | class (pre-registered blind / pre-registered on known history / exploratory / infrastructure) | what | protocol | code | data | result (PASS/FAIL/error) | commit or run ID.
 - **Files:** protocol, code, input data (or a fetch script plus checksum when the data cannot be committed), outputs and figures are committed; a GitHub run ID alone is not a record.
 - **Sources:** every external source opened is listed with URL and access date in the file that uses it; a source supplied by Adrian is committed (or, if it cannot be, its absence is recorded).
 - **Decisions:** Adrian's choices and their reasons go in `docs/STATUS.md` when made.

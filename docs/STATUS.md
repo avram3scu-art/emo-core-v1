@@ -4,11 +4,27 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1, F2, F3, F4. Next: F5 (SMF re-analysis), F6 (method labels), F7 (DAC clean-up incl. validator gaps D1–D6), F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (91), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F5. Next: F6 (method labels), F7 (DAC clean-up incl. validator gaps D1–D6), F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (97), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
-- **Open A items (audits 26b, 27 Oct):** SMF deciding condition untested (F5). PPE case not in the repo (F8).
+- **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F5 (2026-10-28, 09:43–10:05) — SMF significance re-analysis
+
+**Done when met: yes.** Result in `docs/SMF_PROTOCOL.md` §13; README and page follow it; frozen check includes SMF and synergy; M1 guard and its tests pass.
+
+**Done**
+- §13 protocol: draft (f4a4745), registered on Adrian's "go" (3f40146) with lags 11/11/13 (EIA) and 1/2/4 (SPF) instead of the prompt's h − 1 (reason in §13); code and tests before the run (4e3988c).
+- **Result (6d0f142), pre-registered on known history:** 6 of 12 earlier passes survive Diebold–Mariano/Holm: EIA CO2 3 m, EIA electricity 3 m, SPF unemployment 1/2/4 q, SPF IP 1/2 q. Withdrawn: EIA CO2 6 m, EIA electricity 6 m, EIA IP 3/6 m, SPF IP 4 q.
+- M1 guard: KPSS (1%) in `compute_smf`, warning + metadata, docstring corrected; fires on 5 of 15 recorded EIA inputs incl. the surviving EIA CO2 3 m (caveat now in README and page, Adrian "yes"). Recorded outputs unchanged (37cf6b9).
+- Weekly frozen check: SMF §7–§13 and synergy added; openpyxl declared; weekly run 40659742858 on GitHub: all 15 frozen runs reproduce.
+- Claude's mistakes, fixed: protocol count 10 → 12 of 15 (erratum before the run); an unverified explanation drafted and removed before commit; session-0 SMF signal control built on a random walk → stationary AR(1) (cb06b8a); CLAUDE.md index spec lacked F3's class column.
+
+**Open**
+- For the 5 flagged EIA samples the circular-shift null is not valid; a persistence-robust null (e.g. block bootstrap) would fix it. Reason: scope (new method work; Claude recommended later).
+
+**Next:** F6 (method labels and the evidence-class rule), then F7, F8; session 10 after them.
 
 ## Fix session F3 (2026-10-28, 09:33–09:45) — records backfill
 

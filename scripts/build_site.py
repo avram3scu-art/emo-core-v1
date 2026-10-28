@@ -213,7 +213,7 @@ plus the forecast error against a "no change" forecast. Each test was pre-regist
 Primary samples exclude 2020-21 except where stated.</p>
 <p><b>Deciding test (protocol section 13, 28 Oct 2026; pre-registered on known history).</b> Is the advantage over "no change" larger than chance?
 Diebold-Mariano with Holm correction over 15 samples. Its verdict replaces the MSE point comparison in the older blocks below:
-EIA energy significant at 3 months only; SPF unemployment at 1, 2 and 4 quarters; industrial production only for the SPF at 1-2 quarters.</p>
+EIA energy significant at 3 months only (for CO2 the input fails a stationarity check, so its correlation p-value may be optimistic); SPF unemployment at 1, 2 and 4 quarters; industrial production only for the SPF at 1-2 quarters.</p>
 {smf_dm}
 <p>Older blocks (sections 8-12; their "verdict" lines used the MSE point comparison):</p>
 {smf_blocks}
