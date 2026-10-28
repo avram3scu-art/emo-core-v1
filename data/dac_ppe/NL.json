@@ -1,0 +1,229 @@
+{
+  "standard_version": "1.1",
+  "case": {
+    "case_id": "NL",
+    "t0_event_id": "who_pheic",
+    "t0_institution": "World Health Organization (IHR Emergency Committee)",
+    "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
+    "alternative_t0": [
+      "who_pandemic"
+    ],
+    "response_scale": "Dutch national government (ministry of VWS; from 23 March with the LCH); regional (ROAZ, GGD) and institutional acts are context",
+    "start_rule": "First national purchase order or contract for PPE for general supply; inquiries, offers, tenders and EU joint procurement excluded",
+    "end_point": "regional acute-care networks (ROAZ)",
+    "inclusion_rules": {
+      "firm_order": "First national purchase of PPE for general supply",
+      "binding_act": "First legally binding national act concerning the PPE response",
+      "dedicated_funding": "First funding legally earmarked for PPE",
+      "delivery": "First physical delivery of nationally procured PPE to the ROAZ networks; deliveries directly to care providers are a secondary end point",
+      "institutionalisation": "First permanent body created for the hazard"
+    },
+    "observation_window": {
+      "start": "2020-01-01",
+      "end": "2020-06-30",
+      "reason": "First wave; opens 1 Jan so that pre-t0 events can be context (docs/DAC_PPE_CODING.md §5)"
+    },
+    "source_pool": {
+      "searched": [
+        "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen (full, 39 pp.; eerstekamer.nl; sha256 237fcdb5...)"
+      ],
+      "search_date": "2026-10-28",
+      "not_accessed": [
+        "internal sources cited by the reconstruction (sitraps, consignment reports)",
+        "Kamerbrieven cited by the reconstruction"
+      ],
+      "case_selection_reason": "Official reconstruction available (manuscript §3.1)"
+    },
+    "coding": {
+      "coders": 1,
+      "agreement": null,
+      "rules_fixed_before_coding": true
+    },
+    "computation": {
+      "code": "emo/dac_standard.py"
+    },
+    "identification": "Not testable: the only order linked to a delivery (the 21 March shipment) has no order date."
+  },
+  "events": [
+    {
+      "event_id": "who_pheic",
+      "sublayer": "validation",
+      "date_status": "exact",
+      "description": "WHO declares a Public Health Emergency of International Concern (not in the Dutch source; cited from the Belgian chronology, rule §5 Germany a)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt)",
+      "source_type": "primary",
+      "date_earliest": "2020-01-30",
+      "date_latest": "2020-01-30"
+    },
+    {
+      "event_id": "who_pandemic",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "WHO declares a pandemic (alternative t0)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 363, row 51 (CRIV K001, De Raedt)",
+      "source_type": "primary",
+      "date_earliest": "2020-03-11",
+      "date_latest": "2020-03-11"
+    },
+    {
+      "event_id": "inventory_start",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "VWS starts an inventory of available PPE with the LNAZ and the safety regions, on advice of the BAO [grey text in the source: oral source without documents]",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 6",
+      "source_type": "primary",
+      "date_earliest": "2020-01-30",
+      "date_latest": "2020-01-30"
+    },
+    {
+      "event_id": "bao_central_distribution",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "BAO advises a distribution structure for PPE via the ROAZ networks (formalised with the LCH on 23 March)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 8 and p. 20",
+      "source_type": "primary",
+      "date_earliest": "2020-02-28",
+      "date_latest": "2020-02-28"
+    },
+    {
+      "event_id": "eu_jpa_registration",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Registration opens for the first EU joint procurement of PPE; the Netherlands registers (tender, not a Dutch order)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 8",
+      "source_type": "primary",
+      "date_earliest": "2020-02-28",
+      "date_latest": "2020-02-28"
+    },
+    {
+      "event_id": "roaz_three_hours",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Agreement that care institutions outside the ROAZ structure can report to the ROAZ and receive PPE within three hours (from existing regional stocks; not a national delivery) [grey text in the source: oral source without documents]",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 9",
+      "source_type": "primary",
+      "date_earliest": "2020-03-04",
+      "date_latest": "2020-03-04"
+    },
+    {
+      "event_id": "first_order_national",
+      "sublayer": "firm_order",
+      "date_status": "window",
+      "description": "First national purchase of PPE: VWS actively helps the NFU with purchasing from 6 March; on 9 March the ministry's directorate 'heeft op dit moment 500.000 mondmaskers gekocht' (rule §5 Netherlands a)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 9",
+      "source_type": "primary",
+      "date_earliest": "2020-03-06",
+      "date_latest": "2020-03-09",
+      "source_wording": "'VWS helpt de NFU vanaf 6 maart actief met de inkoop van persoonlijke beschermingsmiddelen' … 'Op 9 maart … De directie heeft op dit moment 500.000 mondmaskers gekocht' (p. 9)"
+    },
+    {
+      "event_id": "minister_letter_10mar",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Minister to the Tweede Kamer: a start has been made with the purchase and distribution of masks by the ROAZ networks",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 9",
+      "source_type": "primary",
+      "date_earliest": "2020-03-10",
+      "date_latest": "2020-03-10"
+    },
+    {
+      "event_id": "announced_500k",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Minister: 'morgen de eerste 500.000 mondmaskers aankomen' (announced arrival, not a delivery)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 9",
+      "source_type": "primary",
+      "date_earliest": "2020-03-12",
+      "date_latest": "2020-03-12"
+    },
+    {
+      "event_id": "redistribution_providers",
+      "sublayer": "delivery",
+      "date_status": "window",
+      "description": "The ministry redistributes about 200,000 masks of various types to care providers in the week before its letter of 20 March (secondary end point: providers; rule §5 Netherlands c)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 10",
+      "source_type": "primary",
+      "date_earliest": "2020-03-13",
+      "date_latest": "2020-03-20",
+      "source_wording": "'Via die weg heeft de minister de afgelopen week in ieder geval rond de 200.000 verschillende typen mondmaskers kunnen herverdelen over zorgaanbieders in Nederland' (letter of 20 March, p. 10)",
+      "end_point": "care providers"
+    },
+    {
+      "event_id": "no_requisition",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Cabinet decides not to prepare a requisition decree for PPE",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 10",
+      "source_type": "primary",
+      "date_earliest": "2020-03-20",
+      "date_latest": "2020-03-20"
+    },
+    {
+      "event_id": "order_china_690k",
+      "sublayer": "firm_order",
+      "date_status": "missing",
+      "description": "Order by VWS, via an intermediary, of the first shipment of masks from China (about 690,000 KN95/FFP2); order date not given (rule §5 Netherlands d)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 11",
+      "source_type": "primary",
+      "good": "FFP2/KN95 masks"
+    },
+    {
+      "event_id": "del_china_690k_roaz",
+      "sublayer": "delivery",
+      "date_status": "window",
+      "description": "First shipment from China (about 690,000 masks) arrives 21 March, goes to central storage and is distributed 'onder alle ROAZ-regio's'; by 22 March part 'was reeds uitgeleverd aan zorgaanbieders' (rule §5 Netherlands b)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 11 and p. 18",
+      "source_type": "primary",
+      "date_earliest": "2020-03-21",
+      "date_latest": "2020-03-22",
+      "source_wording": "'Eerste lading van zo’n 690.000 mondmaskers is net binnen' (tweet of 21 March) … 'via die opslag verdeeld onder alle ROAZ-regio’s' (p. 11); 'Een deel van deze zending was reeds uitgeleverd aan zorgaanbieders' (signal of 22 March, p. 18)",
+      "end_point": "regional acute-care networks (ROAZ)",
+      "pairs_with": "order_china_690k",
+      "good": "FFP2/KN95 masks"
+    },
+    {
+      "event_id": "lch_start",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Landelijk Consortium Hulpmiddelen (LCH) starts: joint national purchasing and distribution (not described as permanent)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 14",
+      "source_type": "primary",
+      "date_earliest": "2020-03-23",
+      "date_latest": "2020-03-23"
+    },
+    {
+      "event_id": "vat_zero_masks",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Zero VAT rate on face masks from 25 May (aimed at public-transport users; announced 13 May)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, PDF p. 32",
+      "source_type": "primary",
+      "date_earliest": "2020-05-25",
+      "date_latest": "2020-05-25"
+    },
+    {
+      "event_id": "binding_act_none",
+      "sublayer": "binding_act",
+      "date_status": "missing",
+      "description": "No legally binding national act concerning the PPE response in the window found (the cabinet decided on 20 March not to prepare a requisition decree)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, searched in full",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "funding_none",
+      "sublayer": "dedicated_funding",
+      "date_status": "missing",
+      "description": "No legally earmarked funding for PPE found ('financiële garantstellingen' from 6 March are guarantees, p. 9)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, searched in full",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "institution_none",
+      "sublayer": "institutionalisation",
+      "date_status": "missing",
+      "description": "No permanent body for the hazard found (the LCH is not described as permanent)",
+      "source": "Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen, januari-juli 2020, searched in full",
+      "source_type": "primary"
+    }
+  ]
+}

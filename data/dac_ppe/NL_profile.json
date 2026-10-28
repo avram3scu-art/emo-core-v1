@@ -1,0 +1,63 @@
+{
+  "standard_version": "1.1",
+  "case_id": "NL",
+  "t0_event_id": "who_pheic",
+  "end_point": "regional acute-care networks (ROAZ)",
+  "missing": [
+    "binding_act",
+    "dedicated_funding",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {},
+  "identification_note": "Not testable: the only order linked to a delivery (the 21 March shipment) has no order date.",
+  "profiles": [
+    {
+      "reading": {},
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 36,
+            "max_days": 39
+          },
+          "first_event_ids": [
+            "first_order_national"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 51,
+            "max_days": 52
+          },
+          "first_event_ids": [
+            "del_china_690k_roaz"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [
+        {
+          "order_id": "order_china_690k",
+          "delivery_id": "del_china_690k_roaz",
+          "reason": "order date missing"
+        }
+      ],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 12,
+        "max_days": 16
+      },
+      "secondary_end_points": {
+        "care providers": {
+          "delivery_lag_from_t0": {
+            "min_days": 43,
+            "max_days": 50
+          },
+          "unpaired_first_order_to_first_delivery": null
+        }
+      },
+      "identification": {}
+    }
+  ]
+}

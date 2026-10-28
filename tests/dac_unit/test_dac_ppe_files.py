@@ -139,3 +139,42 @@ def test_german_citations_match_their_pages():
             if phrase not in pages[page] or f"p. {page}" not in src[k]:
                 bad.append((k, fname, page, phrase))
     assert not bad, bad
+
+
+# F8.4: each Dutch citation is checked by a verbatim phrase on its cited page (text kept in reading order).
+NL_PHRASES = {
+    "who_pheic": [("BE_annex5.txt", 342, "Urgence de santé publique de portée internationale")],
+    "who_pandemic": [("BE_annex5.txt", 363, "L'OMS déclare la pandémie")],
+    "inventory_start": [("NL_vws_tijdlijn_pbm.txt", 6, "start VWS op 30 januari met een inventarisatie")],
+    "bao_central_distribution": [("NL_vws_tijdlijn_pbm.txt", 8, "Op 28 februari adviseert het BAO"),
+                                 ("NL_vws_tijdlijn_pbm.txt", 20, "Op 28 februari adviseert het Bestuurlijk Afstemmingsoverleg")],
+    "eu_jpa_registration": [("NL_vws_tijdlijn_pbm.txt", 8, "inschrijving van de eerste Europese aanbesteding")],
+    "roaz_three_hours": [("NL_vws_tijdlijn_pbm.txt", 9, "binnen drie uur beschermingsmiddelen geleverd krijgen")],
+    "first_order_national": [("NL_vws_tijdlijn_pbm.txt", 9, "VWS helpt de NFU vanaf 6 maart actief met de inkoop"),
+                             ("NL_vws_tijdlijn_pbm.txt", 9, "De directie heeft op dit moment 500.000 mondmaskers gekocht")],
+    "minister_letter_10mar": [("NL_vws_tijdlijn_pbm.txt", 9, "start is gemaakt met de aankoop en distributie van mondmaskers door de ROAZ")],
+    "announced_500k": [("NL_vws_tijdlijn_pbm.txt", 9, "morgen de eerste 500.000 mondmaskers aankomen")],
+    "redistribution_providers": [("NL_vws_tijdlijn_pbm.txt", 10, "rond de 200.000 verschillende typen mondmaskers kunnen herverdelen")],
+    "no_requisition": [("NL_vws_tijdlijn_pbm.txt", 10, "geen vorderingsbesluit ten behoeve van persoonlijke beschermingsmiddelen")],
+    "order_china_690k": [("NL_vws_tijdlijn_pbm.txt", 11, "door VWS zijn besteld via een tussenleverancier")],
+    "del_china_690k_roaz": [("NL_vws_tijdlijn_pbm.txt", 11, "690.000 mondmaskers is net binnen"),
+                            ("NL_vws_tijdlijn_pbm.txt", 11, "verdeeld onder alle ROAZ-regio"),
+                            ("NL_vws_tijdlijn_pbm.txt", 18, "Een deel van deze zending was reeds uitgeleverd aan zorgaanbieders")],
+    "lch_start": [("NL_vws_tijdlijn_pbm.txt", 14, "Op 23 maart gaat het LCH van start")],
+    "vat_zero_masks": [("NL_vws_tijdlijn_pbm.txt", 32, "Het nultarief zal worden toegepast met ingang van 25 mei")],
+}
+
+
+def test_dutch_citations_match_their_pages():
+    rows = json.loads((D / "NL.json").read_text(encoding="utf-8"))["events"]
+    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
+    assert cited == set(NL_PHRASES), cited ^ set(NL_PHRASES)
+    src = {e["event_id"]: e["source"] for e in rows}
+    cache: dict[str, dict[int, str]] = {}
+    bad = []
+    for k, items in NL_PHRASES.items():
+        for fname, page, phrase in items:
+            pages = cache.setdefault(fname, _pages(fname))
+            if phrase not in pages[page] or f"p. {page}" not in src[k]:
+                bad.append((k, fname, page, phrase))
+    assert not bad, bad

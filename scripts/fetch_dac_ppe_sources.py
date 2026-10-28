@@ -29,6 +29,11 @@ SOURCES = {
     # Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/19047 (7 May 2020), 8 pages.
     "DE_1919047.pdf": ("https://dserver.bundestag.de/btd/19/190/1919047.pdf",
                        "ff185159c6f0ff16f5bbe12c631450eadaeec5135aa416f57d405b82542f59fb"),
+    # Ministerie van VWS (2021), Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen,
+    # januari-juli 2020 (Programmadirectie Nafase COVID-19 with NSOB; adopted 9 Apr 2021), 39 pages,
+    # as published by the Eerste Kamer.
+    "NL_vws_tijdlijn_pbm.pdf": ("https://www.eerstekamer.nl/overig/20230914/interactieve_tijdlijn_persoonlijke/document",
+                                "237fcdb5a0288e670fed9d1d5d24bd3b0afe03179d9d3b5c6f6f887630bc125f"),
 }
 BE_ANNEX5_PAGES = (326, 549)
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
@@ -48,13 +53,17 @@ def fetch(name: str, url: str, sha: str) -> Path:
     return out
 
 
-def full_text(pdf: Path, out: str) -> None:
-    """Whole document as text with page markers (PDF page numbers), for citation by page."""
+def full_text(pdf: Path, out: str, layout: bool = True) -> None:
+    """Whole document as text with page markers (PDF page numbers), for citation by page.
+
+    layout=False keeps reading order for two-column documents (phrases are not split across columns).
+    """
     n = int(next(ln.split()[-1] for ln in subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True,
                                                           check=True).stdout.splitlines() if ln.startswith("Pages:")))
     parts = []
     for p in range(1, n + 1):
-        txt = subprocess.run(["pdftotext", "-layout", "-f", str(p), "-l", str(p), str(pdf), "-"],
+        opts = ["-layout"] if layout else []
+        txt = subprocess.run(["pdftotext", *opts, "-f", str(p), "-l", str(p), str(pdf), "-"],
                              capture_output=True, text=True, check=True).stdout
         parts.append(f"===== PDF page {p} =====\n{txt}")
     (ROOT / out).write_text("".join(parts), encoding="utf-8")
@@ -78,4 +87,5 @@ if __name__ == "__main__":
     full_text(CACHE / "FR_r20-199-11.pdf", "data/sources/dac_ppe/FR_senat_r20-199-11.txt")
     full_text(CACHE / "DE_1921798.pdf", "data/sources/dac_ppe/DE_btd_19-21798.txt")
     full_text(CACHE / "DE_1919047.pdf", "data/sources/dac_ppe/DE_btd_19-19047.txt")
+    full_text(CACHE / "NL_vws_tijdlijn_pbm.pdf", "data/sources/dac_ppe/NL_vws_tijdlijn_pbm.txt", layout=False)
     print("wrote data/sources/dac_ppe/FR_senat_r20-199-11.txt")
