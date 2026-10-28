@@ -1,0 +1,17 @@
+SMF §13: Diebold-Mariano (HLN) vs 'no change', one-sided; Holm over 15; alpha 0.05
+sample                          n   L MSE ratio      DM     HLN        p   p_Holm  old-conds  DM  verdict
+§8 EIA CO2 3m                 173  11     0.758   -2.78   -2.59   0.0052   0.0464  yes        yes PASS
+§8 EIA CO2 6m                 170  11     0.809   -1.73   -1.61   0.0541   0.3248  yes        no  FAIL
+§8 EIA CO2 12m                164  13     1.185    1.80    1.65   0.9498   1.0000  no         no  FAIL
+§10 EIA electricity 3m        173  11     0.638   -3.00   -2.80   0.0028   0.0283  yes        yes PASS
+§10 EIA electricity 6m        170  11     0.698   -2.42   -2.26   0.0127   0.0888  yes        no  FAIL
+§10 EIA electricity 12m       164  13     1.119    0.82    0.75   0.7740   1.0000  no         no  FAIL
+§11 SPF unemployment 1q       223   1     0.309   -3.95   -3.92   0.0001   0.0007  yes        yes PASS
+§11 SPF unemployment 2q       222   2     0.377   -4.01   -3.97   0.0000   0.0006  yes        yes PASS
+§11 SPF unemployment 4q       215   4     0.490   -4.38   -4.29   0.0000   0.0002  yes        yes PASS
+§12 EIA IP 3m                 173  11     0.496   -1.55   -1.45   0.0746   0.3730  yes        no  FAIL
+§12 EIA IP 6m                 170  11     0.760   -0.70   -0.65   0.2586   1.0000  yes        no  FAIL
+§12 EIA IP 12m                164  13     1.387    0.74    0.68   0.7516   1.0000  no         no  FAIL
+§12 SPF IP 1q                 223   1     0.495   -4.55   -4.52   0.0000   0.0001  yes        yes PASS
+§12 SPF IP 2q                 222   2     0.560   -3.89   -3.84   0.0001   0.0009  yes        yes PASS
+§12 SPF IP 4q                 215   4     0.604   -2.37   -2.32   0.0105   0.0842  yes        no  FAIL

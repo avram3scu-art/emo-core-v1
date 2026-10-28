@@ -31,8 +31,8 @@ NOT_MEASURED = [
     ("Attention streams", "Wikipedia pageviews are fetched only for fixed article sets used in GWI tests; GDELT has never been ingested."),
     ("UIA (interface density)", "The a_UIA scalar is retired; UIA is redefined as the He profile and is not yet scored."),
     ("GWI levels", "GWI timing passed on hurricane landfalls, but its threshold failed cross-article calibration, so no GWI level is a measurement."),
-    ("Long-range self-model fidelity", "SMF finds fidelity in EIA and SPF forecasts at 3-6 months and none for EIA energy at 12 months (section 5); "
-                                       "the MSE comparison that decides each pass has no significance test yet (re-analysis planned)."),
+    ("Long-range self-model fidelity", "Tested for significance (section 5): EIA energy forecasts beat 'no change' only at 3 months, "
+                                       "EIA industrial-production forecasts at no horizon; the SPF beats it up to 2-4 quarters."),
     ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their held-out tests; v0.4 waits for data. "
                      "The ledger below records forecasts only; none has resolved."),
     ("DAC beyond two cases", "Ozone vs climate only on this page; DAC event dates are hand-coded by one coder and not refreshed automatically."),
@@ -121,6 +121,9 @@ def build(out: Path):
         txt = title + "\n" + "\n".join(keep)
         return f'<a class="out" href="{BLOB}{esc(path)}" title="open the output file">{esc(txt)}</a>'
 
+    dm_path = ROOT / "results/smf_dm/result.txt"
+    smf_dm = (f'<a class="out" href="{BLOB}results/smf_dm/result.txt" title="open the output file">'
+              f'{esc(dm_path.read_text().strip())}</a>') if dm_path.exists() else ""
     smf_blocks = "".join(smf_primary(pth, t) for pth, t in (
         ("results/smf_steo_leads/result.txt", "EIA STEO, US energy CO2 (vs EIA Monthly Energy Review)"),
         ("results/smf_steo_elec/result.txt", "EIA STEO, US electricity retail sales"),
@@ -206,12 +209,17 @@ checked unchanged in every weekly run. These are forecasts of a failed-and-untes
 
 <h2>5. Self-Model Fidelity on real forecasts</h2>
 <p>Does a published forecast track what then happens? Correlation of forecast and realised changes against a circular-shift null,
-plus the forecast error against a "no change" forecast. Each test was pre-registered and run once; results are fixed, not re-run weekly.
+plus the forecast error against a "no change" forecast. Each test was pre-registered and run once; results are fixed and checked unchanged every week.
 Primary samples exclude 2020-21 except where stated.</p>
+<p><b>Deciding test (protocol section 13, 28 Oct 2026; pre-registered on known history).</b> Is the advantage over "no change" larger than chance?
+Diebold-Mariano with Holm correction over 15 samples. Its verdict replaces the MSE point comparison in the older blocks below:
+EIA energy significant at 3 months only; SPF unemployment at 1, 2 and 4 quarters; industrial production only for the SPF at 1-2 quarters.</p>
+{smf_dm}
+<p>Older blocks (sections 8-12; their "verdict" lines used the MSE point comparison):</p>
 {smf_blocks}
 {provenance([
-    'protocol and results ' + link('docs/SMF_PROTOCOL.md') + ' (sections 7-12) · metric ' + link('emo/smf.py'),
-    'scripts ' + link('analysis/smf_steo_leads.py') + ', ' + link('analysis/smf_steo_elec.py') + ', ' + link('analysis/smf_spf.py') + ', ' + link('analysis/smf_ip.py'),
+    'protocol and results ' + link('docs/SMF_PROTOCOL.md') + ' (sections 7-13) · metric ' + link('emo/smf.py'),
+    'scripts ' + link('analysis/smf_steo_leads.py') + ', ' + link('analysis/smf_steo_elec.py') + ', ' + link('analysis/smf_spf.py') + ', ' + link('analysis/smf_ip.py') + ', ' + link('analysis/smf_dm.py'),
     'sources ' + ext('https://www.eia.gov/outlooks/steo/', 'EIA Short-Term Energy Outlook archives') + ', '
     + ext('https://www.eia.gov/totalenergy/data/monthly/', 'EIA Monthly Energy Review') + ', '
     + ext('https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/survey-of-professional-forecasters', 'Survey of Professional Forecasters') + ', '
@@ -242,6 +250,7 @@ PREREGISTERED = [
     ("smf_eia_electricity", "docs/SMF_PROTOCOL.md", "results/smf_steo_elec/result.txt"),
     ("smf_spf_unemployment", "docs/SMF_PROTOCOL.md", "results/smf_spf/result.txt"),
     ("smf_industrial_production", "docs/SMF_PROTOCOL.md", "results/smf_ip/result.txt"),
+    ("smf_significance_dm", "docs/SMF_PROTOCOL.md", "results/smf_dm/result.txt"),
     ("synergy_climate", "docs/SYNERGY_PROTOCOL.md", "results/synergy_climate/result.txt"),
 ]
 

@@ -430,3 +430,28 @@ Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any com
 - The README line "the MSE comparison that decides each pass has no significance test" is removed in every case.
 
 **Not part of this test (F5 infrastructure, no hypothesis):** (a) SMF and synergy recorded runs added to the weekly frozen-output check on committed data; (b) M1 guard in `compute_smf`: a KPSS level-stationarity test on each input (lag int(4(n/100)^{1/4}), 1% critical value 0.739); if either series rejects, a `RuntimeWarning` is raised and `metadata["stationarity"] = "kpss_reject"`; outputs are not changed, so recorded results stay identical. Its unit test reruns the audit probe and requires the warning on independent trends in ≥ 95% of cases and on white noise in ≤ 5%. Whether the guard fires on the 15 recorded inputs is reported, no weight.
+
+**Result.** Single run 2026-10-28 in Claude's workspace (Python 3.13), code 4e3988c, committed data; output `results/smf_dm/result.txt`. 6 of the 12 samples with MSE_model < MSE_zero pass; the 3 with MSE_model ≥ MSE_zero fail as stated.
+
+| sample | n | L | MSE ratio | HLN | p | p (Holm) | new verdict |
+|---|---|---|---|---|---|---|---|
+| §8 EIA CO2 3 m | 173 | 11 | 0.758 | −2.59 | 0.0052 | 0.046 | **PASS** |
+| §8 EIA CO2 6 m | 170 | 11 | 0.809 | −1.61 | 0.054 | 0.32 | FAIL |
+| §8 EIA CO2 12 m | 164 | 13 | 1.185 | 1.65 | 0.95 | 1 | FAIL |
+| §10 EIA electricity 3 m | 173 | 11 | 0.638 | −2.80 | 0.0028 | 0.028 | **PASS** |
+| §10 EIA electricity 6 m | 170 | 11 | 0.698 | −2.26 | 0.013 | 0.089 | FAIL |
+| §10 EIA electricity 12 m | 164 | 13 | 1.119 | 0.75 | 0.77 | 1 | FAIL |
+| §11 SPF unemployment 1 q | 223 | 1 | 0.309 | −3.92 | 0.0001 | 0.0007 | **PASS** |
+| §11 SPF unemployment 2 q | 222 | 2 | 0.377 | −3.97 | <0.0001 | 0.0006 | **PASS** |
+| §11 SPF unemployment 4 q | 215 | 4 | 0.490 | −4.29 | <0.0001 | 0.0002 | **PASS** |
+| §12 EIA IP 3 m | 173 | 11 | 0.496 | −1.45 | 0.075 | 0.37 | FAIL |
+| §12 EIA IP 6 m | 170 | 11 | 0.760 | −0.65 | 0.26 | 1 | FAIL |
+| §12 EIA IP 12 m | 164 | 13 | 1.387 | 0.68 | 0.75 | 1 | FAIL |
+| §12 SPF IP 1 q | 223 | 1 | 0.495 | −4.52 | <0.0001 | 0.0001 | **PASS** |
+| §12 SPF IP 2 q | 222 | 2 | 0.560 | −3.84 | 0.0001 | 0.0009 | **PASS** |
+| §12 SPF IP 4 q | 215 | 4 | 0.604 | −2.32 | 0.011 | 0.084 | FAIL |
+
+**Reading (by the rules fixed above).** EIA energy: the advantage over "no change" is significant at 3 months only; at 6 months it is in the MSE but not significant. SPF unemployment: significant at all three horizons. Industrial production: significant only for the SPF at 1–2 quarters; EIA at 3–6 months and SPF at 4 quarters beat "no change" in MSE, not significantly. The §8–§12 passes withdrawn: EIA CO2 6 m, EIA electricity 6 m, EIA IP 3 m and 6 m, SPF IP 4 q.
+
+**Observation, no weight.** §12's reading rule used the 12-month / 4-quarter verdicts; with the new verdicts both are FAIL, which that rule would call "variable effect". The rule was not re-registered for the new verdicts, so this is not a finding. EIA IP at 3 m has the largest MSE gain among the EIA samples (0.496) but fails significance; why was not examined.
+
