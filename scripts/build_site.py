@@ -30,7 +30,7 @@ NOT_MEASURED = [
     ("Continuous observation", "Only a weekly batch run exists (this page). No stream, no dashboard, no real-time ingestion."),
     ("Attention streams", "Wikipedia pageviews are fetched only for fixed article sets used in GWI tests; GDELT has never been ingested."),
     ("UIA (interface density)", "The a_UIA scalar is retired; UIA is redefined as the He profile and is not yet scored."),
-    ("GWI levels", "GWI timing passed on hurricane landfalls, but its threshold failed cross-article calibration, so no GWI level is a measurement."),
+    ("GWI levels", "GWI timing passed on hurricane landfalls (decided by its significance condition only; its placebo condition was invalid), but its threshold failed cross-article calibration, so no GWI level is a measurement."),
     ("Long-range self-model fidelity", "Tested for significance (section 5): EIA energy forecasts beat 'no change' only at 3 months, "
                                        "EIA industrial-production forecasts at no horizon; the SPF beats it up to 2-4 quarters."),
     ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their tests on reserved historical cases (known outcomes, not blind); v0.4 waits for data. "
