@@ -9,6 +9,8 @@ Files supplied by Adrian, with origin and sha256. Session F1 (`docs/FIX_PLAN.md`
 | `Decision_or_Supply_supporting_information.docx` | Supporting Information, Table S1 (minimum reporting standard, with the "Identification" row) | Adrian's files | 2026-10-28 | cf21758dba1df14f3420f85a589d963239f3a968148eeb109649b40eafe69fad |
 | (not copied again) | Earlier manuscript "From Warning to Delivery…", attached again; byte-identical to `docs/sources/DAC_JCCM_manuscript_anonymised.docx` | Adrian's files | 2026-10-28 | b665faab2be2aadc4057d604c16dc32e08f8c61b6f10eb5fbe0b999e3f0e5726 |
 | `../other_papers/Avramescu_Diagnosticity_Condition_Manuscript.docx` | Not DAC: "The diagnosticity condition: a dilution theorem for persistence-based evidence" (separate project; attached in the same batch) | Adrian's files | 2026-10-28 | d10cd4b29b1090ef626f071a436478d70f9224bfda26d1c595acf8b5e46441fa |
+| `revision_fragment_RQ_and_2.7_identification.txt` | Revision text: new research question (Section 1) and §2.7 "Identification" with Proposition 1 (M1 decision-limited vs M2 supply-limited) and proof; attached file. Section numbers (2.7, 2.8) differ from the final .docx (§2.2 Identification), so these are a later revision than `Decision_or_Supply_manuscript_anonymised.docx`; no full manuscript of that revision was supplied. | Adrian, from the drafting chat | 2026-10-28 | 351f4b84449c4e0b6f520aaa8e6557c5e8a43f5d9d8edbdfa17c9eccc7e3fef4 |
+| `revision_fragment_2.8_existing_approaches.txt` | Revision text: §2.8 "Relation to existing approaches" with a new Table 1 (six approaches); pasted in chat. Section numbers (2.7, 2.8) differ from the final .docx (§2.2 Identification), so these are a later revision than `Decision_or_Supply_manuscript_anonymised.docx`; no full manuscript of that revision was supplied. | Adrian, from the drafting chat | 2026-10-28 | 00cb72c920cb6ad745f226968d17915c1a9585b1e68f0407b6f7ecbb2a0ef882 |
 
 ## Submission facts (as given by Adrian, 2026-10-28)
 
@@ -29,10 +31,10 @@ Different paper, not an earlier version. The Futures paper is conceptual: it def
 
 Claims in it that the repository does not support today (audit 26b P1): "an operational EMO architecture" (abstract, cover letter); nothing in the repo is an operational architecture (README).
 
-## Still missing (F1 closed with this list, 2026-10-28)
+## Still missing (F1 closed with this list, 2026-10-28; Adrian: "I don't know where the files are")
 
 - PPE event files: five countries (BE, FR, DE, NL, SE) + EU level.
 - Belgian order file.
 - Scripts that compute Tables 2–5 and draw Figures 1–2.
-- Figures 1–2; title page of the final version.
+- Figures 1–2; title page of the final version; full manuscript of the later revision (only §1 RQ, §2.7 and §2.8 supplied).
 - If these cannot be recovered: F8 (recode from primary sources).

@@ -44,3 +44,4 @@
 | 2026-10-26 | F4 | CI readability: pytest results as annotations | yes (probe branch deletion left to Adrian) | 6df6a83 | deliberate failure read via annotations in CI (40394061138) and weekly (40394065117); 91 tests |
 | 2026-10-27 | F4 follow-up | Node 24 actions; runners pinned to ubuntu-24.04 | yes | 37f58f4 | weekly 40452754211 green, no Node 20 warnings; f4-probe branch deletion left to Adrian |
 | 2026-10-27 | 9 | DAC standard: event-file schema, validator, profile (+ ozone/climate conversion, recording rule, second audit, fix plan F1–F8) | yes | 3494540 | tests green incl. malformed-file rejection; ozone/climate check PASS (c70276e); PPE event files not in any repo; final manuscript not in repo; audit 109c8a9, fix plan 6d77b36 |
+| 2026-10-28 | F1 | DAC paper facts and files | yes | 0293074 | JCCM not submitted; final manuscript, SI and revision fragments committed; event files, order file and scripts not found → F8 required |

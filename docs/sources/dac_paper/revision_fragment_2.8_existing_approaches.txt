@@ -1,0 +1,67 @@
+[Supplied by Adrian as chat text, 2026-10-28 09:01, with: "I don't know where the files are." Copied verbatim.]
+
+2.8 Relation to existing approaches
+
+Table 1 compares the profile with the closest approaches to dating and
+explaining a crisis response. None of them is designed to do what
+Proposition 1 requires: to link each order to the delivery of that same
+order, from records, so that the dependence of delivery on order date can be
+observed.
+
+Table 1. The profile and the closest existing approaches.
+
+1. Policy-adoption trackers (Hale et al., 2021)
+   Unit/interval:   country-day; date a measure was adopted
+   Dates/sources:   daily coding; no windows; one channel
+   Separates M1/M2: no — neither orders nor deliveries are recorded
+   Profile adds:    a delivery end point, and orders paired with deliveries
+
+2. Time-to-event analysis of adoption (Siedschlag & Yan, 2020;
+   Box-Steffensmeier & Jones, 2004)
+   Unit/interval:   country; trigger to adoption, with censoring
+   Dates/sources:   censoring handled; windows rarely; one event per case
+   Separates M1/M2: no — the outcome is adoption, not delivery
+   Profile adds:    steps after adoption; contested dates carried as readings
+
+3. Audits of procurement programmes (National Audit Office, 2020)
+   Unit/interval:   programme; volumes ordered and received by month
+   Dates/sources:   channels reported separately; aggregate volumes
+   Separates M1/M2: only from documents, not from the data — aggregates do
+                    not link an order to its delivery
+   Profile adds:    order-level pairing, so the test can be run on the record
+
+4. Interviews with procurement staff (Morales-Contreras et al., 2021)
+   Unit/interval:   organisation; perceived lead times
+   Dates/sources:   not dated
+   Separates M1/M2: no — perceptions, not dated events
+   Profile adds:    dated records of orders and deliveries
+
+5. Supply-chain resilience models: time to recover and time to survive
+   (Simchi-Levi et al., 2015)
+   Unit/interval:   node in a supply network; disruption to recovery
+   Dates/sources:   parallel paths modelled; recovery times are model inputs
+   Separates M1/M2: not as a test — the model assumes supply disruption and
+                    estimates its effect
+   Profile adds:    an empirical check, from public records, of whether
+                    delivery was set by supply at all
+
+6. Process tracing (Collier, 2011; Beach & Pedersen, 2019)
+   Unit/interval:   case; evidence for and against a mechanism
+   Dates/sources:   any evidence; no fixed coding
+   Separates M1/M2: yes in principle, through within-case tests
+   Profile adds:    a coding protocol and a specified test: which paired
+                    observations eliminate which mechanism
+
+The profile is closest to process tracing, and it is an application of it
+rather than a rival. In Collier's (2011) terms, the prediction of the
+decision-limited mechanism that delivery moves with the order date is a hoop
+test: an explanation that fails it is eliminated, while passing it does not
+confirm the explanation. The contrast between the surgical-mask and FFP2
+orders of 15 and 16 March is a hoop test that a delay common to the
+purchasing service fails (Section 4.3). The clustering of FFP2 deliveries is
+at most a straw in the wind for a supply constraint, because a procedure
+specific to FFP2 respirators passes the same test. What the profile
+contributes is narrower than a new theory of crisis response. It specifies
+explicitly, for public records, which observations would eliminate which
+explanation, and it carries contested and imprecise dates through the test
+instead of resolving them by assumption.

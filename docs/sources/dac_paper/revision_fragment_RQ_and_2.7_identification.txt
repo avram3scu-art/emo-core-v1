@@ -1,0 +1,75 @@
+RESEARCH QUESTION (replaces the opening of the fourth paragraph of Section 1)
+
+This article asks a narrower question than how long the response took: can
+dated records of orders and of the deliveries of those same orders
+distinguish a delay set by the decision to order from a delay set by the
+availability of supply, and, where they cannot, what evidence would? The
+distinction matters for preparedness. If delivery was limited by the
+decision, ordering earlier would have brought protection earlier; if it was
+limited by supply, it would not, and the remedy lies in stocks, production
+capacity or access to suppliers. The two mechanisms can produce the same
+interval between an order and its delivery, so the interval alone cannot
+tell them apart.
+
+2.7 Identification: decision-limited and supply-limited delay
+
+Let an authority place orders i = 1, ..., n for one good, on dates O_i, and
+let D_i be the first verified delivery of order i. Two mechanisms are
+compared.
+
+- Decision-limited (M1): D_i = O_i + k. Once ordered, the good takes a fixed
+  time k to arrive, so delivery moves one-for-one with the order date.
+- Supply-limited (M2): D_i = max(O_i + k, R). The good is not available to
+  this buyer before a date R, set by production, allocation or export
+  restrictions, so an order placed before R − k is delivered at R whatever
+  its date.
+
+For orders placed before R − k, each model has one free parameter (k or R),
+so their fits can be compared directly.
+
+Proposition 1. (i) A single paired order cannot distinguish M1 from M2.
+(ii) Two or more paired orders of the same good, placed on different dates
+before R − k, can: M1 predicts D_j − D_i = O_j − O_i, and M2 predicts
+D_j − D_i = 0. (iii) An unpaired interval, from an order to a delivery of
+goods from another source, cannot distinguish them.
+
+Proof. (i) For any observed pair with D ≥ O, M1 fits exactly with k = D − O,
+and M2 fits exactly with R = D and any k ≤ D − O. (ii) Under M1,
+D_j − D_i = (O_j + k) − (O_i + k) = O_j − O_i. Under M2, both orders satisfy
+O + k ≤ R, so D_i = D_j = R. The predictions differ whenever O_i ≠ O_j.
+(iii) If the delivery dated D is not the delivery of the order dated O,
+neither model constrains D − O. ∎
+
+The proposition is elementary; its use lies in what it rules out. Four
+consequences follow for the analysis.
+
+First, discrimination needs orders of one good placed on different dates.
+The slope of delivery date on order date is 1 under M1 and 0 under M2. Real
+records, with variation from transport and partial delivery, give values in
+between, and these are informative only when the order dates are spread
+more widely than that variation.
+
+Second, orders placed after R − k behave the same under both models. A
+decision-limited pattern among late orders therefore shows only that any
+supply constraint had lifted by then, not that there never was one.
+
+Third, orders of different goods, or from different suppliers, may differ in
+k or in R, so a difference between their lags does not test M1 against M2.
+It can test a third mechanism: a delay common to the purchasing service (M0,
+the same k for every good), which predicts equal lags for orders placed at
+the same time.
+
+Fourth, the counterfactual that matters for the warning paradox — how much
+earlier delivery would have come had the order been placed earlier — is
+O_obs − O_cf under M1, and zero under M2 for orders placed before R − k. It
+is identified only once the mechanism is. Observed elapsed time, the
+mechanism behind it and the avoidable part of it are therefore three
+different quantities, and the record may establish the first without the
+other two.
+
+Where paired orders are too few or too close together, other records can
+discriminate: a delivery date promised by the supplier at contracting, which
+under M2 clusters at R regardless of the order date; production or dispatch
+records; or documented export restrictions or allocation decisions that date
+R directly. Section 4.2 applies the test to the Belgian orders and states
+which records would settle what it leaves open.

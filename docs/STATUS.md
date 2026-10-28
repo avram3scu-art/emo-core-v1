@@ -2,13 +2,27 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Fix session F1 (2026-10-28, 08:34–) — DAC paper facts and files
+## Fix session F1 (2026-10-28, 08:34–09:05) — DAC paper facts and files
 
 - Committed with origin and sha256 (`docs/sources/dac_paper/README.md`): Futures submission FUTURES-D-26-00488 (conceptual DAC paper; submitted 17 Apr 2026, desk-rejected 18 Apr 2026); final DAC manuscript "Decision or Supply?" and its Supporting Information (Table S1 with the "Identification" row); Diagnosticity manuscript (not DAC) under `docs/sources/other_papers/`. The earlier JCCM manuscript, attached again, is byte-identical to the committed one.
 - **Submission facts (Adrian, 28 Oct: "1 - NO"):** the DAC/PPE manuscript was **not submitted** to JCCM. README's "JCCM manuscript under review" is false (F2 fixes it). No letter to an editor needed.
 - Final version vs committed one: a rewrite (identification result §2.2, Tables 1, 3, 4 new; profiles become Table 5).
 - Its data statement says the six event files, the Belgian order file and the scripts are public with a persistent identifier: not true today.
-- **Missing (by name):** PPE event files BE, FR, DE, NL, SE, EU; Belgian order file; scripts for Tables 2–5 and Figures 1–2; Figures 1–2; title page of the final version. If not recoverable: F8.
+- **Missing (by name):** PPE event files BE, FR, DE, NL, SE, EU; Belgian order file; scripts for Tables 2–5 and Figures 1–2; Figures 1–2; title page of the final version; full manuscript of the later revision (only §1 RQ, §2.7 Identification/Proposition 1 and §2.8 Table 1 were supplied, committed as fragments).
+- Also supplied: Boyer et al. 2024 (IPMJ) landing page, recorded as a source (abstract only, 7e9f4ef).
+
+**Closed 2026-10-28, 09:05. Done when met: yes** (every attached file committed and indexed; facts recorded; missing list above). Commits 33b34b1, 0293074, ef76d5a, 7e9f4ef and this one.
+
+**Review and Adrian's answer**
+- More of F1: only the event files; Adrian (09:01): "I don't know where the files are. Let's move on." → **F8 is required** (recode the PPE case from primary sources, 2–4 sessions) before the DAC paper can be submitted with its data statement.
+- Change: README's "JCCM manuscript under review" and the PPE "works on real data" line are false → F2. The final manuscript's data statement is not true today → must be made true (F8) or changed before any submission.
+- Claude's mistake: asked for "every file card" without saying which files were already in the repo; one duplicate upload.
+- Adrian: "We need to fix everything, or improve it, before session 10."
+
+**Not done**
+- Event files, order file, scripts. Reason: Adrian's decision/files (not found) → F8.
+
+**Next:** F2 (truth pass on public files), then F3, F5, F6, F7, F8; session 10 after them.
 
 ## Third audit (2026-10-27/28, extra work at Adrian's request)
 
