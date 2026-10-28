@@ -65,3 +65,11 @@ jobs:
       - name: Bug check of analysis/ (pyflakes rules only; no reformatting of frozen scripts)
         run: |
           ruff check --isolated --select F --target-version py311 --output-format github analysis
+
+      # F2 (28 Oct 2026): every claim word listed in scripts/claims_grep.py
+      # in the repository must have a justification; an unjustified hit fails CI and is shown as an annotation.
+      - name: Claim-word check
+        run: |
+          set -o pipefail
+          python scripts/claims_grep.py | tee claims.txt || { grep '| UNJUSTIFIED |' claims.txt | head -20 | while IFS= read -r l; do echo "::error title=unjustified claim::${l//%/%25}"; done; exit 1; }
+
