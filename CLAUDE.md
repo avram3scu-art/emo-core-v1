@@ -61,6 +61,8 @@ Adrian does not keep records; Claude does. Every test, simulation, probe, run, c
 - **Sources:** every external source opened is listed with URL and access date in the file that uses it; a source supplied by Adrian is committed (or, if it cannot be, its absence is recorded).
 - **Decisions:** Adrian's choices and their reasons go in `docs/STATUS.md` when made.
 
+**Run the claim-word check before every push** (rule added 28 Oct 2026, session 10b, at Adrian's request): `python scripts/claims_grep.py` must report `unjustified=0` locally before `git push`; a hit is fixed by rewording, or, in a pre-registered file that must not change, by a justification entry in the script.
+
 ## Closing routine (every session)
 
 0. Check the record: `git status` is clean (nothing created or used is left uncommitted); every item of the session has a row in `docs/RECORD.md`; nothing the next session needs exists only outside the repo. Report any gap.
