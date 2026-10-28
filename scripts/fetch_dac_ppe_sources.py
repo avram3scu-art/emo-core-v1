@@ -23,6 +23,12 @@ SOURCES = {
     # Same sha256 as the copy Adrian supplied on 26 Oct 2026.
     "FR_r20-199-11.pdf": ("https://www.senat.fr/rap/r20-199-1/r20-199-11.pdf",
                           "27bfb9b14b419f14878f6193029395906aba9cfbe40d20aa5a51490279bc6d77"),
+    # Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), 68 pages.
+    "DE_1921798.pdf": ("https://dserver.bundestag.de/btd/19/217/1921798.pdf",
+                       "361bc1853bf4966fe86f38120015ebef806997eef1c56511fa0a369fe814ba78"),
+    # Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/19047 (7 May 2020), 8 pages.
+    "DE_1919047.pdf": ("https://dserver.bundestag.de/btd/19/190/1919047.pdf",
+                       "ff185159c6f0ff16f5bbe12c631450eadaeec5135aa416f57d405b82542f59fb"),
 }
 BE_ANNEX5_PAGES = (326, 549)
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
@@ -70,4 +76,6 @@ if __name__ == "__main__":
     be_annex5(CACHE / "BE_55K1394002.pdf")
     print("wrote data/sources/dac_ppe/BE_annex5.txt")
     full_text(CACHE / "FR_r20-199-11.pdf", "data/sources/dac_ppe/FR_senat_r20-199-11.txt")
+    full_text(CACHE / "DE_1921798.pdf", "data/sources/dac_ppe/DE_btd_19-21798.txt")
+    full_text(CACHE / "DE_1919047.pdf", "data/sources/dac_ppe/DE_btd_19-19047.txt")
     print("wrote data/sources/dac_ppe/FR_senat_r20-199-11.txt")

@@ -1,0 +1,185 @@
+{
+  "standard_version": "1.1",
+  "case": {
+    "case_id": "DE",
+    "t0_event_id": "who_pheic",
+    "t0_institution": "World Health Organization (IHR Emergency Committee)",
+    "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
+    "alternative_t0": [
+      "who_pandemic"
+    ],
+    "response_scale": "German federal government (BMG and federal procurement offices); acts of the Länder and KVs are context",
+    "start_rule": "First federal purchase order or contract for PPE for general supply; inquiries, options and tenders excluded",
+    "end_point": "Länder and Kassenärztliche Vereinigungen",
+    "inclusion_rules": {
+      "firm_order": "First federal purchase order or contract for PPE for general supply",
+      "binding_act": "First legally binding federal act concerning the PPE response",
+      "dedicated_funding": "First funding legally earmarked for PPE",
+      "delivery": "First physical delivery of federally procured PPE to the Länder or the KVs",
+      "institutionalisation": "First permanent body created for the hazard"
+    },
+    "observation_window": {
+      "start": "2020-01-01",
+      "end": "2020-06-30",
+      "reason": "First wave; opens 1 Jan so that pre-t0 events can be context (docs/DAC_PPE_CODING.md §5)"
+    },
+    "source_pool": {
+      "searched": [
+        "Bundestag Drucksache 19/21798 (full, 68 pp.)",
+        "Bundestag Drucksache 19/19047 (full, 8 pp.)",
+        "Bundestag Drucksachen 19/19676, 19/20303, 19/19713, 19/19409, 19/18924, 19/21098 (scanned for dated PPE statements; none used)",
+        "bundesregierung.de 'Beschaffung durch den Bund' (7 May 2020; no first-delivery date)",
+        "Deutsches Ärzteblatt 27 Mar 2020 (secondary, context)"
+      ],
+      "search_date": "2026-10-28",
+      "not_accessed": [
+        "EU TRIS notification 2020/0104/D (search requires JavaScript)",
+        "Bundesanzeiger text of the export order",
+        "BMG procurement reports (Beschaffungsberichte) to the Bundestag",
+        "Sudhof report (not used: marked 'VS – Nur für den Dienstgebrauch'; Adrian's decision)"
+      ],
+      "case_selection_reason": "Manuscript case; no official reconstruction exists (manuscript §3.1)"
+    },
+    "coding": {
+      "coders": 1,
+      "agreement": null,
+      "rules_fixed_before_coding": true
+    },
+    "computation": {
+      "code": "emo/dac_standard.py"
+    },
+    "identification": "Not testable: no federal order is dated, and no delivery is linked to an order in the public sources."
+  },
+  "events": [
+    {
+      "event_id": "who_pheic",
+      "sublayer": "validation",
+      "date_status": "exact",
+      "description": "WHO declares a Public Health Emergency of International Concern (not in the Bundestag answers; cited from the Belgian chronology, rule §5 Germany a)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt)",
+      "source_type": "primary",
+      "date_earliest": "2020-01-30",
+      "date_latest": "2020-01-30"
+    },
+    {
+      "event_id": "who_pandemic",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "WHO declares a pandemic (alternative t0)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 363, row 51 (CRIV K001, De Raedt)",
+      "source_type": "primary",
+      "date_earliest": "2020-03-11",
+      "date_latest": "2020-03-11"
+    },
+    {
+      "event_id": "no_federal_stock",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Federal government: stockpiling of protective material for a pandemic is a task of the Länder ('Gleiches gilt für die Bevorratung von Schutzmaterialien im Pandemiefall'); no federal stock at t0",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/19047 (7 May 2020), PDF p. 2",
+      "source_type": "primary",
+      "date_earliest": "2020-05-07",
+      "date_latest": "2020-05-07"
+    },
+    {
+      "event_id": "procurement_start",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Federal procurement of PPE begins through the procurement offices of BMVg, BMF and BMI ('Seit 28. Februar 2020 wurde zunächst … beschafft'); dates the start of procurement, not an individual order",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 2",
+      "source_type": "primary",
+      "date_earliest": "2020-02-28",
+      "date_latest": "2020-02-28"
+    },
+    {
+      "event_id": "first_order_federal",
+      "sublayer": "firm_order",
+      "date_status": "window",
+      "description": "First federal firm order of PPE for the Länder and KVs. No individual order is dated in the public sources; window from the start of federal procurement (28 Feb) to the latest bound of the first delivery (27 Apr) (rule §5 Germany b)",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 2 and p. 8",
+      "source_type": "primary",
+      "date_earliest": "2020-02-28",
+      "date_latest": "2020-04-27",
+      "source_wording": "'Seit 28. Februar 2020 wurde zunächst über die Beschaffungsämter von BMVg, BMF und BMI beschafft. Kurze Zeit später begann die Auslieferung … an die Länder, die Kassenzahnärztliche Bundesvereinigung und Kassenärztlichen Vereinigungen' (p. 2); 'Zu folgenden Fällen erfolgten Warnmeldungen an alle Empfänger (Länder/ KVen): I. 27. April 2020' (p. 8)"
+    },
+    {
+      "event_id": "export_ban",
+      "sublayer": "binding_act",
+      "date_status": "exact",
+      "description": "German order restricting the export of medical protective equipment (cited from the Belgian chronology: 'Interdiction d'exportation à partir de l'Allemagne pour certains matériels médicaux'; rule §5 Germany a)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 1031 (CRIV K038-2, Geens)",
+      "source_type": "primary",
+      "date_earliest": "2020-03-04",
+      "date_latest": "2020-03-04"
+    },
+    {
+      "event_id": "bmg_own_procurement",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Federal ministry of health starts procuring PPE itself, in addition to the federal procurement offices",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 2",
+      "source_type": "primary",
+      "date_earliest": "2020-03-09",
+      "date_latest": "2020-03-09"
+    },
+    {
+      "event_id": "logistics_concept",
+      "sublayer": "context",
+      "date_status": "window",
+      "description": "Formal commissioning of the logistics provider (Fiege) by agreement of a logistics concept on 24 and 25 March",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 14",
+      "source_type": "primary",
+      "date_earliest": "2020-03-24",
+      "date_latest": "2020-03-25",
+      "source_wording": "'Eine förmliche Beauftragung erfolgte durch Vereinbarung eines Logistikkonzepts am 24. und 25. März 2020'"
+    },
+    {
+      "event_id": "open_house_programme",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Federal procurement programme commissioned since 27 March 2020",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 11",
+      "source_type": "primary",
+      "date_earliest": "2020-03-27",
+      "date_latest": "2020-03-27"
+    },
+    {
+      "event_id": "aerzteblatt_report",
+      "sublayer": "context",
+      "date_status": "exact",
+      "description": "Press report: a federal delivery of protective equipment already handed out via the Kassenärztliche Vereinigung to practices in Baden-Württemberg (according to the Land ministry). Secondary source, context only (rule §5 Germany c)",
+      "source": "Deutsches Ärzteblatt, 'Coronakrise: Erstes Schutzmaterial erreicht die Ärzte', 27 March 2020, https://www.aerzteblatt.de/news/coronakrise-erstes-schutzmaterial-erreicht-die-aerzte-49100b20-c0c8-448b-8ceb-f4f6d1d6b0b1 (accessed 2026-10-28)",
+      "source_type": "secondary",
+      "date_earliest": "2020-03-27",
+      "date_latest": "2020-03-27"
+    },
+    {
+      "event_id": "del_laender_kv",
+      "sublayer": "delivery",
+      "date_status": "window",
+      "description": "First delivery of federally procured PPE to the Länder and the KVs ('Kurze Zeit später begann die Auslieferung'); window from the start of procurement to the first warning notice to recipients about masks already in their stores (rule §5 Germany b)",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), PDF p. 2 and p. 8",
+      "source_type": "primary",
+      "date_earliest": "2020-02-28",
+      "date_latest": "2020-04-27",
+      "source_wording": "'Seit 28. Februar 2020 wurde zunächst über die Beschaffungsämter von BMVg, BMF und BMI beschafft. Kurze Zeit später begann die Auslieferung … an die Länder, die Kassenzahnärztliche Bundesvereinigung und Kassenärztlichen Vereinigungen' (p. 2); 'Zu folgenden Fällen erfolgten Warnmeldungen an alle Empfänger (Länder/ KVen): I. 27. April 2020' (p. 8)",
+      "end_point": "Länder and Kassenärztliche Vereinigungen"
+    },
+    {
+      "event_id": "funding_none",
+      "sublayer": "dedicated_funding",
+      "date_status": "missing",
+      "description": "No funding legally earmarked for PPE found in the two Bundestag answers (federal budget documents not searched)",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), and Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/19047 (7 May 2020), searched in full",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "institution_none",
+      "sublayer": "institutionalisation",
+      "date_status": "missing",
+      "description": "No permanent body for the hazard created within the window found in the two Bundestag answers",
+      "source": "Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/21798 (21 Aug 2020), and Deutscher Bundestag, Antwort der Bundesregierung, Drucksache 19/19047 (7 May 2020), searched in full",
+      "source_type": "primary"
+    }
+  ]
+}

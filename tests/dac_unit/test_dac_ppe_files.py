@@ -99,3 +99,41 @@ def test_french_citations_match_their_pages():
     bad = [(k, p, s) for k, v in FR_PHRASES.items() for p, s in v
            if s not in pages[p] or p not in cited(sources[k])]
     assert not bad, bad
+
+
+# F8.3: each German citation is checked by a verbatim phrase on its cited page of the committed text.
+DE_PHRASES = {
+    "who_pheic": [("BE_annex5.txt", 342, "Urgence de santé publique de portée internationale")],
+    "who_pandemic": [("BE_annex5.txt", 363, "L'OMS déclare la pandémie")],
+    "no_federal_stock": [("DE_btd_19-19047.txt", 2, "Gleiches gilt für die Bevorratung von Schutzmaterialien im Pandemiefall")],
+    "procurement_start": [("DE_btd_19-21798.txt", 2, "Seit 28. Februar 2020 wurde zunächst über die Beschaffungsämter")],
+    "first_order_federal": [("DE_btd_19-21798.txt", 2, "Seit 28. Februar 2020"), ("DE_btd_19-21798.txt", 8, "I. 27. April 2020")],
+    "export_ban": [("BE_annex5.txt", 358, "Interdiction d'exportation à partir de l'Allemagne")],
+    "bmg_own_procurement": [("DE_btd_19-21798.txt", 2, "ab dem 9. März 2020 zur Intensivierung")],
+    "logistics_concept": [("DE_btd_19-21798.txt", 14, "Logistikkonzepts am 24. und 25. März 2020")],
+    "open_house_programme": [("DE_btd_19-21798.txt", 11, "seit dem 27. März 2020 beauftragten")],
+    "del_laender_kv": [("DE_btd_19-21798.txt", 2, "Kurze Zeit später begann die Auslieferung"),
+                       ("DE_btd_19-21798.txt", 8, "Häufig waren diese Waren noch in den Lagern der Empfänger")],
+}
+
+
+def _pages(fname):
+    import re
+    text = (D.parent / "sources/dac_ppe" / fname).read_text(encoding="utf-8")
+    parts = re.split(r"===== PDF page (\d+) =====\n", text)[1:]
+    return {int(a): re.sub(r"\s+", " ", b).replace("- ", "") for a, b in zip(parts[::2], parts[1::2], strict=True)}
+
+
+def test_german_citations_match_their_pages():
+    rows = json.loads((D / "DE.json").read_text(encoding="utf-8"))["events"]
+    cited = {e["event_id"] for e in rows if e["date_status"] != "missing" and e["source_type"] == "primary"}
+    assert cited == set(DE_PHRASES), cited ^ set(DE_PHRASES)
+    src = {e["event_id"]: e["source"] for e in rows}
+    cache: dict[str, dict[int, str]] = {}
+    bad = []
+    for k, items in DE_PHRASES.items():
+        for fname, page, phrase in items:
+            pages = cache.setdefault(fname, _pages(fname))
+            if phrase not in pages[page] or f"p. {page}" not in src[k]:
+                bad.append((k, fname, page, phrase))
+    assert not bad, bad

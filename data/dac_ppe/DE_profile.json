@@ -1,0 +1,58 @@
+{
+  "standard_version": "1.1",
+  "case_id": "DE",
+  "t0_event_id": "who_pheic",
+  "end_point": "Länder and Kassenärztliche Vereinigungen",
+  "missing": [
+    "dedicated_funding",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {},
+  "identification_note": "Not testable: no federal order is dated, and no delivery is linked to an order in the public sources.",
+  "profiles": [
+    {
+      "reading": {},
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 29,
+            "max_days": 88
+          },
+          "first_event_ids": [
+            "first_order_federal"
+          ],
+          "n_events": 1
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 34,
+            "max_days": 34
+          },
+          "first_event_ids": [
+            "export_ban"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 29,
+            "max_days": 88
+          },
+          "first_event_ids": [
+            "del_laender_kv"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": -59,
+        "max_days": 59
+      },
+      "secondary_end_points": {},
+      "identification": {}
+    }
+  ]
+}
