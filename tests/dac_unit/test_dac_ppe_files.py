@@ -270,13 +270,17 @@ def test_cited_pages_reads_each_document_separately():
 
 # F8.7: Belgian citations added from the hearing records and the report's main text (Annex 5 rows are checked above).
 DOC_KEYS.update({"BE_criv_K022.txt": "CRIV 55 K022", "BE_criv_K040.txt": "CRIV 55 K040",
-                 "BE_report_pp270-285.txt": "main report"})
+                 "BE_report_pp270-285.txt": "main report", "BE_mb_2020-03-23_ed2.txt": "Moniteur belge"})
 BE_ADDED = {
     "order_3M_ffp2": [("BE_criv_K040.txt", 12, "Daarnaast ging er diezelfde dag een order buiten van 500.000 FFP2-maskers"),
                       ("BE_criv_K040.txt", 16, "FFP2-maskers die besteld werden op 31 januari"),
                       ("BE_criv_K022.txt", 4, "op 4 maart bij de firma 3M de eerste bestellingen werden geplaatst voor FFP2-maskers")],
     "del_3M_ffp2": [("BE_criv_K022.txt", 4, "pas worden geleverd vanaf 27 maart")],
-    "binding_act_ar_30apr": [("BE_report_pp270-285.txt", 274, "l’arrêté royal du 30 avril 2020"),
+    "am_23mar_sale": [("BE_mb_2020-03-23_ed2.txt", 11, "[C − 2020/40774]"),
+                      ("BE_mb_2020-03-23_ed2.txt", 13, "La vente au détail des équipements de protection individuelle et des biocides suivants est uniquement autorisée aux officines agréées"),
+                      ("BE_mb_2020-03-23_ed2.txt", 13, "1° masques FFP2"),
+                      ("BE_mb_2020-03-23_ed2.txt", 13, "Bruxelles, le 23 mars 2020. N. MUYLLE")],
+    "ar_30apr_information": [("BE_report_pp270-285.txt", 274, "l’arrêté royal du 30 avril 2020"),
                              ("BE_report_pp270-285.txt", 274, "stocks de matériel de protection individuelle"),
                              ("BE_report_pp270-285.txt", 281, "(M.B. 06.05.2020)")],
 }

@@ -27,14 +27,15 @@
    "searched": [
     "Chambre des représentants, DOC 55 1394/002, Annexe 5 (chronologie), PDF pp. 326-437 (French part), fetched by scripts/fetch_dac_ppe_sources.py, sha256 3a71e63d...",
     "Hearing records CRIV 55 K022 (12 Feb 2021 AM) and K040 (19 Apr 2021), full (F8.7)",
-    "Chamber report DOC 55 1394/002 main text, searched for PPE decrees (F8.7)"
+    "Chamber report DOC 55 1394/002 main text, searched for PPE decrees (F8.7)",
+    "Moniteur belge 23 March 2020, 2nd edition (supplied by Adrian, F8.7)"
    ],
    "search_date": "2026-10-28",
    "not_accessed": [
     "hearing records CRIV K0xx cited by Annex 5",
     "Moniteur belge",
     "federal budget documents",
-    "Moniteur belge (eJustice CAPTCHA): ministerial decree of 23 March 2020 on the sale of PPE"
+    "Moniteur belge editions other than 23 March 2020 ed. 2 (eJustice CAPTCHA)"
    ],
    "case_selection_reason": "Official reconstruction available (manuscript §3.1)"
   },
@@ -352,23 +353,22 @@
    "end_point": "hospitals (providers)"
   },
   {
-   "event_id": "binding_act_ar_30apr",
-   "sublayer": "binding_act",
-   "date_status": "window",
-   "description": "First binding federal act concerning PPE between t0 (no sourced lower bound, rule §2) and the arrêté royal of 30 April 2020 on information flows including hospital stocks of personal protective equipment (M.B. 06.05.2020); an earlier ministerial decree of 23 March 2020 is known only from a secondary source (rule §5 Belgium d b)",
+   "event_id": "ar_30apr_information",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Royal decree on information flows: hospitals report COVID-19 patients, treatment capacity and stocks of personal protective equipment (M.B. 06.05.2020); a later binding act (rule §5 Belgium e)",
    "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), main report, PDF p. 274 and p. 281 (footnote 96)",
    "source_type": "primary",
-   "date_latest": "2020-04-30",
-   "source_wording": "'l’arrêté royal du 30 avril 2020 concernant un flux d’information correct et en temps voulu sur les chiffres de patients COVID-19, la capacité de traitement dans les hôpitaux et les stocks de matériel de protection individuelle' (p. 274)",
-   "date_earliest": "2020-01-30"
+   "date_earliest": "2020-04-30",
+   "date_latest": "2020-04-30"
   },
   {
    "event_id": "am_23mar_sale",
-   "sublayer": "context",
+   "sublayer": "binding_act",
    "date_status": "exact",
-   "description": "Ministerial decree restricting the sale of certain medical devices and PPE (FFP2/FFP3) to authorised pharmacies on prescription; Moniteur belge text not opened (CAPTCHA); secondary source, context only (rule §5 Belgium d b)",
-   "source": "Allen & Overy, 'Belgium: COVID-19 (Coronavirus) measures affecting the life sciences sector', https://www.allenovery.com/en-gb/global/blogs/life-science/belgium-covid-19-coronavirus-measures-affecting-the-life-sciences-sector (accessed 2026-10-28)",
-   "source_type": "secondary",
+   "description": "Ministerial decree (Economy): retail sale of FFP2 and FFP3 masks, protective aprons, goggles and masks, and gloves restricted to licensed pharmacies on prescription (Art. 3), in force on publication the same day (Art. 7); only this Moniteur edition was opened, so an earlier federal PPE act is not excluded (rule §5 Belgium e)",
+   "source": "Moniteur belge, 23 March 2020, 2nd edition, arrêté ministériel du 23 mars 2020 (SPF Economie, C − 2020/40774), p. 17611 (data/sources/dac_ppe/BE_mb_2020-03-23_ed2.pdf, supplied by Adrian 2026-10-28), PDF p. 11 (title, number), p. 13 (Art. 3, Art. 7, signature)",
+   "source_type": "primary",
    "date_earliest": "2020-03-23",
    "date_latest": "2020-03-23"
   },
