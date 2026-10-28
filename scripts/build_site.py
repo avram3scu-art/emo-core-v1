@@ -33,7 +33,7 @@ NOT_MEASURED = [
     ("GWI levels", "GWI timing passed on hurricane landfalls, but its threshold failed cross-article calibration, so no GWI level is a measurement."),
     ("Long-range self-model fidelity", "Tested for significance (section 5): EIA energy forecasts beat 'no change' only at 3 months, "
                                        "EIA industrial-production forecasts at no horizon; the SPF beats it up to 2-4 quarters."),
-    ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their held-out tests; v0.4 waits for data. "
+    ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their tests on reserved historical cases (known outcomes, not blind); v0.4 waits for data. "
                      "The ledger below records forecasts only; none has resolved."),
     ("DAC beyond two cases", "Ozone vs climate only on this page; DAC event dates are hand-coded by one coder and not refreshed automatically."),
     ("Prediction outside hurricanes", "τ_I is measured on one forecasting system (NHC Atlantic track errors), not on collective prediction in general."),

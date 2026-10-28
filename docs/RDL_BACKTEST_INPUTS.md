@@ -1,5 +1,7 @@
 # RDL backtest inputs (committed before the first run)
 
+**Evidence class (added 28 Oct 2026, fix session F6): pre-registered on known history, not blind.** The cases' outcomes were known to the author and Claude when the protocol, inputs and engine were written. "Held-out" below is the word used at the time; it means a reserved historical case kept out of development, not a blind test. The only blind RDL test is the forecast ledger (`docs/RDL_FORECAST_LEDGER.md`).
+
 Rules first, then values. Each value is set by the rule, not by judgement of the outcome. Where the source is dated after the decision date, or unverified, it is flagged. The held-out case (leaded petrol) is not prepared here.
 
 ## A. Problem-structure inputs

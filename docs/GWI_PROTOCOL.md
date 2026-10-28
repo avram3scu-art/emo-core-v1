@@ -107,7 +107,9 @@ H = hit share of event windows; F = hit share of control windows; one-sided Fish
 3. placebo not enriched: p_placebo ≥ 0.05.
 
 **FAIL** otherwise (including no ignitions at all). Condition 3 failing means the ignitions track
-something Wikipedia-wide, not the hazard. **Not testable** only under the conditions in §2.1 and §3.
+something Wikipedia-wide, not the hazard.
+
+**Note added 28 Oct 2026 (fix session F6; audit 2026-10-26b S4; no change to the recorded verdict).** Condition 3 treated a non-significant placebo result (p_placebo = 0.061, §7) as evidence that the placebo is not enriched. That inference is invalid: failing to reject is not evidence of no effect, and with 21 events the placebo test had little power to detect enrichment. The Fisher tests also treat windows as independent although ignitions cluster in time (audit 2026-10-26, #5), so all three p-values are optimistic. The PASS therefore rests on condition 2 (p = 2.3e-13, large enough that clustering does not change it), not on condition 3. **Any future GWI test will:** (a) test the difference directly: the test set must be enriched significantly more than the placebo set (one-sided test of H_test − H_placebo against a block-permutation null), instead of asking the placebo test to be non-significant; (b) if a "no placebo effect" claim is wanted, state an equivalence bound in advance (e.g. placebo hit share within 0.05 of its control rate) and test it; (c) compute p-values from a null that keeps the clustering in time (block permutation of windows), not from Fisher's independence assumption; (d) treat the H ≥ 0.5 threshold as a descriptive floor, with the decision carried by (a). **Not testable** only under the conditions in §2.1 and §3.
 
 Reported without weight in the verdict: H and F for all-year controls; the number of ignition
 days; k_min and the expected number of false ignitions from `compute_gwi`.

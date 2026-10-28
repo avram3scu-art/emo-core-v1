@@ -1,5 +1,7 @@
 # RDL v0.3 protocol (pre-registration)
 
+**Evidence class (added 28 Oct 2026, fix session F6): pre-registered on known history, not blind.** The cases' outcomes were known to the author and Claude when the protocol, inputs and engine were written. "Held-out" below is the word used at the time; it means a reserved historical case kept out of development, not a blind test. The only blind RDL test is the forecast ledger (`docs/RDL_FORECAST_LEDGER.md`).
+
 Status: written and committed before any v0.3 code exists. RDL v0.2 (engine frozen at 2c44071) passed its two development cases and failed its held-out case (see RDL_BACKTEST_PROTOCOL.md). v0.3 is a new model and needs new held-out cases.
 
 ## What changes, and why

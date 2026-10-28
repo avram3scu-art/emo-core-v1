@@ -1,9 +1,11 @@
 # RDL v0.4 protocol (pre-registration, before any data is received)
 
+**Evidence class (added 28 Oct 2026, F6):** if run, this test is **pre-registered on known history, not blind**: the regimes' effectiveness scores are published and partly known to the author and Claude. The only blind RDL test is the forecast ledger.
+
 Status: written 2026-10-20, after requesting the Oslo-Seattle (OSP) and International Regimes Database (IRD) data, before receiving or seeing any coded value. Variable names and recodes are taken from the OSP replication variable list (ISR.Replic-file.var-OSP.pdf, Underdal's former UiO page), which documents the data used in Breitmeier, Underdal & Young (2011), *International Studies Review* 13(4):579-605.
 
 ## Why v0.4
-RDL v0.2 and v0.3 failed their held-out tests (RDL_BACKTEST_PROTOCOL.md, RDL_V03_PROTOCOL.md). The missing ingredients (decision rules, veto power, malignancy of the problem) are the core variables of the regime-effectiveness literature (Miles et al. 2002; Breitmeier, Young & Zürn 2006). v0.4 takes its variables from that literature and its inputs from coders independent of the EMO authors.
+RDL v0.2 and v0.3 failed their tests on reserved historical cases (RDL_BACKTEST_PROTOCOL.md, RDL_V03_PROTOCOL.md; pre-registered on known history, not blind). The missing ingredients (decision rules, veto power, malignancy of the problem) are the core variables of the regime-effectiveness literature (Miles et al. 2002; Breitmeier, Young & Zürn 2006). v0.4 takes its variables from that literature and its inputs from coders independent of the EMO authors.
 
 ## What is not new
 Testing problem malignancy and institutional capacity against regime effectiveness is what Miles et al. (2002) and Breitmeier, Underdal & Young (2011) did. This test checks whether EMO's tractability score reproduces their kind of result. It is a calibration of EMO's tool, not a new finding about regimes.

@@ -1,5 +1,7 @@
 # RDL backtest protocol (pre-registration)
 
+**Evidence class (added 28 Oct 2026, fix session F6): pre-registered on known history, not blind.** The cases' outcomes were known to the author and Claude when the protocol, inputs and engine were written. "Held-out" below is the word used at the time; it means a reserved historical case kept out of development, not a blind test. The only blind RDL test is the forecast ledger (`docs/RDL_FORECAST_LEDGER.md`).
+
 Status: written and committed **before** any backtest run. Changes after the first run must be logged below with the reason.
 
 ## Question

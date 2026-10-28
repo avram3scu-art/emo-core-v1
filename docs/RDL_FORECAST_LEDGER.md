@@ -1,5 +1,7 @@
 # RDL forecast ledger (prospective test)
 
+**Evidence class (added 28 Oct 2026, F6): pre-registered blind.** The outcomes were unknown when the forecasts were registered (2026-10-20) and deposited on Zenodo. This ledger is the only blind test of RDL; the backtest and v0.3 tests used historical cases with known outcomes.
+
 The only test of RDL whose outcomes nobody knows when the forecast is made.
 
 - Ledger: data/rdl_forecast_ledger.csv. Append-only: entries are never edited; a revised forecast gets a new id and keeps the old one.
