@@ -91,3 +91,12 @@ Both files validate. The year-level precision of both warning dates widens each 
 **Date rule.** The date is the one the primary record states: for the article, its publication date in the journal issue; for the report, the date printed on or recorded for it; for a treaty, its adoption (conclusion) date. Precision follows the record: day if the record states the day, month or year otherwise (same window rule as §5). A date is changed in the CSV only if the record contradicts it or makes it more precise; every change is listed in that file.
 
 **Reported either way (not a test).** The new binding_act lag ranges for both cases and whether the §5 exact-day lags (4,828 d; 6,712 d) still lie inside them. Since precision may rise, ranges may narrow; this is a correction of coding, not a result.
+
+**Result (2026-10-28, F7).** All four rows now cite a primary record opened in the session (`data/sources/dac_primary_sources.md`); all four are `primary` in the converted files. One precision changed: Molina & Rowland's article page states "Published: 28 June 1974", so the ozone t0 is an exact day. The Charney record gives only the year 1979, so that window is unchanged. No date changed.
+
+| Case | §5 exact-day lag | binding_act lag range before | after |
+|---|---|---|---|
+| Ozone | 4,828 d | 4,642 – 5,006 d | **4,828 – 4,828 d** (inside: yes) |
+| Climate | 6,712 d | 6,555 – 6,919 d | 6,555 – 6,919 d (inside: yes) |
+
+Still secondary (outside this §): the alternative-t0 and context rows (Vienna Convention, entry-into-force and phase-out rows, UNFCCC, Paris, IPCC FAR without source; Farman 1985 cites the NERC repository record).

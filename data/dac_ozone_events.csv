@@ -1,8 +1,8 @@
 stage,id,date,date_precision,description,source
-diagnostic,molina_rowland_1974,1974-06-28,year_verified,"Molina & Rowland: CFCs destroy stratospheric ozone (Nature 249, 810-812)",https://undsci.berkeley.edu/ozone-depletion-uncovering-the-hidden-hazard-of-hairspray/putting-the-pieces-together/
+diagnostic,molina_rowland_1974,1974-06-28,day_verified,"Molina & Rowland: CFCs destroy stratospheric ozone (Nature 249, 810-812)",https://doi.org/10.1038/249810a0
 diagnostic,farman_1985,1985-05-01,month_verified,"Farman, Gardiner & Shanklin: Antarctic ozone hole (Nature 315, 207-210, doi:10.1038/315207a0)",https://nora.nerc.ac.uk/id/eprint/523353
 policy,vienna_convention,1985-03-22,year_verified,"Vienna Convention for the Protection of the Ozone Layer (framework, no binding cuts)",https://en.wikipedia.org/wiki/Montreal_Protocol
-policy,montreal_protocol,1987-09-16,day_verified,"Montreal Protocol agreed (binding phase-down)",https://en.wikipedia.org/wiki/Montreal_Protocol
+policy,montreal_protocol,1987-09-16,day_verified,"Montreal Protocol agreed (binding phase-down)",https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-2-a&chapter=27&clang=_en
 policy,montreal_in_force,1989-01-01,day_verified,"Montreal Protocol enters into force",https://en.wikipedia.org/wiki/Montreal_Protocol
 policy,developed_cfc_phaseout,1996-01-01,year_verified,"CFC phase-out deadline, developed countries",https://en.wikipedia.org/wiki/Montreal_Protocol
 policy,developing_cfc_phaseout,2010-01-01,year_verified,"CFC phase-out deadline, developing countries",https://en.wikipedia.org/wiki/Montreal_Protocol

@@ -41,13 +41,12 @@
     {
       "event_id": "molina_rowland_1974",
       "sublayer": "validation",
-      "date_status": "window",
-      "date_earliest": "1974-01-01",
-      "date_latest": "1974-12-31",
-      "source_wording": "date given as 1974-06-28, precision 'year_verified' in the original file",
+      "date_status": "exact",
+      "date_earliest": "1974-06-28",
+      "date_latest": "1974-06-28",
       "description": "Molina & Rowland: CFCs destroy stratospheric ozone (Nature 249, 810-812)",
-      "source": "https://undsci.berkeley.edu/ozone-depletion-uncovering-the-hidden-hazard-of-hairspray/putting-the-pieces-together/",
-      "source_type": "secondary"
+      "source": "https://doi.org/10.1038/249810a0",
+      "source_type": "primary"
     },
     {
       "event_id": "farman_1985",
@@ -78,8 +77,8 @@
       "date_earliest": "1987-09-16",
       "date_latest": "1987-09-16",
       "description": "Montreal Protocol agreed (binding phase-down)",
-      "source": "https://en.wikipedia.org/wiki/Montreal_Protocol",
-      "source_type": "secondary"
+      "source": "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-2-a&chapter=27&clang=_en",
+      "source_type": "primary"
     },
     {
       "event_id": "montreal_in_force",
