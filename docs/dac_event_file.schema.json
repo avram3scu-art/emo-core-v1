@@ -12,7 +12,7 @@
   ],
   "properties": {
     "standard_version": {
-      "const": "1.0"
+      "const": "1.1"
     },
     "case": {
       "type": "object",
@@ -29,7 +29,8 @@
         "observation_window",
         "source_pool",
         "coding",
-        "computation"
+        "computation",
+        "identification"
       ],
       "properties": {
         "case_id": {
@@ -84,7 +85,8 @@
             "reason": {
               "type": "string"
             }
-          }
+          },
+          "additionalProperties": false
         },
         "source_pool": {
           "type": "object",
@@ -114,7 +116,8 @@
             "case_selection_reason": {
               "type": "string"
             }
-          }
+          },
+          "additionalProperties": false
         },
         "coding": {
           "type": "object",
@@ -137,7 +140,8 @@
             "rules_fixed_before_coding": {
               "type": "boolean"
             }
-          }
+          },
+          "additionalProperties": false
         },
         "computation": {
           "type": "object",
@@ -148,9 +152,15 @@
             "code": {
               "type": "string"
             }
-          }
+          },
+          "additionalProperties": false
+        },
+        "identification": {
+          "type": "string",
+          "description": "Which explanations each test can eliminate (Table S1, Identification row); 'not applicable' with reason if no paired orders"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "events": {
       "type": "array",
@@ -233,7 +243,12 @@
           },
           "end_point": {
             "type": "string",
-            "description": "Distribution level at which the delivery is recorded"
+            "description": "Distribution level of a delivery, or level of the ordering authority / destination of a firm_order (default: the case's end point). Only on firm_order and delivery."
+          },
+          "good": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Good ordered or delivered (e.g. 'FFP2 respirators'); used for the identification profile. Only on firm_order and delivery."
           }
         }
       }

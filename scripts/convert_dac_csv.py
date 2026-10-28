@@ -59,7 +59,7 @@ def convert(name: str) -> dict:
         events.append(ev)
     t0_year = next(r["date"][:4] for r in rows if r["id"] == spec["t0"])
     return {
-        "standard_version": "1.0",
+        "standard_version": "1.1",
         "case": {
             "case_id": name,
             "t0_event_id": spec["t0"],
@@ -77,6 +77,7 @@ def convert(name: str) -> dict:
                             "case_selection_reason": "Existing EMO comparison case (analysis/dac_compare_ozone_climate.py)"},
             "coding": {"coders": 1, "agreement": None, "rules_fixed_before_coding": False},
             "computation": {"code": "scripts/convert_dac_csv.py; emo/dac_standard.py"},
+            "identification": "Not applicable: no orders or deliveries are coded, so no explanation of delay can be tested.",
         },
         "events": events,
     }

@@ -17,7 +17,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-STANDARD_VERSION = "1.0"
+STANDARD_VERSION = "1.1"
 
 SUBLAYERS = (
     "validation",
@@ -51,7 +51,17 @@ CASE_REQUIRED = {
     "source_pool": dict,
     "coding": dict,
     "computation": dict,
+    "identification": str,
 }
+CASE_KEYS_NESTED = {
+    "observation_window": ("start", "end", "reason"),
+    "source_pool": ("searched", "search_date", "not_accessed", "case_selection_reason"),
+    "coding": ("coders", "agreement", "rules_fixed_before_coding"),
+    "computation": ("code",),
+}
+# Sublayers whose events carry a distribution level (end point); a missing/censored row of these
+# without an end_point refers to the case's end point (D3, D6).
+LEVELLED = ("firm_order", "delivery")
 EVENT_REQUIRED = ("event_id", "sublayer", "date_status", "description", "source", "source_type")
 EVENT_OPTIONAL = (
     "date_earliest",
@@ -60,6 +70,7 @@ EVENT_OPTIONAL = (
     "reading",
     "pairs_with",
     "end_point",
+    "good",
 )
 TOP_KEYS = ("standard_version", "case", "events")
 
@@ -96,6 +107,15 @@ def load_event_file(path: str | Path) -> dict[str, Any]:
 
 
 def _check_case(case: dict[str, Any], errors: list[str]) -> tuple[date | None, date | None]:
+    for key in case:
+        if key not in CASE_REQUIRED:
+            errors.append(f"case: unknown field '{key}'")
+    for key, allowed in CASE_KEYS_NESTED.items():
+        sub = case.get(key)
+        if isinstance(sub, dict):
+            for k in sub:
+                if k not in allowed:
+                    errors.append(f"case.{key}: unknown field '{k}'")
     for key, typ in CASE_REQUIRED.items():
         if key not in case:
             errors.append(f"case: missing '{key}'")
@@ -195,6 +215,31 @@ def _check_event(i: int, ev: Any, errors: list[str], win: tuple[date | None, dat
         errors.append(f"{where}: delivery needs 'end_point'")
     if ev.get("pairs_with") is not None and sub != "delivery":
         errors.append(f"{where}: 'pairs_with' only allowed on delivery")
+    for key in ("end_point", "good"):
+        if ev.get(key) is not None and sub not in LEVELLED:
+            errors.append(f"{where}: '{key}' only allowed on firm_order and delivery")
+        elif ev.get(key) is not None and not _is_text(ev.get(key)):
+            errors.append(f"{where}: '{key}' must be non-empty text")
+
+
+def _layer_key(ev: dict[str, Any], case: dict[str, Any]) -> tuple[str, str | None]:
+    """(sublayer, end point): levelled sublayers default to the case's end point (D3, D6)."""
+    sub = ev["sublayer"]
+    return (sub, ev.get("end_point") or case.get("end_point")) if sub in LEVELLED else (sub, None)
+
+
+def _layer_label(key: tuple[str, str | None]) -> str:
+    return f"sublayer '{key[0]}'" + (f" at '{key[1]}'" if key[1] else "")
+
+
+def _paired_ids(events: list[dict[str, Any]]) -> set[str]:
+    """Event ids of orders named by a delivery's pairs_with, and of deliveries that name one."""
+    ids: set[str] = set()
+    for ev in events:
+        if ev.get("pairs_with"):
+            ids.add(ev["event_id"])
+            ids.add(ev["pairs_with"])
+    return ids
 
 
 def _bounds(ev: dict[str, Any], win_start: date) -> tuple[date, date | None]:
@@ -215,7 +260,7 @@ def validate_event_file(data: Any) -> None:
     for key in data:
         if key not in TOP_KEYS:
             errors.append(f"unknown top-level field '{key}'")
-    if data.get("standard_version") not in (None, STANDARD_VERSION):
+    if "standard_version" in data and data.get("standard_version") != STANDARD_VERSION:
         errors.append(f"standard_version must be '{STANDARD_VERSION}'")
     case, events = data.get("case"), data.get("events")
     if not isinstance(case, dict) or not isinstance(events, list) or not events:
@@ -244,21 +289,25 @@ def validate_event_file(data: Any) -> None:
     t0_rows = by_id.get(case["t0_event_id"])
     if not t0_rows:
         errors.append(f"t0_event_id '{case['t0_event_id']}' not found in events")
-    elif t0_rows[0]["sublayer"] != "validation" or t0_rows[0]["date_status"] not in ("exact", "window"):
-        errors.append("t0 event must be sublayer 'validation' with an exact or window date")
-    dated: set[str] = set()
-    undated: dict[str, str] = {}
+    elif any(r["sublayer"] != "validation" or r["date_status"] not in ("exact", "window") for r in t0_rows):
+        errors.append("t0 event must be sublayer 'validation' with an exact or window date (every reading)")
+    paired_ids = _paired_ids(events)
+    dated: set[tuple[str, str | None]] = set()
+    undated: dict[tuple[str, str | None], str] = {}
     for ev in events:
+        lkey = _layer_key(ev, case)
         if ev["date_status"] in ("missing", "censored"):
-            if ev["sublayer"] in undated:
-                errors.append(f"sublayer '{ev['sublayer']}' coded missing/censored twice")
-            undated[ev["sublayer"]] = ev["date_status"]
+            if ev["event_id"] in paired_ids:
+                continue  # an identified order or delivery whose date is unknown (D4), not a sublayer-level gap
+            if lkey in undated:
+                errors.append(f"{_layer_label(lkey)} coded missing/censored twice")
+            undated[lkey] = ev["date_status"]
         else:
-            dated.add(ev["sublayer"])
-    for sub in dated & set(undated):
-        errors.append(f"sublayer '{sub}' is both dated and {undated[sub]}")
+            dated.add(lkey)
+    for lkey in dated & set(undated):
+        errors.append(f"{_layer_label(lkey)} is both dated and {undated[lkey]}")
     rules = case["inclusion_rules"]
-    for sub in (dated | set(undated)) & set(PROFILE_SUBLAYERS):
+    for sub in {k[0] for k in dated | set(undated)} & set(PROFILE_SUBLAYERS):
         if not _is_text(rules.get(sub)):
             errors.append(f"case.inclusion_rules: no rule for sublayer '{sub}'")
     win_start = win[0] or date.min
@@ -296,18 +345,42 @@ def _first(rows: list[dict[str, Any]], win_start: date) -> tuple[date, date | No
     return earliest, (min(latests) if latests else None)
 
 
+def _undated_label(ev: dict[str, Any], case: dict[str, Any]) -> str:
+    sub, ep = _layer_key(ev, case)
+    return sub if ep in (None, case["end_point"]) else f"{sub} @ {ep}"
+
+
+def _spread(rows: list[dict[str, Any]], win_start: date) -> dict[str, int | None]:
+    """Range of the spread (latest minus earliest) of the rows' dates over all consistent dates.
+
+    min: the dates pushed as close together as their bounds allow; max: as far apart (None = open).
+    """
+    b = [_bounds(r, win_start) for r in rows]
+    earliest_hi = max(x[0] for x in b)
+    latest = [x[1] for x in b]
+    known = [x for x in latest if x is not None]
+    lo = max(0, (earliest_hi - min(known)).days) if known else 0
+    hi = (max(known) - min(x[0] for x in b)).days if len(known) == len(b) else None
+    return {"min_days": lo, "max_days": hi}
+
+
 def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
     """Validate, then return the DAC profile. Never returns a scalar summary."""
     validate_event_file(data)
     case, events = data["case"], data["events"]
+    primary_ep = case["end_point"]
     win_start = _parse_date(case["observation_window"]["start"])
     assert win_start is not None  # guaranteed by validation
+    paired_ids = _paired_ids(events)
     contested: dict[str, list[str]] = {}
     for ev in events:
         if ev.get("reading") is not None:
             contested.setdefault(ev["event_id"], []).append(ev["reading"])
     ids = sorted(contested)
     combos = [dict(zip(ids, c, strict=True)) for c in itertools.product(*(sorted(contested[i]) for i in ids))] or [{}]
+
+    def ep_of(ev: dict[str, Any]) -> str | None:
+        return _layer_key(ev, case)[1]
 
     profiles: list[dict[str, Any]] = []
     for combo in combos:
@@ -320,8 +393,8 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
         sublayers: dict[str, Any] = {}
         for sub in PROFILE_SUBLAYERS:
             rows = [ev for ev in dated if ev["sublayer"] == sub]
-            if sub == "delivery":
-                rows = [ev for ev in rows if ev["end_point"] == case["end_point"]]
+            if sub in LEVELLED:
+                rows = [ev for ev in rows if ep_of(ev) == primary_ep]
             if rows:
                 first = _first(rows, win_start)
                 sublayers[sub] = {
@@ -336,33 +409,69 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
             {
                 "order_id": d["pairs_with"],
                 "delivery_id": d["event_id"],
+                "order_end_point": ep_of(orders[d["pairs_with"]]),
                 "end_point": d["end_point"],
+                "good": d.get("good") or orders[d["pairs_with"]].get("good"),
                 "interval": _lag_range(_bounds(orders[d["pairs_with"]], win_start), _bounds(d, win_start)),
             }
             for d in deliveries if d.get("pairs_with") in orders
         ]
-        primary = [d for d in deliveries if d["end_point"] == case["end_point"]]
-        unpaired: dict[str, int | None] | None = None
-        if orders and primary:
-            unpaired = _lag_range(_first(list(orders.values()), win_start), _first(primary, win_start))
-        secondary = sorted({d["end_point"] for d in deliveries} - {case["end_point"]})
+        undatable = []
+        for d in (ev for ev in chosen if ev["sublayer"] == "delivery" and ev.get("pairs_with")):
+            o_rows = [ev for ev in chosen if ev["event_id"] == d["pairs_with"]]
+            if d["date_status"] in ("missing", "censored"):
+                why = f"delivery date {d['date_status']}"
+            elif not o_rows or all(o["date_status"] in ("missing", "censored") for o in o_rows):
+                why = "order date " + (o_rows[0]["date_status"] if o_rows else "missing")
+            else:
+                continue
+            undatable.append({"order_id": d["pairs_with"], "delivery_id": d["event_id"], "reason": why})
+
+        def unpaired_at(ep: str, orders: dict[str, Any] = orders,
+                        deliveries: list[dict[str, Any]] = deliveries) -> dict[str, int | None] | None:
+            o = [x for x in orders.values() if ep_of(x) == ep]
+            dl = [x for x in deliveries if x["end_point"] == ep]
+            return _lag_range(_first(o, win_start), _first(dl, win_start)) if o and dl else None
+
+        secondary = sorted({d["end_point"] for d in deliveries} - {primary_ep})
+        goods: dict[str, list[dict[str, Any]]] = {}
+        for pr in paired:
+            goods.setdefault(pr["good"] or "(no good given)", []).append(orders[pr["order_id"]])
+        identification = {}
+        for g, olist in sorted(goods.items()):
+            uniq = list({o["event_id"]: o for o in olist}.values())
+            spread = _spread(uniq, win_start)
+            identification[g] = {
+                "n_paired_orders": len(uniq),
+                "order_date_spread": spread,
+                # Proposition 1: >= 2 paired orders of one good on different dates are needed to
+                # separate decision-limited from supply-limited delay.
+                "can_separate_decision_from_supply": len(uniq) >= 2 and (spread["min_days"] or 0) > 0,
+            }
         profiles.append({
             "reading": combo,
             "sublayers": sublayers,
             "paired_order_to_delivery": paired,
-            "unpaired_first_order_to_first_delivery": unpaired,
+            "undatable_pairs": undatable,
+            "unpaired_first_order_to_first_delivery": unpaired_at(primary_ep),
             "secondary_end_points": {
-                ep: _lag_range(t0, _first([d for d in deliveries if d["end_point"] == ep], win_start))
+                ep: {
+                    "delivery_lag_from_t0": _lag_range(t0, _first([d for d in deliveries if d["end_point"] == ep], win_start)),
+                    "unpaired_first_order_to_first_delivery": unpaired_at(ep),
+                }
                 for ep in secondary
             },
+            "identification": identification,
         })
+    undated_rows = [ev for ev in events if ev["date_status"] in ("missing", "censored") and ev["event_id"] not in paired_ids]
     return {
         "standard_version": STANDARD_VERSION,
         "case_id": case["case_id"],
         "t0_event_id": case["t0_event_id"],
-        "end_point": case["end_point"],
-        "missing": sorted(ev["sublayer"] for ev in events if ev["date_status"] == "missing"),
-        "censored": sorted(ev["sublayer"] for ev in events if ev["date_status"] == "censored"),
+        "end_point": primary_ep,
+        "missing": sorted(_undated_label(ev, case) for ev in undated_rows if ev["date_status"] == "missing"),
+        "censored": sorted(_undated_label(ev, case) for ev in undated_rows if ev["date_status"] == "censored"),
         "contested_events": {k: sorted(v) for k, v in contested.items()},
+        "identification_note": case["identification"],
         "profiles": profiles,
     }

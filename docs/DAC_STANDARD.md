@@ -1,4 +1,4 @@
-# DAC standard v1.0: event files, validator, profile
+# DAC standard v1.1: event files, validator, profile
 
 Turns the minimum reporting standard of the DAC manuscript into a machine-checked format.
 
@@ -7,21 +7,22 @@ Turns the minimum reporting standard of the DAC manuscript into a machine-checke
 - Example (synthetic, not data): `docs/dac_event_file_example.json`
 - Tests: `tests/dac_unit/test_dac_standard.py`
 
-**Source of the fields.** The reporting-standard table of the DAC manuscript as last revised on 20 Oct 2026 (`manuscript_v2_anon.md`, where it is numbered Table 3; an earlier draft numbered it Table 4 and lacked the end-point and pairing rows). The table text is in `docs/sources/dac_manuscript_reporting_standard.md`; the manuscript itself is not yet in the repo.
+**Source of the fields.** v1.0 (26 Oct 2026) followed the reporting-standard table of an earlier manuscript version (`docs/sources/dac_manuscript_reporting_standard.md`). v1.1 (28 Oct 2026, fix session F7) follows Table S1 of the final manuscript "Decision or Supply?" (`docs/sources/dac_paper/Decision_or_Supply_supporting_information.docx`, supplied by Adrian in F1), which adds the **Identification** row, and fixes the validator gaps D1–D6 of `docs/AUDIT_2026-10-27.md`. v1.0 files are rejected; `scripts/convert_dac_csv.py` writes v1.1.
 
 ## 1. Table field → where it lives
 
 | Manuscript field | In the event file | Checked by the validator |
 |---|---|---|
-| Validation (t0) | `case.t0_event_id`, `t0_institution`, `t0_rule`, `alternative_t0` | t0 event exists, is sublayer `validation`, has an exact or window date |
+| Validation (t0) | `case.t0_event_id`, `t0_institution`, `t0_rule`, `alternative_t0` | t0 event exists, is sublayer `validation`, every reading has an exact or window date |
 | Response scale | `case.response_scale` | present |
 | Start rule | `case.start_rule` | present |
-| End point | `case.end_point`; `end_point` on every dated delivery | present; deliveries at other levels are reported as secondary end points |
-| Pairing | `pairs_with` on a delivery = `event_id` of the firm order it fulfils | target is a `firm_order`; delivery cannot end before its order can start; paired and unpaired intervals reported separately |
+| End point | `case.end_point`; `end_point` on every dated delivery; optional `end_point` (level) on a firm order, default the case's | present; deliveries and orders at other levels are reported as secondary end points; intervals compare orders and deliveries of the same level |
+| Pairing | `pairs_with` on a delivery = `event_id` of the firm order it fulfils | target is a `firm_order`; delivery cannot end before its order can start; paired and unpaired intervals reported separately; a pair whose order or delivery date is missing is listed as undatable |
+| Identification | `good` on firm orders and deliveries; `case.identification`: which explanations each test can eliminate | profile per good: number of paired orders, spread of their order dates, and whether separating decision-limited from supply-limited delay is possible (≥ 2 paired orders on different dates; Proposition 1 of the manuscript) |
 | Inclusion rules | `case.inclusion_rules` {sublayer: rule} | every sublayer used (dated, missing or censored) has a rule |
-| Event file | `events[]`: `event_id`, `sublayer`, `date_status`, dates, `description`, `source`, `source_type` | required, enumerated, no unknown fields |
+| Event file | `events[]`: `event_id`, `sublayer`, `date_status`, dates, `description`, `source`, `source_type` | required, enumerated, no unknown fields (also none in `case` and its sub-objects); `standard_version` must be "1.1" |
 | Imprecise and contested dates | `date_status` window / lower_bound / upper_bound with `source_wording`; contested dates as rows sharing `event_id` with distinct `reading` | wording required; window ordered; readings distinct, ≥ 2, same sublayer |
-| Missing and censored | rows with `date_status` `missing` or `censored`, no dates | never imputed; a sublayer cannot be both dated and missing/censored |
+| Missing and censored | rows with `date_status` `missing` or `censored`, no dates | never imputed; keyed by sublayer **and end point** for orders and deliveries, so a dated EU-level delivery and a missing national delivery can coexist; a sublayer at one level cannot be both dated and missing/censored; an order or delivery named in a pair may be missing (event-level, listed as an undatable pair, not as a missing sublayer) |
 | Source pool | `case.source_pool`: `searched`, `search_date`, `not_accessed`, `case_selection_reason` | present, date valid |
 | Coding | `case.coding`: `coders`, `agreement`, `rules_fixed_before_coding` | coders ≥ 1; flag is boolean |
 | Computation | `case.computation.code` | present |
@@ -38,18 +39,20 @@ The observation window comes from the older draft's table; kept because censorin
 `compute_profile` validates first, then returns, for each combination of readings of contested dates:
 
 - per sublayer: lag from t0 to its first event as `{min_days, max_days}` over all dates consistent with windows and bounds (`null` = open end), the first event id(s), the number of events;
-- paired order-to-delivery intervals, one per paired delivery;
-- first order to first delivery, labelled unpaired;
-- lags to deliveries at secondary end points.
+- per sublayer, orders and deliveries counted at the case's end point only;
+- paired order-to-delivery intervals, one per paired delivery, with the order's and the delivery's level and the good;
+- undatable pairs (order or delivery date missing or censored), with the reason;
+- first order to first delivery at the case's end point, labelled unpaired;
+- per secondary end point: lag to its first delivery and its own unpaired order-to-delivery interval;
+- identification per good (see table).
 
-Missing and censored sublayers are listed separately at the top level. No weighted sum, index or composite is computed; a test fails if any numeric field other than `min_days`, `max_days` or `n_events` appears.
+Missing and censored sublayers are listed separately at the top level (`sublayer @ level` when the level is not the case's). No weighted sum, index or composite is computed; a test fails if any numeric field other than `min_days`, `max_days`, `n_events` or `n_paired_orders` appears.
 
 **Range rule.** For a first event with bounds [e, l] and t0 with bounds [a, b]: lag ∈ [e − b, l − a]. An upper-bound-only date is floored at the window start; a lower-bound-only date has an open maximum.
 
 ## 4. Not covered (reasons)
 
 - Agreement between coders is stored as text, not computed. Reason: scope (session 11).
-- Existing `data/dac_ozone_events.csv` and `data/dac_climate_events.csv` are not in this format. Reason: scope (one task per session).
 - Counter-measure direction (restricting or easing) is in `description`, not a field. Reason: not attempted; add a field if a case needs it.
 - The JSON Schema cannot express the cross-field rules; only the validator enforces them. A test keeps the schema's enums and required lists equal to the validator's.
 
