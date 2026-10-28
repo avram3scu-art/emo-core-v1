@@ -140,7 +140,7 @@
    "event_id": "first_delivery_regions",
    "sublayer": "delivery",
    "date_status": "window",
-   "description": "First deliveries of protective equipment from Socialstyrelsen to regions and municipalities: non-zero bar for 2020-mar in Figure 8.2 (rule §5 Sweden b)",
+   "description": "First deliveries of protective equipment from Socialstyrelsen to regions and municipalities: March 2020 bar of Figure 8.2, about 1.07 million items, all PPE (decomposed by scripts/se_figure82_march.py; rule §5 Sweden b)",
    "source": "SOU 2021:89, Sverige under pandemin, volym 1 (Coronakommissionen), PDF p. 338, Figure 8.2",
    "source_type": "primary",
    "date_earliest": "2020-03-01",
