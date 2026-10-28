@@ -63,42 +63,23 @@ def test_belgian_citations_point_to_existing_rows():
 
 
 # F8.2: each French citation is checked by a verbatim phrase on its cited PDF page.
+FRS = "FR_senat_r20-199-11.txt"
 FR_PHRASES = {
-    "who_pheic": [(30, "30/01 L’OMS déclare l’USSPI"), (37, "l’USPPI est enfin déclarée le 30 janvier")],
-    "stock_at_t0": [(105, "33 millions de masques pédiatriques")],
-    "order_30jan_mission": [(114, "le 30 janvier 2020"), (115, "équipes médicales qui se sont rendues à Wuhan")],
-    "order_ffp2_28m": [(115, "Le lendemain, Santé publique France est saisie"), (146, "du 7 février (28,4 millions de FFP2)"),
-                       (123, "validée le 19 février")],
-    "order_ffp2_170m": [(116, "25 février (170 millions"), (146, "25 février (170,5 millions")],
-    "pharmacies_volunteer": [(141, "volontaires dès le 18 février"), (142, "dès le 18 février")],
-    "channel_announced": [(49, "le 2 mars 2020 que les professionnels de santé libéraux ont été informés")],
-    "decree_requisition": [(131, "Décret n° 2020-190 du 3 mars 2020")],
-    "decree_requisition_13mar": [(131, "Décret n° 2020-247 du 13 mars 2020")],
-    "funding_spf_11mar": [(352, "260 millions d’euros")],
-    "del_pharmacies": [(142, "pour une première livraison de masques aux officines"), (141, "pendant la semaine du 17 mars")],
-    "prefect_requisition": [(134, "Le 5 avril 2020"), (135, "préfet du Haut-Rhin")],
+    "who_pandemic": [("BE_annex5.txt", 363, "L'OMS déclare la pandémie")],
+    "who_pheic": [(FRS, 30, "30/01 L’OMS déclare l’USSPI"), (FRS, 37, "l’USPPI est enfin déclarée le 30 janvier")],
+    "stock_at_t0": [(FRS, 105, "33 millions de masques pédiatriques")],
+    "order_30jan_mission": [(FRS, 114, "le 30 janvier 2020"), (FRS, 115, "équipes médicales qui se sont rendues à Wuhan")],
+    "order_ffp2_28m": [(FRS, 115, "Le lendemain, Santé publique France est saisie"), (FRS, 146, "du 7 février (28,4 millions de FFP2)"),
+                       (FRS, 123, "validée le 19 février")],
+    "order_ffp2_170m": [(FRS, 116, "25 février (170 millions"), (FRS, 146, "25 février (170,5 millions")],
+    "pharmacies_volunteer": [(FRS, 141, "volontaires dès le 18 février"), (FRS, 142, "dès le 18 février")],
+    "channel_announced": [(FRS, 49, "le 2 mars 2020 que les professionnels de santé libéraux ont été informés")],
+    "decree_requisition": [(FRS, 131, "Décret n° 2020-190 du 3 mars 2020")],
+    "decree_requisition_13mar": [(FRS, 131, "Décret n° 2020-247 du 13 mars 2020")],
+    "funding_spf_11mar": [(FRS, 352, "260 millions d’euros")],
+    "del_pharmacies": [(FRS, 142, "pour une première livraison de masques aux officines"), (FRS, 141, "pendant la semaine du 17 mars")],
+    "prefect_requisition": [(FRS, 134, "Le 5 avril 2020"), (FRS, 135, "préfet du Haut-Rhin")],
 }
-
-
-def test_french_citations_match_their_pages():
-    import re
-    text = (D.parent / "sources/dac_ppe/FR_senat_r20-199-11.txt").read_text(encoding="utf-8")
-    parts = re.split(r"===== PDF page (\d+) =====\n", text)[1:]
-    pages = {int(a): re.sub(r"\s+", " ", b) for a, b in zip(parts[::2], parts[1::2], strict=True)}
-    rows = json.loads((D / "FR.json").read_text(encoding="utf-8"))["events"]
-    sen = {e["event_id"] for e in rows if e["source"].startswith("Sénat") and e["date_status"] != "missing"}
-    sources: dict[str, str] = {}
-    for e in rows:  # readings share an event_id: combine their sources
-        sources[e["event_id"]] = sources.get(e["event_id"], "") + " " + e["source"].split("tome I,")[-1]
-    assert set(sen) == set(FR_PHRASES), set(sen) ^ set(FR_PHRASES)
-    def cited(src: str) -> set[int]:
-        nums: set[int] = set()
-        for a, b in re.findall(r"(\d+)(?:-(\d+))?", src):
-            nums.update(range(int(a), int(b or a) + 1))
-        return nums
-    bad = [(k, p, s) for k, v in FR_PHRASES.items() for p, s in v
-           if s not in pages[p] or p not in cited(sources[k])]
-    assert not bad, bad
 
 
 # F8.3: each German citation is checked by a verbatim phrase on its cited page of the committed text.
@@ -128,21 +109,6 @@ def _pages(fname):
     return {int(a): re.sub(r"\s+", " ", b).replace("- ", "") for a, b in zip(parts[::2], parts[1::2], strict=True)}
 
 
-def test_german_citations_match_their_pages():
-    rows = json.loads((D / "DE.json").read_text(encoding="utf-8"))["events"]
-    cited = {e["event_id"] for e in rows if e["date_status"] != "missing" and e["source_type"] == "primary"}
-    assert cited == set(DE_PHRASES), cited ^ set(DE_PHRASES)
-    src = {e["event_id"]: e["source"] for e in rows}
-    cache: dict[str, dict[int, str]] = {}
-    bad = []
-    for k, items in DE_PHRASES.items():
-        for fname, page, phrase in items:
-            pages = cache.setdefault(fname, _pages(fname))
-            if phrase not in pages[page] or f"p. {page}" not in src[k]:
-                bad.append((k, fname, page, phrase))
-    assert not bad, bad
-
-
 # F8.4: each Dutch citation is checked by a verbatim phrase on its cited page (text kept in reading order).
 NL_PHRASES = {
     "who_pheic": [("BE_annex5.txt", 342, "Urgence de santé publique de portée internationale")],
@@ -165,21 +131,6 @@ NL_PHRASES = {
     "lch_start": [("NL_vws_tijdlijn_pbm.txt", 14, "Op 23 maart gaat het LCH van start")],
     "vat_zero_masks": [("NL_vws_tijdlijn_pbm.txt", 32, "Het nultarief zal worden toegepast met ingang van 25 mei")],
 }
-
-
-def test_dutch_citations_match_their_pages():
-    rows = json.loads((D / "NL.json").read_text(encoding="utf-8"))["events"]
-    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
-    assert cited == set(NL_PHRASES), cited ^ set(NL_PHRASES)
-    src = {e["event_id"]: e["source"] for e in rows}
-    cache: dict[str, dict[int, str]] = {}
-    bad = []
-    for k, items in NL_PHRASES.items():
-        for fname, page, phrase in items:
-            pages = cache.setdefault(fname, _pages(fname))
-            if phrase not in pages[page] or f"p. {page}" not in src[k]:
-                bad.append((k, fname, page, phrase))
-    assert not bad, bad
 
 
 # F8.5: each Swedish citation is checked by a verbatim phrase on its cited PDF page of SOU 2021:89.
@@ -210,21 +161,6 @@ SE_PHRASES = {
 }
 
 
-def test_swedish_citations_match_their_pages():
-    rows = json.loads((D / "SE.json").read_text(encoding="utf-8"))["events"]
-    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
-    assert cited == set(SE_PHRASES), cited ^ set(SE_PHRASES)
-    src = {e["event_id"]: e["source"] for e in rows}
-    cache: dict[str, dict[int, str]] = {}
-    bad = []
-    for k, items in SE_PHRASES.items():
-        for fname, page, phrase in items:
-            pages = cache.setdefault(fname, _pages(fname))
-            if phrase not in pages[page] or f"p. {page}" not in src[k]:
-                bad.append((k, fname, page, phrase))
-    assert not bad, bad
-
-
 # F8.6: each EU citation is checked by a verbatim phrase on its cited page (the EP photo record has no pages: p. 1).
 R402, D414, SEN, EPF = "EU_32020R0402.txt", "EU_32020D0414.txt", "FR_senat_r20-199-11.txt", "EU_ep_photo_P043686.txt"
 EU_PHRASES = {
@@ -249,16 +185,61 @@ EU_PHRASES = {
 }
 
 
-def test_eu_citations_match_their_pages():
-    rows = json.loads((D / "EU.json").read_text(encoding="utf-8"))["events"]
-    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
-    assert cited == set(EU_PHRASES), cited ^ set(EU_PHRASES)
-    src = {e["event_id"]: e["source"] for e in rows}
+# F8.7: one check for every case. A phrase must stand on its cited page, and that page must be cited in the
+# part of the source field that names the same document (not "p. N" anywhere in the field).
+DOC_KEYS = {
+    "BE_annex5.txt": "Annexe 5",
+    "FR_senat_r20-199-11.txt": "Sénat",
+    "DE_btd_19-21798.txt": "Drucksache 19/21798",
+    "DE_btd_19-19047.txt": "Drucksache 19/19047",
+    "DE_tris_2020-0104-D.txt": "TRIS",
+    "NL_vws_tijdlijn_pbm.txt": "Feitenreconstructie",
+    "SE_sou_2021_89.txt": "SOU 2021:89",
+    "EU_32020R0402.txt": "2020/402",
+    "EU_32020D0414.txt": "2020/414",
+    "EU_ep_photo_P043686.txt": "photo record",
+}
+CASE_PHRASES = {"FR": FR_PHRASES, "DE": DE_PHRASES, "NL": NL_PHRASES, "SE": SE_PHRASES, "EU": EU_PHRASES}
+
+
+def cited_pages(source: str, key: str) -> set[int]:
+    """Pages cited for the document named by `key`: the source text from each mention of `key`
+    to the next mention of another document."""
+    import re
+    others = [k for k in DOC_KEYS.values() if k != key]
+    pages: set[int] = set()
+    for m in re.finditer(re.escape(key), source):
+        seg = source[m.end():]
+        cut = [seg.find(o) for o in others if seg.find(o) >= 0]
+        seg = seg[:min(cut)] if cut else seg
+        for a, b in re.findall(r"\bpp?\.\s*(\d+)(?:\s*-\s*(\d+))?(?:\s*and\s*p\.\s*\d+)?", seg):
+            pages.update(range(int(a), int(b or a) + 1))
+        pages.update(int(x) for x in re.findall(r"\band\s+(?:PDF\s+)?p\.\s*(\d+)", seg))
+    return pages
+
+
+@pytest.mark.parametrize("case", sorted(CASE_PHRASES))
+def test_citations_match_their_pages(case):
+    phrases = CASE_PHRASES[case]
+    rows = json.loads((D / f"{case}.json").read_text(encoding="utf-8"))["events"]
+    sources: dict[str, str] = {}
+    for e in rows:  # readings share an event_id: combine their sources
+        if e["source_type"] == "primary" and "searched" not in e["source"]:
+            sources[e["event_id"]] = sources.get(e["event_id"], "") + " ; " + e["source"]
+    assert set(sources) == set(phrases), set(sources) ^ set(phrases)
     cache: dict[str, dict[int, str]] = {}
     bad = []
-    for k, items in EU_PHRASES.items():
+    for k, items in phrases.items():
         for fname, page, phrase in items:
             pages = cache.setdefault(fname, _pages(fname))
-            if phrase not in pages[page] or f"p. {page}" not in src[k]:
+            if phrase not in pages.get(page, "") or page not in cited_pages(sources[k], DOC_KEYS[fname]):
                 bad.append((k, fname, page, phrase))
     assert not bad, bad
+
+
+def test_cited_pages_reads_each_document_separately():
+    src = "Chambre, Annexe 5, PDF p. 353, row 360 and PDF p. 354, row 44; Regulation (EU) 2020/402, PDF p. 1, recital 3"
+    assert cited_pages(src, "Annexe 5") == {353, 354}
+    assert cited_pages(src, "2020/402") == {1}
+    assert cited_pages("Sénat, tome I, PDF pp. 141-142", "Sénat") == {141, 142}
+    assert cited_pages("SOU 2021:89, PDF p. 371, p. 336 and p. 34", "SOU 2021:89") == {371, 336, 34}
