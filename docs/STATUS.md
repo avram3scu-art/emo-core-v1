@@ -8,7 +8,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
-- **Adrian must do (manuscript):** record his check of the coded dates; accept or reject the F9–F13 tracked changes; open JCCM's author guidelines (fee route, AI clause).
+- **Adrian must do:** nothing now (manuscript steps deferred: no submission planned, 28 Oct).
 
 ## Fix session F14 (2026-10-28, 16:52–16:58) — final editor-style review
 
@@ -28,6 +28,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Review and Adrian's answer:** recommended close; Adrian "Close F14. I didn't use ChatGPT, only you." (16:58).
 
 **Next:** session 10 (mpox); the manuscript resumes after Adrian's three steps.
+
+**Decision (Adrian, 28 Oct 17:02):** no plan to submit the manuscript now; the F-sessions served to improve EMO in the intended order. The three manuscript steps (check of coded dates, acceptance of F9–F13 changes, JCCM guidelines) and the declaration correction are deferred until he decides to pursue submission. Next: session 10.
 
 ## Fix session F13 (2026-10-28, 16:14–16:51) — manuscript figures
 
