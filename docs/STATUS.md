@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F8 (PPE case recoded, gap-filled and compared with the manuscript: `docs/DAC_PPE_COMPARISON.md`). Next: session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (115), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`); an editor-style review of the manuscript when Adrian chooses. Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (117), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F9 (2026-10-28, 15:09–15:30) — manuscript data-only revision
+
+**Done when met: yes.** Revised .docx and change list committed (afdc3e7); every changed number traces to `data/dac_ppe/` or `analysis/dac_ppe_crosscase.py`; claims check 0 unjustified; CI 40704881563.
+
+**Done**
+- `analysis/dac_ppe_crosscase.py` (exploratory): first-delivery spread BE/DE/NL 5–11 d; order spread 2–16 (reading B) / 31–49; unpaired intervals; Spearman BE/DE/NL/SE lower −0.80 to −0.40, upper +0.80 to +1.00 (with FR −0.90 to −0.50, +0.90 to +1.00); search checked against brute force; reproduces §4.2 exactly (0.37; 98.0 vs 50.7; 0.15; 1.06); Table 2 counts.
+- `scripts/manuscript_f9_edits.py` writes `docs/sources/dac_paper/Decision_or_Supply_manuscript_F9_revised.docx` with 29 tracked changes (author "Claude"): abstract, §1, §3.1, §3.2, Tables 2, 3, 5, §4.1–4.3, §5, §6.2, §7, §8, data availability, four references; validated (schema, all edits tracked), rendered and checked. Change list: `docs/MANUSCRIPT_F9_CHANGES.md`.
+
+**Open (each with reason)**
+- Argument-level consequences: under reading B orders (2–16 d) are not more dispersed than deliveries (5–11 d); France not shown to deliver first; Spearman upper end +0.80 under reading B. Reason: Adrian's decision (outside data-only scope); for an editor-style review session.
+- Figures 1–2 must be redrawn from the new files. Reason: scope; figures not in the repo.
+- Table 5 narrow columns wrap long cells. Reason: cosmetic; next layout pass.
+
+**Review and Adrian's answer:** recommended close; Adrian "Close F9" (15:30).
+
+**Next:** session 10 (mpox); editor-style review of the manuscript when Adrian chooses.
 
 ## Fix session F8.8 (2026-10-28, 14:14–15:07) — PPE comparison with the manuscript
 
