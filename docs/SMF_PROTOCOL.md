@@ -402,3 +402,29 @@ from 40% to 26%. The two forecasters were not compared over the same period
 with the same change definition, and that is the design flaw of §12. What
 survives: on IP since 2010, neither forecaster beats "no change" at a year
 (EIA pre-registered, SPF exploratory). A forecaster effect is not shown.
+
+## 13. Significance of the deciding condition: Diebold–Mariano re-analysis (pre-registration, fix session F5)
+
+**DRAFT for Adrian's approval, not yet registered (2026-10-28); no computation done.** **Evidence class: pre-registered on known history.** The data and the MSE ratios of every sample below are already known (§8–§12): 10 of the 15 samples have MSE_model < MSE_zero, 5 do not. This test can only confirm or withdraw passes; it cannot be blind.
+
+**Question.** In §8–§12 every PASS required MSE_model < MSE_zero, a point comparison with no significance test, on overlapping forecasts (audit 2026-10-26b, S1). Is the model's advantage over "no change" larger than chance?
+
+**Samples (15, all primary samples, committed data, no refetch):** §8 EIA CO2 h = 3, 6, 12 months; §10 EIA electricity h = 3, 6, 12; §11 SPF unemployment h = 1, 2, 4 quarters; §12 EIA industrial production h = 3, 6, 12; §12 SPF industrial production h = 1, 2, 4. Series built exactly as in `analysis/smf_steo_leads.py`, `smf_steo_elec.py`, `smf_spf.py`, `smf_ip.py` (same files, same drops, same 2020–21 exclusion). §7 and §9 are not included (the F5 prompt names §8, §10, §11, §12).
+
+**Statistic.** Loss differential d_t = (model_t − realised_t)² − realised_t² (squared error of the model minus that of "no change" = 0). Diebold–Mariano statistic DM = mean(d) / sqrt(V̂/n), V̂ = Newey–West (Bartlett) long-run variance of d with L lags; Harvey–Leybourne–Newbold correction HLN = DM · sqrt((n + 1 − 2k + k(k − 1)/n) / n), k = L + 1; one-sided p = P(t_{n−1} < HLN) (H1: model loss smaller). The 2020–21 gap is ignored (samples are treated as one sequence, as in §8–§12).
+
+**Lags L (deviation from the F5 prompt's h − 1, with reason).** The "no change" error is the whole realised change, so d_t overlaps for as long as the realised change spans, not only for the forecast lead. EIA monthly samples: the realised value is a 12-month change and the forecast is made about h + 2 months before data for T exist, so L = max(11, h + 1): 11, 11, 13. SPF quarterly samples: realised = R(T) − R(q − 1) spans h + 1 quarters, so L = h: 1, 2, 4. With L = h − 1 the variance would be understated and p too small.
+
+**Multiple testing.** Holm step-down over all 15 one-sided p-values, family-wise α = 0.05.
+
+**Pass / fail per sample.** DM-PASS if Holm-adjusted p < 0.05. The new verdict of each §8–§12 sample = its old circular-shift conditions (p < 0.0167, SMF > 0) **and** DM-PASS; the old MSE point condition is replaced. Samples with MSE_model ≥ MSE_zero cannot pass (DM ≥ 0) and stay FAIL.
+
+**Code before run.** `analysis/smf_dm.py`, reusing the series code of the four scripts; unit tests of the DM function on synthetic data (equal-loss null: rejection rate near 5%; a clearly better forecast: rejects) committed with it. Run once on committed data; output `results/smf_dm/result.txt`.
+
+**README and public page, fixed now for each outcome** (one sentence per group: EIA energy = §8 + §10; SPF unemployment = §11; IP = §12):
+- All previously passing horizons of a group DM-PASS → "… track 12-month changes and beat 'no change' at 3–6 months (difference significant, Diebold–Mariano with Holm correction, pre-registered on known history)."
+- Some pass → name only the horizons that pass; add "at the other horizons the model beats 'no change' in MSE, but not significantly."
+- None pass → "… correlate with outcomes at 3–6 months, but no advantage over 'no change' survives a significance test."
+- The README line "the MSE comparison that decides each pass has no significance test" is removed in every case.
+
+**Not part of this test (F5 infrastructure, no hypothesis):** (a) SMF and synergy recorded runs added to the weekly frozen-output check on committed data; (b) M1 guard in `compute_smf`: a KPSS level-stationarity test on each input (lag int(4(n/100)^{1/4}), 1% critical value 0.739); if either series rejects, a `RuntimeWarning` is raised and `metadata["stationarity"] = "kpss_reject"`; outputs are not changed, so recorded results stay identical. Its unit test reruns the audit probe and requires the warning on independent trends in ≥ 95% of cases and on white noise in ≤ 5%. Whether the guard fires on the 15 recorded inputs is reported, no weight.
