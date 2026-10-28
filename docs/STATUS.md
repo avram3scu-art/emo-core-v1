@@ -4,11 +4,32 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.6 (BE, FR, DE, NL, SE, EU: all six files coded). Next: a gap-filling sitting (page-check fix; BE, DE, SE gaps; EU funding from added sources (allowed by Adrian, 28 Oct)), then the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (113), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.7 (all six PPE files coded; gaps filled or recorded). Next: F8.8, the pre-registered comparison with the manuscript (§4 of `docs/DAC_PPE_CODING.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (115), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.7 (2026-10-28, 13:26–14:13) — PPE gap-filling
+
+**Done when met: yes.** Tightened test passes; four gaps filled or recorded; changed files revalidated, profiles recomputed, committed (d266318, 16da3cb, 34df56b, 411e43d, efd0522, fa9957d); CI 40694120554.
+
+**Done**
+- Phrase tests: one per-document page check for all cases (probes: "p. 34"→"p. 340" and a swapped Annex page now fail).
+- EU funding: amending budgets 1–2/2020 (17 Apr) add funds to a general civil-protection line whose remarks do not name PPE → context; funding stays missing (not fillable from legal acts).
+- SE: SOU 2020:80 → first delivery to regions/municipalities 17–31 Mar (t0 + 47–61 d; was 31–61); order unchanged (Feb).
+- DE: Bundesrechnungshof report to the Enquete-Kommission (12 Dec 2025) and BMG Beschaffungsstab report (4 Apr 2020) → first delivery to Länder/KVs 11–20 Mar (t0 + 41–50 d; was 29–88); first order two readings, A 28 Feb–9 Mar (t0 + 29–39), B 28 Feb–20 Mar (t0 + 29–50).
+- BE: hearing records K022/K040 confirm 3M readings C and A, unresolved (sources added); first binding act = arrêté ministériel 23 Mar 2020 (Moniteur supplied by Adrian; t0 + 53 d; was missing).
+- All added sources listed in `docs/DAC_PPE_CODING.md` §3/§5 with URL, access date, sha256 and reason (Adrian's decision of 28 Oct 13:24).
+- **Claude's mistake:** commit 34df56b pushed with the claims check failing; CI run 40688904036 failed; fixed at once ("interim" added to the ordinal list), recorded.
+
+**Open (each with reason)**
+- An earlier Belgian federal PPE act is not excluded (only the Moniteur of 23 Mar ed. 2 opened; eJustice CAPTCHA). Reason: Adrian's decision whether to search further; low value (binding acts are recorded, not compared across cases).
+- Conventions to state in the comparison: "Mitte" = days 11–20; the audit sentence read as naming the first recipients; German audit copy from the ULB Bonn legal deposit. Reason: method choices, recorded in §5.
+
+**Review and Adrian's answer:** recommended close; Adrian supplied the Moniteur (14:09), then "Close" (14:13).
+
+**Next:** F8.8 — the pre-registered comparison (§4): open the manuscript's Tables 2–5 and Figures 1–2 only after all profiles are confirmed current; report every difference by kind; then session 10.
 
 ## Fix session F8.6 (2026-10-28, 13:12–13:22) — PPE recoding, EU
 
