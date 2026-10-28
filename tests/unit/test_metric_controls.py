@@ -4,6 +4,8 @@ Noise and signal controls for GWI, SMF and information-time.
 Each metric must score (near) zero on pure noise and clearly above zero on
 a planted signal. These are the M = 0 controls of the EMO metrics.
 """
+import warnings
+
 import numpy as np
 import pandas as pd
 
@@ -54,11 +56,18 @@ def test_smf_is_zero_for_unrelated_noise_most_of_the_time():
 
 
 def test_smf_detects_a_model_that_tracks_reality_with_a_lag():
+    # Stationary AR(1) truth (F5, 2026-10-28): the earlier version used a random walk, on which
+    # the circular-shift null is not valid (audit M1), so it did not show what it claimed.
     rng = np.random.default_rng(3)
-    truth = np.cumsum(rng.normal(size=420))
+    e = rng.normal(size=420)
+    truth = np.zeros(420)
+    for i in range(1, 420):
+        truth[i] = 0.5 * truth[i - 1] + e[i]
     model = pd.Series(truth[:400] + 0.5 * rng.normal(size=400))
     realised = pd.Series(truth[7:407])  # model leads reality by 7 steps
-    r = compute_smf(model, realised, max_lag_days=30, n_surrogates=99)
+    with warnings.catch_warnings():
+        warnings.simplefilter("error", RuntimeWarning)  # input must pass the stationarity guard
+        r = compute_smf(model, realised, max_lag_days=30, n_surrogates=99)
     assert r.smf_score > 0.3
     assert r.p_value <= 0.05
 
