@@ -2,6 +2,14 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## Fix session F1 (2026-10-28, 08:34–) — DAC paper facts and files
+
+- Committed with origin and sha256 (`docs/sources/dac_paper/README.md`): Futures submission FUTURES-D-26-00488 (conceptual DAC paper; submitted 17 Apr 2026, desk-rejected 18 Apr 2026); final DAC manuscript "Decision or Supply?" and its Supporting Information (Table S1 with the "Identification" row); Diagnosticity manuscript (not DAC) under `docs/sources/other_papers/`. The earlier JCCM manuscript, attached again, is byte-identical to the committed one.
+- **Submission facts (Adrian, 28 Oct: "1 - NO"):** the DAC/PPE manuscript was **not submitted** to JCCM. README's "JCCM manuscript under review" is false (F2 fixes it). No letter to an editor needed.
+- Final version vs committed one: a rewrite (identification result §2.2, Tables 1, 3, 4 new; profiles become Table 5).
+- Its data statement says the six event files, the Belgian order file and the scripts are public with a persistent identifier: not true today.
+- **Missing (by name):** PPE event files BE, FR, DE, NL, SE, EU; Belgian order file; scripts for Tables 2–5 and Figures 1–2; Figures 1–2; title page of the final version. If not recoverable: F8.
+
 ## Third audit (2026-10-27/28, extra work at Adrian's request)
 
 - `docs/AUDIT_2026-10-27.md` (8573410): every recorded RDL, GWI, SMF and synergy result reproduces from committed data; new gaps D1–D6 (DAC validator; D3 blocks the mpox multi-level case), M1 (SMF null invalid on trending input), K1 (unpinned dependencies), W1 (fix plan stalled while extra work grows; all audit-26b A items open).
