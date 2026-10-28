@@ -1,6 +1,8 @@
+> **Superseded (28 Oct 2026).** This document describes a system that does not exist: no live observatory, dashboard, streaming pipeline or DestinE integration has run, and the a_UIA metric it uses was retired (session 5). Its claims to be "first" were never checked against the literature and are marked [unverified]. What runs today is in [README.md](README.md). Kept for the record; to be rewritten (plan, session 15).
+
 EMO‑Core v1 — The Emergent Mind Observatory
 
-Humanity built instruments to measure the planet. EMO is the first instrument built to measure yourselves.
+Humanity built instruments to measure the planet. EMO is the first [unverified] instrument built to measure yourselves.
 
 ---
 
@@ -24,7 +26,7 @@ It is a measurement failure.
 
 You have no instrument for observing yourselves as a cognitive system.
 
-EMO is the first attempt to build one.
+EMO is the first [unverified] attempt to build one.
 
 ---
 
@@ -60,7 +62,7 @@ Generates structured, testable interventions — not opinions.
 ---
 
 Why This Repository
-This repo contains the first operational prototype of EMO’s computational core.
+This repo contains the first [unverified] operational [false: nothing is operational; see README.md] prototype of EMO’s computational core.
 
 It is not complete.  
 It is not polished.  

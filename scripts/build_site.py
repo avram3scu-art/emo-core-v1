@@ -31,7 +31,8 @@ NOT_MEASURED = [
     ("Attention streams", "Wikipedia pageviews are fetched only for fixed article sets used in GWI tests; GDELT has never been ingested."),
     ("UIA (interface density)", "The a_UIA scalar is retired; UIA is redefined as the He profile and is not yet scored."),
     ("GWI levels", "GWI timing passed on hurricane landfalls, but its threshold failed cross-article calibration, so no GWI level is a measurement."),
-    ("Long-range self-model fidelity", "SMF finds fidelity in EIA and SPF forecasts at 3-6 months; EIA energy forecasts show none at 12 months (section 5)."),
+    ("Long-range self-model fidelity", "SMF finds fidelity in EIA and SPF forecasts at 3-6 months and none for EIA energy at 12 months (section 5); "
+                                       "the MSE comparison that decides each pass has no significance test yet (re-analysis planned)."),
     ("RDL remedies", "Not a validated recommender: v0.2 and v0.3 failed their held-out tests; v0.4 waits for data. "
                      "The ledger below records forecasts only; none has resolved."),
     ("DAC beyond two cases", "Ozone vs climate only on this page; DAC event dates are hand-coded by one coder and not refreshed automatically."),

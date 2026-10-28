@@ -1,3 +1,5 @@
+> **Superseded (28 Oct 2026).** This document describes a system that does not exist: no live observatory, dashboard, streaming pipeline or DestinE integration has run, and the a_UIA metric it uses was retired (session 5). Its claims to be "first" were never checked against the literature and are marked [unverified]. What runs today is in [README.md](../README.md). Kept for the record; to be rewritten (plan, session 15).
+
 # EMO v1.0 – Emergent Mind Observatory  
 ## Horizon Europe / ERC-Oriented Grant Text (Draft)
 
@@ -129,8 +131,8 @@ EMO v1.0 applies UIA to the “Humanity ↔ Earth” interface, turning it into 
 
 **Innovation**
 
-- **First planetary‑scale cognitive observatory:** EMO is the first system to treat humanity as an emergent mind with explicit, operational metrics.   
-- **Universal Interface Action at planetary scale:** UIA has been theorised; EMO provides its first implementation on real data at the scale of civilisation.  
+- **First [unverified] planetary‑scale cognitive observatory:** EMO is the first [unverified] system to treat humanity as an emergent mind with explicit, operational metrics.   
+- **Universal Interface Action at planetary scale:** UIA has been theorised; EMO provides its first [unverified] implementation on real data [false: a_UIA was retired, not implemented] at the scale of civilisation.  
 - **Dual twin framework:** a genuinely new design pattern where digital Earth twins are paired with cognitive twins.  
 - **Early Warning Cognition Index (EWCI):** extends physical early‑warning coverage metrics with cognitive performance and latency.  
 - **Semantic efficiency benchmarking:** M_E/M₀ as a “meaning per joule” metric for planetary stewardship and AI‑assisted governance.

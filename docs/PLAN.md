@@ -124,7 +124,7 @@ Twenty-four sessions in four phases; each ends with something in the repository 
 | 15 | White paper rewrite | "EMO: what runs today", every claim linked to code or data | Editor-style review passed |
 | 16 | Software paper | Journal of Open Source Software submission, after checking its AI policy | Submitted, not on the same day as finished |
 | 17 | Release 1.0 | Tagged release archived on Zenodo; CITATION.cff | DOI resolves |
-| 18 | State of the Mirror 2027 | Short annual report from the live data, with failures included | Every figure reproducible from the repo |
+| 18 | State of the Mirror 2027 | Short annual report from the weekly-run data, with failures included | Every figure reproducible from the repo |
 | 19 | Briefs | One page each for research partners, crisis bodies, funders | Each claim traceable to the report |
 
 ### Phase 4: partners and money (sessions 20–24)
@@ -311,7 +311,7 @@ Done when: the Zenodo DOI for the release resolves.
 ### Session 18: State of the Mirror 2027
 
 ```text
-Session 18 task: first annual report from the live data.
+Session 18 task: first annual report from the weekly-run data.
 Write reports/state_of_the_mirror_2027.md: what the measured pillars show (organismality plane, tau_I, DAC cases, forecast ledger score), what failed and why, and what EMO cannot yet see. Every figure produced by a script in the repo and reproducible from the release. Short: under 3,000 words.
 Done when: every figure regenerates from the repo.
 ```

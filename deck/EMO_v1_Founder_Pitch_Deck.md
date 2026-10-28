@@ -1,3 +1,5 @@
+> **Superseded (28 Oct 2026).** This document describes a system that does not exist: no live observatory, dashboard, streaming pipeline or DestinE integration has run, and the a_UIA metric it uses was retired (session 5). Its claims to be "first" were never checked against the literature and are marked [unverified]. What runs today is in [README.md](../README.md). Kept for the record; to be rewritten (plan, session 15).
+
 # EMO v1.0 – Founder Pitch Deck  
 _A live cognitive layer for Planet Earth_
 
@@ -150,7 +152,7 @@ On a DestinE viewer or EMO dashboard you can see:
 - “High early warning coverage, low behavioural response”  
 - “High model skill, low learning uptake”
 
-**This is the first operational dual twin: Earth system + species mind.**
+**This is the first [unverified] operational [false] dual twin: Earth system + species mind.**
 
 ---
 
@@ -205,7 +207,7 @@ Target users:
 
 ## Slide 10 — Why this is uniquely fundable
 
-**1. First‑of‑kind infrastructure**
+**1. First‑of‑kind [unverified] infrastructure**
 
 - No other system measures **species‑level cognition** with an explicit UIA‑based action functional.  
 

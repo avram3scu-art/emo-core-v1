@@ -177,9 +177,9 @@ RDL v0.1 follows five principles:
 
 ## Status
 
-RDL v0.1 is operational inside the repo and exposed through FastAPI.
+**Corrected 28 Oct 2026 (F2):** RDL v0.1 is not operational. The FastAPI layer (`api/`) was deleted on 26 Oct 2026 (it never ran as a service), and the API tests with it. RDL v0.2 and v0.3 failed their held-out tests; RDL is not a validated recommender (README).
 
-At the time of this documentation update, the subsystem includes API test coverage for:
+At the time of the original documentation, the subsystem had API test coverage for:
 
 - score
 - portfolio

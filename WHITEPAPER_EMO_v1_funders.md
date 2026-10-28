@@ -1,3 +1,5 @@
+> **Superseded (28 Oct 2026).** This document describes a system that does not exist: no live observatory, dashboard, streaming pipeline or DestinE integration has run, and the a_UIA metric it uses was retired (session 5). Its claims to be "first" were never checked against the literature and are marked [unverified]. What runs today is in [README.md](README.md). Kept for the record; to be rewritten (plan, session 15).
+
 # Emergent Mind Observatory v1.0  
 ### Why EMO must run continuously  
 _Funder white paper – November 2025_
@@ -345,4 +347,4 @@ We invite funders and partners to:
 
 - Help us operate EMO v1.0 as a **continuous observatory**, not a one‑off research project.  
 - Integrate EMO with digital twins, early‑warning systems, and planetary‑boundary dashboards as a standard cognitive overlay.  
-- Build, together, the first **planetary‑scale cognitive‑health infrastructure**—an open, UIA‑based ledger that lets humanity see its own mind at work, and steer it towards a safer, more just future.
+- Build, together, the first [unverified] **planetary‑scale cognitive‑health infrastructure**—an open, UIA‑based ledger that lets humanity see its own mind at work, and steer it towards a safer, more just future.

@@ -1,3 +1,5 @@
+> **Superseded (28 Oct 2026).** This document describes a system that does not exist: no live observatory, dashboard, streaming pipeline or DestinE integration has run, and the a_UIA metric it uses was retired (session 5). Its claims to be "first" were never checked against the literature and are marked [unverified]. What runs today is in [README.md](README.md). Kept for the record; to be rewritten (plan, session 15).
+
 Who may benefit from EMO? 
 
 National stakeholders — who and why
