@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.6 (BE, FR, DE, NL, SE, EU: all six files coded). Next: a gap-filling sitting (page-check fix; BE, DE, SE gaps; EU funding if Adrian allows sources outside the reference list), then the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.6 (BE, FR, DE, NL, SE, EU: all six files coded). Next: a gap-filling sitting (page-check fix; BE, DE, SE gaps; EU funding from added sources (allowed by Adrian, 28 Oct)), then the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (113), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
@@ -25,7 +25,9 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Review and Adrian's answer:** recommended no more now, no rule change, page-check fix first in the gap-filling sitting; Adrian "Close" (13:22).
 
-**Next:** gap-filling sitting (page-check fix; BE, DE, SE; EU funding if allowed); then the pre-registered comparison (§4); then session 10.
+**Decision (Adrian, 28 Oct 13:24):** sources outside the manuscript's reference list may be used in the gap-filling sitting, each recorded as an addition (source, URL, access date, reason) in `docs/DAC_PPE_CODING.md` §3 and `docs/RECORD.md`; the comparison reports which items rest on added sources.
+
+**Next:** gap-filling sitting (page-check fix; BE, DE, SE; EU funding from added sources); then the pre-registered comparison (§4); then session 10.
 
 ## Fix session F8.5 (2026-10-28, 11:40–12:10) — PPE recoding, Sweden
 
