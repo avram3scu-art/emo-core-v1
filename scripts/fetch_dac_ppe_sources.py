@@ -38,7 +38,21 @@ SOURCES = {
     # Same sha256 as the copy Adrian supplied on 26 Oct 2026.
     "SE_sou_2021_89.pdf": ("https://regeringen.se/contentassets/e1c4a1033b9042fe96c0b2a3f453ff1d/sverige-under-pandemin-volym-1_webb-1.pdf",
                            "88646b7c4f9f58c3b33e00efac8f843cd3edf591efa342e7976a439d27b9a71b"),
+    # Commission Implementing Regulation (EU) 2020/402 of 14 March 2020 (export authorisation), OJ L 77 I,
+    # 15.3.2020, 7 pages. Reference-list URL https://eur-lex.europa.eu/eli/reg_impl/2020/402/oj answers with a
+    # bot challenge (HTTP 202); the same act is fetched from the Publications Office repository by CELEX number.
+    "EU_32020R0402.pdf": ("cellar:32020R0402",
+                          "d7330ff2a6f7db3c0702bfe5d8e28b223eab38c0fdf5a7a90ccd6288aa09b2ff"),
+    # Commission Implementing Decision (EU) 2020/414 of 19 March 2020 (rescEU medical stockpiling), OJ L 82 I,
+    # 19.3.2020, 5 pages. Same route as above (reference-list URL https://eur-lex.europa.eu/eli/dec_impl/2020/414/oj).
+    "EU_32020D0414.pdf": ("cellar:32020D0414",
+                          "72b65e271343fd18b1ab21d3f6f05da05d2cff4c073974264c16619298d0aa97"),
 }
+# European Parliament Multimedia Centre, photo record P-043686 (25 Apr 2020), URL from the manuscript's
+# reference list. The page is dynamic and behind a bot challenge, so it is rendered with headless Chromium
+# (Playwright) and its visible text is committed; no stable sha256 of the page exists.
+EP_PHOTO_URL = ("https://multimedia.europarl.europa.eu/en/photo/coronavirus-delivery-of-medical-equipment-from-"
+                "resceu-reserve-in-italyon-25-april-2020-ffp2-protecti_20200425_P043686-850895")
 BE_ANNEX5_PAGES = (326, 549)
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
 
@@ -47,6 +61,8 @@ def fetch(name: str, url: str, sha: str) -> Path:
     CACHE.mkdir(parents=True, exist_ok=True)
     out = CACHE / name
     if not out.exists() or hashlib.sha256(out.read_bytes()).hexdigest() != sha:
+        if url.startswith("cellar:"):
+            url = cellar_pdf_url(url.removeprefix("cellar:"))
         # The Chamber's site rejects bare user agents and needs its cookie: browser UA + cookie jar.
         jar = CACHE / "cookies.txt"
         subprocess.run(["curl", "-sS", "-L", "-m", "300", "-A", UA, "-c", str(jar), "-b", str(jar),
@@ -55,6 +71,35 @@ def fetch(name: str, url: str, sha: str) -> Path:
     if got != sha:
         raise SystemExit(f"{name}: sha256 {got} != expected {sha}")
     return out
+
+
+def cellar_pdf_url(celex: str) -> str:
+    """English PDF of an act in the Publications Office repository. Its redirects point to http://, which this
+    environment cannot resolve, so they are followed by hand over https."""
+    url = f"https://publications.europa.eu/resource/celex/{celex}"
+    for _ in range(5):
+        head = subprocess.run(["curl", "-sS", "-o", "/dev/null", "-D", "-", "-H", "Accept: application/pdf",
+                               "-H", "Accept-Language: eng", url], capture_output=True, text=True, check=True).stdout
+        loc = [ln.split(" ", 1)[1].strip() for ln in head.splitlines() if ln.lower().startswith("location:")]
+        if not loc:
+            return url
+        url = loc[0].replace("http://", "https://", 1)
+    raise SystemExit(f"{celex}: too many redirects")
+
+
+def ep_photo_text(out: str) -> None:
+    """Visible text of the EP photo record (title and Info block), rendered with Playwright."""
+    js = (
+        "const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();const p=await b.newPage();"
+        f"await p.goto('{EP_PHOTO_URL}',{{waitUntil:'networkidle',timeout:60000}});await p.waitForTimeout(5000);"
+        "console.log('TITLE: '+await p.title());console.log(await p.innerText('body'));await b.close();})();"
+    )
+    body = subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout
+    lines = body.splitlines()
+    title = lines[0]
+    info = lines[lines.index("Info"):lines.index("Places") + 2] if "Info" in lines else []
+    text = "\n".join([f"Source: {EP_PHOTO_URL}", title, *info]) + "\n"
+    (ROOT / out).write_text(text, encoding="utf-8")
 
 
 def full_text(pdf: Path, out: str, layout: bool = True) -> None:
@@ -93,4 +138,7 @@ if __name__ == "__main__":
     full_text(CACHE / "DE_1919047.pdf", "data/sources/dac_ppe/DE_btd_19-19047.txt")
     full_text(CACHE / "NL_vws_tijdlijn_pbm.pdf", "data/sources/dac_ppe/NL_vws_tijdlijn_pbm.txt", layout=False)
     full_text(CACHE / "SE_sou_2021_89.pdf", "data/sources/dac_ppe/SE_sou_2021_89.txt", layout=False)
-    print("wrote data/sources/dac_ppe/FR_senat_r20-199-11.txt")
+    full_text(CACHE / "EU_32020R0402.pdf", "data/sources/dac_ppe/EU_32020R0402.txt")
+    full_text(CACHE / "EU_32020D0414.pdf", "data/sources/dac_ppe/EU_32020D0414.txt")
+    ep_photo_text("data/sources/dac_ppe/EU_ep_photo_P043686.txt")
+    print("wrote data/sources/dac_ppe/*.txt")

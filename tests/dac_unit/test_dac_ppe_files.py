@@ -123,6 +123,8 @@ def _pages(fname):
     import re
     text = (D.parent / "sources/dac_ppe" / fname).read_text(encoding="utf-8")
     parts = re.split(r"===== PDF page (\d+) =====\n", text)[1:]
+    if not parts:  # a source without pages (rendered web page): the whole text is page 1
+        return {1: re.sub(r"\s+", " ", text)}
     return {int(a): re.sub(r"\s+", " ", b).replace("- ", "") for a, b in zip(parts[::2], parts[1::2], strict=True)}
 
 
@@ -216,6 +218,45 @@ def test_swedish_citations_match_their_pages():
     cache: dict[str, dict[int, str]] = {}
     bad = []
     for k, items in SE_PHRASES.items():
+        for fname, page, phrase in items:
+            pages = cache.setdefault(fname, _pages(fname))
+            if phrase not in pages[page] or f"p. {page}" not in src[k]:
+                bad.append((k, fname, page, phrase))
+    assert not bad, bad
+
+
+# F8.6: each EU citation is checked by a verbatim phrase on its cited page (the EP photo record has no pages: p. 1).
+R402, D414, SEN, EPF = "EU_32020R0402.txt", "EU_32020D0414.txt", "FR_senat_r20-199-11.txt", "EU_ep_photo_P043686.txt"
+EU_PHRASES = {
+    "who_pheic": [("BE_annex5.txt", 342, "Urgence de santé publique de portée internationale")],
+    "who_pandemic": [("BE_annex5.txt", 363, "L'OMS déclare la pandémie")],
+    "jpa_start_communicated": [("BE_annex5.txt", 346, "Communication du début du Joint Procurement")],
+    "jpa_first_tender": [("BE_annex5.txt", 353, "Masques buccaux et autres équipements de protection : la Belgique participe à"),
+                         ("BE_annex5.txt", 354, "Premier joint procurement EPI"),
+                         (R402, 1, "a procurement procedure for personal protective equipment has been launched under the Joint Procurement Agreement")],
+    "de_export_ban": [("DE_tris_2020-0104-D.txt", 1, "Date received : 04/03/2020"),
+                      ("DE_tris_2020-0104-D.txt", 1, "Ban on the export and shipment of goods"),
+                      ("BE_annex5.txt", 358, "Interdiction d'exportation à partir de l'Allemagne")],
+    "reg_2020_402": [(R402, 2, "Without the production of such export authorisation, the exportation is prohibited"),
+                     (R402, 3, "Done at Brussels, 14 March 2020"),
+                     (R402, 3, "shall enter into force on the day of its publication")],
+    "dec_2020_414": [(D414, 1, "of 19 March 2020"),
+                     (D414, 2, "personal protective equipment aimed at combating serious cross-border threats to health should be included in the capacities of rescEU"),
+                     (D414, 3, "Total estimated costs of medical stockpiling rescEU capacities")],
+    "first_resceu_delivery": [(SEN, 400, "La première livraison de masques issue de cette réserve est intervenue le 25 avril 2020"),
+                              (SEN, 400, "à destination de l’Italie, de l’Espagne et de la Croatie"),
+                              (EPF, 1, "On 25 April 2020, FFP2 protective masks from the RescEU Reserve were delivered to Milan, Italy")],
+}
+
+
+def test_eu_citations_match_their_pages():
+    rows = json.loads((D / "EU.json").read_text(encoding="utf-8"))["events"]
+    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
+    assert cited == set(EU_PHRASES), cited ^ set(EU_PHRASES)
+    src = {e["event_id"]: e["source"] for e in rows}
+    cache: dict[str, dict[int, str]] = {}
+    bad = []
+    for k, items in EU_PHRASES.items():
         for fname, page, phrase in items:
             pages = cache.setdefault(fname, _pages(fname))
             if phrase not in pages[page] or f"p. {page}" not in src[k]:

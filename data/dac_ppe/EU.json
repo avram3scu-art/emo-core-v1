@@ -1,0 +1,162 @@
+{
+ "standard_version": "1.1",
+ "case": {
+  "case_id": "EU",
+  "t0_event_id": "who_pheic",
+  "t0_institution": "World Health Organization (IHR Emergency Committee)",
+  "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
+  "alternative_t0": [
+   "who_pandemic"
+  ],
+  "response_scale": "EU institutions (Commission); member-state acts are context, except acts against the EU response (counter_measure)",
+  "start_rule": "First purchase contract for PPE signed by the EU institutions for general supply; tenders (joint procurement) and purchases by rescEU host member states excluded",
+  "end_point": "member states",
+  "inclusion_rules": {
+   "firm_order": "First purchase contract for PPE signed by the EU institutions",
+   "binding_act": "First legally binding EU act concerning the PPE response",
+   "dedicated_funding": "First funding legally earmarked for PPE",
+   "delivery": "First physical delivery of EU-procured or EU-financed PPE to member states",
+   "counter_measure": "Member-state act against the EU response (e.g. export ban)",
+   "institutionalisation": "First permanent body created for the hazard"
+  },
+  "observation_window": {
+   "start": "2020-01-01",
+   "end": "2020-06-30",
+   "reason": "First wave; opens 1 Jan so that pre-t0 events can be context (docs/DAC_PPE_CODING.md §5)"
+  },
+  "source_pool": {
+   "searched": [
+    "Commission Implementing Regulation (EU) 2020/402 (OJ L 77 I; Publications Office, sha256 d7330ff2...)",
+    "Commission Implementing Decision (EU) 2020/414 (OJ L 82 I; Publications Office, sha256 72b65e27...)",
+    "European Parliament photo record P-043686 (rendered page text)",
+    "Sénat rapport no. 199 (2020-2021), tome I (EU section, p. 399-400)",
+    "Belgian Annex 5 (EU rows)",
+    "TRIS notification 2020/0104/D"
+   ],
+   "search_date": "2026-10-28",
+   "not_accessed": [
+    "McEvoy & Ferri (2020) and Boin & Rhinard (2023): secondary, would be context only",
+    "Joint-procurement framework contracts and Commission press releases (not in the manuscript's reference list)",
+    "Commission Implementing Regulation (EU) 2020/426 amending 2020/402 (not in the reference list)"
+   ],
+   "case_selection_reason": "Supranational level of the PPE response (manuscript §3.1)"
+  },
+  "coding": {
+   "coders": 1,
+   "agreement": null,
+   "rules_fixed_before_coding": true
+  },
+  "computation": {
+   "code": "emo/dac_standard.py"
+  },
+  "identification": "Not testable: no EU firm order; the first delivery is not linked to a dated order."
+ },
+ "events": [
+  {
+   "event_id": "who_pheic",
+   "sublayer": "validation",
+   "date_status": "exact",
+   "description": "WHO declares a Public Health Emergency of International Concern (not in the EU sources; cited from the Belgian chronology, rule §5 Germany a)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt)",
+   "source_type": "primary",
+   "date_earliest": "2020-01-30",
+   "date_latest": "2020-01-30"
+  },
+  {
+   "event_id": "who_pandemic",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "WHO declares a pandemic (alternative t0)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 363, row 51 (CRIV K001, De Raedt)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-11",
+   "date_latest": "2020-03-11"
+  },
+  {
+   "event_id": "jpa_start_communicated",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Start of the EU Joint Procurement communicated (as recorded in the Belgian chronology)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 346, row 761 (written answers, SPF Santé publique)",
+   "source_type": "primary",
+   "date_earliest": "2020-02-05",
+   "date_latest": "2020-02-05"
+  },
+  {
+   "event_id": "jpa_first_tender",
+   "sublayer": "context",
+   "date_status": "window",
+   "description": "First EU joint-procurement tender for PPE (a tender, not a firm order; rule §5 EU a); dated 27 Feb (row 360) or 28 Feb (row 44), rows cross-flagged 'Contradict.'; also 'has been launched' per recital 3 of Regulation 2020/402",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 353, row 360 (Nève & Péters, CSS) and PDF p. 354, row 44 (CRIV K001, De Raedt); Commission Implementing Regulation (EU) 2020/402 of 14 March 2020, OJ L 77 I, 15.3.2020, PDF p. 1, recital 3",
+   "source_type": "primary",
+   "date_earliest": "2020-02-27",
+   "date_latest": "2020-02-28",
+   "source_wording": "'la Belgique participe à un achat groupé au niveau européen (Joint Procurement EPI)' (27/02/2020, row 360); 'Premier joint procurement EPI' (28/02/2020, row 44)"
+  },
+  {
+   "event_id": "de_export_ban",
+   "sublayer": "counter_measure",
+   "date_status": "exact",
+   "description": "German order restricting foreign trade in medical protective equipment (ban on export and shipment), notified to the Commission; works against the EU single-market response (rule §5 EU e)",
+   "source": "European Commission, TRIS notification 2020/0104/D (Germany), date received 04/03/2020, PDF p. 1 (data/sources/dac_ppe/DE_tris_2020-0104-D.pdf); also Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 1031 (CRIV K038-2, Geens)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-04",
+   "date_latest": "2020-03-04"
+  },
+  {
+   "event_id": "reg_2020_402",
+   "sublayer": "binding_act",
+   "date_status": "exact",
+   "description": "Commission makes the export of PPE outside the Union subject to an export authorisation; adopted 14 March, in force on publication 15 March for six weeks (rule §5 EU b)",
+   "source": "Commission Implementing Regulation (EU) 2020/402 of 14 March 2020, OJ L 77 I, 15.3.2020, PDF p. 2 (Art. 1) and p. 3 (Art. 3, date of adoption)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-14",
+   "date_latest": "2020-03-14"
+  },
+  {
+   "event_id": "dec_2020_414",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Commission adds medical stockpiling, including PPE, to the rescEU capacities and sets the cost categories for Union financial assistance (no amount; a new capacity, not a new body; rules §5 EU c, f)",
+   "source": "Commission Implementing Decision (EU) 2020/414 of 19 March 2020, OJ L 82 I, 19.3.2020, PDF p. 1 (date), p. 2 (recital 11) and p. 3 (Art. 3c)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-19",
+   "date_latest": "2020-03-19"
+  },
+  {
+   "event_id": "first_resceu_delivery",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "First delivery of masks from the rescEU reserve, to Italy, Spain and Croatia (rule §5 EU d); EP photo record: FFP2 masks from the rescEU reserve (hosted by Romania) delivered to Milan",
+   "source": "Sénat, rapport no. 199 (2020-2021), tome I, PDF p. 400; European Parliament Multimedia Centre, photo record P-043686, 'Coronavirus - Delivery of medical equipment from RescEU Reserve in Italy' (data/sources/dac_ppe/EU_ep_photo_P043686.txt), p. 1",
+   "source_type": "primary",
+   "date_earliest": "2020-04-25",
+   "date_latest": "2020-04-25",
+   "end_point": "member states"
+  },
+  {
+   "event_id": "order_none",
+   "sublayer": "firm_order",
+   "date_status": "missing",
+   "description": "No purchase contract signed by the EU institutions documented in the window; joint-procurement tenders are context and rescEU stock is bought by host member states (Sénat p. 400; rule §5 EU a)",
+   "source": "Regulation 2020/402, Decision 2020/414, Sénat rapport no. 199 p. 400, Belgian Annex 5: searched in full",
+   "source_type": "primary"
+  },
+  {
+   "event_id": "funding_none",
+   "sublayer": "dedicated_funding",
+   "date_status": "missing",
+   "description": "Commission covers 100% of the rescEU stock's costs (Sénat p. 400) but no source dates the commitment; Decision 2020/414 sets cost categories without an amount (rule §5 EU c)",
+   "source": "Decision 2020/414 and Sénat rapport no. 199 p. 400: searched in full",
+   "source_type": "primary"
+  },
+  {
+   "event_id": "institution_none",
+   "sublayer": "institutionalisation",
+   "date_status": "missing",
+   "description": "No permanent body for the hazard created in the window (rescEU medical stockpiling is a new capacity of an existing reserve; rule §5 EU f)",
+   "source": "Decision 2020/414: searched in full",
+   "source_type": "primary"
+  }
+ ]
+}
