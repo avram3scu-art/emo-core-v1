@@ -119,3 +119,13 @@ Per §4.6 the paper may cite the new files for items that agree or whose differe
    - Sweden: first delivery days 47–61.
 4. **Do not cite** the manuscript's "joint procurement ≥ 62" or the national producer's delivery days (184–198) from the new files: the new files contain no dated value for them.
 5. The cross-case statements of the manuscript's §4.3 that depend on Germany's delivery ("within six days of one another", days 46, 51–52 and 51) do not hold with the new files: the first deliveries now fall on day 46 (BE), 41–50 (DE), 51–52 (NL) and 47–61 (SE). Any such sentence must be recomputed from the new profiles before it is used.
+
+## 6. Supporting Information, opened after the comparison (Adrian's decision, 28 Oct 15:04)
+
+The six files were already frozen and the comparison committed (`63ab805`), so opening it could not change the coding.
+
+- **Contents:** `docs/sources/dac_paper/Decision_or_Supply_supporting_information.md` holds only Table S1, the minimum reporting standard. It contains no event files and no sources for single items. It therefore does not name the manuscript's source for any of the four items left as "source not named": Belgium's binding act (day 43), Germany's first delivery (days 51–52), Sweden's lower bound of the first delivery (day 41) and the EU's joint-procurement delivery (≥ 62).
+- **Germany, days 51–52, one further check.** The manuscript's only German press source in its reference list, Deutsches Ärzteblatt of 27 March 2020 ("Coronakrise: Erstes Schutzmaterial erreicht die Ärzte", https://www.aerzteblatt.de/news/coronakrise-erstes-schutzmaterial-erreicht-die-aerzte-49100b20-c0c8-448b-8ceb-f4f6d1d6b0b1, rendered with headless Chromium, accessed 28 Oct 2026), was reread. It states that a federal delivery "wurde … bereits über die Kassenärztlichen Vereinigung (KV) an niedergelassene Ärzte im Land ausgegeben" and that BMG has tried "seit Anfang März" to procure centrally. It gives **no date** for that delivery and does not mention 21 or 22 March. The source of the manuscript's 51–52 is therefore not in the repository, and the difference stays (a)/(b), undecided between them. It cannot be classified (d) without the manuscript's German event file, which was not recovered (F1).
+- **Start rule.** Table S1 excludes "options" from firm commitments, as does §2 of the coding rules. The new Belgian reading B rests on an Annex 5 row worded "met une option sur/commande" ("places an option on/an order"), whose wording allows both. §5 Belgium (b) dated the choice to treat it as a reading. The difference from the manuscript, which treats it as an option, stays (b) and is stated wherever reading B is used.
+
+Result of §6: no item changes kind, no type (d) error is found, and four sources stay unnamed.
