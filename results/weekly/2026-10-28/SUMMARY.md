@@ -44,7 +44,29 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 
 ## Analyses
 
-- `dac_ozone`: unchanged since 2026-10-27
+- `dac_ozone`: changed since 2026-10-27
+
+```diff
+--- 2026-10-27
++++ 2026-10-28
+@@ -1,3 +1,3 @@
+-Warning -> binding policy (Montreal Protocol, 1987-09-16):
+-  molina_rowland_1974     13.2 years  (year_verified)
+-  farman_1985              2.4 years  (month_verified)
++Warning -> binding policy (montreal_protocol, 1987-09-16), days (min-max over consistent dates):
++  molina_rowland_1974     4828- 4828 d  (13.2-13.2 y; t0 known 1974-06-28..1974-06-28)
++  farman_1985              838-  868 d  (2.3-2.4 y; t0 known 1985-05-01..1985-05-31)
+@@ -5,4 +5,4 @@
+-Delivery: world CFC + halon consumption, 1986 baseline 1,302,532 ODP t
+-  50% reduction reached in 1993: 6 yr after policy, 19 yr after first warning
+-  90% reduction reached in 2001: 14 yr after policy, 27 yr after first warning
+-  99% reduction reached in 2008: 21 yr after policy, 34 yr after first warning
++Delivery: world CFC + halon consumption, 1986 baseline 1,302,532 ODP t (year precision)
++  50% reduction reached in 1993: 6 yr after policy year, 19 yr after first-warning year
++  90% reduction reached in 2001: 14 yr after policy year, 27 yr after first-warning year
++  99% reduction reached in 2008: 21 yr after policy year, 34 yr after first-warning year
+```
+
 - `dac_compare_ozone_climate`: unchanged since 2026-10-27
 - `organismality_plane`: unchanged since 2026-10-27
 - `information_time_nhc`: unchanged since 2026-10-27
@@ -52,4 +74,4 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 
 ## Tests
 
-- pytest: 97 passed in 9.97s
+- pytest: 100 passed in 11.04s
