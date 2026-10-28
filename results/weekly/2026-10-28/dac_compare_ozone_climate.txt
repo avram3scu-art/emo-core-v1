@@ -1,0 +1,10 @@
+            warning→binding     level vs baseline, years after binding treaty
+                    (years)        +5       +10       +20      latest
+Ozone                  13.2      -47%      -83%      -99%      -100% (2021)
+Climate                18.4       +8%      +29%      +48%       +58% (2024)
+
+Climate after Paris (2016-2024): +0.37 Gt CO2/yr [+0.22, +0.58]; peak so far 2024 (38.6 Gt)
+Climate: the highest emissions year is the latest year in the data; no peak yet observed.
+Scope: Montreal bound all parties; Kyoto bound only listed developed countries, while delivery
+here is world CO2. The two rows are the same arithmetic, not equally binding commitments.
+saved analysis/dac_ozone_vs_climate.png

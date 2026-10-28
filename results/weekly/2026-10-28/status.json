@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-28",
+  "ok": true,
+  "commit_allowed": true,
+  "problems": [],
+  "ledger_ok": true,
+  "reproducibility": {
+    "rdl_backtest_run": true,
+    "rdl_backtest_heldout": true,
+    "rdl_v03_development": true,
+    "rdl_v03_heldout": true,
+    "gwi_hurricanes": true,
+    "gwi_calibration": true,
+    "he_calibration": true
+  },
+  "analyses": {
+    "dac_ozone": "unchanged since 2026-10-27",
+    "dac_compare_ozone_climate": "unchanged since 2026-10-27",
+    "organismality_plane": "unchanged since 2026-10-27",
+    "information_time_nhc": "unchanged since 2026-10-27",
+    "score_forecast_ledger": "unchanged since 2026-10-27"
+  },
+  "previous": "2026-10-27"
+}
