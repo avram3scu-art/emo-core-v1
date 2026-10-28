@@ -29,11 +29,11 @@
         "Bundestag Drucksache 19/19047 (full, 8 pp.)",
         "Bundestag Drucksachen 19/19676, 19/20303, 19/19713, 19/19409, 19/18924, 19/21098 (scanned for dated PPE statements; none used)",
         "bundesregierung.de 'Beschaffung durch den Bund' (7 May 2020; no first-delivery date)",
-        "Deutsches Ärzteblatt 27 Mar 2020 (secondary, context)"
+        "Deutsches Ärzteblatt 27 Mar 2020 (secondary, context)",
+        "EU TRIS notification 2020/0104/D (PDF supplied by Adrian, 2026-10-28)"
       ],
       "search_date": "2026-10-28",
       "not_accessed": [
-        "EU TRIS notification 2020/0104/D (search requires JavaScript)",
         "Bundesanzeiger text of the export order",
         "BMG procurement reports (Beschaffungsberichte) to the Bundestag",
         "Sudhof report (not used: marked 'VS – Nur für den Dienstgebrauch'; Adrian's decision)"
@@ -106,8 +106,8 @@
       "event_id": "export_ban",
       "sublayer": "binding_act",
       "date_status": "exact",
-      "description": "German order restricting the export of medical protective equipment (cited from the Belgian chronology: 'Interdiction d'exportation à partir de l'Allemagne pour certains matériels médicaux'; rule §5 Germany a)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 1031 (CRIV K038-2, Geens)",
+      "description": "German order restricting foreign trade in medical protective equipment: 'Ban on the export and shipment of goods that fall under the category of medical protective equipment' (goggles, face shields, mouth-nose protection, FFP2/FFP3, gowns, suits, gloves); notified to the Commission, date received 04/03/2020",
+      "source": "European Commission, TRIS notification 2020/0104/D (Germany), 'Order restricting foreign trade in certain goods (medical protective equipment)', date received 04/03/2020, PDF p. 1 (supplied by Adrian 2026-10-28; data/sources/dac_ppe/DE_tris_2020-0104-D.pdf); also recorded in Chambre, DOC 55 1394/002, Annexe 5, PDF p. 358, row 1031",
       "source_type": "primary",
       "date_earliest": "2020-03-04",
       "date_latest": "2020-03-04"

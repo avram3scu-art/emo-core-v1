@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1 (Belgium), F8.2 (France). Next: F8.3 Germany, then NL, SE, EU and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (105), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.3 (BE, FR, DE). Next: F8.4 Netherlands, then SE, EU, a gap-filling sitting (BE, DE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (107), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.3 (2026-10-28, 11:10–11:25) — PPE recoding, Germany
+
+**Done when met: yes.** `data/dac_ppe/DE.json` validated, profile computed, both committed (dc7fdf7); CI 40670748732.
+
+**Done**
+- Bundestag Drucksachen 19/21798 and 19/19047 fetched with sha256; six further answers and the federal government's procurement page scanned (no dated delivery). DE.json (13 events): first order and first delivery to Länder/KVs both windows 28 Feb–27 Apr (t0 + 29–88 d; no order or delivery dated in public sources); binding act: export ban 4 Mar (t0 + 34 d); funding and institutionalisation missing; Ärzteblatt (27 Mar) secondary context only; Sudhof not used. Rules §5 Germany a–d dated before the profile. Phrase test with probe.
+- Adrian supplied the TRIS record of notification 2020/0104/D; committed and now the primary source of the export ban (profile unchanged).
+- **Claude's mistake: blindness breach.** A whole-file grep of the manuscript printed four Results/Discussion sentences (DE/NL first-delivery days, Sweden's window, first orders ≥ day 29, German export ban as binding act); recorded verbatim in `docs/DAC_PPE_CODING.md` §1; DE/NL/SE classed known history; method fixed (reference list only).
+
+**Open (each with reason)**
+- German first order and delivery are 60-day windows. Reason: needs a gap-filling sitting before the comparison (BMG procurement reports to the Bundestag; KBV's own announcement of the first federal delivery), with the Belgian gaps (Moniteur belge, hearings); ~1–1.5 h.
+- German unpaired order-to-delivery interval −59…+59 d (overlapping windows): reported as is.
+
+**Review and Adrian's answer:** recommended close, gap-filling before the comparison, NL next; Adrian sent the TRIS record (11:22).
+
+**Next:** F8.4 — Netherlands (VWS factual reconstruction 2021); then SE, EU; then a gap-filling sitting (BE, DE); then the comparison; then session 10.
 
 ## Fix session F8.2 (2026-10-28, 11:01–11:10) — PPE recoding, France
 
