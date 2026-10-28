@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: manuscript sessions F11 (literature search), F12 (rewrite), F13 (figures), F14 (final review); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: manuscript sessions F12 (rewrite), F13 (figures), F14 (final review); optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (117), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F11 (2026-10-28, 15:58–16:06) — literature and records search
+
+**Done when met: yes.** `docs/LIT_SEARCH_F11.md` committed with both conclusions (7e1165f).
+
+**Done**
+- 15 queries, 20 sources opened (audits, official records, reviews, OM papers), each with URL and access date.
+- (a) The manuscript's claim that no approach pairs each order with its own delivery does not survive: Auditor General of Canada 2021, Report 10, Exhibit 10.7 pairs 39 contracts with their own first delivery (averages N95 34 + 71 d, gowns 28 + 57 d). Narrowed claim survives in the sources searched: none uses order-date variation of paired orders of one good to separate decision- from supply-limited delay.
+- (b) Second-case candidates: Canada (contract-level dates exist; ATIP or House of Commons production; high effort), US FPDS signing and possibly promised dates (medium; fields unverified), Spanish Court of Audit full report (low–medium; not opened), German audit reports 2021/2024.
+
+**Open (each with reason)**
+- Scopus / Web of Science / Google Scholar not searched. Reason: no access from this session; to be stated in the paper's limits unless Adrian has library access.
+- US FPDS and Spanish report checks. Reason: scope; optional session F15.
+
+**Review and Adrian's answer:** recommended close, F12 next, US/Spanish check optional after F14; Adrian "Close F11, and rewrite the F12 prompt" (16:06).
+
+**Next:** F12 — rewrite (prompt revised with F11 results).
 
 ## Fix session F10 (2026-10-28, 15:35–15:56) — editor-style review of the manuscript
 

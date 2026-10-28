@@ -34,3 +34,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F8.8 | PPE comparison with the manuscript | yes | 63ab805 | frozen then compared; 1 type-(c) error of mine corrected (BE row 742); 0 type-(d); BE binding act and DE delivery differ (explained); SI holds no sources; F8 complete |
 | 2026-10-28 | F9 | Manuscript data-only revision | yes | afdc3e7 | 29 tracked changes; cross-case stats recomputed (exploratory); 3 argument-level consequences flagged for Adrian |
 | 2026-10-28 | F10 | Editor-style review of the manuscript | yes | 3907fd5 | not ready for JCCM; 5 blockers; F9 coder sentence corrected (my mistake); Adrian checks the coded dates himself |
+| 2026-10-28 | F11 | Literature and records search | yes | 7e1165f | novelty claim must narrow to the test (Canada OAG pairs contracts with first delivery); second-case candidates listed |
