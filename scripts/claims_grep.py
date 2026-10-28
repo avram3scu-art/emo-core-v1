@@ -66,6 +66,7 @@ MANUAL = [
     ("docs/MANUSCRIPT_F12_CHANGES.md", "validated", "means: passed the docx skill's validate.py (schema, every edit tracked)"),
     ("docs/REVIEW_F14_DECISION_OR_SUPPLY.md", "", "review of a manuscript: verdict 'not ready', quoted declarations, ordinals"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "not ready", "negation: verdict that the manuscript is not ready"),
+    ("docs/DAC_T0_EARLY_WARNING.md", "first", "ordinal: the earliest ECDC risk assessment or WHO outbreak item for a hazard (t0 rule)"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "first verified delivery", "DAC term for the delivery end point (manuscript §2.1)"),
 ]
 

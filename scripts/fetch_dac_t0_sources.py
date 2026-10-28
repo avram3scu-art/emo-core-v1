@@ -1,4 +1,4 @@
-"""Fetch ECDC's first risk assessments used as the early-warning t0 (docs/DAC_T0_EARLY_WARNING.md).
+"""Fetch ECDC's earliest risk assessments used as the early-warning t0 (docs/DAC_T0_EARLY_WARNING.md).
 
 PDFs are checked against sha256 and their text written to data/sources/dac_t0/ (committed).
 Files already in .cache/dac_t0 are reused. Requires curl and pdftotext.

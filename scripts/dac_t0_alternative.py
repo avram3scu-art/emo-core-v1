@@ -30,7 +30,7 @@ def swap_t0(data: dict[str, Any], new_t0: str = NEW_T0) -> dict[str, Any]:
             e["sublayer"] = "context"
     case["t0_event_id"] = new_t0
     case["alternative_t0"] = [old if x == new_t0 else x for x in case["alternative_t0"]]
-    case["t0_rule"] = "ECDC's first risk assessment for the hazard (docs/DAC_T0_EARLY_WARNING.md §1); alternative-t0 run"
+    case["t0_rule"] = "ECDC's earliest risk assessment for the hazard (docs/DAC_T0_EARLY_WARNING.md §1); alternative-t0 run"
     return d
 
 
