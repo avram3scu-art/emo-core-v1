@@ -36,7 +36,7 @@
         },
         "delivery": {
           "lag_from_t0": {
-            "min_days": 31,
+            "min_days": 47,
             "max_days": 61
           },
           "first_event_ids": [
@@ -48,7 +48,7 @@
       "paired_order_to_delivery": [],
       "undatable_pairs": [],
       "unpaired_first_order_to_first_delivery": {
-        "min_days": 1,
+        "min_days": 17,
         "max_days": 59
       },
       "secondary_end_points": {},

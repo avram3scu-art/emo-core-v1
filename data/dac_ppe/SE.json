@@ -25,12 +25,12 @@
   },
   "source_pool": {
    "searched": [
-    "SOU 2021:89, Sverige under pandemin, volym 1 (chapter 8 searched in full, PDF pp. 320-340 read; regeringen.se; sha256 88646b7c...)"
+    "SOU 2021:89, Sverige under pandemin, volym 1 (chapter 8 searched in full, PDF pp. 320-340 read; regeringen.se; sha256 88646b7c...)",
+    "SOU 2020:80, Äldreomsorgen under pandemin (F8.7 addition; searched by keyword in full, pp. 154, 173, 199-206 read)"
    ],
    "search_date": "2026-10-28",
    "not_accessed": [
-    "Socialstyrelsen's answers to the Corona Commission and other documents cited by the SOU",
-    "SOU 2020:80 (first interim report, cited for February-March details)"
+    "Socialstyrelsen's answers to the Corona Commission and other documents cited by the SOU"
    ],
    "case_selection_reason": "Official commission report available (manuscript §3.1)"
   },
@@ -137,15 +137,45 @@
    "date_latest": "2020-03-16"
   },
   {
+   "event_id": "sos_purchasing_reported",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Socialstyrelsen's situation report: purchasing of PPE begun 'genom EU samt på egen hand', deliveries to the agency arriving in small quantities (rule §5 Sweden i c)",
+   "source": "SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen), PDF p. 154",
+   "source_type": "primary",
+   "date_earliest": "2020-03-09",
+   "date_latest": "2020-03-09"
+  },
+  {
+   "event_id": "first_noted_delivery_sos",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "First recorded delivery from Socialstyrelsen (recipient not named; lower bound of the first delivery to regions and municipalities; the paragraph also cites an oral statement by Socialstyrelsen officials, note 335; rule §5 Sweden i a)",
+   "source": "SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen), PDF p. 206",
+   "source_type": "primary",
+   "date_earliest": "2020-03-17",
+   "date_latest": "2020-03-17"
+  },
+  {
+   "event_id": "delivery_lansstyrelse_sthlm",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "First delivery from Socialstyrelsen to a county administrative board: Länsstyrelsen i Stockholms län receives 4,800 masks (a state body, not a region or municipality; rule §5 Sweden i b)",
+   "source": "SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen), PDF p. 206",
+   "source_type": "primary",
+   "date_earliest": "2020-03-21",
+   "date_latest": "2020-03-21"
+  },
+  {
    "event_id": "first_delivery_regions",
    "sublayer": "delivery",
    "date_status": "window",
-   "description": "First deliveries of protective equipment from Socialstyrelsen to regions and municipalities: March 2020 bar of Figure 8.2, about 1.07 million items, all PPE (decomposed by scripts/se_figure82_march.py; rule §5 Sweden b)",
-   "source": "SOU 2021:89, Sverige under pandemin, volym 1 (Coronakommissionen), PDF p. 338, Figure 8.2",
+   "description": "First deliveries of protective equipment from Socialstyrelsen to regions and municipalities: March 2020 bar of Figure 8.2, about 1.07 million items, all PPE (decomposed by scripts/se_figure82_march.py; rule §5 Sweden b); lower bound: first recorded delivery from Socialstyrelsen, 17 March (SOU 2020:80; rule §5 Sweden i a)",
+   "source": "SOU 2021:89, Sverige under pandemin, volym 1 (Coronakommissionen), PDF p. 338, Figure 8.2; SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen), PDF p. 206",
    "source_type": "primary",
-   "date_earliest": "2020-03-01",
+   "date_earliest": "2020-03-17",
    "date_latest": "2020-03-31",
-   "source_wording": "'Fördelad skyddsutrustning och provtagningsutrustning per månad, som komplement i regioner och kommuner, mars 2020 till mars 2021' (Figure 8.2, bar 2020-mar)",
+   "source_wording": "'Fördelad skyddsutrustning och provtagningsutrustning per månad, som komplement i regioner och kommuner, mars 2020 till mars 2021' (Figure 8.2, bar 2020-mar); 'Den första noterade leveransen från Socialstyrelsen sker den 17 mars' (SOU 2020:80, p. 206)",
    "end_point": "regions and municipalities"
   },
   {

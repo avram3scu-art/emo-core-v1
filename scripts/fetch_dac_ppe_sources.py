@@ -53,6 +53,9 @@ SOURCES = {
                           "64219372fe00a69d04653b7454e21299f8b69661574b870f28ae4a6c37d56d71"),
     "EU_32020B0537.pdf": ("cellar:32020B0537",
                           "d0ff837064ff768c7b30d5904cecee0a0a86fb58cb9bd888d6eb94a8a86ed5d4"),
+    # SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen, first interim report, Dec 2020), 318 pages.
+    "SE_sou_2020_80.pdf": ("https://regeringen.se/contentassets/a8e708fff5e84279bf11adbd0f78fcc1/sou_2020_80_aldreomsorgen-under-pandemin.pdf",
+                           "4b6bc9600443e39b4bbf2a6121b7e4ea793ec9606de60b5b29aa542b8147b16a"),
 }
 # European Parliament Multimedia Centre, photo record P-043686 (25 Apr 2020), URL from the manuscript's
 # reference list. The page is dynamic and behind a bot challenge, so it is rendered with headless Chromium
@@ -148,5 +151,6 @@ if __name__ == "__main__":
     full_text(CACHE / "EU_32020D0414.pdf", "data/sources/dac_ppe/EU_32020D0414.txt")
     full_text(CACHE / "EU_32020B0536.pdf", "data/sources/dac_ppe/EU_32020B0536.txt", layout=False)
     full_text(CACHE / "EU_32020B0537.pdf", "data/sources/dac_ppe/EU_32020B0537.txt", layout=False)
+    full_text(CACHE / "SE_sou_2020_80.pdf", "data/sources/dac_ppe/SE_sou_2020_80.txt", layout=False)
     ep_photo_text("data/sources/dac_ppe/EU_ep_photo_P043686.txt")
     print("wrote data/sources/dac_ppe/*.txt")
