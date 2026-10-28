@@ -11,7 +11,15 @@
     "rdl_v03_heldout": true,
     "gwi_hurricanes": true,
     "gwi_calibration": true,
-    "he_calibration": true
+    "he_calibration": true,
+    "smf_steo": true,
+    "smf_steo_leads": true,
+    "smf_steo_h18": true,
+    "smf_steo_elec": true,
+    "smf_spf": true,
+    "smf_ip": true,
+    "smf_dm": true,
+    "synergy_climate": true
   },
   "analyses": {
     "dac_ozone": "unchanged since 2026-10-27",
