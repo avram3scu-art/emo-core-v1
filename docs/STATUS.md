@@ -2,6 +2,15 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## Third audit (2026-10-27/28, extra work at Adrian's request)
+
+- `docs/AUDIT_2026-10-27.md` (8573410): every recorded RDL, GWI, SMF and synergy result reproduces from committed data; new gaps D1–D6 (DAC validator; D3 blocks the mpox multi-level case), M1 (SMF null invalid on trending input), K1 (unpinned dependencies), W1 (fix plan stalled while extra work grows; all audit-26b A items open).
+- T1 resolved 28 Oct: Adrian set network access to "All domains"; tests, ruff and mypy now run in Claude's workspace (d0b236e). Claude's advice: keep it while the repo holds only public material.
+- **Decision (28 Oct, 08:22, Adrian "Yes"):** D1–D6 added to F7, M1 to F5 in `docs/FIX_PLAN.md`.
+- Session 10 opened 27 Oct and stopped at its start: F1–F7 gate not cleared (Adrian chose "keep order"). F1 waits for Adrian's files.
+
+**Next:** F1 (Adrian's files); if not available, F2 can run first.
+
 ## F4 follow-up (2026-10-27, 05:48–06:30): Adrian's "YES" to the review points
 
 - All GitHub actions now run on Node 24 (upload-artifact v7, upload-pages-artifact v5, configure-pages v6, deploy-pages v5; ruff-autofix checkout v5 / setup-python v6). `include-hidden-files: true` keeps `site/.nojekyll`.
