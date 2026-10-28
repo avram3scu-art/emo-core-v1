@@ -36,4 +36,37 @@ If a needed record cannot be opened (bot challenge, CAPTCHA, HTTP error), it is 
 
 ## 4. Sources opened and rules added during coding
 
-(Filled during coding; dated.)
+All accessed 2026-10-28; fetched and converted by `scripts/fetch_dac_mpox_sources.py`; text in `data/sources/dac_mpox/` (web pages: no stable sha256; PDFs: sha256 in the script). Phrases and dates tested by `tests/dac_unit/test_dac_mpox_file.py`.
+
+| Record | URL | Used for |
+|---|---|---|
+| WHO statement, 23 July 2022 (second IHR EC meeting) | https://www.who.int/news/item/23-07-2022-second-meeting-of-the-international-health-regulations-(2005)-(ihr)-emergency-committee-regarding-the-multi-country-outbreak-of-monkeypox | t0 (23 Jul 2022); alternative t0 (first meeting 23 Jun 2022, as stated there) |
+| WHO statement, 11 May 2023 (fifth meeting) | https://www.who.int/news/item/11-05-2023-fifth-meeting-of-the-international-health-regulations-(2005)-(ihr)-emergency-committee-on-the-multi-country-outbreak-of-monkeypox-(mpox) | window end confirmed |
+| Commission press release, 14 Jun 2022 (Representation in Cyprus copy) | https://cyprus.representation.ec.europa.eu/news/hera-secures-vaccines-eu-member-states-response-monkeypox-outbreaks-2022-06-14_en | first firm order (exact) |
+| Commission press release, 28 Jun 2022 (same) | https://cyprus.representation.ec.europa.eu/news/european-health-union-start-delivery-vaccines-response-monkeypox-outbreak-2022-06-28_en | first delivery (exact), paired; HERA founding date |
+| Commission news, 18 Jul 2022 (same) | https://cyprus.representation.ec.europa.eu/news/health-union-hera-secures-additional-vaccine-doses-response-ongoing-monkeypox-outbreak-2022-07-18_en | second purchase (window); deliveries to 6 member states (context) |
+| Commission press release, 7 Sep 2022 (Representation in Germany) | https://germany.representation.ec.europa.eu/news/eu-beschafft-mehr-impfstoff-gegen-affenpocken-2022-09-07_de | third purchase (window) |
+| Commission press article, 17 Nov 2022 (Representation in Luxembourg) | https://luxembourg.representation.ec.europa.eu/actualites-et-evenements/actualites/europaische-gesundheitsunion-hera-sichert-bis-zu-2-millionen-dosen-des-affenpockenimpfstoffs-2022-11-17_de | framework contract (context) |
+| Commission Implementing Decision C(2022) 5446 and annex (Union Register, procedure 156674) | https://ec.europa.eu/health/documents/community-register/2022/20220722156674/dec_156674_en.pdf (and anx_156674_en.pdf) | binding act (22 Jul 2022) |
+
+**Not opened (gaps, not bypassed):** WHO's own statement of the first EC meeting (HTTP 404 at the URL tried); Commission Implementing Decision C(2022) 5436 of 25.7.2022 amending the EU4Health work programmes (page opened; PDFs answered HTTP 429 with a JavaScript challenge, WebFetch returned binary), so whether it earmarks mpox funding is unknown; Commission Press Corner originals (API returned nothing; Representation copies of the same releases used); HaDEA contract records and national purchase records (not attempted). The Representation in Germany page also answered 429 once, then 200.
+
+**Rules added during coding (dated):**
+
+- **2026-10-28, after the first profile run (recorded because the profile had been seen).** A purchase that the source calls additional or further ("additional", "weitere") to purchases already made has a sourced lower bound: the first dated contract (14 June 2022). Applies to `hera_purchase_2` and `hera_purchase_3`, which were first coded as upper bounds floored at the window start (1 May). Reason: the floor made the two later purchases possible first orders (first-order lag −83 to −39 d; unpaired first order to first delivery 14–58 d), which the sources contradict. After the fix: first-order lag −39 d; unpaired interval 14 d. No other row changed.
+- **2026-10-28.** The 18 July release ("has purchased"; "secured over 160,000 doses") does not give the size of the second purchase; it is coded as one additional purchase. Whether it restates part of the first is not excluded by the text.
+
+## 5. Result: profile (description, pre-registered on known history)
+
+`data/dac_mpox/EU_profile.json` (computed by `emo/dac_standard.py`). Lags from t0 (WHO PHEIC, 23 July 2022):
+
+| Sublayer | First event | Lag from t0 |
+|---|---|---|
+| firm_order | HERA contract, 109 090 doses (14 Jun 2022); 3 orders | −39 d |
+| delivery (member states) | 5,300 doses arrive in Spain (28 Jun 2022) | −25 d |
+| binding_act | Imvanex authorisation extended to monkeypox, C(2022) 5446 (22 Jul 2022) | −1 d |
+| paired order → delivery | 14 Jun → 28 Jun 2022 | 14 d |
+
+**Missing (could not be dated):** dedicated funding (no legal earmark found; C(2022) 5436 unreadable); institutionalisation (none in window; HERA predates it); counter-measure (none found; no dedicated search). Identification: one paired order, minimum for separating decision-limited from supply-limited delay not met.
+
+**Reading.** Every EU response in the file precedes the WHO declaration: the EU ordered 39 days and delivered 25 days before t0, and the binding act came one day before. Under a WHO-PHEIC t0, warning-to-delivery lag is negative for this case, so t0 here does not mark the warning the EU responded to. The alternative t0 (first EC meeting, 23 June) also follows the first order (−9 d to the order; the profile is computed only for the main t0). The earlier warning the EU did respond to (e.g. first case reports in May 2022, ECDC risk assessments) is not coded: no rule fixed it before coding.

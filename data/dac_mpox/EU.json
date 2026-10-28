@@ -1,0 +1,188 @@
+{
+  "standard_version": "1.1",
+  "case": {
+    "case_id": "EU-mpox",
+    "t0_event_id": "who_pheic",
+    "t0_institution": "World Health Organization (Director-General, on IHR Emergency Committee advice)",
+    "t0_rule": "WHO declaration of a PHEIC for the multi-country monkeypox outbreak (docs/DAC_MPOX_CODING.md §2)",
+    "alternative_t0": [
+      "who_ec1"
+    ],
+    "response_scale": "EU institutions (Commission incl. HERA/HaDEA); member-state acts are context, except acts against the EU response (counter_measure)",
+    "start_rule": "First purchase contract for mpox vaccine (MVA-BN) signed by the Commission for supply to member states; tenders, frameworks without purchase and announcements excluded",
+    "end_point": "member states",
+    "inclusion_rules": {
+      "firm_order": "Purchase contract for MVA-BN vaccine signed by the Commission (HERA/HaDEA) for member states",
+      "binding_act": "First legally binding EU act concerning the mpox vaccine response, dated by adoption",
+      "dedicated_funding": "First funding legally earmarked for mpox vaccines (legal act or financing decision naming mpox)",
+      "delivery": "First physical arrival of EU-procured mpox vaccine doses in a member state",
+      "counter_measure": "Member-state act against the EU response",
+      "institutionalisation": "First permanent body created for the hazard"
+    },
+    "observation_window": {
+      "start": "2022-05-01",
+      "end": "2023-05-11",
+      "reason": "Month the outbreak outside endemic countries was first reported, to WHO's end of the PHEIC (11 May 2023, WHO statement); responses before t0 kept (docs/DAC_MPOX_CODING.md §2)"
+    },
+    "source_pool": {
+      "searched": [
+        "WHO statements of 23 July 2022 and 11 May 2023",
+        "European Commission press releases/news of 14 Jun, 28 Jun, 18 Jul, 7 Sep, 17 Nov 2022 (Representation copies)",
+        "Union Register of medicinal products, Imvanex (procedure 156674, decision C(2022) 5446 and annex)",
+        "health.ec.europa.eu page on C(2022) 5436 (decision text not readable)"
+      ],
+      "search_date": "2026-10-28",
+      "not_accessed": [
+        "WHO statement of the first Emergency Committee meeting (HTTP 404 at the tried URL)",
+        "Commission Implementing Decision C(2022) 5436 and annexes (HTTP 429 / JavaScript challenge)",
+        "Commission Press Corner originals (API returned nothing; Representation copies used)",
+        "HaDEA contract records; national ministry records of member-state purchases (not attempted)",
+        "EMA CHMP opinion page (not needed: the decision states the opinion date)"
+      ],
+      "case_selection_reason": "First DAC case outside PPE: WHO emergency to vaccine orders and deliveries at EU level (docs/PLAN.md, session 10)"
+    },
+    "coding": {
+      "coders": 1,
+      "agreement": null,
+      "rules_fixed_before_coding": true
+    },
+    "computation": {
+      "code": "emo/dac_standard.py"
+    },
+    "identification": "Not met: one paired order (14 June contract -> 28 June delivery); later purchases have no linked dated delivery. Decision-limited and supply-limited delay cannot be separated."
+  },
+  "events": [
+    {
+      "event_id": "who_pheic",
+      "sublayer": "validation",
+      "date_status": "exact",
+      "date_earliest": "2022-07-23",
+      "date_latest": "2022-07-23",
+      "description": "WHO Director-General determines that the multi-country outbreak of monkeypox is a PHEIC (statement dated 23 July 2022; Committee met 21 July)",
+      "source": "WHO statement, Second meeting of the IHR Emergency Committee on the multi-country outbreak of monkeypox, 23 July 2022 (data/sources/dac_mpox/who_2022-07-23_pheic.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "who_ec1",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2022-06-23",
+      "date_latest": "2022-06-23",
+      "description": "First meeting of the IHR Emergency Committee on the outbreak (no PHEIC); alternative t0. Date as stated in WHO's 23 July statement ('the first meeting of the Committee on 23 June 2022'); WHO's own first-meeting statement URL returned HTTP 404",
+      "source": "WHO statement, 23 July 2022 (data/sources/dac_mpox/who_2022-07-23_pheic.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "hera_contract_1",
+      "sublayer": "firm_order",
+      "date_status": "exact",
+      "date_earliest": "2022-06-14",
+      "date_latest": "2022-06-14",
+      "good": "MVA-BN vaccine",
+      "description": "HERA (via HaDEA) concludes a contract with Bavarian Nordic to purchase 109 090 doses for donation to member states ('Today ... concluded a contract'; release dated 14 June 2022). Before t0.",
+      "source": "European Commission press release, 14 June 2022, Representation in Cyprus copy (data/sources/dac_mpox/ec_2022-06-14_contract.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "hera_purchase_2",
+      "sublayer": "firm_order",
+      "date_status": "window",
+      "date_latest": "2022-07-18",
+      "good": "MVA-BN vaccine",
+      "source_wording": "HaDEA 'has purchased the third-generation vaccine'; 'We have now secured over 160,000 doses' (news announcement of 18 July 2022, no purchase date)",
+      "description": "Additional doses purchased (title: 'HERA secures additional vaccine doses'); day of contract not given; window opens at the first contract (14 June 2022), because the source calls these doses additional/further ('additional', 'weitere') to purchases already made (rule §4, 2026-10-28)",
+      "source": "European Commission news announcement, 18 July 2022, Representation in Cyprus copy (data/sources/dac_mpox/ec_2022-07-18_additional.txt)",
+      "source_type": "primary",
+      "date_earliest": "2022-06-14"
+    },
+    {
+      "event_id": "hera_purchase_3",
+      "sublayer": "firm_order",
+      "date_status": "window",
+      "date_latest": "2022-09-07",
+      "good": "MVA-BN vaccine",
+      "source_wording": "'Die Europäische Kommission hat über 170.000 weitere Dosen ... beschafft' (press release of 7 September 2022, no purchase date)",
+      "description": "Over 170,000 further doses purchased from Bavarian Nordic, available before the end of 2022; window opens at the first contract (14 June 2022), because the source calls these doses additional/further ('additional', 'weitere') to purchases already made (rule §4, 2026-10-28)",
+      "source": "European Commission press release, 7 September 2022, Representation in Germany (data/sources/dac_mpox/ec_2022-09-07_additional_de.txt)",
+      "source_type": "primary",
+      "date_earliest": "2022-06-14"
+    },
+    {
+      "event_id": "hera_framework",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2022-11-17",
+      "date_latest": "2022-11-17",
+      "description": "HERA signs a joint-procurement framework contract with Bavarian Nordic for up to 2 million doses in 2023-2024 for 14 participating countries ('hat heute ... einen Rahmenvertrag ... unterzeichnet'); framework without a purchase: context (rule §2)",
+      "source": "European Commission press article, 17 November 2022, Representation in Luxembourg (data/sources/dac_mpox/ec_2022-11-17_framework_de.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "imvanex_mpox_authorisation",
+      "sublayer": "binding_act",
+      "date_status": "exact",
+      "date_earliest": "2022-07-22",
+      "date_latest": "2022-07-22",
+      "description": "Commission Implementing Decision C(2022) 5446 amending the Imvanex marketing authorisation ('Smallpox and monkeypox vaccine'); annex adds active immunisation against monkeypox; 'Done at Brussels, 22.7.2022'; CHMP opinion 21 July 2022. One day before t0.",
+      "source": "Commission Implementing Decision C(2022) 5446 final, Union Register procedure 156674 (data/sources/dac_mpox/ec_C2022_5446_dec.txt; annex data/sources/dac_mpox/ec_C2022_5446_anx.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "first_delivery_spain",
+      "sublayer": "delivery",
+      "date_status": "exact",
+      "date_earliest": "2022-06-28",
+      "date_latest": "2022-06-28",
+      "good": "MVA-BN vaccine",
+      "end_point": "member states",
+      "pairs_with": "hera_contract_1",
+      "description": "'Today, the delivery of the first vaccine doses purchased by ... HERA ... is starting, with an initial 5,300 doses arriving in Spain, out of the total 109,090 doses procured' (links the delivery to the 14 June contract). Before t0.",
+      "source": "European Commission press release, 28 June 2022, Representation in Cyprus copy (data/sources/dac_mpox/ec_2022-06-28_delivery.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "deliveries_6_ms",
+      "sublayer": "context",
+      "date_status": "upper_bound",
+      "date_latest": "2022-07-18",
+      "source_wording": "'have already delivered around 25 000 doses to 6 Member States' (18 July 2022)",
+      "description": "Cumulative EU deliveries by 18 July 2022 (state of delivery, not a first event)",
+      "source": "European Commission news announcement, 18 July 2022 (data/sources/dac_mpox/ec_2022-07-18_additional.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "who_pheic_end",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2023-05-11",
+      "date_latest": "2023-05-11",
+      "description": "WHO Director-General concurs that the event no longer constitutes a PHEIC (statement dated 11 May 2023; Committee met 10 May); end of the observation window",
+      "source": "WHO statement, Fifth meeting of the IHR Emergency Committee, 11 May 2023 (data/sources/dac_mpox/who_2023-05-11_end.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "eu_dedicated_funding",
+      "sublayer": "dedicated_funding",
+      "date_status": "missing",
+      "description": "Releases state the purchases are funded 'through the EU4Health programme' (not a legal earmark). Commission Implementing Decision C(2022) 5436 of 25.7.2022 amending the EU4Health work programmes 2021/2022 may contain an earmark; its PDFs returned HTTP 429 / a JavaScript challenge and a binary file to WebFetch, so it could not be read (not bypassed)",
+      "source": "health.ec.europa.eu, 'Amendment to the EU4Health work programmes 2021 and 2022' page (accessed 2026-10-28); decision text not readable",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "eu_institutionalisation",
+      "sublayer": "institutionalisation",
+      "date_status": "missing",
+      "description": "No permanent body created for the hazard in the window; HERA was 'established in October 2021' (28 June 2022 release), before the window",
+      "source": "European Commission press release, 28 June 2022 (data/sources/dac_mpox/ec_2022-06-28_delivery.txt)",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "eu_counter_measure",
+      "sublayer": "counter_measure",
+      "date_status": "missing",
+      "description": "No member-state act against the EU response found in the opened records; no dedicated search for such acts was made",
+      "source": "Records listed in case.source_pool.searched",
+      "source_type": "primary"
+    }
+  ]
+}
