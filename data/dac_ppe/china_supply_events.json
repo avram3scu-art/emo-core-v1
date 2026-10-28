@@ -1,0 +1,14 @@
+{
+ "note": "Dated supply events in China drawn in Figures 1 and 2 (manuscript §3.1). Days from t0 = 30 January 2020. Each phrase is checked against data/sources/lit/China_*.txt by tests/test_dac_ppe_figures.py.",
+ "events": [
+  {"id": "output_116m", "kind": "line", "day": 30, "date": "2020-02-29",
+   "label": "Daily mask output 116 million (29 Feb)",
+   "source_file": "China_nhc.txt", "phrase": "China's daily output of face masks reached 116 million units as of Feb 29"},
+  {"id": "exports_386bn", "kind": "band", "day_start": 31, "day_end": 66, "date_start": "2020-03-01", "date_end": "2020-04-05",
+   "label": "3.86 billion masks exported (1 Mar–5 Apr)",
+   "source_file": "China_yicai.txt", "phrase": "since March 1, including 3.86 billion face masks"},
+  {"id": "export_controls", "kind": "line", "day": 62, "date": "2020-04-01",
+   "label": "Export checks from 1 Apr",
+   "source_file": "China_mofcom.txt", "phrase": "starting on April 1st, exporters of coronavirus test kits, medical masks"}
+ ]
+}
