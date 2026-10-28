@@ -21,7 +21,7 @@ ORDINAL = re.compile(
     r"\bfirst[ _-]?(order|deliver|binding|signed|resolution|run|wave|week|meeting|mention|row|line|act|legally|budget|"
     r"date|event|recorded|declaration|alert|time|of |national|sample|two|three|half|step|reading|valid|fetch|amendment|"
     r"audit|readable|year|month|day|pass|attempt|value|column|element|key|edition|lead|appearance|case|occurrence|"
-    r"forecast|test|non|t0|warning|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
+    r"forecast|test|non|t0|warning|purchase|funding|physical|permanent|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
     r"formal|ranked|synthetic|50|12|\(|\]|\)|=|\.|,|:|$)", re.I)
 
 # Remaining hits, judged one by one (file, word or phrase in the line) -> justification.
@@ -57,6 +57,7 @@ MANUAL = [
     ("docs/HE_CALIBRATION_PROTOCOL.md", "first 50 lines", "ordinal"),
     ("docs/GWI_PROTOCOL.md", "first such record", "ordinal"),
     ("docs/RDL_V04_PROTOCOL.md", "two first", "ordinal"),
+    ("docs/DAC_PPE_CODING.md", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/weekly_run.py", "", "code comment or ordinal"),
 ]
 
