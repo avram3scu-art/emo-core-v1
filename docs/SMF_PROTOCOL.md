@@ -405,7 +405,7 @@ survives: on IP since 2010, neither forecaster beats "no change" at a year
 
 ## 13. Significance of the deciding condition: Diebold–Mariano re-analysis (pre-registration, fix session F5)
 
-**DRAFT for Adrian's approval, not yet registered (2026-10-28); no computation done.** **Evidence class: pre-registered on known history.** The data and the MSE ratios of every sample below are already known (§8–§12): 10 of the 15 samples have MSE_model < MSE_zero, 5 do not. This test can only confirm or withdraw passes; it cannot be blind.
+Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any computation in this section. **Evidence class: pre-registered on known history.** The data and the MSE ratios of every sample below are already known (§8–§12): 10 of the 15 samples have MSE_model < MSE_zero, 5 do not. This test can only confirm or withdraw passes; it cannot be blind.
 
 **Question.** In §8–§12 every PASS required MSE_model < MSE_zero, a point comparison with no significance test, on overlapping forecasts (audit 2026-10-26b, S1). Is the model's advantage over "no change" larger than chance?
 
