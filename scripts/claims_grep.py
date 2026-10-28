@@ -15,8 +15,8 @@ WORDS = r"\b(live|real-time|realtime|deployed|operational|validated|ready|first)
 EXCLUDE = [":!data", ":!results", ":!docs/sources", ":!analysis/*output*", ":!docs/F2_CLAIMS_GREP.md", ":!scripts/claims_grep.py"]
 
 SUPERSEDED = ("WHITEPAPER_EMO_v1_", "deck/", "grants/", "README_EMO.md", "EMOStakeholderBenefits.md")
-RECORDS = ("docs/STATUS.md", "docs/RECORD.md", "docs/SESSION_LOG.md", "docs/AUDIT_", "docs/FIX_PLAN.md",
-           "docs/PLAN.md", "CLAUDE.md", "docs/archive/")
+RECORDS = ("docs/STATUS.md", "docs/STATUS_ARCHIVE.md", "docs/RECORD.md", "docs/SESSION_LOG.md", "docs/SESSION_LOG_ARCHIVE.md", "docs/AUDIT_", "docs/FIX_PLAN.md",
+           "docs/PLAN.md", "CLAUDE.md", "docs/archive/", "scripts/f3_backfill_record.py")
 ORDINAL = re.compile(
     r"\bfirst[ _-]?(order|deliver|binding|signed|resolution|run|wave|week|meeting|mention|row|line|act|legally|budget|"
     r"date|event|recorded|declaration|alert|time|of |national|sample|two|three|half|step|reading|valid|fetch|amendment|"
