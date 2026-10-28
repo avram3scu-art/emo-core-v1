@@ -37,3 +37,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F11 | Literature and records search | yes | 7e1165f | novelty claim must narrow to the test (Canada OAG pairs contracts with first delivery); second-case candidates listed |
 | 2026-10-28 | F12 | Manuscript argument rewrite | yes | 93558a2 | 26 tracked changes; novelty narrowed (Canada OAG); cross-case days 41–61; rivals bounded; closed at start of F13 |
 | 2026-10-28 | F13 | Manuscript figures | yes | c200d01 | Figures 1–2 redrawn from event files; China sources committed; inserted with tracked changes |
+| 2026-10-28 | F14 | Final editor-style review | yes | 118221d | not ready, do not submit yet; ChatGPT not used (Adrian) — declaration to correct; Adrian's three steps pending |

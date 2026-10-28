@@ -58,3 +58,7 @@ Reviewed: `docs/sources/dac_paper/Decision_or_Supply_manuscript_F13_revised.docx
 5. Then a new review session, on a different day from any submission decision.
 
 **Free fallback:** a Zenodo preprint of the current version, labelled with its evidence class and the pending check. It costs nothing and keeps a journal route open if the journal allows preprints; that has not been verified for JCCM.
+
+## Addendum (28 Oct 2026, 16:58)
+
+Adrian: ChatGPT was not used for this manuscript, only Claude. The declaration must name Claude only and describe its role; to be corrected as a tracked change in the next manuscript session.

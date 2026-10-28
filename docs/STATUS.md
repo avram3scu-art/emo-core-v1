@@ -4,11 +4,30 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: F14 (final review) after Adrian's check of the coded dates; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
-- **Adrian must do:** nothing now.
+- **Adrian must do (manuscript):** record his check of the coded dates; accept or reject the F9–F13 tracked changes; open JCCM's author guidelines (fee route, AI clause).
+
+## Fix session F14 (2026-10-28, 16:52–16:58) — final editor-style review
+
+**Done when met: yes.** `docs/REVIEW_F14_DECISION_OR_SUPPLY.md` committed (118221d).
+
+**Done**
+- F10 points: 3, 6, 7 fixed; 2, 4, 8 partly; 1 open (Adrian's check of the coded dates not in the repo). JCCM's own pages not reachable (wiley.com blocked; Chromium failed); Wiley hybrid page and Wikipedia opened instead.
+- Declarations checked against the record: Claude's role understated (it coded all data); "verified by the author" not true until the check is recorded; claims become Adrian's once he accepts the tracked changes.
+- Verdict: not ready; recommendation: do not submit yet (no decision taken). Estimate after preconditions: fair chance of review, about one in five of acceptance (judgement, not data).
+
+**Decision recorded (Adrian, 28 Oct 16:58):** ChatGPT was not used for this manuscript, only Claude. The declaration's "(OpenAI ChatGPT and Anthropic Claude)" is therefore wrong and must name Claude only; to be corrected (tracked) in the next manuscript session, together with Claude's actual role (coded the event files, wrote the scripts, drafted the F9–F13 changes).
+
+**Open (each with reason)**
+- Adrian's check of the coded dates; acceptance of the F9–F13 changes; JCCM guidelines. Reason: Adrian's decision/action.
+- Second paired case (US FPDS, Spanish audit). Reason: optional; needs Adrian's yes.
+
+**Review and Adrian's answer:** recommended close; Adrian "Close F14. I didn't use ChatGPT, only you." (16:58).
+
+**Next:** session 10 (mpox); the manuscript resumes after Adrian's three steps.
 
 ## Fix session F13 (2026-10-28, 16:14–16:51) — manuscript figures
 
