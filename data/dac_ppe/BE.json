@@ -51,7 +51,7 @@
       "sublayer": "validation",
       "date_status": "exact",
       "description": "WHO IHR Emergency Committee: Public Health Emergency of International Concern",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 65 (CRIV K001, De Raedt)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt; flagged Contradict. with row 65)",
       "source_type": "primary",
       "date_earliest": "2020-01-30",
       "date_latest": "2020-01-30"
@@ -91,7 +91,7 @@
       "sublayer": "context",
       "date_status": "exact",
       "description": "Belgium participates in the EU joint procurement of PPE (tender, not a Belgian order)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 353, row 44 (Questions d'enquête, CSS; Contradict.)",
+      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 353, row 360 (Questions d'enquête, CSS; flagged Contradict.)",
       "source_type": "primary",
       "date_earliest": "2020-02-27",
       "date_latest": "2020-02-27"
