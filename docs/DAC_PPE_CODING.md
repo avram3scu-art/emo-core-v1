@@ -34,7 +34,7 @@ Each later F8 session records whether it opened anything of the manuscript beyon
 |---|---|---|
 | BE | Chamber of Representatives, special committee COVID-19, report DOC 55 1394/002 (13 Sep 2021), Annex 5 (chronology) | fetch script `scripts/fetch_dac_ppe_sources.py` with sha256 (identical to Adrian's copy of 26 Oct); Annex 5 text extracted to `data/sources/dac_ppe/BE_annex5.txt` |
 | FR | Sénat, report no. 199 (2020–2021) | Adrian's copy identified by sha256 only (`docs/sources/SOURCES_SUPPLIED.md`); to be fetched in its F8 session |
-| DE | Bundestag printed papers (answers to parliamentary questions) 2020; EU notification of the German export ban; Sudhof report (Jan 2025, marked "VS – Nur für den Dienstgebrauch": not committed, use limited to Adrian's decision) | not yet |
+| DE | Bundestag printed papers (answers to parliamentary questions) 2020; EU notification of the German export ban. The Sudhof report (Jan 2025, marked "VS – Nur für den Dienstgebrauch") is **not used** (Adrian's decision, 28 Oct 2026) | not yet |
 | NL | Ministerie van VWS (2021), factual reconstruction | not yet (Adrian to supply if not fetchable) |
 | SE | SOU 2021:89 | Adrian's copy identified by sha256 only; to be fetched |
 | EU | Official Journal acts, Commission records | not yet |

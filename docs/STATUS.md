@@ -4,11 +4,30 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1 (Belgium). Next: F8.2 France, then DE, NL, SE, EU and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (103), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1 (Belgium), F8.2 (France). Next: F8.3 Germany, then NL, SE, EU and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (105), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.2 (2026-10-28, 11:01–11:10) — PPE recoding, France
+
+**Done when met: yes.** `data/dac_ppe/FR.json` validated, profile computed, both committed (45438bc); CI 40669471376.
+
+**Done**
+- Sénat report no. 199 (2020-2021) tome I fetched (sha256 identical to Adrian's copy); full text with page markers committed.
+- FR.json (15 events): first firm order 28.4 M FFP2, readings A 7 Feb (request) / B 19 Feb (first validated purchase); 25 Feb order 170.5 M FFP2; binding act décret 2020-190 (3 Mar); funding arrêté 11 Mar (EUR 260 M for strategic stocks); first pharmacy delivery window 9–22 Mar; 30 Jan order excluded (single mission); institutionalisation missing; no paired orders. Rules §5 France a–c dated before the profile.
+- Profile: first order t0 + 8 / 20 d; binding act t0 + 33; funding t0 + 41; delivery t0 + 39–52 d; unpaired first order → first delivery 31–44 d (A) / 19–32 d (B).
+- Test: every Sénat citation's verbatim phrase is on its cited page (planted wrong page fails). Claim-check ordinal list extended.
+- Claude's mistake, fixed before the profile: an unsourced lower bound on a context row (airlift); row removed.
+
+**Open**
+- Tome II (hearings) and Légifrance texts not opened. Reason: scope; the report cites decrees by number and date.
+- Pharmacy-delivery lower bound rests on a request ('sollicités … pour une première livraison'). Reason: source limit; window kept wide.
+
+**Decision (2026-10-28, 11:10, Adrian "Close" on Claude's recommendation):** Germany is coded from public Bundestag papers only; the Sudhof report (marked "VS – Nur für den Dienstgebrauch") is not used.
+
+**Next:** F8.3 — Germany (public Bundestag papers; EU notification of the export ban); then NL, SE, EU; then the comparison; then session 10.
 
 ## Fix session F8.1 (2026-10-28, 10:53–11:00) — PPE recoding, Belgium
 

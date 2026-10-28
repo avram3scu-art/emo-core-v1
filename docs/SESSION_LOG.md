@@ -25,3 +25,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F6 | Method labels and the evidence-class rule | yes | dc0c1c3 | RDL tests labelled known history (ledger the only blind RDL test); GWI placebo note and caveat; two new Science rules approved |
 | 2026-10-28 | F7 | DAC clean-up: standard v1.1, old code retired, primary sources, manuscript copies by script | yes | 197654b | D1–D6 fixed; Identification row; ozone lag exact 4,828 d; 100 tests; weekly 40666382346 |
 | 2026-10-28 | F8.1 | PPE recoding: rules + Belgium | yes | c72013b | BE.json and order file validated from Chamber Annex 5; known-history class; two citation errors fixed with a test |
+| 2026-10-28 | F8.2 | PPE recoding: France | yes | 45438bc | FR.json from the Sénat report; two readings of the first order; no paired orders; citation-phrase test; Sudhof report not to be used for DE (Adrian) |
