@@ -10,6 +10,23 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Open A items (audits 26b, 27 Oct):** SMF deciding condition untested (F5). PPE case not in the repo (F8).
 - **Adrian must do:** nothing now.
 
+## Fix session F3 (2026-10-28, 09:33–09:45) — records backfill
+
+**Done when met: yes.** Every protocol result and recorded run of sessions 0–8 has a row in `docs/RECORD.md` (checked by script against every run ID and commit cited in STATUS/SESSION_LOG); no SESSION_LOG row has a placeholder.
+
+**Done**
+- `docs/RECORD.md`: 85 rows for sessions 0–8 plus a class column on every row (pre-registered blind / known history / exploratory / infrastructure), via `scripts/f3_backfill_record.py` (c05876c). 228 CI runs of Feb–Apr 2026 (old account, deleted code) summarised in one row.
+- `docs/STATUS.md` split: current state on top; sessions 1–8 moved verbatim to `docs/STATUS_ARCHIVE.md`.
+- `docs/SESSION_LOG.md` rewritten, one row per session, real commits; old rows in `docs/SESSION_LOG_ARCHIVE.md`.
+- Claude's mistake, fixed: the claim check skipped untracked files locally (21 hits missed until staged); now `git grep --untracked`, tested with a probe (1689124). CI was not affected.
+
+**Review and Adrian's answers**
+- More of F3: recommended no (old CI runs and data-only weekly commits not indexed one by one).
+- Backfilled rows rest on STATUS and commit messages, not on rereading each run log; one cause "not recorded" (21 Oct CI). Recommended: accept.
+- RECORD on a phone: Adrian "Fine" (09:41).
+
+**Next:** F5 (SMF re-analysis; Adrian answers "go" to the protocol), then F6, F7, F8; session 10 after them.
+
 ## Fix session F2 (2026-10-28, 09:02–09:40) — truth pass on public files
 
 **Done when met: yes.** Claim grep 0 unjustified; banners and README approved by Adrian ("Yes", 09:08).
