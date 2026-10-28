@@ -4,11 +4,30 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F6. Next: F7 (DAC clean-up incl. validator gaps D1–D6), F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (97), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7. Next: F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (100), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F7 (2026-10-28, 10:34–10:51) — DAC clean-up
+
+**Done when met: yes.** Tests pass (100; CI 40666225661; weekly 40666382346); D1–D6 fixed with tests; every ozone/climate t0 and binding-act row has a primary source; Identification row in.
+
+**Done**
+- DAC standard v1.1 (197654b): D1 version check, D2 unknown case keys, D3 missing/censored by sublayer and level (multi-level cases valid), D4 undatable pairs listed, D5 every t0 reading exact/window, D6 orders carry a level and intervals compare like with like; Identification row from Table S1 of the final manuscript (`good`, `case.identification`, per-good paired orders, order-date spread, `minimum_for_separation_met` per Proposition 1). Audit probe 5/5 ok.
+- Old DAC code retired (913748f): `analysis/dac_ozone.py` now reads the standard file and prints lag ranges; `emo/metrics/dac`, `emo/harmonize`, three `emo/models` files and 12 tests deleted; DAC_METRICS.md archived.
+- Primary sources (rules d3dced2 before opening; result 7cda800): Nature article page (Molina & Rowland, "Published: 28 June 1974"), NAP record (Charney, 1979), UN Treaty Collection (Montreal 16 Sep 1987; Kyoto 11 Dec 1997); `data/sources/dac_primary_sources.md`. Ozone lag now exact 4,828 d (was 4,642–5,006); climate 6,555–6,919 d unchanged.
+- Manuscript Markdown copies by `scripts/docx_to_md.py` with source sha256; staleness test.
+- Claude's mistakes, fixed: CSV rewrite changed quoting (reverted before commit); identification field name overclaimed Proposition 1 → `minimum_for_separation_met` (401c937).
+
+**Open**
+- Context rows of the ozone/climate files still cite Wikipedia. Reason: scope (they enter no lag; ~20 min later).
+- Charney report dated to the year only. Reason: Adrian's decision not needed; recommended to keep (the PDF needs a login; the width does not change the contrast).
+
+**Review and Adrian's answer:** more of F7: recommended no; Adrian "Close" (10:51).
+
+**Next:** F8 (recode the PPE case from primary sources, 2–4 sessions); session 10 (mpox) after it.
 
 ## Fix session F6 (2026-10-28, 10:11–10:30) — method labels and the evidence-class rule
 

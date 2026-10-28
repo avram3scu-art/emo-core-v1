@@ -23,3 +23,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F3 | Records backfill | yes | c05876c | sessions 0–8 indexed (85 rows), class column on every row; STATUS split, archive verbatim; session log one row per session, no placeholders |
 | 2026-10-28 | F5 | SMF significance re-analysis (+ M1 guard, frozen SMF/synergy) | yes | 6d0f142 | 6 of 12 passes survive DM/Holm; guard flags 5 EIA inputs (caveat on EIA CO2 3m); weekly 40659742858 reproduces all 15 frozen runs |
 | 2026-10-28 | F6 | Method labels and the evidence-class rule | yes | dc0c1c3 | RDL tests labelled known history (ledger the only blind RDL test); GWI placebo note and caveat; two new Science rules approved |
+| 2026-10-28 | F7 | DAC clean-up: standard v1.1, old code retired, primary sources, manuscript copies by script | yes | 197654b | D1–D6 fixed; Identification row; ozone lag exact 4,828 d; 100 tests; weekly 40666382346 |
