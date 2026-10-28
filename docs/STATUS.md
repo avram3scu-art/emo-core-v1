@@ -2,6 +2,27 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+## Fix session F2 (2026-10-28, 09:02–09:40) — truth pass on public files
+
+**Done when met: yes.** Claim grep 0 unjustified; banners and README approved by Adrian ("Yes", 09:08).
+
+**Done**
+- README: every result labelled [blind] / [known history] / [exploratory]; DAC row says the PPE case is not in the repo and the manuscript was not submitted ("under review" removed); SMF caveat (audit S1–S2); test count 91 from CI 40653907266 (a158c65).
+- Dated "superseded" banner on both funder white papers (.md), the .docx white paper, `deck/`, `grants/`, `README_EMO.md`, `EMOStakeholderBenefits.md`; 11 "first" claims marked [unverified], 3 false statements marked [false].
+- `docs/RDL_V0_1.md` corrected (RDL v0.1 is not operational; FastAPI deleted). Public page carries the SMF caveat (rebuilt and fetched, run 40654830115). PLAN "live data" → "weekly-run data".
+- Old DAC docs moved to `docs/archive/` with a note.
+- `scripts/claims_grep.py` → `docs/F2_CLAIMS_GREP.md` (251 hits, 0 unjustified at approval); added to CI as a failing check, tested with a planted claim (CI 40657324769 green on the clean tree).
+- Rules added to CLAUDE.md (Adrian, 09:29): every question carries Claude's recommendation; Claude's mistakes fixed in full (c176b7d).
+
+**Review and Adrian's answers**
+- Claim check in CI: recommended yes → Adrian "Yes" → done.
+- Open: the [blind] label on SMF (sequential tests, S2) and GWI (expected spikes) may be generous. Reason: scope (F6 decides evidence classes).
+- Open: the README SMF line changes again after F5. Reason: scope (F5).
+- Claude's mistake: hit count reported before the record row added one more; corrected in the same session.
+- `docs/F2_CLAIMS_GREP.md` is a snapshot; CI regenerates the check on every push (the file is not kept current).
+
+**Next:** F3 (records backfill), then F5, F6, F7, F8; session 10 after them.
+
 **Decision (2026-10-28, 09:29, Adrian):** new CLAUDE.md rules: every question to Adrian states Claude's recommended option first with a one-line reason; Claude's own mistakes are always fixed completely, regardless of time or weekly allowance. Reason (Adrian): "There is far too much information for me … I am not an AI; you are."
 
 ## Fix session F1 (2026-10-28, 08:34–09:05) — DAC paper facts and files
