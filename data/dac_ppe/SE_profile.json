@@ -1,0 +1,58 @@
+{
+  "standard_version": "1.1",
+  "case_id": "SE",
+  "t0_event_id": "who_pheic",
+  "end_point": "regions and municipalities",
+  "missing": [
+    "dedicated_funding",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {},
+  "identification_note": "Not testable: no delivery is linked by the source to a specific order.",
+  "profiles": [
+    {
+      "reading": {},
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 2,
+            "max_days": 30
+          },
+          "first_event_ids": [
+            "first_order_sos"
+          ],
+          "n_events": 1
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 46,
+            "max_days": 46
+          },
+          "first_event_ids": [
+            "ordinance_2020_126"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 31,
+            "max_days": 61
+          },
+          "first_event_ids": [
+            "first_delivery_regions"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 1,
+        "max_days": 59
+      },
+      "secondary_end_points": {},
+      "identification": {}
+    }
+  ]
+}

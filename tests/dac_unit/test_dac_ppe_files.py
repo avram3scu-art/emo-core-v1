@@ -178,3 +178,46 @@ def test_dutch_citations_match_their_pages():
             if phrase not in pages[page] or f"p. {page}" not in src[k]:
                 bad.append((k, fname, page, phrase))
     assert not bad, bad
+
+
+# F8.5: each Swedish citation is checked by a verbatim phrase on its cited PDF page of SOU 2021:89.
+# The delivery's March bar is read from the rendered Figure 8.2; the test checks the caption and the month label only.
+SE = "SE_sou_2021_89.txt"
+SE_PHRASES = {
+    "who_pheic": [("BE_annex5.txt", 342, "Urgence de santé publique de portée internationale")],
+    "who_pandemic": [("BE_annex5.txt", 363, "L'OMS déclare la pandémie")],
+    "sos_alerts_msb": [(SE, 322, "Socialstyrelsen hade den 4 februari uppmärksammat MSB på att en möjlig brist på skyddsutrustning förelåg")],
+    "msb_urges_regions": [(SE, 322, "MSB publicerade den 6 februari en nationell lägesbild"),
+                          (SE, 322, "Regionerna bör uppmanas att säkerställa inköp och distribution")],
+    "first_order_sos": [(SE, 371, "gjorde smärre inköp av skyddsutrustning i februari"),
+                        (SE, 336, "gjordes inköp av skyddsutrustning redan från februari 2020"),
+                        (SE, 34, "Socialstyrelsen gjorde i februari visserligen mindre inköp")],
+    "regions_assured": [(SE, 325, "Redan den 11 mars 2020 tillförsäkrades samtliga regioner")],
+    "regions_petition": [(SE, 324, "Den 13 mars 2020 lämnade Region Stockholm, Västra Götalandsregionen och Region Skåne in en hemställan")],
+    "sos_assignment": [(SE, 325, "Den 16 mars 2020 fick Socialstyrelsen i uppdrag av regeringen att säkerställa tillgången till skyddsutrustning")],
+    "ordinance_2020_126": [(SE, 326, "den 16 mars, fattade regeringen beslut om förordningen (2020:126)")],
+    "first_delivery_regions": [(SE, 338, "Fördelad skyddsutrustning och provtagningsutrustning per månad, som komplement i regioner och kommuner, mars 2020 till mars 2021"),
+                               (SE, 338, "2020-mar")],
+    "crisis_office_distribution": [(SE, 334, "Det material som Socialstyrelsen får in distribueras till verksamheter"),
+                                   (SE, 334, "den 3 april 2020")],
+    "ce_waiver": [(SE, 329, "Den 7 april beslutade regeringen att tillfälligt slopa kravet på CEmärkning")],
+    "adda_mandate": [(SE, 329, "Den 8 april fick SKR:s inköpscentral Adda")],
+    "adda_webshop": [(SE, 330, "Den 27 maj började Adda genom sin webbutik leverera materiel till kommunerna")],
+    "statsbidrag": [(SE, 334, "Riksdagen beslutade under 2020 att fördela statsbidrag"),
+                    (SE, 334, "förordningen (2020:193)")],
+}
+
+
+def test_swedish_citations_match_their_pages():
+    rows = json.loads((D / "SE.json").read_text(encoding="utf-8"))["events"]
+    cited = {e["event_id"] for e in rows if e["source_type"] == "primary" and "searched in full" not in e["source"]}
+    assert cited == set(SE_PHRASES), cited ^ set(SE_PHRASES)
+    src = {e["event_id"]: e["source"] for e in rows}
+    cache: dict[str, dict[int, str]] = {}
+    bad = []
+    for k, items in SE_PHRASES.items():
+        for fname, page, phrase in items:
+            pages = cache.setdefault(fname, _pages(fname))
+            if phrase not in pages[page] or f"p. {page}" not in src[k]:
+                bad.append((k, fname, page, phrase))
+    assert not bad, bad

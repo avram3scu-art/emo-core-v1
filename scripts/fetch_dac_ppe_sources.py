@@ -34,6 +34,10 @@ SOURCES = {
     # as published by the Eerste Kamer.
     "NL_vws_tijdlijn_pbm.pdf": ("https://www.eerstekamer.nl/overig/20230914/interactieve_tijdlijn_persoonlijke/document",
                                 "237fcdb5a0288e670fed9d1d5d24bd3b0afe03179d9d3b5c6f6f887630bc125f"),
+    # SOU 2021:89, Sverige under pandemin, volym 1 (Coronakommissionen, interim report), 403 pages.
+    # Same sha256 as the copy Adrian supplied on 26 Oct 2026.
+    "SE_sou_2021_89.pdf": ("https://regeringen.se/contentassets/e1c4a1033b9042fe96c0b2a3f453ff1d/sverige-under-pandemin-volym-1_webb-1.pdf",
+                           "88646b7c4f9f58c3b33e00efac8f843cd3edf591efa342e7976a439d27b9a71b"),
 }
 BE_ANNEX5_PAGES = (326, 549)
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
@@ -88,4 +92,5 @@ if __name__ == "__main__":
     full_text(CACHE / "DE_1921798.pdf", "data/sources/dac_ppe/DE_btd_19-21798.txt")
     full_text(CACHE / "DE_1919047.pdf", "data/sources/dac_ppe/DE_btd_19-19047.txt")
     full_text(CACHE / "NL_vws_tijdlijn_pbm.pdf", "data/sources/dac_ppe/NL_vws_tijdlijn_pbm.txt", layout=False)
+    full_text(CACHE / "SE_sou_2021_89.pdf", "data/sources/dac_ppe/SE_sou_2021_89.txt", layout=False)
     print("wrote data/sources/dac_ppe/FR_senat_r20-199-11.txt")
