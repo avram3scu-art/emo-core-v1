@@ -4,11 +4,27 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`); an editor-style review of the manuscript when Adrian chooses. Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: manuscript sessions F11 (literature search), F12 (rewrite), F13 (figures), F14 (final review); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (117), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F10 (2026-10-28, 15:35–15:56) — editor-style review of the manuscript
+
+**Done when met: yes.** Review committed: `docs/REVIEW_F10_DECISION_OR_SUPPLY.md` (3907fd5).
+
+**Done**
+- Verdict for JCCM: not ready; major revision. Blockers: AI-coded event files not checked by a human (Wiley: GenAI must not create research data; the declaration says the author verified every date); cross-case headline fails under reading B; three-order test undecided, M0 and EU-waiting results at risk of straw men; novelty claim without a systematic search (order-level records exist in Canada and the US); figures missing.
+- **Claude's mistake (F9), fixed:** the revised §7 said the files "were coded by one person"; now "an AI model (Claude) … no human has yet recoded them" (§3.1, §7; .docx regenerated and validated; change list #7, #26).
+
+**Open (each with reason)**
+- Human verification of the coded dates. Reason: Adrian's decision (28 Oct 15:56): he will do the check and prepare the list himself.
+- JCCM fees and its own AI page not opened (wiley.com unreachable from here). Reason: Adrian to check before submission.
+
+**Review and Adrian's answer:** recommended a checklist by Claude first; Adrian: "1 – I will perform the check and prepare the list. Next: 2, 3, 4, 5" (15:56).
+
+**Next:** F11 literature search; F12 rewrite (abstract, §1, §5, §8; M0 and EU framing); F13 figures; F14 final hostile review (never the same day as a submission decision).
 
 ## Fix session F9 (2026-10-28, 15:09–15:30) — manuscript data-only revision
 
