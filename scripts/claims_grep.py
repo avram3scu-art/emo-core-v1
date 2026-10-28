@@ -21,7 +21,7 @@ ORDINAL = re.compile(
     r"\bfirst[ _-]?(order|deliver|binding|signed|resolution|run|wave|week|meeting|mention|row|line|act|legally|budget|"
     r"date|event|recorded|declaration|alert|time|of |national|sample|two|three|half|step|reading|valid|fetch|amendment|"
     r"audit|readable|year|month|day|pass|attempt|value|column|element|key|edition|lead|appearance|case|occurrence|"
-    r"forecast|test|non|t0|warning|purchase|firm|resulting|major|funding|physical|permanent|interim|round|report|procurement|French|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
+    r"forecast|test|non|t0|warning|purchase|firm|resulting|major|funding|physical|permanent|interim|round|report|procurement|French|Belgian|European|request|serves|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
     r"formal|ranked|synthetic|50|12|\(|\]|\)|=|\.|,|:|\"|$)", re.I)
 
 # Remaining hits, judged one by one (file, word or phrase in the line) -> justification.
@@ -60,6 +60,7 @@ MANUAL = [
     ("docs/DAC_PPE_CODING.md", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/dac_ppe_outputs.py", "validated", "means: passed by the validator emo/dac_standard.py"),
     ("scripts/weekly_run.py", "", "code comment or ordinal"),
+    ("docs/MANUSCRIPT_F12_CHANGES.md", "validated", "means: passed the docx skill's validate.py (schema, every edit tracked)"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "not ready", "negation: verdict that the manuscript is not ready"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "first verified delivery", "DAC term for the delivery end point (manuscript §2.1)"),
 ]
