@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F5. Next: F6 (method labels), F7 (DAC clean-up incl. validator gaps D1–D6), F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F6. Next: F7 (DAC clean-up incl. validator gaps D1–D6), F8 (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (97), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F6 (2026-10-28, 10:11–10:30) — method labels and the evidence-class rule
+
+**Done when met: yes.** Labels in place; rules in CLAUDE.md, approved by Adrian ("Yes", 10:13).
+
+**Done**
+- RDL backtest, v0.3 and v0.4 docs labelled "pre-registered on known history, not blind" ("held-out" explained as the word used at the time); forecast ledger named the only blind RDL test; README, PLAN and page wording (02912f9).
+- `docs/GWI_PROTOCOL.md` §6 note: condition 3 used a non-significant placebo as evidence; Fisher p optimistic under clustering; future GWI tests: direct test-vs-placebo difference on a block-permutation null, equivalence bound for any "no effect" claim, H ≥ 0.5 descriptive only.
+- CLAUDE.md Science rules: one evidence class on every result (known-outcome tests never called held-out or blind); a pass needs a significance test of its deciding condition, with a dependence-respecting null, no point comparisons, no "non-significant = no effect" (dc0c1c3). RDL rule wording updated.
+- GWI hurricane PASS caveat in README and page (decided by its significance condition only); page rebuilt and checked (40662610551).
+
+**Review and Adrian's answer**
+- More of F6: recommended no (RDL development passes were point comparisons on known cases, superseded by their FAILs; frozen RDL script docstrings keep "held-out", explained in the protocols). Adrian: "Close".
+- Weakness: GWI calibration FAIL decided by point thresholds; FAIL stands (2.7× over). Future design in the GWI protocol note.
+- Claude's mistakes: none found this session.
+
+**Next:** F7 (DAC clean-up incl. validator gaps D1–D6; blocks session 10), then F8; session 10 after them.
 
 ## Fix session F5 (2026-10-28, 09:43–10:05) — SMF significance re-analysis
 
