@@ -1,376 +1,392 @@
 {
-  "standard_version": "1.1",
-  "case": {
-    "case_id": "BE",
-    "t0_event_id": "who_pheic",
-    "t0_institution": "World Health Organization (IHR Emergency Committee)",
-    "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
-    "alternative_t0": [
-      "who_pandemic"
-    ],
-    "response_scale": "Belgian federal government (SPF SPSCAE / FOD VVVL purchasing); provincial, regional and municipal acts are context",
-    "start_rule": "First purchase order or contract for PPE for general supply; inquiries, options-only, tenders and single-mission purchases excluded",
-    "end_point": "municipalities",
-    "inclusion_rules": {
-      "firm_order": "First federal purchase order or contract for PPE for general supply",
-      "binding_act": "First legally binding federal act concerning the PPE response",
-      "dedicated_funding": "First funding legally earmarked for PPE",
-      "delivery": "First physical delivery to municipalities; supplier deliveries to the federal stock and deliveries to hospitals are secondary end points",
-      "institutionalisation": "First permanent body created for the hazard"
-    },
-    "observation_window": {
-      "start": "2020-01-01",
-      "end": "2020-06-30",
-      "reason": "First wave; opens 1 Jan so that pre-t0 events can be context (docs/DAC_PPE_CODING.md §5)"
-    },
-    "source_pool": {
-      "searched": [
-        "Chambre des représentants, DOC 55 1394/002, Annexe 5 (chronologie), PDF pp. 326-437 (French part), fetched by scripts/fetch_dac_ppe_sources.py, sha256 3a71e63d..."
-      ],
-      "search_date": "2026-10-28",
-      "not_accessed": [
-        "hearing records CRIV K0xx cited by Annex 5",
-        "Moniteur belge",
-        "federal budget documents"
-      ],
-      "case_selection_reason": "Official reconstruction available (manuscript §3.1)"
-    },
-    "coding": {
-      "coders": 1,
-      "agreement": null,
-      "rules_fixed_before_coding": true
-    },
-    "computation": {
-      "code": "emo/dac_standard.py"
-    },
-    "identification": "Paired federal orders of the same good on different dates (FFP2, surgical masks) can test a delay common to the purchasing service (equal lags for orders of different goods placed together) and, per good, decision-limited vs supply-limited delay only if order dates are spread more widely than delivery variation and placed before supply recovered (Proposition 1). Deliveries are to the federal stock, not to municipalities, so paired lags are measured at that secondary end point."
+ "standard_version": "1.1",
+ "case": {
+  "case_id": "BE",
+  "t0_event_id": "who_pheic",
+  "t0_institution": "World Health Organization (IHR Emergency Committee)",
+  "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
+  "alternative_t0": [
+   "who_pandemic"
+  ],
+  "response_scale": "Belgian federal government (SPF SPSCAE / FOD VVVL purchasing); provincial, regional and municipal acts are context",
+  "start_rule": "First purchase order or contract for PPE for general supply; inquiries, options-only, tenders and single-mission purchases excluded",
+  "end_point": "municipalities",
+  "inclusion_rules": {
+   "firm_order": "First federal purchase order or contract for PPE for general supply",
+   "binding_act": "First legally binding federal act concerning the PPE response",
+   "dedicated_funding": "First funding legally earmarked for PPE",
+   "delivery": "First physical delivery to municipalities; supplier deliveries to the federal stock and deliveries to hospitals are secondary end points",
+   "institutionalisation": "First permanent body created for the hazard"
   },
-  "events": [
-    {
-      "event_id": "who_pheic",
-      "sublayer": "validation",
-      "date_status": "exact",
-      "description": "WHO IHR Emergency Committee: Public Health Emergency of International Concern",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt; flagged Contradict. with row 65)",
-      "source_type": "primary",
-      "date_earliest": "2020-01-30",
-      "date_latest": "2020-01-30"
-    },
-    {
-      "event_id": "who_pandemic",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "WHO declares a pandemic (alternative t0)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 363, row 51 (CRIV K001, De Raedt)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-11",
-      "date_latest": "2020-03-11"
-    },
-    {
-      "event_id": "inquiry_3M",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "Inquiry to 3M about price and availability of FFP2 and 2 million surgical masks (inquiry, not an order)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 341, row 1053 (CRIV K040, Pardon)",
-      "source_type": "primary",
-      "date_earliest": "2020-01-29",
-      "date_latest": "2020-01-29"
-    },
-    {
-      "event_id": "repatriation_ffp2",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "Limited purchase of 1,080 FFP2 for the repatriation of Belgians from Wuhan (single mission, excluded)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 343, row 1052 (CRIV K040, Pardon; dixit Karin Jiroflée)",
-      "source_type": "primary",
-      "date_earliest": "2020-01-31",
-      "date_latest": "2020-01-31"
-    },
-    {
-      "event_id": "eu_jpa_participation",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "Belgium participates in the EU joint procurement of PPE (tender, not a Belgian order)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 353, row 360 (Questions d'enquête, CSS; flagged Contradict.)",
-      "source_type": "primary",
-      "date_earliest": "2020-02-27",
-      "date_latest": "2020-02-27"
-    },
-    {
-      "event_id": "eu_jpa_first",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "First EU joint procurement of PPE",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 354, row 44 (CRIV K001, De Raedt)",
-      "source_type": "primary",
-      "date_earliest": "2020-02-28",
-      "date_latest": "2020-02-28"
-    },
-    {
-      "event_id": "de_export_ban",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "German export ban on certain medical equipment",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 1031 (CRIV K038-2, Geens)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-04",
-      "date_latest": "2020-03-04"
-    },
-    {
-      "event_id": "tender_surgical",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "SPF SPSCAE launches a public procurement procedure for surgical masks (tender, not an order)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 717 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-05",
-      "date_latest": "2020-03-05"
-    },
-    {
-      "event_id": "tf_shortages",
-      "sublayer": "context",
-      "date_status": "exact",
-      "description": "Task Force Shortages created (temporary, not a permanent body)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 244 (Questions d'enquête, AFMPS)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-15",
-      "date_latest": "2020-03-15"
-    },
-    {
-      "event_id": "order_3M_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 500,000 FFP2 respirators from 3M, reading A",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 1052, PDF p. 343, CRIV K040, Pardon; dixit Karin Jiroflée",
-      "source_type": "primary",
-      "date_earliest": "2020-01-31",
-      "date_latest": "2020-01-31",
-      "reading": "A",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_3M_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 500,000 FFP2 respirators from 3M, reading B",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 760, PDF p. 344, Questions d'enquête SPF, Auwers; flagged Contradict. with row 716",
-      "source_type": "primary",
-      "date_earliest": "2020-02-04",
-      "date_latest": "2020-02-04",
-      "reading": "B",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_3M_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 500,000 FFP2 respirators from 3M, reading C",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 716, PDF p. 357, CRIV K022, Claes; flagged Contradict. with row 760",
-      "source_type": "primary",
-      "date_earliest": "2020-03-04",
-      "date_latest": "2020-03-04",
-      "reading": "C",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_life_surgical",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 10,000,000 surgical masks from Life",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 719 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-15",
-      "date_latest": "2020-03-15",
-      "good": "surgical masks"
-    },
-    {
-      "event_id": "order_ultrazonic_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 1,000,000 FFP2 respirators from Ultrazonic",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 720 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-16",
-      "date_latest": "2020-03-16",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_panscope_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 2,700,000 FFP2 respirators from Pan Scope Trading",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 375, row 723 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-23",
-      "date_latest": "2020-03-23",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_life_ffp2",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 3,000,000 FFP2 respirators from Life",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 376, row 722 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-23",
-      "date_latest": "2020-03-23",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "order_erard_gloves",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 287,000 gloves from Erard SA",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 380, row 725 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-27",
-      "date_latest": "2020-03-27",
-      "good": "gloves"
-    },
-    {
-      "event_id": "order_xml_surgical",
-      "sublayer": "firm_order",
-      "date_status": "exact",
-      "description": "Federal order of 2,200,000 surgical masks from XML",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 382, row 726 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-31",
-      "date_latest": "2020-03-31",
-      "good": "surgical masks"
-    },
-    {
-      "event_id": "del_3M_ffp2",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "First delivery of the 3M order ('livraison à partir du 27 mars 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 357, row 716 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-27",
-      "date_latest": "2020-03-27",
-      "pairs_with": "order_3M_ffp2",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "del_life_surgical",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "Delivery of the Life surgical-mask order ('livraison le 20 mars 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 719 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-20",
-      "date_latest": "2020-03-20",
-      "pairs_with": "order_life_surgical",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "surgical masks"
-    },
-    {
-      "event_id": "del_ultrazonic_ffp2",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "First delivery of the Ultrazonic order ('livraison à partir du 6 avril 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 720 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-04-06",
-      "date_latest": "2020-04-06",
-      "pairs_with": "order_ultrazonic_ffp2",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "del_life_ffp2",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "Delivery of the Life FFP2 order ('livraison le 2 avril 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 376, row 722 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-04-02",
-      "date_latest": "2020-04-02",
-      "pairs_with": "order_life_ffp2",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "del_erard_gloves",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "Delivery of the Erard glove order ('livraison le 1er avril 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 380, row 725 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-04-01",
-      "date_latest": "2020-04-01",
-      "pairs_with": "order_erard_gloves",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "gloves"
-    },
-    {
-      "event_id": "del_xml_surgical",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "Delivery of the XML surgical-mask order ('livraison le 6 avril 2020')",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 382, row 726 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "date_earliest": "2020-04-06",
-      "date_latest": "2020-04-06",
-      "pairs_with": "order_xml_surgical",
-      "end_point": "federal stock (supplier delivery to SPF/Peutie)",
-      "good": "surgical masks"
-    },
-    {
-      "event_id": "del_panscope_ffp2",
-      "sublayer": "delivery",
-      "date_status": "missing",
-      "description": "Delivery of the Pan Scope order: recorded as 'livraison le 19 mars 2020', before the order of 23 March; flagged 'Contrad. dat.' by the committee, so coded missing (rule §5a)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 375, row 723 (CRIV K022, Claes)",
-      "source_type": "primary",
-      "pairs_with": "order_panscope_ffp2",
-      "good": "FFP2 respirators"
-    },
-    {
-      "event_id": "del_communes",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "First distribution of masks and gel to municipalities (federal and provincial sources; 17 distributions in the first wave). Province of Walloon Brabant",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 463 (CRIV K016, Mahieu & Berx)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-16",
-      "date_latest": "2020-03-16",
-      "end_point": "municipalities"
-    },
-    {
-      "event_id": "del_hospitals",
-      "sublayer": "delivery",
-      "date_status": "exact",
-      "description": "First push delivery of masks to general hospitals (providers: secondary end point)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 372, row 636 (CRIV K018)",
-      "source_type": "primary",
-      "date_earliest": "2020-03-20",
-      "date_latest": "2020-03-20",
-      "end_point": "hospitals (providers)"
-    },
-    {
-      "event_id": "binding_act_none",
-      "sublayer": "binding_act",
-      "date_status": "missing",
-      "description": "No legally binding federal act concerning the PPE response found in Annex 5 within the window (searched: arrêté, réquisition, export, prix, loi). The Moniteur belge was not searched.",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, searched Annex 5 PDF pp. 326-437",
-      "source_type": "primary"
-    },
-    {
-      "event_id": "funding_none",
-      "sublayer": "dedicated_funding",
-      "date_status": "missing",
-      "description": "No funding legally earmarked for PPE found in Annex 5 within the window (searched: crédit, provision, budget). Budget documents not searched.",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, searched Annex 5 PDF pp. 326-437",
-      "source_type": "primary"
-    },
-    {
-      "event_id": "institution_none",
-      "sublayer": "institutionalisation",
-      "date_status": "missing",
-      "description": "No permanent body for the hazard created within the window found in Annex 5 (Task Force Shortages is temporary)",
-      "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, searched Annex 5 PDF pp. 326-437",
-      "source_type": "primary"
-    }
-  ]
+  "observation_window": {
+   "start": "2020-01-01",
+   "end": "2020-06-30",
+   "reason": "First wave; opens 1 Jan so that pre-t0 events can be context (docs/DAC_PPE_CODING.md §5)"
+  },
+  "source_pool": {
+   "searched": [
+    "Chambre des représentants, DOC 55 1394/002, Annexe 5 (chronologie), PDF pp. 326-437 (French part), fetched by scripts/fetch_dac_ppe_sources.py, sha256 3a71e63d...",
+    "Hearing records CRIV 55 K022 (12 Feb 2021 AM) and K040 (19 Apr 2021), full (F8.7)",
+    "Chamber report DOC 55 1394/002 main text, searched for PPE decrees (F8.7)"
+   ],
+   "search_date": "2026-10-28",
+   "not_accessed": [
+    "hearing records CRIV K0xx cited by Annex 5",
+    "Moniteur belge",
+    "federal budget documents",
+    "Moniteur belge (eJustice CAPTCHA): ministerial decree of 23 March 2020 on the sale of PPE"
+   ],
+   "case_selection_reason": "Official reconstruction available (manuscript §3.1)"
+  },
+  "coding": {
+   "coders": 1,
+   "agreement": null,
+   "rules_fixed_before_coding": true
+  },
+  "computation": {
+   "code": "emo/dac_standard.py"
+  },
+  "identification": "Paired federal orders of the same good on different dates (FFP2, surgical masks) can test a delay common to the purchasing service (equal lags for orders of different goods placed together) and, per good, decision-limited vs supply-limited delay only if order dates are spread more widely than delivery variation and placed before supply recovered (Proposition 1). Deliveries are to the federal stock, not to municipalities, so paired lags are measured at that secondary end point."
+ },
+ "events": [
+  {
+   "event_id": "who_pheic",
+   "sublayer": "validation",
+   "date_status": "exact",
+   "description": "WHO IHR Emergency Committee: Public Health Emergency of International Concern",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 342, row 36 (CRIV K001, De Raedt; flagged Contradict. with row 65)",
+   "source_type": "primary",
+   "date_earliest": "2020-01-30",
+   "date_latest": "2020-01-30"
+  },
+  {
+   "event_id": "who_pandemic",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "WHO declares a pandemic (alternative t0)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 363, row 51 (CRIV K001, De Raedt)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-11",
+   "date_latest": "2020-03-11"
+  },
+  {
+   "event_id": "inquiry_3M",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Inquiry to 3M about price and availability of FFP2 and 2 million surgical masks (inquiry, not an order)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 341, row 1053 (CRIV K040, Pardon)",
+   "source_type": "primary",
+   "date_earliest": "2020-01-29",
+   "date_latest": "2020-01-29"
+  },
+  {
+   "event_id": "repatriation_ffp2",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Limited purchase of 1,080 FFP2 for the repatriation of Belgians from Wuhan (single mission, excluded)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 343, row 1052 (CRIV K040, Pardon; dixit Karin Jiroflée)",
+   "source_type": "primary",
+   "date_earliest": "2020-01-31",
+   "date_latest": "2020-01-31"
+  },
+  {
+   "event_id": "eu_jpa_participation",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Belgium participates in the EU joint procurement of PPE (tender, not a Belgian order)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 353, row 360 (Questions d'enquête, CSS; flagged Contradict.)",
+   "source_type": "primary",
+   "date_earliest": "2020-02-27",
+   "date_latest": "2020-02-27"
+  },
+  {
+   "event_id": "eu_jpa_first",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "First EU joint procurement of PPE",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 354, row 44 (CRIV K001, De Raedt)",
+   "source_type": "primary",
+   "date_earliest": "2020-02-28",
+   "date_latest": "2020-02-28"
+  },
+  {
+   "event_id": "de_export_ban",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "German export ban on certain medical equipment",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 1031 (CRIV K038-2, Geens)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-04",
+   "date_latest": "2020-03-04"
+  },
+  {
+   "event_id": "tender_surgical",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "SPF SPSCAE launches a public procurement procedure for surgical masks (tender, not an order)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 358, row 717 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-05",
+   "date_latest": "2020-03-05"
+  },
+  {
+   "event_id": "tf_shortages",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Task Force Shortages created (temporary, not a permanent body)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 244 (Questions d'enquête, AFMPS)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-15",
+   "date_latest": "2020-03-15"
+  },
+  {
+   "event_id": "order_3M_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 500,000 FFP2 respirators from 3M, reading A",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 1052, PDF p. 343, CRIV K040, Pardon; dixit Karin Jiroflée; hearing record CRIV 55 K040 (19 Apr 2021), PDF p. 12 (Jiroflée citing Pardon's written answers) and p. 16 (Pardon; supplier not named)",
+   "source_type": "primary",
+   "date_earliest": "2020-01-31",
+   "date_latest": "2020-01-31",
+   "reading": "A",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_3M_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 500,000 FFP2 respirators from 3M, reading B",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 760, PDF p. 344, Questions d'enquête SPF, Auwers; flagged Contradict. with row 716",
+   "source_type": "primary",
+   "date_earliest": "2020-02-04",
+   "date_latest": "2020-02-04",
+   "reading": "B",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_3M_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 500,000 FFP2 respirators from 3M, reading C",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, row 716, PDF p. 357, CRIV K022, Claes; flagged Contradict. with row 760; hearing record CRIV 55 K022 (12 Feb 2021, morning), PDF p. 4 (Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-04",
+   "date_latest": "2020-03-04",
+   "reading": "C",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_life_surgical",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 10,000,000 surgical masks from Life",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 719 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-15",
+   "date_latest": "2020-03-15",
+   "good": "surgical masks"
+  },
+  {
+   "event_id": "order_ultrazonic_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 1,000,000 FFP2 respirators from Ultrazonic",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 720 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-16",
+   "date_latest": "2020-03-16",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_panscope_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 2,700,000 FFP2 respirators from Pan Scope Trading",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 375, row 723 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-23",
+   "date_latest": "2020-03-23",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_life_ffp2",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 3,000,000 FFP2 respirators from Life",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 376, row 722 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-23",
+   "date_latest": "2020-03-23",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "order_erard_gloves",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 287,000 gloves from Erard SA",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 380, row 725 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-27",
+   "date_latest": "2020-03-27",
+   "good": "gloves"
+  },
+  {
+   "event_id": "order_xml_surgical",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order of 2,200,000 surgical masks from XML",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 382, row 726 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-31",
+   "date_latest": "2020-03-31",
+   "good": "surgical masks"
+  },
+  {
+   "event_id": "del_3M_ffp2",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "First delivery of the 3M order ('livraison à partir du 27 mars 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 357, row 716 (CRIV K022, Claes); hearing record CRIV 55 K022 (12 Feb 2021, morning), PDF p. 4 (Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-27",
+   "date_latest": "2020-03-27",
+   "pairs_with": "order_3M_ffp2",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "del_life_surgical",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "Delivery of the Life surgical-mask order ('livraison le 20 mars 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 368, row 719 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-20",
+   "date_latest": "2020-03-20",
+   "pairs_with": "order_life_surgical",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "surgical masks"
+  },
+  {
+   "event_id": "del_ultrazonic_ffp2",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "First delivery of the Ultrazonic order ('livraison à partir du 6 avril 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 720 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-06",
+   "date_latest": "2020-04-06",
+   "pairs_with": "order_ultrazonic_ffp2",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "del_life_ffp2",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "Delivery of the Life FFP2 order ('livraison le 2 avril 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 376, row 722 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-02",
+   "date_latest": "2020-04-02",
+   "pairs_with": "order_life_ffp2",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "del_erard_gloves",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "Delivery of the Erard glove order ('livraison le 1er avril 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 380, row 725 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-01",
+   "date_latest": "2020-04-01",
+   "pairs_with": "order_erard_gloves",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "gloves"
+  },
+  {
+   "event_id": "del_xml_surgical",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "Delivery of the XML surgical-mask order ('livraison le 6 avril 2020')",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 382, row 726 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-06",
+   "date_latest": "2020-04-06",
+   "pairs_with": "order_xml_surgical",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "surgical masks"
+  },
+  {
+   "event_id": "del_panscope_ffp2",
+   "sublayer": "delivery",
+   "date_status": "missing",
+   "description": "Delivery of the Pan Scope order: recorded as 'livraison le 19 mars 2020', before the order of 23 March; flagged 'Contrad. dat.' by the committee, so coded missing (rule §5a)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 375, row 723 (CRIV K022, Claes)",
+   "source_type": "primary",
+   "pairs_with": "order_panscope_ffp2",
+   "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "del_communes",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "First distribution of masks and gel to municipalities (federal and provincial sources; 17 distributions in the first wave). Province of Walloon Brabant",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 369, row 463 (CRIV K016, Mahieu & Berx)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-16",
+   "date_latest": "2020-03-16",
+   "end_point": "municipalities"
+  },
+  {
+   "event_id": "del_hospitals",
+   "sublayer": "delivery",
+   "date_status": "exact",
+   "description": "First push delivery of masks to general hospitals (providers: secondary end point)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 372, row 636 (CRIV K018)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-20",
+   "date_latest": "2020-03-20",
+   "end_point": "hospitals (providers)"
+  },
+  {
+   "event_id": "binding_act_ar_30apr",
+   "sublayer": "binding_act",
+   "date_status": "window",
+   "description": "First binding federal act concerning PPE between t0 (no sourced lower bound, rule §2) and the arrêté royal of 30 April 2020 on information flows including hospital stocks of personal protective equipment (M.B. 06.05.2020); an earlier ministerial decree of 23 March 2020 is known only from a secondary source (rule §5 Belgium d b)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), main report, PDF p. 274 and p. 281 (footnote 96)",
+   "source_type": "primary",
+   "date_latest": "2020-04-30",
+   "source_wording": "'l’arrêté royal du 30 avril 2020 concernant un flux d’information correct et en temps voulu sur les chiffres de patients COVID-19, la capacité de traitement dans les hôpitaux et les stocks de matériel de protection individuelle' (p. 274)",
+   "date_earliest": "2020-01-30"
+  },
+  {
+   "event_id": "am_23mar_sale",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Ministerial decree restricting the sale of certain medical devices and PPE (FFP2/FFP3) to authorised pharmacies on prescription; Moniteur belge text not opened (CAPTCHA); secondary source, context only (rule §5 Belgium d b)",
+   "source": "Allen & Overy, 'Belgium: COVID-19 (Coronavirus) measures affecting the life sciences sector', https://www.allenovery.com/en-gb/global/blogs/life-science/belgium-covid-19-coronavirus-measures-affecting-the-life-sciences-sector (accessed 2026-10-28)",
+   "source_type": "secondary",
+   "date_earliest": "2020-03-23",
+   "date_latest": "2020-03-23"
+  },
+  {
+   "event_id": "funding_none",
+   "sublayer": "dedicated_funding",
+   "date_status": "missing",
+   "description": "No funding legally earmarked for PPE found in Annex 5 within the window (searched: crédit, provision, budget). Budget documents not searched.",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, searched Annex 5 PDF pp. 326-437",
+   "source_type": "primary"
+  },
+  {
+   "event_id": "institution_none",
+   "sublayer": "institutionalisation",
+   "date_status": "missing",
+   "description": "No permanent body for the hazard created within the window found in Annex 5 (Task Force Shortages is temporary)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, searched Annex 5 PDF pp. 326-437",
+   "source_type": "primary"
+  }
+ ]
 }

@@ -266,3 +266,30 @@ def test_cited_pages_reads_each_document_separately():
     assert cited_pages(src, "2020/402") == {1}
     assert cited_pages("Sénat, tome I, PDF pp. 141-142", "Sénat") == {141, 142}
     assert cited_pages("SOU 2021:89, PDF p. 371, p. 336 and p. 34", "SOU 2021:89") == {371, 336, 34}
+
+
+# F8.7: Belgian citations added from the hearing records and the report's main text (Annex 5 rows are checked above).
+DOC_KEYS.update({"BE_criv_K022.txt": "CRIV 55 K022", "BE_criv_K040.txt": "CRIV 55 K040",
+                 "BE_report_pp270-285.txt": "main report"})
+BE_ADDED = {
+    "order_3M_ffp2": [("BE_criv_K040.txt", 12, "Daarnaast ging er diezelfde dag een order buiten van 500.000 FFP2-maskers"),
+                      ("BE_criv_K040.txt", 16, "FFP2-maskers die besteld werden op 31 januari"),
+                      ("BE_criv_K022.txt", 4, "op 4 maart bij de firma 3M de eerste bestellingen werden geplaatst voor FFP2-maskers")],
+    "del_3M_ffp2": [("BE_criv_K022.txt", 4, "pas worden geleverd vanaf 27 maart")],
+    "binding_act_ar_30apr": [("BE_report_pp270-285.txt", 274, "l’arrêté royal du 30 avril 2020"),
+                             ("BE_report_pp270-285.txt", 274, "stocks de matériel de protection individuelle"),
+                             ("BE_report_pp270-285.txt", 281, "(M.B. 06.05.2020)")],
+}
+
+
+def test_belgian_added_citations_match_their_pages():
+    rows = json.loads((D / "BE.json").read_text(encoding="utf-8"))["events"]
+    sources: dict[str, str] = {}
+    for e in rows:
+        sources[e["event_id"]] = sources.get(e["event_id"], "") + " ; " + e["source"]
+    bad = []
+    for k, items in BE_ADDED.items():
+        for fname, page, phrase in items:
+            if phrase not in _pages(fname).get(page, "") or page not in cited_pages(sources[k], DOC_KEYS[fname]):
+                bad.append((k, fname, page, phrase))
+    assert not bad, bad

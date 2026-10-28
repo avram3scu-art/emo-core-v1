@@ -63,6 +63,11 @@ SOURCES = {
     # BMG, Beschaffungsstab Corona, 1. Bericht über den Stand der Beschaffung von PSA, Stand 4 April 2020, 3 pages.
     "DE_bmg_beschaffungsstab_1.pdf": ("https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/C/Coronavirus/Beschaffungsstab/1._Bericht_Beschaffungsstab_040420.pdf",
                                       "f5eb3d498af62e9c7cbbd225c955e9d67ba26244861769212a943e94fbb94f87"),
+    # Chamber hearing records cited by Annex 5 for the 3M order (both in the manuscript's reference list).
+    "BE_criv_K022.pdf": ("https://www.dekamer.be/kvvcr/pdf_sections/pri/covid/Comm%20Aanpak_GestionCOVID19_20210212_AM.pdf",
+                         "f18a6b452a8ef12f30dd699fb3e7801c594e19f65d18fc4a9fd2cef767ef9b3d"),
+    "BE_criv_K040.pdf": ("https://www.dekamer.be/kvvcr/pdf_sections/pri/covid/Comm%20Aanpak_GestionCOVID19_20210419.pdf",
+                         "b458b897c7bc4993fd474780b6bf713148aad466a1483fbc38cc09374a27ebe4"),
 }
 # European Parliament Multimedia Centre, photo record P-043686 (25 Apr 2020), URL from the manuscript's
 # reference list. The page is dynamic and behind a bot challenge, so it is rendered with headless Chromium
@@ -118,7 +123,7 @@ def ep_photo_text(out: str) -> None:
     (ROOT / out).write_text(text, encoding="utf-8")
 
 
-def full_text(pdf: Path, out: str, layout: bool = True) -> None:
+def full_text(pdf: Path, out: str, layout: bool = True, first: int = 1, last: int | None = None) -> None:
     """Whole document as text with page markers (PDF page numbers), for citation by page.
 
     layout=False keeps reading order for two-column documents (phrases are not split across columns).
@@ -126,7 +131,7 @@ def full_text(pdf: Path, out: str, layout: bool = True) -> None:
     n = int(next(ln.split()[-1] for ln in subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True,
                                                           check=True).stdout.splitlines() if ln.startswith("Pages:")))
     parts = []
-    for p in range(1, n + 1):
+    for p in range(first, (last or n) + 1):
         opts = ["-layout"] if layout else []
         txt = subprocess.run(["pdftotext", *opts, "-f", str(p), "-l", str(p), str(pdf), "-"],
                              capture_output=True, text=True, check=True).stdout
@@ -161,5 +166,8 @@ if __name__ == "__main__":
     full_text(CACHE / "SE_sou_2020_80.pdf", "data/sources/dac_ppe/SE_sou_2020_80.txt", layout=False)
     full_text(CACHE / "DE_brh_enquete_2025.pdf", "data/sources/dac_ppe/DE_brh_enquete_2025.txt", layout=False)
     full_text(CACHE / "DE_bmg_beschaffungsstab_1.pdf", "data/sources/dac_ppe/DE_bmg_beschaffungsstab_1.txt", layout=False)
+    full_text(CACHE / "BE_criv_K022.pdf", "data/sources/dac_ppe/BE_criv_K022.txt", layout=False)
+    full_text(CACHE / "BE_criv_K040.pdf", "data/sources/dac_ppe/BE_criv_K040.txt", layout=False)
+    full_text(CACHE / "BE_55K1394002.pdf", "data/sources/dac_ppe/BE_report_pp270-285.txt", layout=False, first=270, last=285)
     ep_photo_text("data/sources/dac_ppe/EU_ep_photo_P043686.txt")
     print("wrote data/sources/dac_ppe/*.txt")

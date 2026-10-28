@@ -1,0 +1,1172 @@
+===== PDF page 270 =====
+DOC 55
+
+1394/002
+
+271
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+I.B.
+
+Analyse détaillée des compétences des communautés et du pouvoir fédéral en lien avec les missions
+de la commission spéciale et avec la crise sanitaire résultant du coronavirus
+
+1)
+
+La politique de dispensation de soins dans et au dehors des institutions de soins (article 5, § 1er, I,
+alinéa 1er, 1°, LSRI)
+La compétence des communautés en matière de politique de dispensation de soins dans et au dehors
+des institutions de soins est en principe très large. Les communautés ont la plénitude de compétence
+pour régler cette matière et peuvent prendre toutes les mesures propres à leur permettre d’exercer
+cette compétence.15
+Dans ce contexte, la question de l’identification de la personne, de l’institution ou de l’organisation
+ayant dispensé les soins n’est pas importante : les communautés sont en principe compétentes pour
+la dispensation de soins en tant que telle, peu importe qui les a dispensés.16 Il ressort en effet des
+travaux préparatoires de la loi spéciale du 8 août 1980 que les communautés sont compétentes pour
+toutes les formes de dispensation de soins dans le cadre de la politique de santé17, que les soins soient
+dispensés par des hôpitaux ou par d’autres institutions qui offrent des soins de santé.18 Les soins dispensés peuvent même prendre la forme de soins ambulatoires, comme les soins à domicile.19
+Le terme néerlandais « verplegingsinrichtingen » ne couvrant pas totalement la réalité qui est désignée, il serait
+préférable de parler de « zorginstellingen ».20 Le texte français parle en l’occurrence « d’institutions de soins ».
+
+Cette compétence communautaire appelle les nuances suivantes :
+-
+
+s’agissant des soins dispensés en dehors des hôpitaux (les soins extramuraux), c’est-à-dire dispensés au sein ou en dehors d’autres institutions qui offrent des soins de santé, il est rappelé
+que depuis la sixième réforme de l’État, l’article 5, § 1er, I, alinéa 1er, 2° à 6°, de la LSRI prévoit
+une compétence communautaire spécifique pour plusieurs catégories de soins extramuraux.
+Ces catégories sont dès lors exclues du périmètre de la compétence communautaire de principe en matière de dispensation de soins au sein et au dehors des institutions de soins.21 Il
+s’agit notamment : de la dispensation des soins de santé mentale dans les institutions de soins
+autres que les hôpitaux (2°), de la dispensation de soins dans les institutions pour personnes
+âgées, en ce compris les services de gériatrie isolés (3°), de la dispensation de soins dans les
+services spécialisés isolés de revalidation et de traitement (4°), de la revalidation long term
+care (5°) et des soins de première ligne (6°). De ce fait, la compétence communautaire de
+principe en matière de dispensation de soins ne concerne plus en pratique que les hôpitaux,
+ce qui inclut à la fois les hôpitaux psychiatriques et non psychiatriques, y compris les services
+psychiatriques des hôpitaux généraux22 ;
+
+-
+
+il convient de tenir compte de la compétence résiduaire du pouvoir fédéral pour l’exercice de
+l’art de guérir.23 Il en résulte que de nombreux actes des professionnels des soins de santé
+
+15 C.C., 19 décembre 2013, n° 170/2013, B.7.
+
+16 J. Van Nieuwenhove, “Het gezondheidsbeleid” dans B. Seutin et G. Van Haegendoren (eds.), De bevoegdheden van de gemeenschappen,
+Bruges, Die Keure, 2017, p. 207.
+17 Qu’il faut comprendre comme des soins dispensés en vue d’améliorer la santé d’individus ou de la société. En effet, d’autres formes de
+dispensation de soins sont envisageables dans le cadre de l’aide aux personnes, qu’il convient de distinguer des formes de dispensation de
+soins mentionnées à l’article 5, § 1er, I, alinéa 1er, 1°, de la LSRI.
+18 Doc. Parl. Sénat 1979-1980, n° 434/2, p. 121-124 ; Doc. Parl. Chambre 1979-1980, n° 627/10, p. 53.
+19 Doc. Parl. Sénat 1979-1980, n° 434/2, p. 124 ; Doc. Parl. Chambre 1979-1980, n° 627/10, p. 52 ; J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 208.
+20 Ibidem, p. 208 ; K. Reybrouck et S. Sottiaux, o.c., p. 376
+21 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 208.
+22 J. Van Nieuwenhove, « Les nouvelles compétences communautaires en matière de soins de santé et d’aide aux personnes handicapées »,
+Revue belge de sécurité sociale, 2ème trimestre 2015, p. 271.
+23 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., 207.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+2020
+
+2021
+
+7/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 271 =====
+272
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+pouvant être considérés comme relevant de l’exercice de l’art de guérir relèvent de la compétence résiduaire du pouvoir fédéral24 (voir infra I.B.2) ;
+-
+
+enfin, d’importantes exceptions existent à la compétence communautaire en matière de dispensation de soins au sein et en dehors des institutions de soins, sous la forme de compétences réservées au pouvoir fédéral, dont les principales sont la législation organique en matière d’hôpitaux et le financement de l’exploitation des hôpitaux (voir infra I.B.3 et I.B.4).
+
+Les communautés sont aussi compétentes pour définir les normes auxquelles les hôpitaux, ainsi que
+les services, programmes de soins et services hospitaliers doivent répondre pour être agréés.25 Ces
+normes d'agrément ne peuvent toutefois pas avoir de répercussions sur le financement de l’exploitation des hôpitaux dès lors que le pouvoir fédéral est resté compétent en la matière.26 Le pouvoir fédéral demeure par ailleurs compétent pour déterminer les caractéristiques de base des normes
+d’agrément dans le cadre de la législation organique qui continue à relever de la compétence de l’État
+fédéral.27 (voir infra I.B.3)
+2)
+
+Exercice de la médecine (et réglementation des professions des soins de santé)
+Un aspect important de la compétence fédérale résiduaire en matière d’exercice de la médecine concerne la réglementation des professions des soins de santé.28 La Cour constitutionnelle a décrit cette
+compétence de la manière suivante : « Le législateur fédéral, qui est demeuré compétent pour régler
+ce qui relève de l’exercice de l’art de guérir et des professions paramédicales, peut édicter des règles
+concernant l’exercice d’activités de nature médicale ou paramédicale (…). »29
+Il appartient donc au pouvoir fédéral d’adopter des règles régissant l’accès à une profession médicale
+ou paramédicale.30 Ce domaine de compétence comprend également le pouvoir de réglementer les
+actes qui peuvent être posés par les professionnels de la santé.31 Le pouvoir fédéral a exercé cette
+compétence par le biais de la loi coordonnée du 10 mai 2015 ‘relative à l’exercice des professions des
+soins de santé’.
+La notion d’« exercice de la médecine » recouvre un large champ de compétences qui permet au pouvoir fédéral de légiférer dans un grand nombre de domaines, si bien qu’il arrive parfois que le pouvoir
+fédéral empiète sur les compétences communautaires.32 Dans de tels cas, il faudra donc trouver un
+équilibre entre les deux compétences, sachant que selon la jurisprudence de la Cour constitutionnelle,
+les compétences attribuées aux communautés doivent être interprétées de manière large.33 Selon la
+Cour constitutionnelle, la compétence du pouvoir fédéral en matière d’exercice de la médecine est
+limitée à la désignation des actes qui répondent à cette définition et à la fixation des conditions –
+notamment les exigences de qualité – auxquelles des personnes peuvent poser ces actes. Par conséquent, la compétence du pouvoir fédéral ne peut s’étendre à tous les aspects de la relation entre les
+patients – qui peuvent également être définis comme des personnes nécessitant des soins – et les
+titulaires de professions de soins de santé, et elle ne peut pas davantage être interprétée à ce point
+
+24 Ibidem.
+
+25 Doc. Parl. Sénat 2012-2013, n° 5-2232/1, p. 28.
+26 Ibidem.
+
+27 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 222-223.
+28 Ibidem, p. 273.
+
+29 C.C., 18 décembre 1996, n° 81/96, B.4.2.
+30 K. Reybrouck et S. Sottiaux, o.c., p. 349.
+
+31 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 274.
+32 K. Reybrouck et S. Sottiaux, o.c., p. 369.
+33 Ibidem.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+8/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 272 =====
+DOC 55
+
+1394/002
+
+273
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+largement que la compétence de principe des communautés en matière de politique de santé s’en
+trouverait vidée de sa substance.34
+3)
+
+Législation organique en matière d’hôpitaux (article 5, § 1er, I, alinéa 1er, 1°, a), LSRI)
+Ainsi qu'il a été indiqué ci-dessus, il existe d'importantes exceptions fédérales à la compétence des
+communautés en matière de dispensation de soins dans et au dehors des institutions de soins.
+La principale restriction concerne la législation dite ‘organique’. Conformément à l'article 5, § 1er, I,
+alinéa 1er, 1°, a), de la LSRI, le pouvoir fédéral reste compétent en ce qui concerne « la législation
+organique, à l’exception du coût des investissements de l’infrastructure et des services médicotechniques » en matière de dispensation de soins dans et au dehors des institutions de soins. Il ressort des
+travaux préparatoires de la loi spéciale du 8 août 1980 que le législateur spécial visait ainsi la « législation de base », à la fois en ce qui concerne la politique hospitalière et la politique en matière de
+soins extramuraux.35 En ce qui concerne les hôpitaux, il s'agissait en premier lieu de l'ancienne loi du
+23 décembre 1963 sur les hôpitaux (ci-après la « loi sur les hôpitaux »).36 Aujourd'hui, cette loi est
+connue sous le nom de « loi coordonnée du 10 juillet 2008 ‘sur les hôpitaux et autres établissements
+de soins’ » (ci-après la « loi sur les hôpitaux-2008 »). Dès lors que depuis la sixième réforme de l'État,
+la plupart des institutions de soins dans le domaine des soins extramuraux, telles que les maisons de
+repos et de soins, ont été transférées aux communautés, la compétence fédérale en matière de législation organique se limite dans la pratique pour ainsi dire aux seuls hôpitaux37.38
+Il ressort de la jurisprudence ultérieure de la Cour constitutionnelle que la législation organique vise
+uniquement « les règles de base et les lignes directrices » de la politique hospitalière, telles qu'elles
+sont notamment contenues dans la loi sur les hôpitaux.39 Selon la Cour, il est dès lors important de
+retenir que tout ce que règle la loi sur les hôpitaux n’est pas 'organique'. Dans le cas contraire, cela
+permettrait en effet « au législateur ordinaire de s’approprier à nouveau n’importe quel aspect de la
+politique de dispensation de soins attribuée aux communautés par le législateur spécial en l’incorporant tout simplement dans la loi sur les hôpitaux ».40 D'autre part, la notion de 'législation organique'
+n’est pas limitée à ce qui était réglé, au moment de l’adoption de la loi spéciale, par la loi sur les
+hôpitaux.41 Il s'agit donc d'un concept dynamique, qui peut évoluer au gré des nouvelles conceptions
+en matière de politique hospitalière, à condition toutefois que le législateur fédéral ne dénature pas
+la notion ou ne porte pas atteinte de façon disproportionnée aux compétences des communautés par
+le biais d'une nouvelle interprétation.42
+Le transfert de compétences aux communautés opéré dans le cadre de la sixième réforme de l'État,
+en particulier la compétence de fixation des normes d'agrément, a contraint le législateur spécial à
+affiner la notion de 'législation organique' pour laquelle le pouvoir fédéral demeure compétent.43 Les
+34 C.C., 20 octobre 2009, n° 165/2009, B.5.
+
+35 Doc. Parl. Sénat 1979-1980, n° 434/2, p. 121-124.
+36 Ibidem, p. 122
+
+37 Y compris les hôpitaux psychiatriques. Les services de gériatrie isolés et les services isolés de revalidation et de traitement (les « services
+Sp et G isolés » ou les « hôpitaux catégoriels », tels que les hôpitaux de revalidation) ont également été transférés aux communautés.
+38 K. Reybrouck et S. Sottiaux, o.c., p. 377 ; J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 215
+En ce qui concerne la politique de dispensation de soins extramuraux, les travaux préparatoires renvoyaient à l'article 5 de l'époque de la
+loi du 27 juin 1978 modifiant la loi sur les hôpitaux (Doc. Parl. Sénat 1979-1980, n° 434/2, p. 124), devenu ultérieurement l'article 170 de la
+loi sur les hôpitaux. Dans l'intervalle, les institutions de soins agréés en vertu de cette disposition pour dispenser des soins, telles que les
+maisons de repos pour personnes âgées, ont été quasi totalement transférés aux communautés (K. Reybrouck et S. Sottiaux, o.c., p. 377 ; J.
+Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 214).
+39 C.C. 15 juillet 1998, n° 83/98, B.5.4.
+40 C.C. 31 octobre 2000, n° 108/2000, B.1.4.1.
+41 Ibidem.
+42 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 215-216.
+43 Doc. Parl. Sénat 2012-2013, n° 5-2232/1, p. 34-35.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+9/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 273 =====
+274
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+développements de la proposition de loi spéciale relative à la sixième réforme de l'État définissent la
+'législation organique' comme les « règles de base et les lignes directrices de la politique hospitalière,
+telles qu'elles sont notamment contenues dans la loi sur les hôpitaux », dans le prolongement de la
+jurisprudence de la Cour constitutionnelle, mais il y est ajouté que ces règles de base et lignes directrices « visent à garantir la cohérence minimale qui, par définition, est nécessaire entre la programmation, l'agrément et le financement si l'on veut pouvoir mener des politiques efficaces aux différents
+niveaux. Les trois instruments politiques précités sont en effet complémentaires dans une certaine
+mesure. »44 Ensuite, les développements présentent une énumération des aspects pouvant, selon le
+législateur spécial, être considérées comme 'organiques'. Il s'agit notamment45 :
+ des ‘caractéristiques de base’ des hôpitaux (y compris les hôpitaux psychiatriques et universitaires), de leurs composantes (services hospitaliers, sections, fonctions hospitalières, programmes de soins, etc.) et de leurs collaborations interhospitalières. Selon les travaux préparatoires, l'on peut ainsi mentionner des caractéristiques de base qui présentent un lien direct avec
+la programmation et/ou le financement et qui présentent un caractère structurel (par exemple :
+les appareils indispensables, la nature des soins dispensés au sein d'un hôpital ou d'un service
+hospitalier, les effectifs minimaux de personnel)46 ;
+ les règles générales relatives à la structuration des activités infirmières et médicales.
+Ensuite, il ressort des travaux parlementaires préparatoires que la détermination des caractéristiques
+de base des normes d’agrément dans le cadre de la législation organique continue de relever de la
+compétence du pouvoir fédéral.47
+La portée concrète de la notion de 'législation organique' dépend toutefois entièrement de la
+question de savoir quels sont les aspects qui doivent être considérés comme des 'caractéristiques de base'.48 Les travaux parlementaires préparatoires n’ayant pas examiné cette question plus en détail, il appartient à la Cour constitutionnelle et au Conseil d’État d’affiner la
+définition de ces caractéristiques de base.49
+Dans une série d’avis, le Conseil d’État devait se prononcer sur la compétence de la détermination des normes
+d’agrément pour la fonction « soins urgents spécialisés ». La question qui y était plus précisément examinée était
+de savoir qui était compétent pour déterminer quels professionnels des soins de santé peuvent assurer la permanence médicale. Selon le Conseil d’État, on peut admettre que « le principe même de la permanence médicale soit
+considéré comme une ‘’caractéristique de base’’ et puisse s‘inscrire dans le cadre de la compétence fédérale en
+matière de législation organique. »50 La détermination concrète des catégories de (candidats) médecins spécialistes auxquels il peut être fait appel pour cette permanence ne présente cependant pas de caractère structurel et
+ne peut dès lors pas être considérée comme une caractéristique de base. 51
+
+44 Ibidem, p. 35.
+
+45 Ibidem, p. 35-36.
+
+46 Doc. Parl. Sénat 2013-2014, n° 5-2232/5, p. 240-241.
+47
+
+Ibidem, p. 240.
+
+48 J. Van Nieuwenhove, « Les nouvelles compétences communautaires en matière de soins de santé et d’aide aux personnes handicapées »,
+
+Revue belge de sécurité sociale, 2e trimestre 2015, p. 273.
+49 K. Reybrouck et S. Sottiaux, o.c., p. 381.
+50 Avis du Conseil d’État n° 59.468/VR du 11 juillet 2016 sur un projet d‘arrêté royal modifiant l‘arrêté royal du 27 avril 1998 fixant les normes
+auxquelles une fonction 'soins urgents spécialisés' doit répondre pour être agréée, p. 12 ; Avis du Conseil d’État n° 61.321/3 du 5 mai 2017
+sur un projet d’arrêté du gouvernement de la communauté germanophone « zur Abänderung des Königlichen Erlasses vom 27. April 1998
+zur Festlegung der Normen, denen eine Funktion 'Spezialisierte Notfallpflege' entsprechen muss, um zugelassen zu werden », p. 6 ; Avis du
+Conseil d’État n° 61.090/3 du 4 avril 2017 sur un projet d’arrêté du gouvernement flamand ‘tot wijziging van het koninklijk besluit van 27
+april 1998 houdende vaststelling van de normen waaraan een functie ‘gespecialiseerde spoedgevallenzorg’ moet voldoen om erkend te
+worden, p. 6.
+51 Ibidem.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+10/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 274 =====
+DOC 55
+
+1394/002
+
+275
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+Dans une autre série d’avis, le Conseil d’État devait se prononcer sur la répartition des compétences entre le pouvoir fédéral et les communautés en matière de normes d‘agrément des hôpitaux en ce qui concerne la ‘planification d‘urgence hospitalière’. Selon le Conseil d’État, « le principe même selon lequel les hôpitaux doivent disposer
+d‘un plan d‘urgence pour les accidents qui se produisent à l‘intérieur et à l‘extérieur de l‘hôpital doit être considéré
+comme une caractéristique de base pour laquelle l‘autorité fédérale est restée compétente. Cette conclusion est
+renforcée par la connexité avec la compétence résiduelle de l‘autorité fédérale en matière d‘aide médicale urgente
+et de sécurité civile. L‘élaboration concrète de ce plan d‘urgence interne et la manière dont il est élaboré au sein de
+l‘hôpital ne peuvent toutefois pas être considérées comme une caractéristique de base et relèvent de la compétence
+des communautés. »52
+
+En vertu de sa compétence en matière de législation organique des hôpitaux53, le pouvoir fédéral a
+décidé, dans l’arrêté royal du 30 avril 2020 'concernant un flux d’information correct et en temps voulu
+sur les chiffres de patients COVID−19, la capacité de traitement dans les hôpitaux et les stocks de
+matériel de protection individuelle'54, d’imposer à chaque hôpital général figurant dans l’Incident Crisis
+Management System (ICMS) l’obligation de transmettre, chaque jour, par ce système, un certain
+nombre de données concernant le nombre de lits disponibles dans les unités de soins classiques et
+dans les unités de soins intensifs, ainsi que le nombre de respirateurs ordinaires et d’appareils d’oxygénation par membrane extracorporelle (ECMO) disponibles. De plus, chaque hôpital doit transmettre
+chaque jour à Sciensano les données relatives au nombre de patients COVID-19 confirmés et suspectés
+qui sont hospitalisés.
+4)
+
+Financement des hôpitaux (article 5, § 1er, I, alinéa 1er, 1°, b), LSRI)
+En vertu de l’article 5, § 1er, I, alinéa 1er, 1°, b), de la LSRI, le pouvoir fédéral est compétent pour « le
+financement de l'exploitation, lorsqu'il est organisé par la législation organique et ce, sans préjudice
+des compétences des communautés visées au a) ». La réserve sous a) renvoie à la compétence communautaire relative au coût des investissements de l'infrastructure et des services médicotechniques.
+En effet, il faut opérer une distinction entre le financement de l’exploitation et le financement de
+l'infrastructure et des services médicotechniques.
+
+ Financement de l’exploitation
+Le financement de l’exploitation est réglé dans le Titre III, chapitre VI (« Financement des coûts d'exploitation ») de la loi sur les hôpitaux-2008 (les articles 95 à 123). Ce chapitre traite du ‘budget des
+moyens financiers’ (BMF), qui est fixé séparément pour chaque hôpital par le ministre qui a la Santé
+publique dans ses attributions. Le BMF couvre de manière forfaitaire les frais résultant du séjour et de
+la dispensation des soins aux patients de l'hôpital, en ce compris les patients en hospitalisation de jour
+et pour lesquels l’hôpital ne peut dès lors demander aucune intervention financière au patient.55
+Pour les modalités de mise en œuvre, il peut être renvoyé à l’arrêté royal du 25 avril 2002 'relatif à la fixation et à
+la liquidation du budget des moyens financiers des hôpitaux'.
+
+52 Avis du Conseil d’État n° 63.650/VR du 26 septembre 2018 sur un projet d‘arrêté du Collège réuni de la Commission communautaire
+commune modifiant l‘arrêté royal du 23 octobre 1964 portant fixation des normes auxquelles les hôpitaux et leurs services doivent répondre, concernant le plan d‘urgence hospitalier, p. 13 ; Avis du Conseil d’État n° 64.961/3 du 9 janvier 2019 sur un projet d’arrêté du
+gouvernement flamand « houdende wijziging van de bijlage bij het koninklijk besluit van 23 oktober 1964 tot bepaling van de normen die
+door de ziekenhuizen en hun diensten moeten worden nageleefd, betreffende het ziekenhuisnoodplan », p. 6-7 ; Avis du Conseil d’État
+n° 65.665/3 du 15 avril 2019 sur un projet d’arrêté du gouvernement de la communauté germanophone « modifiant l'arrêté royal du 23
+octobre 1964 portant fixation des normes auxquelles les hôpitaux et leurs services doivent répondre », p. 7.
+53 L’arrêté trouve son fondement juridique dans l’article 92, alinéa 1er, de la loi coordonnée du 10 juillet 2008 ‘sur les hôpitaux et autres
+établissements de soins’, qui dispose que le gestionnaire de l'hôpital est tenu de communiquer au ministre qui a la Santé publique dans ses
+attributions, selon les modalités prévues par le Roi, et dans les délais qu'il fixe, tous renseignements statistiques se rapportant à son établissement et aux activités médicales (notamment).
+54 M.B. 06.05.2020.
+55 Les articles 100 et 104 de la loi sur les hôpitaux-2008.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+11/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 275 =====
+276
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+Par souci d’exhaustivité, il convient également d’indiquer qu’une partie du financement des frais de
+fonctionnement des hôpitaux est assuré – certes indirectement – par un autre dispositif fédéral, à
+savoir l’assurance maladie-invalidité.56
+En vertu de la compétence du pouvoir fédéral pour le financement de l’exploitation des hôpitaux,
+l’arrêté royal n° 8 du 19 avril 202057 a modifié l’article 101 de la loi sur les hôpitaux-2008. Cet article
+détermine quels frais afférents à des services suite à une épidémie ou une pandémie, qui est déterminée par le Roi, peuvent faire l’objet d’une couverture forfaitaire supplémentaire par le BMF58.
+-
+
+Dans le rapport au Roi de l’arrêté royal n° 8 du 19 avril 2020, il est expliqué que, depuis l’apparition de l’épidémie
+de COVID-19, les frais habituellement pris en charge sont plus élevés qu’en temps normal et que les frais supplémentaires liés à l’achat de matériel, au personnel, etc. ne pourront pas totalement être couverts par le mécanisme
+de l’article 101 de la loi sur les hôpitaux-2008. La modification de cet article permet de faire en sorte que tous les
+frais réels afférents aux services rendus aux patients atteints du COVID-19 puissent être couverts par le BMF.
+
+-
+
+Dans son avis sur le projet d’arrêté royal n° 8 du 19 avril 2020, le Conseil d’État a indiqué que la modification de
+l’article 101 de la loi sur les hôpitaux-2008 doit être interprétée conformément aux règles répartitrices de compétences, dès lors que les communautés disposent elles aussi de certaines compétences en matière de financement
+des hôpitaux, notamment en ce qui concerne « le coût des investissements de l’infrastructure et des services médicotechniques ».59
+
+ Financement des infrastructures et des services médicotechniques
+Depuis la sixième réforme de l'État, les communautés sont compétentes en ce qui concerne le financement des investissements des infrastructures et des services médicotechniques. Il ressort des développements de la loi spéciale relative à la sixième réforme de l'État que la nouvelle compétence englobe les sous-parties A1 et A3 du budget des moyens financiers.
+La sous-partie A1 couvre les ‘charges d'investissement’, c'est-à-dire les dépenses affectées aux bâtiments, à l'équipement et à l'appareillage, aux travaux de reconditionnement (importantes transformations qui ne modifient pas
+la structure du bâtiment — comme, entre autres, la modification de l'affectation des lieux ou le changement de la
+nature de la structure existante — et qui ne sont ni de nouvelles constructions ni des extensions de bâtiments
+existants), au matériel roulant et au mobilier, et aux ‘frais de pré-exploitation’ (c'est-à-dire les frais liés à la construction ou à la rénovation d'hôpitaux ou de services hospitaliers).
+La sous-partie A3 couvre ‘les charges d'investissement des services médicotechniques’, c'est-à-dire les dépenses
+affectées au matériel médical lourd, tel que les appareils de radiothérapie et les PET-scans, les dépenses étant
+couvertes tant pour l'équipement que pour les bâtiments dans lesquels il est installé.60
+Il s'agit de matières visées aux articles 9 et 11, 24 à 29bis et 31 de l'arrêté royal précité du 25 avril 2002.
+
+56 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 229 ; K. Reybrouck et S. Sottiaux, o.c., p. 388.
+
+57 AR n° 8 du 19 avril 2020 modifiant l'article 101 de la loi coordonnée du 10 juillet 2008 ‘sur les hôpitaux et autres établissements de soins’
+(M.B. 22.04.2020).
+58 Avant la modification de l’article 101 de la loi sur les hôpitaux-2008, les frais afférents à des services rendus à la suite d’une épidémie
+pouvaient uniquement être couverts de manière forfaitaire par le budget des moyens financiers si ces frais n’avaient pas déjà été couverts
+par ce budget et si ces frais ne donnaient lieu à aucune intervention de l’assurance maladie-invalidité. Cette disposition visait à éviter que
+les hôpitaux soient indemnisés deux fois pour des frais identiques.
+59 Avis du Conseil d’État n° 67.211/3 du 14 avril 2020 sur le projet d’arrêté royal modifiant l’article 101 de la loi coordonnée du 10 juillet
+2008 ‘sur les hôpitaux et autres établissements de soins’, p. 10.
+60 Doc. Parl. Sénat 2012-2013, n° 5-2232/1, p. 33-34.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+12/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 276 =====
+DOC 55
+
+1394/002
+
+277
+
+JURIDISCHE ZAKEN
+
+5)
+
+AFFAIRES JURIDIQUES
+
+Organisation des soins de santé de première ligne et soutien aux professions des soins de santé de
+première ligne (article 5, § 1er, I, alinéa 1er, 6°, LSRI)
+Les travaux préparatoires décrivent cette compétence comme « l'encadrement infrastructurel et organisationnel du niveau de soins de santé en dehors des hôpitaux aigus où les professionnels se consacrent au premier accueil et à l'accompagnement professionnel des problèmes de santé que le patient
+n'est pas à même de résoudre lui-même. »61 Les mots ‘encadrement infrastructurel et organisationnel’
+laissent sans doute entendre que le législateur spécial n'entendait pas confier la réglementation des
+aspects médicaux des soins de santé de première ligne aux communautés.62 Il s'agit donc en tout cas
+de mettre en balance la compétence des communautés en matière de soins de santé de première
+ligne et la compétence fédérale résiduaire en matière d'exercice de la médecine et de réglementation
+des professions des soins de santé.63
+C'est ainsi que le Conseil d'État a estimé que la compétence des communautés en matière d'organisation des soins
+de santé de première ligne, notamment les cercles de médecins généralistes qui organisent les services de garde,
+n'empêche pas le pouvoir fédéral de fixer, dans le cadre de sa compétence résiduaire en matière d'exercice de l'art
+de guérir, les exigences minimales auxquelles la permanence médicale doit répondre. 64 Le pouvoir fédéral peut
+notamment fixer le nombre de médecins généralistes devant être disponibles dans le cadre de cette permanence
+médicale ainsi que les plages horaires auxquelles cette disponibilité doit être garantie. Par ailleurs, seul le pouvoir
+fédéral a la compétence d'obliger des médecins généralistes à participer à la permanence médicale.65
+
+En vertu de leur compétence en matière de soins de santé de première ligne, les communautés ont
+mis en place des « structures de soins intermédiaires » dans le cadre de la crise sanitaire du COVID19. Ce sont des centres créés, après approbation du gouverneur, pour héberger temporairement les
+patients atteints du COVID-19 qui ont été envoyés après leur hospitalisation ou envoyés par un centre
+de triage et de prélèvement ou par un service d`urgences et qui ne peuvent pas retourner immédiatement à leur situation de vie normale, par exemple parce qu'ils ne peuvent pas respecter les règles
+strictes d'isolement .66 Une structure de soins intermédiaires vise à décharger les hôpitaux en :
+ facilitant la transition des patients entre l'hôpital et leur situation à domicile avec la souplesse
+requise ;
+ en réservant au maximum la capacité hospitalière pour les soins complexes, afin de préserver ainsi
+les hôpitaux des admissions non essentielles.67
+6)
+
+Médecine préventive (article 5, § 1er, I, alinéa 1er, 8°, LSRI)
+La médecine préventive vise à préserver la santé de la population (ou d’une catégorie spécifique de la
+population) à l’aide de mesures préventives. L’exercice de la médecine présente également des aspects préventifs, mais la médecine préventive constitue une notion bien plus large qui ne porte pas
+uniquement sur l’action des professionnels des soins de santé.68
+Il ressort des travaux préparatoires de la loi spéciale du 8 août 1980 que cette catégorie de compétence comporte notamment :
+l’information et l’éducation sanitaire sous quelque forme que ce soit ;
+61 Ibidem, p. 39-40.
+
+62 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 247.
+63 Ibidem
+
+64 Avis du C.E. n° 57.383/VR/3 du 27 mai 2015 sur le projet dont est issu l’arrêté du Gouvernement flamand du 26 juin 2015 relatif aux cercles
+de médecins généralistes, p. 7.
+65 Ibidem.
+66 Voir l'article 30, 2°, de l'arrêté royal n° 20 du 13 mai 2020 ‘portant des mesures temporaires dans la lutte contre la pandémie COVID-19 et
+visant à assurer la continuité des soins en matière d'assurance obligatoire soins de santé’.
+67 Voir : https://www.zorg-en-gezondheid.be/schakelzorgcentra
+68 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 253.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+13/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 277 =====
+278
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+-
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+l’amélioration de l’état sanitaire de la population soit dans le cadre de l’éducation sanitaire,
+soit par d’autres moyens appropriés, tels que le dépistage et la lutte contre les maladies transmissibles et sociales.69
+
+ L’information et l’éducation sanitaires
+Les communautés sont compétentes pour l’information et l’éducation sanitaires sous toutes leurs
+formes.
+Le Conseil d’État a par exemple estimé, dans un avis sur un projet de réglementation fédérale relative au trafic
+maritime et aérien international avec arrivée en Belgique, qui prévoyait des mesures comme l’examen et l’information des voyageurs, l’examen approfondi ainsi que le traitement et l’isolement éventuels de voyageurs malades
+et suspects, l’inspection d’équipements et d’installations afin d’assurer un environnement sûr, et la désinfection
+des marchandises et des moyens de transport, que la réglementation relative à l’information des voyageurs à propos des mesures à prendre afin d’empêcher toute infection ou contamination des bagages relevait de la compétence communautaire en matière d’éducation sanitaire. 70
+Les campagnes d’information sur l’hygiène destinées au public de manière générale relèvent également de la compétence des communautés en matière d’éducation sanitaire.71
+
+Cette compétence communautaire ne signifie toutefois pas que le pouvoir fédéral, dans le cadre de
+sa compétence résiduaire en matière d’exercice de l’art de guérir, ne pourrait pas imposer des obligations aux professionnels des soins de santé en ce qui concerne les informations et les renseignements
+qu’ils doivent fournir aux patients.72
+ Activités, services et initiatives en matière de médecine préventive
+Les activités et services de médecine préventive désignent de manière générale toute intervention
+étatique allant au-delà de l’information et de l’éducation sanitaires décrites ci-dessus, dès lors que
+l’État intervient directement dans la vie des citoyens.73
+Le Conseil d’État estime que les communautés sont uniquement compétentes pour certains aspects
+de la politique de médecine préventive. Il s’agit plus précisément des aspects liés aux « activités et
+services » de médecine préventive, qui présentent de ce fait un certain lien avec certaines maladies
+ou affections.74
+Ainsi, l’élaboration de campagnes visant à dépister certaines maladies ou affections relève par exemple totalement de la
+compétence des communautés.75
+
+-
+
+Selon le Conseil d’État, l’utilisation du terme « soins de santé » indique que la loi spéciale vise
+les activités et services étroitement liés à la prévention et au dépistage de certaines maladies
+et affections ou contribuant à l’amélioration de la santé par les soins de santé. Pour le Conseil
+d’État, des mesures qui peuvent certes contribuer d’une manière générale à la prévention de
+maladies ou d’affections, ou qui ont une influence positive sur la santé de l’individu, mais qui
+
+69 Doc. Parl. Sénat 1979-1980, n° 434/2, p. 124-125 ; Doc. Parl. Chambre 1979-1980, n° 627/10, p.52.
+
+70 Avis du Conseil d’État n° 53.018/VR du 13 mai 2013 sur un projet d’arrêté royal relatif au contrôle sanitaire du trafic international, p. 29.
+
+71 Avis du Conseil d’État n° 23.947/9 du 7 juin 1995 sur un avant-projet devenu le décret de la Région wallonne organisant l’agrément et
+subventionnement des services de santé mentale, Doc. Parl. Parl. wall., 1995-1996, n° 91/1, p. 18-19.
+72 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 255.
+73 S. Vansteenkiste, “Het gezondheidsbeleid”, dans B. Seutin et G. Van Haegendoren (eds.), De bevoegdheidsverdeling in het federale België,
+Brugge, Die Keure, 2001, p. 111.
+74 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 256.
+75 J. Van Nieuwenhove, « Les nouvelles compétences communautaires en matière de soins de santé et d’aide aux personnes handicapées »,
+Revue belge de sécurité sociale, 2ème trimestre 2015, p. 294.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+14/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 278 =====
+DOC 55
+
+1394/002
+
+279
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+sortent du champ des soins de santé ou de la médecine, ne relèvent pas du domaine de la
+‘médecine préventive’.76
+-
+
+Ensuite, le Conseil d’État estime que la compétence des communautés est limitée aux « activités et services » de médecine préventive, dès lors qu’il est frappant qu’en ce qui concerne
+la médecine préventive, la loi spéciale évoque uniquement les activités et les services de médecine préventive, et pas la « politique » menée en la matière – comme c’est le cas dans la
+majorité des autres dispositions de l’article 5, § 1er, LSRI.77
+
+Depuis la sixième réforme de l'État, les communautés sont également compétentes pour toutes 'initiatives' en matière de médecine préventive. Le tout est cependant de savoir si le terme 'initiative'
+ajoute quelque chose aux termes existants 'activités' et 'services'. Ainsi qu'il a été indiqué ci-avant, ces
+deux derniers termes ne vont pas jusqu'à couvrir la totalité de la 'politique' en matière de médecine
+préventive, mais on ignore néanmoins comment le terme 'initiatives' peut recouvrir d'autres aspects
+que ceux qui sont déjà visés par les termes 'activités' et 'services'78.
+Signalons, par souci d'exhaustivité, qu'en vertu de l'article 6bis, § 3, alinéa 1er, LSRI, le pouvoir fédéral
+est compétent pour la recherche scientifique dans les matières qui sont de la compétence des communautés ou des régions, lorsque cette recherche :
+a) soit fait l'objet d'accords ou d'actes internationaux ou supranationaux auxquels la Belgique est
+partie contractante ou considérée comme telle ;
+b) soit se rapporte à des actions et programmes qui dépassent les intérêts d'une Communauté ou
+d'une Région.
+C'est en vertu de cette compétence, mais également en vertu de sa compétence en matière de recherche scientifique fédérale (article 6bis, § 2, 1°, LSRI) que le pouvoir fédéral a créé, par la loi du 25 février 201879, Sciensano
+(l'Institut belge de santé publique). L'article 4, § 2, 3°, de la loi du 25 février 2018 'portant création de Sciensano
+(I)' dispose que Sciensano a pour mission d'élaborer « des solutions avancées pour le diagnostic, la prévention et
+le traitement de maladies et ainsi que pour l'identification et la prévention d'autres risques pour la santé ».
+Dans son avis sur l'avant-projet de loi 'portant création de Sciensano', le Conseil d'État a attiré l'attention sur la
+compétence de principe des communautés en ce qui concerne les activités, services et initiatives en matière de
+médecine préventive, si bien que toute mission de Sciensano à cet égard doit pouvoir s’inscrire dans les matières
+visées à l’article 6bis, § 3, alinéa 1er, a) et b), LSRI. 80
+
+Les mesures préventives voire contraignantes dans le cadre du dépistage des maladies contagieuses
+et de la lutte contre ces maladies constituent un cas spécifique de compétence des communautés en
+matière de médecine préventive. Cette compétence des communautés est examinée plus avant dans
+la partie relative à l'approche thématique de la répartition des compétences en matière de politique
+de santé (Voir infra I.C.2).
+
+76 Avis du Conseil d’État n° 34.339/AG du 29 avril 2003 sur un avant-projet devenu le décret de la Communauté flamande du 21 novembre
+2003 « betreffende het preventieve gezondheidsbeleid », Doc. parl. Parl. fl ., 2002-03, n° 1709/1, p. 149 et 151.
+77 Ibidem.
+78 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 257
+79 Loi du 25 février 2018 'portant création de Sciensano (I)' (M.B. 21.03.2018).
+80 Avis du C.E. n° 62.047 du 2 octobre 2017 sur un avant-projet dont est issue la loi du 25 février 2018 portant création de Sciensano (I), Doc.
+Parl. Chambre 2017-2018, DOC 54-2795/001 et DOC 54-2796/001, p. 113.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+15/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 279 =====
+280
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+7)
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+Mesures prophylactiques nationales (article 5, § 1er, I, alinéa 2, 2°, LSRI)
+Les 'mesures prophylactiques nationales' (les vaccinations obligatoires) constituent la seule exception
+aux compétences des communautés en matière de médecine préventive.81
+Tant la Cour constitutionnelle82 que le Conseil d'État83 estiment que cette réserve de compétence empêche les communautés d'imposer de quelque manière que ce soit l'administration d'une inoculation
+ou d'un vaccin. En revanche, les communautés peuvent prévoir des vaccinations facultatives ainsi que
+promouvoir et organiser l'administration de vaccins tant obligatoires que facultatifs.84 Tant que les
+communautés ne prennent pas de mesures à l'égard de l'administration obligatoire de certains vaccins, de la composition de tels vaccins obligatoires ou du contrôle de leur administration, elles peuvent
+régler d'autres aspects de ces vaccinations, tels que les modalités d'achat des vaccins.85
+En vertu de sa compétence résiduaire en matière d'exercice de l'art de guérir, le pouvoir fédéral demeure compétent pour les conditions de délivrance au public des médicaments, et donc également
+des vaccins, par l'intermédiaire des pharmacies.86
+
+8)
+
+Médicaments et dispositifs médicaux
+Le pouvoir fédéral dispose toujours d’une compétence résiduaire pour la réglementation des médicaments, au nombre desquels figurent aussi traditionnellement les dispositifs médicaux87. C’est ce qui
+ressort des travaux parlementaires préparatoires88 et cela a été confirmé tant par la Cour constitutionnelle89 que par le Conseil d’État90.
+La réglementation en matière de médicaments est en grande partie définie par la loi du 25 mars 1964
+'sur les médicaments' et par l’arrêté royal du 18 mars 1999 'relatif aux dispositifs médicaux'.
+Les masques buccaux chirurgicaux ou médicaux sont des dispositifs médicaux qui relèvent de la compétence de l'Agence
+fédérale des médicaments et des produits de santé (AFMPS).91
+
+81 Doc. Parl. Sénat 1979-1980, n° 434/2, p. 125.
+82 C.C. 19 décembre 1991, n° 40/91, 7.B.
+
+Avis du C.E. n° 14/172/2 du 30 juin 1981 sur une proposition de décret de la Communauté française rendant obligatoire la vaccination
+anti-rubéoleuse, p. 3-4 ; Avis du C.E. n° 31.635/4 du 10 juillet 2001 sur un avant-projet dont est issu le décret de la Communauté française
+du 20 décembre 2001 relatif à la promotion de la santé à l’école, Doc.Parl. Parl. Comm. fr. 2001-2002, n° 208/1, p. 24.
+84 Avis du C.E. n° 47.325/3 du 22 octobre 2009 sur un projet d'arrêté royal relatif à la création d'une banque de données fédérale relative
+aux vaccinations contre le virus de la grippe A/H1N1, p. 4-5 ; Avis du C.E. n° 38.381/3 du 7 juillet 2005 sur un projet d'arrêté royal établissant
+les mesures prophylactiques et la déclaration obligatoire à la cellule de vigilance sanitaire de pathologies présentant un caractère épidémique, p. 12.
+85 Avis du C.E. n° 58/118/VR du 28 septembre 2015 sur un avant-projet dont est issue l'ordonnance de la Commission communautaire commune du 18 décembre 2015 portant assentiment à l'Accord de coopération entre la Communauté française, la Commission communautaire
+commune et la Communauté germanophone relatif à l'achat de vaccins destinés à protéger les enfants, les femmes enceintes et les adolescents, Doc. Parl. Ass.réun. C.c.c., 2015-2016, n° B-41/1, p. 5-6.
+86 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 260.
+87 Un dispositif médical est tout instrument, appareil, équipement, logiciel, matière ou autre article, utilisé seul ou en association, y compris
+le logiciel nécessaire au bon fonctionnement de celui-ci, destiné par le fabricant à être utilisé chez l’homme pour : - diagnostiquer, prévenir,
+contrôler, traiter ou atténuer une maladie ; - diagnostiquer, contrôler, traiter, atténuer ou compenser une blessure ou un handicap ;
+- étudier, remplacer ou modifier l’anatomie ou un processus physiologique ; - maitriser la conception ; et dont l’action principale voulue
+dans ou sur le corps humain n’est pas obtenue par des moyens pharmacologiques, immunologiques ou métaboliques, mais dont la fonction
+peut être assistée par de tels moyens. Par exemple : une prothèse qui remplace une articulation abîmée, un scanner qui prend une « photo
+» du corps pour permettre au médecin de poser un diagnostic, un défibrillateur externe, etc.
+(voir https://www.afmps.be/fr/public_information/dispositifs_medicaux/qu_est-ce_qu_un_dispositif_medical_).
+88 Doc.Parl. Sénat 1979-1980, n° 434/1, p. 7 ; Doc.Parl. Sénat, 1979-1980, n° 434/2, p. 125 ; Doc.Parl. Chambre, 1979-1980, n° 627/10, p. 52 ;
+Doc.Parl. Sénat 2012-2013, n° 5-2232/1, p. 49.
+89 C.C 16 novembre 2005, n° 164/2005, B.4.2. ; C.C. 21 mars 2007, n° 48/2007, B.4.3.
+90 Avis du Conseil d’État n° 15.316/9 du 1er mars 1983 sur une proposition devenu le décret de la Communauté française du 30 mars 1983
+tendant à prévenir les accidents de la route dus à l’absorption de médicaments, Doc. Parl. Parl. Comm. fr. 1982-1983, n° 85/3.
+91 https://www.afmps.be/sites/default/files/content/info_offres_masques_chirurgicaux_2.pdf
+83
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+16/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 280 =====
+DOC 55
+
+1394/002
+
+281
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+En vertu de sa compétence pour la réglementation en matière de médicaments, le pouvoir fédéral a
+pris diverses mesures, par exemple :
+- l’arrêté royal n° 34 du 23 juin 202092, qui vise à garantir les stocks de médicaments et à en
+assurer la bonne gestion et qui habilite, par dérogation à l'article 6, § 1er, alinéa 1er, de la loi
+du 25 mars 1964 ‘sur les médicaments’, le ministre qui a la Santé publique dans ses attributions, ou son délégué, à mettre une alternative pharmaceutique non autorisée provenant du
+stock stratégique de médicaments à la disposition des patients atteints du COVID-19 qui sont
+hospitalisés lorsque l’Agence fédérale des médicaments et des produits de santé (AFMPS)
+constate l’indisponibilité d'un médicament autorisé en Belgique qui est utilisé soit pour traiter
+le COVID-19 soit comme thérapie de soutien et pour lequel aucune alternative pharmaceutique autorisée n'est disponible ;
+- l’arrêté royal du 17 mars 202093, qui interdit la commercialisation d’autotests rapides de mesure ou détection d’anticorps liés au SARS-CoV-2.
+I.C.
+
+Approche thématique de la répartition des compétences en matière de politique de la santé
+
+1) Le plan d’urgence hospitalier
+Conformément à l'annexe 1 de l'arrêté royal du 23 octobre 1964 'portant fixation des normes auxquelles les hôpitaux et leurs services doivent répondre', chaque hôpital doit disposer d'un plan d'urgence hospitalier (PUH) pour pouvoir faire face aux accidents majeurs au sein de l'hôpital (p. ex. panne
+d'électricité, bactérie nosocomiale, ...) et en dehors (collision en chaîne, inondation, attentat, ...).
+Ce plan d'urgence contient les procédures d'évacuation, de réinstallation, de réception et d'isolement
+des victimes en vue d'une prise en charge efficace de l'afflux soudain de patients sans que cela ne
+mette en péril les soins administrés aux patients déjà hospitalisés. La capacité d'accueil de l'hôpital
+peut ainsi être rapidement augmentée. Le plan d'urgence hospitalier concerne notamment :
+- la désignation des locaux destinés au triage, à la surveillance et au traitement des victimes en
+fonction du degré d'urgence ;
+- les dispositions logistiques et en particulier la mise en œuvre de matériels, médicaments et réserves, ainsi que les dispositions concernant le service d'urgence, le service de traitement intensif, le quartier opératoire, le service de radiologie et le laboratoire ;
+- les mesures de protection des victimes, du personnel, des locaux et du matériel en cas de contamination ainsi que les procédures et les techniques de décontamination à suivre ;
+- les modalités en matière de circulations internes.
+Le plan d'urgence hospitalier doit spécifiquement aborder les incidents impliquant des risques majeurs tels qu'une pandémie.
+Le principe même, à savoir que les hôpitaux doivent disposer d'un plan d'urgence, est considéré
+comme une caractéristique de base de la politique hospitalière dont la compétence a été maintenue
+au niveau fédéral. La mise en œuvre concrète de ce plan d'urgence et la manière dont il est élaboré
+au sein de l'hôpital relèvent toutefois de la compétence des communautés en ce qui concerne la fixation des normes d'agrément auxquelles les hôpitaux doivent répondre (voir supra I.B.1 et I.B.3).
+
+92 Arrêté royal n° 34 du 23 juin 2020 ‘portant exécution de l'article 5, § 1er, 1°, 2°, et 6° de la loi du 27 mars 2020 accordant des pouvoirs au
+
+Roi afin de prendre des mesures dans la lutte contre la propagation du coronavirus COVID-19 (II), en vue de l'assurance et de la bonne
+gestion des stocks de médicaments et la prolongation des autorisations des pharmacies’ (M.B. 26.06.2020).
+93 Arrêté royal du 17 mars 2020 ‘interdisant la mise à disposition, la mise en service et l’utilisation des tests rapides de mesure ou de détection
+des anticorps liés au virus SARS-CoV-2’ (M.B. 18.03.2020).
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+2020
+
+2021
+
+17/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 281 =====
+282
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+Une coopération entre les différents niveaux de pouvoir est toutefois prévue :
+- la Déclaration conjointe du 27 juin 2016 concernant le plan mise en alerte des services hospitaliers94 ;
+- le Protocole d'accord du 24 octobre 2016 conclu entre le gouvernement fédéral et les autorités visées aux articles 128, 130, 135 et 138 de la Constitution, concernant le plan d'urgence
+hospitalier95.
+Le 13 mars 2020, le Risk Management Group a décidé qu'il fallait déclencher la phase active des plans d'urgence hospitaliers
+à partir du 14 mars.96 (Sur le rôle du Risk Management Group : voir infra II. C et II.D)
+
+https://www.health.belgium.be/fr/le-plan-durgence-hospitalier-puh
+2) Dépistage des maladies contagieuses et lutte contre ces maladies
+Les communautés sont compétentes pour prendre des mesures préventives voire contraignantes dans
+le cadre du dépistage des maladies contagieuses et de la lutte contre ces maladies, à l’exception des
+mesures relatives aux vaccins obligatoires (voir supra I.B.6).97
+ Mesures de quarantaine
+L’une des mesures contraignantes pouvant être prises dans le cadre de la lutte contre les maladies
+contagieuses est l’imposition de mesures de quarantaine.
+Dans un avis sur un projet de réglementation du pouvoir fédéral concernant la création d’un réseau
+de veille sanitaire, le Conseil d’État a estimé qu’une disposition habilitant le ministre de la Santé publique à obliger des patients malades ou suspects à se faire admettre dans une institution de soins
+désignée par le ministre doit être considérée comme relevant de la compétence des communautés en
+matière de médecine préventive, dès lors qu’une telle mesure vise à prévenir la contamination
+d'autres personnes.98
+L’article 47 du décret flamand du 21 novembre 2003 'relatif à la politique de santé préventive' prévoit déjà la
+possibilité d’ordonner aux personnes atteintes par une infection et qui représentent un risque de contagion pour
+d’autres personnes de s’isoler temporairement dans un service hospitalier désigné par le médecin compétent.
+Le décret wallon du 16 juillet 2020 ‘modifiant l’article 47/15 du Code wallon de l'Action sociale et de la Santé et
+insérant un article 47/15bis en vue de prendre des mesures relatives à la crise sanitaire liée à la COVID-19’ oblige
+toute personne qui entre sur le territoire de la région de langue française après avoir séjourné sur un territoire à
+très haut risque d'infection par la COVID-19 à se placer immédiatement en isolement à son domicile ou tout autre
+lieu approprié à cet effet. Toutes les personnes avec lesquelles les personnes infectées ou suspectées d'être infectées ont été en contact sont, de la même manière, tenues de se placer immédiatement en isolement à leur domicile
+ou tout autre lieu approprié à cet effet.
+Conformément à l’article 10.3, § 2, alinéa 1er, 1°, du décret de la Communauté germanophone du 1er juin 2004
+‘relatif à la promotion de la santé et à la prévention médicale’, inséré par le décret du 20 juillet 2020, le médecininspecteur d'hygiène compétent peut, si possible en collaboration avec le bourgmestre de la commune où la mesure doit être mise en œuvre, imposer aux personnes revenant d'une zone à risque à l'étranger et regagnant leur
+
+94 Moniteur belge du 25.10.2016.
+
+95 Moniteur belge du 20.01.2017.
+
+96 Voir le rapport au Roi de l’arrêté royal du 30 avril 2020 ‘concernant un flux d'information correct et en temps voulu sur les chiffres de
+patients COVID-19, la capacité de traitement dans les hôpitaux et les stocks de matériel de protection individuelle’ (M.B. 06.05.2020).
+97 J. Van Nieuwenhove, “Het gezondheidsbeleid”, o.c., p. 260.
+98 Avis du Conseil d’État n° 40.537/3 du 22 octobre 2009 sur un projet devenu la loi du 13 décembre 2006 ‘portant des dispositions diverses
+en matière de santé’, Doc. Parl. Chambre 2005-2006, DOC 51-2594/001, p. 186-187.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+18/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 282 =====
+DOC 55
+
+1394/002
+
+283
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+résidence principale en région de langue allemande un isolement temporaire dans un service hospitalier ou dans
+un autre endroit approprié.
+
+ Suivi des contacts (traçage des contacts)
+Dans une série d’avis relatifs à l’organisation du suivi des contacts, le Conseil d’État a estimé que la
+recherche (le traçage manuel) des infections au Covid-19 par le biais de l’entrée en contact avec des
+personnes potentiellement ou présumées infectées, ainsi qu’avec des personnes avec lesquelles elles
+ont été en contact, et la formulation de recommandations à ces personnes en vue de prévenir d’autres
+infections peuvent être réputées relever de la compétence des communautés pour le dépistage et la
+lutte contre les maladies contagieuses.99
+Entre-temps, les communautés ont déjà élaboré un certain nombre de réglementations en matière de traçage
+manuel des contacts, notamment :
+le décret flamand du 29 mai 2020 ‘portant organisation de l'obligation de déclaration et du suivi des contacts
+dans le cadre du COVID-19’ ;
+l’arrêté du gouvernement wallon de pouvoirs spéciaux n° 35 du 5 mai 2020 ‘organisant le tracing socio-sanitaire dans le cadre de la lutte contre l'épidémie COVID-19’ ;
+l’arrêté du gouvernement de la Communauté germanophone du 7 mai 2020 ‘portant création d'un centre de
+contact chargé du suivi de la chaîne d'infection dans le cadre de la lutte contre la crise sanitaire provoquée
+par le coronavirus (COVID-19)’ ;
+le décret de la Communauté germanophone du 20 juillet 2020 ‘relatif au suivi des chaines d'infection dans le
+cadre de la lutte contre la crise sanitaire provoquée par le coronavirus (COVID-19)’.
+
+La création d’un cadre légal relatif à l’utilisation (sur une base volontaire) d’applications numériques
+de traçage de contacts relève également de la compétence communautaire en matière de médecine
+préventive.100
+3) Banque de données au sein de Sciensano
+Par le biais de l’arrêté royal n° 18 du 4 mai 2020101, une banque de données a été créée au sein de
+Sciensano afin de recueillir les données de santé de patients contaminés auprès de divers prestataires
+de soins ou organisations de santé ou de soins. Cette banque de données contient des données spécifiques destinées à tracer et à contacter des personnes contaminées et destinées également à la réalisation de recherches scientifiques et/ou d’appui à la politique. Cet arrêté royal prévoyait également
+des règles concernant le fonctionnement du centre de contact. Afin de rendre le traitement des données de ce suivi manuel des contacts uniforme dans toute la Belgique, Sciensano a été chargé de rassembler les données de santé et de contact dans une base de données centrale unique.102
+
+99 Avis C.E. n° 67.412/3 du 25 mai 2020 sur un avant-projet de décret de la Communauté germanophone ‘über die Rückverfolging von
+lnfektionsketten im Rahmen der Bekämpfung der Coronavirus (COVID-19) Gesundheitskrise’, p. 5 ; Avis C.E. nos 67.425/3 à 67.427/3 du 26
+mai 2020 sur une proposition de loi ‘portant création d'une banque de données auprès de Sciensano dans le cadre de la lutte contre la
+propagation du coronavirus COVID-19’, Doc. Parl. Chambre 2019-2020, DOC 55-1249/006, p. 7-8.
+100 Avis C.E. n° 67.424/3 du 26 mai 2020 sur une proposition de loi ‘relative à l'utilisation d'applications numériques de traçage de contacts
+par mesure de prévention contre la propagation du coronavirus COVID-19 parmi la population’, Doc. Parl. Chambre 2019-2020, DOC 551251/003, p. 6-7.
+101 Arrêté royal n° 18 du 4 mai 2020 ‘portant création d'une banque de données auprès de Sciensano dans le cadre de la lutte contre la
+propagation du coronavirus COVID-19’ (M.B. 4.05.2020).
+102 Rapport au Roi de l’arrêté royal n° 44 du 26 juin 2020 ‘concernant le traitement conjoint de données par Sciensano et les centres de
+contact désignés par les autorités régionales compétentes ou par les agences compétentes, par les inspections sanitaires et par les équipes
+mobiles dans le cadre d'un suivi des contacts auprès des personnes (présumées) infectées par le coronavirus COVID-19 sur la base d'une
+base de données auprès de Sciensano’.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+19/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 283 =====
+284
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+Dans un avis sur une proposition de loi pratiquement identique, le Conseil d’État a dès lors conclu que
+la réglementation par laquelle la banque de données centrale a été créée auprès de Sciensano et qui
+règle le fonctionnement du centre de contact concerne à la fois des compétences fédérales et des
+compétences communautaires :
+-
+
+La recherche des personnes potentiellement infectées au moyen d’un suivi des contacts
+relève de la compétence des communautés (voir ci-dessus I.B.6 et I.C.2). Selon le Conseil
+d’État, cette compétence comprend la définition des missions et du fonctionnement du
+centre de contact et l’établissement d'une réglementation visant à protéger les personnes
+concernées lors du traitement de leurs données à caractère personnel.
+
+-
+
+Le traitement de ces données à caractère personnel dans la banque de données s’effectue
+toutefois également dans le cadre de la compétence fédérale en matière de recherche
+scientifique, sur la base de l’article 6bis, § 2 et 3, LSRI103, et plus particulièrement dans le
+cadre des activités de surveillance dont Sciensano est chargé et qui comprennent la collecte, l’analyse et l’interprétation des données relatives à la santé publique.104
+
+Ces deux aspects étant étroitement liés, le Conseil d’État a estimé que la réglementation devait être
+transformée en un accord de coopération.105
+À la suite de cet avis, un projet d’accord de coopération106 a été élaboré par la Conférence interministérielle Santé
+publique.107 Cet accord de coopération prévoira également le cadre légal permettant le suivi des contacts au
+moyen d’une application numérique de traçage de contacts.108
+
+https://www.corona-tracking.info/
+4) Soutien opérationnel et accompagnement financier des hôpitaux
+Tant le pouvoir fédéral que les communautés ont pris des mesures en vue d'assurer le soutien opérationnel et l'accompagnement financier des hôpitaux, en vertu de leurs compétences respectives. Certaines de ces mesures relèvent, en ce qui concerne le pouvoir fédéral, de la compétence en matière
+de financement de l'exploitation des hôpitaux et d'assurance maladie-invalidité et, en ce qui concerne
+les communautés, de leurs compétences en matière de financement des infrastructures et des services médicotechniques, par exemple :
+
+103 En vertu de l’article 6bis, § 3, alinéa 1er, de la LSRI, l'autorité fédérale peut prendre des initiatives, créer des structures et prévoir des
+moyens financiers pour la recherche scientifique dans les matières qui sont de la compétence des Communautés ou des Régions, et qui, en
+outre :
+a) soit fait l'objet d'accords ou d'actes internationaux ou supranationaux auxquels la Belgique est partie contractante ou considérée comme
+telle ;
+b) soit se rapporte à des actions et programmes qui dépassent les intérêts d'une Communauté ou d'une Région.
+104 Voir les avis C.E. nos 67.425/3 à 67.427/3 du 26 mai 2020 sur une proposition de loi ‘portant création d’une banque de données auprès
+de Sciensano dans le cadre de la lutte contre la propagation du coronavirus COVID-19’, Doc. Parl. Chambre 2019-2020, DOC 55-1249/006,
+p. 7-9.
+105
+Ibidem, p. 9.
+106 Projet d’accord de coopération du XX juillet 2020 entre l’État fédéral, la Communauté flamande, la Région wallonne, la Communauté
+germanophone et la Commission communautaire commune concernant le traitement conjoint de données par Sciensano et les centres de
+contact désignés par les autorités régionales compétentes ou par les agences compétentes, par les inspections sanitaires et par les équipes
+mobiles dans le cadre d'un suivi des contacts auprès des personnes (présumées) infectées par le coronavirus COVID-19 sur la base d'une
+base de données auprès de Sciensano (Dans l’attente de cet accord de coopération, une réglementation temporaire a été élaborée par le
+biais de l’AR n° 44 du 26 juin 2020 ‘concernant le traitement conjoint de données par Sciensano et les centres de contact désignés par les
+autorités régionales compétentes ou par les agences compétentes, par les inspections sanitaires et par les équipes mobiles dans le cadre
+d'un suivi des contacts auprès des personnes (présumées) infectées par le coronavirus COVID-19 sur la base d'une base de données auprès
+de Sciensano’).
+107 Rapport au Roi de l’AR n° 44 du 26 juin 2020.
+108 Ibidem.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020
+
+2021
+
+20/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 284 =====
+DOC 55
+
+1394/002
+
+285
+
+JURIDISCHE ZAKEN
+
+AFFAIRES JURIDIQUES
+
+-
+
+Par la voie de l'arrêté royal n° 10 du 19 avril 2020109, un montant d'un milliard d'euros a été libéré au sein des budgets
+existants à répartir parmi les hôpitaux généraux (non psychiatriques) à titre d'intervention dans la prise en charge des
+coûts supplémentaires de personnel, matériel, etc. liés à l'épidémie COVID-19 afin d'assurer financièrement la continuité de l'activité hospitalière dans les hôpitaux généraux. Ce montant provient de moyens budgétaires de l'assurance
+maladie-invalidité et est affecté à la couverture des frais qui sont normalement indemnisés par le biais du budget des
+moyens financiers, d'une part, et de l'assurance maladie-invalidité, d'autre part ;
+
+-
+
+L'article 4 de l'arrêté de pouvoirs spéciaux n° 8 du 7 mai 2020 du gouvernement de la Communauté française 'relatif au
+soutien des hôpitaux universitaires dans le cadre de la crise sanitaire du COVID-19'110 a accordé une subvention exceptionnelle aux hôpitaux universitaires relevant de la compétence de la Communauté française, pour autant que cette
+subvention soit affectée à la couverture des frais suivants liés à la gestion de la crise du coronavirus COVID-19 :
+1° le coût des travaux d'aménagement de surfaces supplémentaires ou d'adaptation de surfaces existantes pour l'accueil, le tri ou l'hospitalisation de patients atteints du COVID-19 ;
+2° le coût de l'achat ou de la location d'appareillages médicaux et non-médicaux en vue de l'équipement et du conditionnement des surfaces supplémentaires ou converties pour l'accueil et l'hospitalisation de patients atteints par
+le coronavirus COVID-19.
+
+En vertu de sa compétence résiduaire en matière d'exercice de l'art de guérir (et de réglementation
+des professions des soins de santé), le pouvoir fédéral a pris des mesures en vue d'assurer le soutien
+opérationnel des hôpitaux, par exemple :
+-
+
+VOLET II.
+
+L'arrêté royal n° 9 du 19 avril 2020 'portant exécution de l'article 5, § 1, 2°, de la loi du 27 mars 2020 ‘habilitant le Roi à
+prendre des mesures de lutte contre la propagation du coronavirus COVID-19 (II)’, en vue de permettre temporairement
+l'exercice de l'art infirmier par des professionnels de soins de santé non qualifiés'111 : cet arrêté avait pour but d’élargir,
+de manière exceptionnelle et pour un temps limité, aux professionnels de la santé non habilités à se faire en temps
+normal, l’exercice des activités relevant de l’art infirmier et ainsi pouvoir prêter main forte aux médecins et infirmiers
+dans les soins à prodiguer aux malades pendant le temps de l’épidémie. 112
+
+RÉPARTITION DES COMPÉTENCES EN MATIÈRE DE GESTION D’UNE CRISE SANITAIRE ENTRE LES DIFFÉRENTS NIVEAUX DE POUVOIR BELGES
+Méthodologie
+Le chapitre II.A. examinera la notion fondamentale de « sécurité civile ».
+Le chapitre II.B. délimitera la notion de « gestion d’une crise sanitaire ».
+Le chapitre II.C. exposera la répartition des compétences en matière de préparation et de planification
+de la gestion d’une crise sanitaire.
+Enfin, le chapitre II.D. présentera une vue d’ensemble de la répartition des compétences en matière
+de gestion d’une crise sanitaire aiguë.
+
+109 Arrêté royal n° 10 du 19 avril 2020 ‘permettant l'octroi, les modalités de répartition et de liquidation d'une avance aux hôpitaux généraux
+
+dans le cadre de l'épidémie de coronavirus COVID-19’ (M.B. 22.04.2020).
+
+110 Moniteur belge du 14.05.2020.
+111 Moniteur belge du 04.05.2020.
+
+112 Cet arrêté royal a toutefois été retiré par l'arrêté royal n° 26 du 29 mai 2020 ‘retirant l’arrêté royal n° 9 du 19 avril 2020 portant exécution
+de l’article 5, § 1, 2°, de la loi du 27 mars 2020 ‘habilitant le Roi à prendre des mesures de lutte contre la propagation du coronavirus COVID−19 (II)’, en vue de permettre temporairement l’exercice de l’art infirmier par des professionnels de soins de santé non qualifiés (M.B.
+29.05.2020).
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+2020
+
+2021
+
+21/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+===== PDF page 285 =====
+286
+
+DOC 55
+
+JURIDISCHE ZAKEN
+
+II.A.
+
+1394/002
+
+AFFAIRES JURIDIQUES
+
+La notion fondamentale de « sécurité civile »
+La sécurité civile constitue une compétence résiduaire du pouvoir fédéral.113 Les principes généraux
+relatifs à l’exercice de cette compétence sont énoncés dans la loi du 15 mai 2007 'relative à la sécurité
+civile', qui a réformé la loi de principes du 31 décembre 1963 ‘sur la protection civile’.114
+L’abandon du terme de « protection civile », qui désigne plutôt une approche défensive, au profit du
+terme de « sécurité civile » peut être considéré comme le signe d’un élargissement de l’interprétation
+de la notion de lutte contre les catastrophes, la sécurité civile mettant davantage l’accent sur les aspects proactifs et préventifs de cette lutte, à savoir la prévention de l’exposition aux dangers et des
+préjudices pour l’homme.115
+Conformément à l’article 3 de la loi du 15 mai 2007 précitée, la sécurité civile comprend l'ensemble
+des mesures et des moyens civils nécessaires pour secourir et protéger les personnes, leurs biens et
+leur espace de vie afin de garantir en tout temps leur sécurité.
+Dans le cadre de la sécurité civile, qui joue aussi un rôle dans la gestion des crises sanitaires, un rôle
+important est dévolu au ministre de l’Intérieur :
+-
+
+Conformément à l’article 4 de la loi du 31 décembre 1963 ‘sur la protection civile’, le ministre
+de l’Intérieur organise les moyens et prend les mesures nécessaires à la protection civile pour
+l'ensemble du territoire national. Il coordonne la préparation et l'application de ces mesures.
+Il en résulte que le ministre de l’Intérieur est investi d’une double mission, à savoir l’organisation des moyens et des mesures ainsi que la coordination de ces mesures, tant durant les
+situations d’urgence que durant leur préparation, et ce par le biais de la planification d’urgence.116
+Conformément à l’article 182, alinéa 1er, de la loi du 15 mai 2007 'relative à la sécurité civile',
+le ministre de l’Intérieur peut, en cas de circonstances dangereuses, en vue d'assurer la protection de la population, obliger celle-ci à s'éloigner des lieux ou régions particulièrement exposés, menacés ou sinistrés. Il peut, pour le même motif, interdire tout déplacement ou mouvement de la population.
+En application des articles susmentionnés, le ministre de l’Intérieur était compétent
+pour prendre des mesures d’urgence par arrêté ministériel en vue de limiter la propagation du coronavirus. Dans ce contexte, il convient toutefois de souligner que ces
+mesures ont fait l’objet d’une concertation entre les gouvernements du pouvoir fédéral et des entités fédérées au sein du Conseil national de sécurité. (Voir infra II.D)
+Voir par exemple l’arrêté ministériel du 18 mars 2020 'portant des mesures d’urgence pour limiter la
+propagation du coronavirus COVID-19'.117
+
+-
+
+Les directives relatives à la planification d’urgence, adoptées par arrêtés royaux, par arrêtés
+ministériels et par circulaires ministérielles, sont prises à son initiative. Ainsi, le plan d’urgence
+
+113 Doc. Parl. Chambre 2006-2007, DOC 51-2928/001, p. 5 ; C.C. 8 décembre 2004, n° 197/2004, B.4.
+114 K. Reybrouck et S. Sottiaux, o.c., p. 261.
+
+115 K. Van Heuverswyn, “Het juridisch kader van rampenrecht in België. Bevoegdheden versus verantwoordelijkheden”, dans S. Lust et P.
+
+Luypaers (eds.), Rampen, noodsituaties, crisis. Voorkoming, beheersing en bestrijding. Bevoegdheden, verantwoordelijkheden en aansprakelijkheden, Bruges, Die Keure, 2006, p. 26.
+116 Ibidem, p. 27.
+117 M.B. 18.03.2020.
+
+Print: 15/09/2020 12.55
+CHAMBRE
+
+3 e S E S S I O N D E L A 55 e L É G I S L AT U R E
+
+2020-0256_bc_covid_bevoegdheidsverdeling_FR.document de travail.docx
+
+2020
+
+2021
+
+22/31
+
+K A M E R • 3 e Z I T T I N G VA N D E 5 5 e Z I T T I N G S P E R I O D E
+
+

@@ -4,7 +4,6 @@
   "t0_event_id": "who_pheic",
   "end_point": "municipalities",
   "missing": [
-    "binding_act",
     "dedicated_funding",
     "institutionalisation"
   ],
@@ -32,6 +31,16 @@
             "order_3M_ffp2"
           ],
           "n_events": 7
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 0,
+            "max_days": 91
+          },
+          "first_event_ids": [
+            "binding_act_ar_30apr"
+          ],
+          "n_events": 1
         },
         "delivery": {
           "lag_from_t0": {
@@ -181,6 +190,16 @@
           ],
           "n_events": 7
         },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 0,
+            "max_days": 91
+          },
+          "first_event_ids": [
+            "binding_act_ar_30apr"
+          ],
+          "n_events": 1
+        },
         "delivery": {
           "lag_from_t0": {
             "min_days": 46,
@@ -328,6 +347,16 @@
             "order_3M_ffp2"
           ],
           "n_events": 7
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 0,
+            "max_days": 91
+          },
+          "first_event_ids": [
+            "binding_act_ar_30apr"
+          ],
+          "n_events": 1
         },
         "delivery": {
           "lag_from_t0": {
