@@ -64,6 +64,7 @@ MANUAL = [
     ("scripts/manuscript_f13_edits.py", "first", "ordinal in quoted manuscript text (first tender, first order)"),
     ("docs/MANUSCRIPT_F13_CHANGES.md", "validated", "means: passed validate.py or the dataviz palette validator"),
     ("docs/MANUSCRIPT_F12_CHANGES.md", "validated", "means: passed the docx skill's validate.py (schema, every edit tracked)"),
+    ("docs/REVIEW_F14_DECISION_OR_SUPPLY.md", "", "review of a manuscript: verdict 'not ready', quoted declarations, ordinals"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "not ready", "negation: verdict that the manuscript is not ready"),
     ("docs/REVIEW_F10_DECISION_OR_SUPPLY.md", "first verified delivery", "DAC term for the delivery end point (manuscript §2.1)"),
 ]
