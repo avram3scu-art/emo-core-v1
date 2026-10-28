@@ -21,7 +21,7 @@ ORDINAL = re.compile(
     r"\bfirst[ _-]?(order|deliver|binding|signed|resolution|run|wave|week|meeting|mention|row|line|act|legally|budget|"
     r"date|event|recorded|declaration|alert|time|of |national|sample|two|three|half|step|reading|valid|fetch|amendment|"
     r"audit|readable|year|month|day|pass|attempt|value|column|element|key|edition|lead|appearance|case|occurrence|"
-    r"forecast|test|non|t0|warning|purchase|firm|resulting|major|funding|physical|permanent|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
+    r"forecast|test|non|t0|warning|purchase|firm|resulting|major|funding|physical|permanent|interim|sublayer|stage|landfall|error|task|simulation|full|such|collection|proposal|diagnos|treaty|"
     r"formal|ranked|synthetic|50|12|\(|\]|\)|=|\.|,|:|$)", re.I)
 
 # Remaining hits, judged one by one (file, word or phrase in the line) -> justification.
