@@ -1,0 +1,687 @@
+===== PDF page 1 =====
+Bericht nach § 88 Absatz 2 BHO
+an die Enquete-Kommission des Deutschen Bundestages
+Aufarbeitung der Corona-Pandemie und
+Lehren für zukünftige pandemische Ereignisse
+
+Stellungnahme zur öffentlichen
+Anhörung am 15. Dezember 2025
+Beschaffung (medizinisches Material, Impfstoffe) und Versorgungssicherheit
+
+12. Dezember 2025
+
+===== PDF page 2 =====
+Geschäftszeichen: IX 1 - 0000625
+Dieser Bericht enthält das vom Bundesrechnungshof abschließend im Sinne des § 96 Absatz 4 BHO festgestellte
+Prüfungsergebnis. Er ist auf www.bundesrechnungshof.de veröffentlicht.
+Dieser Bericht des Bundesrechnungshofes ist urheberrechtlich geschützt.
+
+===== PDF page 3 =====
+Inhaltsverzeichnis
+
+1
+
+Zusammenfassung.................................................................................................................. 5
+
+2
+
+Auszüge aus den Prüfungsfeststellungen ..................................................................... 7
+2.1 Massive Überbeschaﬀung von Schutzmasken ........................................................................ 7
+2.2 Vorgehen bei der Beschaﬀung................................................................................................. 12
+2.3 Bevorratung von Schutzausrüstung ........................................................................................ 16
+2.4 Empfehlungen und Blick in die Zukunft.................................................................................. 17
+
+3
+
+===== PDF page 4 =====
+Abkürzungsverzeichnis
+
+B
+BMF Bundesministerium der Finanzen
+BMG Bundesministerium für Gesundheit
+BMI Bundesministerium des Innern, für Bau und Heimat (19. Wahlperiode)
+
+H
+Haushaltsausschuss Haushaltsausschuss des Deutschen Bundestages
+
+K
+Krisenstab Gemeinsamer Krisenstab von BMI und BMG
+KVen Kassenärztliche Vereinigungen
+
+M
+MNS Medizinische Mund-Nasen-Schutzmaske
+
+N
+NRGS Nationale Reserve Gesundheitsschutz
+
+P
+PfH Partikelfiltrierende Halbmaske
+PSA Persönliche Schutzausrüstung
+
+4
+
+===== PDF page 5 =====
+1
+
+Zusammenfassung
+
+Der Bundesrechnungshof hat in den vergangenen Jahren zahlreiche Maßnahmen des
+Bundesministeriums für Gesundheit (BMG) zur Bekämpfung der Corona-Pandemie und
+ihrer Folgen geprüft. Dazu zählt auch die Beschaffung von Schutzausrüstung. Alle we­
+sentlichen Feststellungen flossen in unterschiedliche Berichte an den Haushaltsaus­
+schuss des Deutschen Bundestages (Haushaltsausschuss), die im Internet veröffent­
+licht sind.
+Das BMG beschaffte zur Pandemiebekämpfung medizinische und persönliche Schutz­
+ausrüstung (PSA) und wendete dafür insgesamt bis heute mehr als 7 Mrd. Euro auf. Da­
+von entfielen 5,9 Mrd. Euro auf den Erwerb von 5,8 Milliarden partikelfiltrierenden
+Halbmasken (PfH) und medizinischen Mund-Nasen-Schutzmasken (MNS). Der Bundes­
+rechnungshof hat darin eine massive Überbeschaffung gesehen. Mit der Auslieferung
+von 123 Millionen PfH und 300 Millionen MNS bis zum 1. Juli 2020 wurde zwar eine zu
+Beginn der Pandemie drohende Versorgungskrise in der Akutmedizin erfolgreich abge­
+wehrt. Der Bundesrechnungshof hat dies und den großen Einsatz der Beschäftigten
+des BMG und der beteiligten Behörden unter schwierigsten Arbeitsbedingungen aus­
+drücklich anerkannt. Der überwiegende Teil der Beschaffungen – mehr als 3,4 Milliar­
+den Masken – wurde allerdings vernichtet bzw. steht zur Vernichtung an. Bis heute
+wurden nur 1,7 Milliarden Masken im Inland verteilt. Inwieweit sie tatsächlich zu Pan­
+demiezwecken eingesetzt wurden, ist ungewiss. Die Folgekosten für die Verwaltung
+der Überbeschaffung beliefen sich bis Ende des Jahres 2024 auf 517 Mio. Euro. Für die
+Jahre 2025 bis 2027 sind nochmals mehr als 110 Mio. Euro eingeplant.
+Spätestens im April 2020 hatte sich die Beschaffungspraxis des BMG völlig von dem Be­
+schaffungsziel entfernt. Dieses bestand ausweislich eines Beschlusses des Corona-Kabi­
+netts vom 30. März 2020 ausdrücklich darin, ergänzend zu den Beschaffungen der Län­
+der und Bedarfsträger zur kurzfristigen Sicherstellung der medizinischen Versorgung
+in Kassenarztpraxen und Akutkrankenhäusern Schutzausrüstung zu beschaffen. Der
+Gemeinsame Krisenstab des Bundesministeriums des Innern, für Bau und Heimat
+(BMI) und des BMG (Krisenstab) hatte zuvor festgelegt, das BMG solle zentral die Anfra­
+gen der Bundesbehörden erfassen, die Bedarfe der Akutmedizin mit den Ländern ab­
+stimmen und die drei größten Beschaffungsbehörden des Bundes mit der Ausführung
+beauftragen. In diesem Sinne wurde auch der Haushaltsausschuss informiert. Auf die­
+ser Basis ermittelte das BMG in mehrfach fortgeschriebenen Staatssekretärsvorlagen
+im März und April 2020 zu importierende Mengen von zuletzt 75 Millionen PfH und
+200 Millionen MNS für drei Monate. Mittelfristige Bedarfe (etwa für eine zweite Welle
+ab Herbst 2020) sollten aus inländischer Produktion gedeckt werden.
+
+5
+
+===== PDF page 6 =====
+Das BMG bestreitet bis heute eine Überbeschaffung. Es hält daran fest, es habe in der
+akuten Krise die damals 5,7 Millionen Beschäftigten des gesamten Wirtschaftszweigs
+Gesundheit mit einem Jahresbedarf versehen wollen. Dies würde nicht nur die medizi­
+nische und pflegerische Versorgung umfassen, sondern auch das gesamte Personal in
+Gesundheitsbehörden, Sozialversicherungen sowie Handels-, Handwerks- und Indust­
+riebetrieben. Für eine so weitreichende Exklusiv-Beschaffung durch das BMG sehen wir
+weder ein Mandat in Gestalt eines Gremienbeschlusses der Bundesregierung noch
+eine sachliche Notwendigkeit.
+Die Maskenbeschaffung und die daraus folgenden Probleme werden meist mit dem
+sogenannten Open-House-Verfahren gleichgesetzt, in dem das BMG Ende März 2020
+einen hohen Festpreis für rasch zu liefernde Masken auslobte. Die teuersten Masken
+und die größten Mengen resultierten jedoch aus vielen Einzelverträgen, die das BMG
+bis in den Mai 2020 schloss. Zu diesem Zeitpunkt war klar, dass das Open-House-Ver­
+fahren unerwartet viele Angebote ausgelöst hatte. Darüber hinaus hatte das BMG be­
+reits Verträge zur inländischen Produktion von Schutzausrüstung vergeben.
+Eine Versorgung aller Beschäftigten im Gesundheitssektor mit einem Jahresbedarf an
+Masken aus Bundesmitteln war zum Zeitpunkt der Beschaffungen nicht geplant. Nicht
+einmal die von der Pandemie besonders hart getroffenen Pflegeeinrichtungen erhiel­
+ten eine Jahresmenge, sondern im Winter 2020/2021 lediglich sogenannte MaskenHilfspakete mit einem kleinen Notfall-Bestand. Auch im weiteren Verlauf gelang es dem
+BMG nicht, die überbeschafften Masken zu verteilen. Selbst für die in der zweiten Jah­
+reshälfte 2020 und im Jahr 2021 in Deutschland produzierten Masken fehlten Vertei­
+lungskonzepte.
+Das BMG erkennt die Kritik des Bundesrechnungshofes bis heute nicht an und lässt
+eine kritische Auseinandersetzung mit seiner Beschaffungstätigkeit vermissen. Dies hat
+die Schaffung klarer Regeln und Strukturen für künftige Krisen nicht befördert.
+Die Versorgungssicherheit mit Schutzausrüstung im Gesundheitswesen ist nach wie
+vor nicht gewährleistet. Das BMG erklärte die überbeschafften Bestände zum Kern ei­
+ner erst noch zu schaffenden Nationalen Reserve Gesundheitsschutz (NRGS). Eine
+rechtliche Grundlage und ein konzeptioneller Rahmen hierfür existieren jedoch bis
+heute nicht.
+Wir raten davon ab, in der Pandemie entstandene, dysfunktionale Ad-hoc-Strukturen
+zu institutionalisieren. Anstelle einer Bundeszuständigkeit, die unter Umständen eine
+Verfassungsänderung erfordert, empfehlen wir Vorgaben für eine bedarfsträger- und
+marktnahe Bevorratung, etwa bei Klinikzentren oder beim Fachgroßhandel. Dort beste­
+hen praktische Erfahrung und fachliche Expertise für eine bedarfsgerechte Planung.
+Auch ließe sich so ein kontinuierlicher Umschlag der Lagerbestände leichter gewähr­
+leisten.
+
+6
+
+===== PDF page 7 =====
+Bis heute fehlt ein Überblick, wo welche Produkte für welche Zwecke bevorratet wer­
+den. Bestehende oder angestrebte Reserven sollten möglichst transparent miteinander
+vernetzt werden. Ihre Bestände könnten so im Wege der Amtshilfe kurzfristig für un­
+terschiedliche Notlagen eingesetzt und wieder aufgefüllt werden. Dies würde die Resili­
+enz in Krisenfällen deutlich stärken.
+Im Folgenden werden nochmals die wesentlichen Feststellungen des Bundesrech­
+nungshofes und seine daran anknüpfenden Empfehlungen im Einzelnen abgebildet:
+
+2
+
+Auszüge aus den Prüfungsfeststellungen
+
+Mit der raschen Ausbreitung der Corona-Pandemie zu Beginn des Jahres 2020 stieg
+weltweit der Bedarf an PSA. Gleichzeitig wurden Herstellung und Lieferketten durch Ex­
+portverbote und Produktionseinschränkungen, insbesondere bei der international
+größten Herstellernation China, massiv beeinträchtigt. Bereits Mitte Februar 2020 ver­
+dichteten sich Hinweise, dass ambulante und stationäre Einrichtungen im Gesundheits­
+wesen zunehmend Schwierigkeiten hatten, sich auf dem sonst üblichen Weg zu bevor­
+raten. Dabei ging es um Schutzkleidung und Desinfektionsmittel, vor allem aber um
+Schutzmasken (PfH und MNS – letztere werden oft auch als OP-Masken bezeichnet.) Die
+Bundesregierung entschied in dieser Situation, PSA für den Eigenbedarf der Bundesbe­
+hörden und – ergänzend zu den Beschaffungen der entsprechenden Bedarfsträger und
+der Länder – zur Sicherung der medizinischen Akutversorgung zu beschaffen.
+
+2.1
+
+Massive Überbeschaffung von Schutzmasken1
+Das BMG beschaffte für die Zwecke der Pandemiebekämpfung im Jahr 2020 PSA für
+6,7 Mrd. Euro. Für 5,8 Milliarden Schutzmasken verausgabte es davon bis zum Jahr
+2024 allein 5,9 Mrd. Euro. Der Bundesrechnungshof hat diese Maßnahme geprüft und
+seine Feststellungen in zwei Berichten an den Haushaltsausschuss zusammengefasst.2
+Er rügte darin eine massive Überbeschaffung. Letztlich wurden nur 1,7 Milliarden
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+1
+Bericht nach § 88 Absatz 2 BHO an den Haushaltsausschuss des Deutschen Bundestages zur Information über die
+Entwicklung des Einzelplans 15 (Bundesministerium für Gesundheit) für die Beratungen zum Bundeshaushalt 2026
+(Gz.: IX 1 - 0003248) vom 3. September 2025, S. 25 ff.
+2
+Bericht nach § 88 Absatz 2 BHO an den Haushaltsausschuss des Deutschen Bundestages über die Prüfung der zentra­
+len Beschaffung von persönlicher Schutzausrüstung für das Gesundheitswesen (Gz.: IX 1 - 2020 - 0946) vom
+16. Juni 2021 und Bericht nach § 88 Absatz 2 BHO an den Haushaltsausschuss des Deutschen Bundestages über die
+Prüfung der Beschaffung und Verteilung von Schutzmasken durch das Bundesministerium für Gesundheit (Gz.: IX 1 0000625) vom 28. März 2024.
+
+7
+
+===== PDF page 8 =====
+Schutzmasken im Inland verteilt. Mehr als die Hälfte der Beschaffungsmenge wurde
+bereits vernichtet.
+Für die zu Beginn des Jahres 2024 noch nutzbaren Restbestände von 800 Millionen
+Schutzmasken fehlte es an einem wirksamen und realistischen Verteilungskonzept. Das
+BMG konnte seit dem Jahr 2023 nur noch 55 Millionen Stück kostenlos an Krankenhäu­
+ser, Sozialverbände oder Behörden abgeben. Bei großen Mengen ist inzwischen das
+Mindesthaltbarkeitsdatum abgelaufen, sodass sie ebenfalls vernichtet wurden. Weitere
+377 Millionen Schutzmasken sind bereits konkret zur Vernichtung vorgesehen oder
+werden lediglich deshalb noch länger eingelagert, weil sie in laufenden Klageverfahren
+streitbefangen sind. Im August 2025 verfügte das BMG noch über 332 Millionen auslie­
+ferungsfähige Schutzmasken.
+
+Abbildung 1
+
+Mehr als die Hälfte der Masken bereits vernichtet
+Von den durch das BMG zur Bekämpfung der Corona-Pandemie beschafften Schutzmasken ist
+inzwischen mehr als die Hälfte vernichtet. Nur 1,7 Milliarden Schutzmasken (30 %) wurden in
+Deutschland verteilt, weitere 0,4 Milliarden Stück ins Ausland gespendet.
+
+Noch verwendbarer
+Lagerbestand
+
+0,3
+
+Verteilt
+
+2,1
+
+5,8 Mrd.
+Masken
+
+davon 0,4
+ins Ausland
+gespendet
+
+3,0
+
+Vernichtet
+
+0,4
+Zur Vernichtung
+vorgesehen
+Grafik: Bundesrechnungshof. Quelle: BMG (Stand August 2025).
+
+8
+
+===== PDF page 9 =====
+2.1.1
+
+Kein Mandat für Jahresmenge eines gesamten Wirtschaftssektors
+Das BMG weist eine Überbeschaffung bis heute zurück. Es habe seine Aufgabe in der
+kritischen Weltmarktlage im Frühjahr 2020 darin gesehen, einen Jahresbedarf für das
+gesamte Gesundheits- und Sozialwesen zu beschaffen.3 Dazu multiplizierte es den sta­
+tistisch erfassten Personalbestand4 (nach Köpfen und ungeachtet der konkreten Auf­
+gabe) mit einer Verbrauchsempfehlung aus der klinischen Versorgung von zwei PfH für
+ein Drittel der Belegschaft und vier MNS für zwei Drittel pro Tag. Demzufolge wären bei
+250 Werktagen für die 5,7 Millionen Beschäftigten in der Gesundheitsverwaltung, in
+Arzt-, Zahnarzt- und sonstigen Praxen, Apotheken, ambulanten und stationären Pflege­
+einrichtungen, Krankenhäusern und Reha-Kliniken, Rettungsdiensten, Sozialversiche­
+rungen und privaten Krankenversicherungen, medizinischen Einzelhandels-, Hand­
+werks- und Industriebetrieben und Laboren5 insgesamt 0,9 Milliarden PfH und
+3,8 Milliarden MNS, also insgesamt 4,7 Milliarden Masken, benötigt worden. An diesem
+Mengengerüst habe das BMG seine Beschaffung ausgerichtet und 1 Milliarde PfH so­
+wie 1,6 Milliarden MNS kurzfristig überwiegend aus Importen bezogen. Weitere 0,7 Mil­
+liarden PfH und 2,5 Milliarden MNS kamen aus deutscher Produktion ab dem zweiten
+Halbjahr 2020 hinzu.
+Der Bundesrechnungshof hat in seinen Berichten ausführlich dargelegt, warum eine
+Menge von 4,7 Milliarden Schutzmasken weder sachlich angemessen ermittelt noch
+dringlich zu beschaffen war.6 Für eine derartige Berechnung ist zudem weder eine Lei­
+tungsentscheidung des BMG noch ein Gremienbeschluss der Bundesregierung doku­
+mentiert.7 Vielmehr beschloss das Corona-Kabinett am 30. März 2020 zum Umfang der
+Beschaffungstätigkeit ausdrücklich: Der Bund sollte lediglich ergänzend zu den Bemü­
+hungen der Länder und Bedarfsträger zur kurzfristigen Sicherstellung der medizini­
+schen Versorgung in Kassenarztpraxen und Akutkrankenhäusern Schutzausrüstung
+beschaffen. Dies entsprach den Beschlüssen des Krisenstabs.8 Gemäß diesen Vorgaben
+wurden Preise mit den Ländern und Kassenärztlichen Vereinigungen (KVen) vereinbart
+und die Verteilung von März bis Juni 2020 organisiert.
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+3
+S. die Stellungnahmen des BMG zu den Feststellungen des Bundesrechnungshofes, wiedergegeben in den Berichten
+des Bundesrechnungshofes vom 16. Juni 2021 (Gz.: IX 1 - 2020 - 0946), S. 37 f., und vom 28. März 2024 (Gz.: IX 1 0000625), S. 19 f.
+4
+Eckzahlen der Gesundheitspersonalrechnung 2018, veröffentlicht in der Gesundheitsberichterstattung des Bundes
+für das Jahr 2019.
+5
+Vollständige Tabelle abgedruckt im Bericht des Bundesrechnungshofes vom 16. Juni 2021 (Gz.: IX 1 - 2020 - 0946), S.
+23.
+6
+Berichte des Bundesrechnungshofes vom 16. Juni 2021 (Gz.: IX 1 - 2020 - 0946), S. 43 ff. und vom 28. März 2024 (Gz.:
+IX 1 - 0000625), S. 21 ff.
+7
+Ein Kabinettbeschluss vom 3. Juni 2020 führt lediglich nach Abschluss der Beschaffungen ohne weiteren Nachweis
+zum Rechenweg an, dass ein Gesamtjahresbedarf für den Gesundheitssektor von maximal 6,4 Milliarden Schutzmas­
+ken bestehe, von denen aufgrund nicht näher unterlegter Annahmen über Eigenbevorratungen und Länderbeschaf­
+fungen 1,4 Milliarden abzuziehen seien: „Als Maximalwert für eine Beschaffung des Bundes errechnet sich somit ein
+Wert von 5 Mrd. Masken“, zu einem Drittel PfH und zu zwei Dritteln MNS.
+8
+Der Krisenstab hatte in seiner Sitzung am 3. März 2020 (Protokoll der 3. Sitzung des Gemeinsamen Krisenstabs von
+BMI und BMG) unter anderem beschlossen, dass das BMG innerhalb der Bundesregierung zentral die Bedarfsmel­
+dungen sammeln und die Beschaffungsämter des Bundes mit der Beschaffung von Schutzausrüstung beauftragen
+sollte. Dabei ging er zunächst von einer Mindestbeschaffung von 150 Millionen MNS und 15 Millionen PfH für ge­
+schätzte 200 Mio. Euro aus, die für Krankenhäuser, Arztpraxen und die Bundesverwaltung benötigt würden.
+
+9
+
+===== PDF page 10 =====
+In diesem Sinne wurde auch der Haushaltsausschuss unterrichtet. In den einschlägigen
+Sitzungen vom 4. März und 22. April 2020 wurde er jeweils über die Einwilligung des
+Bundesministeriums der Finanzen (BMF) in überplanmäßige Ausgaben für die Pande­
+miebekämpfung informiert. Dabei sprach die Hausleitung des BMG ausdrücklich und
+ausschließlich von Krankenhäusern und Arztpraxen als Empfänger der Schutzausrüs­
+tung neben der Bundesverwaltung selbst. Zu keiner Zeit war die Rede von einer Jahres­
+menge, erst recht nicht für einen ganzen Wirtschaftssektor. Der Haushaltsausschuss
+machte damals deutlich, dass er die Versorgung des Gesundheitswesens primär als
+Länderaufgabe betrachtete und dem Einsatz von Bundesmitteln skeptisch gegenüber­
+stand. Entsprechend forderte er das BMG in einem Maßgabebeschluss auf, nicht auf
+eine Erstattung von Ausgaben durch die Länder und KVen zu verzichten.
+Auf der Basis dieser Beschlusslage hatte das BMG in mehrfach fortgeschriebenen Lei­
+tungsvorlagen im März und April 2020 kurzfristig aus Importen zu beschaffende Bedarfsmengen von zuletzt 75 Millionen PfH und 200 Millionen MNS ermittelt.9 Mittelfris­
+tige Bedarfe (etwa für eine befürchtete zweite Welle ab Herbst 2020) sollten möglichst
+aus den im April 2020 abgeschlossenen Verträgen mit deutschen Herstellern oder auf
+einem wieder funktionierenden Markt gedeckt werden.
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+9
+Selbst die im Nachhinein von einem externen Beratungsunternehmen entworfenen Vergabevermerke für die vom
+BMG direkt abgeschlossenen Maskenkäufe bezogen sich hinsichtlich des Beschaffungsbedarfs ausdrücklich auf diese
+Bedarfsermittlung und nicht auf eine vermeintliche Jahresverbrauchsschätzung, s. dazu den Bericht des Bundesrech­
+nungshofes vom 28. März 2024 (Gz.: IX 1 - 0000625), S. 27 f.
+
+10
+
+===== PDF page 11 =====
+Abbildung 2
+
+Beschaffungsmengen überstiegen den Bedarf massiv
+Der Umfang der vom BMG beschafften Import-Masken – Partikelfiltrierende Halbmasken (PfH)
+und Medizinische Mund-Nasen-Schutzmasken (MNS) – überstieg den ermittelten kurzfristigen
+Bedarf um ein Vielfaches. Nur ein relativ kleiner Teil stammte aus dem Open-House-Verfahren.
+Hinzu kamen später große Mengen aus deutscher Produktion.
+
+Grafik: Bundesrechnungshof. Quelle: BMG (Stand Mai 2025).
+
+11
+
+===== PDF page 12 =====
+2.1.2
+
+Verteilung erreichte nicht annähernd Beschaffungsmenge
+Mit der Auslieferung von 123 Millionen PfH und 300 Millionen MNS an Länder, KVen
+und Bundesbehörden bis zum 1. Juli 2020 wurde eine drohende Versorgungskrise in
+der Akutmedizin erfolgreich abgewehrt. Eine Verteilung an den in der Beschäftigtensta­
+tistik für den Gesundheitssektor genannten weiten Kreis oder gar deren Versorgung
+mit einem gesamten, aus Bundesmitteln finanzierten Jahresbedarf an Schutzmasken,
+war dagegen zu keiner Zeit geplant. Sie wurde auch im Nachhinein, als die massive
+Überbeschaffung zu hohen Lagerbeständen geführt hatte, nicht ins Auge gefasst.
+Nicht einmal die von der Pandemie besonders hart getroffenen Pflegeeinrichtungen
+erhielten auch nur annähernd eine Jahresmenge an Schutzmasken für ihr Personal.
+Nach dem Ende der ursprünglichen Belieferung von Ländern und KVen im Juni 2020
+nahmen einige Länder noch weitere vom BMG angebotene PSA ab. Das BMG begann
+ab Juli 2020 mit Planungen für die Belieferung von mehr als 30 000 stationären und
+ambulanten Pflegeeinrichtungen mit Schutzmasken im Winter 2020/2021 (erstes Mas­
+ken-Hilfspaket Pflege). Dabei wurden zunächst kleine Mengen PfH ohne CE-Zertifizie­
+rung und unter einschränkenden Bedingungen ausschließlich als Notfallreserve ausge­
+liefert. Hinzu kamen importierte MNS, die jedoch zu sogenannten „Alltagsmasken“
+umdeklariert waren. Später kamen weitere Verteilungen hinzu. So erhielten etwa Ein­
+richtungen der Wohnungslosen- und Eingliederungshilfe, Kommunen, Verkehrsbe­
+triebe, Sportvereine und Heilmittelerbringer PSA vom BMG, und zwar ganz überwie­
+gend Schutzmasken. Seit dem Jahr 2021 wurde dabei nur noch EU-konforme Ware aus
+deutscher Produktion verteilt. Der logistische Vorlauf bei den Hilfspaketen war aufwen­
+dig. Zwischen der Entscheidung für eine Belieferung bestimmter Gruppen und der tat­
+sächlichen Versorgung mit Schutzmasken lagen regelmäßig drei Monate.10
+
+2.2
+
+Vorgehen bei der Beschaffung
+
+2.2.1
+
+BMG nutzte multiple Beschaffungswege11
+Der Krisenstab beschloss im Februar 2020 die Beschaffung von PSA durch Beschaf­
+fungsämter des Bundes. Dabei wurden einzelne Aufgaben jeweils zentral einer Stelle
+innerhalb der Bundesverwaltung zugeordnet. Das BMG wurde beauftragt, den Bedarf
+der Bundesbehörden sowie der Akutkrankenhäuser und kassenärztlichen Praxen zu
+ermitteln und entsprechende Vertragsabschlüsse der Beschaffungsämter auszulösen.
+Es begann jedoch bereits Anfang März 2020 auch mit eigenen Beschaffungsmaßnah­
+men – neben den fortlaufenden Bemühungen der Länder, Kommunen und
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+10
+Bericht des Bundesrechnungshofes vom 28. März 2024 (Gz.: IX 1 - 0000625), S. 41.
+11
+Bericht des Bundesrechnungshofes vom 28. März 2024 (Gz.: IX 1 - 0000625), S. 11 ff.
+
+12
+
+===== PDF page 13 =====
+Bedarfsträger im Gesundheitswesen. Mitte März 2020 begann die Auslieferung erster
+vom Bund beschaffter Schutzausrüstung an Länder, KVen und Bundesbehörden.
+Anhand von Abfragen bei den Ländern, Meldungen der anderen Bundesressorts und
+eigenen Hochrechnungen hatte das BMG bereits im Februar 2020 begonnen, den kurz­
+fristig zu beschaffenden Bedarf zu ermitteln. Anfang März 2020 bezifferte es den DreiMonats-Mindestbedarf zunächst auf 16 Millionen PfH und 150 Millionen MNS. Damit
+sollte der kurzfristige Bedarf der Bundesbehörden gedeckt und die gesundheitliche
+Akutversorgung ergänzend gesichert werden. Dabei hielt es fest, dass wegen des ge­
+planten Aufbaus inländischer Produktionskapazitäten zu hohe Lagerbestände an im­
+portierter Ware vermieden werden sollten. Es informierte die Beschaffungsämter: Die
+Beschaffung solle schrittweise über mehrere Monate erfolgen und berücksichtigen,
+dass auch eine inländische Produktion angestoßen werde, damit wieder normale Ver­
+triebswege zur Verfügung stünden.
+Das BMG schrieb diese Bedarfsermittlung im Laufe der Monate März und April 2020 in
+einer Reihe von Staatssekretärsvorlagen mehrfach fort und hob dabei die Zahl der zu
+beschaffenden Schutzmasken zuletzt auf 75 Millionen PfH und 200 Millionen MNS an.
+Das BMG begann am 9. März 2020 auf der Grundlage der Bedarfsermittlung auch mit
+dem Abschluss eigener Kaufverträge über PSA (Direktbeschaffung). Daneben schloss
+es Rahmenvereinbarungen mit deutschen Unternehmen, die namens und in Vollmacht
+des Bundes ihre Einkaufsstrukturen zur Maskenbeschaffung einsetzen sollten (Unter­
+nehmensnetzwerk). Gegenüber einem Logistikunternehmen erklärte das BMG eine Ab­
+nahmegarantie für bis zu 350 Millionen PfH und 700 Millionen MNS mit einem mögli­
+chen Verpflichtungsvolumen zulasten des Bundeshaushalts von mehr als 1,4 Mrd. Euro
+(Logistiksourcing).
+Zudem ermöglichte das BMG, Zuschläge für Lieferungen von Schutzmasken und -kit­
+teln in einem vereinfachten Verfahren zu festen Preisen und Lieferbedingungen zu er­
+teilen (Open-House-Verfahren). Am 27. März 2020 wurde eine Bekanntmachung veröf­
+fentlicht, die Nettostückpreise für MNS von 0,60 Euro und für PfH von 4,50 Euro bei
+Lieferung bis zum 30. April 2020 enthielt. Dabei war dem BMG bewusst, dass eine Men­
+gensteuerung in diesem Verfahren rechtlich ausgeschlossen war. Nachdem binnen we­
+niger Tage Hunderte Angebote eingegangen und die zunächst geschätzten Haushalts­
+mittel von 500 Mio. Euro bereits ausgeschöpft waren, entschied das BMG am 2. April
+2020, die Angebotsfrist vom 30. auf den 8. April 2020 zu verkürzen. Insgesamt wurden
+über 700 Angebote bezuschlagt, die jedoch bei Weitem nicht alle erfüllt wurden.
+Daneben vergab das BMG in einem Verhandlungsverfahren ohne Teilnahmewettbe­
+werb an 44 Unternehmen Aufträge zur Lieferung inländisch hergestellter Schutzmas­
+ken und -kittel (Tenderprojekt „Produktion in Deutschland“). Der Entwurf des Vergabe­
+vermerks bezieht sich hier zur Frage des Bedarfs vage auf „die Grundversorgung des
+deutschen Gesundheits- und Pflegesystems“ und führt als erforderliche Mengen ohne
+
+13
+
+===== PDF page 14 =====
+weitere Begründung 5 bis 10 Millionen PfH, 20 bis 40 Millionen MNS und 1 Million
+Schutzkittel wöchentlich an. Vertraglich vereinbart wurde schließlich, dass nach Aufbau
+der entsprechenden Kapazitäten ab dem zweiten Halbjahr 2020 und im Jahr 2021 ins­
+gesamt 692 Millionen PfH, knapp 2,5 Milliarden MNS und 14 Millionen Schutzkittel ge­
+liefert werden sollten.
+
+2.2.2
+
+Unzureichende Dokumentation
+Das BMG führte im Zusammenhang mit der Abwicklung der PSA-Beschaffung noch im
+Jahr 2024 keine fortlaufenden Akten. Schreiben wurden ohne Geschäftszeichen erstellt
+und ohne die erforderlichen Kontextinformationen dazu abgelegt, welche Stellen und
+Ebenen im BMG bzw. welche Externen daran beteiligt waren. Regelmäßige Bespre­
+chungen mit externen Dienstleistern wurden nicht protokolliert, Ergebnisse mündli­
+cher Absprachen und aus Telefon- oder Videokonferenzen nicht in Vermerken festge­
+halten.12 Grundlegende Entscheidungen sind nicht im Zusammenhang dokumentiert,
+sondern finden sich höchstens auszugsweise in Einzelvorgängen. Das BMG verfügte
+nicht über den vollständigen Schriftwechsel, den externe Dienstleister in seinem Na­
+men führten.
+Eine ordnungsgemäße Vergabedokumentation zu den PSA-Beschaffungsmaßnahmen
+des BMG fehlt. Alle ab Herbst 2020 von externen Dienstleistern nachträglich erstellten
+Entwürfe für Vergabevermerke aus der Direktbeschaffung und den Rahmenvereinba­
+rungen nahmen unter dem Punkt „Bedarfsermittlung“ ausschließlich auf die Staatssek­
+retärsvorlagen vom 16. März 2020 und 27. April 2020 Bezug, das heißt auf die vom
+Bundesrechnungshof als ausschlaggebend angesehene Bedarfsermittlung. Die darin
+konkret festgehaltenen Mengen für das jeweils beschaffte Produkt, also von 75 Millio­
+nen PfH und 200 Millionen MNS, wurden jedoch nicht genannt. Für die jeweiligen Ein­
+zelfälle wurde kein Bedarfsabgleich mit diesen Mengen durchgeführt. Selbst wenn die
+Liefermenge aus dem jeweiligen Vertrag bereits für sich genommen den ermittelten
+Gesamtbedarf erreichte oder überschritt, wurde die Beschaffungsentscheidung nicht
+näher begründet. Die Entwürfe erklärten wortgleich und ausnahmslos alle Beschaffun­
+gen für dringlich und führten stets an, dass der jeweilige Anbieter als Einziger die Wa­
+ren zu diesem Zeitpunkt und in dieser Menge habe liefern können.
+Für zurückliegende Vorgänge im Zusammenhang mit der PSA-Beschaffung erstellte
+das BMG nachträglich Aktenordner mit Ausdrucken aus Laufwerken und E-Mail-Konten,
+teilweise erst einen Tag vor entsprechenden örtlichen Erhebungen des Bundesrech­
+nungshofes. Der Inhalt der vom Bundesrechnungshof eingesehenen Ordner war nicht
+paginiert, also mit fortlaufenden Seitenzahlen versehen, oder in der Registratur des
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+12
+Beispielhaft sei hier auf die fehlende Dokumentation der Gespräche des interministeriellen Beschaffungsstabs verwie­
+sen, auf den sich das BMG in seinen Stellungnahmen stets berief, zu dem es aber letztlich nur die Einladungen mit
+den Einwahldaten für die Telefonkonferenzen vorlegen konnte (s. Bericht des Bundesrechnungshofes vom
+16. Juni 2021 (Gz.: IX 1 - 2020 - 0946), S. 46.
+
+14
+
+===== PDF page 15 =====
+BMG erfasst. Damit konnten jederzeit Unterlagen ergänzt oder entnommen werden.
+Vorgeheftet war jeweils ein loses Blatt mit dem Schriftzug „VS-nfD“, mit dem das BMG
+eine Einstufung als Verschlusssache beabsichtigte.
+Die Aktenführung dient der vollständigen und nachvollziehbaren Dokumentation des
+Verwaltungshandelns. Dabei handelt es sich nicht um eine bloße Formalie. Ziel ist nicht
+nur das verwaltungsinterne Wissensmanagement, sondern die Sicherstellung der in
+einem Rechtsstaat unverzichtbaren Kontrolle durch Parlament, Gerichte, Presse, Öf­
+fentlichkeit und den Bundesrechnungshof. Der Verzicht auf eine ordnungsgemäße Ak­
+tenführung darf nicht dazu führen, diesen Kontrollinstanzen den Zugang zu Informati­
+onen zu erschweren oder einzuschränken. Auch darf die Erstellung von Akten nicht im
+Hinblick darauf erfolgen, dass deren Inhalt sodann als Verschlusssache diesen Kontrollinstanzen weitgehend entzogen wird. Wenn Vergabevermerke nur pauschal und for­
+melhaft den Bedarf und die Dringlichkeit von Beschaffungsentscheidungen behaupten,
+ohne diese im Einzelfall zu prüfen und zu belegen, sind sie substanzlos. Sie können da­
+mit die Anforderungen an die gesetzlich zwingend geforderte Bewertung und Doku­
+mentation der Beschaffungsentscheidungen nicht erfüllen.
+
+2.2.3
+
+Hohe Annexkosten und Prozessrisiken
+Es fielen hohe Annexkosten an, also Ausgaben für Lagerung, Logistik, Qualitätsprüfung
+und Vernichtung der PSA, sowie für die jahrelange umfassende Begleitung durch ex­
+terne Beratungsunternehmen und Anwaltskanzleien. Diese Folgekosten für die Verwal­
+tung der Überbeschaffung erhöhten sich im Jahr 2024 um weitere 57 Mio. auf nunmehr
+517 Mio. Euro. Zum Vergleich: Das ist das Zehnfache dessen, was etwa an anderer
+Stelle im Einzelplan 15 für Modellmaßnahmen zur Versorgung von Kindern und Ju­
+gendlichen mit Long-COVID über fünf Jahre zur Verfügung steht. Für das Jahr 2025 sind
+für Annexkosten erneut 45 Mio. Euro vorgesehen. Für die Jahre 2026 und 2027 rechnet
+das BMG weiterhin mit Ausgaben allein für konkret absehbare Verpflichtungen) von
+insgesamt 67,3 Mio. Euro.
+Daneben rechnet das BMG für das Jahr 2025 mit Abwicklungsrisiken von bis zu
+120 Mio. Euro aus Verträgen zur Direktbeschaffung von Schutzmasken und 360 Mio.
+Euro aus Rechtsstreitigkeiten im Zusammenhang mit dem Open-House-Verfahren. In
+diesem Verfahren hatte es hohe Festpreise für Schutzmasken ausgelobt und Zuschläge
+in einem mengenmäßig nicht steuerbaren Umfang erteilen müssen. Daraus resultierte
+eine hohe Zahl an Rechtsstreitigkeiten mit Lieferanten. Aktuell sind noch rund 100 Kla­
+gen anhängig mit einem Gesamtstreitwert von 2,3 Mrd. Euro. Wenn und soweit das
+BMG rechtskräftig zu Zahlungen verurteilt würde, kämen noch Verfahrenskosten und
+gegebenenfalls Zinsen in beträchtlicher Höhe hinzu.
+Das BMG berücksichtigte bei seiner Risikoprognose zu den Open-House-Streitigkeiten
+für das Jahr 2025 lediglich eine bestimmte Fallkonstellation mit einem Streitwert von
+
+15
+
+===== PDF page 16 =====
+insgesamt 270 Mio. Euro, zuzüglich geschätzter Zins- und Verfahrenskosten von bis zu
+90 Mio. Euro. Mögliche Zahlungsverpflichtungen aus diesen Abwicklungsrisiken sollen
+über Ausgabereste gedeckt werden und sind daher in den Haushaltsentwürfen für die
+Jahre 2025 und 2026 nicht abgebildet. Alle auf diese Weise eingesetzten Mittel sind im
+Gesamthaushalt einzusparen. Das heißt, in gleicher Höhe dürften parlamentarisch für
+andere Zwecke bewilligte Ausgaben in diesen Jahren nicht geleistet werden. Damit dro­
+hen aus der Beschaffungstätigkeit des BMG aus dem Jahr 2020 weiterhin hohe Risiken,
+neben den ohnehin fortlaufenden Annexkosten.
+
+2.3
+
+Bevorratung von Schutzausrüstung
+Das BMG hat die Auffassung vertreten, die – inzwischen überwiegend vernichteten –
+Überbestände aus der Maskenbeschaffung stellten bereits eine Vorsorge für künftige
+Pandemien in Form der geplanten NRGS dar. Die gesetzlichen Voraussetzungen dafür
+wurden aber niemals geschaffen.13
+Am 3. Juni 2020 hatte das Bundeskabinett das BMG, das BMI sowie die Bundesministe­
+rien der Verteidigung und für Wirtschaft mit der Erstellung eines Konzepts zur Bildung
+einer NRGS beauftragt, in der Schutzausrüstung und andere medizinische Verbrauchs­
+güter für vulnerable Gruppen in der Bevölkerung, der Verwaltung und der Wirtschaft
+sowie kritische Infrastrukturen vorgehalten werden können. Im Jahr 2021 lief sowohl
+BMG-intern als auch im Rahmen des durch Kabinettbeschluss vom 30. November 2020
+eingesetzten interministeriellen Steuerungskreises die Erarbeitung der notwendigen
+konzeptionellen und rechtlichen Grundlagen für die Errichtung einer NRGS an. Dabei
+wurde vereinbart, dass der Bund hier „ressortübergreifend, gemeinsam und abge­
+stimmt“ handeln wolle. Zu klären waren die unterschiedlichen Szenarien, für die Reser­
+ven angelegt werden sollten, die hierbei jeweils zu berücksichtigenden Schutzgruppen
+der Bevölkerung, die Koordination mit Bevorratungen anderer Akteure (Länder, medi­
+zinische Einrichtungen, Großhandel, Apotheken etc.) sowie die zu schaffenden Rechts­
+grundlagen. Erforderlich war hierfür auch nach Auffassung des BMG eine Verfassungs­
+änderung, da es nach derzeitiger Kompetenzverteilung an einer Zuständigkeit des
+Bundes für die notwendige Rechtsgrundlage, einem Gesundheitssicherstellungs- und
+Vorsorgegesetz, zur Errichtung einer nationalen Reserve fehlt. Diese Vorarbeiten sind
+noch immer nicht abgeschlossen.
+Im Koalitionsvertrag für die 20. Wahlperiode war vereinbart, mit einem Gesundheitssi­
+cherstellungsgesetz insbesondere die effiziente und dezentrale Bevorratung von Arz­
+neimittel- und Medizinprodukten sowie regelmäßige Ernstfallübungen für das Personal
+für Gesundheitskrisen sicherzustellen. Der Haushaltsausschuss forderte mit Maßgabe­
+beschluss vom 10. November 2022, bei der NRGS die primäre Zuständigkeit der Länder
+und Kommunen beim Katastrophenschutz sowie die auf Länderebene bestehenden
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+13
+Vgl. Bericht des Bundesrechnungshofes vom 28. März 2024 (Gz.: IX 1 - 0000625), S. 35 ff.
+
+16
+
+===== PDF page 17 =====
+Pläne zur Errichtung von Reserven zu berücksichtigen. Die Bundesregierung solle ent­
+sprechend einer Empfehlung des Bundesrechnungshofes prüfen, ob eine Bevorratung
+für das Gesundheitswesen beim Bund überhaupt notwendig und wirtschaftlich sei und
+welche Alternativen zu einer physischen Bevorratung beim Bund gegebenenfalls be­
+stünden, zum Beispiel durch eine Verpflichtung von Großhändlern, bestimmte Mengen
+als Reserve vorzuhalten.
+
+2.4
+
+Empfehlungen und Blick in die Zukunft14
+Dem Bundesrechnungshof ist bewusst, dass vor allem in den ersten Monaten des Jah­
+res 2020 große Ungewissheit herrschte über die Schwere und den Verlauf der Pande­
+mie. Er hat diese Umstände berücksichtigt und den hohen persönlichen Einsatz der Be­
+teiligten in dieser außergewöhnlichen Krisensituation gewürdigt.
+Es ist unbestreitbar, dass nur ein Bruchteil der beschafften Ware und damit der veraus­
+gabten Mittel wirksam zur Pandemiebekämpfung eingesetzt worden ist. Die Ursache
+für alle dargestellten Probleme, Folgekosten und Rechtsverstöße sieht der Bundesrech­
+nungshof in der massiven Überbeschaffung, für die das BMG die Verantwortung trägt.
+Es hat, etwa im Haushalts- und Vergaberecht, Ausnahmetatbestände überdehnt. Dabei
+fielen viele der Entscheidungen gerade nicht in den schwierigen ersten Wochen der
+Pandemie. Der Bundesrechnungshof vermisst insoweit eine angemessene kritische
+Auseinandersetzung des BMG mit diesen Vorgängen.
+Hierbei handelt es sich aus Sicht des Bundesrechnungshofes auch nicht um eine unzu­
+lässige Ex-Post-Betrachtung. Die dokumentierte Bedarfsermittlung des BMG berück­
+sichtigte genau die relevanten Aspekte: einen klar definierten Empfängerkreis und die
+Aufgabe, eine akut drohende Versorgungskrise mit Schutzausrüstung kurzfristig abzu­
+wenden und zur mittelfristigen Pandemiebekämpfung in Deutschland produzierte
+Ware einzusetzen. Deshalb wurde bewusst ein enger Zeitrahmen betrachtet („Drei-Mo­
+nats-Mindestbedarf“). Die Empfänger wussten von der Belieferung und waren über Be­
+darfsabfragen eingebunden. Die geschätzten Mengen wurden im März und April 2020
+mehrfach fortgeschrieben und der aktuellen Entwicklung angepasst. Es wurde vor der
+übermäßigen Beschaffung nicht CE-zertifizierter Ware mit ihren regulatorischen Prob­
+lemen gewarnt und auf zu erwartende Lieferungen aus inländischer Produktion ver­
+wiesen.
+Alle diese Überlegungen wurden im BMG angestellt und dokumentiert. Eine auf diesen
+Bedarf beschränkte Beschaffung hätte im Einklang gestanden mit dem insoweit ein­
+deutigen Corona-Kabinettsbeschluss vom 30. März 2020, der Information des Haus­
+haltsausschusses durch BMF und BMG in dessen Sitzung vom 22. April 2020 und dem
+dort gefassten Maßgabebeschluss.
+
+………………………………………………………………………………………………………………………………………………………………………………………………………
+14
+Bericht des Bundesrechnungshofes vom 28. März 2024 (Gz.: IX 1 - 0000625), S. 54 ff.
+
+17
+
+===== PDF page 18 =====
+Das BMG muss jederzeit eine ordnungsgemäße Verwaltungspraxis sicherstellen. Es
+muss seine Entscheidungen umfassend prüfen, begründen und dokumentieren. Trans­
+parenz nicht nur gegenüber der externen Finanzkontrolle, sondern insbesondere auch
+gegenüber den Instanzen der parlamentarischen, gerichtlichen und öffentlichen Kon­
+trolle gehört zu den Grundlagen des Verwaltungshandelns in einem demokratischen
+Rechtsstaat.
+Weitere Annexkosten im Zusammenhang mit der PSA-Beschaffung sind möglichst zu
+vermeiden. Das erfordert insbesondere die zeitnahe und vollständige Vernichtung
+nicht mehr nutzbarer Ware zur Verminderung weiterer Kosten. Für verwendbare La­
+gerbestände sind Verteilungs- und Verwertungsoptionen zu erarbeiten.
+Das BMG sollte seine Beschaffungstätigkeit während der Pandemie und die Folgemaß­
+nahmen kritisch aufarbeiten und für künftige Krisenlagen belastbare und rechtssichere
+Strategien entwickeln. Eine positive Fehlerkultur ist wichtig, um für kommende Pande­
+mien oder andere Problemszenarien effiziente Modelle für die dezentrale, markt- und
+bedarfsträgernahe Bevorratung von PSA und Medizinprodukten entwickeln zu können.
+Konkret zeigen die Erfahrungen mit der Beschaffung von Schutzausrüstung aus Sicht
+des Bundesrechnungshofes, dass eine physische Bundesbevorratung im Rahmen einer
+NRGS große Probleme aufwerfen würde. Der Bund ist von den möglichen Bedarfsträ­
+gern im Gesundheitswesen oder anderen Einrichtungen der kritischen Infrastruktur
+vor Ort am weitesten entfernt. Das wirft nicht nur hinsichtlich einer realistischen, stets
+aktuell zu haltenden Bedarfsermittlung Probleme auf, sondern auch im Hinblick auf die
+Verteilung und das regelmäßige Umschlagen von eingelagertem Material. Es gelang
+dem BMG in den vergangenen Jahren nicht, ein Konzept für die Verwendung der be­
+schafften Ware zu entwickeln und letztlich deren Vernichtung zu vermeiden. Daher ist
+die wichtigste Folgerung des Bundesrechnungshofes aus seinen Prüfungsfeststellun­
+gen, dass eine effiziente Vorsorge für künftige Pandemien oder vergleichbare Krisen­
+szenarien zwischen allen staatlichen Ebenen gemäß ihren jeweiligen Aufgaben abzu­
+stimmen ist und so dezentral, markt- und bedarfsträgernah wie möglich organisiert
+sein sollte. In diesem Sinne gab der Haushaltsausschuss dem BMG auf, die primäre Zu­
+ständigkeit der Länder und Kommunen beim Katastrophenschutz sowie die auf Län­
+derebene bestehenden Pläne zur Errichtung von Reserven zu berücksichtigen. Die Bun­
+desregierung sollte prüfen, ob eine Bevorratung für das Gesundheitswesen beim Bund
+notwendig und wirtschaftlich ist, und Alternativen zu einer physischen Bevorratung
+beim Bund erwägen, etwa eine Verpflichtung des Großhandels, bestimmte Mengen als
+Reserve vorzuhalten.
+Die unteren staatlichen Ebenen, Wirtschaftsakteure und die Einrichtungen des Gesund­
+heitswesens können die konkreten Bedarfe vor Ort besser einschätzen. Sie können
+auch auf neue Entwicklungen und Anforderungen schneller reagieren. Zudem ist bei
+einer praxisnahen, dezentralen Bevorratung kein aufwendiges Umschlagen mit hohem
+logistischen Aufwand und monatelangem Vorlauf erforderlich. Eingelagerte Ware
+
+18
+
+===== PDF page 19 =====
+könnte größtenteils im Zuge normaler Verbrauchszyklen verwendet und entsprechend
+im Lager erneuert werden. Bevorratungen sollten daher primär marktnah (beim Han­
+del) und bedarfsträgernah (etwa bei großen Kliniken und Klinikverbünden) geführt
+werden. Dafür ist ein Rechtsrahmen zu entwickeln, etwa analog zu Bevorratungspflich­
+ten für Medikamente, um in einer erneuten Krisensituation „Ad-hoc-Lösungen“ mög­
+lichst zu vermeiden.
+Der Bundesrechnungshof hat daher das Bestreben des BMG begrüßt, auf diesem Ge­
+biet entsprechende Regelungen gesetzlich zu verankern. Bund und Länder sollten im
+Rahmen ihrer jeweiligen Zuständigkeiten ein abgestimmtes Vorgehen vereinbaren und
+verbindliche Maßgaben für die künftige Pandemievorsorge entwickeln.
+
+Dr. Weber
+
+Sievers
+
+Beglaubigt: Trimborn, Amtsinspektorin
+Wegen elektronischer Bearbeitung ohne Unterschrift und Dienstsiegelabdruck.
+
+19
+
+

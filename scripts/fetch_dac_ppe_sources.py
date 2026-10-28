@@ -56,6 +56,13 @@ SOURCES = {
     # SOU 2020:80, Äldreomsorgen under pandemin (Coronakommissionen, first interim report, Dec 2020), 318 pages.
     "SE_sou_2020_80.pdf": ("https://regeringen.se/contentassets/a8e708fff5e84279bf11adbd0f78fcc1/sou_2020_80_aldreomsorgen-under-pandemin.pdf",
                            "4b6bc9600443e39b4bbf2a6121b7e4ea793ec9606de60b5b29aa542b8147b16a"),
+    # Bundesrechnungshof, Bericht nach § 88 Abs. 2 BHO an die Enquete-Kommission (Beschaffung, Versorgungssicherheit),
+    # 12 Dec 2025, 19 pages; legal-deposit copy (ULB Bonn) of the report published on bundesrechnungshof.de.
+    "DE_brh_enquete_2025.pdf": ("https://epflicht.ulb.uni-bonn.de/download/pdf/811470",
+                                "cf4f6a028255f037091f952b656ab26856aa6312c9ef1a4f7c08ce213db8e1f0"),
+    # BMG, Beschaffungsstab Corona, 1. Bericht über den Stand der Beschaffung von PSA, Stand 4 April 2020, 3 pages.
+    "DE_bmg_beschaffungsstab_1.pdf": ("https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/C/Coronavirus/Beschaffungsstab/1._Bericht_Beschaffungsstab_040420.pdf",
+                                      "f5eb3d498af62e9c7cbbd225c955e9d67ba26244861769212a943e94fbb94f87"),
 }
 # European Parliament Multimedia Centre, photo record P-043686 (25 Apr 2020), URL from the manuscript's
 # reference list. The page is dynamic and behind a bot challenge, so it is rendered with headless Chromium
@@ -152,5 +159,7 @@ if __name__ == "__main__":
     full_text(CACHE / "EU_32020B0536.pdf", "data/sources/dac_ppe/EU_32020B0536.txt", layout=False)
     full_text(CACHE / "EU_32020B0537.pdf", "data/sources/dac_ppe/EU_32020B0537.txt", layout=False)
     full_text(CACHE / "SE_sou_2020_80.pdf", "data/sources/dac_ppe/SE_sou_2020_80.txt", layout=False)
+    full_text(CACHE / "DE_brh_enquete_2025.pdf", "data/sources/dac_ppe/DE_brh_enquete_2025.txt", layout=False)
+    full_text(CACHE / "DE_bmg_beschaffungsstab_1.pdf", "data/sources/dac_ppe/DE_bmg_beschaffungsstab_1.txt", layout=False)
     ep_photo_text("data/sources/dac_ppe/EU_ep_photo_P043686.txt")
     print("wrote data/sources/dac_ppe/*.txt")
