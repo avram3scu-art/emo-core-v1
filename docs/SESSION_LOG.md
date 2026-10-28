@@ -20,3 +20,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-27/28 | audit | Third audit: code and work since the second | yes | 8573410, d0b236e, eac2017 | all recorded results reproduce; validator gaps D1–D6, SMF null M1 → fix plan |
 | 2026-10-28 | F1 | DAC paper facts and files | yes | 33b34b1, 0293074, 6130d1e | JCCM not submitted; final manuscript committed; event files not found → F8 |
 | 2026-10-28 | F2 | Truth pass on public files | yes | a158c65, c176b7d | banners, evidence classes, claim check in CI; new rules (recommendation with every question; own mistakes fixed in full) |
+| 2026-10-28 | F3 | Records backfill | yes | c05876c | sessions 0–8 indexed (85 rows), class column on every row; STATUS split, archive verbatim; session log one row per session, no placeholders |
