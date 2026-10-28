@@ -16,3 +16,7 @@ Files Adrian attached in session 9 (26 Oct 2026). PDFs are not committed: size a
 CSV attachments (four OWID series, `rdl_forecast_ledger.csv` and its `.sha256`) are byte-identical to the committed copies in `data/`; nothing to add.
 
 **Not among them:** the six PPE event files and the Belgian order file named in the manuscript's data statement. Also not supplied: the Dutch VWS/NSOB reconstruction, the Bundestag papers and the EU legal acts used for the NL, DE and EU cases.
+
+## Supplied 2026-10-28 (F1)
+
+- Boyer, E. J., Rogers, J. D., & Spampinato, F. C. (2024). Why modify or terminate contracts for critical supplies? Evaluating federal purchasing of PPE following COVID-19. *International Public Management Journal*, 27(6), 1017–1039. https://doi.org/10.1080/10967494.2024.2323606. Supplied as pasted text of the publisher's landing page (abstract, notes, author bios; sha256 5b1831f4faa34b1daa17277811036a9975b889ee068fe01d3493c634b945459d). Full text paywalled (EUR 48), **not opened**; only the abstract may be cited. Not committed verbatim (publisher page). Relevance: US federal PPE contracts (SAM.gov, >8,000 contracts), timing of modifications and terminations relative to delivery; possible related work for the DAC paper (order-to-delivery, US comparison). Not a DAC event file.
