@@ -29,3 +29,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F8.3 | PPE recoding: Germany | yes | dc7fdf7 | DE.json from public Bundestag answers + TRIS record (Adrian); order and delivery are 60-day windows; blindness breach recorded (my mistake) |
 | 2026-10-28 | F8.4 | PPE recoding: Netherlands | yes | a33a179 | NL.json from the VWS fact reconstruction; order 6–9 Mar, ROAZ delivery 21–22 Mar; grey-text check |
 | 2026-10-28 | F8.5 | PPE recoding: Sweden | yes | 4fb2dc6 | SE.json from SOU 2021:89; order Feb, binding act 16 Mar, delivery Mar (Fig. 8.2 decomposed: all PPE); month precision |
+| 2026-10-28 | F8.6 | PPE recoding: EU | yes | 5aa9bfb | EU.json from OJ acts, Sénat p. 400, EP photo record; binding act 14 Mar, German ban 4 Mar, rescEU delivery 25 Apr; firm order missing; breach 2 recorded (my mistake) |

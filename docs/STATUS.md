@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.5 (BE, FR, DE, NL, SE). Next: F8.6 EU, then a gap-filling sitting (BE, DE, SE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (111), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.6 (BE, FR, DE, NL, SE, EU: all six files coded). Next: a gap-filling sitting (page-check fix; BE, DE, SE gaps; EU funding if Adrian allows sources outside the reference list), then the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (113), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.6 (2026-10-28, 13:12–13:22) — PPE recoding, EU
+
+**Done when met: yes.** `data/dac_ppe/EU.json` validated, profile computed, both committed (5aa9bfb); CI 40686814637.
+
+**Done**
+- Regulation (EU) 2020/402 and Decision (EU) 2020/414 fetched from the Publications Office by CELEX (EUR-Lex reference-list URLs return a bot challenge) with sha256; EP photo record P-043686 rendered with headless Chromium, text committed (no stable sha256).
+- EU.json (11 events): firm order missing (joint-procurement tenders and rescEU host-state purchases are context); binding act 2020/402, 14 Mar (t0 + 44 d); counter-measure German export ban, 4 Mar (t0 + 34 d); first delivery to member states 25 Apr (t0 + 86 d; Sénat p. 400, EP photo record); funding and permanent body missing. Rules §5 EU a–g dated before the profile. Phrase test with probe.
+- **Claude's mistake: blindness breach 2.** The reference-list cut included the manuscript's figure legends; a grep printed both (EU first tender "not a firm order"; Belgian 3M lags). Recorded verbatim in §1; EU file classed known history; cut now ends before "# Figure legends".
+
+**Open (each with reason)**
+- EU first funding undated: the rescEU budget amendment (Apr 2020) is not in the reference list. Reason: Adrian's decision (sources outside the reference list), at the gap-filling sitting.
+- Phrase tests check "p. N" as a substring of the source field; a wrong page can pass in multi-page rows. Reason: not attempted; first item of the gap-filling sitting (~15 min).
+
+**Review and Adrian's answer:** recommended no more now, no rule change, page-check fix first in the gap-filling sitting; Adrian "Close" (13:22).
+
+**Next:** gap-filling sitting (page-check fix; BE, DE, SE; EU funding if allowed); then the pre-registered comparison (§4); then session 10.
 
 ## Fix session F8.5 (2026-10-28, 11:40–12:10) — PPE recoding, Sweden
 
