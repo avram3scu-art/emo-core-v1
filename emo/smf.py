@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import warnings
 from dataclasses import dataclass, field
 
 import numpy as np
@@ -26,6 +27,25 @@ class SMFResult:
     null_corr_95: float = 0.0
     p_value: float = 1.0
     extra: dict[str, float] = field(default_factory=dict)
+
+
+KPSS_CRIT_1PCT = 0.739  # KPSS level-stationarity test, 1% critical value
+
+
+def kpss_level(x: np.ndarray) -> float:
+    """KPSS statistic for level stationarity (Bartlett long-run variance, lag int(4 (n/100)^0.25)).
+
+    Large values reject stationarity (trend or unit root). docs/SMF_PROTOCOL.md §13 (M1 guard).
+    """
+    x = np.asarray(x, dtype=float)
+    n = len(x)
+    e = x - x.mean()
+    s = np.cumsum(e)
+    lags = int(4 * (n / 100) ** 0.25)
+    v = float(e @ e) / n
+    for j in range(1, min(lags, n - 1) + 1):
+        v += 2.0 * (1.0 - j / (lags + 1.0)) * float(e[j:] @ e[:-j]) / n
+    return float(s @ s) / (n * n * v) if v > 0 else float("inf")
 
 
 def _lagged_corrs(m: np.ndarray, r: np.ndarray, max_lag: int, min_overlap: int) -> np.ndarray:
@@ -79,7 +99,11 @@ def compute_smf(
       the 95th percentile of the surrogate maxima;
     - p_value = (1 + surrogates reaching best_corr) / (1 + surrogates).
 
-    Unrelated series therefore score 0 about 95% of the time.
+    For unrelated *stationary* series the score is 0 about 95% of the time. The null is not
+    valid for trending or unit-root series: two independent linear trends pass 100% of the time
+    and two independent random walks 32% (audit 2026-10-27, probe M1). A KPSS test on both
+    inputs (1% level) raises a RuntimeWarning and sets metadata["stationarity"] = "kpss_reject";
+    difference such series (e.g. 12-month changes) before use.
 
     v1.2 (2026-10-23): the admissible shifts are [min_overlap, n - min_overlap],
     which for short series are few (n = 25 gives 6). v1.1 drew 199 shifts with
@@ -101,6 +125,16 @@ def compute_smf(
 
     m = df["model"].to_numpy(dtype=float)
     r = df["realised"].to_numpy(dtype=float)
+    # M1 guard (audit 2026-10-27; docs/SMF_PROTOCOL.md §13): the circular-shift null is valid
+    # only for stationary input. On trending or unit-root series it rejects far too often
+    # (independent trends 100%, random walks 32% at nominal 5%). Warn; results are unchanged.
+    kpss = max(kpss_level(m), kpss_level(r))
+    stationarity = "kpss_reject" if kpss > KPSS_CRIT_1PCT else "kpss_ok"
+    if stationarity == "kpss_reject":
+        warnings.warn(
+            f"compute_smf: input fails a KPSS stationarity test (stat {kpss:.2f} > {KPSS_CRIT_1PCT}); "
+            "the circular-shift null is not valid for trending or unit-root series. Difference the series first.",
+            RuntimeWarning, stacklevel=2)
     max_lag = int(min(max(max_lag_days, 0), n // 2))
     min_overlap = max(10, n // 4)
 
@@ -130,7 +164,7 @@ def compute_smf(
     return SMFResult(
         smf_score=float(min(score, 1.0)),
         lag_days=best_lag,
-        metadata={"definition": "lag_corrected_corr_v1.2"},
+        metadata={"definition": "lag_corrected_corr_v1.2", "stationarity": stationarity},
         best_corr=best,
         null_corr_95=null95,
         p_value=p_value,

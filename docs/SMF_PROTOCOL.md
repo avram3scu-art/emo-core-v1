@@ -455,3 +455,5 @@ Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any com
 
 **Observation, no weight.** §12's reading rule used the 12-month / 4-quarter verdicts; with the new verdicts both are FAIL, which that rule would call "variable effect". The rule was not re-registered for the new verdicts, so this is not a finding. EIA IP at 3 m has the largest MSE gain among the EIA samples (0.496) but fails significance; why was not examined.
 
+
+**M1 guard on the 15 recorded inputs (reported, no weight, as stated above).** KPSS (1%) rejects stationarity for 5 of 15 primary samples, all EIA: CO2 3 m (0.81) and 6 m (0.83); IP 3 m (1.01), 6 m (0.87), 12 m (0.94). All others are below 0.739 (largest: SPF IP 4 q, 0.71). For those five, the circular-shift p of §8 and §12 may be optimistic (audit M1). One surviving pass is affected: **EIA CO2 3 m** (its DM result does not use the circular shift, its old p < 0.0167 condition does). Guard checks: independent linear trends 100% flagged (unit test ≥ 95%), white noise 0% (≤ 5%), independent random walks 92.5% (200 pairs, n = 120). Recorded SMF outputs unchanged with the guard (all seven frozen comparisons identical).

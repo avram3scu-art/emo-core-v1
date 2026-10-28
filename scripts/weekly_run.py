@@ -57,6 +57,17 @@ REPRO = [
     ("gwi_calibration", "analysis/gwi_calibration_output.txt", None),
     # He calibration (docs/HE_CALIBRATION_PROTOCOL.md section 6), synthetic, ~3 min; frozen 2026-10-26.
     ("he_calibration", "analysis/he_calibration_output.txt", None),
+    # SMF (§7-§13) and synergy (session 8), frozen 2026-10-28 (F5): rerun from committed data,
+    # no refetch. The smf_spf/smf_ip recordings carry two openpyxl warning lines ("header or
+    # footer") that the weekly run sends to stderr; they are filtered out of the comparison.
+    ("smf_steo", "results/smf_steo/result.txt", None),
+    ("smf_steo_leads", "results/smf_steo_leads/result.txt", None),
+    ("smf_steo_h18", "results/smf_steo_h18/result.txt", None),
+    ("smf_steo_elec", "results/smf_steo_elec/result.txt", None),
+    ("smf_spf", "results/smf_spf/result.txt", "header"),
+    ("smf_ip", "results/smf_ip/result.txt", "header"),
+    ("smf_dm", "results/smf_dm/result.txt", None),
+    ("synergy_climate", "results/synergy_climate/result.txt", None),
 ]
 NOT_RUN = {
     "rdl_v04_test": "needs the Oslo-Seattle / IRD component file (requested 20 Oct 2026, not received)",
@@ -125,7 +136,7 @@ def main() -> int:
     for script, recorded, drop in REPRO:
         code, txt = run([sys.executable, f"analysis/{script}.py"])
         lines = [ln for ln in txt.splitlines() if not (drop and drop in ln)]
-        ref = (ROOT / recorded).read_text().splitlines()
+        ref = [ln for ln in (ROOT / recorded).read_text().splitlines() if not (drop and drop in ln)]
         ok = code == 0 and [ln.rstrip() for ln in lines] == [ln.rstrip() for ln in ref]
         repro[script] = ok
         md.append(f"- `{script}` {'reproduces' if ok else 'DOES NOT reproduce'} `{recorded}`.")
