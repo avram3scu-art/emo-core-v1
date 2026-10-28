@@ -45,3 +45,17 @@ F9 cross-case statistics (exploratory). Days from t0 = 30 Jan 2020.
   BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=B] DE[first_order_federal=A] NL[-] SE[-]: -0.90 to +0.90
   BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=B] DE[first_order_federal=B] NL[-] SE[-]: -0.90 to +0.90
   BE, FR, DE, NL, SE: lower end ranges -0.90 to -0.50; upper end ranges +0.90 to +1.00
+
+6. Belgian paired orders (Section 4.2): slope of delivery on order day; SSE of M1 (D = O + k) and M2 (D = R)
+  reading A, FFP2 respirators: orders [1, 46, 53] deliveries [57, 67, 63] slope 0.15 SSE M1 1154.0 M2 50.7; without order_3M_ffp2: orders [46, 53] deliveries [67, 63] slope -0.57 SSE M1 60.5 M2 8.0; without order_ultrazonic_ffp2: orders [1, 53] deliveries [57, 63] slope 0.12 SSE M1 1058.0 M2 18.0; without order_life_ffp2: orders [1, 46] deliveries [57, 67] slope 0.22 SSE M1 612.5 M2 50.0
+  reading A, surgical masks: orders [45, 61] deliveries [50, 67] slope 1.06 SSE M1 0.5 M2 144.5
+  reading B, FFP2 respirators: orders [5, 46, 53] deliveries [57, 67, 63] slope 0.17 SSE M1 948.7 M2 50.7; without order_3M_ffp2: orders [46, 53] deliveries [67, 63] slope -0.57 SSE M1 60.5 M2 8.0; without order_ultrazonic_ffp2: orders [5, 53] deliveries [57, 63] slope 0.12 SSE M1 882.0 M2 18.0; without order_life_ffp2: orders [5, 46] deliveries [57, 67] slope 0.24 SSE M1 480.5 M2 50.0
+  reading C, FFP2 respirators: orders [34, 46, 53] deliveries [57, 67, 63] slope 0.37 SSE M1 98.0 M2 50.7; without order_3M_ffp2: orders [46, 53] deliveries [67, 63] slope -0.57 SSE M1 60.5 M2 8.0; without order_ultrazonic_ffp2: orders [34, 53] deliveries [57, 63] slope 0.32 SSE M1 84.5 M2 18.0; without order_life_ffp2: orders [34, 46] deliveries [57, 67] slope 0.83 SSE M1 2.0 M2 50.0
+
+7. Table 2 counts: entries, primary, secondary, undated (missing or censored), dated events excluding the two WHO thresholds
+  BE: 33, 33, 0, 4, 27
+  FR: 15, 15, 0, 1, 12
+  DE: 16, 15, 1, 2, 12
+  NL: 18, 18, 0, 4, 12
+  SE: 20, 20, 0, 2, 16
+  EU: 13, 13, 0, 3, 8

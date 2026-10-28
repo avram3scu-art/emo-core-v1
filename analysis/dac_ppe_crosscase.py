@@ -15,6 +15,9 @@ Computes:
    BE, DE, NL, SE (import-dependent) and BE, FR, DE, NL, SE (all with an order and a delivery).
    Only relative positions matter, so each window is searched over its end points and the points just
    inside, at and just outside every other window's end points (exact over all orderings, ties included).
+6. Belgian paired orders (manuscript Section 4.2): slope of delivery day on order day and the sums of squared
+   errors of M1 and M2, per reading and with each order left out.
+7. Counts for the manuscript's Table 2.
 Writes analysis/dac_ppe_crosscase_output.txt. Run from the repository root.
 """
 
@@ -111,6 +114,19 @@ def spread(windows):
     return min(s), max(s)
 
 
+def _fit(pts):
+    """Least-squares slope of delivery day on order day, and SSE of M1 (one k) and M2 (one R)."""
+    xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+    n = len(xs)
+    mx, my = sum(xs) / n, sum(ys) / n
+    sxx = sum((x - mx) ** 2 for x in xs)
+    slope = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sxx if sxx else float("nan")
+    k = sum(y - x for x, y in zip(xs, ys)) / n
+    sse1 = sum((y - x - k) ** 2 for x, y in zip(xs, ys))
+    sse2 = sum((y - my) ** 2 for y in ys)
+    return f"orders {xs} deliveries {ys} slope {slope:.2f} SSE M1 {sse1:.1f} M2 {sse2:.1f}"
+
+
 def main() -> None:
     P = {c: profiles(c) for c in CASES}
     out = ["F9 cross-case statistics (exploratory). Days from t0 = 30 Jan 2020.", "",
@@ -136,6 +152,29 @@ def main() -> None:
             highs.append(hi)
             out.append(f"  {label} | " + " ".join(f"{c}[{r['reading']}]" for c, r in zip(cs, combo)) + f": {lo:+.2f} to {hi:+.2f}")
         out.append(f"  {label}: lower end ranges {min(lows):+.2f} to {max(lows):+.2f}; upper end ranges {min(highs):+.2f} to {max(highs):+.2f}")
+    out += ["", "6. Belgian paired orders (Section 4.2): slope of delivery on order day; SSE of M1 (D = O + k) and M2 (D = R)"]
+    be = json.loads((ROOT / "data/dac_ppe/BE.json").read_text(encoding="utf-8"))["events"]
+    dl = {e["pairs_with"]: e for e in be if e["sublayer"] == "delivery" and e.get("pairs_with") and e["date_status"] == "exact"}
+    t0 = __import__("datetime").date(2020, 1, 30)
+
+    def day(s):
+        return (__import__("datetime").date.fromisoformat(s) - t0).days
+
+    for reading in ("A", "B", "C"):
+        for good in ("FFP2 respirators", "surgical masks"):
+            pts = sorted((day(o["date_earliest"]), day(dl[o["event_id"]]["date_earliest"]), o["event_id"]) for o in be
+                         if o["sublayer"] == "firm_order" and o.get("good") == good and o["event_id"] in dl
+                         and o.get("reading") in (None, reading))
+            if good == "surgical masks" and reading != "A":
+                continue  # surgical orders do not depend on the 3M reading
+            out.append(f"  reading {reading}, {good}: " + _fit(pts) + "".join(
+                f"; without {p[2]}: " + _fit([q for q in pts if q is not p]) for p in pts if len(pts) > 2))
+    out += ["", "7. Table 2 counts: entries, primary, secondary, undated (missing or censored), dated events excluding the two WHO thresholds"]
+    for c in CASES:
+        ev = json.loads((ROOT / f"data/dac_ppe/{c}.json").read_text(encoding="utf-8"))["events"]
+        und = sum(e["date_status"] in ("missing", "censored") for e in ev)
+        dated = sum(e["date_status"] not in ("missing", "censored") and e["event_id"] not in ("who_pheic", "who_pandemic") for e in ev)
+        out.append(f"  {c}: {len(ev)}, {sum(e['source_type'] == 'primary' for e in ev)}, {sum(e['source_type'] == 'secondary' for e in ev)}, {und}, {dated}")
     OUT.write_text("\n".join(out) + "\n", encoding="utf-8")
     print("\n".join(out))
 
