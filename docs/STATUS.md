@@ -4,11 +4,28 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: manuscript sessions F12 (rewrite), F13 (figures), F14 (final review); optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (117), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: F14 (final review) after Adrian's check of the coded dates; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F13 (2026-10-28, 16:14–16:51) — manuscript figures
+
+**Done when met: yes.** Script, figures and updated .docx committed (c200d01); validated, every edit tracked; rendered pages 9 and 13 checked; CI 40714736699.
+
+**Done**
+- `analysis/dac_ppe_figures.py` draws Figures 1–2 from the six event files and their profiles only (Figure 1: Belgian paired orders, all three readings; Figure 2: first order, binding act, first delivery per case, windows as bars, readings as open marks, EU tender as a cross); validated palette with shape redundancy.
+- China supply events from the manuscript's cited sources, opened and committed (`data/sources/lit/China_*.txt`, `data/dac_ppe/china_supply_events.json`), phrases and day numbers tested.
+- `docs/sources/dac_paper/Decision_or_Supply_manuscript_F13_revised.docx`: figures inserted; legends and data statement updated (tracked). Change list: `docs/MANUSCRIPT_F13_CHANGES.md`.
+
+**Open (each with reason)**
+- Figure 2's Belgian row is dense. Reason: method choice; readable at print size, kept.
+- Separate high-resolution figure files for the journal: PDFs ready. Reason: needs time (at submission).
+
+**Review and Adrian's answer:** recommended close, F14 after his check; Adrian "Close F13" (16:51).
+
+**Next:** F14 final hostile review, after Adrian's check of the coded dates; then session 10 (mpox).
 
 ## Fix session F12 (2026-10-28, 16:07–16:14) — manuscript argument rewrite
 
