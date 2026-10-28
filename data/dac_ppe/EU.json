@@ -31,7 +31,8 @@
     "European Parliament photo record P-043686 (rendered page text)",
     "Sénat rapport no. 199 (2020-2021), tome I (EU section, p. 399-400)",
     "Belgian Annex 5 (EU rows)",
-    "TRIS notification 2020/0104/D"
+    "TRIS notification 2020/0104/D",
+    "Amending budgets No 1 and 2/2020, OJ L 126 (F8.7 additions)"
    ],
    "search_date": "2026-10-28",
    "not_accessed": [
@@ -124,6 +125,26 @@
    "date_latest": "2020-03-19"
   },
   {
+   "event_id": "amending_budget_1",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Amending budget No 1/2020 adopted: +EUR 70 million commitments to line 23 03 01 01 (civil-protection preparedness; remarks do not name PPE, rule §5 EU h)",
+   "source": "Definitive adoption (EU, Euratom) 2020/536 of Amending budget No 1 of the EU for 2020, OJ L 126, 21.4.2020, PDF p. 1 (adoption) and p. 49 (line 23 03 01 01)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-17",
+   "date_latest": "2020-04-17"
+  },
+  {
+   "event_id": "amending_budget_2",
+   "sublayer": "context",
+   "date_status": "exact",
+   "description": "Amending budget No 2/2020 adopted: +EUR 300 million commitments to line 23 03 01 01 (civil-protection preparedness; remarks do not name PPE, rule §5 EU h)",
+   "source": "Definitive adoption (EU, Euratom) 2020/537 of Amending budget No 2 of the EU for 2020, OJ L 126, 21.4.2020, PDF p. 1 (adoption) and p. 28 (line 23 03 01 01)",
+   "source_type": "primary",
+   "date_earliest": "2020-04-17",
+   "date_latest": "2020-04-17"
+  },
+  {
    "event_id": "first_resceu_delivery",
    "sublayer": "delivery",
    "date_status": "exact",
@@ -146,8 +167,8 @@
    "event_id": "funding_none",
    "sublayer": "dedicated_funding",
    "date_status": "missing",
-   "description": "Commission covers 100% of the rescEU stock's costs (Sénat p. 400) but no source dates the commitment; Decision 2020/414 sets cost categories without an amount (rule §5 EU c)",
-   "source": "Decision 2020/414 and Sénat rapport no. 199 p. 400: searched in full",
+   "description": "Commission covers 100% of the rescEU stock's costs (Sénat p. 400) but no source dates the commitment; Decision 2020/414 sets cost categories without an amount (rule §5 EU c); Amending budgets 1 and 2/2020 add funds to a general civil-protection line whose remarks do not name PPE (rule §5 EU h)",
+   "source": "Decision 2020/414, Sénat rapport no. 199 p. 400, Amending budgets 1 and 2/2020 (line 23 03 01 01 remarks): searched in full",
    "source_type": "primary"
   },
   {

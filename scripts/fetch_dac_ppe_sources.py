@@ -47,6 +47,12 @@ SOURCES = {
     # 19.3.2020, 5 pages. Same route as above (reference-list URL https://eur-lex.europa.eu/eli/dec_impl/2020/414/oj).
     "EU_32020D0414.pdf": ("cellar:32020D0414",
                           "72b65e271343fd18b1ab21d3f6f05da05d2cff4c073974264c16619298d0aa97"),
+    # F8.7 additions (outside the manuscript's reference list; allowed by Adrian 28 Oct 2026):
+    # Definitive adoption (EU, Euratom) 2020/536 and 2020/537 of Amending budgets No 1 and No 2/2020, OJ L 126, 21.4.2020.
+    "EU_32020B0536.pdf": ("cellar:32020B0536",
+                          "64219372fe00a69d04653b7454e21299f8b69661574b870f28ae4a6c37d56d71"),
+    "EU_32020B0537.pdf": ("cellar:32020B0537",
+                          "d0ff837064ff768c7b30d5904cecee0a0a86fb58cb9bd888d6eb94a8a86ed5d4"),
 }
 # European Parliament Multimedia Centre, photo record P-043686 (25 Apr 2020), URL from the manuscript's
 # reference list. The page is dynamic and behind a bot challenge, so it is rendered with headless Chromium
@@ -140,5 +146,7 @@ if __name__ == "__main__":
     full_text(CACHE / "SE_sou_2021_89.pdf", "data/sources/dac_ppe/SE_sou_2021_89.txt", layout=False)
     full_text(CACHE / "EU_32020R0402.pdf", "data/sources/dac_ppe/EU_32020R0402.txt")
     full_text(CACHE / "EU_32020D0414.pdf", "data/sources/dac_ppe/EU_32020D0414.txt")
+    full_text(CACHE / "EU_32020B0536.pdf", "data/sources/dac_ppe/EU_32020B0536.txt", layout=False)
+    full_text(CACHE / "EU_32020B0537.pdf", "data/sources/dac_ppe/EU_32020B0537.txt", layout=False)
     ep_photo_text("data/sources/dac_ppe/EU_ep_photo_P043686.txt")
     print("wrote data/sources/dac_ppe/*.txt")

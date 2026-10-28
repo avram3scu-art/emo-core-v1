@@ -179,6 +179,12 @@ EU_PHRASES = {
     "dec_2020_414": [(D414, 1, "of 19 March 2020"),
                      (D414, 2, "personal protective equipment aimed at combating serious cross-border threats to health should be included in the capacities of rescEU"),
                      (D414, 3, "Total estimated costs of medical stockpiling rescEU capacities")],
+    "amending_budget_1": [("EU_32020B0536.txt", 1, "Done at Brussels, 17 April 2020"),
+                          ("EU_32020B0536.txt", 49, "Commitments 70 000 000 Payments 40 000 000"),
+                          ("EU_32020B0536.txt", 49, "This appropriation is intended to cover expenditure on actions in the field of civil protection")],
+    "amending_budget_2": [("EU_32020B0537.txt", 1, "Done at Brussels, 17 April 2020"),
+                          ("EU_32020B0537.txt", 28, "Commitments 300 000 000 Payments 150 000 000"),
+                          ("EU_32020B0537.txt", 28, "This appropriation is intended to cover expenditure on actions in the field of civil protection")],
     "first_resceu_delivery": [(SEN, 400, "La première livraison de masques issue de cette réserve est intervenue le 25 avril 2020"),
                               (SEN, 400, "à destination de l’Italie, de l’Espagne et de la Croatie"),
                               (EPF, 1, "On 25 April 2020, FFP2 protective masks from the RescEU Reserve were delivered to Milan, Italy")],
@@ -198,6 +204,8 @@ DOC_KEYS = {
     "EU_32020R0402.txt": "2020/402",
     "EU_32020D0414.txt": "2020/414",
     "EU_ep_photo_P043686.txt": "photo record",
+    "EU_32020B0536.txt": "2020/536",
+    "EU_32020B0537.txt": "2020/537",
 }
 CASE_PHRASES = {"FR": FR_PHRASES, "DE": DE_PHRASES, "NL": NL_PHRASES, "SE": SE_PHRASES, "EU": EU_PHRASES}
 

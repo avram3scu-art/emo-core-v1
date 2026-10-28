@@ -1,0 +1,9804 @@
+===== PDF page 1 =====
+21.4.2020
+
+EN
+
+L 126/1
+
+Official Journal of the European Union
+
+I
+(Legislative acts)
+DEFINITIVE ADOPTION (EU, Euratom) 2020/536
+of Amending budget No 1 of the European Union for the financial year 2020
+
+THE PRESIDENT OF THE EUROPEAN PARLIAMENT,
+
+having regard to the Treaty on the Functioning of the European Union, and in particular Article 314(4)(a) and (9) thereof,
+having regard to the Treaty establishing the European Atomic Energy Community, and in particular Article 106a thereof,
+having regard to Council Decision 2014/335/EU, Euratom of 26 May 2014 on the system of own resources of the European Union (1),
+having regard to Regulation (EU, Euratom) 2018/1046 of the European Parliament and of the Council of 18 July 2018 on the financial
+rules applicable to the general budget of the Union, amending Regulations (EU) No 1296/2013, (EU) No 1301/2013, (EU)
+No 1303/2013, (EU) No 1304/2013, (EU) No 1309/2013, (EU) No 1316/2013, (EU) No 223/2014, (EU) No 283/2014, and Decision
+No 541/2014/EU, and repealing Regulation (EU, Euratom) No 966/2012 (2),
+having regard to Council Regulation (EU, Euratom) No 1311/2013 of 2 December 2013 laying down the multiannual financial
+framework for the years 2014-2020 (3),
+having regard to the Interinstitutional Agreement of 2 December 2013 between the European Parliament, the Council and the
+Commission on budgetary discipline, on cooperation in budgetary matters and on sound financial management (4),
+having regard to the general budget of the European Union for the financial year 2020, as definitively adopted on 27 November 2019 (5),
+having regard to Draft amending budget No 1 of the European Union for the financial year 2020, which the Commission adopted on
+27 March 2020,
+having regard to the position on Draft amending budget No 1/2020, which the Council adopted on 14 April 2020 and forwarded to
+Parliament on the same day,
+having regard to Parliament's approval of 17 April 2020 of the Council position,
+having regard to Rules 94 and 96 of Parliament’s Rules of Procedure,
+
+DECLARES:
+
+Sole Article
+The procedure under Article 314 of the Treaty on the Functioning of the European Union is complete and Amending budget No 1 of the
+European Union for the financial year 2020 has been definitively adopted.
+Done at Brussels, 17 April 2020.
+The President
+D. M. SASSOLI
+
+(1) OJ L 168, 7.6.2014, p. 105.
+(2) OJ L 193, 30.7.2018, p. 1.
+(3) OJ L 347, 20.12.2013, p. 884.
+(4) OJ C 373, 20.12.2013, p. 1.
+(5) OJ L 57, 27.2.2020.
+
+===== PDF page 2 =====
+L 126/2
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+AMENDING BUDGET No 1 FOR THE FINANCIAL YEAR 2020
+
+CONTENTS
+
+Page
+
+GENERAL STATEMENT OF REVENUE
+A. Introduction and financing of the general budget . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+B. General statement of revenue by budget heading . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+12
+
+— Title 1: Own resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+13
+
+STATEMENT OF REVENUE AND EXPENDITURE BY SECTION
+Section III: Commission
+— Expenditure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+17
+18
+
+— Title 17: Health and food safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+— Title 18: Migration and home affairs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+29
+
+— Title 22: Neighbourhood and enlargement negotiations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+43
+
+— Title 23: Humanitarian aid and civil protection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+47
+
+— Title 33: Justice and consumers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+53
+
+— Staff . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+56
+
+Section V: Court of Auditors
+— Expenditure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+57
+59
+
+— Title 2: Buildings, Movable property, Equipment and Miscellaneous operating expenditure . . . . . . . . . . . . . . . .
+
+60
+
+Section VIII: European Ombudsman
+— Staff . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+64
+66
+
+===== PDF page 3 =====
+21.4.2020
+
+EN
+
+L 126/3
+
+Official Journal of the European Union
+
+A. INTRODUCTION AND FINANCING OF THE GENERAL BUDGET
+FINANCING OF THE GENERAL BUDGET
+Appropriations to be covered during the financial year 2020 pursuant to Article 1 of Council Decision 2014/335/EU, Euratom
+of 26 May 2014 on the system of own resources of the European Union
+EXPENDITURE
+Budget 2020 (1)
+
+Budget 2019 (2)
+
+1. Smart and inclusive growth
+
+72 353 828 442
+
+67 556 947 173
+
++ 7,10
+
+2. Sustainable growth: natural resources
+
+57 904 492 439
+
+57 399 857 331
+
++ 0,88
+
+3. Security and citizenship
+
+3 748 527 141
+
+3 527 434 894
+
++ 6,27
+
+4. Global Europe
+
+8 944 061 191
+
+9 358 295 603
+
+– 4,43
+
+5. Administration
+
+10 274 196 704
+
+9 944 904 743
+
++ 3,31
+
+Description
+
+Change (%)
+
+6. Compensation
+
+p.m.
+
+p.m.
+
+Special instruments
+
+418 500 000
+
+705 051 794
+
+– 40,64
+
+153 643 605 917
+
+148 492 491 538
+
++ 3,47
+
+Total expenditure (3)
+
+—
+
+( ) The figures in this column correspond to those in the 2020 budget (OJ L 57, 27.2.2020, p. 1) plus amending budget No 1/2020.
+(2) The figures in this column correspond to those in the 2019 budget (OJ L 67, 7.3.2019, p. 1) plus amending budgets No 1 to 3/2019.
+(3) The third subparagraph of Article 310(1) of the Treaty on the Functioning of the European Union reads: ‘The revenue and expenditure shown in the budget shall be in
+balance’.
+1
+
+===== PDF page 4 =====
+L 126/4
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+REVENUE
+Description
+
+Budget 2020 (1)
+
+Miscellaneous revenue (Titles 4 to 9)
+
+1 928 450 061
+
+Budget 2019 (2)
+
+Change (%)
+
+1 894 392 136
+1 802 988 329
+
++ 1,80
+
+Surplus available from the preceding financial year (Chapter 3 0, Article 3 0 0)
+
+p.m.
+
+—
+
+Repayment of the surplus of the Guarantee Fund for external actions (Chapter 3 0,
+Article 3 0 2)
+
+p.m.
+
+p.m.
+
+—
+
+Net balance of own resources accruing from VAT and GNI-based own resources for earlier
+years (Chapters 3 1, 3 2 and 3 3)
+
+p.m.
+
+p.m.
+
+—
+
+1 928 450 061
+
+3 697 380 465
+
+– 47,84
+
+Net amount of customs duties and sugar levies (Chapters 1 1 and 1 2)
+
+22 156 900 000
+
+21 471 164 786
+
++ 3,19
+
+VAT-based own resource at the uniform rate (Tables 1 and 2, Chapter 1 3)
+
+18 945 245 250
+
+17 738 667 150
+
++ 6,80
+
+Remainder to be financed by the additional resource (GNI-based own resource, Table 3,
+Chapter 1 4)
+
+110 613 010 606
+
+105 585 279 137
+
++ 4,76
+
+Appropriations to be covered by the own resources referred to in Article 2 of Decision
+2014/335/EU, Euratom (3)
+
+151 715 155 856
+
+144 795 111 073
+
++ 4,78
+
+153 643 605 917
+
+148 492 491 538
+
++ 3,47
+
+Total revenue for Titles 3 to 9
+
+Total revenue ( )
+4
+
+(1) The figures in this column correspond to those in the 2020 budget (OJ L 57, 27.2.2020, p. 1) plus amending budget No 1/2020.
+(2) The figures in this column correspond to those in the 2019 budget (OJ L 67, 7.3.2019, p. 1) plus amending budgets No 1 to 3/2019.
+(3) The own resources for the 2020 budget are determined on the basis of the budget forecasts adopted at the 175th meeting of the Advisory Committee on Own
+Resources on 24 May 2019.
+(4) The third subparagraph of Article 310(1) of the Treaty on the Functioning of the European Union reads: ‘The revenue and expenditure shown in the budget shall be in
+balance’.
+
+===== PDF page 5 =====
+21.4.2020
+
+EN
+
+L 126/5
+
+Official Journal of the European Union
+
+TABLE 1
+Calculation of capping of harmonised value added tax (VAT) bases to point (b) of Article 2(1) of Decision 2014/335/EU, Euratom
+1 % of gross national
+1 % of capped VAT
+income multiplied by
+base (1)
+capping rate
+
+1 % of non-capped
+VAT base
+
+1 % of gross national
+income
+
+Capping rate (in %)
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+Belgium
+
+2 064 785 000
+
+4 828 731 000
+
+50
+
+2 414 365 500
+
+2 064 785 000
+
+Bulgaria
+
+294 223 000
+
+619 079 000
+
+50
+
+309 539 500
+
+294 223 000
+
+Czechia
+
+954 547 000
+
+2 157 592 000
+
+50
+
+1 078 796 000
+
+954 547 000
+
+Member State
+
+Member States
+whose VAT base is
+capped
+
+Denmark
+
+1 236 816 000
+
+3 248 081 000
+
+50
+
+1 624 040 500
+
+1 236 816 000
+
+Germany
+
+15 101 735 000
+
+36 775 058 000
+
+50
+
+18 387 529 000
+
+15 101 735 000
+
+Estonia
+
+137 193 000
+
+280 639 000
+
+50
+
+140 319 500
+
+137 193 000
+
+Ireland
+
+960 910 000
+
+2 784 713 000
+
+50
+
+1 392 356 500
+
+960 910 000
+
+Greece
+
+766 480 000
+
+1 973 712 000
+
+50
+
+986 856 000
+
+766 480 000
+
+Spain
+
+5 902 319 000
+
+12 978 152 000
+
+50
+
+6 489 076 000
+
+5 902 319 000
+
+France
+
+11 424 424 000
+
+25 387 121 000
+
+50
+
+12 693 560 500
+
+11 424 424 000
+
+Croatia
+
+353 644 000
+
+551 259 000
+
+50
+
+275 629 500
+
+Italy
+
+7 379 229 000
+
+18 340 730 000
+
+50
+
+9 170 365 000
+
+Cyprus
+
+147 038 000
+
+219 566 000
+
+50
+
+109 783 000
+
+109 783 000 Cyprus
+
+Latvia
+
+127 770 000
+
+328 766 000
+
+50
+
+164 383 000
+
+127 770 000
+
+Lithuania
+
+201 136 000
+
+483 628 000
+
+50
+
+241 814 000
+
+201 136 000
+
+(6)
+
+275 629 500 Croatia
+7 379 229 000
+
+Luxembourg
+
+322 993 000
+
+442 746 000
+
+50
+
+221 373 000
+
+221 373 000 Luxembourg
+
+Hungary
+
+612 612 000
+
+1 437 840 000
+
+50
+
+718 920 000
+
+612 612 000
+
+Malta
+
+94 154 000
+
+132 750 000
+
+50
+
+66 375 000
+
+66 375 000 Malta
+
+Netherlands
+
+3 436 775 000
+
+8 302 270 000
+
+50
+
+4 151 135 000
+
+3 436 775 000
+
+Austria
+
+1 867 511 000
+
+4 131 641 000
+
+50
+
+2 065 820 500
+
+1 867 511 000
+
+Poland
+
+2 664 822 000
+
+5 358 014 000
+
+50
+
+2 679 007 000
+
+2 664 822 000
+
+Portugal
+
+1 102 521 000
+
+2 105 933 000
+
+50
+
+1 052 966 500
+
+1 052 966 500 Portugal
+
+Romania
+
+804 913 000
+
+2 266 156 000
+
+50
+
+1 133 078 000
+
+804 913 000
+
+Slovenia
+
+236 104 000
+
+507 667 000
+
+50
+
+253 833 500
+
+236 104 000
+
+Slovakia
+
+363 409 000
+
+999 569 000
+
+50
+
+499 784 500
+
+363 409 000
+
+Finland
+
+1 051 297 000
+
+2 487 111 000
+
+50
+
+1 243 555 500
+
+1 051 297 000
+
+Sweden
+
+2 102 533 000
+
+4 888 140 000
+
+50
+
+2 444 070 000
+
+2 102 533 000
+
+United Kingdom
+
+12 053 669 000
+
+25 863 586 000
+
+50
+
+12 931 793 000
+
+12 053 669 000
+
+84 940 125 000
+
+73 471 339 000
+
+Total
+
+73 765 562 000 169 880 250 000
+
+(1) The base to be used does not exceed 50 % of GNI.
+
+===== PDF page 6 =====
+L 126/6
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+TABLE 2
+Breakdown of own resources accruing from VAT pursuant to point (b) of Article 2(1) of Decision 2014/335/EU, Euratom (Chapter 1 3)
+1 % of capped VAT base
+
+Uniform rate of VAT own resource
+(in %)
+
+VAT-based own resource at uniform
+rate
+
+(1)
+
+(2)
+
+(3) = (1) × (2)
+
+Belgium
+
+2 064 785 000
+
+0,30
+
+619 435 500
+
+Bulgaria
+
+294 223 000
+
+0,30
+
+88 266 900
+
+Czechia
+
+954 547 000
+
+0,30
+
+286 364 100
+
+Denmark
+
+1 236 816 000
+
+0,30
+
+371 044 800
+
+Germany
+
+15 101 735 000
+
+0,15
+
+2 265 260 250
+
+Estonia
+
+137 193 000
+
+0,30
+
+41 157 900
+
+Ireland
+
+960 910 000
+
+0,30
+
+288 273 000
+
+Greece
+
+766 480 000
+
+0,30
+
+229 944 000
+
+Spain
+
+5 902 319 000
+
+0,30
+
+1 770 695 700
+
+France
+
+11 424 424 000
+
+0,30
+
+3 427 327 200
+
+Croatia
+
+275 629 500
+
+0,30
+
+82 688 850
+
+Italy
+
+7 379 229 000
+
+0,30
+
+2 213 768 700
+
+Cyprus
+
+109 783 000
+
+0,30
+
+32 934 900
+
+Latvia
+
+127 770 000
+
+0,30
+
+38 331 000
+
+Lithuania
+
+201 136 000
+
+0,30
+
+60 340 800
+
+Luxembourg
+
+221 373 000
+
+0,30
+
+66 411 900
+
+Hungary
+
+612 612 000
+
+0,30
+
+183 783 600
+
+Malta
+
+66 375 000
+
+0,30
+
+19 912 500
+
+Netherlands
+
+3 436 775 000
+
+0,15
+
+515 516 250
+
+Austria
+
+1 867 511 000
+
+0,30
+
+560 253 300
+
+Poland
+
+2 664 822 000
+
+0,30
+
+799 446 600
+
+Portugal
+
+1 052 966 500
+
+0,30
+
+315 889 950
+
+Romania
+
+804 913 000
+
+0,30
+
+241 473 900
+
+Slovenia
+
+236 104 000
+
+0,30
+
+70 831 200
+
+Slovakia
+
+363 409 000
+
+0,30
+
+109 022 700
+
+Finland
+
+1 051 297 000
+
+0,30
+
+315 389 100
+
+Sweden
+
+2 102 533 000
+
+0,15
+
+315 379 950
+
+United Kingdom
+
+12 053 669 000
+
+0,30
+
+3 616 100 700
+
+Member State
+
+Total
+
+73 471 339 000
+
+18 945 245 250
+
+===== PDF page 7 =====
+21.4.2020
+
+EN
+
+L 126/7
+
+Official Journal of the European Union
+
+TABLE 3
+Determination of uniform rate and breakdown of resources based on gross national income pursuant to point (c) of Article 2(1) of
+Decision 2014/335/EU, Euratom (Chapter 1 4)
+Member State
+
+1 % of gross national income
+
+Uniform rate of ‘additional base’‚
+own resource
+
+‘Additional base’ own resource at
+uniform rate
+
+(1)
+
+(2)
+
+(3) = (1) × (2)
+
+Belgium
+
+4 828 731 000
+
+3 144 099 878
+
+Bulgaria
+
+619 079 000
+
+403 096 840
+
+Czechia
+
+2 157 592 000
+
+1 404 858 698
+
+Denmark
+
+3 248 081 000
+
+2 114 901 633
+
+Germany
+
+36 775 058 000
+
+23 945 101 802
+
+Estonia
+
+280 639 000
+
+182 730 628
+
+Ireland
+
+2 784 713 000
+
+1 813 191 873
+
+Greece
+
+1 973 712 000
+
+1 285 130 122
+
+Spain
+
+12 978 152 000
+
+8 450 378 810
+
+France
+
+25 387 121 000
+
+16 530 149 234
+
+Croatia
+
+551 259 000
+
+358 937 649
+
+Italy
+
+18 340 730 000
+
+11 942 078 976
+
+Cyprus
+
+219 566 000
+
+142 964 566
+
+Latvia
+
+328 766 000
+
+Lithuania
+
+483 628 000
+
+314 901 521
+
+Luxembourg
+
+442 746 000
+
+288 282 293
+
+Hungary
+
+1 437 840 000
+
+936 211 309
+
+Malta
+
+132 750 000
+
+86 436 635
+
+Netherlands
+
+8 302 270 000
+
+5 405 802 497
+
+Austria
+
+4 131 641 000
+
+2 690 208 248
+
+Poland
+
+5 358 014 000
+
+3 488 728 439
+
+Portugal
+
+2 105 933 000
+
+1 371 222 313
+
+Romania
+
+2 266 156 000
+
+1 475 547 261
+
+Slovenia
+
+507 667 000
+
+330 553 877
+
+Slovakia
+
+999 569 000
+
+650 842 793
+
+Finland
+
+2 487 111 000
+
+1 619 416 238
+
+Sweden
+
+4 888 140 000
+
+3 182 782 470
+
+United Kingdom
+
+25 863 586 000
+
+16 840 386 758
+
+169 880 250 000
+
+110 613 010 606
+
+Total
+
+(1) Calculation of rate: (110 613 010 606) / (169 880 250 000) = 0,651123427273035.
+
+0,6 511 234 (1)
+
+214 067 245
+
+===== PDF page 8 =====
+L 126/8
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+TABLE 4
+Calculation of the gross reduction in GNI contribution for Denmark, Netherlands and Sweden and its financing, pursuant to Article 2(5)
+of Decision 2014/335/EU, Euratom (Chapter 1 6)
+Member State
+
+Gross reduction
+
+Percentage share of GNI base
+
+GNI key applied to the gross
+reduction
+
+Financing of the reduction
+
+(1)
+
+(2)
+
+(3)
+
+(4) = (1) + (3)
+
+Belgium
+
+2,84
+
+32 315 590
+
+32 315 590
+
+Bulgaria
+
+0,36
+
+4 143 098
+
+4 143 098
+
+Czechia
+
+1,27
+
+14 439 375
+
+14 439 375
+
+1,91
+
+21 737 317
+
+– 124 596 247
+
+Germany
+
+21,65
+
+246 111 806
+
+246 111 806
+
+Estonia
+
+0,17
+
+1 878 136
+
+1 878 136
+
+Ireland
+
+1,64
+
+18 636 293
+
+18 636 293
+
+Greece
+
+1,16
+
+13 208 785
+
+13 208 785
+
+Spain
+
+7,64
+
+86 854 423
+
+86 854 423
+
+France
+
+14,94
+
+169 899 670
+
+169 899 670
+
+Croatia
+
+0,32
+
+3 689 222
+
+3 689 222
+
+Italy
+
+10,80
+
+122 742 708
+
+122 742 708
+
+Cyprus
+
+0,13
+
+1 469 414
+
+1 469 414
+
+Latvia
+
+0,19
+
+2 200 219
+
+2 200 219
+
+Lithuania
+
+0,28
+
+3 236 611
+
+3 236 611
+
+Luxembourg
+
+0,26
+
+2 963 014
+
+2 963 014
+
+Hungary
+
+0,85
+
+9 622 538
+
+9 622 538
+
+Malta
+
+0,08
+
+888 410
+
+888 410
+
+4,89
+
+55 561 753
+
+– 726 759 996
+
+Austria
+
+2,43
+
+27 650 415
+
+27 650 415
+
+Poland
+
+3,15
+
+35 857 741
+
+35 857 741
+
+Portugal
+
+1,24
+
+14 093 655
+
+14 093 655
+
+Romania
+
+1,33
+
+15 165 924
+
+15 165 924
+
+Slovenia
+
+0,30
+
+3 397 489
+
+3 397 489
+
+Slovakia
+
+0,59
+
+6 689 472
+
+6 689 472
+
+Finland
+
+1,46
+
+16 644 634
+
+16 644 634
+
+2,88
+
+32 713 177
+
+– 175 530 742
+
+15,22
+
+173 088 343
+
+173 088 343
+
+100,00
+
+1 136 899 232
+
+0
+
+Denmark
+
+– 146 333 564
+
+Netherlands
+
+– 782 321 749
+
+Sweden
+
+– 208 243 919
+
+United Kingdom
+Total
+
+– 1 136 899 232
+
+EU GDP price deflator, in EUR (spring 2019 economic forecast): (a) 2011 EU-27 = 100,0000 / (b) 2013 EU-27 = 102,9958 (c) 2013 EU-28 =
+102,9874 / (d) 2020 EU-28 = 112,5551
+Lump sum for Netherlands: in 2020 prices: 695 000 000 EUR × [ (b/a) × (d/c) ] = 782 321 749 EUR
+Lump sum for Sweden: in 2020 prices: 185 000 000 EUR × [ (b/a) × (d/c) ] = 208 243 919 EUR
+Lump sum for Denmark: in 2020 prices: 130 000 000 EUR × [ (b/a) × (d/c) ] = 146 333 564 EUR
+
+===== PDF page 9 =====
+21.4.2020
+
+EN
+
+L 126/9
+
+Official Journal of the European Union
+
+TABLE 5
+Correction of budgetary imbalances for the United Kingdom for the year 2019 pursuant to Article 4 of Decision 2014/335/EU, Euratom
+(Chapter 1 5)
+Description
+
+Coefficient (1) (%)
+
+Amount
+
+1. United Kingdom’s share (in %) of notional uncapped VAT base
+
+16,3 037
+
+2. United Kingdom’s share (in %) of enlargement-adjusted total allocated expenditure
+
+7,3 015
+
+3. (1) – (2)
+
+9,0 022
+
+4. Total allocated expenditure
+
+130 008 765 143
+
+5. Enlargement related expenditure (2)
+
+30 694 725 929
+
+6. Enlargement-adjusted total allocated expenditure = (4) – (5)
+
+99 314 039 214
+
+7. United Kingdom’s correction original amount = (3) × (6) × 0,66
+
+5 900 699 546
+
+8. United Kingdom’s advantage ( )
+
+690 825 371
+
+3
+
+9. Core United Kingdom’s correction = (7) – (8)
+
+5 209 874 175
+
+10. Windfall gains deriving from traditional own resources ( )
+
+– 44 494 806
+
+11. Correction for the United Kingdom = (9) – (10)
+
+5 254 368 981
+
+4
+
+(1) Rounded percentages.
+(2) The amount of enlargement-related expenditure corresponds to total allocated expenditure in 13 Member States (that have acceded to the Union after 30 April 2004),
+except for agricultural direct payments and market-related expenditure as well as that part of rural development expenditure originating from the EAGGF, Guarantee
+Section.
+(3) The ‘UK advantage’ corresponds to the effects arising for the United Kingdom from the changeover to capped VAT and the introduction of the GNP/GNI-based own
+resource.
+(4) These windfall gains correspond to the net gains of the United Kingdom resulting from the increase — from 10 to 20 % as of 1 January 2014 — in the percentage of
+traditional own resources retained by Member States to cover the collection costs of traditional own resources (TOR).
+
+===== PDF page 10 =====
+L 126/10
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+TABLE 6
+Calculation of the financing of the correction for the United Kingdom amounting to EUR – 5 254 368 981 (Chapter 1 5)
+
+Member State
+
+Percentage share
+of GNI base
+
+Shares without
+the United
+Kingdom
+
+Shares without
+Germany, the
+Netherlands,
+Austria, Sweden
+and the United
+Kingdom
+
+(1)
+
+(2)
+
+(3)
+
+Three quarters of
+the share of
+Germany, the
+Netherlands,
+Austria and
+Sweden in
+column 2
+
+Column 4
+distributed in
+accordance with
+column 3
+
+Financing scale
+
+Financing scale
+applied to the
+correction
+
+(4)
+
+(5)
+
+(6) = (2)
++ (4) + (5)
+
+(7)
+
+Belgium
+
+2,84
+
+3,35
+
+5,37
+
+1,51
+
+4,87
+
+255 665 342
+
+Bulgaria
+
+0,36
+
+0,43
+
+0,69
+
+0,19
+
+0,62
+
+32 778 186
+
+Czechia
+
+1,27
+
+1,50
+
+2,40
+
+0,68
+
+2,17
+
+114 237 363
+
+Denmark
+
+1,91
+
+2,26
+
+3,61
+
+1,02
+
+3,27
+
+171 975 150
+
+Germany
+
+21,65
+
+25,54
+
+0,00
+
+0,00
+
+6,38
+
+335 429 452
+
+Estonia
+
+0,17
+
+0,19
+
+0,31
+
+0,09
+
+0,28
+
+14 858 907
+
+Ireland
+
+1,64
+
+1,93
+
+3,10
+
+0,87
+
+2,81
+
+147 441 346
+
+Greece
+
+1,16
+
+1,37
+
+2,19
+
+0,62
+
+1,99
+
+104 501 525
+
+Spain
+
+7,64
+
+9,01
+
+14,43
+
+4,07
+
+13,08
+
+687 150 240
+
+France
+
+14,94
+
+17,63
+
+28,23
+
+7,95
+
+25,58 1 344 164 122
+
+Croatia
+
+0,32
+
+0,38
+
+0,61
+
+0,17
+
+0,56
+
+29 187 341
+
+Italy
+
+10,80
+
+12,74
+
+20,40
+
+5,75
+
+18,48
+
+971 081 015
+
+Cyprus
+
+0,13
+
+0,15
+
+0,24
+
+0,07
+
+0,22
+
+11 625 294
+
+Latvia
+
+0,19
+
+0,23
+
+0,37
+
+0,10
+
+0,33
+
+17 407 073
+
+Lithuania
+
+0,28
+
+0,34
+
+0,54
+
+0,15
+
+0,49
+
+25 606 504
+
+Luxembourg
+
+0,26
+
+0,31
+
+0,49
+
+0,14
+
+0,45
+
+23 441 937
+
+Hungary
+
+0,85
+
+1,00
+
+1,60
+
+0,45
+
+1,45
+
+76 128 874
+
+Malta
+
+0,08
+
+0,09
+
+0,15
+
+0,04
+
+0,13
+
+7 028 674
+
+Netherlands
+
+4,89
+
+5,76
+
+0,00
+
+– 4,32
+
+0,00
+
+1,44
+
+75 725 942
+
+Austria
+
+2,43
+
+2,87
+
+0,00
+
+– 2,15
+
+0,00
+
+0,72
+
+37 685 164
+
+Poland
+
+3,15
+
+3,72
+
+5,96
+
+1,68
+
+5,40
+
+283 689 127
+
+Portugal
+
+1,24
+
+1,46
+
+2,34
+
+0,66
+
+2,12
+
+111 502 190
+
+Romania
+
+1,33
+
+1,57
+
+2,52
+
+0,71
+
+2,28
+
+119 985 468
+
+Slovenia
+
+0,30
+
+0,35
+
+0,56
+
+0,16
+
+0,51
+
+26 879 289
+
+Slovakia
+
+0,59
+
+0,69
+
+1,11
+
+0,31
+
+1,01
+
+52 923 874
+
+Finland
+
+1,46
+
+1,73
+
+2,77
+
+0,78
+
+2,51
+
+131 684 305
+
+Sweden
+
+2,88
+
+3,39
+
+0,00
+
+0,00
+
+0,85
+
+44 585 277
+
+United Kingdom
+
+15,22
+
+0,00
+
+0,00
+
+0,00
+
+0,00
+
+0
+
+100,00
+
+100,00
+
+100,00
+
+Total
+
+The calculations are made to 15 decimal places.
+
+– 19,15
+
+– 2,55
+
+– 28,17
+
+28,17
+
+100,00 5 254 368 981
+
+===== PDF page 11 =====
+21.4.2020
+
+TABLE 7
+Summary of financing (1) of the general budget by type of own resource and by Member State
+VAT and GNI-based own resources, including adjustments
+
+Traditional own resources (TOR)
+Member State
+
+Net customs duties
+(80 %)
+
+Total net traditional own
+resources (80 %)
+
+Collection costs
+(20 % of gross
+TOR) (p.m.)
+
+VAT-based own
+resource
+
+GNI-based own
+resource
+
+Reduction in
+favour of:
+Denmark,
+Netherlands and
+Sweden
+
+United Kingdom
+correction
+
+Total ‘national
+contributions’
+
+Share in
+total
+‘national
+contributions’ (%)
+
+(1)
+
+(2)
+
+(3) = (1) + (2)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+(9) = (5) + (6) + (7)
++ (8)
+
+(10)
+
+Total own
+resources (2)
+
+EN
+
+Net sugar sector
+levies (80 %)
+
+(11) = (3) + (9)
+
+p.m.
+
+2 264 600 000
+
+2 264 600 000
+
+566 150 000
+
+619 435 500
+
+3 144 099 878
+
+32 315 590
+
+255 665 342
+
+4 051 516 310
+
+3,13
+
+p.m.
+
+113 700 000
+
+113 700 000
+
+28 425 000
+
+88 266 900
+
+403 096 840
+
+4 143 098
+
+32 778 186
+
+528 285 024
+
+0,41
+
+6 316 116 310
+641 985 024
+
+Czechia
+
+p.m.
+
+316 800 000
+
+316 800 000
+
+79 200 000
+
+286 364 100
+
+1 404 858 698
+
+14 439 375
+
+114 237 363
+
+1 819 899 536
+
+1,40
+
+2 136 699 536
+
+Denmark
+
+p.m.
+
+372 700 000
+
+372 700 000
+
+93 175 000
+
+371 044 800
+
+2 114 901 633
+
+– 124 596 247
+
+171 975 150
+
+2 533 325 336
+
+1,96
+
+2 906 025 336
+
+Germany
+
+p.m.
+
+4 257 000 000
+
+4 257 000 000
+
+1 064 250 000
+
+2 265 260 250
+
+23 945 101 802
+
+246 111 806
+
+335 429 452
+
+26 791 903 310
+
+20,68
+
+31 048 903 310
+
+Estonia
+
+p.m.
+
+36 900 000
+
+36 900 000
+
+9 225 000
+
+41 157 900
+
+182 730 628
+
+1 878 136
+
+14 858 907
+
+240 625 571
+
+0,19
+
+277 525 571
+
+Ireland
+
+p.m.
+
+333 400 000
+
+333 400 000
+
+83 350 000
+
+288 273 000
+
+1 813 191 873
+
+18 636 293
+
+147 441 346
+
+2 267 542 512
+
+1,75
+
+2 600 942 512
+
+Greece
+
+p.m.
+
+193 100 000
+
+193 100 000
+
+48 275 000
+
+229 944 000
+
+1 285 130 122
+
+13 208 785
+
+104 501 525
+
+1 632 784 432
+
+1,26
+
+1 825 884 432
+
+Spain
+
+p.m.
+
+1 660 500 000
+
+1 660 500 000
+
+415 125 000
+
+1 770 695 700
+
+8 450 378 810
+
+86 854 423
+
+687 150 240
+
+10 995 079 173
+
+8,49
+
+12 655 579 173
+
+France
+
+p.m.
+
+1 823 600 000
+
+1 823 600 000
+
+455 900 000
+
+3 427 327 200
+
+16 530 149 234
+
+169 899 670
+
+1 344 164 122
+
+21 471 540 226
+
+16,57
+
+23 295 140 226
+
+Croatia
+
+p.m.
+
+41 300 000
+
+41 300 000
+
+10 325 000
+
+82 688 850
+
+358 937 649
+
+3 689 222
+
+29 187 341
+
+474 503 062
+
+0,37
+
+515 803 062
+
+Italy
+
+p.m.
+
+1 998 200 000
+
+1 998 200 000
+
+499 550 000
+
+2 213 768 700
+
+11 942 078 976
+
+122 742 708
+
+971 081 015
+
+15 249 671 399
+
+11,77
+
+17 247 871 399
+
+Cyprus
+
+p.m.
+
+27 100 000
+
+27 100 000
+
+6 775 000
+
+32 934 900
+
+142 964 566
+
+1 469 414
+
+11 625 294
+
+188 994 174
+
+0,15
+
+216 094 174
+
+Latvia
+
+p.m.
+
+47 000 000
+
+47 000 000
+
+11 750 000
+
+38 331 000
+
+214 067 245
+
+2 200 219
+
+17 407 073
+
+272 005 537
+
+0,21
+
+319 005 537
+
+Lithuania
+
+p.m.
+
+108 500 000
+
+108 500 000
+
+27 125 000
+
+60 340 800
+
+314 901 521
+
+3 236 611
+
+25 606 504
+
+404 085 436
+
+0,31
+
+512 585 436
+
+Luxembourg
+
+p.m.
+
+16 800 000
+
+16 800 000
+
+4 200 000
+
+66 411 900
+
+288 282 293
+
+2 963 014
+
+23 441 937
+
+381 099 144
+
+0,29
+
+397 899 144
+
+Hungary
+
+p.m.
+
+223 900 000
+
+223 900 000
+
+55 975 000
+
+183 783 600
+
+936 211 309
+
+9 622 538
+
+76 128 874
+
+1 205 746 321
+
+0,93
+
+1 429 646 321
+
+Malta
+
+p.m.
+
+14 700 000
+
+14 700 000
+
+3 675 000
+
+19 912 500
+
+86 436 635
+
+888 410
+
+7 028 674
+
+114 266 219
+
+0,09
+
+128 966 219
+
+Netherlands
+
+p.m.
+
+2 758 500 000
+
+2 758 500 000
+
+689 625 000
+
+515 516 250
+
+5 405 802 497
+
+– 726 759 996
+
+75 725 942
+
+5 270 284 693
+
+4,07
+
+8 028 784 693
+
+Austria
+
+p.m.
+
+222 900 000
+
+222 900 000
+
+55 725 000
+
+560 253 300
+
+2 690 208 248
+
+27 650 415
+
+37 685 164
+
+3 315 797 127
+
+2,56
+
+3 538 697 127
+
+Poland
+
+p.m.
+
+844 800 000
+
+844 800 000
+
+211 200 000
+
+799 446 600
+
+3 488 728 439
+
+35 857 741
+
+283 689 127
+
+4 607 721 907
+
+3,56
+
+5 452 521 907
+
+Portugal
+
+p.m.
+
+199 900 000
+
+199 900 000
+
+49 975 000
+
+315 889 950
+
+1 371 222 313
+
+14 093 655
+
+111 502 190
+
+1 812 708 108
+
+1,40
+
+2 012 608 108
+
+Romania
+
+p.m.
+
+206 000 000
+
+206 000 000
+
+51 500 000
+
+241 473 900
+
+1 475 547 261
+
+15 165 924
+
+119 985 468
+
+1 852 172 553
+
+1,43
+
+2 058 172 553
+
+Slovenia
+
+p.m.
+
+90 700 000
+
+90 700 000
+
+22 675 000
+
+70 831 200
+
+330 553 877
+
+3 397 489
+
+26 879 289
+
+431 661 855
+
+0,33
+
+522 361 855
+
+Slovakia
+
+p.m.
+
+107 700 000
+
+107 700 000
+
+26 925 000
+
+109 022 700
+
+650 842 793
+
+6 689 472
+
+52 923 874
+
+819 478 839
+
+0,63
+
+927 178 839
+
+Finland
+
+p.m.
+
+163 500 000
+
+163 500 000
+
+40 875 000
+
+315 389 100
+
+1 619 416 238
+
+16 644 634
+
+131 684 305
+
+2 083 134 277
+
+1,61
+
+2 246 634 277
+
+Sweden
+
+p.m.
+
+538 600 000
+
+538 600 000
+
+134 650 000
+
+315 379 950
+
+3 182 782 470
+
+– 175 530 742
+
+44 585 277
+
+3 367 216 955
+
+2,60
+
+3 905 816 955
+
+United Kingdom
+
+p.m.
+
+3 174 500 000
+
+3 174 500 000
+
+793 625 000
+
+3 616 100 700
+
+16 840 386 758
+
+173 088 343
+
+– 5 254 368 981
+
+15 375 206 820
+
+11,87
+
+18 549 706 820
+
+p.m.
+
+22 156 900 000
+
+22 156 900 000
+
+5 539 225 000
+
+18 945 245 250 110 613 010 606
+
+0
+
+0 129 558 255 856
+
+100,00
+
+151 715 155 856
+
+Total
+
+L 126/11
+
+(1) p.m. (own resources + other revenue = total revenue = total expenditure); (151 715 155 856 + 1 928 450 061 = 153 643 605 917 = 153 643 605 917).
+(2) Total own resources as percentage of GNI: (151 715 155 856) / (16 988 025 000 000) = 0,89 %; own resources ceiling as percentage of GNI: 1,20 %.
+
+Official Journal of the European Union
+
+Belgium
+Bulgaria
+
+===== PDF page 12 =====
+L 126/12
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+B. GENERAL STATEMENT OF REVENUE BY BUDGET HEADING
+Title
+
+Heading
+
+Budget 2020
+
+Amending budget
+No 1/2020
+
+New amount
+
+1
+
+OWN RESOURCES
+
+3
+
+SURPLUSES, BALANCES AND ADJUSTMENTS
+
+p.m.
+
+p.m.
+
+4
+
+REVENUE ACCRUING FROM PERSONS WORKING WITH
+THE INSTITUTIONS AND OTHER UNION BODIES
+
+1 651 322 700
+
+1 651 322 700
+
+5
+
+REVENUE ACCRUING FROM THE ADMINISTRATIVE
+OPERATION OF THE INSTITUTIONS
+
+15 050 000
+
+15 050 000
+
+6
+
+CONTRIBUTIONS AND REFUNDS IN CONNECTION WITH
+UNION AGREEMENTS AND PROGRAMMES
+
+130 000 000
+
+130 000 000
+
+7
+
+DEFAULT INTEREST AND FINES
+
+115 000 000
+
+115 000 000
+
+8
+
+BORROWING AND LENDING OPERATIONS
+
+2 076 361
+
+2 076 361
+
+9
+
+MISCELLANEOUS REVENUE
+
+15 001 000
+
+15 001 000
+
+151 637 755 856
+
+GRAND TOTAL
+
+153 566 205 917
+
+77 400 000
+
+77 400 000
+
+151 715 155 856
+
+153 643 605 917
+
+===== PDF page 13 =====
+21.4.2020
+
+EN
+
+L 126/13
+
+Official Journal of the European Union
+
+TITLE 1
+OWN RESOURCES
+CHAPTER 1 1 — LEVIES AND OTHER DUTIES PROVIDED FOR UNDER THE COMMON ORGANISATION OF THE
+MARKETS IN SUGAR (POINT (A) OF ARTICLE 2(1) OF DECISION 2014/335/EU, EURATOM)
+CHAPTER 1 2 — CUSTOMS DUTIES AND OTHER DUTIES REFERRED TO IN POINT (A) OF ARTICLE 2(1) OF DECISION
+2014/335/EU, EURATOM
+CHAPTER 1 3 — OWN RESOURCES ACCRUING FROM VALUE ADDED TAX PURSUANT TO POINT (B) OF ARTICLE 2(1)
+OF DECISION 2014/335/EU, EURATOM
+CHAPTER 1 4 — OWN RESOURCES BASED ON GROSS NATIONAL INCOME PURSUANT TO POINT (C) OF ARTICLE 2(1)
+OF DECISION 2014/335/EU, EURATOM
+Article
+Item
+
+Amending budget
+No 1/2020
+
+Heading
+
+Budget 2020
+
+New amount
+
+110
+
+Production levies related to the marketing year 2005/2006
+and previous years
+
+p.m.
+
+p.m.
+
+111
+
+Sugar storage levies
+
+p.m.
+
+p.m.
+
+113
+
+Charges levied on non-exported C sugar, C isoglucose and C
+inulin syrup production, and on substituted C sugar and C
+isoglucose
+
+p.m.
+
+p.m.
+
+117
+
+Production charge
+
+p.m.
+
+p.m.
+
+118
+
+One-off amounts on additional sugar quotas and supplementary isoglucose quotas
+
+p.m.
+
+p.m.
+
+119
+
+Surplus amount
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+CHAPTER 1 1
+
+CHAPTER 1 1 — TOTAL
+
+CHAPTER 1 2
+120
+
+Customs duties and other duties referred to in point (a) of
+Article 2(1) of Decision 2014/335/EU, Euratom
+
+22 156 900 000
+
+22 156 900 000
+
+CHAPTER 1 2 — TOTAL
+
+22 156 900 000
+
+22 156 900 000
+
+Own resources accruing from value added tax pursuant to
+point (b) of Article 2(1) of Decision 2014/335/EU, Euratom
+
+18 945 245 250
+
+18 945 245 250
+
+CHAPTER 1 3 — TOTAL
+
+18 945 245 250
+
+18 945 245 250
+
+Own resources based on gross national income pursuant to
+point (c) of Article 2(1) of Decision 2014/335/EU, Euratom
+
+110 535 610 606
+
+77 400 000
+
+110 613 010 606
+
+CHAPTER 1 4 — TOTAL
+
+110 535 610 606
+
+77 400 000
+
+110 613 010 606
+
+CHAPTER 1 3
+130
+
+CHAPTER 1 4
+140
+
+===== PDF page 14 =====
+L 126/14
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+CHAPTER 1 5 — CORRECTION OF BUDGETARY IMBALANCES
+CHAPTER 1 6 — GROSS REDUCTION IN THE ANNUAL GNI-BASED CONTRIBUTION GRANTED TO CERTAIN MEMBER
+STATES
+Article
+Item
+
+Heading
+
+Amending budget
+No 1/2020
+
+Budget 2020
+
+New amount
+
+CHAPTER 1 5
+150
+
+Correction of budgetary imbalances granted to the United
+Kingdom in accordance with Articles 4 and 5 of Decision
+2014/335/EU, Euratom
+
+0,—
+
+0,—
+
+CHAPTER 1 5 — TOTAL
+
+0,—
+
+0,—
+
+Gross reduction in the annual GNI-based contribution
+granted to certain Member States pursuant to Article 2(5) of
+Decision 2014/335/EU, Euratom
+
+0,—
+
+0,—
+
+CHAPTER 1 6 — TOTAL
+
+0,—
+
+0,—
+
+Title 1 — Total
+
+151 637 755 856
+
+CHAPTER 1 6
+160
+
+77 400 000
+
+151 715 155 856
+
+===== PDF page 15 =====
+21.4.2020
+
+EN
+
+L 126/15
+
+Official Journal of the European Union
+
+TITLE 1
+OWN RESOURCES
+CHAPTER 1 4 — OWN RESOURCES BASED ON GROSS NATIONAL INCOME PURSUANT TO POINT (C) OF ARTICLE 2(1) OF DECISION
+2014/335/EU, EURATOM
+
+140
+
+Own resources based on gross national income pursuant to point (c) of Article 2(1) of Decision 2014/335/EU,
+Euratom
+Budget 2020
+
+110 535 610 606
+
+Amending budget No 1/2020
+
+77 400 000
+
+New amount
+
+110 613 010 606
+
+Remarks
+The GNI-based resource is an ‘additional’ resource, providing the revenue required to cover expenditure in excess of the
+amount yielded by traditional own resources, VAT-based payments and other revenue in any particular year. By
+implication, the GNI-based resource ensures that the general budget of the Union is always balanced ex ante.
+The GNI call rate is determined by the additional revenue needed to finance the budgeted expenditure not covered by
+the other resources (VAT-based payments, traditional own resources and other revenue). Thus a call rate is applied to the
+GNI of each of the Member States.
+The rate to be applied to the Member States’ gross national income for financial 2020 year is 0,6511 %.
+
+Legal basis
+Council Decision 2014/335/EU, Euratom of 26 May 2014 on the system of own resources of the European Union
+(OJ L 168, 7.6.2014, p. 105), and in particular point (c) of Article 2(1) thereof.
+
+===== PDF page 16 =====
+L 126/16
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+CHAPTER 1 4 — OWN RESOURCES BASED ON GROSS NATIONAL INCOME PURSUANT TO POINT (C) OF ARTICLE 2(1) OF DECISION
+2014/335/EU, EURATOM (cont'd)
+
+140
+
+(cont'd)
+Member State
+
+Budget 2020
+
+Amending budget
+No 1/2020
+
+New amount
+
+Belgium
+
+3 141 899 836
+
+2 200 042
+
+3 144 099 878
+
+Bulgaria
+
+402 814 779
+
+282 061
+
+403 096 840
+
+Czechia
+
+1 403 875 666
+
+983 032
+
+1 404 858 698
+
+Denmark
+
+2 113 421 758
+
+1 479 875
+
+2 114 901 633
+
+Germany
+
+23 928 346 533
+
+16 755 269
+
+23 945 101 802
+
+Estonia
+
+182 602 764
+
+127 864
+
+182 730 628
+
+Ireland
+
+1 811 923 115
+
+1 268 758
+
+1 813 191 873
+
+Greece
+
+1 284 230 869
+
+899 253
+
+1 285 130 122
+
+Spain
+
+8 444 465 768
+
+5 913 042
+
+8 450 378 810
+
+France
+
+16 518 582 480
+
+11 566 754
+
+16 530 149 234
+
+Croatia
+
+358 686 487
+
+251 162
+
+358 937 649
+
+Italy
+
+11 933 722 664
+
+8 356 312
+
+11 942 078 976
+
+Cyprus
+
+142 864 529
+
+100 037
+
+142 964 566
+
+Latvia
+
+213 917 454
+
+149 791
+
+214 067 245
+
+Lithuania
+
+314 681 173
+
+220 348
+
+314 901 521
+
+Luxembourg
+
+288 080 571
+
+201 722
+
+288 282 293
+
+Hungary
+
+935 556 207
+
+655 102
+
+936 211 309
+
+Malta
+
+86 376 152
+
+60 483
+
+86 436 635
+
+Netherlands
+
+5 402 019 857
+
+3 782 640
+
+5 405 802 497
+
+Austria
+
+2 688 325 810
+
+1 882 438
+
+2 690 208 248
+
+Poland
+
+3 486 287 247
+
+2 441 192
+
+3 488 728 439
+
+Portugal
+
+1 370 262 818
+
+959 495
+
+1 371 222 313
+
+Romania
+
+1 474 514 767
+
+1 032 494
+
+1 475 547 261
+
+Slovenia
+
+330 322 576
+
+231 301
+
+330 553 877
+
+Slovakia
+
+650 387 374
+
+455 419
+
+650 842 793
+
+Finland
+
+1 618 283 073
+
+1 133 165
+
+1 619 416 238
+
+Sweden
+
+3 180 555 360
+
+2 227 110
+
+3 182 782 470
+
+United Kingdom
+
+16 828 602 919
+
+11 783 839
+
+16 840 386 758
+
+110 535 610 606
+
+77 400 000
+
+110 613 010 606
+
+Article 1 4 0 — Total
+
+===== PDF page 17 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+SECTION III
+
+COMMISSION
+
+L 126/17
+
+===== PDF page 18 =====
+L 126/18
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+EXPENDITURE
+Title
+
+Heading
+
+Budget 2020
+Commitments
+
+Amending budget No 1/2020
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+01
+
+ECONOMIC AND
+FINANCIAL AFFAIRS
+
+550 910 219
+
+1 501 374 219
+
+550 910 219
+
+1 501 374 219
+
+02
+
+INTERNAL MARKET,
+INDUSTRY, ENTREPRENEURSHIP AND SMES
+
+3 203 612 540
+
+2 706 787 634
+
+3 203 612 540
+
+2 706 787 634
+
+116 380 398
+
+116 380 398
+
+116 380 398
+
+116 380 398
+
+03
+
+COMPETITION
+
+04
+
+EMPLOYMENT, SOCIAL
+AFFAIRS AND
+INCLUSION
+
+14 881 605 545
+
+13 394 134 411
+
+14 881 605 545
+
+13 394 134 411
+
+05
+
+AGRICULTURE AND
+RURAL DEVELOPMENT
+
+58 698 932 091
+
+57 007 767 922
+
+58 698 932 091
+
+57 007 767 922
+
+06
+
+MOBILITY AND
+TRANSPORT
+
+4 871 268 495
+
+3 065 461 523
+
+4 871 268 495
+
+3 065 461 523
+
+07
+
+ENVIRONMENT
+
+555 989 653
+
+410 691 242
+
+555 989 653
+
+410 691 242
+
+08
+
+RESEARCH AND
+INNOVATION
+
+7 987 937 964
+
+7 093 573 238
+
+7 987 937 964
+
+7 093 573 238
+
+09
+
+COMMUNICATIONS
+NETWORKS, CONTENT
+AND TECHNOLOGY
+
+2 684 291 569
+
+2 310 507 713
+
+2 684 291 569
+
+2 310 507 713
+
+10
+
+DIRECT RESEARCH
+
+452 584 121
+
+446 424 944
+
+452 584 121
+
+446 424 944
+
+11
+
+MARITIME AFFAIRS
+AND FISHERIES
+
+1 096 734 831
+
+904 804 693
+
+1 096 734 831
+
+904 804 693
+
+67 843 000
+
+64 300 000
+
+67 843 000
+
+64 300 000
+
+1 164 577 831
+
+969 104 693
+
+1 164 577 831
+
+969 104 693
+
+Reserves (40 02 41)
+
+===== PDF page 19 =====
+21.4.2020
+
+EN
+
+L 126/19
+
+Official Journal of the European Union
+
+COMMISSION
+
+Title
+
+12
+
+Heading
+
+FINANCIAL STABILITY,
+FINANCIAL SERVICES
+AND CAPITAL
+MARKETS UNION
+
+Budget 2020
+Commitments
+
+Amending budget No 1/2020
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+114 419 241
+
+115 165 918
+
+114 419 241
+
+115 165 918
+
+13
+
+REGIONAL AND
+URBAN POLICY
+
+42 471 510 173
+
+36 055 407 098
+
+42 471 510 173
+
+36 055 407 098
+
+14
+
+TAXATION AND
+CUSTOMS UNION
+
+177 055 750
+
+170 293 750
+
+177 055 750
+
+170 293 750
+
+15
+
+EDUCATION AND
+CULTURE
+
+4 828 897 829
+
+4 457 288 075
+
+4 828 897 829
+
+4 457 288 075
+
+16
+
+COMMUNICATION
+
+219 381 095
+
+216 738 095
+
+219 381 095
+
+216 738 095
+
+17
+
+HEALTH AND FOOD
+SAFETY
+
+668 839 926
+
+625 083 932
+
+668 839 926
+
+625 083 932
+
+18
+
+MIGRATION AND
+HOME AFFAIRS
+
+2 677 715 528
+
+2 786 600 656
+
+3 027 715 528
+
+2 806 600 656
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+2 678 718 528
+
+2 787 603 656
+
+3 028 718 528
+
+2 807 603 656
+
+Reserves (40 02 41)
+
+350 000 000
+
+350 000 000
+
+20 000 000
+
+20 000 000
+
+19
+
+FOREIGN POLICY
+INSTRUMENTS
+
+907 036 746
+
+808 717 831
+
+907 036 746
+
+808 717 831
+
+20
+
+TRADE
+
+119 662 291
+
+118 971 291
+
+119 662 291
+
+118 971 291
+
+21
+
+INTERNATIONAL
+COOPERATION AND
+DEVELOPMENT
+
+3 819 395 952
+
+3 320 689 539
+
+3 819 395 952
+
+3 320 689 539
+
+NEIGHBOURHOOD
+AND ENLARGEMENT
+NEGOTIATIONS
+
+4 249 309 007
+
+3 364 739 705
+
+100 000 000
+
+15 000 000
+
+4 349 309 007
+
+3 379 739 705
+
+HUMANITARIAN AID
+AND CIVIL
+PROTECTION
+
+1 325 017 691
+
+1 346 881 622
+
+115 000 000
+
+40 000 000
+
+1 440 017 691
+
+1 386 881 622
+
+22
+
+23
+
+===== PDF page 20 =====
+L 126/20
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+Title
+
+Budget 2020
+
+Heading
+
+Commitments
+
+Amending budget No 1/2020
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+24
+
+FIGHT AGAINST
+FRAUD
+
+84 569 600
+
+80 879 853
+
+84 569 600
+
+80 879 853
+
+25
+
+COMMISSION’S POLICY
+COORDINATION AND
+LEGAL ADVICE
+
+261 638 248
+
+262 663 248
+
+261 638 248
+
+262 663 248
+
+1 169 128 790
+
+1 168 977 000
+
+1 169 128 790
+
+1 168 977 000
+
+26
+
+COMMISSION’S
+ADMINISTRATION
+
+27
+
+BUDGET
+
+72 732 451
+
+72 732 451
+
+72 732 451
+
+72 732 451
+
+28
+
+AUDIT
+
+20 254 041
+
+20 254 041
+
+20 254 041
+
+20 254 041
+
+29
+
+STATISTICS
+
+162 101 479
+
+159 101 479
+
+162 101 479
+
+159 101 479
+
+30
+
+PENSIONS AND
+RELATED
+EXPENDITURE
+
+2 133 215 000
+
+2 133 215 000
+
+2 133 215 000
+
+2 133 215 000
+
+410 651 078
+
+410 651 078
+
+410 651 078
+
+410 651 078
+
+2 399 423 663
+
+1 870 314 222
+
+2 399 423 663
+
+1 870 314 222
+
+285 532 215
+
+281 548 093
+
+31
+
+LANGUAGE SERVICES
+
+32
+
+ENERGY
+
+33
+
+JUSTICE AND
+CONSUMERS
+
+282 232 215
+
+278 248 093
+
+34
+
+CLIMATE ACTION
+
+180 975 805
+
+114 778 918
+
+180 975 805
+
+114 778 918
+
+40
+
+RESERVES
+
+537 763 000
+
+358 500 000
+
+537 763 000
+
+358 500 000
+
+Total 164 462 020 025 149 340 103 832
+Of which Reserves
+(40 02 41)
+
+68 846 000
+
+65 303 000
+
+3 300 000
+
+568 300 000
+
+3 300 000
+
+78 300 000 165 030 320 025 149 418 403 832
+68 846 000
+
+65 303 000
+
+===== PDF page 21 =====
+21.4.2020
+
+EN
+
+L 126/21
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 17
+HEALTH AND FOOD SAFETY
+Title
+Chapter
+
+Heading
+
+Budget 2020
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+ADMINISTRATIVE
+EXPENDITURE OF THE
+‘HEALTH AND FOOD
+SAFETY’ POLICY AREA
+
+108 571 029
+
+108 571 029
+
+17 03
+
+PUBLIC HEALTH
+
+276 040 189
+
+267 080 195
+
+3 642 000
+
+17 04
+
+FOOD AND FEED
+SAFETY, ANIMAL
+HEALTH, ANIMAL
+WELFARE AND PLANT
+HEALTH
+
+284 228 708
+
+249 432 708
+
+– 3 642 000
+
+668 839 926
+
+625 083 932
+
+17 01
+
+Title 17 — Total
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+108 571 029
+
+108 571 029
+
+3 642 000
+
+279 682 189
+
+270 722 195
+
+– 3 642 000
+
+280 586 708
+
+245 790 708
+
+668 839 926
+
+625 083 932
+
+===== PDF page 22 =====
+L 126/22
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 17
+HEALTH AND FOOD SAFETY
+CHAPTER 17 03 — PUBLIC HEALTH
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+63 624 000
+
+58 100 000
+
+60 821 653
+
+60 821 653
+
+17 03
+
+PUBLIC HEALTH
+
+17 03 01
+
+Third programme for the Union’s
+action in the field of health (20142020)
+
+3
+
+63 624 000
+
+58 100 000
+
+17 03 10
+
+European Centre for Disease
+Prevention and Control
+
+3
+
+57 179 653
+
+57 179 653
+
+17 03 11
+
+European Food Safety Authority
+
+3
+
+105 016 536 100 970 549
+
+105 016 536 100 970 549
+
+17 03 12
+
+European Medicines Agency
+
+17 03 12 01 Union contribution to the European
+Medicines Agency
+
+3
+
+34 285 000
+
+34 285 000
+
+34 285 000
+
+34 285 000
+
+17 03 12 02 Special contribution for orphan
+medicinal products
+
+3
+
+15 715 000
+
+15 715 000
+
+15 715 000
+
+15 715 000
+
+50 000 000
+
+50 000 000
+
+50 000 000
+
+50 000 000
+
+Article 17 03 12 — Subtotal
+17 03 13
+
+3 642 000
+
+3 642 000
+
+International agreements and
+membership of international organisations in the field of public health
+and tobacco control
+
+4
+
+220 000
+
+220 000
+
+220 000
+
+220 000
+
+17 03 51
+
+Completion of public health
+programmes
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77
+
+Pilot projects and preparatory actions
+
+17 03 77 05 Pilot project — Developing and implementing successful prevention
+strategies for type 2 diabetes
+
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 08 Pilot project — European prevalence
+protocol for early detection of autistic
+spectrum disorders in Europe
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 09 Pilot project — Promotion of self-care
+systems in the Union
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 10 Pilot project — Gender-specific mechanisms in coronary artery disease in
+Europe
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+===== PDF page 23 =====
+21.4.2020
+
+EN
+
+L 126/23
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 17 03 — PUBLIC HEALTH (cont'd)
+Title
+Chapter
+Article
+Item
+
+17 03 77
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+(cont'd)
+
+17 03 77 11 Preparatory action — Fruit and
+vegetable consumption
+
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 12 Pilot project — Reducing health
+inequalities: building expertise and
+evaluation of actions.
+
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 13 Pilot project — Developing evidencebased strategies to improve the health
+of isolated and vulnerable persons
+
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 15 Preparatory action — European study
+on the burden and care of epilepsy
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 16 Pilot project — The effect of differing
+kidney disease treatment modalities and
+organ donation and transplantation
+practices on health expenditure and
+patient outcomes
+3
+
+p.m.
+
+399 993
+
+p.m.
+
+399 993
+
+17 03 77 17 Pilot project — Platform for increasing
+organ donation in the European Union
+and neighbouring countries: Eudonorg
+2015-2016
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 18 Pilot project — Reducing health
+inequalities experienced by LGBTI
+people
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 20 Pilot project — Establishing a registry
+of rare congenital malformations (as
+part of the Rare Diseases Registry),
+drawing on the structure, organisation
+and experience of the Polish Registry of
+Congenital Malformations (PRCM)
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 22 Pilot project — MentALLY
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 23 Pilot project — Severe mental disorders
+and the risk of violence: pathways
+through care and effective treatment
+strategies
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+===== PDF page 24 =====
+L 126/24
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 17 03 — PUBLIC HEALTH (cont'd)
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+17 03 77 24 Pilot project — Towards a fairer and
+more effective measurement of access
+to healthcare across the Union in order
+to enhance cooperation and know-how
+transfer
+3
+
+p.m.
+
+17 03 77 25 Pilot project — Integrate: development
+of integrated strategies to monitor and
+treat chronic and rheumatic diseases:
+the role of quality indicators and
+patient-reported outcomes in addition
+to physician evaluation of disease
+activity and damage
+
+3
+
+17 03 77 26 Pilot project — Primary prevention
+courses for girls living in areas with a
+higher risk of breast cancer
+
+17 03 77 27 Pilot project — Food redistribution
+
+Commitments
+
+Payments
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 28 Pilot project — Rare 2030 — A
+participatory foresight study for policymaking on rare diseases
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 03 77 29 Pilot project — Confidence in vaccines
+for patients, families and communities
+
+p.m.
+
+210 000
+
+p.m.
+
+210 000
+
+p.m.
+
+609 993
+
+p.m.
+
+609 993
+
+3
+
+Article 17 03 77 — Subtotal
+Chapter 17 03 — Total
+
+17 03 10
+
+276 040 189 267 080 195
+
+Commitments
+
+3 642 000
+
+Payments
+
+New amount
+
+3 642 000 279 682 189 270 722 195
+
+European Centre for Disease Prevention and Control
+Budget 2020
+Commitments
+
+57 179 653
+
+Amending budget No 1/2020
+Payments
+
+57 179 653
+
+Commitments
+
+3 642 000
+
+Payments
+
+3 642 000
+
+New amount
+Commitments
+
+Payments
+
+60 821 653
+
+60 821 653
+
+Remarks
+This appropriation is intended to cover the Centre’s personnel and administrative expenditure. In particular, Title 1
+covers the salaries of permanent staff and seconded experts, the costs relating to recruitment, interim services, staff
+training and mission expenses; Title 2 ‘Expenditure’ relates to the renting of the Centre’s office facilities, the fitting-out
+of premises, information and communication technology, technical installations, logistics and other administrative
+costs.
+This appropriation is also intended to cover operational expenditure relating to the following target areas:
+— improving surveillance of communicable diseases in the Member States,
+
+===== PDF page 25 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+L 126/25
+COMMISSION
+
+CHAPTER 17 03 — PUBLIC HEALTH (cont'd)
+
+17 03 10
+
+(cont'd)
+— strengthening the scientific support provided by the Member States and the Commission,
+
+— enhancing the preparedness of the Union against emerging threats from communicable diseases, especially
+hepatitis B, including threats related to intentional release of biological agents, and diseases of unknown origin,
+and coordinating the response,
+
+— strengthening the relevant capacity in the Member States through training,
+
+— communicating information and building partnerships.
+
+This appropriation is also intended to cover the maintenance of the emergency facility (Emergency Operations Centre)
+linking the Centre online with national communicable disease centres and reference laboratories in Member States in
+the event of major outbreaks of communicable diseases or other illnesses of unknown origin.
+
+The Centre must inform the European Parliament and the Council about transfers of appropriations between
+operational and administrative expenditure.
+
+The Centre’s establishment plan is set out in Annex ‘Staff’ to this section.
+
+The contributions from the EFTA States pursuant to the Agreement on the European Economic Area, and in particular
+Article 82 thereof and Protocol 32 thereto, must be added to the appropriations entered in this article. By way of
+information, these amounts derive from contributions from the EFTA States entered against Article 6 3 0 of the
+statement of revenue, which constitute assigned revenue in accordance with points (b), (e) and (f) of Article 21(2) of the
+Financial Regulation; they give rise to the provision of corresponding appropriations and to implementation under the
+‘European Economic Area’ Annex to this part of the statement of expenditure in this section, which forms an integral
+part of the general budget.
+
+The amounts repaid in accordance with Article 17 of Commission Delegated Regulation (EU) 2019/715 of
+18 December 2018 on the framework financial regulation for the bodies set up under the TFEU and Euratom Treaty
+and referred to in Article 70 of Regulation (EU, Euratom) 2018/1046 of the European Parliament and of the Council
+(OJ L 122, 10.5.2019, p. 1) constitute assigned revenue in accordance with point (b) of Article 21(3) of the Financial
+Regulation to be charged to Item 6 6 0 0 of the statement of revenue.
+
+The Union contribution for 2020 amounts to a total of EUR 62 701 000. An amount of EUR 1 879 347 coming from
+the recovery of surplus is added to the amount of EUR 60 821 653 entered in the budget.
+
+Legal basis
+Regulation (EC) No 851/2004 of the European Parliament and of the Council of 21 April 2004 establishing a European
+Centre for disease prevention and control (OJ L 142, 30.4.2004, p. 1).
+
+===== PDF page 26 =====
+L 126/26
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 17 04 — FOOD AND FEED SAFETY, ANIMAL HEALTH, ANIMAL WELFARE AND PLANT HEALTH
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Commitments
+
+Amending budget No 1/2020
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+17 04
+
+FOOD AND FEED SAFETY, ANIMAL
+HEALTH, ANIMAL WELFARE AND
+PLANT HEALTH
+
+17 04 01
+
+Ensuring a higher animal health
+status and high level of protection of
+animals in the Union
+
+3
+
+169 500 000 143 880 000
+
+Ensuring timely detection of harmful
+organisms for plants and their eradication
+
+3
+
+30 500 000
+
+19 800 000
+
+30 500 000
+
+19 800 000
+
+17 04 03
+
+Ensuring effective, efficient and
+reliable controls
+
+3
+
+55 798 000
+
+58 193 000
+
+55 798 000
+
+58 193 000
+
+17 04 04
+
+Fund for emergency measures related
+to animal and plant health
+
+3
+
+20 000 000
+
+20 000 000
+
+20 000 000
+
+20 000 000
+
+17 04 07
+
+European Chemicals Agency —
+Activities in the field of biocides
+legislation
+
+2
+
+6 430 708
+
+6 430 708
+
+6 430 708
+
+6 430 708
+
+Contributions to international
+agreements and membership of international organisations in the fields of
+food safety, animal health, animal
+welfare and plant health
+
+4
+
+300 000
+
+300 000
+
+300 000
+
+300 000
+
+Completion of previous measures in
+food and feed safety, animal health,
+animal welfare and plant health
+
+3
+
+p.m.
+
+100 000
+
+p.m.
+
+100 000
+
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 04 77 04 Pilot project — Farmhouse and Artisan
+Cheesemakers’ European Network —
+Project involving the production of
+European guidelines for proper
+hygienic practice
+2
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 04 77 05 Pilot project — Establishment of a
+harmonised internal market for
+pigmeat obtained from pigs that have
+not been surgically castrated
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+17 04 02
+
+17 04 10
+
+17 04 51
+
+17 04 77
+
+– 3 642 000
+
+– 3 642 000 165 858 000 140 238 000
+
+Pilot projects and preparatory actions
+
+17 04 77 03 Pilot project — Developing best
+practices in animal transport
+
+2
+
+===== PDF page 27 =====
+21.4.2020
+
+EN
+
+L 126/27
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 17 04 — FOOD AND FEED SAFETY, ANIMAL HEALTH, ANIMAL WELFARE AND PLANT HEALTH (cont'd)
+Title
+Chapter
+Article
+Item
+
+17 04 77
+
+Budget 2020
+Heading
+
+FF
+
+Commitments
+
+Amending budget No 1/2020
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+(cont'd)
+
+17 04 77 06 Pilot project — Environmental monitoring of pesticide use through
+honeybees
+
+2
+
+p.m.
+
+304 000
+
+p.m.
+
+304 000
+
+17 04 77 07 Pilot project — Welfare of dairy cattle,
+including measures to protect
+unweaned dairy calves and end-ofcareer animals
+
+2
+
+950 000
+
+237 500
+
+950 000
+
+237 500
+
+17 04 77 08 Pilot project — Best practices for transitioning to higher welfare cage-free egg
+production systems
+2
+
+750 000
+
+187 500
+
+750 000
+
+187 500
+
+1 700 000
+
+729 000
+
+1 700 000
+
+729 000
+
+Article 17 04 77 — Subtotal
+Chapter 17 04 — Total
+
+17 04 01
+
+284 228 708 249 432 708
+
+– 3 642 000
+
+– 3 642 000 280 586 708 245 790 708
+
+Ensuring a higher animal health status and high level of protection of animals in the Union
+Budget 2020
+Commitments
+
+169 500 000
+
+Amending budget No 1/2020
+Payments
+
+143 880 000
+
+Commitments
+
+– 3 642 000
+
+Payments
+
+– 3 642 000
+
+New amount
+Commitments
+
+165 858 000
+
+Payments
+
+140 238 000
+
+Remarks
+The Union’s financial assistance helps accelerate the eradication or control of animal diseases by providing funds to
+supplement national financial resources and contributes to harmonising measures at Union level. The bulk of these
+diseases or infections are zoonoses communicable to man (BSE, brucellosis, avian inf luenza, salmonellosis, tuberculosis,
+etc.). Moreover, the persistence of the diseases in question hampers the smooth operation of the internal market;
+fighting them helps to improve the level of public health and to boost food safety in the Union.
+This appropriation is also intended to cover the Union’s contribution to measures for eliminating obstacles to the free
+movement of goods in these sectors, for veterinary support and as back-up action.
+It consists in providing financial assistance:
+— for the purchase, storage and formulation of foot-and-mouth antigens and of different vaccines,
+— for the development of marker vaccines or tests that can distinguish between sick and vaccinated animals.
+
+Legal basis
+Regulation (EC) No 178/2002 of the European Parliament and of the Council of 28 January 2002 laying down the
+general principles and requirements of food law, establishing the European Food Safety Authority and laying down
+procedures in matters of food safety (OJ L 31, 1.2.2002, p. 1), and in particular Article 50 thereof.
+
+===== PDF page 28 =====
+L 126/28
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 17 04 — FOOD AND FEED SAFETY, ANIMAL HEALTH, ANIMAL WELFARE AND PLANT HEALTH (cont'd)
+
+17 04 01
+
+(cont'd)
+Regulation (EU) No 652/2014 of the European Parliament and of the Council of 15 May 2014 laying down provisions
+for the management of expenditure relating to the food chain, animal health and animal welfare, and relating to plant
+health and plant reproductive material, amending Council Directives 98/56/EC, 2000/29/EC and 2008/90/EC,
+Regulations (EC) No 178/2002, (EC) No 882/2004 and (EC) No 396/2005 of the European Parliament and of the
+Council, Directive 2009/128/EC of the European Parliament and of the Council and Regulation (EC) No 1107/2009 of
+the European Parliament and of the Council and repealing Council Decisions 66/399/EEC, 76/894/EEC and 2009/470/
+EC (OJ L 189, 27.6.2014, p. 1).
+
+===== PDF page 29 =====
+21.4.2020
+
+EN
+
+L 126/29
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 18
+MIGRATION AND HOME AFFAIRS
+Title
+Chapter
+
+18 01
+
+18 02
+
+Heading
+
+ADMINISTRATIVE
+EXPENDITURE OF THE
+‘MIGRATION AND HOME
+AFFAIRS’ POLICY AREA
+INTERNAL SECURITY
+Reserves (40 02 41)
+
+Budget 2020
+Commitments
+
+Amending budget No 1/2020
+
+Payments
+
+Commitments
+
+75 646 240
+
+75 646 240
+
+1 314 438 016
+
+1 438 316 397
+
+1 003 000
+
+1 003 000
+
+1 315 441 016
+
+1 439 319 397
+
+60 000 000
+
+1 054 517 703
+
+1 058 431 663
+
+290 000 000
+
+60 000 000
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+75 646 240
+
+75 646 240
+
+1 374 438 016
+
+1 448 316 397
+
+1 003 000
+
+1 003 000
+
+10 000 000
+
+1 375 441 016
+
+1 449 319 397
+
+10 000 000
+
+1 344 517 703
+
+1 068 431 663
+
+10 000 000
+
+18 03
+
+ASYLUM AND MIGRATION
+
+18 04
+
+FOSTERING EUROPEAN
+CITIZENSHIP
+
+28 344 000
+
+27 030 751
+
+28 344 000
+
+27 030 751
+
+18 05
+
+HORIZON 2020 —
+RESEARCH RELATED TO
+SECURITY
+
+185 504 220
+
+168 609 256
+
+185 504 220
+
+168 609 256
+
+18 06
+
+ANTI-DRUGS POLICY
+
+19 265 349
+
+18 566 349
+
+19 265 349
+
+18 566 349
+
+18 07
+
+INSTRUMENT FOR
+EMERGENCY SUPPORT
+WITHIN THE UNION
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+Title 18 — Total
+
+2 677 715 528
+
+2 786 600 656
+
+3 027 715 528
+
+2 806 600 656
+
+Reserves (40 02 41)
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+2 678 718 528
+
+2 787 603 656
+
+3 028 718 528
+
+2 807 603 656
+
+350 000 000
+
+350 000 000
+
+20 000 000
+
+20 000 000
+
+===== PDF page 30 =====
+L 126/30
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 18
+MIGRATION AND HOME AFFAIRS
+CHAPTER 18 02 — INTERNAL SECURITY
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+Commitments
+
+3
+
+287 071 440
+
+468 544 124
+
+50 000 000
+
+18 02 01 02 Prevention and fight against
+cross-border organised crime and
+better management of securityrelated risks and crisis
+3
+
+191 297 628
+
+18 02 01 03 Establishing an Entry/Exit System
+(EES) and a European Travel
+Information and Authorisation
+System (ETIAS)
+3
+
+18 02
+
+INTERNAL SECURITY
+
+18 02 01
+
+Internal Security Fund
+
+18 02 01 01 Support of border management
+and a common visa policy to
+facilitate legitimate travel
+
+Article 18 02 01 — Subtotal
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+337 071 440
+
+468 544 124
+
+190 358 325
+
+191 297 628
+
+190 358 325
+
+20 000 000
+
+9 000 000
+
+20 000 000
+
+9 000 000
+
+498 369 068
+
+667 902 449
+
+548 369 068
+
+667 902 449
+
+p.m.
+
+p.m.
+
+421 821 029
+
+421 821 029
+
+50 000 000
+
+18 02 02
+
+Schengen facility for Croatia
+
+3
+
+p.m.
+
+p.m.
+
+18 02 03
+
+European Border and Coast
+Guard Agency (Frontex)
+
+3
+
+411 821 029
+
+411 821 029
+
+18 02 04
+
+European Union Agency for
+Law Enforcement Cooperation
+(Europol)
+
+3
+
+152 964 760
+
+152 964 760
+
+152 964 760
+
+152 964 760
+
+European Union Agency for
+Law Enforcement Training
+(CEPOL)
+
+3
+
+10 084 425
+
+10 084 425
+
+10 084 425
+
+10 084 425
+
+European Union Agency for the
+Operational Management of
+Large-Scale IT Systems in the
+Area of Freedom, Security and
+Justice (‘eu-LISA’)
+
+3
+
+239 198 734
+
+195 043 734
+
+239 198 734
+
+195 043 734
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+1 003 000
+
+240 201 734
+
+196 046 734
+
+240 201 734
+
+196 046 734
+
+18 02 05
+
+18 02 07
+
+Reserves (40 02 41)
+
+10 000 000
+
+10 000 000
+
+===== PDF page 31 =====
+21.4.2020
+
+EN
+
+L 126/31
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+18 02 08
+
+Schengen information system
+(SIS II)
+
+18 02 09
+
+18 02 51
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 02 77 02 Pilot project — New integrated
+mechanisms for cooperation
+between public and private actors
+to identify sports betting risks
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 02 77 04 Preparatory action — EU-coordinated Darknet monitoring to
+counter criminal activities
+
+2 000 000
+
+500 000
+
+2 000 000
+
+500 000
+
+2 000 000
+
+500 000
+
+2 000 000
+
+500 000
+
+18 02 77
+
+Commitments
+
+Payments
+
+3
+
+p.m.
+
+Visa Information System (VIS)
+
+3
+
+Completion of operations and
+programmes in the field of
+external borders, security and
+safeguarding liberties
+
+Commitments
+
+Payments
+
+New amount
+
+Pilot projects and preparatory
+actions
+
+18 02 77 01 Pilot project — Completion of
+the fight against terrorism
+
+3
+
+Article 18 02 77 — Subtotal
+Chapter 18 02 — Total
+
+1 314 438 016 1 438 316 397
+
+Reserves (40 02 41)
+
+1 003 000
+
+60 000 000
+
+10 000 000 1 374 438 016 1 448 316 397
+
+1 003 000
+
+1 315 441 016 1 439 319 397
+
+1 003 000
+60 000 000
+
+10 000 000 1 375 441 016 1 449 319 397
+
+18 02 01
+
+Internal Security Fund
+
+18 02 01 01
+
+Support of border management and a common visa policy to facilitate legitimate travel
+Budget 2020
+Commitments
+
+287 071 440
+
+Amending budget No 1/2020
+Payments
+
+468 544 124
+
+Commitments
+
+1 003 000
+
+Payments
+
+50 000 000
+
+New amount
+Commitments
+
+337 071 440
+
+Payments
+
+468 544 124
+
+Remarks
+The Internal Security Fund shall contribute to the following specific objectives:
+— supporting a common visa policy to facilitate legitimate travel, provide a high quality of service to visa applicants,
+ensure equal treatment of third country nationals and tackle illegal immigration,
+
+===== PDF page 32 =====
+L 126/32
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 01
+
+(cont'd)
+
+18 02 01 01
+
+(cont'd)
+— supporting integrated borders management, including promoting further harmonisation of border managementrelated measures in accordance with common Union standards and through sharing of information between
+Member States and between Member States and Frontex, to ensure, on one hand, a uniform and high level of
+control and protection of the external borders, including by the tackling of illegal immigration, and, on the other
+hand, the smooth crossing of the external borders in conformity with the Schengen acquis, while guaranteeing access
+to international protection for those needing it, in accordance with the obligations contracted by the Member States
+in the field of human rights, including the principle of non-refoulement, and with due regard for the specific
+characteristics of the people concerned and for the gender perspective.
+
+This appropriation is intended to cover the expenditure related to actions in or by Member States and in particular the
+following:
+
+— infrastructures, buildings and systems required at border crossing points and for surveillance between border
+crossing points to prevent and tackle unauthorised border crossings, illegal immigration and cross-border
+criminality as well as to guarantee smooth travel f lows,
+
+— operating equipment, means of transport and communication systems required for effective and secure border
+control and the detection of persons,
+
+— IT and communication systems for efficient management of migration f lows across borders, including investments
+in existing and future systems,
+
+— infrastructures, buildings, communication and IT systems and operating equipment required for the processing of
+visa applications and consular cooperation, as well as other actions aimed at improving the quality of service for the
+visa applicants,
+
+— training regarding the use of that equipment and those systems and the promotion of quality management
+standards and training of border guards, including where appropriate in third countries, regarding the execution
+of their surveillance, advisory and control tasks with respect to international human rights law, and taking into
+consideration a gender-sensitive approach, including the identification of victims of human trafficking and people
+smuggling,
+
+— secondment of immigration liaison officers and document advisers in third countries and the exchange and
+secondment of border guards between Member States or between a Member State and a third country,
+
+— studies, training, pilot projects and other actions gradually establishing an integrated management system for
+external borders as referred to in Article 3(3) of Regulation (EU) No 515/2014 including actions aiming to foster
+interagency cooperation either within Member States or between Member States and actions relating to the
+interoperability and harmonisation of border management systems,
+
+===== PDF page 33 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+L 126/33
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 01
+
+(cont'd)
+
+18 02 01 01
+
+(cont'd)
+— studies, pilot projects and actions aiming to implement the recommendations, operational standards and best
+practices resulting from the operational cooperation between Member States and Union agencies.
+
+This appropriation is also intended to cover the expenditure related to actions in relation to and in third countries and
+in particular the following:
+
+— information systems, tools or equipment for sharing information between Member States and third countries,
+
+— actions relating to operational cooperation between Member States and third countries, including joint operations,
+
+— projects in third countries aimed at improving surveillance systems to ensure cooperation with the Eurosur,
+
+— studies, seminars, workshops, conferences, training, equipment and pilot projects to provide ad hoc technical and
+operational expertise to third countries,
+
+— studies, seminars, workshops, conferences, training, equipment and pilot projects implementing specific recommendations, operational standards and best practices, resulting from the operational cooperation between Member
+States and Union agencies in third countries.
+
+This appropriation is also intended to cover foregone fees from visas issued for the purpose of transit and additional
+costs incurred in implementing the Facilitated Transit Document (FTD) and the Facilitated Rail Transit Document
+(FRTD) scheme in accordance with Council Regulation (EC) No 693/2003 of 14 April 2003 establishing a specific
+Facilitated Transit Document (FTD), a Facilitated Rail Transit Document (FRTD) and amending the Common Consular
+Instructions and the Common Manual (OJ L 99, 17.4.2003, p. 8) and Council Regulation (EC) No 694/2003 of
+14 April 2003 on uniform formats for Facilitated Transit Documents (FTD) and Facilitated Rail Transit Documents
+(FRTD) provided for in Regulation (EC) No 693/2003 (OJ L 99, 17.4.2003, p. 15).
+
+At the Commission’s initiative, this appropriation may be used to finance transnational actions or actions of particular
+interest to the Union. To be eligible for funding, those actions shall in particular pursue the following objectives:
+
+— to support preparatory, monitoring, administrative and technical activities, required to implement external borders
+and visa policies, including to strengthen the governance of the Schengen area by developing and implementing the
+evaluation mechanism as established by Council Regulation (EU) No 1053/2013 of 7 October 2013 establishing an
+evaluation and monitoring mechanism to verify the application of the Schengen acquis and repealing the Decision of
+the Executive Committee of 16 September 1998 setting up a Standing Committee on the evaluation and
+implementation of Schengen (OJ L 295, 6.11.2013, p. 27), to verify the application of the Schengen acquis and
+the Schengen Borders Code in particular mission expenditure for experts of the Commission and the Member States
+participating in on site visits,
+
+===== PDF page 34 =====
+L 126/34
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 01
+
+(cont'd)
+
+18 02 01 01
+
+(cont'd)
+— to improve the knowledge and understanding of the situation prevailing in the Member States and third countries
+through analysis, evaluation and close monitoring of policies,
+— to support the development of statistical tools, including common statistical tools, and methods and common
+indicators, with gender-disaggregated data,
+— to support and monitor the implementation of Union law and Union policy objectives in the Member States, and
+assess their effectiveness and impact, including with regard to the respect of human rights and fundamental
+freedoms, as far as the scope of this instrument is concerned,
+— to promote networking, mutual learning, identification and dissemination of best practices and innovative
+approaches amongst different stakeholders at European level,
+— to promote projects aiming at harmonisation and interoperability of border management-related measures in
+accordance with common Union standards with a view to developing an integrated European border management
+system,
+— to enhance awareness of Union policies and objectives among stakeholders and the general public, including
+corporate communication on the political priorities of the Union,
+— to boost the capacity of European networks to assess, promote, support and further develop Union policies and
+objectives,
+— to support particularly innovative projects developing new methods and/or technologies with a potential for
+transferability to other Member States, especially projects aiming at testing and validating research projects,
+— to support actions in relation to and in third countries as referred to in Article 4(2) of Regulation (EU) No 1053/
+2013,
+— awareness-raising, information and communication activities in relation to Union home affairs policies, priorities
+and achievements.
+This appropriation shall also cover financial assistance to address urgent and specific needs in the event of an
+emergency situation which means a situation of urgent and exceptional pressure where a large or disproportionate
+number of third-country nationals cross or are expected to cross the external border of one or more Member States.
+This appropriation will provide for reimbursement of the costs incurred by the Commission and Member States experts
+for the on-the-spot evaluation visits (travel cost and accommodation) regarding the application of the Schengen acquis.
+The cost of supplies and equipment needed for the on-the-spot evaluation visits and for their preparation and follow-up
+must be added to these costs.
+
+===== PDF page 35 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+L 126/35
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 01
+
+(cont'd)
+
+18 02 01 01
+
+(cont'd)
+Revenue from the contributions of Iceland, Norway, Switzerland and Liechtenstein, in the context of the Agreements on
+their association with the implementation, application and development of the Schengen acquis entered in Item 6 3 1 3
+of the statement of revenue may give rise to the provision of additional appropriations in accordance with point (e) of
+Article 21(2) of the Financial Regulation.
+
+The corresponding amount is estimated at EUR 31 495 000.
+
+Legal basis
+
+Council Regulation (EU) No 1053/2013 of 7 October 2013 establishing an evaluation and monitoring mechanism to
+verify the application of the Schengen acquis and repealing the Decision of the Executive Committee of 16 September
+1998 setting up a Standing Committee on the evaluation and implementation of Schengen (OJ L 295, 6.11.2013,
+p. 27).
+
+Regulation (EU) No 514/2014 of the European Parliament and of the Council of 16 April 2014 laying down general
+provisions on the Asylum, Migration and Integration Fund and on the instrument for financial support for police
+cooperation, preventing and combating crime, and crisis management (OJ L 150, 20.5.2014, p. 112).
+
+Regulation (EU) No 515/2014 of the European Parliament and of the Council of 16 April 2014 establishing, as part of
+the Internal Security Fund, the instrument for financial support for external borders and visa and repealing Decision No
+574/2007/EC (OJ L 150, 20.5.2014, p. 143).
+
+Regulation (EU) 2017/2226 of the European Parliament and of the Council of 30 November 2017 establishing an
+Entry/Exit System (EES) to register entry and exit data and refusal of entry data of third-country nationals crossing the
+external borders of the Member States and determining the conditions for access to the EES for law enforcement
+purposes, and amending the Convention implementing the Schengen Agreement and Regulations (EC) No 767/2008
+and (EU) No 1077/2011 (OJ L 327, 9.12.2017, p. 20).
+
+Regulation (EU) 2018/1240 of the European Parliament and of the Council of 12 September 2018 establishing a
+European Travel Information and Authorisation System (ETIAS) and amending Regulations (EU) No 1077/2011, (EU)
+No 515/2014, (EU) 2016/399, (EU) 2016/1624 and (EU) 2017/2226 (OJ L 236, 19.9.2018, p. 1).
+
+Regulation (EU) 2018/1860 of the European Parliament and of the Council of 28 November 2018 on the use of the
+Schengen Information System for the return of illegally staying third-country nationals (OJ L 312, 7.12.2018, p. 1).
+
+Regulation (EU) 2018/1861 of the European Parliament and of the Council of 28 November 2018 on the
+establishment, operation and use of the Schengen Information System (SIS) in the field of border checks, and
+amending the Convention implementing the Schengen Agreement, and amending and repealing Regulation (EC) No
+1987/2006 (OJ L 312, 7.12.2018, p. 14).
+
+===== PDF page 36 =====
+L 126/36
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 01
+
+(cont'd)
+
+18 02 01 01
+
+(cont'd)
+Regulation (EU) 2018/1862 of the European Parliament and of the Council of 28 November 2018 on the
+establishment, operation and use of the Schengen Information System (SIS) in the field of police cooperation and
+judicial cooperation in criminal matters, amending and repealing Council Decision 2007/533/JHA, and repealing
+Regulation (EC) No 1986/2006 of the European Parliament and of the Council and Commission Decision 2010/261/
+EU (OJ L 312, 7.12.2018, p. 56).
+Regulation (EU) 2019/817 of the European Parliament and of the Council of 20 May 2019 on establishing a framework
+for interoperability between EU information systems in the field of borders and visa and amending Regulations (EC) No
+767/2008, (EU) 2016/399, (EU) 2017/2226, (EU) 2018/1240, (EU) 2018/1726 and (EU) 2018/1861 of the European
+Parliament and of the Council and Council Decisions 2004/512/EC and 2008/633/JHA (OJ L 135, 22.5.2019, p. 27).
+Regulation (EU) 2019/818 of the European Parliament and of the Council of 20 May 2019 on establishing a framework
+for interoperability between EU information systems in the field of police and judicial cooperation, asylum and
+migration and amending Regulations (EU) 2018/1726, (EU) 2018/1862 and (EU) 2019/816 (OJ L 135, 22.5.2019,
+p. 85).
+Regulation (EU) 2019/1240 of the European Parliament and of the Council of 20 June 2019 on the creation of a
+European network of immigration liaison officers (OJ L 198, 25.7.2019, p. 88).
+Regulation (EU) 2019/1896 of the European Parliament and of the Council of 13 November 2019 on the European
+Border and Coast Guard and repealing Regulations (EU) No 1052/2013 and (EU) 2016/1624 (OJ L 295, 14.11.2019,
+p. 1).
+
+18 02 03
+
+European Border and Coast Guard Agency (Frontex)
+Budget 2020
+Commitments
+
+411 821 029
+
+Amending budget No 1/2020
+Payments
+
+411 821 029
+
+Commitments
+
+10 000 000
+
+Payments
+
+10 000 000
+
+New amount
+Commitments
+
+421 821 029
+
+Payments
+
+421 821 029
+
+Remarks
+This appropriation is intended to cover the Agency’s staff and administrative expenditure (Titles 1 and 2) and
+operational expenditure relating to the work programme (Title 3).
+The Agency must inform the European Parliament and the Council about transfers of appropriations between
+operational and administrative expenditure.
+The amounts repaid in accordance with Article 17 of Commission Delegated Regulation (EU) 2019/715 of
+18 December 2018 on the framework financial regulation for the bodies set up under the TFEU and Euratom Treaty
+and referred to in Article 70 of Regulation (EU, Euratom) 2018/1046 of the European Parliament and of the Council
+(OJ L 122, 10.5.2019, p. 1) constitute assigned revenue in accordance with point (b) of Article 21(3) of the Financial
+Regulation to be charged to Item 6 6 0 0 of the statement of revenue.
+
+===== PDF page 37 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+L 126/37
+COMMISSION
+
+CHAPTER 18 02 — INTERNAL SECURITY (cont'd)
+
+18 02 03
+
+(cont'd)
+Any revenue from the contributions of Iceland, Norway, Switzerland and Liechtenstein entered in Item 6 3 1 3 of the
+statement of revenue may give rise to the provision of additional appropriations in accordance with points (b), (e) and
+(f) of Article 21(2) of the Financial Regulation.
+The Agency’s establishment plan is set out in Annex ‘Staff’ to this section.
+The Union contribution for 2020 amounts to a total of EUR 438 160 041. An amount of EUR 16 339 012 coming
+from the recovery of surplus is added to the amount of EUR 421 821 029 entered in the budget.
+
+Legal basis
+Regulation (EU) No 656/2014 of the European Parliament and of the Council of 15 May 2014 establishing rules for the
+surveillance of the external sea borders in the context of the operational cooperation coordinated by European Agency
+for the Management of Operational Cooperation at the External Borders of the Member States of the European Union
+(OJ L 189, 27.6.2014, p. 93).
+Regulation (EU) 2018/1240 of the European Parliament and of the Council of 12 September 2018 establishing a
+European Travel Information and Authorisation System (ETIAS) and amending Regulations (EU) No 1077/2011, (EU)
+No 515/2014, (EU) 2016/399, (EU) 2016/1624 and (EU) 2017/2226 (OJ L 236, 19.9.2018, p. 1).
+Regulation (EU) 2019/817 of the European Parliament and of the Council of 20 May 2019 on establishing a framework
+for interoperability between EU information systems in the field of borders and visa and amending Regulations (EC) No
+767/2008, (EU) 2016/399, (EU) 2017/2226, (EU) 2018/1240, (EU) 2018/1726 and (EU) 2018/1861 of the European
+Parliament and of the Council and Council Decisions 2004/512/EC and 2008/633/JHA (OJ L 135, 22.5.2019, p. 27).
+Regulation (EU) 2019/818 of the European Parliament and of the Council of 20 May 2019 on establishing a framework
+for interoperability between EU information systems in the field of police and judicial cooperation, asylum and
+migration and amending Regulations (EU) 2018/1726, (EU) 2018/1862 and (EU) 2019/816 (OJ L 135, 22.5.2019,
+p. 85).
+Regulation (EU) 2019/1896 of the European Parliament and of the Council of 13 November 2019 on the European
+Border and Coast Guard and repealing Regulations (EU) No 1052/2013 and (EU) 2016/1624 (OJ L 295, 14.11.2019,
+p. 1).
+
+===== PDF page 38 =====
+L 126/38
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 18 03 — ASYLUM AND MIGRATION
+
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+18 03
+
+ASYLUM AND MIGRATION
+
+18 03 01
+
+Asylum, Migration and Integration Fund
+
+18 03 01 01 Strengthening and developing
+the common European asylum
+system and enhancing solidarity
+and responsibility-sharing
+between the Member States
+
+FF
+
+Commitments
+
+Amending budget No 1/2020
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+3
+
+589 841 729
+
+622 469 782 280 000 000
+
+869 841 729
+
+622 469 782
+
+18 03 01 02 Supporting legal migration to the
+Union and promoting the
+effective integration of thirdcountry nationals and enhancing
+fair and effective return strategies 3
+
+356 348 555
+
+327 634 462
+
+356 348 555
+
+327 634 462
+
+946 190 284
+
+950 104 244 280 000 000
+
+1 226 190 284
+
+950 104 244
+
+118 327 419
+
+118 327 419
+
+Article 18 03 01 — Subtotal
+18 03 02
+
+European Asylum Support
+Office (EASO)
+
+3
+
+108 327 419
+
+108 327 419
+
+18 03 03
+
+European fingerprint database
+(Eurodac)
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 03 51
+
+Completion of operations and
+programmes in the field of
+return, refugees and migration
+flows
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 03 77 04 Pilot project — Network of
+contacts and discussion between
+targeted municipalities and local
+authorities on experiences and
+best practices in the resettlement
+and integration of refugees
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 03 77 05 Pilot project — Funding for
+victims of torture
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 03 77 06 Preparatory action — Enable the
+resettlement of refugees during
+emergency situations
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+18 03 77
+
+10 000 000
+
+10 000 000
+
+Pilot projects and preparatory
+actions
+
+===== PDF page 39 =====
+21.4.2020
+
+EN
+
+L 126/39
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 18 03 — ASYLUM AND MIGRATION (cont'd)
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+3
+
+p.m.
+
+18 03 77 08 Preparatory action — Network of
+contacts and discussion between
+targeted municipalities and local
+authorities on experiences and
+best practices in the resettlement
+and integration of refugees
+3
+
+18 03 77 09 Preparatory action — Funding
+for the rehabilitation of victims
+of torture
+
+18 03 77 12 Preparatory action — Care
+service to support unaccompanied refugee and migrant
+minors in Europe
+
+18 03 77
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+1 054 517 703 1 058 431 663 290 000 000
+
+10 000 000 1 344 517 703 1 068 431 663
+
+(cont'd)
+
+18 03 77 07 Pilot project — Analysis of
+reception, protection and integration policies for unaccompanied minors in the Union
+
+Article 18 03 77 — Subtotal
+Chapter 18 03 — Total
+
+18 03 01
+
+Asylum, Migration and Integration Fund
+
+18 03 01 01
+
+Strengthening and developing the common European asylum system and enhancing solidarity and responsibilitysharing between the Member States
+Budget 2020
+Commitments
+
+589 841 729
+
+Amending budget No 1/2020
+Payments
+
+622 469 782
+
+Commitments
+
+280 000 000
+
+Payments
+
+New amount
+Commitments
+
+869 841 729
+
+Payments
+
+622 469 782
+
+Remarks
+This appropriation is intended to contribute to strengthen and develop all aspects of the common European asylum
+system, including its external dimension and to enhance the solidarity and responsibility sharing between the Member
+States, in particular towards those most affected by migration and asylum f lows, including through practical
+cooperation.
+In the case of the common European asylum system, this appropriation is intended to cover actions relating to
+reception and asylum systems and actions enhancing the capacity of Member States to develop, monitor and evaluate
+their asylum policies and procedures. Particular attention should be paid to the specific situation of vulnerable women,
+especially women with children, and unaccompanied minors, especially young girls, and to the imperative of preventing
+religious, ethnic or gender-based violence in reception and asylum centres.
+
+===== PDF page 40 =====
+L 126/40
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 18 03 — ASYLUM AND MIGRATION (cont'd)
+
+18 03 01
+
+(cont'd)
+
+18 03 01 01
+
+(cont'd)
+This appropriation is also intended to cover actions related to the resettlement, transfer of applicants for and
+beneficiaries of international protection and other ad hoc humanitarian admission
+
+At the Commission’s initiative, the appropriation may be used to finance transnational actions or actions of particular
+interest to the Union. These actions shall, in particular, support:
+
+— the furthering of Union cooperation in implementing Union law and in sharing good practices in the field of
+asylum, notably on gender-sensitive reception centres, resettlement and transfer of applicants for and/or beneficiaries of international protection from one Member State to another including through networking and
+exchanging information, including arrival support and coordination activities to promote resettlement with the
+local communities that are to welcome resettled refugees,
+
+— the setting-up of transnational cooperation networks and pilot projects, including innovative projects, based on
+transnational partnerships between bodies located in two or more Member States designed to stimulate innovation,
+and to facilitate exchanges of experience and good practice,
+
+— studies and research on possible new forms of Union cooperation in the field of asylum, and relevant Union law, the
+dissemination and exchange of information on best practices and on all other aspects of asylum policies, including
+corporate communication on the political priorities of the Union,
+
+— development and application by Member States of common statistical tools, methods and indicators for measuring
+policy developments in the field of asylum, including gender- and age-disaggregated data,
+
+— preparatory, monitoring, administrative and technical support, development of an evaluation mechanism, required
+to implement the policies on asylum,
+
+— cooperation with third countries on the basis of the Union’s global approach to migration and mobility, in
+particular in the framework of the implementation mobility partnerships, regional protection programmes,
+
+— awareness-raising, information and communication activities in relation to Union home affairs policies, priorities
+and achievements.
+
+This appropriation shall also cover urgent and specific needs in the event of an emergency situation.
+
+Assigned revenue received under Item 6 6 0 0 of the statement of revenue may give rise to the provision of additional
+appropriations under this Item, in accordance with Article 22(1) of the Financial Regulation.
+
+The corresponding amount is estimated at EUR 8 000 000.
+
+===== PDF page 41 =====
+21.4.2020
+
+EN
+
+L 126/41
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 18 03 — ASYLUM AND MIGRATION (cont'd)
+
+18 03 01
+
+(cont'd)
+
+18 03 01 01
+
+(cont'd)
+
+Legal basis
+Regulation (EU) No 514/2014 of the European Parliament and of the Council of 16 April 2014 laying down general
+provisions on the Asylum, Migration and Integration Fund and on the instrument for financial support for police
+cooperation, preventing and combating crime, and crisis management (OJ L 150, 20.5.2014, p. 112).
+Regulation (EU) No 516/2014 of the European Parliament and of the Council of 16 April 2014 establishing the
+Asylum, Migration and Integration Fund, amending Council Decision 2008/381/EC and repealing Decisions No 573/
+2007/EC and No 575/2007/EC of the European Parliament and of the Council and Council Decision 2007/435/EC
+(OJ L 150, 20.5.2014, p. 168).
+Council Decision (EU) 2015/1523 of 14 September 2015 establishing provisional measures in the area of international
+protection for the benefit of Italy and of Greece (OJ L 239, 15.9.2015, p. 146).
+Council Decision (EU) 2015/1601 of 22 September 2015 establishing provisional measures in the area of international
+protection for the benefit of Italy and Greece (OJ L 248, 24.9.2015, p. 80).
+Council Decision (EU) 2016/1754 of 29 September 2016 amending Decision (EU) 2015/1601 establishing provisional
+measures in the area of international protection for the benefit of Italy and Greece (OJ L 268, 1.10.2016, p. 82).
+Reference acts
+Commission Recommendation of 11 January 2016 for a voluntary humanitarian admission scheme with Turkey
+(C(2015) 9490 final).
+Proposal for a Regulation of the European Parliament and of the Council establishing the criteria and mechanisms for
+determining the Member State responsible for examining an application for international protection lodged in one of
+the Member States by a third-country national or a stateless person (COM(2016) 270 final).
+Proposal for a Regulation of the European Parliament and of the Council establishing a Union Resettlement Framework
+and amending Regulation (EU) No 516/2014 of the European Parliament and the Council (COM(2016) 468 final).
+
+18 03 02
+
+European Asylum Support Office (EASO)
+Budget 2020
+Commitments
+
+108 327 419
+
+Amending budget No 1/2020
+Payments
+
+108 327 419
+
+Commitments
+
+10 000 000
+
+Payments
+
+10 000 000
+
+New amount
+Commitments
+
+118 327 419
+
+Payments
+
+118 327 419
+
+===== PDF page 42 =====
+L 126/42
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 18 03 — ASYLUM AND MIGRATION (cont'd)
+
+18 03 02
+
+(cont'd)
+Remarks
+This appropriation is intended to cover the Office’s staff and administrative expenditure (Titles 1 and 2) and operational
+expenditure relating to the work programme (Title 3).
+The Office must inform the European Parliament and the Council about transfers of appropriations between operational
+and administrative expenditure.
+The amounts repaid in accordance with Article 17 of Commission Delegated Regulation (EU) 2019/715 of
+18 December 2018 on the framework financial regulation for the bodies set up under the TFEU and Euratom Treaty
+and referred to in Article 70 of Regulation (EU, Euratom) 2018/1046 of the European Parliament and of the Council
+(OJ L 122, 10.5.2019, p. 1) constitute assigned revenue in accordance with point (b) of Article 21(3) of the Financial
+Regulation to be charged to Item 6 6 0 0 of the statement of revenue.
+Any revenue from the contributions of Iceland, Norway, Switzerland and Liechtenstein entered in Item 6 3 1 3 of the
+statement of revenue may give rise to the provision of additional appropriations in accordance with points (b), (e) and
+(f) of Article 21(2) of the Financial Regulation.
+The Office’s establishment plan is set out in Annex ‘Staff’ to this section.
+The Union contribution for 2020 amounts to a total of EUR 124 073 000. An amount of EUR 5 745 581 coming
+from the recovery of surplus is added to the amount of EUR 118 327 419 entered in the budget.
+
+Legal basis
+Regulation (EU) No 439/2010 of the European Parliament and of the Council of 19 May 2010 establishing a European
+Asylum Support Office (OJ L 132, 29.5.2010, p. 11).
+
+Reference acts
+Proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for Asylum
+and repealing Regulation (EU) No 439/2010 (COM(2016) 271 final).
+Amended proposal for a Regulation of the European Parliament and of the Council on the European Union Agency for
+Asylum and repealing Regulation (EU) No 439/2010 (COM(2018) 633 final).
+
+===== PDF page 43 =====
+21.4.2020
+
+EN
+
+L 126/43
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 22
+NEIGHBOURHOOD AND ENLARGEMENT NEGOTIATIONS
+Title
+Chapter
+
+Heading
+
+Budget 2020
+Commitments
+
+Payments
+
+22 01
+
+ADMINISTRATIVE
+EXPENDITURE OF THE
+‘NEIGHBOURHOOD AND
+ENLARGEMENT NEGOTIATIONS’ POLICY AREA
+
+173 311 741
+
+173 311 741
+
+22 02
+
+ENLARGEMENT PROCESS
+AND STRATEGY
+
+1 376 821 144
+
+1 224 777 074
+
+22 04
+
+EUROPEAN NEIGHBOURHOOD INSTRUMENT
+(ENI)
+
+2 699 176 122
+
+1 966 650 890
+
+Title 22 — Total
+
+4 249 309 007
+
+3 364 739 705
+
+Amending budget No 1/2020
+Commitments
+
+100 000 000
+
+100 000 000
+
+Payments
+
+15 000 000
+
+15 000 000
+
+New amount
+Commitments
+
+Payments
+
+173 311 741
+
+173 311 741
+
+1 476 821 144
+
+1 239 777 074
+
+2 699 176 122
+
+1 966 650 890
+
+4 349 309 007
+
+3 379 739 705
+
+===== PDF page 44 =====
+L 126/44
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 22
+NEIGHBOURHOOD AND ENLARGEMENT NEGOTIATIONS
+
+CHAPTER 22 02 — ENLARGEMENT PROCESS AND STRATEGY
+
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+22 02 01 01 Support for political reforms and
+related progressive alignment
+with the Union acquis
+4
+
+189 267 000
+
+212 302 068
+
+22 02 01 02 Support for economic, social and
+territorial development and
+related progressive alignment
+with the Union acquis
+4
+
+396 900 044
+
+199 087 189 100 000 000
+
+586 167 044
+
+411 389 257 100 000 000
+
+22 02
+
+ENLARGEMENT PROCESS AND
+STRATEGY
+
+22 02 01
+
+Support to Albania, Bosnia and
+Herzegovina, Kosovo (1),
+Montenegro, Serbia and North
+Macedonia
+
+Article 22 02 01 — Subtotal
+22 02 02
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+189 267 000
+
+212 302 068
+
+15 000 000
+
+496 900 044
+
+214 087 189
+
+15 000 000
+
+686 167 044
+
+426 389 257
+
+Support to Iceland
+
+22 02 02 01 Support for political reforms and
+related progressive alignment
+with the Union acquis
+4
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+22 02 02 02 Support for economic, social and
+territorial development and
+related progressive alignment
+with the Union acquis
+4
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+22 02 03 01 Support for political reforms and
+related progressive alignment
+with the Union acquis
+4
+
+150 000 000
+
+48 772 300
+
+150 000 000
+
+48 772 300
+
+22 02 03 02 Support for economic, social and
+territorial development and
+related progressive alignment
+with the Union acquis
+4
+
+p.m.
+
+398 786 099
+
+p.m.
+
+398 786 099
+
+150 000 000
+
+447 558 399
+
+150 000 000
+
+447 558 399
+
+Article 22 02 02 — Subtotal
+22 02 03
+
+Support to Turkey
+
+Article 22 02 03 — Subtotal
+
+===== PDF page 45 =====
+21.4.2020
+
+EN
+
+L 126/45
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 22 02 — ENLARGEMENT PROCESS AND STRATEGY (cont'd)
+Title
+Chapter
+Article
+Item
+
+22 02 04
+
+Budget 2020
+Heading
+
+FF
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+Regional integration and territorial cooperation and support
+to groups of countries (horizontal programmes)
+
+22 02 04 01 Multi-country programmes,
+regional integration and territorial cooperation
+
+4
+
+603 637 000
+
+304 788 952
+
+603 637 000
+
+304 788 952
+
+22 02 04 02 Erasmus+ — Contribution from
+the Instrument for Pre-accession
+Assistance (IPA)
+
+4
+
+32 365 000
+
+25 325 250
+
+32 365 000
+
+25 325 250
+
+22 02 04 03 Contribution to the Energy
+Community for South-East
+Europe
+
+4
+
+4 652 100
+
+4 652 100
+
+4 652 100
+
+4 652 100
+
+640 654 100
+
+334 766 302
+
+640 654 100
+
+334 766 302
+
+4
+
+p.m.
+
+31 063 116
+
+p.m.
+
+31 063 116
+
+22 02 77 01 Pilot project — Preserving and
+restoring cultural heritage in
+conflict areas
+
+4
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+22 02 77 02 Preparatory action — Preserving
+and restoring cultural heritage in
+conflict areas
+
+4
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+22 02 77 03 Preparatory action — Enhancing
+regional cooperation on the issue
+of missing persons following the
+conflicts in the former Yugoslavia
+4
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+1 376 821 144 1 224 777 074 100 000 000
+
+15 000 000 1 476 821 144 1 239 777 074
+
+Article 22 02 04 — Subtotal
+22 02 51
+
+22 02 77
+
+Completion of former preaccession assistance (prior to
+2014)
+Pilot projects and preparatory
+actions
+
+Article 22 02 77 — Subtotal
+Chapter 22 02 — Total
+
+(1) This designation is without prejudice to positions on status, and is in line with the United Nations Security Council Resolution 1244(1999) and the International Court
+of Justice opinion on Kosovo’s declaration of independence.
+
+===== PDF page 46 =====
+L 126/46
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 22 02 — ENLARGEMENT PROCESS AND STRATEGY (cont'd)
+
+22 02 01
+
+Support to Albania, Bosnia and Herzegovina, Kosovo (1), Montenegro, Serbia and North Macedonia
+
+22 02 01 02
+
+Support for economic, social and territorial development and related progressive alignment with the Union acquis
+Budget 2020
+Commitments
+
+396 900 044
+
+Amending budget No 1/2020
+Payments
+
+199 087 189
+
+Commitments
+
+100 000 000
+
+Payments
+
+15 000 000
+
+New amount
+Commitments
+
+496 900 044
+
+Payments
+
+214 087 189
+
+Remarks
+Under the Instrument for Pre-accession Assistance (IPA II), this appropriation will address the following specific
+objectives in the Western Balkans:
+— providing support for economic, social and territorial development, with a view to achieving smart, sustainable and
+inclusive growth,
+— strengthening the ability of the beneficiaries listed in Annex I to Regulation (EU) No 231/2014 at all levels to fulfil
+the obligations stemming from Union membership in the area of economic, social and territorial development by
+supporting progressive alignment with and adoption, implementation and enforcement of the Union acquis,
+including preparation for management of Union Structural Funds, the Cohesion Fund and the European
+Agricultural Fund for Rural Development.
+Particular attention should be paid to challenges faced by Western Balkan returnees, including Roma, both in Member
+States of departure and in the Western Balkan countries of origin to which they return.
+Any income from additional financial contributions from Member States and contributions from third countries or
+from bodies other than those set up under the TFEU or the Euratom Treaty to certain external aid actions or
+programmes financed by the Union and managed by the Commission may give rise to the provision of additional
+appropriations. Such contributions under Article 6 3 3 of the statement of revenue constitute assigned revenue under
+points (a)(ii) and (e) of Article 21(2) of the Financial Regulation. The amounts entered on the line for administrative
+support expenditure will be determined, without prejudice to Article 235(5) of the Financial Regulation, by the
+contribution agreement for each operational programme with an average not exceeding 4 % of the contributions for the
+corresponding programme for each chapter.
+Other assigned revenue received under Items 5 2 2 0 and 6 6 0 0 of the statement of revenue may give rise to the
+provision of additional appropriations under this item, in accordance with Article 22(1) of the Financial Regulation.
+
+Legal basis
+Regulation (EU) No 231/2014 of the European Parliament and of the Council of 11 March 2014 establishing an
+Instrument for Pre-accession Assistance (IPA II) (OJ L 77, 15.3.2014, p. 11), and in particular points (b) and (c) of
+Article 2(1) thereof.
+(1) This designation is without prejudice to positions on status, and is in line with the United Nations Security Council Resolution 1244(1999) and the
+International Court of Justice opinion on Kosovo’s declaration of independence.
+
+===== PDF page 47 =====
+21.4.2020
+
+EN
+
+L 126/47
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 23
+HUMANITARIAN AID AND CIVIL PROTECTION
+Title
+Chapter
+
+Heading
+
+Budget 2020
+Commitments
+
+Amending budget No 1/2020
+
+Payments
+
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+23 01
+
+ADMINISTRATIVE
+EXPENDITURE OF THE
+‘HUMANITARIAN AID AND
+CIVIL PROTECTION’ POLICY
+AREA
+
+53 528 912
+
+53 528 912
+
+53 528 912
+
+53 528 912
+
+23 02
+
+HUMANITARIAN AID,
+FOOD ASSISTANCE AND
+DISASTER PREPAREDNESS
+
+1 092 234 779
+
+1 197 700 000
+
+1 092 234 779
+
+1 197 700 000
+
+23 03
+
+THE UNION CIVIL
+PROTECTION MECHANISM
+
+159 899 000
+
+78 067 750
+
+274 899 000
+
+118 067 750
+
+23 04
+
+EU AID VOLUNTEERS
+INITIATIVE
+
+19 355 000
+
+17 584 960
+
+19 355 000
+
+17 584 960
+
+1 325 017 691
+
+1 346 881 622
+
+1 440 017 691
+
+1 386 881 622
+
+Title 23 — Total
+
+115 000 000
+
+115 000 000
+
+40 000 000
+
+40 000 000
+
+===== PDF page 48 =====
+L 126/48
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 23
+HUMANITARIAN AID AND CIVIL PROTECTION
+CHAPTER 23 03 — THE UNION CIVIL PROTECTION MECHANISM
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+23 03
+
+THE UNION CIVIL PROTECTION
+MECHANISM
+
+23 03 01
+
+Disaster prevention and preparedness
+
+FF
+
+Amending budget No 1/2020
+
+New amount
+
+Commitments
+
+Payments
+
+Commitments
+
+Payments
+
+Commitments
+
+Payments
+
+70 000 000
+
+40 000 000 192 788 000
+
+88 000 000
+
+23 03 01 01 Disaster prevention and preparedness
+within the Union
+
+3
+
+122 788 000
+
+48 000 000
+
+23 03 01 02 Disaster prevention and preparedness
+in third countries
+
+4
+
+6 029 000
+
+5 206 250
+
+6 029 000
+
+5 206 250
+
+23 03 01 03 European Solidarity Corps —
+Contribution from Union Civil
+Protection Mechanism (UCPM)
+
+3
+
+2 000 000
+
+2 000 000
+
+2 000 000
+
+2 000 000
+
+130 817 000
+
+55 206 250
+
+40 000 000 200 817 000
+
+95 206 250
+
+23 03 02 01 Rapid and efficient emergency response
+interventions in the event of major
+disasters within the Union
+3
+
+16 382 000
+
+12 000 000
+
+16 382 000
+
+12 000 000
+
+23 03 02 02 Rapid and efficient emergency response
+interventions in the event of major
+disasters in third countries
+4
+
+12 700 000
+
+10 500 000
+
+45 000 000
+
+57 700 000
+
+10 500 000
+
+29 082 000
+
+22 500 000
+
+45 000 000
+
+74 082 000
+
+22 500 000
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+23 03 77 03 Pilot project — Early-warning system
+for natural disasters
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+23 03 77 04 Preparatory action — Network of
+European hubs for civil protection and
+crisis management
+
+4
+
+p.m.
+
+361 500
+
+p.m.
+
+361 500
+
+Article 23 03 77 — Subtotal
+
+p.m.
+
+361 500
+
+p.m.
+
+361 500
+
+Chapter 23 03 — Total
+
+159 899 000
+
+Article 23 03 01 — Subtotal
+23 03 02
+
+Article 23 03 02 — Subtotal
+23 03 51
+
+23 03 77
+
+70 000 000
+
+Rapid and efficient emergency
+response interventions in the event of
+major disasters
+
+Completion of programmes and
+actions in the field of civil protection
+within the Union (prior to 2014)
+Pilot projects and preparatory actions
+
+78 067 750 115 000 000
+
+40 000 000 274 899 000 118 067 750
+
+===== PDF page 49 =====
+21.4.2020
+
+EN
+
+L 126/49
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 23 03 — THE UNION CIVIL PROTECTION MECHANISM (cont'd)
+
+23 03 01
+
+Disaster prevention and preparedness
+
+23 03 01 01
+
+Disaster prevention and preparedness within the Union
+Amending budget No 1/2020
+
+Budget 2020
+Commitments
+
+122 788 000
+
+Payments
+
+48 000 000
+
+Commitments
+
+70 000 000
+
+Payments
+
+40 000 000
+
+New amount
+Commitments
+
+192 788 000
+
+Payments
+
+88 000 000
+
+Remarks
+This appropriation is intended to cover expenditure on actions in the field of civil protection. It aims at supporting,
+coordinating and supplementing the actions of the Member States, EFTA States and candidate countries having signed
+an appropriate agreement with the Union in the field of preparedness and prevention with regard to natural and manmade disasters, including acts of terrorism and technological, radiological or environmental accidents, marine pollution
+and acute health emergencies, occurring inside the Union. It also aims to facilitate closer cooperation between the
+Member States in the field of civil protection.
+It covers, in particular:
+— actions in the field of prevention aiming at supporting and promoting Member States’ risk assessment and mapping
+activity, such as the sharing of good practice, the compilation and dissemination of information from Member
+States on risk management activity including peer reviews,
+— the creation of a ‘European emergency response capacity’, a ‘stand-by’ capability for resources and equipment to be
+made available to a Member State in the event of an emergency,
+— the development and management of a certification and registration process for the ‘European emergency response
+capacity’. This includes also the development of capacity goals and quality requirements,
+— the identification of significant response capacity gaps in the ‘European emergency response capacity’ and support
+to the development of required capacities,
+— the identification of intervention experts, modules and other support available in Member States for assistance
+interventions in case of emergencies,
+— the development and maintenance of a network of trained experts of Member States to assist at headquarters level
+in the monitoring, information and coordination tasks of the Emergency Response Coordination Centre (ERCC),
+— a programme of lessons learnt from civil protection interventions and exercises in the framework of the Union Civil
+Protection Mechanism,
+— a training programme for intervention teams, external personnel and experts, to provide the knowledge and tools
+needed to participate effectively in Union interventions and to develop a common European intervention culture,
+
+===== PDF page 50 =====
+L 126/50
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 23 03 — THE UNION CIVIL PROTECTION MECHANISM (cont'd)
+
+23 03 01
+
+(cont'd)
+
+23 03 01 01
+
+(cont'd)
+— the management of a training network open to training centres for civil protection and emergency management
+personnel and other relevant actors to provide guidance on Union and international civil protection training,
+
+— the management of an exercises programme including command post exercises, full-scale exercises and exercises for
+civil protection modules to test interoperability, train civil protection officials and create a common intervention
+culture,
+
+— exchanges of experts to enhance understanding of Union civil protection and to share information and experience,
+
+— information and communication (ICT) systems, in particular CECIS (common emergency communication and
+information system), facilitating the exchange of information with Member States during emergencies, to improve
+efficiency and to enable the exchange of ‘EU classified’ information. This covers the costs of development,
+maintenance, operation and support (hardware, software and services) of the systems. It also covers the cost of
+project management, quality control, security, documentation and training linked to the implementation of such
+systems,
+
+— the study and development of civil protection modules within the meaning of Article 4 of Decision No 1313/2013/
+EU including support to improve their interoperability,
+
+— the study and development of disaster detection and early warning systems,
+
+— the study and development of scenario-building, asset mapping and plans for the deployment of response capacities,
+
+— workshops, seminars, projects, studies, surveys, modelling, scenario-building and contingency planning, capacitybuilding assistance, demonstration projects, technology transfer, awareness-raising, information, communication
+and monitoring, assessment and evaluation,
+
+— other supporting and complementary actions necessary in the framework of the Union Civil Protection Mechanism
+to achieve a high level of protection against disasters and enhance the Union’s state of preparedness to respond to
+disasters,
+
+— expenditure on audits and evaluation as enshrined in the Union Civil Protection Mechanism.
+
+The contributions from the EFTA States pursuant to the Agreement on the European Economic Area, and in particular
+Article 82 thereof and Protocol 32 thereto, must be added to the appropriations entered in this item. By way of
+information, these amounts derive from contributions from the EFTA States entered against Article 6 3 0 of the
+statement of revenue, which constitute assigned revenue in accordance with points (b), (e) and (f) of Article 21(2) of the
+Financial Regulation; they give rise to the provision of corresponding appropriations and to implementation under the
+‘European Economic Area’ Annex to this part of the statement of expenditure in this section, which forms an integral
+part of the general budget.
+
+===== PDF page 51 =====
+21.4.2020
+
+EN
+
+L 126/51
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 23 03 — THE UNION CIVIL PROTECTION MECHANISM (cont'd)
+
+23 03 01
+
+(cont'd)
+
+23 03 01 01
+
+(cont'd)
+Any revenue from the contribution from candidate countries and, if applicable, the Western Balkan potential candidates
+for participating in Union programmes, entered in Item 6 0 3 1 of the statement of revenue, may give rise to the
+provision of additional appropriations in accordance with points (b), (e) and (f) of Article 21(2) of the Financial
+Regulation.
+
+Legal basis
+Decision No 1313/2013/EU of the European Parliament and of the Council of 17 December 2013 on a Union Civil
+Protection Mechanism (OJ L 347, 20.12.2013, p. 924).
+
+23 03 02
+
+Rapid and efficient emergency response interventions in the event of major disasters
+
+23 03 02 02
+
+Rapid and efficient emergency response interventions in the event of major disasters in third countries
+Budget 2020
+Commitments
+
+12 700 000
+
+Amending budget No 1/2020
+Payments
+
+10 500 000
+
+Commitments
+
+45 000 000
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+57 700 000
+
+10 500 000
+
+Remarks
+This appropriation is intended to cover expenditure related to civil protection intervention in third countries under the
+Union Civil Protection Mechanism:
+
+— mobilisation of experts to assess assistance needs and facilitate European assistance in third countries in case of
+disasters,
+
+— the provision of support to Member States in obtaining access to equipment and transport resources,
+
+— the provision of Union civil protection assistance, including the provision of relevant information on means of
+transport as well as associated logistics, in the event of disaster,
+
+— support for consular assistance to the citizens of the Union in major emergencies in third countries regarding civil
+protection activities, upon request from the consular authorities of the Member States,
+
+— any supporting and complementary action in order to facilitate the coordination of response in the most effective
+way.
+
+===== PDF page 52 =====
+L 126/52
+
+EN
+
+Official Journal of the European Union
+
+21.4.2020
+
+COMMISSION
+
+CHAPTER 23 03 — THE UNION CIVIL PROTECTION MECHANISM (cont'd)
+
+23 03 02
+
+(cont'd)
+
+23 03 02 02
+
+(cont'd)
+Implementing partners may include authorities of the Member States or of beneficiary countries and their agencies,
+regional and international organisations and their agencies, non-governmental organisations, public and private
+operators and individual organisations or operators (including staff seconded from Member State administrations)
+with appropriate specialised expertise and experience.
+The contributions from the EFTA States pursuant to the Agreement on the European Economic Area, and in particular
+Article 82 thereof and Protocol 32 thereto, must be added to the appropriations entered in this item. By way of
+information, these amounts derive from contributions from the EFTA States entered against Article 6 3 0 of the
+statement of revenue, which constitute assigned revenue in accordance with points (b), (e) and (f) of Article 21(2) of the
+Financial Regulation; they give rise to the provision of corresponding appropriations and to implementation under the
+‘European Economic Area’ Annex to this part of the statement of expenditure in this section, which forms an integral
+part of the general budget.
+Any revenue from the contribution from candidate countries and, if applicable, the Western Balkan potential candidates
+for participating in Union programmes, entered in Item 6 0 3 1 of the statement of revenue, may give rise to the
+provision of additional appropriations in accordance with points (b), (e) and (f) of Article 21(2) of the Financial
+Regulation.
+Other assigned revenue received under Item 6 6 0 0 of the statement of revenue may give rise to the provision of
+additional appropriations under this item in accordance with Article 22(1) of the Financial Regulation.
+
+Legal basis
+Decision No 1313/2013/EU of the European Parliament and of the Council of 17 December 2013 on a Union Civil
+Protection Mechanism (OJ L 347, 20.12.2013, p. 924).
+
+===== PDF page 53 =====
+21.4.2020
+
+EN
+
+L 126/53
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 33
+JUSTICE AND CONSUMERS
+Title
+Chapter
+
+33 01
+
+Heading
+
+Budget 2020
+Commitments
+
+Payments
+
+Amending budget No 1/2020
+Commitments
+
+Payments
+
+New amount
+Commitments
+
+Payments
+
+ADMINISTRATIVE
+EXPENDITURE OF THE ‘JUSTICE
+AND CONSUMERS’ POLICY
+AREA
+
+57 636 102
+
+57 636 102
+
+57 636 102
+
+57 636 102
+
+33 02
+
+RIGHTS, EQUALITY AND CITIZENSHIP
+
+103 629 617
+
+104 020 617
+
+103 629 617
+
+104 020 617
+
+33 03
+
+JUSTICE
+
+93 066 496
+
+90 736 374
+
+96 366 496
+
+94 036 374
+
+33 04
+
+MULTIANNUAL CONSUMER
+PROGRAMME
+
+27 900 000
+
+25 855 000
+
+27 900 000
+
+25 855 000
+
+282 232 215
+
+278 248 093
+
+285 532 215
+
+281 548 093
+
+Title 33 — Total
+
+3 300 000
+
+3 300 000
+
+3 300 000
+
+3 300 000
+
+===== PDF page 54 =====
+L 126/54
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+TITLE 33
+JUSTICE AND CONSUMERS
+CHAPTER 33 03 — JUSTICE
+Title
+Chapter
+Article
+Item
+
+Budget 2020
+Heading
+
+FF
+
+33 03
+
+JUSTICE
+
+33 03 01
+
+Supporting and promoting judicial
+training and facilitating effective
+access to justice for all
+
+Amending budget No 1/2020
+
+Commitments
+
+Payments
+
+3
+
+33 743 000
+
+Commitments
+
+Payments
+
+27 600 000
+
+33 743 000
+
+27 600 000
+
+Facilitating and supporting judicial
+cooperation in civil and criminal
+matters
+
+3
+
+8 861 000
+
+12 000 000
+
+8 861 000
+
+12 000 000
+
+European Union Agency for
+Criminal Justice Cooperation
+(Eurojust)
+
+3
+
+41 340 496
+
+41 187 174
+
+41 340 496
+
+41 187 174
+
+33 03 05
+
+European Public Prosecutor's Office
+(EPPO)
+
+3
+
+8 372 000
+
+8 372 000
+
+11 672 000
+
+11 672 000
+
+33 03 51
+
+Completion of actions in the field of
+justice
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+33 03 77
+
+Pilot projects and preparatory
+actions
+
+33 03 77 04 Pilot project — Raising awareness of
+children to be aware of their rights in
+judicial procedures
+
+3
+
+p.m.
+
+p.m.
+
+p.m.
+
+p.m.
+
+33 03 77 05 Pilot project — Letterbox companies
+
+3
+
+p.m.
+
+89 700
+
+p.m.
+
+89 700
+
+33 03 77 06 Preparatory action — Union fund for
+financial support for litigating cases
+relating to violations of democracy,
+rule of law and fundamental rights
+
+3
+
+p.m.
+
+300 000
+
+p.m.
+
+300 000
+
+33 03 77 07 Pilot project — Terrorism victim
+response coordination centre
+
+3
+
+p.m.
+
+500 000
+
+p.m.
+
+500 000
+
+750 000
+
+687 500
+
+750 000
+
+687 500
+
+Article 33 03 77 — Subtotal
+
+750 000
+
+1 577 200
+
+750 000
+
+1 577 200
+
+Chapter 33 03 — Total
+
+93 066 496
+
+90 736 374
+
+96 366 496
+
+94 036 374
+
+33 03 02
+
+33 03 04
+
+33 03 77 08 Preparatory action — Capacity
+building, programmatic development
+and communication in the context of
+the fight against money laundering
+and financial crimes
+1.1
+
+Commitments
+
+3 300 000
+
+3 300 000
+
+Payments
+
+New amount
+
+3 300 000
+
+3 300 000
+
+===== PDF page 55 =====
+21.4.2020
+
+EN
+
+L 126/55
+
+Official Journal of the European Union
+
+COMMISSION
+
+CHAPTER 33 03 — JUSTICE (cont'd)
+
+33 03 05
+
+European Public Prosecutor's Office (EPPO)
+Budget 2020
+Commitments
+
+8 372 000
+
+Amending budget No 1/2020
+Payments
+
+8 372 000
+
+Commitments
+
+Payments
+
+3 300 000
+
+3 300 000
+
+New amount
+Commitments
+
+11 672 000
+
+Payments
+
+11 672 000
+
+Remarks
+The EPPO has been created by Council Regulation (EU) 2017/1939.
+The EPPO is responsible for investigating, prosecuting and bringing to judgment the perpetrators of, and accomplices
+to, criminal offences affecting the financial interests of the Union which are provided for in Directive (EU) 2017/1371
+of the European Parliament and of the Council of 5 July 2017 on the fight against fraud to the Union’s financial
+interests by means of criminal law (OJ L 198, 28.7.2017, p. 29) and determined by Regulation (EU) 2017/1939. In this
+respect, the EPPO undertakes investigations, and carries out acts of prosecution and exercise the functions of prosecutor
+in the competent courts of the Member States, until the case has been finally disposed of.
+This appropriation is intended in 2020 mostly to cover EPPO’s: recruitment and staff related expenditure, building,
+infrastructure and information technology expenditures (Titles 1 and 2), operational expenditure related to the
+development and initial roll out of the EPPO case management system (Title 3), the IT exchange platform between the
+EPPO Central Office, the European Delegated Prosecutors and other judicial and law enforcement authorities in the
+Member States which is a key element for the establishment and good functioning of the EPPO.
+EPPO must inform the European Parliament and the Council about transfers of appropriations between operational and
+administrative expenditure.
+EPPO’s establishment plan is set out in Annex ‘Staff’ to this section.
+The Union contribution for 2020 amounts to a total of EUR 11 672 000.
+
+Legal basis
+Council Regulation (EU) 2017/1939 of 12 October 2017 implementing enhanced cooperation on the establishment of
+the European Public Prosecutor's Office (‘the EPPO’) (OJ L 283, 31.10.2017, p. 1).
+
+===== PDF page 56 =====
+L 126/56
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COMMISSION
+
+STAFF
+Bodies set up by the European Union and having legal personality
+Decentralised agencies
+European Public Prosecutor's Office (EPPO)
+Function group and
+grade
+
+Budget 2020
+
+Amending Budget No 1/2020
+
+Budget 2020 (including AB1/2020)
+
+Permanent posts
+
+Temporary posts
+
+Permanent posts
+
+Temporary posts
+
+Permanent posts
+
+Temporary posts
+
+AD 16
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AD 15
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+AD 14
+
+—
+
+—
+
+—
+
+1
+
+—
+
+1
+
+AD 13
+
+—
+
+22
+
+—
+
+—
+
+—
+
+22
+
+AD 12
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AD 11
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+AD 10
+
+—
+
+2
+
+—
+
+1
+
+—
+
+3
+
+AD 9
+
+—
+
+2
+
+—
+
+1
+
+—
+
+3
+
+AD 8
+
+—
+
+2
+
+—
+
+—
+
+—
+
+2
+
+AD 7
+
+2
+
+5
+
+—
+
+2
+
+2
+
+7
+
+AD 6
+
+—
+
+1
+
+—
+
+2
+
+—
+
+3
+
+AD 5
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+Subtotal AD
+
+2
+
+37
+
+—
+
+7
+
+2
+
+44
+
+AST 11
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 10
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 9
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 8
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 7
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 6
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 5
+
+—
+
+3
+
+—
+
+1
+
+—
+
+4
+
+AST 4
+
+2
+
+—
+
+—
+
+—
+
+2
+
+—
+
+AST 3
+
+—
+
+3
+
+—
+
+—
+
+—
+
+3
+
+AST 2
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 1
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+2
+
+6
+
+—
+
+1
+
+2
+
+7
+
+AST/SC 6
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 5
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 4
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 3
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 2
+
+—
+
+—
+
+—
+
+3
+
+—
+
+3
+
+Subtotal AST
+
+AST/SC 1
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+Subtotal AST/SC
+
+—
+
+—
+
+—
+
+3
+
+—
+
+3
+
+Total
+
+4
+
+43
+
+—
+
+11
+
+4
+
+54
+
+Grand total
+
+47
+
+11
+
+58
+
+===== PDF page 57 =====
+21.4.2020
+
+EN
+
+Official Journal of the European Union
+
+L 126/57
+COURT OF AUDITORS
+
+SECTION V
+
+COURT OF AUDITORS
+
+===== PDF page 58 =====
+L 126/58
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+REVENUE
+Contribution of the European Union to the financing of the expenditure of the
+Court of Auditors for the financial year 2020
+Heading
+
+Amount
+
+Expenditure
+
+153 137 000
+
+Own resources
+
+– 22 380 000
+
+Contribution due
+
+130 757 000
+
+===== PDF page 59 =====
+21.4.2020
+
+EN
+
+L 126/59
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+EXPENDITURE
+Title
+Chapter
+
+Heading
+
+Budget 2020
+
+Amending budget
+No 1/2020
+
+New amount
+
+1
+
+PERSONS WORKING WITH THE INSTITUTION
+
+10
+
+MEMBERS OF THE INSTITUTION
+
+11 751 000
+
+11 751 000
+
+12
+
+OFFICIALS AND TEMPORARY STAFF
+
+111 860 000
+
+111 860 000
+
+14
+
+OTHER STAFF AND EXTERNAL SERVICES
+
+7 403 000
+
+7 403 000
+
+16
+
+OTHER EXPENDITURE RELATING TO PERSONS WORKING
+WITH THE INSTITUTION
+
+6 315 000
+
+6 315 000
+
+Title 1 — Total
+
+137 329 000
+
+137 329 000
+
+2
+
+BUILDINGS, MOVABLE PROPERTY, EQUIPMENT AND
+MISCELLANEOUS OPERATING EXPENDITURE
+
+20
+
+BUILDINGS AND ASSOCIATED COSTS
+
+3 255 000
+
+3 255 000
+
+21
+
+DATA PROCESSING, EQUIPMENT AND MOVABLE
+PROPERTY: PURCHASE, HIRE AND MAINTENANCE
+
+8 681 000
+
+8 681 000
+
+23
+
+CURRENT ADMINISTRATIVE EXPENDITURE
+
+563 000
+
+563 000
+
+25
+
+MEETINGS AND CONFERENCES
+
+696 000
+
+696 000
+
+27
+
+INFORMATION: ACQUISITION, ARCHIVING, PRODUCTION
+AND DISTRIBUTION
+
+2 613 000
+
+– 900 000
+
+1 713 000
+
+Title 2 — Total
+
+15 808 000
+
+– 900 000
+
+14 908 000
+
+10
+
+OTHER EXPENDITURE
+
+10 0
+
+PROVISIONAL APPROPRIATIONS
+
+p.m.
+
+p.m.
+
+10 1
+
+CONTINGENCY RESERVE
+
+p.m.
+
+p.m.
+
+Title 10 — Total
+
+p.m.
+
+p.m.
+
+GRAND TOTAL
+
+153 137 000
+
+– 900 000
+
+152 237 000
+
+===== PDF page 60 =====
+L 126/60
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+TITLE 2
+BUILDINGS, MOVABLE PROPERTY, EQUIPMENT AND MISCELLANEOUS OPERATING EXPENDITURE
+
+CHAPTER 2 0 — BUILDINGS AND ASSOCIATED COSTS
+Article
+Item
+
+Heading
+
+Budget 2020
+
+Amending budget
+No 1/2020
+
+New amount
+
+CHAPTER 2 0
+200
+
+Buildings
+
+2000
+
+Rent
+Non-differentiated appropriations
+
+2001
+
+2005
+
+2007
+
+p.m.
+
+p.m.
+
+Non-differentiated appropriations
+
+p.m.
+
+p.m.
+
+Non-differentiated appropriations
+
+p.m.
+
+p.m.
+
+Acquisition of immovable property
+
+Construction of buildings
+
+Fitting-out of premises
+Non-differentiated appropriations
+
+2008
+
+Expenditure on buildings
+
+2022
+
+Cleaning and maintenance
+
+2026
+
+2028
+
+2029
+
+220 000
+
+220 000
+
+Non-differentiated appropriations
+
+210 000
+
+210 000
+
+Article 2 0 0 — Total
+
+530 000
+
+530 000
+
+Non-differentiated appropriations
+
+1 571 000
+
+1 571 000
+
+Non-differentiated appropriations
+
+850 000
+
+850 000
+
+Non-differentiated appropriations
+
+168 000
+
+168 000
+
+Non-differentiated appropriations
+
+96 000
+
+96 000
+
+Non-differentiated appropriations
+
+40 000
+
+40 000
+
+Article 2 0 2 — Total
+
+2 725 000
+
+2 725 000
+
+CHAPTER 2 0 — TOTAL
+
+3 255 000
+
+3 255 000
+
+Studies and technical assistance in connection with building
+projects
+
+202
+
+2024
+
+100 000
+
+Lease/purchase
+Non-differentiated appropriations
+
+2003
+
+100 000
+
+Energy consumption
+
+Security and surveillance of buildings
+
+Insurance
+
+Other expenditure on buildings
+
+===== PDF page 61 =====
+21.4.2020
+
+EN
+
+L 126/61
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+CHAPTER 2 1 — DATA PROCESSING, EQUIPMENT AND MOVABLE PROPERTY: PURCHASE, HIRE AND MAINTENANCE
+CHAPTER 2 3 — CURRENT ADMINISTRATIVE EXPENDITURE
+Article
+Item
+
+Budget 2020
+
+Heading
+
+Amending budget
+No 1/2020
+
+New amount
+
+CHAPTER 2 1
+210
+
+Equipment, operating costs and services relating to data
+processing and telecommunications
+
+2100
+
+Purchase, servicing and maintenance of equipment and
+software
+Non-differentiated appropriations
+
+2 378 000
+
+2 378 000
+
+Non-differentiated appropriations
+
+5 000 000
+
+5 000 000
+
+Non-differentiated appropriations
+
+340 000
+
+340 000
+
+Article 2 1 0 — Total
+
+7 718 000
+
+7 718 000
+
+Non-differentiated appropriations
+
+100 000
+
+100 000
+
+Non-differentiated appropriations
+
+300 000
+
+300 000
+
+Non-differentiated appropriations
+
+563 000
+
+563 000
+
+CHAPTER 2 1 — TOTAL
+
+8 681 000
+
+8 681 000
+
+Non-differentiated appropriations
+
+80 000
+
+80 000
+
+Non-differentiated appropriations
+
+15 000
+
+15 000
+
+200 000
+
+200 000
+
+20 000
+
+20 000
+
+Non-differentiated appropriations
+
+248 000
+
+248 000
+
+CHAPTER 2 3 — TOTAL
+
+563 000
+
+563 000
+
+2102
+
+External services for the operation, implementation and maintenance of software and systems
+
+2103
+
+Telecommunications
+
+212
+
+214
+
+216
+
+Furniture
+
+Technical equipment and installations
+
+Vehicles
+
+CHAPTER 2 3
+230
+
+231
+
+232
+
+Stationery, office supplies and miscellaneous consumables
+
+Financial charges
+
+Legal expenses and damages
+Non-differentiated appropriations
+
+236
+
+Postage and delivery charges
+Non-differentiated appropriations
+
+238
+
+Other administrative expenditure
+
+===== PDF page 62 =====
+L 126/62
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+CHAPTER 2 5 — MEETINGS AND CONFERENCES
+CHAPTER 2 7 — INFORMATION: ACQUISITION, ARCHIVING, PRODUCTION AND DISTRIBUTION
+Article
+Item
+
+Budget 2020
+
+Heading
+
+Amending budget
+No 1/2020
+
+New amount
+
+CHAPTER 2 5
+252
+
+Representation expenses
+Non-differentiated appropriations
+
+254
+
+213 000
+
+213 000
+
+141 000
+
+141 000
+
+17 000
+
+17 000
+
+Non-differentiated appropriations
+
+325 000
+
+325 000
+
+CHAPTER 2 5 — TOTAL
+
+696 000
+
+696 000
+
+513 000
+
+513 000
+
+Meetings, congresses and conferences
+Non-differentiated appropriations
+
+256
+
+Expenditure on the dissemination of information and on
+participation in public events
+Non-differentiated appropriations
+
+257
+
+Joint Interpreting and Conference Service
+
+CHAPTER 2 7
+270
+
+Limited surveys, studies and consultations; audit of agencies
+and other bodies of the Union
+
+2700
+
+Limited consultations, studies and surveys
+Non-differentiated appropriations
+
+2701
+
+272
+
+Audit of agencies and other bodies of the Union
+Non-differentiated appropriations
+
+900 000
+
+– 900 000
+
+Article 2 7 0 — Total
+
+1 413 000
+
+– 900 000
+
+513 000
+
+Documentation, library and archiving expenditure
+Non-differentiated appropriations
+
+274
+
+Production and distribution
+
+2740
+
+Official Journal
+Non-differentiated appropriations
+
+2741
+
+p.m.
+
+425 000
+
+425 000
+
+p.m.
+
+p.m.
+
+Publications of a general nature
+Non-differentiated appropriations
+
+775 000
+
+775 000
+
+Article 2 7 4 — Total
+
+775 000
+
+775 000
+
+CHAPTER 2 7 — TOTAL
+
+2 613 000
+
+– 900 000
+
+1 713 000
+
+Title 2 — Total
+
+15 808 000
+
+– 900 000
+
+14 908 000
+
+===== PDF page 63 =====
+21.4.2020
+
+EN
+
+L 126/63
+
+Official Journal of the European Union
+
+COURT OF AUDITORS
+
+TITLE 2
+BUILDINGS, MOVABLE PROPERTY, EQUIPMENT AND MISCELLANEOUS OPERATING EXPENDITURE
+CHAPTER 2 7 — INFORMATION: ACQUISITION, ARCHIVING, PRODUCTION AND DISTRIBUTION
+
+270
+
+Limited surveys, studies and consultations; audit of agencies and other bodies of the Union
+
+2701
+
+Audit of agencies and other bodies of the Union
+Budget 2020
+
+Amending budget No 1/2020
+
+900 000
+
+New amount
+
+– 900 000
+
+p.m.
+
+Remarks
+This appropriation is intended to cover the cost of auditing the agencies and other bodies of the Union in accordance
+with Article 287(1) TFEU and Article 70(6) and (7) of the Financial Regulation.
+Amount of assigned revenue in accordance with Article 21(3) of the Financial Regulation: p.m.
+
+===== PDF page 64 =====
+L 126/64
+
+EN
+
+Official Journal of the European Union
+
+EUROPEAN OMBUDSMAN
+
+SECTION VIII
+
+EUROPEAN OMBUDSMAN
+
+21.4.2020
+
+===== PDF page 65 =====
+21.4.2020
+
+EN
+
+L 126/65
+
+Official Journal of the European Union
+
+EUROPEAN OMBUDSMAN
+
+REVENUE
+Contribution of the European Union to the financing of the expenditure of the
+European Ombudsman for the financial year 2020
+Heading
+
+Amount
+
+Expenditure
+
+12 348 231
+
+Own resources
+
+– 1 431 689
+
+Contribution due
+
+10 916 542
+
+===== PDF page 66 =====
+L 126/66
+
+EN
+
+21.4.2020
+
+Official Journal of the European Union
+
+EUROPEAN OMBUDSMAN
+
+STAFF
+Section VIII — European Ombudsman
+Function group and
+grade
+
+AD 16
+
+Budget 2020
+
+Amending Budget No 1/2020
+
+Budget 2020 (including AB1/2020)
+
+Permanent posts
+
+Temporary posts
+
+Permanent posts
+
+Temporary posts
+
+Permanent posts
+
+Temporary posts
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+AD 15
+
+1
+
+—
+
+—
+
+—
+
+1
+
+—
+
+(1 )
+
+—
+
+—
+
+2
+
+—
+
+2
+
+—
+
+AD 13
+
+4
+
+—
+
+–1
+
+—
+
+3
+
+—
+
+AD 12
+
+—
+
+2
+
+—
+
+—
+
+—
+
+2
+
+AD 11
+
+5
+
+—
+
+–1
+
+—
+
+4
+
+—
+
+AD 10
+
+2
+
+3
+
+—
+
+—
+
+2
+
+3
+
+AD 9
+
+2
+
+—
+
+—
+
+—
+
+2
+
+—
+
+AD 8
+
+3
+
+1
+
+—
+
+—
+
+3
+
+1
+
+AD 7
+
+9
+
+1
+
+—
+
+—
+
+9
+
+1
+
+AD 6
+
+4
+
+1
+
+—
+
+—
+
+4
+
+1
+
+AD 5
+
+—
+
+3
+
+—
+
+—
+
+—
+
+3
+
+Subtotal AD
+
+30
+
+12
+
+—
+
+—
+
+30
+
+12
+
+AST 11
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 10
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 9
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+AST 8
+
+—
+
+1
+
+—
+
+—
+
+—
+
+1
+
+AST 7
+
+3
+
+1
+
+—
+
+—
+
+3
+
+1
+
+AST 6
+
+3
+
+1
+
+—
+
+—
+
+3
+
+1
+
+AST 5
+
+2
+
+3
+
+—
+
+—
+
+2
+
+3
+
+AST 4
+
+3
+
+2
+
+—
+
+—
+
+3
+
+2
+
+AST 3
+
+3
+
+1
+
+—
+
+—
+
+3
+
+1
+
+AST 2
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST 1
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+Subtotal AST
+
+14
+
+10
+
+—
+
+—
+
+14
+
+10
+
+AST/SC 6
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 5
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 4
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+AST/SC 3
+
+1
+
+—
+
+—
+
+—
+
+1
+
+—
+
+AST/SC 2
+
+—
+
+2
+
+—
+
+—
+
+—
+
+2
+
+AST/SC 1
+
+—
+
+—
+
+—
+
+—
+
+—
+
+—
+
+Subtotal AST/SC
+
+1
+
+2
+
+—
+
+—
+
+1
+
+2
+
+Total
+
+45
+
+24
+
+—
+
+—
+
+45
+
+Grand total
+
+69
+
+0
+
+(1) The establishment plan accepts the following ad personam appointment: one AD 14 official may become AD 15.
+
+24
+69
+
+
