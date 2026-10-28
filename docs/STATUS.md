@@ -4,11 +4,29 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.4 (BE, FR, DE, NL). Next: F8.5 Sweden, then EU, a gap-filling sitting (BE, DE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (109), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.5 (BE, FR, DE, NL, SE). Next: F8.6 EU, then a gap-filling sitting (BE, DE, SE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (111), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.5 (2026-10-28, 11:40–12:10) — PPE recoding, Sweden
+
+**Done when met: yes.** `data/dac_ppe/SE.json` validated, profile computed, both committed (4fb2dc6, 6c4328d); CI 40677711065.
+
+**Done**
+- SOU 2021:89 volym 1 fetched from regeringen.se (URL from the manuscript's reference list only) with sha256 88646b7c…, identical to Adrian's copy; per-page text committed.
+- SE.json (17 events): first firm order window Feb 2020, Socialstyrelsen's "smärre inköp" (t0 + 2–30 d); binding act förordning 2020:126, 16 Mar (t0 + 46 d); first delivery to regions and municipalities window Mar 2020 from Figure 8.2 (t0 + 31–61 d); dedicated funding and permanent body missing (state grants cover several cost types: context); no pairs. Rules §5 Sweden a–h dated before the profile. Phrase test with probe.
+- March bar of Figure 8.2 decomposed from the PDF's vector data (`scripts/se_figure82_march.py`): about 1.07 million items, all PPE.
+
+**Open (each with reason)**
+- Order and delivery have month precision only; SOU 2020:80 (first interim report, cited for Feb–Mar detail) could narrow them. Reason: scope (one source this session); added to the gap-filling sitting.
+- Chapter 8 pp. 320–340 read in full, the rest keyword-searched; the two "missing" rows rest on that search. Reason: scope; recheck in the gap-filling sitting.
+- First order coded Feb 2020 while the manuscript (§3.1, known) calls it undated: an expected rule difference at the comparison. Reason: known history, recorded.
+
+**Review and Adrian's answer:** recommended no more now and SE added to the gap-filling sitting; Adrian "Close" (12:10).
+
+**Next:** F8.6 — EU; then gap-filling sitting (BE, DE, SE); then the comparison; then session 10.
 
 ## Fix session F8.4 (2026-10-28, 11:26–11:32) — PPE recoding, Netherlands
 
