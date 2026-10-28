@@ -405,7 +405,7 @@ survives: on IP since 2010, neither forecaster beats "no change" at a year
 
 ## 13. Significance of the deciding condition: Diebold–Mariano re-analysis (pre-registration, fix session F5)
 
-Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any computation in this section. **Evidence class: pre-registered on known history.** The data and the MSE ratios of every sample below are already known (§8–§12): 10 of the 15 samples have MSE_model < MSE_zero, 5 do not. This test can only confirm or withdraw passes; it cannot be blind.
+Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any computation in this section. **Evidence class: pre-registered on known history.** The data and the MSE ratios of every sample below are already known (§8–§12): 10 of the 15 samples have MSE_model < MSE_zero, 5 do not. **[Erratum 2026-10-28, before the run: 12 of 15 have MSE_model < MSE_zero; only the three EIA 12-month samples (CO2 1.185, electricity 1.119, IP 1.387) do not. Counted from the recorded result files; the test itself is unchanged.]** This test can only confirm or withdraw passes; it cannot be blind.
 
 **Question.** In §8–§12 every PASS required MSE_model < MSE_zero, a point comparison with no significance test, on overlapping forecasts (audit 2026-10-26b, S1). Is the model's advantage over "no change" larger than chance?
 
@@ -418,6 +418,8 @@ Registered 2026-10-28, 09:45 (Adrian: "go", with the lags below), before any com
 **Multiple testing.** Holm step-down over all 15 one-sided p-values, family-wise α = 0.05.
 
 **Pass / fail per sample.** DM-PASS if Holm-adjusted p < 0.05. The new verdict of each §8–§12 sample = its old circular-shift conditions (p < 0.0167, SMF > 0) **and** DM-PASS; the old MSE point condition is replaced. Samples with MSE_model ≥ MSE_zero cannot pass (DM ≥ 0) and stay FAIL.
+
+**Code check before the run (2026-10-28):** the 15 samples rebuilt by `analysis/smf_dm.py` reproduce the recorded n and MSE_model/MSE_zero of §8, §10, §11, §12 exactly (no DM statistic computed in that check).
 
 **Code before run.** `analysis/smf_dm.py`, reusing the series code of the four scripts; unit tests of the DM function on synthetic data (equal-loss null: rejection rate near 5%; a clearly better forecast: rejects) committed with it. Run once on committed data; output `results/smf_dm/result.txt`.
 

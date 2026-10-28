@@ -141,3 +141,40 @@ def compute_smf(
             "p_min": 1.0 / (1 + len(null_max)),
         },
     )
+
+
+def diebold_mariano(loss_model: np.ndarray, loss_bench: np.ndarray, lags: int) -> dict[str, float]:
+    """One-sided Diebold–Mariano test that the model's loss is smaller than the benchmark's.
+
+    d_t = loss_model_t - loss_bench_t. Long-run variance: Newey–West (Bartlett weights,
+    `lags` lags). Harvey–Leybourne–Newbold small-sample correction with k = lags + 1;
+    p = P(t_{n-1} < HLN) (H1: mean(d) < 0). docs/SMF_PROTOCOL.md §13.
+    Returns nan statistics if the variance estimate is not positive.
+    """
+    from scipy.stats import t as student_t
+
+    d = np.asarray(loss_model, dtype=float) - np.asarray(loss_bench, dtype=float)
+    n = len(d)
+    dc = d - d.mean()
+    v = float(dc @ dc) / n
+    for j in range(1, min(lags, n - 1) + 1):
+        v += 2.0 * (1.0 - j / (lags + 1.0)) * float(dc[j:] @ dc[:-j]) / n
+    if not v > 0:
+        return {"n": float(n), "mean_d": float(d.mean()), "dm": float("nan"), "hln": float("nan"), "p": float("nan")}
+    dm = float(d.mean() / np.sqrt(v / n))
+    k = lags + 1
+    hln = dm * float(np.sqrt((n + 1 - 2 * k + k * (k - 1) / n) / n))
+    return {"n": float(n), "mean_d": float(d.mean()), "dm": dm, "hln": hln,
+            "p": float(student_t.cdf(hln, df=n - 1))}
+
+
+def holm(pvalues: list[float]) -> list[float]:
+    """Holm step-down adjusted p-values (family-wise error), same order as the input."""
+    m = len(pvalues)
+    order = sorted(range(m), key=lambda i: pvalues[i])
+    adj = [0.0] * m
+    running = 0.0
+    for rank, i in enumerate(order):
+        running = max(running, min(1.0, (m - rank) * pvalues[i]))
+        adj[i] = running
+    return adj
