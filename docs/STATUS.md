@@ -4,11 +4,27 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.3 (BE, FR, DE). Next: F8.4 Netherlands, then SE, EU, a gap-filling sitting (BE, DE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (107), mypy, ruff, claim-word check.
+- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.4 (BE, FR, DE, NL). Next: F8.5 Sweden, then EU, a gap-filling sitting (BE, DE) and the comparison (recode the PPE case: its event files were not recovered). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (109), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.4 (2026-10-28, 11:26–11:32) — PPE recoding, Netherlands
+
+**Done when met: yes.** `data/dac_ppe/NL.json` validated, profile computed, both committed (a33a179); CI 40672653150.
+
+**Done**
+- VWS *Feitenreconstructie, tijdlijn: Persoonlijke beschermingsmiddelen* (2021) fetched with sha256 (title and URL taken from the manuscript's reference list only); text kept in reading order.
+- NL.json (18 events): first national order 6–9 Mar (t0 + 36–39 d); first delivery to ROAZ 21–22 Mar (t0 + 51–52 d), paired with an undated order (undatable pair); redistribution to care providers 13–20 Mar (t0 + 43–50 d, secondary); binding act, funding and permanent body missing. Rules §5 Netherlands a–g dated before the profile.
+- Grey-text check (oral sources) in the PDF: all order, delivery and decision passages used are documented; two context rows grey, marked. Phrase test with probe.
+
+**Open**
+- The Dutch delivery day matches a value seen in the F8.3 breach; it is not an independent confirmation. Reason: known history (recorded in §1).
+
+**Review and Adrian's answer:** recommended close; Adrian "Close" (11:32).
+
+**Next:** F8.5 — Sweden (SOU 2021:89); then EU; then a gap-filling sitting (BE, DE); then the comparison; then session 10.
 
 ## Fix session F8.3 (2026-10-28, 11:10–11:25) — PPE recoding, Germany
 

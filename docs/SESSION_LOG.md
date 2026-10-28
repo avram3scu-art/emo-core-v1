@@ -27,3 +27,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F8.1 | PPE recoding: rules + Belgium | yes | c72013b | BE.json and order file validated from Chamber Annex 5; known-history class; two citation errors fixed with a test |
 | 2026-10-28 | F8.2 | PPE recoding: France | yes | 45438bc | FR.json from the Sénat report; two readings of the first order; no paired orders; citation-phrase test; Sudhof report not to be used for DE (Adrian) |
 | 2026-10-28 | F8.3 | PPE recoding: Germany | yes | dc7fdf7 | DE.json from public Bundestag answers + TRIS record (Adrian); order and delivery are 60-day windows; blindness breach recorded (my mistake) |
+| 2026-10-28 | F8.4 | PPE recoding: Netherlands | yes | a33a179 | NL.json from the VWS fact reconstruction; order 6–9 Mar, ROAZ delivery 21–22 Mar; grey-text check |
