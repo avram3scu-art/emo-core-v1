@@ -30,7 +30,7 @@
           "first_event_ids": [
             "order_3M_ffp2"
           ],
-          "n_events": 7
+          "n_events": 8
         },
         "binding_act": {
           "lag_from_t0": {
@@ -126,6 +126,11 @@
           "order_id": "order_panscope_ffp2",
           "delivery_id": "del_panscope_ffp2",
           "reason": "delivery date missing"
+        },
+        {
+          "order_id": "order_national_producer",
+          "delivery_id": "del_national_producer",
+          "reason": "delivery date censored"
         }
       ],
       "unpaired_first_order_to_first_delivery": {
@@ -188,7 +193,7 @@
           "first_event_ids": [
             "order_3M_ffp2"
           ],
-          "n_events": 7
+          "n_events": 8
         },
         "binding_act": {
           "lag_from_t0": {
@@ -284,6 +289,11 @@
           "order_id": "order_panscope_ffp2",
           "delivery_id": "del_panscope_ffp2",
           "reason": "delivery date missing"
+        },
+        {
+          "order_id": "order_national_producer",
+          "delivery_id": "del_national_producer",
+          "reason": "delivery date censored"
         }
       ],
       "unpaired_first_order_to_first_delivery": {
@@ -346,7 +356,7 @@
           "first_event_ids": [
             "order_3M_ffp2"
           ],
-          "n_events": 7
+          "n_events": 8
         },
         "binding_act": {
           "lag_from_t0": {
@@ -442,6 +452,11 @@
           "order_id": "order_panscope_ffp2",
           "delivery_id": "del_panscope_ffp2",
           "reason": "delivery date missing"
+        },
+        {
+          "order_id": "order_national_producer",
+          "delivery_id": "del_national_producer",
+          "reason": "delivery date censored"
         }
       ],
       "unpaired_first_order_to_first_delivery": {

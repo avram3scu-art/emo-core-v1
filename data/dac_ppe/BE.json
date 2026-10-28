@@ -221,6 +221,17 @@
    "good": "FFP2 respirators"
   },
   {
+   "event_id": "order_national_producer",
+   "sublayer": "firm_order",
+   "date_status": "exact",
+   "description": "Federal order (SPF Santé publique) of surgical and FFP2 masks from a national producer, after confirmation with the AFMPS that national production will be launched (F8.8 correction, type c: omitted in the frozen file)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 373, row 742 (Questions d'enquête Saniport, Claes)",
+   "source_type": "primary",
+   "date_earliest": "2020-03-20",
+   "date_latest": "2020-03-20",
+   "good": "surgical and FFP2 masks"
+  },
+  {
    "event_id": "order_erard_gloves",
    "sublayer": "firm_order",
    "date_status": "exact",
@@ -329,6 +340,17 @@
    "source_type": "primary",
    "pairs_with": "order_panscope_ffp2",
    "good": "FFP2 respirators"
+  },
+  {
+   "event_id": "del_national_producer",
+   "sublayer": "delivery",
+   "date_status": "censored",
+   "description": "First deliveries of the national-producer order 'début août' 2020, after the observation window (F8.8 correction, type c)",
+   "source": "Chambre, Commission spéciale COVID-19, DOC 55 1394/002 (2021), Annexe 5, PDF p. 373, row 742 (Questions d'enquête Saniport, Claes)",
+   "source_type": "primary",
+   "pairs_with": "order_national_producer",
+   "end_point": "federal stock (supplier delivery to SPF/Peutie)",
+   "good": "surgical and FFP2 masks"
   },
   {
    "event_id": "del_communes",
