@@ -4,11 +4,31 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F7, F8.1–F8.7 (all six PPE files coded; gaps filled or recorded). Next: F8.8, the pre-registered comparison with the manuscript (§4 of `docs/DAC_PPE_CODING.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position:** fix sessions before session 10. Done: F1–F8 (PPE case recoded, gap-filled and compared with the manuscript: `docs/DAC_PPE_COMPARISON.md`). Next: session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (115), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
-- **Open A items (audits 26b, 27 Oct):** PPE case not in the repo (F8). SMF deciding condition tested in F5 (6 of 12 passes survive).
+- **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now.
+
+## Fix session F8.8 (2026-10-28, 14:14–15:07) — PPE comparison with the manuscript
+
+**Done when met: yes.** `docs/DAC_PPE_COMPARISON.md` and record rows committed (63ab805, 7847c9e); CI 40702495491.
+
+**Done**
+- Freeze: six files frozen at 8ebcf9e (115 tests, profiles current), new side written out first (`data/dac_ppe/frozen_summary.md`, 7edcb3d); then Tables 2–5 opened. Figures 1–2 not in the repo (legends only; no images in the .docx).
+- Comparison per item (same / overlapping / different, kinds a–d). Same: BE first delivery 46, all five BE paired lags, gloves, Pan Scope exclusion, identification under shared readings; five of six binding acts; NL order; EU binding act and stockpile delivery. Overlapping: FR, NL, SE deliveries; SE and DE orders. Different: BE binding act 53 vs 43 (a, b), DE first delivery 41–50 vs 51–52 (a, b; added source, "Mitte" convention), BE national-producer delivery (censored), EU joint-procurement delivery (no source in new pool).
+- **Claude's mistake (type c):** the BE national-producer order of 20 Mar (Annex 5 row 742) had been omitted; added with a censored delivery; no lag changes; listed before/after.
+- Data statement: every item citable from the new files with the new value; rules and F8.7-added sources stated; the manuscript's §4.3 "within six days" sentence does not hold and must be recomputed.
+- Supporting Information opened afterwards (Adrian): only Table S1; Ärzteblatt 27 Mar reread: undated; no classification changes; no type (d) found.
+
+**Open (each with reason)**
+- Manuscript sources unnamed for BE binding act (43), DE delivery (51–52), SE lower bound (41), EU joint procurement (≥ 62). Reason: the manuscript's original event files were not recovered (F1); not decidable.
+- Defence fabric masks (5 May) and Justice filters (row 1026) not coded. Reason: scope; no first event changes, fabric masks may fall outside the PPE definition.
+- BE reading B rests on an ambiguous "option sur/commande" row. Reason: rule choice (§5 Belgium b), kept and labelled (Adrian accepted the recommendation by closing).
+
+**Review and Adrian's answer:** recommended opening the Supporting Information (Adrian: "Open", 15:04), then close; Adrian "Close" (15:07).
+
+**Next:** session 10 (mpox) per `docs/PLAN.md`. The manuscript's revision (recomputed cross-case sentence, data statement) is a separate task when Adrian chooses it.
 
 ## Fix session F8.7 (2026-10-28, 13:26–14:13) — PPE gap-filling
 
