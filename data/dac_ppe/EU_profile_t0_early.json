@@ -1,0 +1,56 @@
+{
+  "standard_version": "1.1",
+  "case_id": "EU",
+  "t0_event_id": "ecdc_first_ra",
+  "end_point": "member states",
+  "missing": [
+    "dedicated_funding",
+    "firm_order",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {},
+  "identification_note": "Not testable: no EU firm order; the first delivery is not linked to a dated order.",
+  "profiles": [
+    {
+      "reading": {},
+      "sublayers": {
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 65,
+            "max_days": 65
+          },
+          "first_event_ids": [
+            "reg_2020_402"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 107,
+            "max_days": 107
+          },
+          "first_event_ids": [
+            "first_resceu_delivery"
+          ],
+          "n_events": 1
+        },
+        "counter_measure": {
+          "lag_from_t0": {
+            "min_days": 55,
+            "max_days": 55
+          },
+          "first_event_ids": [
+            "de_export_ban"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": null,
+      "secondary_end_points": {},
+      "identification": {}
+    }
+  ]
+}

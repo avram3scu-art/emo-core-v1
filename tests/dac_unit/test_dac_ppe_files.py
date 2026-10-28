@@ -297,3 +297,8 @@ def test_belgian_added_citations_match_their_pages():
             if phrase not in _pages(fname).get(page, "") or page not in cited_pages(sources[k], DOC_KEYS[fname]):
                 bad.append((k, fname, page, phrase))
     assert not bad, bad
+
+
+# Session 10b: ECDC's first risk assessment, added as an early-warning alternative t0 (docs/DAC_T0_EARLY_WARNING.md).
+DOC_KEYS.update({"../dac_t0/ecdc_2020-01-09_tab_ncov.txt": "Threat Assessment Brief"})
+EU_PHRASES["ecdc_first_ra"] = [("../dac_t0/ecdc_2020-01-09_tab_ncov.txt", 1, "THREAT ASSESSMENT BRIEF Pneumonia cases possibly associated with a novel coronavirus in Wuhan, China 9 January 2020")]

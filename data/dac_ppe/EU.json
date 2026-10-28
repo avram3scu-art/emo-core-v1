@@ -6,7 +6,8 @@
   "t0_institution": "World Health Organization (IHR Emergency Committee)",
   "t0_rule": "WHO declaration of a Public Health Emergency of International Concern (docs/DAC_PPE_CODING.md §2)",
   "alternative_t0": [
-   "who_pandemic"
+   "who_pandemic",
+   "ecdc_first_ra"
   ],
   "response_scale": "EU institutions (Commission); member-state acts are context, except acts against the EU response (counter_measure)",
   "start_rule": "First purchase contract for PPE signed by the EU institutions for general supply; tenders (joint procurement) and purchases by rescEU host member states excluded",
@@ -32,7 +33,8 @@
     "Sénat rapport no. 199 (2020-2021), tome I (EU section, p. 399-400)",
     "Belgian Annex 5 (EU rows)",
     "TRIS notification 2020/0104/D",
-    "Amending budgets No 1 and 2/2020, OJ L 126 (F8.7 additions)"
+    "Amending budgets No 1 and 2/2020, OJ L 126 (F8.7 additions)",
+    "ECDC, Threat Assessment Brief, 9 January 2020 (session 10b)"
    ],
    "search_date": "2026-10-28",
    "not_accessed": [
@@ -177,6 +179,16 @@
    "date_status": "missing",
    "description": "No permanent body for the hazard created in the window (rescEU medical stockpiling is a new capacity of an existing reserve; rule §5 EU f)",
    "source": "Decision 2020/414: searched in full",
+   "source_type": "primary"
+  },
+  {
+   "event_id": "ecdc_first_ra",
+   "sublayer": "context",
+   "date_status": "exact",
+   "date_earliest": "2020-01-09",
+   "date_latest": "2020-01-09",
+   "description": "ECDC's first risk assessment on the hazard: Threat Assessment Brief 'Pneumonia cases possibly associated with a novel coronavirus in Wuhan, China', dated 9 January 2020 on the document and its publication page. Early-warning alternative t0 (docs/DAC_T0_EARLY_WARNING.md)",
+   "source": "ECDC, Threat Assessment Brief, 9 January 2020, PDF p. 1 (data/sources/dac_t0/ecdc_2020-01-09_tab_ncov.txt, sha256 2963d5b9...)",
    "source_type": "primary"
   }
  ]

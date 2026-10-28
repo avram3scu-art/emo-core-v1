@@ -6,7 +6,8 @@
     "t0_institution": "World Health Organization (Director-General, on IHR Emergency Committee advice)",
     "t0_rule": "WHO declaration of a PHEIC for the multi-country monkeypox outbreak (docs/DAC_MPOX_CODING.md §2)",
     "alternative_t0": [
-      "who_ec1"
+      "who_ec1",
+      "ecdc_first_ra"
     ],
     "response_scale": "EU institutions (Commission incl. HERA/HaDEA); member-state acts are context, except acts against the EU response (counter_measure)",
     "start_rule": "First purchase contract for mpox vaccine (MVA-BN) signed by the Commission for supply to member states; tenders, frameworks without purchase and announcements excluded",
@@ -29,7 +30,8 @@
         "WHO statements of 23 July 2022 and 11 May 2023",
         "European Commission press releases/news of 14 Jun, 28 Jun, 18 Jul, 7 Sep, 17 Nov 2022 (Representation copies)",
         "Union Register of medicinal products, Imvanex (procedure 156674, decision C(2022) 5446 and annex)",
-        "health.ec.europa.eu page on C(2022) 5436 (decision text not readable)"
+        "health.ec.europa.eu page on C(2022) 5436 (decision text not readable)",
+        "ECDC, Rapid Risk Assessment, Monkeypox multi-country outbreak, 23 May 2022 (session 10b)"
       ],
       "search_date": "2026-10-28",
       "not_accessed": [
@@ -182,6 +184,16 @@
       "date_status": "missing",
       "description": "No member-state act against the EU response found in the opened records; no dedicated search for such acts was made",
       "source": "Records listed in case.source_pool.searched",
+      "source_type": "primary"
+    },
+    {
+      "event_id": "ecdc_first_ra",
+      "sublayer": "context",
+      "date_status": "exact",
+      "date_earliest": "2022-05-23",
+      "date_latest": "2022-05-23",
+      "description": "ECDC's first risk assessment on the outbreak: Rapid Risk Assessment 'Monkeypox multi-country outbreak', dated 23 May 2022 on the document and its publication page. Early-warning alternative t0 (docs/DAC_T0_EARLY_WARNING.md). Earlier ECDC items (news, epidemiological update) are not risk assessments under the rule",
+      "source": "ECDC, Rapid Risk Assessment, Monkeypox multi-country outbreak, 23 May 2022 (data/sources/dac_t0/ecdc_2022-05-23_rra_mpox.txt, sha256 13ab830a...)",
       "source_type": "primary"
     }
   ]

@@ -1,0 +1,82 @@
+{
+  "standard_version": "1.1",
+  "case_id": "EU-mpox",
+  "t0_event_id": "ecdc_first_ra",
+  "end_point": "member states",
+  "missing": [
+    "counter_measure",
+    "dedicated_funding",
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {},
+  "identification_note": "Not met: one paired order (14 June contract -> 28 June delivery); later purchases have no linked dated delivery. Decision-limited and supply-limited delay cannot be separated.",
+  "profiles": [
+    {
+      "reading": {},
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 22,
+            "max_days": 22
+          },
+          "first_event_ids": [
+            "hera_contract_1",
+            "hera_purchase_2",
+            "hera_purchase_3"
+          ],
+          "n_events": 3
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 60,
+            "max_days": 60
+          },
+          "first_event_ids": [
+            "imvanex_mpox_authorisation"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 36,
+            "max_days": 36
+          },
+          "first_event_ids": [
+            "first_delivery_spain"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [
+        {
+          "order_id": "hera_contract_1",
+          "delivery_id": "first_delivery_spain",
+          "order_end_point": "member states",
+          "end_point": "member states",
+          "good": "MVA-BN vaccine",
+          "interval": {
+            "min_days": 14,
+            "max_days": 14
+          }
+        }
+      ],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 14,
+        "max_days": 14
+      },
+      "secondary_end_points": {},
+      "identification": {
+        "MVA-BN vaccine": {
+          "n_paired_orders": 1,
+          "order_date_spread": {
+            "min_days": 0,
+            "max_days": 0
+          },
+          "minimum_for_separation_met": false
+        }
+      }
+    }
+  ]
+}

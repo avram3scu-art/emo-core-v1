@@ -1,0 +1,1287 @@
+Source: https://www.ecdc.europa.eu/sites/default/files/documents/Monkeypox-multi-country-outbreak.pdf
+Accessed: 2026-10-28
+sha256: 13ab830a04aa5aa6640ab26eedafee40dfbcbacb5eec4a68fa9bdac95cf82ea0
+
+all
+
+
+
+
+                                                                                  RAPID RISK ASSESSMENT
+
+Monkeypox multi-country outbreak
+23 May 2022
+
+
+
+
+      Key messages
+      Cases of monkeypox (MPX) acquired in the EU have recently been reported in nine EU Member States (Austria,
+      Belgium, France, Germany, Italy, Portugal, Spain, Sweden, and the Netherlands).
+      Monkeypox (MPX) does not spread easily between people. Human-to-human transmission occurs through close
+      contact with infectious material from skin lesions of an infected person, through respiratory droplets in
+      prolonged face-to-face contact, and through fomites. The predominance, in the current outbreak, of diagnosed
+      human MPX cases among men having sex with men (MSM), and the nature of the presenting lesions in some
+      cases, suggest transmission occurred during sexual intercourse.
+      Based on ECDC’s epidemiological assessment, the likelihood of MPX spreading in persons having multiple
+      sexual partners in the EU/EEA is considered high. Although most cases in current outbreaks have presented
+      with mild disease symptoms, monkeypox virus (MPXV) may cause severe disease in certain population groups
+      (young children, pregnant women, immunosuppressed persons). However, the likelihood of cases with severe
+      morbidity cannot be accurately estimated yet. The overall risk is assessed as moderate for persons having
+      multiple sexual partners (including some groups of MSM) and low for the broader population.
+      Treatment is mainly symptomatic and supportive, including prevention and treatment of secondary bacterial
+      infections. Smallpox vaccine can be considered for post-exposure prophylaxis of close contacts at increased
+      risk for severe disease, however careful benefit/risk assessment should be performed for the exposed
+      individual. Important information on the use of currently available smallpox vaccines is missing for groups at
+      increased risk for severe disease. In addition, antivirals are potential treatment options for severe cases.
+      EU/EEA countries should focus on prompt identification, management, contact tracing and reporting of new
+      MPX cases. Countries should update their contact tracing mechanisms, their diagnostic capacity for
+      orthopoxviruses and review the availability of smallpox vaccines, antivirals and personal protective equipment
+      (PPE) for health professionals.
+      An interim case definition is proposed for case reporting. Guidance for the management of MPX cases and
+      close contacts is also included. Cases should remain isolated until their rash heals completely, avoiding contact
+      with immunosuppressed persons and pets. Abstaining from sexual activity and close physical contact is also
+      advised until the rash heals. Most cases can remain at home with supportive care.
+      Close contacts of MPX cases should self-monitor for the development of symptoms up to 21 days from the last
+      exposure to a case.
+      Healthcare workers should wear appropriate PPE (gloves, water-resistant gown, FFP2 respirator) when
+      screening suspected cases or caring for a MPX case. Laboratory personnel should also take precautions to
+      avoid occupational exposure.
+
+
+
+Suggested citation: European Centre for Disease Prevention and Control. Monkeypox multi-country outbreak – 23 May 2022.
+ECDC: Stockholm; 2022.
+© European Centre for Disease Prevention and Control, Stockholm, 2022
+RAPID RISK ASSESSMENT                                                    Monkeypox multi-country outbreak – 23 May 2022
+
+
+
+    Close contacts of a MPX case should be deferred from blood, organ or bone marrow donations for a minimum
+    of 21 days from the last day of exposure.
+    Proactive risk communication and multiple community engagement activities should be carried out to increase
+    awareness, provide updates and guidance to those at increased risk and the wider public. Risk communication
+    messages should stress that MPXV is spread through close contact between people, especially in the same
+    household, potentially including the sexual route. A balance should be kept between informing those most at
+    risk but also communicating that the virus does not spread easily between people the risk to the broader
+    population is low.
+    There is a potential risk of human-to-animal transmission in Europe, therefore close intersectoral collaboration
+    between human and veterinary public health authorities working from a ‘One Health’ perspective is needed to
+    manage exposed pets and prevent the disease from being transmitted in wildlife. EFSA is not aware to date of
+    any reports on infections in animals (pets or wild animals) in the EU.
+    Several unknowns still exist regarding this outbreak and ECDC will continue to monitor developments closely
+    and update the risk assessment as new data and information become available.
+
+
+
+
+Event background
+On 7 May 2022, the United Kingdom (UK) reported an imported case of monkeypox (MPX) in a person travelling
+from Nigeria. The case reported developing a rash-like illness on 29 April 2022 and travelled from Lagos to London
+on 3-4 May. The diagnosis was confirmed by monkeypox virus (MPXV) PCR on a vesicular swab on 6 May by the
+UK Health Security Agency (UKHSA) Rare and Imported Pathogens Laboratory.
+On 13 May 2022, the UK reported two further cases of MPX who are part of the same family and not linked to the
+single imported case from Nigeria which was notified on 7 May. The cases were confirmed by PCR testing on
+vesicle swabs. A third family member had previously developed a rash but recovered fully. None of the individuals
+in this cluster had travelled or had contact with anyone with a relevant travel history [1].
+On 15 May 2022, the UK reported four additional cases of MPX, confirmed by PCR. None of these cases have
+known epidemiological links to the imported case from Nigeria (notified on 7 May) or to the family cluster (notified
+on 13 May). The four cases were men who have sex with men (MSM) and presented with a vesicular rash-like
+illness. They were identified through attendance at genitourinary medicine (GUM) clinics. The cases are being
+managed in high consequence infectious diseases units in the UK [1].
+On 18 May 2022, two additional cases (also MSM) were reported, one in London and one in the South-East of
+England[1].
+On 20 May 2022, 11 additional cases were reported by the UKHSA, bring the total number of MPX cases confirmed
+in England to 20 [1]. All cases reported in the UK have been confirmed as caused by the MPXV West African clade.
+Starting from the 18 May, multiple EU/EEA Member States reported additional suspected or confirmed cases:
+•     On 18 May, Portugal reported 14 cases of MPXV confirmed by real-time PCR in the Lisbon and Tagus River
+      Valley Region. All cases were men with a clinical presentation of rash (some ulcerative), fever, myalgia and
+      asthenia. None of the cases needed hospitalisation [2]. On 20 May, nine additional confirmed cases were
+      reported, bringing the total number of confirmed cases to 23. In two cases, the west African clade was identified.
+•     On 19 May, Spain reported seven confirmed and 23 suspected cases of MPX, all among men. On 20 May, 16
+      additional confirmed cases were reported [3]. On 22 May, seven more cases were confirmed, with 39 new
+      suspected cases under investigation [4].
+•     On 19 May, Belgium reported a confirmed case in a man with travel history to Lisbon, Portugal. His partner
+      developed similar symptoms and was confirmed on the 20 May. As of 22 May, a total of four confirmed cases had
+      been reported [5,6].
+•     On 19 May, Germany confirmed its first case in a man with travel history to Spain and Portugal. On 20 May, two
+      more confirmed cases were reported. [7].
+•     On 20 May, France reported its first confirmed case in a man with no travel history, with three additional cases
+      under investigation [8].
+•     On 20 May, Italy reported one confirmed case of MPX in a man who required hospitalisation and had travel
+      history to Spain. On 21 May, two further confirmed cases were reported [9].
+•     On 18 May, Sweden reported a confirmed case in a man [10]
+•     On 20 May, the Netherlands reported one confirmed case, a man with travel history to Belgium [11].
+•     On 22 May, Austria reported its first confirmed case [12].
+As of 23 May 2022, 67 confirmed cases had been reported in nine EU/EEA Member States and at least an
+additional 42 suspected cases were under investigation.
+
+
+
+
+                                                            2
+RAPID RISK ASSESSMENT                                               Monkeypox multi-country outbreak – 23 May 2022
+
+
+Cases have also been reported outside Europe: on 18 May 2022, Canada reported two confirmed and 20 suspected
+cases who were seen at sexually transmitted infection(STI) clinics, all men and currently undergoing laboratory
+testing in Montreal, Quebec[13]; one confirmed case in Boston, United States, in an adult male with recent travel
+history to Canada [14] and one probable case in New York City [15]. On 19 May 2022, Australia reported two
+confirmed cases, one was a man with travel history to the UK [16]. On 20 May 2022, Israel reported a confirmed
+case and additional suspected cases [17]. On 22 May, Switzerland reported a confirmed case with travel history to
+Europe [18].
+Figure 1. Geographical distribution of confirmed cases of MPX in EU/EEA countries, as of 23 May
+2022 (11:00)
+
+
+
+
+Figure 2. Geographical distribution of confirmed cases of monkeypox in non-endemic countries, as of
+23 May 2022 (11:00)
+
+
+
+
+                                                       3
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+
+Situation in west and central Africa in 2022
+Generally, outbreaks of MPX continue to be reported in countries from west and central Africa [19]. Cameroon
+reported an outbreak of MPX in December 2021 and, as of 17 February 2022, three confirmed and 25 suspected
+cases have been reported, including two deaths. Cases have been reported from countries in central, north-
+western and south-western regions of the continent. Cases of MPX are sporadically reported in Cameroon, with
+more than half of the geographical regions in Africa reporting at least one case between 2020 and 2022.
+The Central African Republic (CAR) reported six confirmed cases of MPX including two deaths on 14 March 2022.
+Between 1 January and 17 April 2022, 1 152 suspected cases of MPX including 55 deaths (case-fatality rate of
+4.8%) were reported in 54 health zones in 14 provinces of the Democratic Republic of the Congo (DRC). In the
+equivalent 2021 time period, 138 suspected cases and 14 deaths were reported (case-fatality rate of 10.1%).
+According to studies, the MPXV circulating in the DRC and CAR belong to the more virulent Congo Basin (CB) clade
+of the virus.
+Nigeria reported 46 suspected (of which 15 confirmed) cases of MPX between 1 January and 30 April 2022.
+Between 2017-2022 Nigeria reported 241 confirmed cases (range 8-88 per year) including eight deaths (case-
+fatality ratio, CFR 3.3%) [19,20].
+
+
+Disease background
+Disease characteristics
+Monkeypox (MPX) is a zoonotic disease and is currently the most prevalent orthopoxvirus infection in humans after
+the eradication of smallpox and the cessation of universal smallpox vaccination [21-23]. Human MPX cases are
+increasingly reported in several African countries after its first identification as a human pathogen in the DRC in
+1970, due to a combination of factors including both increased exposure (deforestation, conflict and displacement),
+as well as improved surveillance and laboratory capacity in the African region [24-26].
+In endemic areas, MPXV is probably maintained in nature through circulation among a number of mammals,
+including squirrels, Gambian pouched rats (Cricetomys gambianus), striped mice, dormice and primates [25], with
+occasional spill-over events to humans [27-30]. In endemic areas, MPXV is transmitted to humans through a bite
+or direct contact with an infected animal’s blood, meat, bodily fluids or cutaneous/mucosal lesions [21].
+Sequencing has identified two distinct clades of MPXV [31]. The West African clade is known to occur from western
+Cameroon to Sierra Leone and carries a <1% CFR, whereas the Congo Basin clade has been detected from central
+and southern Cameroon to the DRC and is considered more virulent with a CFR >10% [32,33].
+The largest West African clade MPX outbreak identified to date was in Nigeria in 2017, with 146 suspected and 42
+confirmed cases [20,34]. In 2018, three unlinked travel-related MPX cases were identified in Israel, the UK, and
+Singapore [35-37]. These exportations represent the first time that a human host was documented to transfer
+MPXV from the African continent. However, MPX outbreaks in animals in laboratories and zoos, with no clearly
+identified source of infection, have been reported outside the African continent [38-40].
+In 2003, the US Centers for Disease Control (CDC) reported a total of 81 human MPX cases after close contact with
+pet mammals, predominantly rodents. No human-to-human transmission was identified, and none resulted in
+death. The cases were connected to the importation of small mammals from Ghana to Texas as the probable
+source of introduction of the virus into the US. The spread of the virus between federal states was connected to
+infected pet prairie dogs that were-housed with rodents of African origin [41].
+Monkeypox does not spread easily between people. Between humans, the virus can be transmitted by respiratory
+droplets during direct and prolonged face-to-face contact. In addition, monkeypox virus can be transmitted by
+direct contact with body fluids of an infected person, contact of mucosa or non-intact skin with open rash lesions
+or with virus-contaminated objects, such as bedding or clothing [22,25]. Sexual transmission of monkeypox has
+been described, but infrequently, in the literature. Ogoima et al. [42], in reporting the 2017 human MPX outbreak
+in Nigeria, hypothesised that sexual transmission was a plausible route of infection as it involved close skin-to-skin
+contact during sexual intercourse or transmission via genital secretions.
+Infection of sexual partners, both female and male, has been previously reported for vaccinia virus, another virus
+of the Orthopoxvirus genus, post smallpox vaccination [43,44]. Vaginal lesions occurred in the female partner of a
+recently vaccinated military man who removed bandages covering his vaccination site, four days after unprotected
+sexual intercourse, preceded by digital vaginal contact [43]. A painful perianal rash and a lesion on the upper lip
+were reported by a male patient ten days after sexual intercourse with a recently vaccinated man who did not
+cover his vaccination site [45]. Further transmission from this patient, while he was experiencing perianal rash,
+occurred in a male sexual contact who experienced general symptoms and papular lesions on his penis two days
+after sexual intercourse.
+
+
+
+
+                                                           4
+RAPID RISK ASSESSMENT                                                    Monkeypox multi-country outbreak – 23 May 2022
+
+
+The incubation period for MPX is usually 6 to 13 days but can range from 5 to 21 days [25]. The illness typically
+lasts for two to four weeks. Disease usually begins with fever, myalgia, fatigue and headache [36]. Within three
+days from the onset of the prodrome symptoms, a centrifugal maculopapular rash starts from the site of primary
+infection and rapidly spreads to other parts of the body. Palms and soles are involved in cases of the disseminated
+rash, which is a characteristic of the disease. The lesions progress, usually within 12 days, simultaneously from the
+stage of macules to papules, vesicles, pustules, crusts and scabs before falling off [46]. The lesions may be
+centrally depressed and can be extremely itchy and secondary bacterial infection may occur if scratching occurs.
+Lesions on oral or ophthalmic mucosa (enanthem) may also be present. Prior to and concomitant with the rash,
+lymphadenopathy is observed in many patients, which is usually not observed in smallpox or varicella [22,47]. It
+should be noted that the clinical manifestations in travel-related cases detected in western countries were usually
+mild, sometimes with very few lesions. The onset of the rash is considered the start of the infectious period;
+however, it is believed that persons with prodrome symptoms can also transmit MPXV [48].
+The majority of human MPX cases experience mild to moderate symptoms. Complications in endemic countries
+include encephalitis, secondary skin bacterial infections, dehydration, conjunctivitis, keratitis, and pneumonia. The
+case-fatality rate of MPX ranges from 0% to 11% in outbreaks in endemic areas with mortality mostly affecting
+young children [25]. Little information is available on MPX in immunocompromised patients. In the 2017 Nigeria
+outbreak, patients with concurrent HIV-infection had more severe morbidity with more skin lesions and associated
+genital ulcers as compared with HIV-negative individuals. No deaths were reported among HIV-positive patients
+[42]. Major disease sequelae are usually disfiguring scars and permanent corneal lesions [47].
+The route of infection (invasive, such as animal bite, vs. exposure to fomites) plays a role, with invasive modes of
+exposure causing more severe disease and shorter incubation period [49].
+Considering varicella as the most relevant differential diagnosis, electron microscopy was traditionally used in the
+past to distinguish herpesviruses from orthopoxviruses. Currently, MPXV real-time polymerase chain reaction (Real
+Time-PCR) on suspected skin lesions is used. Scabs, swabs and aspirated lesion fluid should be preferably used for
+PCR over blood due to limited duration of viremia. These samples can be transported at room temperature and
+without transport media; blood and serum for serological tests can be transported at room temperature, however,
+tissue biopsies should be shipped frozen on dry ice. Formalin-fixed samples can be sent at room temperature [50].
+Results from scabs, swabs and aspirated lesion fluid specimens show the best correlation with both infectivity and
+the clinical course of infection. Recent Real Time-PCR approaches can also discriminate the two MPXV clades
+described above. Serology has limited value due to the immunological cross-reactivity between human-pathogenic
+orthopoxviruses, but it is used to monitor antibody response in vaccinated individuals. However, for contact
+investigations, IgM and IgG detection is available in some laboratories. Immunohistochemistry can potentially be
+used to identify antigens in biopsy samples.
+Treatment is primarily symptomatic and supportive (alleviation of fever and pruritus, hydration), including
+prevention and treatment of secondary bacterial infections. Antivirals tecovirimat, brincidofovir and cidofovir are
+potential options for severe cases [25]. Only Tecovirimat has market authorisation in the EU for the treatment of
+orthopoxvirus infection, including MPX. Limited data on efficacy and safety exist currently, while clinical studies are
+ongoing in Africa [51].
+Previous vaccination against smallpox can confer cross-protection against monkeypox, which was estimated from
+older studies to be as high as 85% [22]. The protective effect of smallpox vaccination wanes with time, although
+serosurveys indicate that it can last more than20 years. However, it is believed that despite the waning effect
+smallpox vaccine confers, lifelong protection against severe disease can occur due to memory B and T cells
+therefore some degree of protection should be expected in the population of adults in the EU/EEA currently over
+50 years of age [52]. No vaccine is currently authorised in the EU against MPX, but early post-exposure vaccination
+(within four days of exposure to a MPX case) with smallpox vaccine may prevent the disease or make its course
+less severe [53,54]. A third generation, non-replicating smallpox vaccine (ImvanexTM - Modified Vaccinia Ankara)
+was authorised under exceptional circumstances by EMA in 2013 for use against smallpox [55]. This vaccine has
+indication for use in patients with HIV infection for smallpox, but currently has no authorisation for use against
+MPX [56]. Earlier generation smallpox vaccines have been used for years (DryvaxTM and ACAM2000TM), however
+they are associated with severe side effects, including cardiac side effects, and they are no longer licensed in the EU.
+Monkeypox virus is not considered a biological agent of concern for biosecurity according to the U.S. CDC list of
+bioterrorism agents [57], while it is considered an ‘agent with high threat for deliberate release’ using the matrix
+developed by the EU task force on Bioterrorism (BICHAT) [58]. Although the case-fatality rate of the pathogen is
+low, its relative environmental stability and persistence (see below) and transmission pathways, in addition to the
+lack of immunity in the population, the limited availability of effective treatments and vaccination, make it an agent
+which could represent a biological threat in case of accidental spill or intentional release.
+
+
+
+
+                                                           5
+RAPID RISK ASSESSMENT                                                        Monkeypox multi-country outbreak – 23 May 2022
+
+
+
+
+ECDC risk assessment for the EU/EEA
+This assessment is based on evidence available to ECDC at the time of publication. It follows the ECDC rapid risk
+assessment methodology, where the overall risk is determined by a combination of the probability of infection and
+the impact of the disease on the affected population [59]. ECDC will keep monitoring the event and will reassess
+the risk depending on its evolution and the implemented response measures.
+
+
+What is the risk of further spread of monkeypox in EU/EEA
+countries?
+Risk in persons with multiple sexual partners, including some MSM
+Human-to-human transmission of MPX occurs through close contact with infectious material from skin lesions of an
+infected person, and also through respiratory droplets in prolonged face-to-face contact and through fomites. The
+predominance, in the current outbreak, of diagnosed human MPX cases among MSM, and the nature of the
+presenting lesions in some cases, suggest that transmission occurred during sexual intercourse. Transmission
+through intact skin contact is less likely but cannot be excluded. Although sequencing data are not yet available to
+indicate that the outbreak is the result of one introduction, the cases of MPX within parts of the MSM community
+whose sexual networks1 are inter-connected could be considered a possible source of introduction.
+Particular sexual practices (e.g. having multiple casual sexual contacts and/or multiple sexual partners, attending
+chemsex parties) that may be present within some parts of the MSM community could further facilitate the
+transmission of monkeypox. Outbreaks of other sexually transmitted infections among MSM can be linked to travel
+abroad and to social and mass gathering events (e.g., pride events) [60-62]. Several such events are taking place
+in Europe over the spring and summer months, which can contribute to further accelerate the transmission of
+MPXV. In addition, smallpox vaccination, which confers cross-protection, has been discontinued since the 1980s
+and only a small percentage of military and frontline health professionals have been vaccinated in recent years.
+Therefore, a large part of the population is vulnerable to MPXV. The probability of further spread of MPXV among
+persons with multiple sexual partners in interconnected sexual networks (including some groups of MSM) in
+EU/EEA countries and globally, in the coming months, is therefore assessed as high.
+While most MPX cases reported thus far in this outbreak have been described as mild, the number of reported
+cases is too low to reliably estimate rates of severe morbidity and mortality, and a clear overview of the clinical
+presentations in the reported cases is currently lacking. Severity estimates in the literature exist from endemic
+countries and the 2003 USA outbreak. In Nigeria, the CFR is estimated at 3.3% for cases diagnosed between 2017-
+2022, however, it is a different health care and population setting, where the disease is endemic and is probably
+transmitted through different routes (e.g., more frequent contact with animals). In the 2003 outbreak in the USA,
+which was exclusively driven by contact with infected pets (rodents), five out of 34 confirmed cases (15%) were
+defined as severely ill, and no deaths were reported. Patients under 18 years of age did not develop severe illness
+more frequently, compared to older patients [63]. These severity estimates are probably biased upwards.
+Immunocompromised patients are believed to be more at risk for severe disease and the prevalence of HIV among
+MSM is higher than in the broader population [64]. However, most people living with human immunodeficiency
+virus (PLWHIV) in EU/EEA (range 67–87%) are receiving antiretroviral treatment, and are not severely
+immunocompromised [65]. Moreover, some treatment options are available for severe MPX cases. Therefore, the
+impact of MPX is assessed as low, which combined with the high probability of infection leads to an overall
+moderate risk for persons with multiple sexual partners.
+It should be noted that the above-mentioned moderate risk may be higher for older people who have multiple
+sexual partners or people with untreated HIV infection. ECDC will reassess the risk as more information (including
+clinical presentation and outcomes) becomes available.
+
+Risk for the broader population
+Based on the evidence from the cases in this outbreak detected to date, overall, the probability of further spread of
+MPXV among the broader population in EU/EEA countries and globally in the coming months, is assessed as very
+low leading to an overall low risk for the general population. However, the individual risk for very young children,
+pregnant women, elderly or immunocompromised individuals among close contacts of MPX cases may be high due
+to the higher impact of the disease in these groups.
+
+
+
+
+1
+ Sexual networks are groups of people who are connected to one another sexually. The different behaviour of those within the
+group can, for example, affect how quickly STIs can spread through a network.
+
+
+
+
+                                                              6
+RAPID RISK ASSESSMENT                                                          Monkeypox multi-country outbreak – 23 May 2022
+
+
+Risk for health professionals
+Healthcare workers
+Transmission to HCWs exposed to patients with MPX is possible, given the risk of transmission of other
+orthopoxviruses, such as smallpox, and has been reported in outbreaks in endemic countries [42,66]. In a study of
+57 HCWs exposed to patients with MPX, including nursing staff, radiology technicians, emergency department staff
+and physicians, no case of infection was documented [67]. One HCW in this study had evidence of recent
+orthopoxvirus seroconversion but had also received smallpox vaccination four months before being exposed. In
+another outbreak report, monkeypox was transmitted to a HCW, whose only identified exposure was the changing
+of potentially contaminated bedding of a hospitalised patient with MPX [35].
+The probability of MPX transmission to HCWs wearing appropriate personal protective equipment (a disposable
+gown, disposable gloves, disposable shoe or boots covers, respiratory protection (Filtering Face Piece (FFP) 2
+respirator), and eye splash protection (goggles or visor) is very low, with the disease having an estimated low
+impact, leading to an overall low risk.
+The risk to HCWs with unprotected close contact with MPX cases (e.g. contact face-to-face for prolonged time,
+contact with open lesions without gloves, intubation or other invasive medical procedure) is assessed as moderate,
+equivalent to that of a close contact.
+Laboratory personnel
+Occupational exposure and infection from orthopoxviruses have been occasionally reported among laboratory
+personnel handling virus-containing specimens [68,69].
+The risk of occupational exposure is estimated to be low for trained laboratory personnel following appropriate
+biosafety procedures [70].
+Unprotected occupational exposure in a laboratory, particularly involving spillage or aerosolisation with exposure of
+mucosa, carries high probability of infection and moderate risk of the disease (due to the direct exposure of
+mucosae to potentially significant quantity of virus). The risk for unprotected laboratory personnel is assessed as
+high.
+Due to an expected higher impact, the risk may be higher for exposed HCWs and laboratory personnel who are
+older or immunocompromised.
+Table 1. Summary of risk assessed for the different population categories
+                                                                                  Health professionals
+                      Persons with
+                    multiple sexual       Broader                 HCWs                            Laboratory personnel
+                   partners, including   population
+                       some MSM                       Proper        Unprotected        Proper procedure and       Unprotected
+                                                       PPE           exposure                  PPE                 exposure
+   Probability            High            Very low    Very low           High                 Very low                   High
+     Impact               Low               Low         Low              Low                    Low                 Moderate
+
+
+
+   Overall risk         Moderate            Low        Low           Moderate                   Low                      High
+
+
+The risk may be higher for certain people in some of the above categories, particularly very young children,
+pregnant women, elderly, or immunocompromised persons.
+
+Risk of transmission through substances of human origin
+No cases of monkeypox virus transmission through substances of human origin have ever been documented.
+However, there are reported cases of virus transmission from mother to child during pregnancy [71], and animal
+studies show the presence of virus in blood, tissues and organs of infected animals.[72,73] Existence of viremia
+(i.e. blood specimens positive for viral DNA) has been shown. The duration of viremia is unclear [74], and there
+are no data on viraemia in asymptomatic patients (including during the incubation period). Even though
+information is limited, it is likely that monkeypox virus is transmissible through substances of human origin, but the
+overall risk for recipients in the EU/EEA is low.
+
+
+
+
+                                                              7
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+Risk of spill-over event to animal species in Europe
+Currently, little is known about the suitability of European peri-domestic (mammalian) animal species to serve as a
+host for monkeypox virus. However, rodents, and particularly species of the family of Sciuridae (squirrels) are likely
+to be suitable hosts, more so than humans (see disease background), and transmission from humans to (pet)
+animals is theoretically possible. Such a spill-over event could potentially lead to the virus establishing in European
+wildlife and the disease becoming an endemic zoonosis. In the US, there is no evidence that the virus became
+enzootic in wildlife, however, animal health authorities carried out systematic surveillance and an aggressive
+campaign for exposed animals during the 2003 outbreak [41]. The probability of this spill-over event is very low.
+
+
+Options for response
+The current priority for countries should be the identification, isolation and contact tracing of MPX cases. Prompt
+diagnosis will allow for isolation of cases and contribute to the control of this outbreak. Reporting newly identified
+cases to EpiPulse and the European Surveillance System (TESSy) is also important to allow for a better overview of
+the epidemiological situation and development of the outbreak. Reporting in TESSy will be implemented shortly by
+ECDC.
+These priorities require significant preparedness and response activities including:
+•   The review and strengthening of laboratory diagnostic capacity for orthopoxviruses;
+•   The availability and stockpile of PPE for health professionals;
+•   The review of stockpiles of smallpox vaccines and the development of vaccination strategies;
+•   The review of availability of antiviral treatments for severe cases;
+•   The collaboration with animal health services for the management of exposed pets;
+•   Strong risk communication and engagement with the MSM communities, as well as the broader public.
+
+
+Overall preparedness and response
+Laboratory diagnostics and sequencing
+Countries should review their in-house molecular diagnostic testing capacities and capabilities for orthopoxviruses
+and in particular for monkeypox virus (including surge capacity related to reagents, consumables and available
+trained staff). In case of limited experience in monkeypox testing, laboratories are encouraged to refer specimens
+for confirmatory testing. Countries not having national reference laboratory capacity should refer at least the first
+suspected case(s) for reference testing to another EU/EEA country. The European laboratory network for emerging
+viral diseases (EVD-LabNet) will facilitate the sharing of protocols and can facilitate confirmatory testing support
+through their network members. The European Virus Archives (EVAg) can provide positive control materials [75].
+According to the EVD-LabNet Directory, based on self-reporting of the EVD-Lab members (as of May 2022), MPXV
+diagnosis is possible in 19 laboratories in 13 EU/EEA countries: Denmark, Finland, France (2), Germany (4),
+Greece, Hungary, Ireland, Italy (2), Portugal, Romania, Slovenia, Sweden, and the Netherlands (2) [76].
+Sequencing of poxvirus DNA in samples can validate the specificity of the detection and assist in understanding
+transmission chains and patterns of spread, therefore sharing sequences is encouraged internationally. In addition,
+sequencing will allow detection of potential genomic and proteomic differences of MPXV in this outbreak. Member
+States who need diagnostic and/or sequencing support should contact EVD-LabNet (chantal.reusken@rivm.nl) and
+ECDC (ECDC.Microbiology@ecdc.europa.eu).
+Currently, there is no commercial MPX virus assay on the European market. The GeneXpert platform (Cepheid
+Sunnyvale, CA, USA) has been used for diagnosis of MPX in DRC [77]. The multiplex assay includes a MPX-specific
+assay, orthopoxvirus generic assay, and an internal control. The methodology decreases manipulations of the
+samples, thereby also limiting opportunities for contamination.
+
+Vaccination and antivirals
+Availability of smallpox vaccine should be reviewed in EU/EEA countries as regards type, doses and authorisation
+status. As mentioned above (see Disease Background) smallpox vaccine can be used for post-exposure prophylaxis
+(PEP) of close contacts at increased risk for severe disease (see Management of MPX contacts). The smallpox
+vaccine, if administered within the first four days after exposure to a confirmed MPX case can have significant
+protective effect [22]. In addition, countries may consider prophylactic vaccination of certain health professionals
+responding to this outbreak. To date, the vast majority of cases have mild to moderate symptoms and are all
+recovering well. However, numbers are still low and the severity profile of the disease cannot be reliably estimated.
+
+
+
+
+                                                           8
+RAPID RISK ASSESSMENT                                                  Monkeypox multi-country outbreak – 23 May 2022
+
+
+No smallpox vaccine is authorised for use against MPX in the EU, but the 3rd generation smallpox vaccine
+ImvanexTM (Modified Vaccine Ankara-MVA) has been authorised by EMA for the EU market against smallpox [78].
+MVA has shown protection in primate models challenged with lethal doses of monkeypox virus [79]. Older
+generation smallpox vaccines have significant side effects and in addition, are no longer authorised and should not
+be used. Careful needs assessment should be carried out in each country to estimate the potential need of
+smallpox vaccine for the management of this outbreak and collaboration between the national drug authorities and
+EMA is needed to clarify the authorisation status of the MVA vaccine if it is to be used against MPX. However, it is
+important to note that efficacy data for this vaccine against MPX in humans are missing as well as safety data for
+the use of this vaccine in immunocompromised persons.
+Considering the above and the limited supply of smallpox vaccine doses, National Immunization Technical Advisory
+Groups (NITAG) should develop specific guidance for the vaccination of close contacts of MPX cases. The use of
+smallpox vaccination for the purpose of pre-exposure prophylaxis in the exposed communities of MSM cannot be
+considered at this point, considering the limited supply of vaccine and most importantly the benefit/risk ratio of
+smallpox vaccination in this outbreak.
+As regards antivirals used for the treatment of MPX, tecovirimat is the only antiviral drug with an indication for the
+treatment of orthopoxvirus infections, including MPX, authorised by EMA [51]. Brincidofovir is not authorised in the
+EU but has been authorised by FDA for treatment of MPX. However, their availability in the EU market is quite
+limited in the number of doses. Clinicians and infectious disease societies also need to provide guidance for the use
+of this medication and ideally, follow a common treatment protocol in order to provide valuable efficacy data.
+Health authorities should consider prioritisation of patient groups that could be offered treatment. Use of antivirals
+for post-exposure prophylaxis could be additionally investigated. Cidofovir is active in vitro for smallpox, but has a
+pronounced nephrotoxicity profile that makes it unsuitable as first choice treatment.
+
+Personal Protective Equipment
+As indicated above, human-to-human transmission of MPXV can occur via droplets in prolonged close contact and
+contact with the infectious lesion material [22,25]. Therefore, appropriate PPE is needed for all health professionals
+who will screen suspected cases, care for a MPX patients or handle contaminated material (clothes, bedlinen, etc.)
+or laboratory specimens (gowns, FFP2 respirators, goggles). Availability of sufficient stocks of PPE at healthcare
+facilities and at national levels should be monitored and ensured.
+
+Exposure of pets
+Public health authorities should work together with veterinary authorities to ensure capacity is in place for
+quarantining and testing of mammalian pet animals that have been exposed or are at risk of exposure (i.e. pets of
+a close contact of a MPX case) to MPXV. Rodent pets should ideally be isolated in monitored facilities, complying
+with respiratory isolation (e.g. a laboratory) and animal welfare conditions (e.g. government facilities, kennels or
+animal welfare organisations), and tested (by PCR) for exposure before quarantine ends. Euthanasia should only
+be a last resort reserved to situations where testing and/or isolation are not feasible. Other mammalian pet species
+could be isolated at home if animal welfare conditions allow it (e.g. availability of an enclosed outdoor space for
+dogs, regular veterinary checks to assess the health status, preventing access to visitors, preventing pets from
+leaving the home).
+
+
+Surveillance and EU/EEA reporting
+Monkeypox is currently not listed as a disease under surveillance [80] in the EU/EEA , nor is the virus notifiable in
+animals under Commission Implementing Regulation 2018/1882. Orthopoxvirus infection is a mandatory notifiable
+disease in some countries, and some have now made MPX notifiable as part of the response to this outbreak. The
+rapid evolution of the current outbreak involving multiple EU/EEA countries, the limited data available on disease
+severity and the previously unreported context of transmission among groups of MSM highlight the need for setting
+up a European surveillance system aiming to describe the epidemiology and evolution of the outbreak and to
+support control measures.
+
+
+
+
+                                                          9
+RAPID RISK ASSESSMENT                                                           Monkeypox multi-country outbreak – 23 May 2022
+
+
+The following interim case definition is proposed:
+
+  Confirmed case
+  A person with a laboratory-confirmed monkeypox infection (1) monkeypox virus specific PCR assay positive result or
+  (2) orthopoxvirus specific PCR assay positive result which is then confirmed by nucleotide sequence determination of
+  the detected virus as MPXV) with symptom onset since 1st March 2022
+  Probable case
+  (1) A person with an unexplained rash* on any part of their body
+  AND one or more other symptom(s) of monkeypox infection** with symptom onset since 1st March 2022
+  AND one of the following:
+       -    has a positive laboratory test result on orthopoxvirus infection (e.g. orthopoxvirus specific positive PCR
+            without sequencing, electron microscopy, serology);
+       -    has an epidemiological link to a confirmed or probable case of monkeypox in the 21 days before symptom
+            onset;
+       -    reports travel to MPX endemic countries in the 21 days before symptom onset;
+       -    is a person (of any sexual orientation) who had multiple or anonymous sexual partners in the 21 days before
+            symptom onset;
+       -    is a man who has sex with men.
+  OR
+  (2) A person with an unexplained generalised or localised maculopapular or vesiculopustular rash with centrifugal
+  spread, with lesions showing umbilication or scabbing, lymphadenopathy and one or more other MPX-compatible
+  symptoms**.
+
+
+* Since EU/EEA countries are just starting to identify cases and if testing capacity is sufficient, the above more sensitive case
+definition can be used. In countries with limited testing capacity for orthopoxviruses, the following description can be added to
+characterise the rash: ‘unexplained localised or generalised maculopapular or vesiculopustular rash potentially with umbilication or
+scabbing’.
+**Fever (usually high >38.5°C), headache, back ache, fatigue, lymphadenopathy (localised or generalised).
+Patients who fulfil the criteria for probable cases should be tested with a monkeypox virus specific PCR assay or an
+orthopoxvirus specific PCR assay which is then confirmed through sequencing. If negative, these patients should
+be excluded.
+ECDC in liaison with the World Health Organization (WHO) asks countries to report newly-identified cases in the
+line listing document in EpiPulse [access only to nominated users]. Reporting in TESSy will be implemented shortly
+by ECDC.
+
+Management of cases
+Newly identified cases of MPX should undergo a medical assessment for severity and risk factors (e.g. underlying
+conditions or medications affecting immune competence, untreated HIV infection etc.). Those at increased risk of
+severe disease from MPX may require hospitalisation and/or treatment with antivirals (see Overall preparedness
+and response section). People at increased risk for severe disease include infants and young children, pregnant
+women, elderly and severely immunocompromised persons. A common treatment protocol should be considered
+for patients treated in EU/EEA countries in order to provide much needed efficacy data. Tecovirimat also has the
+potential to cause resistance to pox viruses, therefore, careful monitoring of treated patients should be
+undertaken, particularly the immunosuppressed. Potential combination with brincidofovir can also be explored. The
+majority of MPX cases reported so far in this outbreak have been mild with localised disease and self-limiting
+symptoms. Therefore, hospitalisation is not necessary, unless the patient’s clinical condition requires it. Patients
+can remain isolated at home with supportive care (analgesia, hydration). If isolation is not possible at home, then
+hospitalisation or other arrangement can be considered.
+MPXV can be transmitted to anyone, regardless of sexual orientation or gender identity, through contact with body
+fluids, monkeypox sores, or shared items. Therefore, cases should be instructed to isolate until the rash scabs fall
+off, which indicates the end of infectiousness. Cases should remain in their own room, when at home, and use
+designated household items (clothes, bed linen, towels, eating utensils, plates, glasses), which should not be
+shared with other members of the household (see the next section for information on cleaning and disinfection of
+such materials). Cases should also avoid contact with immunocompromised persons until their rash heals. A MPX
+case should be monitored daily by public health authorities (e.g. via telephone calls) and can temporarily leave
+their home (e.g. for medical appointments and necessary exercise for their mental health stability), provided they
+wear a medical face mask and their rash is covered (e.g. long sleeves and pants). They should also be instructed
+
+
+
+
+                                                                10
+RAPID RISK ASSESSMENT                                                  Monkeypox multi-country outbreak – 23 May 2022
+
+
+to avoid close or intimate contact (hugging, kissing, prolonged face-to-face contact in closed spaces) with other
+people until their rash heals completely.
+Careful hand and respiratory hygiene are recommended for the case and everyone in the household; a medical
+face mask should be used when in contact with other people. Cases should abstain from sexual activity until scabs
+fall off. While the use of condoms is consistently encouraged during sex for prevention of HIV and other STIs,
+cases should be made aware that the use of condoms alone cannot provide full protection against MPXV infection,
+as contact with skin lesions is involved for its transmission. Because transmission through droplets is possible,
+avoidance of close, physical contact is recommended until the scabs fall off.
+Health authorities and policy makers should consider that sex workers may be disproportionately affected by this
+outbreak and may need incentives to be able to comply with the full recommendation of isolation until the rash
+heals completely which may last up to four weeks.
+Finally, instructions should be given to MPX cases to avoid contact with any mammal pets, and in particular pet
+rodents (mice, rats, hamsters, gerbils, guinea pigs, squirrels etc), due to the possibility of human-to-pet
+transmission. Any recent contact with such pets should be noted and animal health services should be contacted
+for advice.
+Environmental persistence and disinfection
+Poxviruses show extraordinary resistance to drying [81], and increased temperature and pH tolerance when
+compared with other enveloped viruses. These characteristics strongly impact their environmental persistence:
+materials from infected patients (e.g., dermal crusts) or fomites (e.g., bed linens) remain infective for months to
+years.
+Despite these characteristics, poxviruses are sensitive to common disinfectants, although they can be less sensitive
+to organic disinfectants compared to other enveloped viruses, due to their reduced envelope lipid content.
+Cleaning of the room where a MPX case stayed should be done without stirring a lot of dust or causing the
+formation of aerosols and should use regular cleaning products followed by disinfection using a 0.1 % sodium
+hypochlorite (NaClO) (dilution 1:50, if household bleach is used, usually at an initial concentration of 5%).
+Particular attention should be paid to toilets and frequently touched surfaces. Contaminated clothing and linens
+should be collected and washed at 60°C cycles. Carpets, curtains and other soft furnishings can be steam-
+cleaned.[82].
+Single-use disposable cleaning equipment (e.g. disposable towels) is recommended. If disposable cleaning
+equipment is not available, the cleaning material (cloth, sponge etc.) should be placed in a disinfectant solution
+effective against viruses, or 0.1% sodium hypochlorite. If neither solution is available, the material should be
+discarded.
+Gauzes or other material soaked with lesion fluid or containing scabs from the MPX case should be preferably
+handled in a healthcare facility as infectious waste, or according to instructions from the local public health
+authority.
+
+Management of monkeypox contacts
+Close contacts of the currently reported MPX cases include mainly sexual partners and people living in the same
+household or anyone sharing the same bedding or clothing with an MPX case. Sharing the same workspace for
+several hours seated within one to two metres or being a co-passenger in longer flights, train or bus rides may also
+qualify as a close contact in certain situations, but this would require a case-by-case assessment. (see Table 2).
+From outbreaks in Africa, the secondary attack rate is estimated at 9-12% among unvaccinated contacts within
+households, however other estimates are as high as 50%, while in the 2003 US outbreak it was 0% [34,58].
+Although some of the reported cases are epidemiologically linked, no further onward transmission to close contacts
+that are not sexual partners has been documented yet in this outbreak.
+Contact tracing of newly identified MPX cases should be performed carefully and exhaustively, building on long-
+standing good practices implemented for the management of STIs and the HIV epidemic and the ongoing COVID-
+19 pandemic. Partner notification should be rapidly initiated; however, this might be challenging in the case of
+anonymous sexual partners. Involvement of sexual health services, who are experienced in partner notification for
+sexually-transmitted diseases is recommended to ensure the best possible outcome.
+Awareness raising in MSM communities about the ongoing MPX outbreak is extremely important and should
+happen with the engagement of the community (see section risk communication and community engagement).
+Contact tracing should pay particular attention to identifying MPX contacts who are immunocompromised. Working
+with associations supporting people living with human immunodeficiency virus (PLWHIV) and immunocompromised
+patients would be valuable. Public health resources for these activities are very important. Although the number of
+contacts to be traced is not expected to be very large, the case complexity will be high. That the public health
+workforce is already affected by the continuous pressure of the response needs to the COVID-19 pandemic should
+also be considered.
+
+
+
+
+                                                         11
+RAPID RISK ASSESSMENT                                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+All identified close contacts (see Table 2) of a MPX case should be instructed to self-monitor for fever and MPX
+symptoms daily for 21 days after their last exposure. Instructions should be provided, if they develop any
+symptoms during this period, to self-isolate except for attending medical assessments or testing. In general,
+symptomatic contacts should be isolated during their investigation until MPX is excluded. Close contacts should be
+advised to avoid close physical contact with young children, pregnant women and immunocompromised persons
+until MPX is excluded.
+Sexual contacts of MPX cases should abstain from sex for a duration of at least 21 days or until the infection is
+excluded. While all persons are encouraged to use condoms consistently during sexual activity for prevention of
+HIV and other STIs, they should be made aware that the use of condoms alone cannot offer full protection against
+transmission of MPXV. Because transmission through droplets in prolonged face-to-face contact is also possible,
+avoidance of close, physical contact is recommended for the duration of 21 days following exposure. Sex workers
+may be a group potentially exposed to MPX and consideration should be given to the fact that they would need
+financial support to comply with the recommended duration of self-monitoring.
+Close contacts of MPX cases would benefit from an exposure assessment, including history of past smallpox
+vaccination, and should be carefully evaluated for the potential need of post-exposure prophylactic (PEP) smallpox
+vaccination. Use of PEP smallpox vaccination should only be offered after a careful risk/benefit ratio assessment for
+the individual person, including the type and timing of last exposure, their age group, their medical history
+particularly as regards their immune status and other underlying conditions that would indicate that they are at
+increased risk for severe MPX disease. The time from vaccination until developing the expected antibody protection
+also plays a role. In addition, the profile, indication and availability of the nationally available smallpox vaccine
+should be considered (which generation of vaccine is available, number of doses etc.). Use of the smallpox vaccine
+up to four days after exposure to MPX can prevent the onset of symptoms, while after that and until 14 days post-
+exposure prophylactic vaccination may modify the disease course [83]. If the currently authorised 3rd generation
+MVA vaccine for smallpox would be used, then two doses would be needed 28 days apart.
+For passengers in an aircraft, bus or train sitting within a radius of two metres of a symptomatic case (i.e. seated
+one-two seats around the case), an exposure assessment by health authorities should be carried out and
+monitoring implemented accordingly. Exposure on longer flights or rides (more than eight hours) can be
+considered as riskier [84]. From when smallpox was circulating, no transmission on aircraft was documented [85].
+Table 2 presents the overview of the advice for the management of contacts of a MPX case.
+Table 2. Summary of management approach for contacts of a MPX case
+ Type of contact          Description                                                           Management guidance
+ Close contact               •   Sexual partner                                                   •   Careful benefit/risk assessment for the need
+                             •   Person(s) living in same household, or similar setting (e.g          for PEP smallpox vaccination
+                                 camping, overnight sleeping etc)                                 •   Self-monitor for fever or other MPX
+                             •   Person(s) sharing clothing, bedding, utensils etc, while the         symptoms (headache, back ache etc) or new
+                                 patient had a rash                                                   unexplained rash for 21 days from last
+                             •   Person(s) sharing the same closed workspace/office for               exposure. In that case self-isolate and
+                                 long periods of time                                                 abstain from sexual activity until MPX is
+                             •   Caregivers of MPX case, while symptomatic                            excluded.
+                             •   HCW who had contact with MPX case (lesions or                    •   Careful hand hygiene and respiratory
+                                 prolonged face-to-face contact) without appropriate PPE              etiquette.
+                             •   HCW or other person who suffered a sharps injury or was          •   Abstain from sexual activity and avoid close
+                                 exposed to MPX case body fluids or aerosol generating                physical contact for 21 days or until MPX is
+                                 procedure without PPE                                                excluded.
+                             •   Laboratory staff suffering exposure to occupational              •   Avoid contact with mammal pets for 21 days
+                                 accident with virus-containing sample (splash, sharp or              or until MPX is excluded
+                                 aerosol exposure etc)
+                             •   Co-passenger seated one -two seats distance around
+                                 case while they were symptomatic, in airplane, bus or train
+                                 ≥ 8 hours duration
+ All other contacts          •   Brief social interactions                                        •   Depending on the certainty of contact, some
+                             •   Work colleagues not sharing same office                              of these contacts may be asked to self-
+                             •   Persons sharing fitness equipment or sharing the same                monitor for fever or other MPX symptoms
+                                 sauna or bath, without sexual contact                                (headache, back ache etc) or new
+                             •   Social encounters/ acquaintances                                     unexplained rash for 21 days from last
+                             •   HCW contact with appropriate PPE                                     exposure.
+
+
+
+Healthcare settings and diagnostic laboratories
+Raising awareness of health professionals is important for case identification and contact tracing in this MPX
+outbreak. Countries are urged to provide information about the ongoing situation to their clinicians at various levels
+in the health system, with a particular focus to general practitioners, sexual clinics, genito-urinary practitioners,
+walk-in clinics providing care to MSM and sex workers, dermatology departments and emergency departments in
+general. Cases with localised unexplained rash with inguinal lymphadenopathy and other MPX-compatible
+symptoms should be referred to specialised services per national guidelines for decision on testing.
+
+
+
+
+                                                                    12
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+In healthcare settings, prevention of transmission is based on appropriate infection prevention and control
+measures. MPX is considered to be mainly transmitted through respiratory droplets and direct contact with body
+fluids or lesion material[66,86]. Therefore, both contact and airborne precautions should be applied when
+providing care for patients with monkeypox. Patients who need to be hospitalised should preferably be placed in an
+isolation room with anteroom and negative pressure, or if not available in a single room. Healthcare workers
+entering the isolation room should wear gloves, a water-resistant gown and an FFP2 respirator [25].
+WHO suggests that national health authorities should consider immunisation against smallpox for healthcare
+workers treating or exposed to patients with MPX or their samples [25]. Careful risk/benefit ratio assessment
+should also be carried out for the individual health professionals offered the smallpox vaccine as pre-exposure
+prophylaxis in this outbreak.
+Clinical specimens suspected to contain MPXV are considered category A (UN 2814) – Infectious Substances
+Affecting Humans. They should be packaged and transported following the relevant regulation, unless previously
+treated to neutralise or inactivate the pathogen [87,88].
+Diagnostic specimens suspected to contain MPXV should be ideally processed using a certified Class II Biological
+Safety Cabinet. Laboratory staff handling specimens suspected to contain MPXV who are not vaccinated within the
+last 10 years should use appropriate PPE under more stringent biosafety-3 work practices to reduce the risk of
+exposures. Vaccinated laboratory staff could work using BSL-2 practices. Centrifugation of infected materials must
+be carried out in closed containers placed in sealed safety cups, or in rotors that are loaded or unloaded in a Class
+II biological safety cabinet. Laboratory waste containing monkeypox virus should be decontaminated before
+disposal (e.g., by autoclaving). Due to the short duration of viraemia, testing specimens in clinical chemistry
+laboratories is probably not a high-risk activity. However, using the precautionary principle, they should be handled
+as described above. If the appropriate safety conditions are not available, referral to a certified laboratory should
+be considered [89].
+Cleaning and disinfection in healthcare facilities should follow the rules as outlined above (see environmental
+cleaning and disinfection). In addition, staff performing cleaning and disinfection in a MPX case’s room should wear
+a minimum set of PPE:
+•   a disposable water-resistant gown;
+•   disposable gloves;
+•   disposable shoe or boots covers;
+•   respiratory protection (Filtering Face Piece (FFP) 2 respirator);
+•   eye splash protection (goggles or visor).
+
+Donning and doffing of PPE should be carefully performed by trained staff, and hand hygiene should be performed
+every time PPE, such as gloves, are removed.
+Waste should be assessed depending on risk and handled in accordance with healthcare facility policies and local
+regulations. If assessed as infectious clinical waste category A (UN3549), transport should be handled according to
+UN transport regulations [87]. Staff engaged in waste management should wear PPE [82].
+
+Substances of human origin
+All potential donors should be carefully interviewed regarding contacts with infected (confirmed or suspected) MPX
+cases, infected animals or travels to affected areas. Medical history data on these risk factors should be collected in
+the case of deceased donors.
+Based on the incubation period of MPX, it is recommended to defer asymptomatic donors that have been in contact
+with (confirmed or suspected) cases from substances of human origin donation for a minimum of 21 days from the
+last day of exposure.
+Since the MPX prodromal stage varies in duration (1–4 days [22]) and symptoms can be non-specific and mild [88-
+91] or absent [49], careful examination for any possible signs of infection should be performed even after the
+expiration of the deferral period (at least 21 days from the last day of exposure). Examination should not overlook
+mild and non-specific signs like headache or fatigue or anogenital skin lesions.
+
+Risk communication and community engagement
+It is important that health authorities communicate risks about this MPX outbreak, referring to the specific
+characteristics of the current situation, so that people at risk can adopt appropriate preventive and treatment-
+seeking behaviour. A balance should be kept between informing people at risk but also communicating that the
+virus is not spread easily between people and the risk to the broader population is low. However, much remains
+unknown about the event, in particular where and how index cases have acquired their infections. Authorities
+should make clear that while the evidence base is still quite limited, intensive work is ongoing to fill in the
+knowledge gaps. As such, the initial prevention strategies implemented may need to be adapted as more scientific
+information becomes available.
+
+
+
+
+                                                           13
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+In the meantime, efforts should be made to ensure that stigmatisation does not occur based on sexual orientation
+and practices. Risk communication messages should stress that monkeypox virus is spread through close contact
+between people, especially in the same household, including during sexual contact. Transmission of vaccinia virus
+has been described among heterosexual partners [43] and similarly, it is expected that sexual transmission will
+occur in the broader population. Therefore, risk communication messages could also state that MPX infection is not
+indicative of someone’s sexual orientation nor that the latter influences their susceptibility to the disease. In clear
+and accessible language, people who are infected with monkeypox virus should be advised to avoid any sort of
+close contact, including protected sexual contact, with other people until their rash has ended and the last scab
+has fallen off, no matter how long this process takes (may be up to four weeks). If they are living with other
+people, the importance of staying in one room for as long as they have the rash should be stressed, and ideally,
+they should have access to their own bathroom. Advice to avoid sharing bedding or any household items with
+anyone else should be disseminated. Building on approaches that were developed during the early COVID-19
+pandemic [94], if full isolation is not possible, very good hygiene practices should be promoted: the monkeypox
+virus is able to survive on surfaces or other fomites for long periods of time (days to months [95,96]).
+If high-risk close contacts of MPX patients are offered post-exposure vaccination in the form of the smallpox
+vaccine, they should be fully informed about the risk/benefits for them and potential side effects of the vaccine
+offered [95,96].
+Community engagement approaches should be used to understand perceptions and concerns and to support
+targeted risk communication messages to populations or groups more likely to be exposed to the virus. This
+requires the identification of relevant community-based organisations and stakeholders and leveraging their
+existing networks so they can communicate with community members and raise awareness using language
+adapted to their community and through appropriate communication channels [97]. Public health institutions
+should regularly inform and exchange ideas with these organisations and groups on specific aspects of the risk
+communication messages to be adapted and disseminated, as well as on their impact on the target audience.
+Three key groups should be considered as priority groups for community engagement strategies during the current
+MPX outbreak.
+•   Since the current event has seen several cases in MSM, this group must be made aware of the risk of infection as
+    well as prevention measures they may take. Applications used by MSM for meeting partners can be explored to
+    reach those most at risk and provide health promotion information. Various organisations exist at the regional,
+    national, sub-national and local level working on health for LGBTQIA+, including activist groups and community
+    testing organisations (i.e. checkpoints). These should be contacted, informed and asked to engage with their
+    members, users and networks about the situation and hear their perceptions and concerns. Other organisations
+    working on sexual health may also be mapped and contacted for similar purposes. Key messages should focus on
+    the fact that MPXV is spread through close contact with infectious individuals, may possibly be sexually
+    transmitted and that condoms can mitigate the risk of many sexually-transmitted infections, but cannot offer full
+    protection against transmission of MPXV, since contact with lesions may be sufficient for transmission to occur.
+•   As people who are immunocompromised have been shown to be more vulnerable to severe disease [42], support
+    organisations for immunocompromised people should also be identified, kept informed, and supported in
+    conducting outreach to their members. Particular focus should be given to their heightened risk of severe
+    disease, and the importance of seeking treatment should they develop symptoms of MPX infection. However, it is
+    important to clarify that people living with HIV under appropriate treatment are not considered
+    immunocompromised, and those with untreated HIV should be referred to HIV treatment [98].
+•   Healthcare workers’ unions and associated professional networks should be engaged with so they can be
+    equipped to detect and treat cases early as well as provide health advice and disseminate messages about case
+    definitions and strategies for contact tracing. They should also be informed about the particular susceptibility to
+    severe disease of people with untreated HIV and those who are otherwise immunocompromised so that they can
+    provide appropriate treatment and support for such patients. Health workers should also be made aware that
+    their own close contact with patients may put them at increased risk of infection and therefore they should
+    protect themselves accordingly.
+ECDC is working with multiple civil society organisations to reach out to MSM groups by disseminating the following
+message to all European countries:
+‘Monkeypox virus is spreading in Europe, in particular among men who have sex with men. It is transmitted
+through close contact, like during sexual intercourse or through contaminated bedding, sex toys. If you or any
+recent (last 21 days) partner have unusual sores or rash, contact your sexual health provider (find closest site
+here: https://www.testfinder.info) or your GP or local health provider. More info can be found
+here: www.ecdc.europa.eu/en/news-events/epidemiological-update-monkeypox-outbreak’
+
+
+
+
+                                                          14
+RAPID RISK ASSESSMENT                                                    Monkeypox multi-country outbreak – 23 May 2022
+
+
+
+
+Limitations
+This assessment is undertaken based on facts known to ECDC at the time of publication and has several key
+limitations. In particular, there are many scientific uncertainties and knowledge gaps regarding human MPX,
+including:
+•   This is the first outbreak of MPX outside Africa suggesting transmission during sexual contact/intercourse as the
+    primary route of transmission of the disease. No comprehensive data are available on severity of illness and on
+    transmission dynamics as well as on effective response measures.
+•   A lack of clear understanding of the epidemiological situation since countries are in the case-finding stage.
+•   A lack of understanding of the route of introduction of MPXV in MSM communities.
+•   Lack of sequencing results of MPXV to identify chains of transmission and connections among cases. Sequencing
+    may also provide clues regarding a possible time and mode of introduction of MPXV in Europe. Look-back studies
+    may also be useful in leftover samples from STI clinics to study this question.
+•   More accurate estimates of the risk of transmission associated with different sorts of contacts with clinical cases
+    are needed in European settings.
+•   Information is needed on the current residual cross protection from smallpox vaccination in the EU/EEA
+    population.
+•   Efficacy data of the currently available smallpox vaccine(s) against MPX are lacking, and safety data for the use
+    of the smallpox vaccine in young children, pregnant women and immunocompromised are also lacking.
+•   Efficacy data and safety profile of the available antiviral agents for the treatment of potential severe cases are
+    also lacking. A common treatment protocol is proposed by EMA and should be adopted.
+•   More information is needed on the clinical presentation of cases and their outcome, to establish the severity
+    (morbidity and mortality) of the disease in Europe.
+•   More information is also needed on possible contact with animals. In addition, studies are needed to assess the
+    vulnerability of European rodent and other mammal species to MPXV.
+
+
+Source and date of request
+ECDC internal decision, 17 May 2022.
+
+
+Consulted experts
+ECDC experts (in alphabetic order): Leonidas Alexakis, Agoritsa Baka, Jon Bilbatua, Benjamin Bluemel, Olivier
+Briet, Daniel Cauchi, Orlando Cenciarelli, Joana Haussig, Anne Ingenbleek, John Kinsman, Favelle Lamb, Katrin
+Leitmeyer, Otilia Mardh, Jenny Mohseni Skoglund, Vanja Nikolac Markic, Teymur Noori, Anastasia Pharris,
+Diamantis Plachouras, Juliana Reyes-Urueña, Gabrielle Schittecatte, Emily Scott, Gianfranco Spiteri.
+European Food Safety Authority (EFSA): Ernesto Liebana (BIOHAW Unit).
+European Medicines Agency (EMA): Marco Cavaleri, Eugenia Di Meco.
+World Health Organization (WHO): Richard Pebody, Cristiana Salvi (Regional Office for Europe) Antons
+Mozalevskis (Headquarter).
+Public health experts from EU/EEA countries:
+Belgium: Cécile van de Konijnenburg (SPF Santé Publique - FOD Volksgezondheid).
+France: Emilie Chazelle, Alexandra Mailles (Santé Publique France).
+Portugal: Paula Vasconcelos, Teresa Fernandes, Ana Firme, Margarida Tavares, Mariana Perez Duque, Sofia
+Ribeiro, Pedro Casaca, Tiago Manuel Soto, Graça Freitas, (Direção-Geral da Saúde – Ministry of Health), Kamal
+Mansinho (Centro Hospitalar Lisboa Ocidental/Hospital de Egas Moniz and Institute of Hygiene and Tropical
+Medicine/New University of Lisbon), Jorge Machado (National Institute of Health, Department Infectious Diseases).
+Sweden: Britta Björkholm, Sara Bengtsson Andreas Bråve, Erik Sturegård, Åsa Szekely Björndal (Public Health
+Agency of Sweden).
+Germany: Christina Frank, Klaus, Jansen, Uwe Koppe, Lass Schaade, for the RKI monkeypox Team (Robert Koch
+Institute, RKI).
+Italy: Flavia Riccardo, Barbara Suligoi, Anna Teresa Palamara, Patrizio Pezzotti, Paola Stefanelli, Giulietta Venturi,
+Silvio Brusaffero (Istituto Superiore di Sanità, ISS), Francesco Maraglino, Federica Ferraro, Giovanni Rezza, Anna
+Caraglia (Ministero della Salute).
+
+
+
+
+                                                           15
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+Subject Matter Experts (SME) and representatives of Civil Society from EU/EEA countries and the
+United Kingdom:
+Daniel Simões (Coalition PLUS), Christos Krasidis (AIDS Action Europe, Freelance), Will Nutland (The Love Tank
+CIC and The London School of Hygiene & Tropical Medicine - LSHTM), Helen Roberts (UK Department for
+Environment, Food and Rural Affairs, Defra and EFSA Animal Health and Welfare Panel member), Rajul Patel
+(Solent NHS Trust).
+All experts have submitted declarations of interest, and a review of these declarations did not reveal any conflict of
+interest.
+
+
+Disclaimer
+ECDC issues this risk assessment document based on an internal decision and in accordance with Article 10 of
+Decision No 1082/13/EC and Article 7(1) of Regulation (EC) No 851/2004 establishing a European centre for
+disease prevention and control (ECDC). In the framework of ECDC’s mandate, the specific purpose of an ECDC risk
+assessment is to present different options on a certain matter. The responsibility on the choice of which option to
+pursue and which actions to take, including the adoption of mandatory rules or guidelines, lies exclusively with the
+EU/EEA Member States. In its activities, ECDC strives to ensure its independence, high scientific quality,
+transparency and efficiency.
+This report was written with the coordination and assistance of an Internal Response Team at the European Centre
+for Disease Prevention and Control. All data published in this risk assessment are correct to the best of our
+knowledge at the time of publication. Maps and figures published do not represent a statement on the part of
+ECDC or its partners on the legal or border status of the countries and territories shown.
+
+
+
+
+                                                          16
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+
+
+References
+1. UK Health Security Agency (UKHSA). Monkeypox cases confirmed in England – latest updates. London: UKHSA;
+   2022. Available at: https://www.gov.uk/government/news/monkeypox-cases-confirmed-in-england-latest-
+   updates
+2. Direção-Geral da Saúde (DGS). Casos de infeção por vírus Monkeypox em Portugal. Lisbon: DGS; 2022.
+   Available at: https://www.dgs.pt/em-destaque/casos-de-infecao-por-virus-monkeypox-em-portugal.aspx
+3. Gobierno de España - Ministerio de Sanidad - Centro de Coordinación de Alertas y Emergencias Sanitarias.
+   Informe de situación - Alerta sobre infección de viruela de los monos en España y otros países de Europa.
+   Madrid: MSCBS; 2022. Available at:
+   http://www.mscbs.es/profesionales/saludPublica/ccayes/alertasActual/alertaMonkeypox/docs/Informe_de_situa
+   cion_MPX.pdf
+4. La Razon. Virus del mono: Los casos de viruela del mono en Madrid: 30 confirmados y 39 sospechosos. La
+   Razon. 21 May 2022. Available at:
+   https://www.larazon.es/sociedad/20220521/gid4menhqfhqzmn5ub3gyh7z74.html
+5. Selhorst P, Rezende AM, Block Td, Coppens S, Smet H, Mariën J, et al. Belgian case of Monkeypox virus linked
+   to outbreak in Portugal. 2022. Available at: https://virological.org/t/belgian-case-of-monkeypox-virus-linked-to-
+   outbreak-in-portugal/801
+6. Emmanuel André. A l’@UZLeuven//@KU_Leuven, les laboratoires travaillent 7/7 pour offrir un diagnostic rapide
+   (PCR et séquençage) pour les patients ayant une suspicion d’infection à la variole du singe. Aujourd’hui, nous
+   avons pu confirmer un quatrième cas d’infection en Belgique. Twitter. 21 May 2022 09:22:00 PM. Available at:
+   https://twitter.com/Emmanuel_microb/status/1528094016230903809
+7. Bundeswehr Medical Service. Bundeswehr Institute for Microbiology detects monkeypox in Munich. Munich:
+   Presseportal; 2022. Available at: https://www.presseportal.de/pm/122038/5227679
+8. Santé publique France (SPF). Un premier cas confirmé de Monkeypox sur le territoire national. Saint-Maurice:
+   SPF; 2022. Available at: https://www.santepubliquefrance.fr/presse/2022/un-premier-cas-confirme-de-
+   monkeypox-sur-le-territoire-national
+9. Cigna Y. Vaiolo delle scimmie, salgono a 3 i casi confermati in Italia. La Regione Lazio: «Screening su altri 30».
+   Openonline. 20 May 2022. Available at: https://www.open.online/2022/05/20/vaiolo-scimmie-confermati-2-casi-
+   spallanzani-roma/
+10. Folkhälsomyndigheten (Fohm). Ett fall av apkoppor rapporterat i Sverige. Solna: Fohm; 2022. Available at:
+    https://www.folkhalsomyndigheten.se/nyheter-och-press/nyhetsarkiv/2022/maj/ett-fall-av-apkoppor-
+    rapporterat-i-sverige/
+11. National Institute for Public Health and the Environment Ministry of Health, Welfare and Sport - The
+    Netherlands. First patient with monkeypox in the Netherlands. Bilthoven: RIVM; 2022. Available at:
+    https://www.rivm.nl/en/news/first-patient-with-monkeypox-in-netherlands
+12. Wiener Gesundheitsverbund. Verdacht auf Pockenviren bestätigt. Jener Patient, der am Sonntag in die
+    #KlinikFavoriten eingeliefert wurde, wurde positiv auf Pockenviren getestet. Die Sequenzierung steht noch aus.
+    Twitter. 22 May 05:17:00 PM. Available at: https://twitter.com/wiengesundheit/status/1528394719377735681
+13. Santé et Services sociaux - Quebec. Variole simienne - Deux premiers cas confirmés au Québec. Quebec,
+    Canada: CNW Telbec; 2022. Available at: https://www.quebec.ca/nouvelles/actualites/details/variole-simienne-
+    deux-premiers-cas-confirmes-au-quebec-40533
+14. Department of Public Health - Massachusetts. Massachusetts public health officials confirm case of monkeypox.
+    2022. Available at: https://www.mass.gov/news/massachusetts-public-health-officials-confirm-case-of-
+    monkeypox
+15. City of New York (NYC). Health Department Investigating Possible Monkeypox Case in New York City. New York:
+    NYC; 2022. Available at: https://www1.nyc.gov/site/doh/about/press/pr2022/monkeypox-possible-nyc-
+    case.page
+16. Health professionals and the Victorian community. Health warning on Monkeypox. 2022. Available at:
+    https://www.health.vic.gov.au/health-alerts/health-warning-on-monkeypox
+17. Ministry of Health - Israel. Update: Monkeypox. The State of Israel: Gov.il; 2022. Available at:
+    https://www.gov.il/en/departments/news/21052021-02
+18. Direction de la santé, des affaires sociales et de l’intégration (DSSI) Canton de Berne. Variole du singe :
+    premier cas dans le canton de Berne. Bern: DSSI; 2022. Available at:
+    https://www.gsi.be.ch/fr/start/news/medienmitteilungen.html?newsID=247f41e0-5e69-464d-9221-
+    e2d18b8e3620
+
+
+
+                                                          17
+RAPID RISK ASSESSMENT                                                  Monkeypox multi-country outbreak – 23 May 2022
+
+
+19. World Health Organization - Regional Office for Africa (WHO/AFRO). Outbreaks and Emergencies Bulletin, Week
+    17: 18 - 24 April 2022. Brazzaville: WHO/AFRO; 2022. Available at:
+    https://apps.who.int/iris/bitstream/handle/10665/354215/OEW19-0202052022.pdf
+20. Nigeria Centre For Disease Control (NCDC). Monthly Update on Monkeypox (MPX) in Nigeria, Epi-week: 17, April
+    30, 2022. Jabi Abuja: NCDC; 2022. Available at:
+    https://ncdc.gov.ng/themes/common/files/sitreps/ed4f642dd1b5b1f1adf277e1d48a98f8.pdf
+21. Durski KN, McCollum AM, Nakazawa Y, Petersen BW, Reynolds MG, Briand S, et al. Emergence of monkeypox—
+    west and central Africa, 1970–2017. Morbidity and mortality weekly report. 2018;67(10):306. Available at:
+    https://www.cdc.gov/mmwr/volumes/67/wr/mm6710a5.htm
+22. McCollum AM, Damon IK. Human monkeypox. Clinical Infectious Diseases. 2014;58(2):260-7. Available at:
+    https://academic.oup.com/cid/article-abstract/58/2/260/335791
+23. Simpson K, Heymann D, Brown CS, Edmunds WJ, Elsgaard J, Fine P, et al. Human monkeypox–After 40 years,
+    an unintended consequence of smallpox eradication. Vaccine. 2020;38(33):5077-81. Available at:
+    https://www.sciencedirect.com/science/article/pii/S0264410X2030579X
+24. Ladnyj I, Ziegler P, Kima E. A human infection caused by monkeypox virus in Basankusu Territory, Democratic
+    Republic of the Congo. Bulletin of the World Health Organization. 1972;46(5):593. Available at:
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2480792/
+25. World Health Organization (WHO). Monkeypox fact sheet. Geneva: WHO; 2019. Available at:
+    https://www.who.int/news-room/fact-sheets/detail/monkeypox
+26. MacNeil A, Reynolds MG, Braden Z, Carroll DS, Bostik V, Karem K, et al. Transmission of atypical varicella-zoster
+    virus infections involving palm and sole manifestations in an area with monkeypox endemicity. Clinical
+    Infectious Diseases. 2009;48(1):e6-e8. Available at: https://academic.oup.com/cid/article-
+    abstract/48/1/e6/291721
+27. Doty JB, Malekani JM, Kalemba LsN, Stanley WT, Monroe BP, Nakazawa YU, et al. Assessing monkeypox virus
+    prevalence in small mammals at the human–animal interface in the Democratic Republic of the Congo. Viruses.
+    2017;9(10):283. Available at: https://www.mdpi.com/227974
+28. Essbauer S, Meyer H. Genus Orthopoxvirus: Monkeypox virus. In: Poxviruses. Basel, Switzerland: Birkhäuser;
+    2007.
+29. Learned LA, Reynolds MG, Wassa DW, Li Y, Olson VA, Karem K, et al. Extended interhuman transmission of
+    monkeypox in a hospital community in the Republic of the Congo, 2003. The American Journal of Tropical
+    Medicine and Hygiene. 2005;73(2):428-34. Available at:
+    https://www.ajtmh.org/view/journals/tpmd/73/2/article-p428.xml
+30. Nolen LD, Osadebe L, Katomba J, Likofata J, Mukadi D, Monroe B, et al. Extended human-to-human
+    transmission during a monkeypox outbreak in the Democratic Republic of the Congo. Emerging infectious
+    diseases. 2016;22(6):1014. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/pmc4880088/
+31. Likos AM, Sammons SA, Olson VA, Frace AM, Li Y, Olsen-Rasmussen M, et al. A tale of two clades: monkeypox
+    viruses. Journal of General Virology. 2005;86(10):2661-72. Available at:
+    https://www.microbiologyresearch.org/content/journal/jgv/10.1099/vir.0.81215-0
+32. Nakazawa Y, Mauldin MR, Emerson GL, Reynolds MG, Lash RR, Gao J, et al. A phylogeographic investigation of
+    African monkeypox. Viruses. 2015;7(4):2168-84. Available at: https://www.mdpi.com/97118
+33. Sadeuh-Mba SA, Yonga MG, Els M, Batejat C, Eyangoh S, Caro V, et al. Monkeypox virus phylogenetic
+    similarities between a human case detected in Cameroon in 2018 and the 2017-2018 outbreak in Nigeria.
+    Infection, Genetics and Evolution. 2019;69:8-11. Available at:
+    https://www.sciencedirect.com/science/article/pii/S156713481830844X
+34. Yinka-Ogunleye A, Aruna O, Dalhat M, Ogoina D, McCollum A, Disu Y, et al. Outbreak of human monkeypox in
+    Nigeria in 2017–18: a clinical and epidemiological report. The Lancet Infectious Diseases. 2019;19(8):872-9.
+    Available at: https://www.sciencedirect.com/science/article/pii/S1473309919302944
+35. Vaughan A, Aarons E, Astbury J, Brooks T, Chand M, Flegg P, et al. Human-to-human transmission of
+    monkeypox virus, United Kingdom, October 2018. Emerging Infectious Diseases. 2020;26(4):782. Available at:
+    https://wwwnc.cdc.gov/eid/article/26/4/19-1164_article
+36. Yinka-Ogunleye A, Aruna O, Ogoina D, Aworabhi N, Eteng W, Badaru S, et al. Reemergence of human
+    monkeypox in Nigeria, 2017. Emerging Infectious Diseases. 2018;24(6):1149. Available at:
+    https://wwwnc.cdc.gov/eid/article/24/6/18-0017_article
+37. Yong SEF, Ng OT, Ho ZJM, Mak TM, Marimuthu K, Vasoo S, et al. Imported Monkeypox, Singapore. Emerging
+    Infectious Diseases. 2020;26(8):1826. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/pmc7392406/
+
+
+
+
+                                                         18
+RAPID RISK ASSESSMENT                                                  Monkeypox multi-country outbreak – 23 May 2022
+
+
+38. Arita I, Henderson D. Smallpox and monkeypox in non-human primates. Bulletin of the World Health
+    Organization. 1968;39(2):277. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/pmc2554549/
+39. Magnus Pv, Andersen EK, Petersen KB, Birch-Andersen A. A Pox-like Disease in Cynomolgus Monkeys. Acta
+    Pathologica Microbiologica Scandinavica. 1959;46(2):156-76. Available at:
+    https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1699-0463.1959.tb00328.x
+40. Milhaud C, Klein M, Virat J. Analyse dʼun cas de variole du singe (monkeypox) chez le chimpanzé (Pan
+    troglogdytes). Exp Anim. 1969;2:121-35.
+41. Di Giulio DB, Eckburg PB. Human monkeypox: an emerging zoonosis. The Lancet infectious diseases.
+    2004;4(1):15-25. Available at: https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(03)00856-
+    9/fulltext
+42. Ogoina D, Izibewule JH, Ogunleye A, Ederiane E, Anebonam U, Neni A, et al. The 2017 human monkeypox
+    outbreak in Nigeria—report of outbreak experience and response in the Niger Delta University Teaching
+    Hospital, Bayelsa State, Nigeria. PLoS One. 2019;14(4):e0214229. Available at:
+    https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0214229
+43. Shao H, McDonald EC, Ginsberg MM, Yee LM, Montgomery JR, Allan-Martinez F, et al. Vaccinia virus infection
+    after sexual contact with a military smallpox vaccinee-Washington, 2010. MMWR Morbidity and Mortality Weekly
+    Report. 2010;59(25):773-5. Available at: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5925a2.htm
+44. McLaughlin J, Schmidt T, Westcott M, Baumbach J, Lofgren J, Gerber S, et al. Vulvar vaccinia infection after
+    sexual contact with a military smallpox vaccinee--Alaska, 2006. MMWR Morbidity and mortality weekly report.
+    2007;56(17):417-9. Available at: https://jamanetwork.com/journals/jama/fullarticle/207576
+45. Shao H, McDonald EC, Ginsberg MM, Yee LM, Montgomery JR, Allan-Martinez F, et al. Secondary and tertiary
+    transmission of vaccinia virus after sexual contact with a smallpox vaccinee—San Diego, California, 2012.
+    MMWR Morbidity and Mortality Weekly Report. 2013;62(8):145. Available at:
+    https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6208a2.htm
+46. Centers for Disease Control and Prevention (CDC). Monkeypox - Signs and Symptoms. Atlanta: CDC; 2021.
+    Available at: https://www.cdc.gov/poxvirus/monkeypox/symptoms.html
+47. Damon IK. Status of human monkeypox: clinical disease, epidemiology and research. Vaccine. 2011;29:D54-D9.
+    Available at: https://www.sciencedirect.com/science/article/pii/S0264410X1100524X
+48. Brown K, Leggat PA. Human monkeypox: current state of knowledge and implications for the future. Tropical
+    Medicine and Infectious Disease. 2016;1(1):8. Available at: https://www.mdpi.com/171272
+49. Reynolds MG, Yorita KL, Kuehnert MJ, Davidson WB, Huhn GD, Holman RC, et al. Clinical manifestations of
+    human monkeypox influenced by route of infection. The Journal of Infectious Diseases. 2006;194(6):773-80.
+    Available at: https://academic.oup.com/jid/article-abstract/194/6/773/864712
+50. Robert Koch Institut (RKI). KL für Pockenviren - Präanalytikhandbuch. Berlin: RKI; 2020. Available at:
+    https://www.rki.de/DE/Content/Infekt/NRZ/Konsiliar/Pockenviren/Praeanalytikhandbuch.pdf
+51. European Medicines Agency (EMA). Tecovirimat SIGA. Amsterdam: EMA; 2022. Available at:
+    https://www.ema.europa.eu/en/medicines/human/EPAR/tecovirimat-siga
+52. Kunasekaran MP, Chen X, Costantino V, Chughtai AA, MacIntyre CR. Evidence for residual immunity to smallpox
+    after vaccination and implications for re-emergence. Military Medicine. 2019;184(11-12):e668-e79. Available at:
+    https://academic.oup.com/milmed/article-abstract/184/11-12/e668/5542515
+53. Centers for Disease Control and Prevention (CDC). Monkeypox - Treatment. Atlanta: CDC; 2021. Available at:
+    http://www.cdc.gov/poxvirus/monkeypox/treatment.html
+54. European Centre for Disease Prevention and Control (ECDC). Factsheet for health professionals on monkeypox.
+    Stockholm: ECDC; 2019. Available at: https://www.ecdc.europa.eu/en/all-topics-z/monkeypox/factsheet-health-
+    professionals
+55. European Medicines Agency (EMA). Imvanex - Smallpox vaccine (Live Modified Vaccinia Virus Ankara) -
+    Authorisation details. London: EMA; 2013. Available at:
+    https://www.ema.europa.eu/en/medicines/human/EPAR/imvanex#authorisation-details-section
+56. European Medicines Agency (EMA). Imvanex - EPAR - Product Information. Amsterdam: EMA; 2022. Available
+    at: https://www.ema.europa.eu/en/documents/product-information/imvanex-epar-product-information_en.pdf
+57. Centers for Disease Control and Prevention (CDC). Bioterrorism Agents/Diseases. Atlanta: CDC; 2018. Available
+    at: https://emergency.cdc.gov/agent/agentlist-category.asp
+58. Tegnell A, Van Loock F, Baka A, Wallyn S, Hendriks J, Werner A, et al. Biological weapons - Development of a
+    matrix to evaluate the threat of biological agents used for bioterrorism. Cellular and Molecular Life Sciences
+    CMLS. 2006;63(19):2223-8. Available at: https://link.springer.com/article/10.1007/s00018-006-6310-5
+
+
+
+
+                                                         19
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+59. European Centre for Disease Prevention and Control (ECDC). Operational tool on rapid risk assessment
+    methodology - ECDC 2019. Stockholm: ECDC; 2019. Available at: https://www.ecdc.europa.eu/en/publications-
+    data/operational-tool-rapid-risk-assessment-methodology-ecdc-2019
+60. European Centre for Disease Prevention and Control (ECDC). Invasive meningococcal disease among men who
+    have sex with men Stockholm: ECDC; 2013. Available at:
+    https://www.ecdc.europa.eu/sites/default/files/media/en/publications/Publications/rapid-risk-assessment-
+    invasive-meningococcal-disease-among-MSM.pdf
+61. European Centre for Disease Prevention and Control (ECDC). Rapid risk assessment: Hepatitis A outbreak in the
+    EU/EEA mostly affecting men who have sex with men, 3rd update, 28 June 2017. Stockholm: ECDC; 2017.
+    Available at: https://www.ecdc.europa.eu/en/publications-data/rapid-risk-assessment-hepatitis-outbreak-eueea-
+    mostly-affecting-men-who-have-sex
+62. European Centre for Disease Prevention and Control (ECDC). Rapid risk assessment: Increase in extensively-
+    drug resistant Shigella sonnei infections in men who have sex with men in the EU/EEA and the UK. Stockholm:
+    ECDC; 2022. Available at: https://www.ecdc.europa.eu/en/publications-data/rapid-risk-assessment-increase-
+    extensively-drug-resistant-shigella-sonnei
+63. Huhn GD, Bauer AM, Yorita K, Graham MB, Sejvar J, Likos A, et al. Clinical characteristics of human monkeypox,
+    and risk factors for severe disease. Clinical Infectious Diseases. 2005;41(12):1742-51. Available at:
+    https://academic.oup.com/cid/article/41/12/1742/344953
+64. Stengaard AR, Combs L, Supervie V, Croxford S, Desai S, Sullivan AK, et al. HIV seroprevalence in five key
+    populations in Europe: a systematic literature review, 2009 to 2019. Euro Surveill. 2021;26(47):2100044.
+    Available at: https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2021.26.47.2100044
+65. European Centre for Disease Prevention and Control (ECDC). HIV Continuum of care - Monitoring
+    implementation of the Dublin Declaration on partnership to fight HIV/AIDS in Europe and Central Asia: 2020
+    progress report. Stockholm: ECDC; 2021. Available at:
+    https://www.ecdc.europa.eu/sites/default/files/documents/hiv-continuum-of-care-dublin-declaration-2021.pdf
+66. Wehrle P, Posch J, Richter K, Henderson D. An airborne outbreak of smallpox in a German hospital and its
+    significance with respect to other recent outbreaks in Europe. Bulletin of the World Health Organization.
+    1970;43(5):669. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2427800
+67. Fleischauer AT, Kile JC, Davidson M, Fischer M, Karem KL, Teclaw R, et al. Evaluation of human-to-human
+    transmission of monkeypox from infected patients to health care workers. Clinical Infectious Diseases.
+    2005;40(5):689-94. Available at: https://academic.oup.com/cid/article-abstract/40/5/689/364780
+68. Hsu CH, Farland J, Winters T, Gunn J, Caron D, Evans J, et al. Laboratory-acquired vaccinia virus infection in a
+    recently immunized person—Massachusetts, 2013. MMWR Morbidity and Mortality Weekly Report.
+    2015;64(16):435. Available at: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6416a2.htm
+69. Davies E, Peake L, Woolard D, Novak C, Hall K, Leonard R, et al. Laboratory-acquired vaccinia virus infection--
+    Virginia, 2008. MMWR Morbidity and mortality weekly report. 2009;58(29):797-800.
+70. World Health Organization (WHO). Laboratory biosafety manual, 4th edition. Geneva: WHO; 2020. Available at:
+    https://www.who.int/publications/i/item/9789240011311
+71. Mbala PK, Huggins JW, Riu-Rovira T, Ahuka SM, Mulembakani P, Rimoin AW, et al. Maternal and fetal outcomes
+    among pregnant women with human monkeypox infection in the Democratic Republic of Congo. The Journal of
+    Infectious Diseases. 2017;216(7):824-8. Available at: https://academic.oup.com/jid/article-
+    abstract/216/7/824/4348689
+72. Weiner ZP, Salzer JS, LeMasters E, Ellison JA, Kondas AV, Morgan CN, et al. Characterization of Monkeypox virus
+    dissemination in the black-tailed prairie dog (Cynomys ludovicianus) through in vivo bioluminescent imaging.
+    PLoS One. 2019;14(9):e0222612.
+73. Hutson CL, Carroll DS, Gallardo-Romero N, Drew C, Zaki SR, Nagy T, et al. Comparison of Monkeypox Virus
+    Clade Kinetics and Pathology within the Prairie Dog Animal Model Using a Serial Sacrifice Study Design. BioMed
+    Research International. 2015 2015/08/24;2015:965710. Available at: https://doi.org/10.1155/2015/965710
+74. Association for the Advancement of Blood & Biotherapies (AABB). Fact Sheet Monkeypox - 130S. Bethesda:
+    AABB; 2009. Available at: https://www.aabb.org/regulatory-and-advocacy/regulatory-affairs/infectious-
+    diseases/emerging-infectious-disease-agents/transfusion-august-2009-supplement-fact-sheets
+75. European Virus Archive global (EVAg). 2022. Available at: https://www.european-virus-archive.com
+76. European Centre for Disease Prevention and Control (ECDC). Directory of EVD-LabNet. Stockholm: ECDC; 2022.
+    Available at: https://qap.ecdc.europa.eu/public/extensions/EVD_LabNet/EVD_LabNet.html#main-tab
+
+
+
+
+                                                         20
+RAPID RISK ASSESSMENT                                                   Monkeypox multi-country outbreak – 23 May 2022
+
+
+77. Li D, Wilkins K, McCollum AM, Osadebe L, Kabamba J, Nguete B, et al. Evaluation of the GeneXpert for human
+    monkeypox diagnosis. The American Journal of Tropical Medicine and Hygiene. 2017;96(2):405. Available at:
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5303045/
+78. European Medicines Agency (EMA). Imvanex - Smallpox vaccine (Live Modified Vaccinia Virus Ankara).
+    Amsterdam: EMA; 2022. Available at: https://www.ema.europa.eu/en/medicines/human/EPAR/imvanex
+79. Stittelaar KJ, van Amerongen G, Kondova I, Kuiken T, van Lavieren RF, Pistoor FH, et al. Modified vaccinia virus
+    Ankara protects macaques against respiratory challenge with monkeypox virus. Journal of Virology.
+    2005;79(12):7845-51. Available at: https://journals.asm.org/doi/abs/10.1128/JVI.79.12.7845-7851.2005
+80. European Commission (EC). Commission Implementing Decision (EU) 2018/945 of 22 June 2018 on the
+    communicable diseases and related special health issues to be covered by epidemiological surveillance as well
+    as relevant case definitions. Brussels: Official Journal of the European Union; 2018. Available at: https://eur-
+    lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018D0945
+81. Rheinbaben Fv, Gebel J, Exner M, Schmidt A. Environmental resistance, disinfection, and sterilization of
+    poxviruses. In: Poxviruses. Basel: Springer; 2007. p. 397-405.
+82. Public Health England (PHE). Monkeypox: Guidance for environmental cleaning and decontamination. London:
+    PHE; 2018. Available at:
+    https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/746086/Mo
+    nkeypox_Guidance__cleaning_decontamination.pdf
+83. Centers for Disease Control and Prevention (CDC). Monkeypox and Smallpox Vaccine Guidance. Atlanta: CDC;
+    2019. Available at: https://www.cdc.gov/poxvirus/monkeypox/clinicians/smallpox-vaccine.html
+84. American Academy of Pediatrics (AAP) Committee on Infectious Diseases. Meningococcal infections. In: Report
+    of the Committee on Infectious Diseases, 31st Edition. Itasca, IL: American Academy of Pediatrics; 2018.
+85. European Centre for Disease Prevention and Control (ECDC). Risk assessment guidelines for infectious diseases
+    transmitted on aircraft. Stockholm: ECDC; 2009. Available at:
+    https://www.ecdc.europa.eu/sites/default/files/media/en/publications/Publications/0906_TER_Risk_Assessment
+    _Guidelines_for_Infectious_Diseases_Transmitted_on_Aircraft.pdf
+86. Centers for Disease Control and Prevention (CDC). Potential Exposure to Person with Confirmed Human
+    Monkeypox Infection — United States, 2021. Atlanta: CDC; 2021. Available at:
+    https://emergency.cdc.gov/han/2021/han00446.asp
+87. World Health Organization (WHO). Guidance on regulations for the transport of infectious substances 2019 –
+    2020. Geneva: WHO; 2020. Available at: https://www.who.int/publications/i/item/WHO-WHE-CPI-2019.20
+88. United Nations (UN). Recommendations on the transport of dangerous goods: model regulations, 21st revised
+    edition. New York, Geneva: United Nations; 2019. Available at: http://www.unece.org/trans/danger/danger.html
+89. Centers for Disease Control and Prevention (CDC). Interim Biosafety Guidelines for Laboratory Personnel
+    Handling Human and Animal Specimens for Monkeypox Testing. Atlanta: CDC; 2003. Available at:
+    https://www.aphl.org/programs/preparedness/Smallpox/pdf/labbiosafetyguide.pdf
+90. Ježek Z, Grab B, Szczeniowski M, Paluku K, Mutombo M. Human monkeypox: secondary attack rates. Bulletin of
+    the World Health Organization. 1988;66(4):465. Available at:
+    https://www.ncbi.nlm.nih.gov/pmc/articles/pmc2491159/
+91. Parker S, Nuara A, Buller RML, Schultz DA. Human monkeypox: an emerging zoonotic disease. Future
+    Microbiology. 2007;2(1) Available at: https://www.futuremedicine.com/doi/abs/10.2217/17460913.2.1.17
+92. Sale TA, Melski JW, Stratman EJ. Monkeypox: an epidemiologic and clinical comparison of African and US
+    disease. Journal of the American Academy of Dermatology. 2006;55(3):478-81. Available at:
+    https://www.sciencedirect.com/science/article/pii/S0190962206015337
+93. Reed KD, Melski JW, Graham MB, Regnery RL, Sotir MJ, Wegner MV, et al. The detection of monkeypox in
+    humans in the Western Hemisphere. New England Journal of Medicine. 2004;350(4):342-50. Available at:
+    https://www.nejm.org/doi/full/10.1056/NEJMoa032299
+94. European Centre for Disease Prevention and Control (ECDC). Rapid risk assessment: Outbreak of novel
+    coronavirus disease 2019 (COVID-19): increased transmission globally – fifth update. Stockholm: ECDC; 2020.
+    Available at: https://www.ecdc.europa.eu/en/publications-data/rapid-risk-assessment-outbreak-novel-
+    coronavirus-disease-2019-covid-19-increased
+95. Centers for Disease Control and Prevention (CDC). Contraindications to Vaccination - Nonemergency Use of
+    Smallpox Vaccine. Atlanta: CDC; 2016. Available at: https://www.cdc.gov/smallpox/clinicians/vaccination-
+    contraindications1.html
+96. World Health Organization (WHO). Summary Report on First, Second and Third Generation Smallpox Vaccines.
+    Geneva: WHO; 2013. Available at:
+
+
+
+                                                         21
+RAPID RISK ASSESSMENT                                              Monkeypox multi-country outbreak – 23 May 2022
+
+
+   http://www.who.int/immunization/sage/meetings/2013/november/2_Smallpox_vaccine_review_updated_11_10
+   _13.pdf
+97. European Centre for Disease Prevention and Control (ECDC). Guidance on community engagement for public
+    health events caused by communicable disease threats in the EU/EEA, 2020. Stockholm: ECDC; 2020. Available
+    at: https://www.ecdc.europa.eu/en/publications-data/guidance-community-engagement-public-health-events-
+    caused-communicable-disease
+98. British HIV Association (BHIVA). BHIVA rapid statement on monkeypox virus. Letchworth, United Kingdom:
+    BHIVA; 2022. Available at: https://www.bhiva.org/BHIVA-rapid-statement-on-monkeypox-virus
+
+
+
+
+                                                      22
+
