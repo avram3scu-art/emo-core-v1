@@ -30,7 +30,7 @@ MANUAL = [
     ("README.md", "live observatory", "states that the superseded documents' live observatory does not exist"),
     ("README.md", "[blind]", "definition of the evidence class"),
     ("analysis/dac_ozone.py", "validated warnings", "DAC term: t0 is a validated warning (docs/DAC_STANDARD.md)"),
-    ("docs/DAC_METRICS.md", "validated diagnostics", "DAC term: t0 is a validated warning"),
+    ("docs/archive/DAC_METRICS.md", "validated diagnostics", "DAC term: t0 is a validated warning"),
     ("docs/DAC_STANDARD.md", "validates first", "describes the code: compute_profile calls the validator"),
     ("emo/info_time.py", "Validated gain", "defined in the same docstring as the lower 95% bound of the slope"),
     ("emo/remedy/intervention_library.py", "", "text of hypothetical remedy options (RDL library), not a claim about EMO"),

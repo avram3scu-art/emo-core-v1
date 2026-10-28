@@ -24,7 +24,7 @@ DAC and UIA are reported as profiles of their components, never as a weighted sc
 
 ## What is in the repository
 
-- `emo/` — Python package: metric functions (synergy, GWI, SMF, τ_I), the DAC event-file standard (`emo/dac_standard.py`, validator and profile), DAC lag, conversion and persistence code (`emo/metrics/dac`), and the RDL backtest (`emo/remedy`). Only code used by an analysis or the weekly run is kept; the retired a_UIA engine, the unused OI and reciprocity functions and other never-used modules were deleted on 26 Oct 2026 (git history).
+- `emo/` — Python package: metric functions (synergy, GWI, SMF, τ_I), the DAC event-file standard (`emo/dac_standard.py`: validator and profile; the only DAC code), and the RDL backtest (`emo/remedy`). Only code used by an analysis or the weekly run is kept; the retired a_UIA engine, the unused OI and reciprocity functions and other never-used modules were deleted on 26 Oct 2026, and the old DAC lag/conversion/persistence functions (`emo/metrics/dac`, `emo/harmonize`, three `emo/models` files) on 28 Oct 2026 (git history).
 - `analysis/` — scripts that produce the real-data results above, with their outputs.
 - `docs/` — DAC, RDL, UIA, GWI and SMF protocols, the forecast ledger, the plan and the status.
 - `tests/` — unit and integration tests.
