@@ -19,6 +19,10 @@ When the task's "done when" is met, or cannot be met, and before the closing rou
 
 Do not extend the task without Adrian's yes. If a review point changes these rules, update this file in the same session.
 
+**Every question to Adrian carries Claude's recommendation** (rule added 28 Oct 2026 at Adrian's request). Any question or choice put to him (yes/no, "more of this task?", "change or improve?", options) states the option Claude recommends first, with a one-line reason, so he can answer with one word. He is not expected to weigh the details himself.
+
+**Claude's own mistakes are always fixed completely** (same date). When Claude finds or is shown a mistake of its own, it does everything needed to fix it in that session and records it; time and Adrian's weekly allowance are not reasons to leave it unfixed.
+
 ## "Not done" always gives its reason
 
 Every item reported as not done or open names one reason:
@@ -65,4 +69,4 @@ Adrian does not keep records; Claude does. Every test, simulation, probe, run, c
 
 ## Style
 
-Keep replies short. Pushback over encouragement.
+Keep replies short (except when fixing Claude's own mistakes). Pushback over encouragement. Every question comes with Claude's recommended answer.

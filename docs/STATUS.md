@@ -2,6 +2,8 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
+**Decision (2026-10-28, 09:29, Adrian):** new CLAUDE.md rules: every question to Adrian states Claude's recommended option first with a one-line reason; Claude's own mistakes are always fixed completely, regardless of time or weekly allowance. Reason (Adrian): "There is far too much information for me … I am not an AI; you are."
+
 ## Fix session F1 (2026-10-28, 08:34–09:05) — DAC paper facts and files
 
 - Committed with origin and sha256 (`docs/sources/dac_paper/README.md`): Futures submission FUTURES-D-26-00488 (conceptual DAC paper; submitted 17 Apr 2026, desk-rejected 18 Apr 2026); final DAC manuscript "Decision or Supply?" and its Supporting Information (Table S1 with the "Identification" row); Diagnosticity manuscript (not DAC) under `docs/sources/other_papers/`. The earlier JCCM manuscript, attached again, is byte-identical to the committed one.
