@@ -55,3 +55,4 @@ Rows start at session 9 (26 Oct 2026). Sessions 1–8 are recorded in `docs/STAT
 | 2026-10-28 | F1 | source | Revision fragments (RQ, §2.7 Proposition 1, §2.8 Table 1) committed with sha256 | — | — | `docs/sources/dac_paper/` | done | 6130d1e |
 | 2026-10-28 | F2 | check | Claim-word grep (live/real-time/deployed/operational/validated/ready/first) with a justification per hit | F2 prompt | `scripts/claims_grep.py` | repo | PASS: 251 hits (252 once this row exists), 0 unjustified (`docs/F2_CLAIMS_GREP.md`); 67 ordinal hits read by Claude | a158c65 |
 | 2026-10-28 | F2 | check | Tests and ruff in Claude's workspace before commit | — | — | — | PASS: 91 passed, ruff clean | a158c65 |
+| 2026-10-28 | F2 | run | Weekly run started by Claude to rebuild the public page; page fetched | — | `weekly_refresh.yml` | — | PASS: run green; page shows the SMF caveat | run 40654830115 |
