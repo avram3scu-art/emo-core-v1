@@ -248,6 +248,18 @@ Candidate: mpox, WHO emergency declared July 2022, to vaccine orders and deliver
 Done when: a validated event file and its profile are committed.
 ```
 
+### Session 10b: earlier-warning t0 (added 28 Oct 2026 at Adrian's request, from the session 10 review)
+
+```text
+Session 10b task: pre-register and apply one earlier-warning t0 rule to the mpox and PPE EU files.
+Why: in session 10 every EU mpox response precedes the WHO PHEIC (order −39 d, delivery −25 d), so the PHEIC is not the warning the EU answered and the case cannot be compared with PPE.
+1. Before opening any new source, commit docs/DAC_T0_EARLY_WARNING.md: one t0 rule that applies to both cases unchanged (candidate: the first risk assessment for the hazard published by ECDC; fallback: WHO's first Disease Outbreak News item), the tie and precision rules, what Claude already knows about the candidate dates (state it; both cases are known history), and what is reported (lags of first order, binding act and delivery, per case, as profiles; no pass/fail, no scalar). The rule must not be chosen to make the mpox lag positive: say how it would apply if it did not.
+2. Then open the official records, add the early-warning event to data/dac_mpox/EU.json and data/dac_ppe/EU.json (sublayer context, listed in alternative_t0; primary sources only, with URL, access date, sha256 or page text; phrases tested).
+3. Compute both profiles under the alternative t0 with a script that swaps t0_event_id in memory (the committed files keep the PHEIC t0); commit the alternative profiles. Main profiles and their tests must stay unchanged.
+4. Record what could not be dated.
+Done when: the rule file is committed before the sources were opened, both event files validate, and both alternative-t0 profiles are committed with tests passing.
+```
+
 ### Session 11: second coder
 
 ```text

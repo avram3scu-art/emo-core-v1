@@ -38,3 +38,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-28 | F12 | Manuscript argument rewrite | yes | 93558a2 | 26 tracked changes; novelty narrowed (Canada OAG); cross-case days 41–61; rivals bounded; closed at start of F13 |
 | 2026-10-28 | F13 | Manuscript figures | yes | c200d01 | Figures 1–2 redrawn from event files; China sources committed; inserted with tracked changes |
 | 2026-10-28 | F14 | Final editor-style review | yes | 118221d | not ready, do not submit yet; ChatGPT not used (Adrian) — declaration to correct; Adrian's three steps pending |
+| 2026-10-28 | 10 | Code one new warning-to-delivery case (mpox, EU) | yes | 65054ae | all EU responses precede the WHO PHEIC (order −39 d, delivery −25 d); next 10b: earlier-warning t0 |

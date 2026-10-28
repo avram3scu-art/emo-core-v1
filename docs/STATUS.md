@@ -4,11 +4,30 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position:** fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position (28 Oct, 17:40):** session 10 closed; next: session 10b (earlier-warning t0, `docs/PLAN.md`), then 11. Earlier: fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 10 (2026-10-28, 17:06–17:40) — mpox, a new warning-to-delivery case
+
+**Done when met: yes.** Rules and sources committed before any source opened (671a696); EU event file, profile, sources and tests (65054ae, f9382af); CI 40724288051.
+
+**Done**
+- `docs/DAC_MPOX_CODING.md`, `data/dac_mpox/EU.json` + `EU_profile.json`, `scripts/fetch_dac_mpox_sources.py`, `data/sources/dac_mpox/`, `tests/dac_unit/test_dac_mpox_file.py` (22 tests).
+- Result (pre-registered on known history): from the WHO PHEIC (23 Jul 2022), first EU order −39 d, first delivery −25 d, binding act −1 d; paired order→delivery 14 d. Missing: dedicated funding, institutionalisation, counter-measure. Identification not met (one paired order).
+
+**Claude's mistake (fixed, recorded):** the two "additional" purchases first lacked a lower date bound, which made them possible first orders in the first profile run; a lower-bound rule was added after the profile was seen, logged with before/after (§4).
+
+**Open (each with reason)**
+- Funding decision C(2022) 5436: unreadable (HTTP 429/JS challenge, not bypassed). Reason: needs Adrian (supply the PDF) or a later retry.
+- National mpox files (e.g. German own purchases). Reason: scope.
+- PHEIC t0 follows every EU response, so the case cannot be compared with PPE. Reason: scope; session 10b.
+
+**Review and Adrian's answer:** recommended close and a separate earlier-warning t0 session; Adrian: "Let's do it now — separate session that pre-registers an earlier-warning t0" (17:38). Prompt written into `docs/PLAN.md` (session 10b). Push-back recorded there: the t0 rule must apply to PPE unchanged and not be chosen to make the mpox lag positive.
+
+**Next:** session 10b.
 
 ## Fix session F14 (2026-10-28, 16:52–16:58) — final editor-style review
 
