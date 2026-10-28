@@ -81,3 +81,13 @@ Missing and censored sublayers are listed separately at the top level (`sublayer
 | Climate (Charney → Kyoto) | 6,712 d (18.4 y) | 6,555 – 6,919 d |
 
 Both files validate. The year-level precision of both warning dates widens each lag by 364 days (about ±0.5 y); the comparison script's single values hide this. Every t0 and binding-act source in both files is secondary (encyclopaedia or educational pages); one context row (IPCC FAR) has no source. Neither weakens the ~5-year difference between the cases, but both would have to be fixed before the files met the standard's spirit, not only its format.
+
+## 6. Primary sources for the ozone and climate t0 and binding acts (rules fixed 2026-10-28, F7, before any source was opened)
+
+**Rows:** ozone `molina_rowland_1974` (t0), `montreal_protocol` (binding act); climate `charney_1979` (t0), `kyoto_adopted` (binding act). Other rows keep their sources (out of the F7 prompt's scope).
+
+**Source rule.** Each row's `source` becomes a primary record opened in this session, cited with URL and access date in `data/sources/dac_primary_sources.md`: the journal's own article page (DOI) for Molina & Rowland; the National Academies record of the Charney report; the treaty text or the depositary's (UN Treaty Collection) or secretariat's record for the Montreal and Kyoto Protocols. `source_type` becomes `primary` only if such a record was opened; otherwise the row keeps its old source, stays `secondary`, and the failure is recorded.
+
+**Date rule.** The date is the one the primary record states: for the article, its publication date in the journal issue; for the report, the date printed on or recorded for it; for a treaty, its adoption (conclusion) date. Precision follows the record: day if the record states the day, month or year otherwise (same window rule as §5). A date is changed in the CSV only if the record contradicts it or makes it more precise; every change is listed in that file.
+
+**Reported either way (not a test).** The new binding_act lag ranges for both cases and whether the §5 exact-day lags (4,828 d; 6,712 d) still lie inside them. Since precision may rise, ranges may narrow; this is a correction of coding, not a result.
