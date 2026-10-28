@@ -60,3 +60,42 @@ def test_belgian_citations_point_to_existing_rows():
         elif e["sublayer"] != "delivery" and e.get("date_earliest") and (*key, e["date_earliest"]) not in rows:
             bad.append((e["event_id"], key, "row date differs"))
     assert n and not bad, bad
+
+
+# F8.2: each French citation is checked by a verbatim phrase on its cited PDF page.
+FR_PHRASES = {
+    "who_pheic": [(30, "30/01 L’OMS déclare l’USSPI"), (37, "l’USPPI est enfin déclarée le 30 janvier")],
+    "stock_at_t0": [(105, "33 millions de masques pédiatriques")],
+    "order_30jan_mission": [(114, "le 30 janvier 2020"), (115, "équipes médicales qui se sont rendues à Wuhan")],
+    "order_ffp2_28m": [(115, "Le lendemain, Santé publique France est saisie"), (146, "du 7 février (28,4 millions de FFP2)"),
+                       (123, "validée le 19 février")],
+    "order_ffp2_170m": [(116, "25 février (170 millions"), (146, "25 février (170,5 millions")],
+    "pharmacies_volunteer": [(141, "volontaires dès le 18 février"), (142, "dès le 18 février")],
+    "channel_announced": [(49, "le 2 mars 2020 que les professionnels de santé libéraux ont été informés")],
+    "decree_requisition": [(131, "Décret n° 2020-190 du 3 mars 2020")],
+    "decree_requisition_13mar": [(131, "Décret n° 2020-247 du 13 mars 2020")],
+    "funding_spf_11mar": [(352, "260 millions d’euros")],
+    "del_pharmacies": [(142, "pour une première livraison de masques aux officines"), (141, "pendant la semaine du 17 mars")],
+    "prefect_requisition": [(134, "Le 5 avril 2020"), (135, "préfet du Haut-Rhin")],
+}
+
+
+def test_french_citations_match_their_pages():
+    import re
+    text = (D.parent / "sources/dac_ppe/FR_senat_r20-199-11.txt").read_text(encoding="utf-8")
+    parts = re.split(r"===== PDF page (\d+) =====\n", text)[1:]
+    pages = {int(a): re.sub(r"\s+", " ", b) for a, b in zip(parts[::2], parts[1::2], strict=True)}
+    rows = json.loads((D / "FR.json").read_text(encoding="utf-8"))["events"]
+    sen = {e["event_id"] for e in rows if e["source"].startswith("Sénat") and e["date_status"] != "missing"}
+    sources: dict[str, str] = {}
+    for e in rows:  # readings share an event_id: combine their sources
+        sources[e["event_id"]] = sources.get(e["event_id"], "") + " " + e["source"].split("tome I,")[-1]
+    assert set(sen) == set(FR_PHRASES), set(sen) ^ set(FR_PHRASES)
+    def cited(src: str) -> set[int]:
+        nums: set[int] = set()
+        for a, b in re.findall(r"(\d+)(?:-(\d+))?", src):
+            nums.update(range(int(a), int(b or a) + 1))
+        return nums
+    bad = [(k, p, s) for k, v in FR_PHRASES.items() for p, s in v
+           if s not in pages[p] or p not in cited(sources[k])]
+    assert not bad, bad

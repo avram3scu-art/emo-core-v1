@@ -1,0 +1,129 @@
+{
+  "standard_version": "1.1",
+  "case_id": "FR",
+  "t0_event_id": "who_pheic",
+  "end_point": "pharmacies supplying health professionals",
+  "missing": [
+    "institutionalisation"
+  ],
+  "censored": [],
+  "contested_events": {
+    "order_ffp2_28m": [
+      "A",
+      "B"
+    ]
+  },
+  "identification_note": "Not testable: the source dates no verified delivery of any national order, so no order is paired with its own delivery (rule §5, France c). The interval from first order to first pharmacy delivery is unpaired.",
+  "profiles": [
+    {
+      "reading": {
+        "order_ffp2_28m": "A"
+      },
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 8,
+            "max_days": 8
+          },
+          "first_event_ids": [
+            "order_ffp2_28m"
+          ],
+          "n_events": 2
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 33,
+            "max_days": 33
+          },
+          "first_event_ids": [
+            "decree_requisition"
+          ],
+          "n_events": 1
+        },
+        "dedicated_funding": {
+          "lag_from_t0": {
+            "min_days": 41,
+            "max_days": 41
+          },
+          "first_event_ids": [
+            "funding_spf_11mar"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 39,
+            "max_days": 52
+          },
+          "first_event_ids": [
+            "del_pharmacies"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 31,
+        "max_days": 44
+      },
+      "secondary_end_points": {},
+      "identification": {}
+    },
+    {
+      "reading": {
+        "order_ffp2_28m": "B"
+      },
+      "sublayers": {
+        "firm_order": {
+          "lag_from_t0": {
+            "min_days": 20,
+            "max_days": 20
+          },
+          "first_event_ids": [
+            "order_ffp2_28m"
+          ],
+          "n_events": 2
+        },
+        "binding_act": {
+          "lag_from_t0": {
+            "min_days": 33,
+            "max_days": 33
+          },
+          "first_event_ids": [
+            "decree_requisition"
+          ],
+          "n_events": 1
+        },
+        "dedicated_funding": {
+          "lag_from_t0": {
+            "min_days": 41,
+            "max_days": 41
+          },
+          "first_event_ids": [
+            "funding_spf_11mar"
+          ],
+          "n_events": 1
+        },
+        "delivery": {
+          "lag_from_t0": {
+            "min_days": 39,
+            "max_days": 52
+          },
+          "first_event_ids": [
+            "del_pharmacies"
+          ],
+          "n_events": 1
+        }
+      },
+      "paired_order_to_delivery": [],
+      "undatable_pairs": [],
+      "unpaired_first_order_to_first_delivery": {
+        "min_days": 19,
+        "max_days": 32
+      },
+      "secondary_end_points": {},
+      "identification": {}
+    }
+  ]
+}
