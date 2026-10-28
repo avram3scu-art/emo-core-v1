@@ -1,0 +1,47 @@
+F9 cross-case statistics (exploratory). Days from t0 = 30 Jan 2020.
+
+1. First order, first delivery and unpaired interval per case and reading
+  BE [order_3M_ffp2=A]: order (1, 1), delivery (46, 46), unpaired (45, 45)
+  BE [order_3M_ffp2=B]: order (5, 5), delivery (46, 46), unpaired (41, 41)
+  BE [order_3M_ffp2=C]: order (34, 34), delivery (46, 46), unpaired (12, 12)
+  FR [order_ffp2_28m=A]: order (8, 8), delivery (39, 52), unpaired (31, 44)
+  FR [order_ffp2_28m=B]: order (20, 20), delivery (39, 52), unpaired (19, 32)
+  DE [first_order_federal=A]: order (29, 39), delivery (41, 50), unpaired (2, 21)
+  DE [first_order_federal=B]: order (29, 50), delivery (41, 50), unpaired (-9, 21)
+  NL [-]: order (36, 39), delivery (51, 52), unpaired (12, 16)
+  SE [-]: order (2, 30), delivery (47, 61), unpaired (17, 59)
+  EU [-]: order None, delivery (86, 86), unpaired None
+
+2. Spread of first-delivery days (max - min over all consistent dates)
+  BE, DE, NL: (5, 11)
+  BE, DE, NL, SE: (5, 20)
+
+3. Spread of first-order days across BE, DE, NL, per reading combination
+  BE[order_3M_ffp2=A] DE[first_order_federal=A]: (35, 38)
+  BE[order_3M_ffp2=A] DE[first_order_federal=B]: (35, 49)
+  BE[order_3M_ffp2=B] DE[first_order_federal=A]: (31, 34)
+  BE[order_3M_ffp2=B] DE[first_order_federal=B]: (31, 45)
+  BE[order_3M_ffp2=C] DE[first_order_federal=A]: (2, 10)
+  BE[order_3M_ffp2=C] DE[first_order_federal=B]: (2, 16)
+
+5. Spearman (order day vs delivery day) across cases: (min, max) over consistent dates
+  BE, DE, NL, SE | BE[order_3M_ffp2=A] DE[first_order_federal=A] NL[-] SE[-]: -0.40 to +1.00
+  BE, DE, NL, SE | BE[order_3M_ffp2=A] DE[first_order_federal=B] NL[-] SE[-]: -0.40 to +1.00
+  BE, DE, NL, SE | BE[order_3M_ffp2=B] DE[first_order_federal=A] NL[-] SE[-]: -0.80 to +1.00
+  BE, DE, NL, SE | BE[order_3M_ffp2=B] DE[first_order_federal=B] NL[-] SE[-]: -0.80 to +1.00
+  BE, DE, NL, SE | BE[order_3M_ffp2=C] DE[first_order_federal=A] NL[-] SE[-]: -0.80 to +0.80
+  BE, DE, NL, SE | BE[order_3M_ffp2=C] DE[first_order_federal=B] NL[-] SE[-]: -0.80 to +0.80
+  BE, DE, NL, SE: lower end ranges -0.80 to -0.40; upper end ranges +0.80 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=A] FR[order_ffp2_28m=A] DE[first_order_federal=A] NL[-] SE[-]: -0.50 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=A] FR[order_ffp2_28m=A] DE[first_order_federal=B] NL[-] SE[-]: -0.50 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=A] FR[order_ffp2_28m=B] DE[first_order_federal=A] NL[-] SE[-]: -0.50 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=A] FR[order_ffp2_28m=B] DE[first_order_federal=B] NL[-] SE[-]: -0.50 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=B] FR[order_ffp2_28m=A] DE[first_order_federal=A] NL[-] SE[-]: -0.70 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=B] FR[order_ffp2_28m=A] DE[first_order_federal=B] NL[-] SE[-]: -0.70 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=B] FR[order_ffp2_28m=B] DE[first_order_federal=A] NL[-] SE[-]: -0.70 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=B] FR[order_ffp2_28m=B] DE[first_order_federal=B] NL[-] SE[-]: -0.70 to +1.00
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=A] DE[first_order_federal=A] NL[-] SE[-]: -0.90 to +0.90
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=A] DE[first_order_federal=B] NL[-] SE[-]: -0.90 to +0.90
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=B] DE[first_order_federal=A] NL[-] SE[-]: -0.90 to +0.90
+  BE, FR, DE, NL, SE | BE[order_3M_ffp2=C] FR[order_ffp2_28m=B] DE[first_order_federal=B] NL[-] SE[-]: -0.90 to +0.90
+  BE, FR, DE, NL, SE: lower end ranges -0.90 to -0.50; upper end ranges +0.90 to +1.00
