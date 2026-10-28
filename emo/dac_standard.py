@@ -444,9 +444,11 @@ def compute_profile(data: dict[str, Any]) -> dict[str, Any]:
             identification[g] = {
                 "n_paired_orders": len(uniq),
                 "order_date_spread": spread,
-                # Proposition 1: >= 2 paired orders of one good on different dates are needed to
-                # separate decision-limited from supply-limited delay.
-                "can_separate_decision_from_supply": len(uniq) >= 2 and (spread["min_days"] or 0) > 0,
+                # Proposition 1 (manuscript section 2.7): >= 2 paired orders of one good on different
+                # dates are NECESSARY to separate decision-limited from supply-limited delay. Not
+                # sufficient: the spread must also exceed transport/partial-delivery variation, and
+                # orders placed after supply recovered behave alike under both mechanisms.
+                "minimum_for_separation_met": len(uniq) >= 2 and (spread["min_days"] or 0) > 0,
             }
         profiles.append({
             "reading": combo,

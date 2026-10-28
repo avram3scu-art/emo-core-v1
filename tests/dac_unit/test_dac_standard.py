@@ -131,7 +131,7 @@ def test_profile_values_match_hand_computation(valid):
         assert p["undatable_pairs"] == []
         assert p["identification"] == {"masks": {
             "n_paired_orders": 1, "order_date_spread": {"min_days": 0, "max_days": 0},
-            "can_separate_decision_from_supply": False}}
+            "minimum_for_separation_met": False}}
 
 
 def test_window_dates_give_ranges(valid):
@@ -246,7 +246,7 @@ def test_identification_two_paired_orders_on_different_dates(valid):
                               pairs_with="order3", end_point="national distribution level"))
     ident = ds.compute_profile(data)["profiles"][0]["identification"]["masks"]
     assert ident == {"n_paired_orders": 2, "order_date_spread": {"min_days": 21, "max_days": 21},
-                     "can_separate_decision_from_supply": True}
+                     "minimum_for_separation_met": True}
 
 
 def test_audit_probe_has_no_gaps_left():
