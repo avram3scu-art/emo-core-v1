@@ -4,7 +4,7 @@ In force from 29 Oct 2026 (session 3.0-design, Adrian's yes, 18:26). It keeps ev
 
 **[2.0] Purpose.** EMO tests one idea: that humanity's response to what it knows behaves like a mind, a loop of predicting, attending, deciding and acting, choosing remedies, and learning, whose links are coupled and improve with experience. The hypotheses H1–H7 in `docs/PLAN.md` state this so it can fail. Every session serves one of them.
 
-**[3.0] Five pillars.** EMO is built along five pillars from Adrian's vision documents (`docs/sources/vision/`): (1) credibility, (2) the mirror, (3) continuous running, (4) benefit, (5) AI as humanity's self-model. Each pillar is built as code that runs and is judged by a hypothesis that can fail (H1–H9, `docs/PLAN.md`; pillar–hypothesis table in `docs/STRATEGY_3_0.md` §3).
+**[3.0] Five pillars.** EMO is built along five pillars from Adrian's vision documents (`docs/sources/vision/`): (1) credibility, (2) the mirror, (3) continuous running, (4) benefit, (5) AI as humanity's self-model and teacher, not a control system (Adrian, 29 Oct 2026 18:35). Each pillar is built as code that runs and is judged by a hypothesis that can fail (H1–H9, `docs/PLAN.md`; pillar–hypothesis table in `docs/STRATEGY_3_0.md` §3).
 
 **[3.0] Code first.** A session ends with something that runs or a test that is registered: code, a data job, a protocol, a page. Papers, reports and submissions are by-products: a session works on one only when a recorded result calls for it or Adrian asks for it, and then every review rule below still applies.
 

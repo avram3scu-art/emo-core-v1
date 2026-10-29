@@ -17,6 +17,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Decision (Adrian, 18:26, "Yes"):** strategy 3.0 and CLAUDE.md 3.0 adopted, with the pillar 5 wording "the self-model humanity lacks, tested and never in charge". CLAUDE.md 2.0 archived in `docs/archive/CLAUDE_2.md`; roadmap merged into `docs/PLAN.md` §0 (old phases C, D renamed F, G); `docs/PLAN.docx` regenerated. Loss simulation: not supplied (open).
 
+**Decision (Adrian, 18:35):** "I want EMO to become our teacher, not a control system." Recorded in CLAUDE.md (pillar 5), `docs/STRATEGY_3_0.md` §3–§4.1 and `docs/PLAN.md` §0.1. The self-model rules still apply (a teacher can be wrong).
+
 **Done (drafted before the yes):** `docs/STRATEGY_3_0.md` (diagnosis, five pillars tied to code and hypotheses, H8 self-model and H9 benefit, phases C–H, sessions 3.1–3.10, next prompt); `docs/CLAUDE_3_0_PROPOSED.md` (all 2.0 rules kept; [3.0]: five pillars, code first, self-model rules, published data count as opened, continuous earned, benefit earned, paid services on Adrian's decision). `CLAUDE.md` and `docs/PLAN.md` unchanged until Adrian's yes.
 
 **Pushback recorded:** "substitute for humanity's mind" conflicts with the vision documents' own non-oracular, not-a-control-system principle; recommended "the self-model humanity lacks, tested and never in charge". The loss simulation mentioned by Adrian is not in the repository (gap recorded; usable only if supplied, as exploratory).
