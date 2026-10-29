@@ -1,0 +1,37 @@
+reps 2000, null draws 499, alpha 0.05 one-sided, 20% of A missing, base 0.3
+== decision at assumed hidden error e0 = 0.6 (REGISTERED decision)
+Error rate (beta 0) by true severity error:
+  err 0.0 | A independent of severity (lam 0, g 1): N20 0.102  N30 0.066  N40 0.062  N45 0.059  N100 0.050
+  err 0.0 | A and Y both rise with severity (lam 0.6, g 1): N20 0.061  N30 0.039  N40 0.029  N45 0.020  N100 0.010
+  err 0.0 | strong confounding (lam 1.0, g 2): N20 0.082  N30 0.059  N40 0.035  N45 0.025  N100 0.004
+  err 0.0 | storm shock on A (beta_shock 0.5): N20 0.053  N30 0.025  N40 0.018  N45 0.015  N100 0.004
+  err 0.3 | A independent of severity (lam 0, g 1): N20 0.102  N30 0.076  N40 0.068  N45 0.061  N100 0.059
+  err 0.3 | A and Y both rise with severity (lam 0.6, g 1): N20 0.069  N30 0.043  N40 0.028  N45 0.038  N100 0.015
+  err 0.3 | strong confounding (lam 1.0, g 2): N20 0.088  N30 0.063  N40 0.052  N45 0.031  N100 0.010
+  err 0.3 | storm shock on A (beta_shock 0.5): N20 0.067  N30 0.043  N40 0.025  N45 0.028  N100 0.013
+  err 0.6 | A independent of severity (lam 0, g 1): N20 0.092  N30 0.066  N40 0.065  N45 0.068  N100 0.051
+  err 0.6 | A and Y both rise with severity (lam 0.6, g 1): N20 0.090  N30 0.075  N40 0.067  N45 0.064  N100 0.061
+  err 0.6 | strong confounding (lam 1.0, g 2): N20 0.135  N30 0.103  N40 0.090  N45 0.092  N100 0.056
+  err 0.6 | storm shock on A (beta_shock 0.5): N20 0.074  N30 0.074  N40 0.067  N45 0.061  N100 0.061
+Power (lam 0.6, g 1, true error 0.3), rows = OR per SD of A:
+  OR 1.5: N20 0.128  N30 0.124  N40 0.125  N45 0.106  N100 0.152
+  OR 2.0: N20 0.232  N30 0.222  N40 0.217  N45 0.213  N100 0.324
+  OR 3.0: N20 0.266  N30 0.315  N40 0.366  N45 0.378  N100 0.564
+== decision at assumed hidden error e0 = 0.3 (information only)
+Error rate (beta 0) by true severity error:
+  err 0.0 | A independent of severity (lam 0, g 1): N20 0.077  N30 0.081  N40 0.066  N45 0.049  N100 0.051
+  err 0.0 | A and Y both rise with severity (lam 0.6, g 1): N20 0.072  N30 0.046  N40 0.051  N45 0.049  N100 0.037
+  err 0.0 | strong confounding (lam 1.0, g 2): N20 0.096  N30 0.079  N40 0.057  N45 0.045  N100 0.025
+  err 0.0 | storm shock on A (beta_shock 0.5): N20 0.071  N30 0.057  N40 0.048  N45 0.038  N100 0.024
+  err 0.3 | A independent of severity (lam 0, g 1): N20 0.098  N30 0.068  N40 0.056  N45 0.065  N100 0.051
+  err 0.3 | A and Y both rise with severity (lam 0.6, g 1): N20 0.087  N30 0.075  N40 0.068  N45 0.058  N100 0.054
+  err 0.3 | strong confounding (lam 1.0, g 2): N20 0.120  N30 0.098  N40 0.072  N45 0.069  N100 0.052
+  err 0.3 | storm shock on A (beta_shock 0.5): N20 0.064  N30 0.070  N40 0.065  N45 0.054  N100 0.058
+  err 0.6 | A independent of severity (lam 0, g 1): N20 0.091  N30 0.068  N40 0.066  N45 0.055  N100 0.041
+  err 0.6 | A and Y both rise with severity (lam 0.6, g 1): N20 0.114  N30 0.097  N40 0.087  N45 0.098  N100 0.115
+  err 0.6 | strong confounding (lam 1.0, g 2): N20 0.164  N30 0.155  N40 0.167  N45 0.168  N100 0.234
+  err 0.6 | storm shock on A (beta_shock 0.5): N20 0.105  N30 0.124  N40 0.102  N45 0.105  N100 0.151
+Power (lam 0.6, g 1, true error 0.3), rows = OR per SD of A:
+  OR 1.5: N20 0.168  N30 0.197  N40 0.193  N45 0.187  N100 0.288
+  OR 2.0: N20 0.240  N30 0.278  N40 0.321  N45 0.363  N100 0.547
+  OR 3.0: N20 0.331  N30 0.441  N40 0.517  N45 0.503  N100 0.793

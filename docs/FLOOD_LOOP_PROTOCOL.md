@@ -1,6 +1,6 @@
 # Flood loop (EU): data definitions registered; test statistic not yet registrable
 
-**First line (power and validity rule):** no pass/fail test is registered in this file. Both candidate tests failed their synthetic false-positive checks (§5, §8), so neither may be run. A test is registered only in a later commit, before any flood notification, pageview or activation of the period is opened.
+**First line (power and validity rule):** no pass/fail test is registered in this file. All three candidate tests failed their synthetic error-rate checks (§5, §8, §9); the F13 repair (§9, sensitivity analysis, 2.11d) also has power below 0.5 at N 20–45 (OR 3: 0.27–0.38). Claude recommends retiring the flood attention arm (`docs/FAILURES.md` F13). A test may be registered only in a later commit, before any flood notification, pageview or activation of the period is opened.
 
 Session 2.11b, 29 Oct 2026. Hypotheses: H6 (H4 in a second domain), H4 power by pooling. Class: infrastructure (definitions and synthetic checks). Feasibility: `docs/SECOND_DOMAIN_FEASIBILITY.md` §2b (C1 pass for prospective use).
 
@@ -98,3 +98,27 @@ Adding ln n changes nothing material (error 0.3: 0.049–0.100 at N 20–45). Po
 3. Power is below 0.5 at OR ≤ 2 for every N ≤ 45.
 
 **Consequence:** the requirement of §6 (FPR ≤ 0.05 under every §5 scenario, at N 20–45) cannot be met by an observational adjustment at this sample size with this severity measure. No test is registered. The §3 definitions are unchanged; the period's data stay unopened; the registration deadline (31 Dec 2028) still stands for any repaired design.
+
+## 9. F13 repair by a new estimand: sensitivity analysis (session 2.11d) — failed, not registered
+
+Code `analysis/flood_loop_sensitivity_test.py` (committed before its run: e6fad52); output `analysis/flood_loop_sensitivity_test_output.txt`. Same data model as §5 and §8. Class: infrastructure.
+
+**Estimand.** Not "is A associated with Y beyond measured severity M?" but "how large would the unmeasured part of severity (error e, in SD of severity, as in §8) have to be to explain the A–Y association?" Statistic T = partial covariance of A and Y after OLS on [1, M, M²]. Null at a given e: parametric bootstrap with s | M ~ N(R·M, R(1−R)), R = 1/(1+e²); severity's loadings on A (OLS) and Y (probit) are estimated from the data and de-attenuated for R; 499 null draws. Reported e* = largest e on 0, 0.1, …, 2.0 with p(e) ≤ 0.05. Decision fixed in the code before the run: PASS iff p(0.6) ≤ 0.05. 2000 replications (power 1000).
+
+| error rate at the fixed threshold e0 = 0.6, β = 0 | N 20 | N 30 | N 40 | N 45 | N 100 |
+|---|---|---|---|---|---|
+| true error 0, four scenarios (range) | 0.053–0.102 | 0.025–0.066 | 0.018–0.062 | 0.015–0.059 | 0.004–0.050 |
+| true error 0.3 (range) | 0.067–0.102 | 0.043–0.076 | 0.025–0.068 | 0.028–0.061 | 0.010–0.059 |
+| true error 0.6 (range) | 0.074–0.135 | 0.066–0.103 | 0.065–0.090 | 0.061–0.092 | 0.051–0.061 |
+
+Power (true error 0.3, λ 0.6, g 1), OR per SD of A 1.5 / 2 / 3: N 20 0.13 / 0.23 / 0.27; N 30 0.12 / 0.22 / 0.32; N 45 0.11 / 0.21 / 0.38; N 100 0.15 / 0.32 / 0.56.
+
+Information only (e0 = 0.3, not a registered decision): error rate 0.038–0.120 at N 20–45 when true error ≤ 0.3, 0.055–0.168 when true error 0.6; power OR 3 0.33–0.52 at N 20–45.
+
+**Diagnosis.**
+1. The plug-in bootstrap null is liberal at N 20–30 even with no confounding (A independent of severity: 0.10 at N 20, 0.07 at N 30): the null ignores the sampling error of the estimated loadings and probit fit. A double bootstrap might fix this; not attempted (it cannot fix point 2).
+2. Even where the error rate is near 0.05, power is 0.21–0.38 at OR 2–3 for N 20–45: assuming a hidden error of 0.6 SD absorbs most of what 20–45 binary outcomes can show. At e0 = 0.3 (power up to 0.52) the claim is no longer robust to the error §7 calls realistic.
+3. The sensitivity parameter assumes the hidden part of severity loads on A and Y as discharge does (proportional loadings). Impact may drive attention more than hazard does; then even e* understates the confounding. This limit holds for any one-parameter sensitivity analysis here.
+4. Option (b) (an estimand the decision cannot follow from severity alone): none is defined by the §3 data, which give one attention value and one binary decision per episode, with no ordering of attention and decision inside an episode beyond the d0/d0+1 exclusion. No external documentation was searched for one (not attempted; scope).
+
+**Consequence:** no repaired test meets the requirement (error rate ≤ 0.05 at the fixed threshold under every §5/§8 scenario, useful power at N 20–45). Claude recommends **retire** of the flood attention arm (H4 in floods); floods may still serve H3-type lag description (d0 → activation), which needs no attention test. §3 unchanged; no data of the period opened; no lag computed.
