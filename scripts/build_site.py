@@ -226,6 +226,14 @@ EIA energy significant at 3 months only (for CO2 the input fails a stationarity 
     + ext('https://fred.stlouisfed.org/', 'FRED'),
 ])}
 
+<h2>6. Hurricane response loop, 2015-2025</h2>
+<p>Do forecasts, warnings and attention speed up federal disaster action (H4), and do action lags shrink over seasons (H5)? Tests pre-registered on known history and run once (29 Oct 2026).
+H3 (lags measurable for most of the 52 landfalling storms) FAIL: both lags for 24 of 52 (p = 0.76), because weak tropical storms mostly receive no major-disaster declaration (hurricanes alone: 23 of 27, exploratory).
+H4 cannot be tested at this size (too few measured storms per season). H5 not shown at this size (Holm p 0.13-0.22; power 0.06).</p>
+{provenance([
+    'protocol and results ' + link('docs/LOOP_PROTOCOL.md') + ' (sections 18-19) · output ' + link('analysis/loop_test_2015_2025_output.txt') + ' · data ' + link('data/loop_hurricanes/'),
+])}
+
 <h2>Data retrieved this week</h2>
 <p class="meta">All series with retrieval date, change flag and hash: {link('data/MANIFEST.json')}. Tests in this run: {esc(read('pytest').splitlines()[-1] if read('pytest') else '')}
 ({link(rel + '/pytest.txt', 'log')}).</p>
@@ -252,6 +260,7 @@ PREREGISTERED = [
     ("smf_industrial_production", "docs/SMF_PROTOCOL.md", "results/smf_ip/result.txt"),
     ("smf_significance_dm", "docs/SMF_PROTOCOL.md", "results/smf_dm/result.txt"),
     ("synergy_climate", "docs/SYNERGY_PROTOCOL.md", "results/synergy_climate/result.txt"),
+    ("loop_hurricanes_2015_2025", "docs/LOOP_PROTOCOL.md", "analysis/loop_test_2015_2025_output.txt"),
 ]
 
 

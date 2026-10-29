@@ -1,0 +1,4 @@
+Secondary H3 counts (exploratory, seen data, no weight; docs/LOOP_PROTOCOL.md §19)
+  HU set (secondary, §10): both lags 23/27; exact one-sided binomial p = 0.00016
+  TS-only storms: both lags 1/25; exact one-sided binomial p = 1.00000
+  list/season attention targets: 14, of which with both lags: 0

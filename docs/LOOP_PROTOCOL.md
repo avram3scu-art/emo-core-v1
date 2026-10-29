@@ -236,3 +236,32 @@ Implementation of §5–§8 and §14–§15 where they leave a choice; no regist
 5. **Sensitivity without list/season attention targets (no weight; 2.4 review):** A pairs recounted without events whose `at_target_kind` is a list or season page; tested only if guard part 1 passes on the reduced counts.
 6. **Descriptive (no test):** every row of `exclusions.csv`; the storms with `dc_status` `no_candidate` (atcf, name, season, state k, t0, status); measured lags (Y_state, Y_fed) summarised by min/median/max only.
 7. **Blind-arm pair (§7):** if H4 is not run, no known-history p exists; the selection rule of §7 cannot be applied, and the choice is left to session 2.8 as an amendment (recorded, not made here).
+
+## 19. Results: 2015–2025 (session 2.5, 29 Oct 2026; run once)
+
+**Evidence class: pre-registered on known history.** Plan and code committed before the run (4087171, §18). Outputs: `analysis/loop_power_realized_output.txt`, `analysis/loop_test_2015_2025_output.txt`; secondary counts (exploratory, after the run, no weight): `analysis/loop_secondary_2015_2025_output.txt`. Table check first: `scripts/validate_loop_table.py`, 52 rows, 0 failures.
+
+| Test | Condition | Significance test | Result | Reading |
+|---|---|---|---|---|
+| H3 (§8.1) | share of events with both lags > 0.5 | exact one-sided binomial: 24/52 = 0.462, p = 0.756 | not met | **FAIL** |
+| H3 | Y_state not constant | IQR 8.5 d (Q1 0, Q3 8.5), point check by §8.1 | met | — |
+| H4 guard 1 (§15) | Σ(n_s − 1) − 5 ≥ 15 per pair | count rule | F pairs 9; W and A pairs 10 | not met for all 6 pairs |
+| H4 guard 2 (§15) | synthetic FPR at realized sizes ≤ 0.060 | 2,000 studies | FPR 0.046; power at r = 0.5: 0.42 | met; power < 0.8 |
+| H4 (§5, §14) | any Holm-adjusted p < 0.05 | not computed (guard 1) | — | **cannot be tested at this size** |
+| H4 sensitivity, A without list/season targets (no weight) | as guard 1 | count rule | 10 (the 14 such events all lack lags) | cannot be tested at this size |
+| H5 (§6), Y_state | Holm-adjusted p < 0.05 | season-mean permutation, 9 seasons, n 23: S = +0.222, p = 0.223, Holm 0.223 | not met | — |
+| H5, Y_fed | as above | S = +0.444, p = 0.063, Holm 0.126 | not met | — |
+| H5 overall | power at Δ = 1 ≥ 0.8 decides FAIL | guard-2 run: FPR 0.020, power 0.064 | power far below 0.8 | **not shown at this size** |
+
+Descriptive (no test): Y_state n 24, min −1, median 1, max 50 days; Y_fed n 24, min 0, median 1, max 53 days. Guard-2 coupling coefficient 1.177 (1.173 in §15; recomputed by the same bisection with P_MISS 0, as §18 item 2 sets). EMpre = 0 and naive-null sensitivities (§4, §5) and the HU-only H4 analysis (§10) are not run: H4 is not run. The blind-arm pair (§7) cannot be selected from a p-value; left to session 2.8 (§18 item 7).
+
+**Exclusions (`data/loop_hurricanes/exclusions.csv`, 49 rows over 29 storms):**
+- decide:no_candidate (22): AL012015 Ana SC, AL022015 Bill TX, AL032016 Colin FL, AL032017 Cindy LA, AL062017 Emily FL, AL012018 Alberto FL, AL072018 Gordon FL, AL112019 Imelda TX, AL122019 Karen PR, AL022020 Bertha SC, AL032020 Cristobal LA, AL062020 Fay NJ, AL222020 Beta TX, AL032021 Claudette LA, AL042021 Danny SC, AL052021 Elsa FL, AL132021 Mindy FL, AL142021 Nicholas TX, AL032022 Colin SC, AL092023 Harold TX, AL162023 Ophelia NC, AL032025 Chantal SC. All TS at t0 (35–60 kt) except Nicholas (HU, 65 kt). Listed descriptively; no rule change (2.4 finding 3). Whether a declaration of another type ("Severe Storm", "Flood") exists for each was not checked here (scope).
+- decide:no_dr (6; a qualifying EM but no DR): AL162017, AL052019, AL082020, AL292020, AL062021, AL082021.
+- predict:f_no_lines (14): AL022015, AL032016, AL062017, AL072018, AL112019, AL022020, AL062020, AL032021, AL042021, AL132021, AL032022, AL092023, AL162023, AL032025.
+- predict:f_ess_lt2 (7): AL012015, AL032017, AL012018, AL082020, AL062021, AL142021, AL062024.
+- No attend or warning exclusions (A and W 52/52).
+
+**Diagnosis of the H3 FAIL (CLAUDE.md "Repair, don't drop").** *What failed:* fewer than half the events have both lags. *Why:* the unmeasured events are almost all weak tropical storms that received no qualifying federal major-disaster declaration: 22 have no candidate of a qualifying type and 6 only an EM. *Evidence* (secondary, exploratory, seen data, no weight; `analysis/loop_secondary_2015_2025.py`): storms with an HU landfall have both lags in 23 of 27 (binomial p = 0.0002), TS-only storms in 1 of 25. (The HU count uses the HU+TS matching, not the HU-only code rule of §10; approximate.) So H3's denominator mixes "no federal action taken" with "action not measurable": a storm that causes no DR has no lag to measure, which is an outcome of the loop, not a failure of measurement. The primary set HU+TS was chosen in §10 for H4 power at the planned 54 matched storms; it doubled the events but not the measured lags. The same cause makes H4 untestable: 24 measured storms in 9 seasons leave 9–10 within-season degrees of freedom, against the 15 required.
+*What this does not show:* that hurricane lags are unmeasurable (the HU subset suggests they are measurable), or anything about coupling or learning. The HU result is on seen data and cannot turn this FAIL into a PASS.
+*Repair candidate (for session 2.8, never applied to 2015–2025):* define H3 on events with a qualifying DR request, with the share of storms that receive any federal declaration reported as a separate response-rate measure; or restrict the primary set to HU. Either needs a new test on data not yet opened (2027+), and H4 then needs a power check at the HU-only size (§15: 0.40 at r = 0.5 for 27 storms), which is below 0.8 at any single-domain size reachable before about 2030.

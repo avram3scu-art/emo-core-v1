@@ -1,0 +1,53 @@
+Hurricane loop test 2015-2025 (docs/LOOP_PROTOCOL.md §18). Class: pre-registered on known history.
+events 52 (HU 27)
+
+H3: both lags measured 24/52 = 0.462; exact one-sided binomial p = 0.7558 (PASS needs < 0.05); Y_state IQR 8.5 d (Q1 0.0, Q3 8.5) -> FAIL
+  descriptive Y_state: n 24, min -1, median 1.0, max 50 d
+  descriptive Y_fed: n 24, min 0, median 1.0, max 53 d
+
+H4 guard part 1 (counts from summary.json): n_within - 5 per pair (tested if >= 15)
+  F~Y_state: 9 -> cannot be tested at this size
+  F~Y_fed: 9 -> cannot be tested at this size
+  W~Y_state: 10 -> cannot be tested at this size
+  W~Y_fed: 10 -> cannot be tested at this size
+  A~Y_state: 10 -> cannot be tested at this size
+  A~Y_fed: 10 -> cannot be tested at this size
+Sensitivity A without list/season targets (no weight): 14 events dropped
+  A~Y_state: n 24, n_within - 5 = 10 -> cannot be tested at this size
+  A~Y_fed: n 24, n_within - 5 = 10 -> cannot be tested at this size
+H4: no pair passes guard part 1 -> H4 not run; reads 'cannot be tested at this size'.
+
+H5 (season-mean trend of residual lags, C5, Holm over 2)
+  Y_state: n 23, seasons 9 [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], rank of C5 7/7, S = -tau +0.222, one-sided p = 0.223
+  Y_fed: n 23, seasons 9 [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], rank of C5 7/7, S = -tau +0.444, one-sided p = 0.063
+  Holm-adjusted p: Y_state 0.223, Y_fed 0.126 -> not significant
+
+Exclusions (49 rows, exclusions.csv):
+  decide:no_candidate (22): AL012015 AL022015 AL032016 AL032017 AL062017 AL012018 AL072018 AL112019 AL122019 AL022020 AL032020 AL062020 AL222020 AL032021 AL042021 AL052021 AL132021 AL142021 AL032022 AL092023 AL162023 AL032025
+  decide:no_dr (6): AL162017 AL052019 AL082020 AL292020 AL062021 AL082021
+  predict:f_ess_lt2 (7): AL012015 AL032017 AL012018 AL082020 AL062021 AL142021 AL062024
+  predict:f_no_lines (14): AL022015 AL032016 AL062017 AL072018 AL112019 AL022020 AL062020 AL032021 AL042021 AL132021 AL032022 AL092023 AL162023 AL032025
+
+Storms with no qualifying FEMA candidate (22; descriptive, no rule change):
+  AL012015 ANA        SC t0 2015-05-10T10:00Z TS 40 kt
+  AL022015 BILL       TX t0 2015-06-16T16:45Z TS 50 kt
+  AL032016 COLIN      FL t0 2016-06-07T02:00Z TS 45 kt
+  AL032017 CINDY      LA t0 2017-06-22T07:00Z TS 45 kt
+  AL062017 EMILY      FL t0 2017-07-31T14:45Z TS 50 kt
+  AL012018 ALBERTO    FL t0 2018-05-28T21:00Z TS 40 kt
+  AL072018 GORDON     FL t0 2018-09-03T11:15Z TS 45 kt
+  AL112019 IMELDA     TX t0 2019-09-17T17:45Z TS 40 kt
+  AL122019 KAREN      PR t0 2019-09-24T22:00Z TS 40 kt
+  AL022020 BERTHA     SC t0 2020-05-27T13:30Z TS 45 kt
+  AL032020 CRISTOBAL  LA t0 2020-06-07T22:00Z TS 45 kt
+  AL062020 FAY        NJ t0 2020-07-10T20:00Z TS 45 kt
+  AL222020 BETA       TX t0 2020-09-22T02:45Z TS 45 kt
+  AL032021 CLAUDETTE  LA t0 2021-06-19T04:30Z TS 40 kt
+  AL042021 DANNY      SC t0 2021-06-28T23:20Z TS 35 kt
+  AL052021 ELSA       FL t0 2021-07-07T14:30Z TS 55 kt
+  AL132021 MINDY      FL t0 2021-09-09T01:15Z TS 50 kt
+  AL142021 NICHOLAS   TX t0 2021-09-14T05:30Z HU 65 kt
+  AL032022 COLIN      SC t0 2022-07-01T23:30Z TS 35 kt
+  AL092023 HAROLD     TX t0 2023-08-22T15:00Z TS 50 kt
+  AL162023 OPHELIA    NC t0 2023-09-23T10:15Z TS 60 kt
+  AL032025 CHANTAL    SC t0 2025-07-06T08:00Z TS 45 kt
