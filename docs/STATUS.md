@@ -4,12 +4,36 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 18:45):** session 3.1 closed: `docs/STREAM_DATA.md` (verdict per source, estimate 8–15 linked events/month, recommended stream, exclusions E1–E3). Next: session 3.2 (daily ingestion). Earlier (18:30): plan 3.0 and CLAUDE.md 3.0 in force (Adrian 18:26; `docs/STRATEGY_3_0.md`). Dated sessions 2.8, 2.10, 2.12, 2.12b keep their dates. Earlier (17:10): session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 19:25):** session 3.2 built (stream ingestion; encrypted log, key `EMO_STREAM_KEY` held by Adrian); done when waits for three unattended runs (checked at the start of 3.3). Next: 3.3 (loop card protocol). Earlier (18:45): session 3.1 closed: `docs/STREAM_DATA.md` (verdict per source, estimate 8–15 linked events/month, recommended stream, exclusions E1–E3). Next: session 3.2 (daily ingestion). Earlier (18:30): plan 3.0 and CLAUDE.md 3.0 in force (Adrian 18:26; `docs/STRATEGY_3_0.md`). Dated sessions 2.8, 2.10, 2.12, 2.12b keep their dates. Earlier (17:10): session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. For JOSS (not before 19 Apr 2027): verify the code and record it before disclosure point 2 can be written; reply to editors and reviewers without AI. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 3.2 (2026-10-29, 18:45–19:25) — daily ingestion of the global hazard stream (no hypothesis moved; infrastructure)
+
+**Done when met: not yet (needs time).** Fetchers, exclusion tests and the daily Action committed (0e48c2b, stream-0.2 in this close); two manual runs committed by the Action (40929240732 → e1b29af; 40930039412 → bff6519); the three unattended scheduled runs (30 Oct, 31 Oct, 1 Nov) are checked at the start of 3.3. No stream record was opened by Claude.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green; hooks path set; lock installed.
+- API docs opened and recorded (`docs/STREAM_DATA.md` §9): GDACS quick start v2, USGS GeoJSON page, feed life cycle policy and FDSN service, IFRC GO production index and OpenAPI schema, Wikimedia robot policy (three Wikimedia policy pages unreachable).
+- Monty (§3a): production and staging STAC both HTTP 401; no CEMS or appeal collections; **not reused**; EMO writes its own joins in 3.3.
+- Code (`emo/stream/`, `scripts/stream_daily.py`, `.github/workflows/stream_daily.yml`): GDACS, USGS ComCat/PAGER, CEMS, IFRC GO events and appeals (running appeals = daily `amount_funded` snapshot); E1 dropped in memory, silent; E2/E3 by host allowlist plus named refusals (also for redirects, `next` links); encrypted append-only log; manifest with checksums, request times, has_records flag; monthly counts (explicit keys, CEMS EU27 left out). Tests: 37 (`tests/unit/test_stream.py`), suite passes. Pageviews not fetched.
+
+**Decisions (Adrian):** 18:50 log stored encrypted in this public repo, key in Actions secret `EMO_STREAM_KEY` (set by Adrian 19:16; he keeps the key; Claude never holds it). 19:20 "Yes" to review 2a (has_records flag; empty source = error).
+
+**Claude's mistakes (fixed):** one claim word ("first") in a code comment, reworded before the push; a push refused by the hook for an uncommitted regenerated claim report, then committed.
+
+**Review (Adrian 19:20):** 1 nothing more now; 2a done (stream-0.2, verified by run 40930039412); 2b storage (~340 KB/run, ~125 MB/year) to 3.3; 2c GitHub cron reliability: wait for the three runs, then a cron-job.org starter if needed; 2d keep the key in two places (Adrian).
+
+**Open (each with reason)**
+- Three unattended daily runs. Reason: needs time (check from 1 Nov 2026, start of 3.3).
+- GDACS licence (EC legal notice), IFRC GO data terms, GDACS and GO rate limits, PAGER release time. Reason: needs time / not reachable here; terms before 3.4.
+- Wikimedia rate-limit pages. Reason: not reachable here (site error); needed only when pageviews are added after 3.3.
+- Monty read access as a cross-check. Reason: Adrian's decision.
+
+**Next:** session 3.3 (loop card protocol; prompt in `docs/PLAN.md`).
 
 ## Session 3.1 (2026-10-29, 18:29–18:45) — global hazard stream, data check (no hypothesis moved; data check for H3, H6, H8)
 
