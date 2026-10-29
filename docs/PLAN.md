@@ -146,13 +146,18 @@ Close the session. Run the review (more now, change or improve, improve before c
 
 ### Phase A and B
 
-### 2.1 Clean ground (infrastructure; ~1 h)
+### 2.1 Clean ground (infrastructure; ~1–1.5 h)
 
 ```text
-EMO session 2.1: clean ground. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.1 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Keep replies short.
-Session 2.1 task: fix the defects that block 2.0 work (docs/AUDIT_2026-10-29.md D1, D8, D9, D10).
-(1) README: correct the PPE line, test count and τ_I range from the repo files. (2) scripts/hooks/pre-push running claims_grep, ruff and the fast tests; document the install line. (3) A pinned lock file used by CI and the weekly run; check the frozen outputs still reproduce. (4) τ_I fitted on the time index, with a gapped-series test; recorded results must not change (probe in the audit). (5) docs/FAILURES.md: one row per recorded failure with its diagnosis and a recommended outcome (repair/replace/retire) for me to choose.
-Done when: all five committed, CI and one weekly run green, my choices on FAILURES.md recorded.
+EMO session 2.1: clean ground. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (2.0), docs/STATUS.md and the entry for session 2.1 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.1 task: fix the defects that block 2.0 work (docs/AUDIT_2026-10-29.md D1, D8, D9, D10) and start the failure register.
+(1) README.md: correct every stale line from the repo files (PPE case now in data/dac_ppe/, test count from the latest CI run, τ_I 2.3% at 12 h and 3.0–4.0% at 24–120 h from results/weekly/), point to docs/PLAN.md 2.0 and the white-paper draft, and add the contributions line from CLAUDE.md under the AI disclosure. Then run claims_grep.
+(2) scripts/hooks/pre-push: runs claims_grep (must be unjustified=0), ruff and the fast tests, and refuses the push on any failure; install it in this clone (git config core.hooksPath scripts/hooks) and prove it with a planted failing claim that it blocks, then remove the plant.
+(3) A pinned lock file (exact versions) used by CI and the weekly run; then start one weekly run and check that every frozen output still reproduces.
+(4) emo/info_time.py: fit the slope on the series' time index (numeric or datetime), with a test on a gapped series; the recorded τ_I results must not change beyond the audit's probe (72 h: 3.715 → 3.713 %/yr).
+(5) docs/FAILURES.md: one row per recorded failure (RDL v0.2, RDL v0.3, synergy, GWI calibration, GWI placebo condition, SMF withdrawn passes, a_UIA, He Option A rule, superseded documents, lost DAC files, Futures desk rejection), each with its diagnosis, evidence file and Claude's recommended outcome (repair / replace / retire, one-line reason). Ask me to choose; record my choices.
+Inputs: docs/AUDIT_2026-10-29.md; docs/REVIEW_S15_WHITEPAPER.md (README points 3, 6); contributions line in CLAUDE.md (my decision, 29 Oct 05:15); docs/PLAN.md §4–§6 (loop links for "replace").
+Done when: all five committed; the hook blocks a planted failure; CI and one weekly run green with frozen outputs reproduced; my choices on FAILURES.md recorded.
 ```
 
 ### 2.2 Hurricane loop: data check (H3–H5; ~1 h)
