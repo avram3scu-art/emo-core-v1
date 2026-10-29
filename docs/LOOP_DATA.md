@@ -53,7 +53,7 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 - **Dataset:** Disaster Declarations Summaries **v2** (v1 is no longer updated; last update 1 May 2025). API `https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries`; CSV/JSON downloads.
 - **Metadata (OpenFEMA dataset index):** 70,596 records; refresh every 20 minutes; licence field null; citation rules on the OpenFEMA Terms and Conditions page (not opened, **unverified**). data.gov lists the US government-works licence.
 - **Fields (from the v1 page opened in session 2.0, AUDIT §6):** `declarationDate`, `incidentBeginDate`, `incidentEndDate`, `incidentType`, programmes declared; coverage from 1953, county data from 1964. The v2 field list could not be opened (§9): **unverified** that v2 keeps these names.
-- **Hurricane as an incident type:** **partly confirmed.** The FEMA Web Disaster Declarations v1 page lists incident-type codes in `designatedIncidentTypes` with **H = Hurricane**; `incidentType` itself has no enumerated value list on any page opened ("such as fire or flood"). Confirm the exact `incidentType` string at first data access (session 2.4, after the protocol).
+- **Hurricane as an incident type:** **partly confirmed.** The FEMA Web Disaster Declarations v1 page lists incident-type codes in `designatedIncidentTypes` with **H = Hurricane**; `incidentType` itself has no enumerated value list on any page opened ("such as fire or flood"). Confirm the exact `incidentType` string when the data are opened (session 2.4, after the protocol).
 - **Per event:** one record per declaration and designated area; declaration type distinguishes major disaster (DR) and emergency (EM) (codes stated in v1 docs, AUDIT §6).
 - **Caveats:** raw NEMIS data with some human error; historical records entered manually after 1998; a declaration is a decision, not a delivery; US only; storm→declaration matching must use state, dates and (if present) title (**unverified** field). The Web Declarations v1 page states its last refresh as 10 Oct 2024, while the index shows 29 Oct 2026: conflicting, unresolved.
 
@@ -66,7 +66,7 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 
 ## 7. Warning times and rule-based triggers
 
-**Warning times.** NHC GIS archive: "Advisory forecast track, cone and watches/warnings", shapefile and KMZ, **2008–2026**, one file per advisory (advisory number in the file name, e.g. `AL112017_020adv_WW.kmz`). Attribute fields (issuance time) are not described on the page opened (**unverified**). Storm-surge watches/warnings archived 2017–2026. The breakpoint product has **no archive** (current season only). Advisory text archive 1999–2025 carries issuance times in the text. Per event: the first hurricane watch/warning time for a storm is derivable per advisory.
+**Warning times.** NHC GIS archive: "Advisory forecast track, cone and watches/warnings", shapefile and KMZ, **2008–2026**, one file per advisory (advisory number in the file name, e.g. `AL112017_020adv_WW.kmz`). Attribute fields (issuance time) are not described on the page opened (**unverified**). Storm-surge watches/warnings archived 2017–2026. The breakpoint product has **no archive** (current season only). Advisory text archive 1999–2025 carries issuance times in the text. Per event: the earliest hurricane watch/warning time for a storm is derivable per advisory.
 
 **Rule-based triggers (federal).**
 - **44 CFR 206.35** (eCFR, current): an emergency declaration needs a Governor's request through the Regional Administrator, within five days of the need becoming apparent and no later than thirty days after the incident; incidents that "threaten to occur" qualify, so pre-landfall requests are allowed. Nothing is triggered automatically by a weather warning. Exception: emergencies where the federal government has primary responsibility.
@@ -80,7 +80,7 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 2. Predict: per-storm errors from the individual-forecast file; layout to be confirmed from the format PDF (Adrian can supply it if it stays unreachable).
 3. Attend: per-article daily user-agent views; storm→article rule fixed in advance.
 4. Decide-act: DR vs EM split; pre-landfall EM treated as procedure.
-5. Warnings: first watch/warning per storm from the 2008+ GIS advisory files.
+5. Warnings: earliest watch/warning per storm from the 2008+ GIS advisory files.
 6. Outcome: drop as a link; HURDAT2 intensity as severity control (recommended fallback (a)).
 
 ## 9. Pages that could not be opened (this session)
