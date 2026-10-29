@@ -165,7 +165,8 @@ Done when: all five committed; the hook blocks a planted failure; CI and one wee
 ```text
 EMO session 2.2: hurricane loop data check. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.2 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H3–H5 (feasibility). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
 Session 2.2 task: for each loop link (events, predict, attend, decide-act, outcome, warning times), open the source's documentation only, not its records, and record: fields, coverage, licence, update frequency, access method, caveats, and whether per-event values exist. Confirm whether FEMA lists hurricanes as an incident type, whether per-storm NHC verification and Tropical Cyclone Reports are machine-readable, and when watches/warnings were issued, and which rule-based triggers link warnings to declarations (legal basis, with sources). Write docs/LOOP_DATA.md with a feasible/infeasible verdict per link and a fallback for each infeasible one.
-Done when: LOOP_DATA.md committed; no data record opened (stated in the file).
+Inputs: docs/AUDIT_2026-10-29.md §6 (documentation already opened: FEMA OpenFEMA Disaster Declarations Summaries page); docs/PLAN.md §5; docs/FAILURES.md (Adrian's outcomes, 29 Oct 05:29). From session 2.1: in a new clone run git config core.hooksPath scripts/hooks before the first push (the pre-push hook runs claims_grep, ruff and the tests) and install from requirements-lock.txt (pip install -r requirements-lock.txt, then pip install --no-deps -e ".[dev]").
+Done when: LOOP_DATA.md committed; no data record opened (stated in the file); CI green.
 ```
 
 ### 2.3 Hurricane loop: pre-registration (H3–H5; ~1.5 h)

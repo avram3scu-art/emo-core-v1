@@ -43,3 +43,4 @@ One row per session, with real commit IDs (rewritten 28 Oct 2026, fix session F3
 | 2026-10-29 | 11 | Prepare independent double coding (mpox EU) | yes | 97d7f07 | protocol, packet and invitation committed; agreement waits for a volunteer's sheet |
 | 2026-10-29 | 15 | Honest white paper "EMO: what runs today" | yes | 95f06a3 | draft + hostile review (not fit to share yet); Adrian: next = 2.0 design (audit, CLAUDE.md 2.0, PLAN 2.0; response loop, hurricanes) |
 | 2026-10-29 | 2.0-design | Code audit, CLAUDE.md 2.0, PLAN 2.0 | yes | 080a9da | audit D1–D12; 2.0 rules and plan in force on Adrian's yes; co-author rule not adopted (credit line recommended, his decision) |
+| 2026-10-29 | 2.1 | Clean ground: README, pre-push hook, lock file, τ_I fix, FAILURES.md | yes | 5d96654 | hook blocked plant; CI and weekly run green, 16 frozen outputs reproduce; τ_I 72 h 3.715 → 3.713; Adrian accepted all 11 FAILURES outcomes; one_off.yml pinned after review |

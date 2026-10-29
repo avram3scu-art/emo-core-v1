@@ -4,11 +4,37 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 05:05):** CLAUDE.md 2.0 and PLAN 2.0 in force (session 2.0-design; 1.x archived in `docs/archive/`). Next: session 2.1 (clean ground: README, pre-push hook, lock file, τ_I fix, FAILURES.md). Earlier positions: `docs/SESSION_LOG.md`.
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (149), mypy, ruff, claim-word check.
+- **Plan position (29 Oct, 05:40):** session 2.1 (clean ground) closed. Next: session 2.2 (hurricane loop data check). Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (154), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Failure register:** `docs/FAILURES.md` (11 rows; outcomes chosen by Adrian 29 Oct 05:29).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.1 (2026-10-29, 05:22–05:40) — clean ground (infrastructure; no hypothesis moved)
+
+**Done when met: yes.** All five items committed; hook blocked a planted claim; CI 40818411115 green; weekly run 40817861051 green with all 16 frozen outputs reproduced and the ledger hash matching; Adrian's FAILURES.md choices recorded.
+
+**Done**
+- Session start: CI had been red since bbd1d66 (plan 1 .docx committed between sessions without its Markdown copy; Claude's slip): copy generated (a03519b).
+- (3) `requirements-lock.txt`: exact versions of weekly run 40666382346 (28 Oct), used by CI and the weekly run (5674c95) and, after the review, by `one_off.yml` (xlrd 2.0.2 added from one-off run 40292776083).
+- (4) τ_I fitted on the time index (numeric or datetime), 5 tests (ac75040). Only 72 h changed: 3.715 → 3.713 %/yr, trend −7.17 → −7.12 n mi/yr, as the audit probe predicted; confirmed by the weekly run.
+- (1) README corrected from repo files (bfaf912, final count line after CI); claims_grep unjustified=0. The ECMWF refusal is now marked unverified (no record in the repo).
+- (2) `scripts/hooks/pre-push` installed; planted claim REFUSED, remote unchanged; plant removed, never pushed; proof logs in `results/hook_proof/`. The hook also refused two later pushes for real (its own comment wording; a stale F2 report).
+- (5) `docs/FAILURES.md` (5d96654).
+
+**Decision (Adrian, 29 Oct 05:29, "Accept all"):** F1 RDL v0.2 retire; F2 RDL v0.3 replace (RDL 2.0 registry); F3 synergy retire; F4 GWI calibration repair (GWI v2); F5 GWI placebo repair (in GWI v2); F6 SMF replace (SMF v2); F7 a_UIA replace (done); F8 He Option A replace (done); F9 superseded documents replace (white paper, 2.13); F10 lost DAC files repair (second coder); F11 Futures paper retire.
+
+**Claude's slips (fixed, recorded in `docs/RECORD.md`):** red CI from the between-session commit; first gap test badly designed (a 5-year gap does not move a Theil–Sen median); "live" in the hook comment.
+
+**Review and Adrian's answer (05:35):** (1) more now: pin `one_off.yml` too, recommended yes; Adrian: yes, done. (2) Change: `claims_grep.py` gives `scripts/weekly_run.py` a blanket pass (empty needle); recommended for a later infrastructure slot. ECMWF message: recommended Adrian supplies it.
+
+**Open (each with reason)**
+- Blanket claims_grep pass for `scripts/weekly_run.py`. Reason: scope (changes the check itself).
+- ECMWF refusal record. Reason: Adrian's action (supply the message), otherwise it stays unverified.
+- `pdfplumber` in the `nhc-pdf` one-off job is unpinned. Reason: scope; download check, no frozen output depends on it.
+
+**Next:** session 2.2 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.0-design (2026-10-29, 04:39–05:05) — code audit, CLAUDE.md 2.0, PLAN 2.0
 
