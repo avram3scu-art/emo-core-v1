@@ -22,6 +22,8 @@ EMO tests one idea: that humanity's response to a hazard behaves like a mind, a 
 
 Adrian's mirror essay already maps onto the loop: latency = DAC lags; learning = H5; alignment (promise vs budget) = SMF; consistency (parts reinforcing or opposing) = counter-measures between levels in DAC. The six stages of *What if humanity is already a mind* (warning not recognised; recognised, not transmitted; reached decision-makers, no budget; funded, fragmented; coordinated, then collapsed; learned) become the stage field of each loop card.
 
+**Pillar 5 (Adrian, 29 Oct 2026):** EMO is "our teacher, not a control system" (18:35). Reason, in Adrian's words (29 Oct 2026, 18:38): "You can become a mass destruction weapon. Trust humanity, as I trust." People decide; EMO only makes it harder to pretend not to know. Rules: CLAUDE.md 3.0, self-model rules.
+
 ### 0.2 Hypotheses added (H1–H7 unchanged)
 
 | # | Hypothesis | Fails if | Status |
