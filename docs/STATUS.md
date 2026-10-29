@@ -4,11 +4,32 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (28 Oct 2026)
 
-- **Plan position (28 Oct, 17:50):** sessions 10 and 10b closed; next: session 11 (second coder, `docs/PLAN.md`). Earlier: fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
+- **Plan position (29 Oct, 03:41):** session 11 closed (double-coding protocol committed; agreement waits for a volunteer's sheet). Next by `docs/PLAN.md`: 12 is gated (needs 24 coded DAC cases), 13 waits for data, 14 after 31 Dec 2026; session 15 (honest white paper) is the next runnable one, Adrian's choice. Earlier: sessions 10 and 10b closed. Earlier: fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
-- **Adrian must do:** nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+- **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 11 (2026-10-29, 03:32–03:41) — prepare independent double coding
+
+**Done when met: yes.** Protocol, packet and invitation committed (97d7f07); CI 40807395513 (149 tests, claim-word check 0 unjustified).
+
+**Done**
+- `docs/DOUBLE_CODING.md`, committed before any coder was contacted: case EU mpox 2022 (9 official sources in the repo, about 3–4 h; two short pages in German); blindness by the coder's declaration; coding rules a second person can follow alone; synthetic training example (`docs/double_coding/training_answer.csv`); return sheet (`coding_sheet.csv`).
+- Agreement (pre-registered): 9 scored items (t0, earliest order, delivery, binding act, funding, institutionalisation, counter-measure, pairing, number of orders), each same / overlapping / different, plus lag differences; description only, no pass/fail, no kappa or alpha for one case. Evidence class: blind if the coder declares no exposure, otherwise known history.
+- Disagreements: comparison recorded first and never revised; causes (a)–(d); written resolution in a separate resolved file; unresolved items kept as two readings (no casting vote).
+- Packet `docs/double_coding/DAC_double_coding_packet_mpox.zip` (12 files) built by `scripts/build_double_coding_packet.py`; `tests/dac_unit/test_double_coding_packet.py` fails if the zip is stale or holds Claude's coding. Invitation draft: `docs/double_coding/invitation.md` (no repository link).
+
+**Claude's slip (fixed before commit):** a rule example quoted the case's contract size (109,000 doses), a hint at the answer; replaced with a neutral example. First claims check found 6 ordinal "first" hits; reworded before commit.
+
+**Open (each with reason)**
+- Agreement result. Reason: needs time (a volunteer must code; computed in a later session).
+- Belgian PPE packet. Reason: scope; after this round shows the rules work.
+- Blindness rests on the coder's declaration (public repo). Reason: method limit, stated in §9.
+
+**Review and Adrian's answer:** recommended no more now; acknowledgement-only offer kept (Adrian's decision, recommended keep); close. Adrian: "Close the session" (03:40).
+
+**Next:** session 15 (honest white paper) or a session Adrian chooses; 12–14 are gated. An agreement session as soon as a sheet returns.
 
 ## Session 10b (2026-10-28, 17:39–17:50) — earlier-warning t0
 
