@@ -10,12 +10,12 @@
 | owid_ozone_depleting_substance_consumption.csv | ok | no | 5642 |
 | owid_foreign_aid_share_of_gni.csv | ok | no | 2114 |
 | owid_ucdp_death_rate_armed_conflicts.csv | ok | no | 7561 |
-| openalex_articles_multicountry_by_year.json | ok | no | 200 |
-| openalex_articles_anycountry_by_year.json | ok | no | 200 |
-| openalex_articles_multicountry_by_year_excl_CN_ID.json | ok | no | 200 |
-| openalex_articles_anycountry_by_year_excl_CN_ID.json | ok | no | 200 |
-| openalex_single_country_2020_by_country.json | ok | no | 200 |
-| openalex_single_country_2025_by_country.json | ok | no | 200 |
+| openalex_articles_multicountry_by_year.json | ok | yes | 200 |
+| openalex_articles_anycountry_by_year.json | ok | yes | 200 |
+| openalex_articles_multicountry_by_year_excl_CN_ID.json | ok | yes | 200 |
+| openalex_articles_anycountry_by_year_excl_CN_ID.json | ok | yes | 200 |
+| openalex_single_country_2020_by_country.json | ok | yes | 200 |
+| openalex_single_country_2025_by_country.json | ok | yes | 200 |
 | hurdat2_atlantic.txt | ok | no | 1988 |
 | wikipedia_pageviews_gwi.csv | ok | no | 89136 |
 | wikipedia_pageviews_gwi_calibration.csv | ok | no | 104289 |
@@ -36,6 +36,10 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 - `loop_power_amend1` reproduces `analysis/loop_power_amend1_output.txt`.
 - `loop_power_amend2` reproduces `analysis/loop_power_amend2_output.txt`.
 - `loop_power_amend3` reproduces `analysis/loop_power_amend3_output.txt`.
+- `gwi_v2_development` reproduces `analysis/gwi_v2_development_output.txt`.
+- `gwi_v2_synthetic_quick` reproduces `analysis/gwi_v2_synthetic_quick_output.txt`.
+- `smf_v2_power` reproduces `analysis/smf_v2_power_output.txt`.
+- `he_loop_test` reproduces `analysis/he_loop_test_output.txt`.
 - `smf_steo` reproduces `results/smf_steo/result.txt`.
 - `smf_steo_leads` reproduces `results/smf_steo_leads/result.txt`.
 - `smf_steo_h18` reproduces `results/smf_steo_h18/result.txt`.
@@ -51,6 +55,7 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 - `dac_ozone`: unchanged since 2026-10-28
 - `dac_compare_ozone_climate`: unchanged since 2026-10-28
 - `organismality_plane`: unchanged since 2026-10-28
+  - figure `analysis/organismality_plane.png` changed; copy kept in this folder
 - `information_time_nhc`: changed since 2026-10-28
 
 ```diff
@@ -68,4 +73,4 @@ Not refreshed by design (manual or hand-coded): NHC track errors, DAC event date
 
 ## Tests
 
-- pytest: 179 passed in 11.87s
+- pytest: 237 passed, 36 warnings in 14.53s
