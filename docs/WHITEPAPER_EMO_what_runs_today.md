@@ -1,115 +1,160 @@
-# EMO: what runs today
+# EMO: what runs today, and what it has not shown
 
 Adrian N. Avramescu
 Independent researcher, Antwerp
 
-Draft, 29 October 2026. Not for distribution until reviewed (see `docs/REVIEW_S15_WHITEPAPER.md`). It replaces `WHITEPAPER_EMO_v1_Why_EMO_Must_Run_Continuously.md.docx`, which described a system that never existed.
+Draft of 29 October 2026 (revision of the session 15 draft). **Not for distribution** until the author's verification is recorded in [`docs/STATUS.md`](STATUS.md) (see AI disclosure, point 2) and the review [`docs/REVIEW_2_13_WHITEPAPER.md`](REVIEW_2_13_WHITEPAPER.md) is answered. It replaces `WHITEPAPER_EMO_v1_Why_EMO_Must_Run_Continuously.md.docx`, which described a system that never existed ([`docs/FAILURES.md`](FAILURES.md) F9).
 
-**How to read this paper.** Every factual statement links to a file in this repository (script, data file, test or protocol). Anything that is an aim and not yet built is marked **[plan]**. Every result carries one evidence class, as defined in [`CLAUDE.md`](../CLAUDE.md): **[blind]** (protocol committed before the data were opened, outcome unknown); **[known history]** (protocol first, but the outcome of the cases was known to the author or to Claude); **[exploratory]** (no pre-registration); **[infrastructure]** (code, CI, data plumbing, synthetic checks of a method). Claims of "first" or "only" are not made: no full-text literature database was searched ([`docs/RELATED_WORK.md`](RELATED_WORK.md), [`docs/LIT_SEARCH_F11.md`](LIT_SEARCH_F11.md)).
+**Who this is for, and the one ask.** This is a status paper for researchers who evaluate disaster response or early-warning systems. It asks one thing: **one person willing to recode one case (EU mpox vaccines, 2022; nine short official records, about 3–4 hours) as an independent second coder**, under a protocol already committed ([`docs/DOUBLE_CODING.md`](DOUBLE_CODING.md)). Every decide-act file in EMO was coded by one AI model and no human has checked one ([§3.3](#33-decide-and-act-h3)). To keep that recode blind, this paper gives no mpox result, and a volunteer should not open the files listed in `docs/DOUBLE_CODING.md` ("Do not open") before returning the sheet. Contact: the author via ORCID https://orcid.org/0009-0005-1393-5264. It is not a funding request.
+
+**How to read it.** Every factual statement links to a file in this repository; anything not yet built or not yet scored is marked **[plan]**. Every result carries one evidence class ([`CLAUDE.md`](../CLAUDE.md), Science rules): **[blind]** protocol committed before the data were opened, outcome unknown; **[known history]** protocol first, outcome of the cases known to the author or to Claude; **[exploratory]** no pre-registration; **[infrastructure]** code, CI, data plumbing, synthetic checks of a method. A test that is registered but not yet scored is marked **[blind, registered]**: it is a commitment, not a result. No claim of "first" or "only" is made: no full-text literature database was searched ([`docs/RELATED_WORK.md`](RELATED_WORK.md), [`docs/LIT_SEARCH_F11.md`](LIT_SEARCH_F11.md)). Links are relative to branch `emo-2026-10`; a shared copy will point to a tagged release [plan, session 2.15, [`docs/PLAN.md`](PLAN.md)].
 
 ---
 
-## 1. The vision, stated as a plan
+## 1. The hypothesis, and how it can fail
 
-EMO (Emergent Mind Observatory) starts from one idea: humanity, with its institutions and infrastructures, can be studied as a system that senses, remembers, predicts and acts, and its response to what it knows can be measured. The questions are simple to state:
+EMO tests one idea: that a society's response to a hazard behaves like a mind, a loop of predicting, attending, deciding and acting, choosing remedies and learning, whose links are **coupled** and **improve with experience** ([`CLAUDE.md`](../CLAUDE.md), Purpose; [`docs/PLAN.md`](PLAN.md) §3). A loop with independent links is a set of agencies; only coupling and learning beyond what severity and formal procedure explain would support the "mind" reading. That null, **independent agencies**, is stated before any test ([`docs/PLAN.md`](PLAN.md) §3).
 
-- When a warning is issued, how long until something is actually delivered? (DAC)
-- Is our collective prediction getting better, and how fast? (τ_I, SMF)
-- Does attention converge on a risk when it should? (GWI)
-- Do media, science and policy streams carry information jointly that none carries alone? (synergy)
-- Can proposed remedies be tested before they are adopted? (RDL)
-- Can these be read together as a profile of how the human–Earth interface is working? (UIA)
+The idea is split into seven hypotheses ([`docs/PLAN.md`](PLAN.md) §4). Only H4 and H5 bear on the "mind" reading; H1–H3 and H7 test single links; H6 tests generality.
 
-**[plan]** In the long run EMO should be an open, continuously re-run instrument whose outputs sit beside Earth-system models, early-warning systems and planetary dashboards, as inputs to deliberation, never as scores that decide. That is the vision of the earlier white paper and it is kept. What changed is the status: almost none of it exists yet, several parts were tested and failed, and the rest of this paper says exactly which.
+| # | Hypothesis | Fails if | Where it stands (29 Oct 2026) |
+|---|---|---|---|
+| H1 | Predict: forecast skill improves over time | τ_I = 0 on the domain's forecasts | NHC track errors fall 2.3–4.0 %/yr **[exploratory]**; SMF v2 test on 2026 storms **[blind, registered]**, scored from May 2027 ([§3.1](#31-predict-h1)) |
+| H2 | Attend: attention ignites on hazard events, with a threshold that transfers | GWI v2 fails its prospective calibration or event test | v1 event test PASS **[blind]**; v1 calibration FAIL **[blind]**; GWI v2 **[blind, registered]**, scored 15 Nov 2027 ([§3.2](#32-attend-h2)) |
+| H3 | Decide-act: action follows each event with a measurable lag | lags not measurable from official records for most events | hurricanes 2015–2025 **FAIL** **[known history]**; repaired for 2027+ and for floods **[blind, registered]** ([§3.3](#33-decide-and-act-h3)) |
+| H4 | Coupling beyond procedure | no significant association at power ≥ 0.8, or an equivalence bound excludes it | **not tested**: cannot be tested on 2015–2025 hurricanes; registered tests have power < 0.5 ([§3.4](#34-coupling-beyond-procedure-h4)) |
+| H5 | Learning: lags shrink across seasons beyond intensity mix and forecast gains | no significant trend at adequate power | **not shown at this size** (power 0.06) **[known history]** ([§3.5](#35-learning-h5)) |
+| H6 | Generality: H4–H5 hold in a second hazard or region | they fail there | EU floods: two tests **[blind, registered]**, scored after 31 Jan 2029 ([§3.6](#36-a-second-domain-eu-floods-h6)) |
+| H7 | Choose: registered forecasts beat a naive baseline (Brier) | no better than baseline after ≥ 20 resolved forecasts | 15 forecasts registered, none resolved ([§3.7](#37-choose-h7-and-rdl)) |
 
-Other instruments already measure parts of the response: policy-coherence mechanisms (SDG 17.14.1), governance quality, regime effectiveness (Oslo–Seattle, IRD), response stringency (OxCGRT) and early-warning coverage ([`docs/RELATED_WORK.md`](RELATED_WORK.md), entries opened in session 4). The narrow thing EMO adds today is form, not a new question: dated warning-to-delivery lags from primary records, open code, a scheduled re-run, and every test with its protocol on record (same file, Summary).
+**What this means today.** No result supports the "mind" reading. The two hypotheses that bear on it have not been tested at adequate power, and in the hurricane domain H4 cannot be decided before about 2036 at the expected sample size ([`docs/PLAN.md`](PLAN.md) §4, H4 note). If H4 and H5 both fail at adequate power in a domain, the claim is withdrawn for that domain and EMO remains a set of response measurements ([`docs/PLAN.md`](PLAN.md) §4, "Falsification, stated now"). The framing is a hypothesis under test, not a finding.
+
+**Related work.** Policy-coherence indicators (SDG 17.14.1), governance quality, regime effectiveness (Oslo–Seattle, IRD), response stringency (OxCGRT) and early-warning coverage already measure parts of the response ([`docs/RELATED_WORK.md`](RELATED_WORK.md), entries opened in session 4). What EMO adds today is form, not a new question: dated lags from primary records, open code, a scheduled re-run, pre-registered tests with their power stated, and every failure on record (same file, Summary). Regime-effectiveness work may cover more of this ground than the named-source search found (same file).
 
 ## 2. What runs
 
 | Component | What it does today | Evidence |
 |---|---|---|
-| Weekly run | A GitHub Action, started every Monday by an external scheduler, refreshes open data, re-runs the analyses, runs the tests, commits only if they pass, and rebuilds a public page. Running since 23 Oct 2026. **[infrastructure]** | [`.github/workflows/weekly_refresh.yml`](../.github/workflows/weekly_refresh.yml), [`scripts/weekly_run.py`](../scripts/weekly_run.py), [`scripts/build_site.py`](../scripts/build_site.py); start-up in [`CLAUDE.md`](../CLAUDE.md) §Start; latest run 40666382346 |
-| Frozen check | The weekly run re-runs recorded analyses and fails if any recorded output changes. **[infrastructure]** | [`docs/STATUS.md`](STATUS.md) (F5: all 15 frozen runs reproduce, weekly run 40659742858) |
-| Tests and checks | CI runs unit and integration tests, mypy, ruff, and a claim-word check that fails on unjustified status or priority words (word list in the script). 149 tests at the last recorded CI run. **[infrastructure]** | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml), [`tests/`](../tests/), [`scripts/claims_grep.py`](../scripts/claims_grep.py); count from [`docs/STATUS.md`](STATUS.md), session 11 (CI 40807395513) |
-| DAC standard | A JSON schema, validator and profile function for warning-to-delivery event files. **[infrastructure]** | [`emo/dac_standard.py`](../emo/dac_standard.py), [`docs/DAC_STANDARD.md`](DAC_STANDARD.md), [`docs/dac_event_file.schema.json`](dac_event_file.schema.json), [`tests/dac_unit/`](../tests/dac_unit/) |
-| Metric functions | Synergy, GWI, SMF and τ_I as tested Python functions. **[infrastructure]** | [`emo/synergy.py`](../emo/synergy.py), [`emo/gwi.py`](../emo/gwi.py), [`emo/smf.py`](../emo/smf.py), [`emo/info_time.py`](../emo/info_time.py) |
-| Record | One row per test, run, fetch and failed attempt. | [`docs/RECORD.md`](RECORD.md) |
+| Weekly run | A GitHub Action, started each Monday 07:41 Brussels by an external scheduler, refreshes open data, re-runs analyses and tests, commits only if they pass, rebuilds a public page. Running since 23 Oct 2026; latest run 40843970838 (29 Oct 2026), green. **[infrastructure]** | [`.github/workflows/weekly_refresh.yml`](../.github/workflows/weekly_refresh.yml), [`scripts/weekly_run.py`](../scripts/weekly_run.py), [`scripts/build_site.py`](../scripts/build_site.py); [`CLAUDE.md`](../CLAUDE.md) §Start, step 3 |
+| Frozen check | The weekly run re-runs recorded analyses and fails if any recorded output changes; 19 reproduced on 29 Oct 2026, RDL v0.4 not run (no data). **[infrastructure]** | [`results/weekly/2026-10-29/SUMMARY.md`](../results/weekly/2026-10-29/SUMMARY.md) |
+| Tests and checks | CI: 200 tests pass (run 40895686707, 29 Oct 2026), mypy, ruff, and a claim-word check that fails on unjustified status or priority words; a pre-push hook runs the same checks; exact tool versions locked. **[infrastructure]** | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml), [`tests/`](../tests/), [`scripts/claims_grep.py`](../scripts/claims_grep.py), [`scripts/hooks/pre-push`](../scripts/hooks/pre-push), [`requirements-lock.txt`](../requirements-lock.txt) |
+| Hurricane loop table | 52 Atlantic landfalls 2015–2025, one row per storm with predict, attend, warning and decide-act fields from machine-readable records, checked by script. **[infrastructure]** | [`data/loop_hurricanes/`](../data/loop_hurricanes/), [`scripts/validate_loop_table.py`](../scripts/validate_loop_table.py), [`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §16 |
+| DAC standard | JSON schema, validator and profile function for warning-to-delivery event files. **[infrastructure]** | [`emo/dac_standard.py`](../emo/dac_standard.py), [`docs/DAC_STANDARD.md`](DAC_STANDARD.md), [`tests/dac_unit/`](../tests/dac_unit/) |
+| Metric functions | τ_I, SMF v2, GWI v2 and the UIA 2.0 loop profile as tested Python functions. **[infrastructure]** | [`emo/info_time.py`](../emo/info_time.py), [`emo/smf.py`](../emo/smf.py), [`emo/gwi_v2.py`](../emo/gwi_v2.py), [`emo/uia2.py`](../emo/uia2.py) |
+| Records | One row per test, run, fetch and failed attempt; one row per failure with its diagnosis and the author's choice. | [`docs/RECORD.md`](RECORD.md), [`docs/FAILURES.md`](FAILURES.md) |
 
-What does **not** run: no dashboard, no API, no streaming or daily ingestion, no DestinE or other digital-twin link. The API, dashboard and pipeline scaffolding described in the earlier white paper never ran and was deleted on 26 Oct 2026; ECMWF declined to distribute the numerical data behind its headline-score charts ([`docs/sources/ecmwf/SD-131630_reply.md`](sources/ecmwf/SD-131630_reply.md)); see also [`docs/AUDIT_2026-10-26.md`](AUDIT_2026-10-26.md). GDELT has never been ingested ([`README.md`](../README.md), status table).
+What does **not** run: no dashboard, no API, no streaming or daily ingestion, no digital-twin link. The scaffolding the earlier white paper described never ran and was deleted on 26 Oct 2026 ([`docs/AUDIT_2026-10-26.md`](AUDIT_2026-10-26.md)). ECMWF declined to distribute the numerical data behind its headline-score charts ([`docs/sources/ecmwf/SD-131630_reply.md`](sources/ecmwf/SD-131630_reply.md)).
 
-## 3. Results, pillar by pillar
+## 3. Results, link by link
 
-### 3.1 DAC: from warning to delivered response
+The engine domain is Atlantic hurricanes, chosen because the loop repeats several times a season; every season up to 2026 is known history, so only 2027 onward gives blind tests ([`docs/PLAN.md`](PLAN.md) §5).
 
-DAC records, for one hazard, dated events by sublayer (warning t0, first order, first delivery, binding act, funding, institutionalisation, counter-measure) and reports them as a profile, never as a weighted score ([`docs/DAC_STANDARD.md`](DAC_STANDARD.md)).
+### 3.1 Predict (H1)
 
-- **Ozone vs climate.** Warning-to-binding-act lag 4,828 days for ozone (exact) and 6,555–6,919 days for climate (the Charney report is dated to the year only); n = 2, t0 and binding acts from primary records. **[exploratory]** ([`data/dac_ozone_events.json`](../data/dac_ozone_events.json), [`data/dac_climate_events.json`](../data/dac_climate_events.json), [`data/sources/dac_primary_sources.md`](../data/sources/dac_primary_sources.md), [`analysis/dac_ozone.py`](../analysis/dac_ozone.py)). Two cases describe; they do not test anything.
-- **COVID-19 PPE, five countries and the EU.** Recoded from primary sources in October 2026 after the original files were lost: six event files (Belgium, France, Germany, the Netherlands, Sweden, EU), with sources, sha256 checksums and phrase tests. **[known history]**: coded with the key results of an earlier manuscript known ([`docs/DAC_PPE_CODING.md`](DAC_PPE_CODING.md) §1, which records two blindness breaches verbatim). Example result: Belgium's first delivery to municipalities at t0 + 46 days; paired order-to-delivery lags, measured to the federal stock (a secondary end point), 5–6 days (surgical masks), 10–56 days (FFP2, across three readings of one contested order), 5 days (gloves) ([`data/dac_ppe/BE_profile.json`](../data/dac_ppe/BE_profile.json)). The recoded files were compared item by item with the manuscript: most items the same or overlapping, a few different, one Claude omission corrected ([`docs/DAC_PPE_COMPARISON.md`](DAC_PPE_COMPARISON.md)). Cross-case summary script: [`analysis/dac_ppe_crosscase.py`](../analysis/dac_ppe_crosscase.py) **[exploratory]**.
-- **Mpox 2022, EU.** From the WHO emergency declaration, first EU order −39 days, first delivery −25 days, binding act −1 day; one paired order (14 days). **[known history]** ([`docs/DAC_MPOX_CODING.md`](DAC_MPOX_CODING.md), [`data/dac_mpox/EU_profile.json`](../data/dac_mpox/EU_profile.json)). With an earlier-warning t0 (ECDC's first risk assessment, rule fixed before sources were opened) the order lag is +22 days ([`docs/DAC_T0_EARLY_WARNING.md`](DAC_T0_EARLY_WARNING.md), [`data/dac_mpox/EU_profile_t0_early.json`](../data/dac_mpox/EU_profile_t0_early.json)). The sign of a lag depends on the choice of t0; that is itself a finding about the method.
-- **Limits.** Every DAC file was coded by an AI model (Claude) and no human has yet recoded any of them. A double-coding protocol and packet are committed; no agreement result exists ([`docs/DOUBLE_CODING.md`](DOUBLE_CODING.md)). The DAC manuscript ("Decision or Supply?") has not been submitted ([`docs/STATUS.md`](STATUS.md), F1, F14).
+- **τ_I** on NHC Atlantic track errors 1970–2025: error falls 2.33 %/yr at 12 h and 3.05–3.95 %/yr at 24–120 h, block-bootstrap intervals excluding zero at every lead. This restates NHC's known trend. **[exploratory]** ([`results/weekly/2026-10-29/information_time_nhc.txt`](../results/weekly/2026-10-29/information_time_nhc.txt), [`analysis/information_time_nhc.py`](../analysis/information_time_nhc.py)).
+- **SMF v1** (do official forecasts beat "no change"?): after Diebold–Mariano with Holm correction, 6 of 12 earlier passes survive (EIA CO2 and electricity at 3 months; SPF unemployment at 1, 2, 4 quarters; SPF industrial production at 1–2 quarters). The EIA CO2 input fails a stationarity check. **[known history]** ([`docs/SMF_PROTOCOL.md`](SMF_PROTOCOL.md) §13, [`results/smf_dm/result.txt`](../results/smf_dm/result.txt)).
+- **SMF v2** (skill against persistence as the definition): NHC official forecasts vs the OCD5 benchmark on 2026 storms, track and intensity at 24/48/72 h, Holm over the family. Synthetic family false-positive rate 0.027–0.045 (0.066 under strong between-storm dependence, a stated limit); power 0.51–0.64 at 12–15 storms for a one-SD advantage. **[blind, registered]**, data from 1 May 2027 ([`docs/SMF_PROTOCOL.md`](SMF_PROTOCOL.md) §14–§15, [`analysis/smf_v2_power_output.txt`](../analysis/smf_v2_power_output.txt)).
 
-### 3.2 EMO metrics
+### 3.2 Attend (H2)
 
-- **τ_I (information-time)** on NHC Atlantic hurricane track errors 1970–2025: track error falls 2.3% a year at 12 h lead time and 3.0–4.0% a year at 24–120 h, which restates NHC's known trend. **[exploratory]** ([`results/weekly/2026-10-28/information_time_nhc.txt`](../results/weekly/2026-10-28/information_time_nhc.txt), [`analysis/information_time_nhc.py`](../analysis/information_time_nhc.py), [`data/nhc_atlantic_official_track_errors_1970_2025.csv`](../data/nhc_atlantic_official_track_errors_1970_2025.csv)).
-- **Organismality plane** 1989–2025: international co-authorship share against conflict death rate, drawn as a path. **[exploratory]**, descriptive only ([`analysis/organismality_plane.py`](../analysis/organismality_plane.py), [`analysis/organismality_plane.png`](../analysis/organismality_plane.png)).
-- **GWI (global workspace ignition)** on Wikipedia pageviews: ignition days fall in Atlantic hurricane-landfall windows far more often than in control windows (14 of 21 event windows vs 9 of 275 controls, Fisher p = 2.3e-13). **PASS [blind]**, decided by that significance condition only. Its placebo condition used a non-significant result as evidence and is invalid; its H ≥ 0.5 condition is a point threshold ([`docs/GWI_PROTOCOL.md`](GWI_PROTOCOL.md) §7 and §6 note; [`analysis/gwi_hurricanes.py`](../analysis/gwi_hurricanes.py)).
-- **SMF (self-model fidelity)**: do official forecasts beat "no change"? Re-tested with Diebold–Mariano and Holm correction, **[known history]**: 6 of 12 earlier passes survive (EIA CO2 and electricity at 3 months; SPF unemployment at 1, 2, 4 quarters; SPF industrial production at 1–2 quarters); 6 are withdrawn. The EIA CO2 input fails a stationarity check, so its p-value may be optimistic ([`docs/SMF_PROTOCOL.md`](SMF_PROTOCOL.md) §13, [`results/smf_dm/result.txt`](../results/smf_dm/result.txt), [`analysis/smf_dm.py`](../analysis/smf_dm.py)).
+- **GWI v1** on Wikipedia pageviews: ignition days fall in hurricane-landfall windows in 14 of 21 event windows vs 9 of 275 controls (Fisher p = 2.3e-13). **PASS [blind]**, on that condition only: its placebo condition used a non-significant result as evidence and is invalid; Fisher ignores clustering ([`docs/GWI_PROTOCOL.md`](GWI_PROTOCOL.md) §6 note; [`docs/FAILURES.md`](FAILURES.md) F5).
+- **GWI v1 calibration**: the threshold does not transfer across articles, so a GWI level is not a measurement. **FAIL [blind]** ([`docs/GWI_CALIBRATION_PROTOCOL.md`](GWI_CALIBRATION_PROTOCOL.md) §7; F4).
+- **GWI v2** (causal per-article seasonal baseline, Poisson-binomial tail, common-mode filter, block-permutation null): 20-placebo calibration and an M ≥ 7 earthquake event test on 1 Nov 2026–31 Oct 2027. Its filter and threshold were tuned on three seen articles (exploratory development, stated). Synthetic event-test false-positive rate ≤ 0.017, power 0.70–0.96 at hit rate 0.3. **[blind, registered]**, scored once on 15 Nov 2027 ([`docs/GWI_V2_PROTOCOL.md`](GWI_V2_PROTOCOL.md), [`analysis/gwi_v2_synthetic_output.txt`](../analysis/gwi_v2_synthetic_output.txt)).
 
-### 3.3 UIA
+### 3.3 Decide and act (H3)
 
-The earlier white paper presented a_UIA, a weighted sum of six terms, as "a single, interpretable gauge". The session 5 audit found 1 of the 6 terms measurable from public data today (I, as τ_I), 1 conditional, 4 not measurable; a_UIA was **retired** and no claim may rest on it ([`docs/UIA_PROTOCOL.md`](UIA_PROTOCOL.md) §1, §4). UIA is now defined as the profile (I, C, F, E, D), reported component by component; **none of it is scored**. The direction test on that profile needs 24 coded cases; DAC case files exist for ozone, climate, mpox and the six PPE files, but none is coded on the profile ([`docs/PLAN.md`](PLAN.md), session 12). **[plan]**
+- **Hurricane loop 2015–2025, 52 storms**: both lags measurable for 24 of 52 (binomial p = 0.756). **H3 FAIL [known history]**. Diagnosis: the unmeasured are almost all weak tropical storms with no qualifying federal major-disaster declaration, so there is no lag to measure; hurricanes alone had both lags in 23 of 27 (exploratory, seen data, no weight) ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §19, [`analysis/loop_test_2015_2025_output.txt`](../analysis/loop_test_2015_2025_output.txt); F12). Repaired for 2027+ only: H3 on storms with a disaster-declaration request, plus a separate declaration-rate measure. **[blind, registered]** ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §20.1).
+- **DAC case files (hand-coded from primary records):**
+  - Ozone vs climate: warning-to-binding-act lag 4,828 days (ozone) and 6,555–6,919 days (climate; the Charney report is dated to the year only); n = 2, descriptive. **[exploratory]** ([`data/dac_ozone_events.json`](../data/dac_ozone_events.json), [`data/dac_climate_events.json`](../data/dac_climate_events.json), [`data/sources/dac_primary_sources.md`](../data/sources/dac_primary_sources.md)).
+  - COVID-19 PPE, five countries and the EU, recoded after the original files were lost; e.g. Belgium's first delivery to municipalities at t0 + 46 days. **[known history]** (coded with an earlier manuscript's key results known; two blindness breaches recorded) ([`docs/DAC_PPE_CODING.md`](DAC_PPE_CODING.md) §1, [`data/dac_ppe/BE_profile.json`](../data/dac_ppe/BE_profile.json), [`docs/DAC_PPE_COMPARISON.md`](DAC_PPE_COMPARISON.md)).
+  - EU mpox 2022: coded **[known history]**; results withheld here so that the second-coder recode can stay blind (see the ask above) ([`docs/DOUBLE_CODING.md`](DOUBLE_CODING.md)).
+  - **Limit:** every DAC file was coded by Claude; no human recode exists; no agreement result exists ([`docs/double_coding/coding_sheet.csv`](double_coding/coding_sheet.csv), header only).
+- **EU floods**: a lag-measurability test (formal EFAS notification → CEMS activation) is **[blind, registered]**; see §3.6.
 
-### 3.4 RDL: remedies
+### 3.4 Coupling beyond procedure (H4)
 
-RDL has passed no test of its recommendations ([`CLAUDE.md`](../CLAUDE.md), Science rules). See §4 for its failures. The only blind RDL test is a ledger of five dated forecasts, deposited on Zenodo on 20 Oct 2026 (DOI 10.5281/zenodo.23507467), first resolution by 31 Dec 2026, not yet scored. **[blind]** Five forecasts, three with the same score, cannot validate anything ([`docs/RDL_FORECAST_LEDGER.md`](RDL_FORECAST_LEDGER.md), [`data/rdl_forecast_ledger.csv`](../data/rdl_forecast_ledger.csv), [`analysis/score_forecast_ledger.py`](../analysis/score_forecast_ledger.py)).
+- **Hurricanes 2015–2025: cannot be tested at this size.** The guard failed for all six link pairs (9–10 usable within-season comparisons, 15 needed) **[known history]** ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §19).
+- **He direction test** on the UIA 2.0 loop profile, 23 storms: **PASS**, mean Kendall τ +0.22, within-season permutation p = 0.012 **[known history]**, led by attention (τ +0.46) and warning lead (+0.20), not forecast skill (+0.00). Attention and response speed both rise with storm intensity, which was not controlled: this is an association, **not** evidence of coupling beyond procedure ([`docs/HE_CALIBRATION_PROTOCOL.md`](HE_CALIBRATION_PROTOCOL.md) §10, [`analysis/he_loop_test_output.txt`](../analysis/he_loop_test_output.txt)). A severity-adjusted version is to be registered before any 2027 row is built [plan, session 2.12b].
+- **Hurricane blind arm** (attention → state lag, 2027+): power 0.15 after 5 blind seasons and 0.38 after 10 at about two measured storms per season. **[infrastructure]** synthetic ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §20.5).
+- **Flood attention arm: retired** after three synthetic failures, before any data of the period existed. A within-strata rank test rejected on severity alone (false-positive rate 0.08–0.75); a severity-adjusted Freedman–Lane test reached 0.06–0.09 at 20–45 episodes when severity is measured with 0.3 SD error; a sensitivity-analysis repair was liberal at 20–30 episodes (0.015–0.135) with power 0.21–0.38. Diagnosis: with one attention value and one binary decision per episode, and severity measured only through hazard (discharge), no observational adjustment controls the false-positive rate at this size. **[infrastructure]** ([`docs/FLOOD_LOOP_PROTOCOL.md`](FLOOD_LOOP_PROTOCOL.md) §5, §8, §9; F13).
+- **Replacement: news pressure → activation** (competing news on the day of the earliest notification cannot follow flood severity). Error rate 0.034–0.052 under every scenario, **power 0.06–0.34** at 20–45 episodes. **[blind, registered]**, scored once after 31 Jan 2029; a FAIL will read "not shown at this size". A PASS would show that decisions respond to the news environment, not that attention to a flood caused its activation ([`docs/FLOOD_LOOP_PROTOCOL.md`](FLOOD_LOOP_PROTOCOL.md) §10, [`analysis/flood_loop_newspressure_power_output.txt`](../analysis/flood_loop_newspressure_power_output.txt)).
+
+Every H4 route registered today has power below 0.5. H4 can be decided only by pooling across domains or by a design not yet found [plan].
+
+### 3.5 Learning (H5)
+
+Hurricanes 2015–2025, 9 seasons, 23 storms: season-mean trend of residual lags, Holm p 0.223 (state) and 0.126 (federal); power 0.064. **Not shown at this size [known history]** ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §19). Adequate power is not reachable before about 2030 ([`docs/PLAN.md`](PLAN.md) §4, H5 note).
+
+### 3.6 A second domain: EU floods (H6)
+
+Data definitions are fixed for EFAS formal notifications issued 30 Oct 2026–31 Dec 2028, with CEMS Rapid Mapping activations followed to 31 Jan 2029; "no activation" is a valid outcome ([`docs/FLOOD_LOOP_PROTOCOL.md`](FLOOD_LOOP_PROTOCOL.md) §2–§3; feasibility [`docs/SECOND_DOMAIN_FEASIBILITY.md`](SECOND_DOMAIN_FEASIBILITY.md)). Two tests are registered, both scored once after 31 Jan 2029, no interim look:
+
+- news pressure → activation (H4 in floods; §3.4 above), power 0.06–0.34; **[blind, registered]**
+- lag measurability (H3 in floods): PASS iff at least 5 activations and the 95 % lower bound of the measurable share exceeds 0.5; wrong-pass rate ≤ 0.033, power 0.47–0.91 at 20–45 episodes if 90 % of lags are measurable. A PASS shows only that the lag can be measured, not that it is short or improving. **[blind, registered]** ([`docs/FLOOD_LOOP_PROTOCOL.md`](FLOOD_LOOP_PROTOCOL.md) §11, [`analysis/flood_lag_power_output.txt`](../analysis/flood_lag_power_output.txt)).
+
+### 3.7 Choose (H7) and RDL
+
+- **RDL v0.2 and v0.3** both FAIL on reserved historical cases **[known history]**; RDL has passed no test of its recommendations ([§4](#4-what-failed)).
+- **RDL forecast ledger**: 5 dated forecasts, deposited on Zenodo 20 Oct 2026 (DOI 10.5281/zenodo.23507467), first resolution 31 Dec 2026, not scored. **[blind, registered]** ([`docs/RDL_FORECAST_LEDGER.md`](RDL_FORECAST_LEDGER.md), [`data/rdl_forecast_ledger.csv`](../data/rdl_forecast_ledger.csv)).
+- **Hurricane loop ledger**: 10 forecasts for the 2027 season (declaration by storm class; lag thresholds by intensity), Brier score against a pooled baseline; one-season power 0.234. **[blind, registered]**, scored about May 2028 ([`docs/LOOP_PROTOCOL.md`](LOOP_PROTOCOL.md) §21, [`data/loop_forecast_ledger.csv`](../data/loop_forecast_ledger.csv)). Its public deposit (a new Zenodo version) is not yet made [plan, before 1 June 2027].
+
+H7 needs at least 20 resolved forecasts; 15 are registered and none has resolved.
 
 ## 4. What failed
 
-Failures stay on record. This list is the most important part of the paper.
+Failures stay on record. Each has a diagnosis and a recorded choice (repair, replace or retire) in [`docs/FAILURES.md`](FAILURES.md).
 
-| What | Result | Source |
-|---|---|---|
-| RDL v0.2 | Passed its two development cases; **FAIL** on the reserved leaded-petrol case in all four sensitivity settings. Cause: "predicted gain" scales with the remaining gap, not with tractability. **[known history]** | [`docs/RDL_BACKTEST_PROTOCOL.md`](RDL_BACKTEST_PROTOCOL.md), [`analysis/rdl_backtest_heldout.py`](../analysis/rdl_backtest_heldout.py) |
-| RDL v0.3 | **FAIL** on the reserved case: sulphur 1985 not above chrysotile 2004, in all 16 settings. Cause: no veto structure. A development check passed only by construction after a rule change. **[known history]** | [`docs/RDL_V03_PROTOCOL.md`](RDL_V03_PROTOCOL.md), [`analysis/rdl_v03_heldout.py`](../analysis/rdl_v03_heldout.py) |
-| RDL v0.4 | Not run: the Oslo–Seattle / IRD data have not arrived. Synthetic checks show power 0.32, so a fail is likely even if its variables matter. **[infrastructure]** | [`docs/RDL_V04_PROTOCOL.md`](RDL_V04_PROTOCOL.md), [`analysis/rdl_v04_test.py`](../analysis/rdl_v04_test.py) |
-| Synergy on three climate streams | **FAIL**: no higher-order structure distinguishable from the null. Earlier "passes noise controls" held for synthetic data only. Two earlier runs failed at fetch (OpenAlex HTTP 429). **[blind]** | [`docs/SYNERGY_PROTOCOL.md`](SYNERGY_PROTOCOL.md) §8–§10, [`analysis/synergy_climate.py`](../analysis/synergy_climate.py) |
-| GWI cross-article calibration | **FAIL**: the threshold does not transfer across articles ("Prime number" false-ignition rate 0.0134 > 0.010), so a GWI level is not a measurement and GWI cannot score UIA's I. **[blind]** | [`docs/GWI_CALIBRATION_PROTOCOL.md`](GWI_CALIBRATION_PROTOCOL.md) §7, [`analysis/gwi_calibration.py`](../analysis/gwi_calibration.py) |
-| SMF | 6 of 12 earlier passes withdrawn after a proper significance test. **[known history]** | [`docs/SMF_PROTOCOL.md`](SMF_PROTOCOL.md) §13 |
-| a_UIA | Retired: 4 of 6 terms not measurable. | [`docs/UIA_PROTOCOL.md`](UIA_PROTOCOL.md) |
-| UIA direction rule (Option A) | 41–52% false positives on synthetic data at every sample size: unusable. The replacement permutation test holds 5% but has power 0.34–0.55 at 8 cases. **[infrastructure]** | [`docs/HE_CALIBRATION_PROTOCOL.md`](HE_CALIBRATION_PROTOCOL.md) §6, [`analysis/he_calibration.py`](../analysis/he_calibration.py) |
-| Earlier white paper, deck, grants | Described a continuously running observatory, DestinE overlays, dashboards and pipelines that never ran; "first" claims unchecked. Marked superseded. | [`README.md`](../README.md); [`docs/F2_CLAIMS_GREP.md`](F2_CLAIMS_GREP.md) |
-| DAC records | The original PPE event files were lost; a README line called an unsubmitted manuscript "under review"; the manuscript's data statement was not true. All corrected or recoded. | [`docs/STATUS.md`](STATUS.md), F1, F2, F8 |
-| Conceptual DAC paper | Desk-rejected by *Futures* (submitted 17 Apr, rejected 18 Apr 2026). | [`docs/sources/dac_paper/README.md`](sources/dac_paper/README.md) |
+| # | What | Result and class | Choice |
+|---|---|---|---|
+| F1 | RDL v0.2 | FAIL on the reserved case in all 4 settings; gain scales with the remaining gap, not tractability **[known history]** | retire |
+| F2 | RDL v0.3 | FAIL on the reserved case in all 16 settings; no veto structure **[known history]** | replace by the forecast registry (H7) |
+| F3 | Synergy on three climate streams | FAIL: no higher-order structure beyond the null **[blind]** | retire |
+| F4 | GWI v1 calibration | FAIL: threshold does not transfer **[blind]** | repair as GWI v2 |
+| F5 | GWI v1 placebo condition | invalid (non-significant result used as evidence) | repair inside GWI v2 |
+| F6 | SMF v1 | 6 of 12 passes withdrawn after a significance test **[known history]** | replace by SMF v2 |
+| F7 | a_UIA scalar | retired: 4 of 6 terms not measurable | replace by the UIA 2.0 profile |
+| F8 | He direction rule (Option A) | 41–52 % false positives on synthetic data **[infrastructure]** | replace by a permutation test |
+| F9 | Earlier white papers, deck, grants | described an observatory that never ran; "first" claims unchecked | replace by this paper |
+| F10 | Lost DAC files | original PPE files lost; recoded **[known history]** | repair; second coder pending |
+| F11 | Conceptual DAC paper | desk-rejected by *Futures*, 18 Apr 2026 ([`docs/sources/dac_paper/README.md`](sources/dac_paper/README.md)) | retire |
+| F12 | Hurricane loop H3, 2015–2025 | FAIL, 24/52 measurable **[known history]** | repair for 2027+ |
+| F13 | Flood attention arm | three designs fail synthetic checks before any data **[infrastructure]** | retire, then replace by news pressure |
 
 ## 5. How EMO keeps itself honest
 
-These are working rules, written into [`CLAUDE.md`](../CLAUDE.md) and enforced where code can enforce them:
+Working rules in [`CLAUDE.md`](../CLAUDE.md), enforced by code where possible:
 
 1. Every test is pre-registered (hypothesis, data, statistic, threshold) and committed before its data are opened.
-2. Every result carries one evidence class; a test on known cases is never called blind.
+2. Every protocol states its false-positive rate and power from synthetic data before its data are opened; a test with power below 0.5 says so in its first line, and its FAIL reads "not shown at this size".
 3. A pass needs a significance test of the condition that decides it, with a null that respects dependence; a non-significant result is never evidence of no effect.
-4. Multi-part measures are profiles, never weighted scores.
-5. No status or priority word without evidence: checked in CI ([`scripts/claims_grep.py`](../scripts/claims_grep.py)).
-6. Every run, fetch and failure gets a row in [`docs/RECORD.md`](RECORD.md).
+4. Prospective tests are preferred; a repaired version is never tested on the data that exposed the failure.
+5. Repair, don't drop: every failure gets a diagnosis and a recorded choice.
+6. Multi-part measures are profiles, never weighted scores.
+7. No status or priority word without evidence, checked before every push and in CI ([`scripts/claims_grep.py`](../scripts/claims_grep.py)).
 
-## 6. What comes next [plan]
+## 6. Scoring calendar [plan]
 
-All items below are plans from [`docs/PLAN.md`](PLAN.md), none started unless stated.
+All from [`docs/PLAN.md`](PLAN.md); none has happened yet.
 
-- An independent human coder for the mpox case (protocol and packet committed; waiting for a volunteer) ([`docs/DOUBLE_CODING.md`](DOUBLE_CODING.md)).
-- The UIA direction test, once 24 cases are coded (session 12).
-- RDL v0.4, only when the Oslo–Seattle or IRD data arrive (session 13).
-- Scoring the forecast ledger after 31 Dec 2026 (session 14).
-- A software paper, a versioned release with a DOI, an annual report from the weekly-run data, then partners and funding (sessions 16–24).
+| When | What | Hypothesis |
+|---|---|---|
+| from 1 Jan 2027 | RDL ledger, first forecast (session 2.10) | H7 |
+| from 1 May 2027 | SMF v2 on 2026 NHC forecasts | H1 |
+| 15 Nov 2027 | GWI v2 calibration and earthquake event test (session 2.12) | H2 |
+| about May 2028 | 2027 hurricane season: H3 repair, declaration rate, blind H4 pair, 10 forecasts, severity-adjusted He test (session 2.12b) | H3, H4, H7 |
+| after 31 Jan 2029 | EU floods: news pressure → activation, lag measurability | H4, H3 in H6 |
+| open | second coder for the mpox file | DAC data quality |
 
-What EMO cannot see today: anything outside the few domains above; any national or regional profile beyond the PPE and mpox files; any causal claim. What would change the picture most: a second human coder, the regime-effectiveness data, and the earliest scored blind forecasts.
+What EMO cannot see today: any hazard outside Atlantic hurricanes and EU floods; any causal claim; coupling or learning at adequate power. What would change the picture most: an independent second coder, and the earliest blind scores above.
 
 ## Data and code availability
 
-Everything cited is in the public repository `avram3scu-art/emo-core-v1` (branch `emo-2026-10`), licensed AGPL-3.0 ([`LICENSE`](../LICENSE)).
+Everything cited is in the public repository `avram3scu-art/emo-core-v1`, branch `emo-2026-10`, licensed AGPL-3.0 ([`LICENSE`](../LICENSE)).
 
 ## AI disclosure
 
 1. All inputs were the author's own manuscript text, code and publicly available reference literature and data (plus synthetic simulation parameters where applicable).
-2. All AI-assisted outputs were verified by the author.
+2. *[Withheld until the author's verification of this draft is recorded in [`docs/STATUS.md`](STATUS.md); not true today.]*
 3. All scientific claims and interpretations are the author's own.
+
+Contributions: Adrian N. Avramescu (concept, decisions, verification). Claude (Anthropic) contributed code, data coding, analysis and drafting under the author's direction.
