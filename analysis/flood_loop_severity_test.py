@@ -54,7 +54,7 @@ def logit_fit(x, y, iters=25):
     return 1 / (1 + np.exp(-np.clip(x @ w, -30, 30)))
 
 
-def test_p(a, y, m, ln_n=None, rng=RNG, b=B):
+def adjusted_p(a, y, m, ln_n=None, rng=RNG, b=B):
     one = np.ones_like(m)
     xa = np.column_stack([one, m, m**2] + ([ln_n] if ln_n is not None else []))
     xy = np.column_stack([one, m] + ([ln_n] if ln_n is not None else []))
@@ -72,7 +72,7 @@ def rate(n, beta, use_n=False, reps=REPS, **kw):
         a, y, m, ln_n = simulate(n, beta, RNG, **kw)
         if y.sum() < 2 or y.sum() > len(y) - 2:
             continue  # counted as no rejection
-        hits += test_p(a, y, m, ln_n if use_n else None) <= 0.05
+        hits += adjusted_p(a, y, m, ln_n if use_n else None) <= 0.05
     return hits / reps
 
 
