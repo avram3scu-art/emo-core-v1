@@ -1,0 +1,9 @@
+## planted commit: e741f5d PLANT (hook proof, to be removed): unjustified claim
+$ git push origin emo-2026-10
+pre-push: claim-word check
+hits=650 unjustified=2
+| `docs/DAC_STANDARD.md:103` | EMO is a live, deployed and validated observatory. | UNJUSTIFIED |
+| `scripts/hooks/pre-push:8` | #   4. the test suite passes (pytest -q; ~20 s; slow reruns live in the weekly run, not in pytest). | UNJUSTIFIED |
+pre-push: REFUSED: claims_grep: unjustified claim words (see above)
+error: failed to push some refs to 'https://github.com/avram3scu-art/emo-core-v1.git'
+exit code: 1

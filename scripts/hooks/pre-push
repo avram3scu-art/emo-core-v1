@@ -5,7 +5,7 @@
 #   1. the working tree has no uncommitted changes to tracked files (so the checks see what is pushed),
 #   2. scripts/claims_grep.py reports unjustified=0, and its report docs/F2_CLAIMS_GREP.md is committed,
 #   3. ruff passes (same two commands as CI),
-#   4. the test suite passes (pytest -q; ~20 s; slow reruns live in the weekly run, not in pytest).
+#   4. the test suite passes (pytest -q; ~20 s; slow reruns run in the weekly run, not in pytest).
 # Python: `git config emo.python <path>` if set, else .venv/bin/python, else python3.
 # Pushing with --no-verify is not allowed (CLAUDE.md).
 set -u
