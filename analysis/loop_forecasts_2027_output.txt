@@ -1,0 +1,16 @@
+2027 loop forecasts (docs/LOOP_PROTOCOL.md §21). Fit on 2015-2025 rows of loop_events.csv.
+measured storms: V >= 96 kt 11, < 96 kt 13; Q2-Q5 pooled: False
+L2027-01 Q1 [status at t0 = HU] k/n 23/27 p 0.839 baseline 0.462
+L2027-02 Q1 [status at t0 = TS] k/n 1/25 p 0.058 baseline 0.462
+L2027-03 Q2 [V at t0 >= 96 kt] k/n 7/11 p 0.625 baseline 0.340
+L2027-04 Q2 [V at t0 < 96 kt] k/n 1/13 p 0.107 baseline 0.340
+L2027-05 Q3 [V at t0 >= 96 kt] k/n 10/11 p 0.875 baseline 0.740
+L2027-06 Q3 [V at t0 < 96 kt] k/n 8/13 p 0.607 baseline 0.740
+L2027-07 Q4 [V at t0 >= 96 kt] k/n 10/11 p 0.875 baseline 0.620
+L2027-08 Q4 [V at t0 < 96 kt] k/n 5/13 p 0.393 baseline 0.620
+L2027-09 Q5 [V at t0 >= 96 kt] k/n 10/11 p 0.875 baseline 0.780
+L2027-10 Q5 [V at t0 < 96 kt] k/n 9/13 p 0.679 baseline 0.780
+ledger sha256 ea99392562e35811faadeffd148bd6fcfb4598324f43524af17295705d1596ca
+synthetic shares (counts): events_per_season 4.727, hu 0.519, measured_given_dr 1.000, major 0.458
+null (truth = pooled baseline), one season: rejection 0.004 (events median 5)
+alternative (truth = forecasts), one season: rejection 0.234 (events median 5)
