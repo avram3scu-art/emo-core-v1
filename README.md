@@ -16,7 +16,7 @@ Every result carries one evidence class: **[blind]** = pre-registered before its
 | UIA (interface density) | None scored. 1 of the 6 a_UIA terms measurable (I, as τ_I) | a_UIA scalar retired (session 5); UIA redefined as the He profile (I, C, F, E, D), not yet scored; He direction test needs 24 coded cases (2 exist) | [`docs/UIA_PROTOCOL.md`](docs/UIA_PROTOCOL.md), [`docs/HE_CALIBRATION_PROTOCOL.md`](docs/HE_CALIBRATION_PROTOCOL.md) |
 | Continuous running | Weekly GitHub Action since 23 Oct 2026 (started each Monday by an external scheduler calling GitHub's dispatch API; GitHub's own schedule is unreliable here): refresh, analyses, tests; commits only if tests pass; rebuilds the public page | No streaming or daily ingestion; the never-run Prefect/Airflow scaffolding was deleted on 26 Oct 2026 | [`.github/workflows/weekly_refresh.yml`](.github/workflows/weekly_refresh.yml) |
 
-Tests: 154 pass (local run, 29 Oct 2026, Python 3.11 with `requirements-lock.txt`; CI reports the count on every run, the latest in its "pytest summary" annotation). CI and the weekly run install the exact versions in `requirements-lock.txt`.
+Tests: 154 pass (CI run 40817855153 and weekly run 40817861051, 29 Oct 2026; both report the count on every run). CI and the weekly run install the exact versions in `requirements-lock.txt`.
 
 DAC and UIA are reported as profiles of their components, never as a weighted score. RDL is **not** a validated recommender: its two tested versions failed on historical cases whose outcomes were known (not blind tests).
 
