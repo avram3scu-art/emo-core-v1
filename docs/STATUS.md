@@ -4,11 +4,32 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 04:35):** session 15 closed (white-paper draft and hostile review committed; not fit to share yet). Next: session 2.0-design (full code audit, then drafts of CLAUDE.md 2.0 and PLAN 2.0 for Adrian's approval; old files replaced only after his yes), then a README fix. 12–14 stay gated. Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 05:05):** CLAUDE.md 2.0 and PLAN 2.0 in force (session 2.0-design; 1.x archived in `docs/archive/`). Next: session 2.1 (clean ground: README, pre-push hook, lock file, τ_I fix, FAILURES.md). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (149), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.0-design (2026-10-29, 04:39–05:05) — code audit, CLAUDE.md 2.0, PLAN 2.0
+
+**Done when met: yes.** Audit, drafts and review committed (080a9da; CI 40813943544); five review edits made and both files replaced on Adrian's yes (this close).
+
+**Done**
+- `docs/AUDIT_2026-10-29.md`: ruff and mypy clean, 149 tests, emo/ coverage 78–100%; defects D1–D12 (main: GWI look-ahead baseline, pooled rate and no calendar model; SMF measures correlation not skill; README false; RDL to freeze; unpinned dependencies; τ_I time-index bug, probe: no effect, 3.715 vs 3.713 %/yr); hurricane-loop data from documentation only (FEMA OpenFEMA Disaster Declarations Summaries page opened; other links unverified).
+- `CLAUDE.md` 2.0 (every 1.x rule kept, diff checked; added: purpose, hooks on, name the hypothesis, improve before closing (~15 min cap), repair-don't-drop, no retesting on seen data, prospective first, power before data, seven-line report, monospace copy-paste). 1.x in `docs/archive/CLAUDE_1.md`.
+- `docs/PLAN.md` 2.0: emergent mind as a response loop (predict, attend, decide-act, choose, learn); H1–H7 with falsification; independent-agencies null; H4 = coupling beyond formal procedure; Atlantic hurricanes as engine domain (2027 season = first blind test); sessions 2.1–2.13 with full prompts. Plan 1 in `docs/archive/PLAN_1.md`.
+- `docs/REVIEW_2_0_DRAFTS.md`: CLAUDE 2.0 adoptable after C1, C2; PLAN 2.0 not yet a sound test before P1, P2, P5. All five edits made.
+
+**Decision (Adrian, 29 Oct 04:57, "YES"):** make the five review edits and replace CLAUDE.md and PLAN.md now.
+
+**Request not adopted, pending Adrian's decision (04:57):** Adrian asked to make Claude an official co-author. Claude declined to write it as a rule: it conflicts with CLAUDE.md's disclosure rule ("AI as a tool, not an author"), most journals bar AI authorship because an author must approve and answer for the work (Wiley rule recorded in `docs/REVIEW_F10_DECISION_OR_SUPPLY.md`; other publishers not checked this session), and a co-owner of the vision is a weaker tester of it. Recommended instead: a named contributions line, "Adrian N. Avramescu (concept, decisions, verification). Claude (Anthropic) contributed code, data coding, analysis and drafting under the author's direction", next to the three-point disclosure. Reason open: Adrian's decision.
+
+**Open (each with reason)**
+- Credit line above. Reason: Adrian's decision.
+- Pre-push hook, lock file, README, FAILURES.md, τ_I fix. Reason: scope; session 2.1.
+- Unverified loop sources (per-storm NHC verification, TCR outcomes, warning times, FEMA hurricane incident type, rule-based triggers). Reason: scope; session 2.2.
+
+**Next:** session 2.1 (prompt in `docs/PLAN.md` §6).
 
 ## Session 15 (2026-10-29, 03:46–04:35) — honest white paper "EMO: what runs today"
 
