@@ -45,6 +45,25 @@ EU floods are the only candidate. Two items must be checked before any loop prot
 - **C1 Events: still unverified.** EM-DAT's entry criteria are at least 10 deaths, or at least 100 affected, or a call for international assistance or an emergency declaration; one is enough [S10]. So some EM-DAT entries exist because of a decision, and EM-DAT is not independent of decide-act unless the decision-only entries are dropped. Whether each entry carries a day-level start date was not shown. The best independent candidate is EFAS formal notifications (dated, per river and country [S2]); their archive length (≥ 10 years) is not verified.
 - **Consequence for design:** a flood loop is best run prospectively. Events are defined by EFAS formal notifications (forecast first, so every event has a predict record), and CEMS activation by a national authority is the decide-act record, with "no activation" a valid outcome. This choice belongs to a protocol session, not here.
 
+## 2b. C1 settled (session 2.11b, 29 Oct 2026; documentation only, no notification counted)
+
+Question: does the EFAS formal-notification archive reach back 10 years with day-level dates per river and country?
+
+- **Format: pass.** The bimonthly bulletins list each notification on its own row, Table 1 "Type, Forecast date, Issue date, Lead time, River, Country", day-level dates. Same format in Aug–Sep 2017 [S13] and Oct–Nov 2025 [S14] (and Feb–Mar 2019 [S2]). Bulletins are still issued (2025 directory: six bimonthly issues, the Oct–Nov one posted 18 Dec 2025 [S15]); the 2017–2018 PDFs sit in a second directory [S16].
+- **Length: pass on documentation (≥ 10 years), 9 years opened.** Bulletins opened: 2017, 2019, 2025. Search results name bulletin pages for Feb–Mar 2015 and Feb–Mar 2016 (titles only; pages not opened, the site renders by script). An ECMWF memo (2016) counts alerts sent since 2007 and dates the transfer to routine service to 2012 [S17].
+- **Caveats (they bar a historical test, not a prospective one):** (1) criteria changed: the 2016 memo gives catchment > 4000 km² [S17]; the current guidance gives > 2000 km², ≥ 30% probability of exceeding the 5-year return period in three consecutive runs, event start > 48 h ahead, one notification per event [S18]. A 10-year series is not homogeneous. (2) Bulletin text and table disagree on counts (2017: text 6 formal, table 4 rows [S13]; 2025: text 37, table 39 rows [S14]); the table must be the source, with the mismatch recorded. (3) The dates are forecast and issue dates, not flood onset. (4) The web notification archive does not render for the fetch tool [S3]; only the bulletin PDFs are readable.
+
+**C1 verdict: pass for a prospective design** (dated, per-river, per-country rows, refreshed every two months, under the current criteria); **not usable for a 10-year historical test** (criteria changed). With C1 settled, EU floods are **feasible** for a prospective loop: `docs/FLOOD_LOOP_PROTOCOL.md`.
+
+Sources added (opened 29 Oct 2026):
+- [S13] EFAS Bulletin Aug–Sep 2017: https://european-flood.emergency.copernicus.eu/sites/default/files/Bulletins/bulletin_aug-sep_17.pdf
+- [S14] EFAS Bulletin Oct–Nov 2025: https://european-flood.emergency.copernicus.eu/sites/default/files/bulletins-documents/2025/EFAS_Bimonthly_Bulletin_Oct_Nov2025.pdf
+- [S15] EFAS 2025 bulletin directory: https://european-flood.emergency.copernicus.eu/sites/default/files/bulletins-documents/2025
+- [S16] EFAS older bulletin directory (2017–2019): https://european-flood.emergency.copernicus.eu/sites/default/files/Bulletins
+- [S17] ECMWF Technical Memorandum 778 (2016), operational implementation of EFAS: https://www.ecmwf.int/sites/default/files/elibrary/2016/16337-operational-implementation-european-flood-awareness-system-efas.pdf
+- [S18] ECMWF Confluence, EFAS formal flood notification criteria (page version 6, 15 Aug 2023): https://confluence.ecmwf.int/x/C6kzGg
+- Not opened: the bulletin PDF bulletin_feb-mar_17.pdf (allowlist); bulletin node pages for 2015–2016 (script-rendered); notifications summary pages (script-rendered).
+
 ## 3. Sources (opened 29 Oct 2026)
 
 - [S1] IFRC Monty STAC extension, CEMS Rapid Mapping source: https://ifrcgo.org/monty-stac-extension/model/sources/CEMS/ (reports "224 activations as of 2026-07" for its own ingest; this does not match [S8] and is not used as a count)
