@@ -362,7 +362,15 @@ Session 3.1 task: choose the high-frequency global hazard stream for the mirror 
 Done when: docs/STREAM_DATA.md gives a verdict per source (use, use with conditions, reject), the expected number of linked events per month, and a recommended stream; no event record opened; record, STATUS and next prompt committed.
 ```
 
-Prompts for 3.2–3.10 are written at the close of the session before each, from §0.3.
+### 3.2 Daily ingestion (infrastructure)
+
+```text
+EMO session 3.2: daily ingestion of the global hazard stream. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md, docs/STRATEGY_3_0.md, docs/STREAM_DATA.md and the entry for session 3.2 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 3.2 task: build an append-only daily event log from the stream recommended in docs/STREAM_DATA.md §6: GDACS events and episodes, USGS ComCat/PAGER, CEMS Rapid Mapping, IFRC GO events, DREF and appeals (with a daily amount_funded snapshot), and Wikimedia pageviews for English event articles only after a matching rule exists (so pageviews are not fetched in this session). First open the API documentation each fetcher uses (GDACS API reference, USGS feed policy, IFRC GO production API, Wikimedia rate and User-Agent policy) and record it in STREAM_DATA. Before writing EMO's own joins, check whether a public IFRC Monty endpoint exists and can serve these sources (STREAM_DATA §3); recommend reuse or not. Exclusions E1–E3 (STREAM_DATA §5) are enforced in code and covered by unit tests: E1 CEMS EU27 flood activations 30 Oct 2026 – 31 Jan 2029 are dropped in memory before writing, with no count or log line; E3 no OpenFEMA; E2a–E2d no pageviews. Daily GitHub Action, manifest with checksums, fetch timestamps (to measure latency), and the log is not published or shown on any page (3.3 protocol first). Monthly counts of events and linked events are infrastructure, counted only from the log, and no outcome field is analysed.
+Done when: fetchers, exclusion tests and the daily Action committed; three consecutive daily runs commit without help (checked in a later session if needed); record, STATUS and next prompt committed.
+```
+
+Prompts for 3.3–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
 

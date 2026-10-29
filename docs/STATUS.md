@@ -4,12 +4,32 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 18:30):** plan 3.0 and CLAUDE.md 3.0 in force (Adrian 18:26; `docs/STRATEGY_3_0.md`). Next: session 3.1 (global event stream, data check). Dated sessions 2.8, 2.10, 2.12, 2.12b keep their dates. Earlier (17:10): session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 18:45):** session 3.1 closed: `docs/STREAM_DATA.md` (verdict per source, estimate 8–15 linked events/month, recommended stream, exclusions E1–E3). Next: session 3.2 (daily ingestion). Earlier (18:30): plan 3.0 and CLAUDE.md 3.0 in force (Adrian 18:26; `docs/STRATEGY_3_0.md`). Dated sessions 2.8, 2.10, 2.12, 2.12b keep their dates. Earlier (17:10): session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. For JOSS (not before 19 Apr 2027): verify the code and record it before disclosure point 2 can be written; reply to editors and reviewers without AI. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 3.1 (2026-10-29, 18:29–18:45) — global hazard stream, data check (no hypothesis moved; data check for H3, H6, H8)
+
+**Done when met: yes.** Data check 7c0ba35; close in this commit. No event record opened.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green; hooks path set; lock installed.
+- `docs/STREAM_DATA.md`: USGS ComCat/PAGER **use**; GDACS, Wikimedia pageviews, CEMS Rapid Mapping, IFRC GO (DREF, appeals, funding snapshots, field reports), GLIDE **use with conditions**; OCHA FTS **rejected for the stream** (self-reported, variable delay; revisit 3.7); EM-DAT **rejected for the stream** (no redistribution or derivative databases; offline in 3.7). Estimate 8–15 linked events/month (2–4 with two decision sources), from DREF H1 2026 and CEMS totals; not measured. Recommended stream and join order (gdacsId → GLIDE → ISO3 + hazard + window).
+- Overlap found with three registered tests; protected by exclusions, no registered file changed: E1 CEMS EU27 flood activations to 31 Jan 2029 (flood test §3, §11); E2a–E2d pageviews (GWI v2 M ≥ 7 earthquakes and placebos before 15 Nov 2027; EU-language top lists and EU flood/river articles to 2029; US-landfalling Atlantic storms from 2027); E3 no OpenFEMA (2027 hurricane registry).
+
+**Claude's mistakes (fixed):** five claim words in the draft ("real-time" ×2, "live", "first" ×2), reworded before the push.
+
+**Review (Adrian 18:42, "Yes"):** 1 no more now (Claude's recommendation); 2a Monty check goes into the 3.2 prompt; 2b GDACS counts not found, measured in 3.2; 2c limit recorded (decision link is international, national decisions outside US/EU mostly absent).
+
+**Open (each with reason)**
+- GDACS API reference and licence (EC legal notice), USGS feed policy and PAGER timing, Wikimedia rate/User-Agent policy, IFRC GO production URL and terms. Reason: needs time (pages not reachable here); 3.2 opens the API pages, licences checked before 3.4.
+- GDACS orange/red counts. Reason: not attempted beyond two searches; counted in 3.2 from the log.
+- Monty correlation layer. Reason: scope (3.2).
+
+**Next:** session 3.2 (daily ingestion; prompt in `docs/PLAN.md`).
 
 ## Session 3.0-design (2026-10-29, 18:17–) — strategy and rules 3.0 (no hypothesis moved; proposes H8, H9)
 
