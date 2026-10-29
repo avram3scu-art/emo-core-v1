@@ -31,7 +31,7 @@ MAD_K = 1.4826
 
 
 def _shift(a: np.ndarray, k: int) -> np.ndarray:
-    """Rows moved down by k (row t holds row t-k); first k rows NaN."""
+    """Rows moved down by k (row t holds row t-k); the top k rows NaN."""
     out = np.full_like(a, np.nan)
     if k < len(a):
         out[k:] = a[: len(a) - k]

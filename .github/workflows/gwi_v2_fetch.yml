@@ -1,0 +1,30 @@
+name: GWI v2 prospective fetch and score (manual, on or after 2027-11-15)
+
+# docs/GWI_V2_PROTOCOL.md §8. The fetch script refuses before the scoring date.
+# Runs here because Wikimedia rate-limits Claude's workspace (HTTP 429).
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  score:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "${{ github.ref_name }}"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements-lock.txt
+      - name: Fetch
+        env: {PYTHONPATH: "."}
+        run: python scripts/fetch_gwi_v2.py
+      - name: Score
+        env: {PYTHONPATH: "."}
+        run: mkdir -p results/gwi_v2 && python analysis/gwi_v2_prospective.py | tee results/gwi_v2/prospective_output.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sources/gwi_v2 results/gwi_v2
+          git commit -m "GWI v2 prospective fetch and score (run ${{ github.run_id }})" || echo "nothing to commit"
+          git push
