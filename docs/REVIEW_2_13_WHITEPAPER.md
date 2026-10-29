@@ -33,7 +33,7 @@ Reviewer: Claude, 29 Oct 2026, of `docs/WHITEPAPER_EMO_what_runs_today.md` as re
 ## Checks done in this session
 
 - Every relative link in the draft resolves (script check, 29 Oct 2026; this file created in the same commit).
-- Claim-word check: `unjustified=0` after five rewordings (validated → checked; first → earliest ×2; "not a validated recommender" → "has passed no test"; "Prospective tests first" → "are preferred").
+- Claim-word check: `unjustified=0` after five rewordings of flagged words (listed in `docs/RECORD.md`, session 2.13).
 - Numbers checked against their files: τ_I (`results/weekly/2026-10-29/information_time_nhc.txt`); hurricane H3/H4/H5 (`docs/LOOP_PROTOCOL.md` §19); He test p = 0.0116 (`analysis/he_loop_test_output.txt`); 2027 ledger power 0.234 (§21.1); blind-arm power 0.15/0.38 (§20.5); SMF v2 (`docs/SMF_PROTOCOL.md` §15.6); GWI v2 (`analysis/gwi_v2_synthetic_output.txt`, protocol §7); flood §5, §8–§11 and F13; CI 200 passed (run 40895686707 log); 19 frozen reproductions (`results/weekly/2026-10-29/SUMMARY.md`).
 - Not checked against a primary file: the Zenodo deposit date 20 Oct 2026 (carried from the session 15 draft and `docs/RDL_FORECAST_LEDGER.md`; the DOI was not opened this session).
 
