@@ -35,7 +35,7 @@ Other instruments already measure parts of the response: policy-coherence mechan
 | Metric functions | Synergy, GWI, SMF and τ_I as tested Python functions. **[infrastructure]** | [`emo/synergy.py`](../emo/synergy.py), [`emo/gwi.py`](../emo/gwi.py), [`emo/smf.py`](../emo/smf.py), [`emo/info_time.py`](../emo/info_time.py) |
 | Record | One row per test, run, fetch and failed attempt. | [`docs/RECORD.md`](RECORD.md) |
 
-What does **not** run: no dashboard, no API, no streaming or daily ingestion, no DestinE or other digital-twin link. The API, dashboard and pipeline scaffolding described in the earlier white paper never ran and was deleted on 26 Oct 2026; ECMWF declined data access ([`README.md`](../README.md), Superseded documents; [`docs/AUDIT_2026-10-26.md`](AUDIT_2026-10-26.md)). GDELT has never been ingested ([`README.md`](../README.md), status table).
+What does **not** run: no dashboard, no API, no streaming or daily ingestion, no DestinE or other digital-twin link. The API, dashboard and pipeline scaffolding described in the earlier white paper never ran and was deleted on 26 Oct 2026; ECMWF declined to distribute the numerical data behind its headline-score charts ([`docs/sources/ecmwf/SD-131630_reply.md`](sources/ecmwf/SD-131630_reply.md)); see also [`docs/AUDIT_2026-10-26.md`](AUDIT_2026-10-26.md). GDELT has never been ingested ([`README.md`](../README.md), status table).
 
 ## 3. Results, pillar by pillar
 

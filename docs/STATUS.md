@@ -31,7 +31,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Open (each with reason)**
 - Blanket claims_grep pass for `scripts/weekly_run.py`. Reason: scope (changes the check itself).
-- ECMWF refusal record. Reason: Adrian's action (supply the message), otherwise it stays unverified.
+- ~~ECMWF refusal record.~~ **Closed (29 Oct 05:43):** Adrian supplied the Service Desk reply (SD-131630), committed in `docs/sources/ecmwf/` (staff name omitted). It narrows the claim: ECMWF declined to distribute the headline-score numbers, not data access in general; README, FAILURES F9 and the white-paper draft reworded to that.
+- `docs/UIA_PROTOCOL.md` §I says ECMWF headline scores are in `data/`; they are not (file removed as undocumented, `data/README_nhc.md`), and SD-131630 explains why none can be obtained. Reason: scope; protocol files are not edited in place: a dated note in a later infrastructure session.
 - `pdfplumber` in the `nhc-pdf` one-off job is unpinned. Reason: scope; download check, no frozen output depends on it.
 
 **Next:** session 2.2 (prompt in `docs/PLAN.md` §11).

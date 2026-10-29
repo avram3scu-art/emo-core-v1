@@ -20,7 +20,7 @@ Tests: 154 pass (CI run 40817855153 and weekly run 40817861051, 29 Oct 2026; bot
 
 DAC and UIA are reported as profiles of their components, never as a weighted score. RDL is **not** a validated recommender: its two tested versions failed on historical cases whose outcomes were known (not blind tests).
 
-**Superseded documents.** The white papers (`WHITEPAPER_EMO_v1_*`), `deck/`, `grants/`, `README_EMO.md` and `EMOStakeholderBenefits.md` describe a live observatory, DestinE overlays, a dashboard and pipelines. None of that exists: the dashboard and pipelines never ran, and no ECMWF/DestinE data link was set up (that ECMWF declined data access is the author's account; no record of it is in this repository, so it is unverified). Each now carries a dated "superseded" banner; their "first" claims were never checked against the literature and are marked unverified. They are kept for the record; their replacement is the draft white paper above, to be revised in plan session 2.13.
+**Superseded documents.** The white papers (`WHITEPAPER_EMO_v1_*`), `deck/`, `grants/`, `README_EMO.md` and `EMOStakeholderBenefits.md` describe a live observatory, DestinE overlays, a dashboard and pipelines. None of that exists: the dashboard and pipelines never ran, and no ECMWF/DestinE data link was set up: ECMWF declined to distribute the numerical data behind its headline-score charts (request SD-131630, [`docs/sources/ecmwf/SD-131630_reply.md`](docs/sources/ecmwf/SD-131630_reply.md)). Each now carries a dated "superseded" banner; their "first" claims were never checked against the literature and are marked unverified. They are kept for the record; their replacement is the draft white paper above, to be revised in plan session 2.13.
 
 ## What is in the repository
 
