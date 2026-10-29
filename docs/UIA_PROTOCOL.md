@@ -170,3 +170,5 @@ Evidence class of this section: **infrastructure** (a definition). Committed bef
 **He (emergent capacity) of an event** = −(Y_state + Y_fed) = −(date of the DR declaration − date(t0)), in days: the landfall→federal-declaration lag, sign-flipped so that higher He = faster response. It is the hurricane analogue of the DAC warning→delivery lag (§2). Missing if either lag is missing.
 
 **Rules (§2 kept):** no circularity (no letter contains a lag); every letter dated before t0 (F: forecasts with initial time < t0; A: the three days before t0; W: lead before t0); a letter not measured for an event is "not measured", never imputed; the §2 letters I (synergy), C, E and D have no per-event hurricane measure and are "not measured" in this domain. Code: `emo/uia2.py` builds the profile table (column selection plus He); output `data/uia2_hurricanes_profile.csv`. a_UIA stays retired (§4).
+
+**Use in session 2.9 (29 Oct 2026):** He direction test, `docs/HE_CALIBRATION_PROTOCOL.md` §10.7: PASS on known history (T-D +0.220, within-season p = 0.0116), unconditional association led by attention; severity not controlled, so not evidence of coupling beyond procedure.

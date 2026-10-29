@@ -1,0 +1,17 @@
+He direction test, hurricane loop 2015-2025 (HE_CALIBRATION_PROTOCOL §10).
+Evidence class: pre-registered on known history.
+Profile rows written: 52 -> data/uia2_hurricanes_profile.csv
+Cases (He, F, A, W present): 23; seasons {2016: 2, 2017: 3, 2018: 2, 2019: 1, 2020: 5, 2021: 1, 2022: 3, 2023: 1, 2024: 5}
+
+PRIMARY  T-D = +0.2200, within-season permutation p = 0.0116 (9999 perms, seed 2026102990); alpha 0.05: PASS
+
+Descriptive, no weight:
+  tau(F, He) = +0.004
+  tau(A, He) = +0.455
+  tau(W, He) = +0.202
+  shared trend: tau(F, year) = +0.123; severity: tau(F, V) = -0.012
+  shared trend: tau(A, year) = -0.241; severity: tau(A, V) = +0.368
+  shared trend: tau(W, year) = -0.170; severity: tau(W, V) = +0.059
+  tau(He, year) = -0.087; tau(He, V) = +0.494
+  mean pairwise tau among letters = +0.062 (-0.075, -0.178, +0.439)
+  across-all permutation p (the §3 null) = 0.0057

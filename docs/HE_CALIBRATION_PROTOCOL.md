@@ -185,3 +185,15 @@ Model of §2 at the realized season sizes (§10.2), m = 3, plus a season shock Z
 | 0.5 | 0 / 0.5 | 0 / 1 | 0.754, 0.733 / 0.574, 0.539 | — |
 
 Criterion met (max within-season FPR 0.049 ≤ 0.060): the test is run. Expectations (§10.5): all three held; the across-all null of §3 is unusable here if seasons share a shock (FPR up to 0.78). Power at β = 0.5 is 0.54–0.75, below 0.80, so even a strong link is missed a quarter to nearly half the time.
+
+### 10.7 Result (single run, 29 Oct 2026; plan and code committed first: aa35b59, bbc42f4, e2f463f)
+
+**Evidence class: pre-registered on known history.** Table check first: 52 rows, 0 failures. Output `analysis/he_loop_test_output.txt`; UIA 2.0 profile `data/uia2_hurricanes_profile.csv` (52 rows). Cases 23 in 9 seasons, as §10.2 expected.
+
+| Condition | Significance test | Result | Reading |
+|---|---|---|---|
+| T-D > 0 (He direction) | within-season permutation, 9,999 perms | T-D = +0.220, **p = 0.0116** < 0.05 | **PASS**: He direction shown within seasons on known history (unconditional association; not coupling beyond procedure) |
+
+Descriptive, no weight: τ(F, He) +0.004, τ(A, He) +0.455, τ(W, He) +0.202, so the pass rests mainly on attention, partly on warning lead, not on forecast skill. Severity: τ(He, V) +0.494, τ(A, V) +0.368, τ(W, V) +0.059, τ(F, V) −0.012. Shared trend with season year: F +0.123, A −0.241, W −0.170, He −0.087; mean pairwise τ among letters +0.062. Across-all null p = 0.0057 (no weight).
+
+**What this shows:** within a season, storms that drew more pre-landfall attention and had longer warning leads were declared major disasters sooner after landfall, beyond chance under a null that keeps each season's shared conditions. **What it does not show:** coupling beyond procedure (H4). Attention and He both rise with landfall intensity (τ 0.37 and 0.49), so severity alone can produce the attention result, as §10.1 stated in advance; no control was fitted (it cannot be on 2015–2025, LOOP_PROTOCOL §15). The forecast link shows no association (τ ≈ 0). The outcomes were known (published summaries in LOOP_PROTOCOL §19), so the result is not blind. H4's status is unchanged: cannot be tested at this size in this domain on 2015–2025.
