@@ -320,7 +320,7 @@ Done when: checklist and draft committed; submission waits at least one day afte
 
 ```text
 EMO session 2.15: release 1.0. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.15 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.15 task: tag and archive release 1.0. Add CITATION.cff (Adrian N. Avramescu, ORCID 0009-0005-1393-5264), a CHANGELOG, and check that the Zenodo-GitHub integration is on for avram3scu-art/emo-core-v1. Make sure tests pass, then create the v1.0.0 release with notes stating what works and what does not.
+Session 2.15 task: tag and archive release 1.0. Add CITATION.cff (Adrian N. Avramescu, ORCID 0009-0005-1393-5264), a CHANGELOG (from git history; state that the default branch starts from a snapshot on 19 Oct 2026 and that earlier work is on branch original-upload, Nov 2025–Apr 2026), and check that the Zenodo-GitHub integration is on for avram3scu-art/emo-core-v1. Make sure tests pass, then create the v1.0.0 release with notes stating what works and what does not, carrying the AI disclosure exactly as in paper/paper.md (point 2 withheld unless my verification is recorded in docs/STATUS.md) and the contributions line. LICENSE (full AGPL-3.0) and CONTRIBUTING.md already exist (session 2.14, docs/JOSS_CHECKLIST.md).
 Done when: the Zenodo DOI for the release resolves.
 ```
 

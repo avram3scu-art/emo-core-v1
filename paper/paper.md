@@ -52,7 +52,7 @@ The software has been used only by its author so far. It has produced the result
 
 # AI usage disclosure
 
-Generative AI was used in this project. Tool: Claude Opus 5.5 (Anthropic), used through Claude Code from 19 October 2026 for code, tests, documentation, coding of DAC event files, analysis scripts and the drafting of this paper; 320 commits carry its co-author line. [Tools used for the commits of November 2025 to April 2026: to be stated by the author.]
+Generative AI was used in this project. Tool: Claude Opus 5.5 (Anthropic), used through Claude Code from 19 October 2026 for code, tests, documentation, coding of DAC event files, analysis scripts and the drafting of this paper; 320 commits carry its co-author line. Claude (Anthropic) was also the only AI tool used for the code of November 2025 to April 2026 (author's statement, 29 October 2026); the model versions used then were not recorded.
 
 1. All inputs were the author's own manuscript text, code and publicly available reference literature and data (plus synthetic simulation parameters where applicable).
 2. [Withheld until the author's verification is recorded in `docs/STATUS.md`.]

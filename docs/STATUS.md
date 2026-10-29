@@ -4,12 +4,40 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 16:20):** session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 17:10):** session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
-- **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+- **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. For JOSS (not before 19 Apr 2027): verify the code and record it before disclosure point 2 can be written; reply to editors and reviewers without AI. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.14 (2026-10-29, 16:38–17:10) — JOSS software paper (no hypothesis moved; infrastructure)
+
+**Done when met: yes.** Checklist, draft and review bab4be9; Adrian's answer and close in this commit. Nothing submitted.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green; hooks path set; lock installed.
+- JOSS docs opened (submitting, policies, paper format, review checklist; `latest`, 29 Oct). Checklist `docs/JOSS_CHECKLIST.md`, 18 items.
+- Small gaps fixed: `LICENSE` now the full AGPL-3.0 text (was a summary; GitHub showed NOASSERTION); `CONTRIBUTING.md` (issues, support, governance); README usage example (DAC validate/profile, run verbatim); `requires-python >=3.11` (what CI tests). Tests 200 pass.
+- Draft `paper/paper.md` (1,064 words, all JOSS sections) and `paper/paper.bib` (Hale 2021 checked today; Breitmeier 2011 and WGI 2025 not re-opened, flagged).
+- Review `docs/REVIEW_2_14_JOSS.md`: **not eligible now** (desk rejection > 90%, estimate). Blockers: development history (default branch from 19 Oct 2026, burst, no commits May–Sep 2026); human verification required by JOSS's AI policy (point 2 withheld; Claude wrote 344 of ~430 commits); research impact (author's use only). Earliest after 19 Apr 2027, then ~25–40% (estimate). Recommends a paper centred on the DAC standard.
+
+**Decision (Adrian, 17:04):** "I've used only you Claude": Claude was the only AI tool for all code, Nov 2025–Apr 2026 included; recorded in paper, checklist and review (model versions before 19 Oct 2026 not recorded).
+
+**Claude's mistakes (fixed):** three claim words ("validated" twice, "first") refused the push twice, reworded, no `--no-verify`; one fact from outside the repo (Zenodo–GitHub link) written into the checklist, removed before the first push.
+
+**Review (Adrian 17:04):** 1 not answered, Claude's recommendation "no more now" applied; 2 (refocus the draft on the DAC standard, ~15 min) not answered, so not done; 3 answered (above).
+
+**Open (each with reason)**
+- Refocus `paper/paper.md` on the DAC standard. Reason: Adrian's decision (review point 2 unanswered); do it in the session that prepares the actual submission.
+- Software comparison for "State of the field"; API reference. Reason: scope (new task).
+- Breitmeier 2011 and WGI 2025 references not re-opened (publisher page blocked). Reason: needs time; re-verify at submission.
+- Disclosure point 2. Reason: Adrian's decision/action (verification recorded first).
+- Whether the repo was public before Oct 2026. Reason: not attempted beyond the API (GitHub shows no visibility history); Adrian may know.
+- Root clutter (superseded white papers, deck, grants) and contributor terms under the dual licence. Reason: Adrian's decision.
+- Submission. Reason: needs time; not before 19 Apr 2027.
+
+**Next:** session 2.15 (release 1.0; prompt in `docs/PLAN.md`, updated with 2.14 findings).
 
 ## Session 2.13 (2026-10-29, 16:05–16:20) — white paper 2.0 (no hypothesis moved; report of H1–H7; infrastructure)
 

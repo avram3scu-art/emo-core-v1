@@ -16,7 +16,7 @@ Reviewer stance: a skeptical JOSS editor doing the pre-review scope check, using
 
 4. **Is it one project's analysis code?** Of 3,349 lines in `emo/`, the hurricane loop, NHC, remedy backtest and much of SMF serve EMO's own registered tests. A reviewer will ask what another group would install it for. The defensible reusable core is the DAC event-file standard (format, schema, validator, contested-date profiles). **Recommendation:** submit (when eligible) a paper centred on the DAC standard, with the rest described as the project's applications; this also shortens the claim that must be verified (point 2).
 5. **State of the field compares no software.** `docs/RELATED_WORK.md` compares datasets and studies (OxCGRT, regime-effectiveness work, WGI). JOSS asks for comparison with other tools and a build-versus-contribute reason. Without a search for comparable event-coding formats and tools, this section fails the checklist item.
-6. **AI disclosure lacks the early tools.** The draft names Claude Opus 5.5 for commits from 19 Oct 2026. The tools used, if any, for the Nov 2025–Apr 2026 code are not recorded in the repository.
+6. **AI disclosure: early tools.** Resolved 29 Oct 17:04: Adrian states Claude was the only AI tool for all code; the draft says so and that the model versions before 19 Oct 2026 were not recorded. Since Claude wrote nearly all the code, issue 2 (human verification) carries more weight, not less.
 7. **Editor conversation rule.** JOSS forbids AI use in conversation with editors and reviewers, except translation. Review replies would have to be written by Adrian.
 
 ## Minor issues (fixed this session)
