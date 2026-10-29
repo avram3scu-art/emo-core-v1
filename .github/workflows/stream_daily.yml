@@ -9,8 +9,15 @@ name: Stream daily
 on:
   schedule:
     - cron: "17 4 * * *"    # daily 04:17 UTC
-    - cron: "47 11 * * *"   # backup, skipped if today's run is already committed
+    - cron: "47 11 * * *"   # backup
+  # Also started daily by cron-job.org ("EMO stream daily", Adrian's account) with
+  # only_if_missing=true. Every automatic start is skipped if today's run exists.
   workflow_dispatch:
+    inputs:
+      only_if_missing:
+        description: "skip if today's run is already committed (used by the cron-job.org starter)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -29,10 +36,13 @@ jobs:
       - uses: actions/setup-python@v6
         with: {python-version: "3.11", cache: "pip", cache-dependency-path: requirements-lock.txt}
       - run: pip install -r requirements-lock.txt
-      - name: Gate (backup schedule only)
+      - name: Gate (every automatic start; a plain manual run always goes ahead)
         id: gate
         run: |
-          if [ "${{ github.event.schedule }}" = "47 11 * * *" ] && python scripts/stream_daily.py ran-today; then
+          auto=false
+          [ "${{ github.event_name }}" = "schedule" ] && auto=true
+          [ "${{ github.event.inputs.only_if_missing }}" = "true" ] && auto=true
+          if [ "$auto" = "true" ] && python scripts/stream_daily.py ran-today; then
             echo "go=false" >> "$GITHUB_OUTPUT"; echo "::notice::skipped: today's run exists"
           else
             echo "go=true" >> "$GITHUB_OUTPUT"
