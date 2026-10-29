@@ -146,7 +146,7 @@ Evidence class: **infrastructure**. No event record was opened: probes returned 
 
 ## 10. Daily ingestion as built (session 3.2)
 
-Code `emo/stream/` (fetchers, exclusions, store, counts), `scripts/stream_daily.py`, workflow `.github/workflows/stream_daily.yml` (daily 04:17 UTC, backup 11:47 UTC skipped if today's run exists, manual dispatch). Tests `tests/unit/test_stream.py` (synthetic only).
+Code `emo/stream/` (fetchers, exclusions, store, counts), `scripts/stream_daily.py`, workflow `.github/workflows/stream_daily.yml` (GitHub cron daily 04:17 UTC and backup 11:47 UTC, plus cron-job.org job "EMO stream daily" at 07:13 Europe/Brussels with `only_if_missing=true`; every automatic start skips if the day's run exists; a plain manual dispatch always runs). Tests `tests/unit/test_stream.py` (synthetic only).
 
 - **Sources:** GDACS (SEARCH, all hazards and alert levels, 7 days back, plus `events4app`); USGS FDSN M ≥ 4.5, 7 days back, plus PAGER detail for alerted events; CEMS full list with **E1** applied before return; IFRC GO events updated in 7 days, running appeals and appeals updated in 7 days. Raw objects kept unchanged plus `_emo_fetched_at`; rolling windows overlap so a missed day is recovered; duplicates are removed at analysis, never in the log.
 - **E2, E3:** a host allowlist (GDACS, USGS, CEMS, IFRC GO) and named refusals (fema.gov, wikipedia.org, wikimedia.org, wikidata.org, mediawiki.org), also for redirects and `next` links. Pageviews need a new fetcher, the 3.3 matching rule and per-article E2a–E2d filters.
