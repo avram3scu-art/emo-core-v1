@@ -1,0 +1,188 @@
+{
+ "atcf": "AL062018",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20180909155622|858784503"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 58436082,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 858659476,
+        "timestamp": "2018-09-08T19:34:02Z"
+       }
+      ],
+      "title": "Hurricane Florence"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Florence&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Florence": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091100",
+      "views": 54693
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091200",
+      "views": 74190
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091300",
+      "views": 76844
+     }
+    ]
+   },
+   "sha256": "d3f920f01fc3fb9d52e5c6c06003a9a5a50275899dc2611c3ebd0b69595f6c8d",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Florence/daily/20180911/20180913"
+  },
+  "Hurricane Florence (2018)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091100",
+      "views": 1596
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091200",
+      "views": 678
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091300",
+      "views": 405
+     }
+    ]
+   },
+   "sha256": "5b7260b9307d86ef5265550a339828556e87dd6b86c42b6446786d5bb11919ff",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Florence_%282018%29/daily/20180911/20180913"
+  },
+  "Tropical Storm Florence (2018)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091100",
+      "views": 12
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091200",
+      "views": 7
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Florence_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018091300",
+      "views": 10
+     }
+    ]
+   },
+   "sha256": "bad04d64c2e50d0589a29e320e3d3c5a6fdb94238e880b2f38700513052decdb",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Florence_%282018%29/daily/20180911/20180913"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:27Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1371012333,
+      "length": 125728,
+      "ns": 0,
+      "pageid": 58436082,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Florence",
+       "page_image_free": "Florence_2018-09-11_1750Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2018",
+       "wikibase_item": "Q56552345"
+      },
+      "title": "Hurricane Florence",
+      "touched": "2026-10-29T01:58:20Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Florence (2018)",
+      "to": "Hurricane Florence"
+     },
+     {
+      "from": "Tropical Storm Florence (2018)",
+      "to": "Hurricane Florence"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Florence+%282018%29%7CHurricane+Florence%7CTropical+Storm+Florence+%282018%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Florence",
+ "titles": {
+  "T1": "Hurricane Florence (2018)",
+  "T2": "Hurricane Florence",
+  "T3": "Tropical Storm Florence (2018)"
+ },
+ "via": [
+  "Hurricane Florence (2018)",
+  "Tropical Storm Florence (2018)"
+ ]
+}

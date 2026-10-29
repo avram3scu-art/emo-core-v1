@@ -1,0 +1,131 @@
+{
+ "atcf": "AL062020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20141015191211|629750617"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 44120996,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 629495350,
+        "timestamp": "2014-10-13T21:54:34Z"
+       }
+      ],
+      "title": "Hurricane Fay"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Fay&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Fay": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fay",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020070700",
+      "views": 21
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fay",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020070800",
+      "views": 96
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fay",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020070900",
+      "views": 246
+     }
+    ]
+   },
+   "sha256": "918d36049c8fbcf8520ab9de154c80e7d62e6809fd5c7060b0973de8e9e4bb18",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fay/daily/20200707/20200709"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:04Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Fay (2020)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1382104693,
+      "length": 28545,
+      "ns": 0,
+      "pageid": 44120996,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Fay_2014-10-12_1458Z.jpg",
+       "wikibase-badge-Q17437796": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2014",
+       "wikibase_item": "Q18306579"
+      },
+      "title": "Hurricane Fay",
+      "touched": "2026-10-27T05:48:30Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380709417,
+      "length": 50260,
+      "ns": 0,
+      "pageid": 64507484,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Fay",
+       "page_image_free": "Fay_2020-07-10_1725Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q97139292"
+      },
+      "title": "Tropical Storm Fay (2020)",
+      "touched": "2026-10-27T05:48:56Z"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Fay+%282020%29%7CHurricane+Fay%7CTropical+Storm+Fay+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Hurricane Fay",
+ "titles": {
+  "T1": "Hurricane Fay (2020)",
+  "T2": "Hurricane Fay",
+  "T3": "Tropical Storm Fay (2020)"
+ },
+ "via": []
+}

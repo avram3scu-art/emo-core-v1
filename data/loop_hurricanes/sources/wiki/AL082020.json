@@ -1,0 +1,128 @@
+{
+ "atcf": "AL082020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20200723210220|969180174"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 64630044,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 969180057,
+        "timestamp": "2020-07-23T21:01:38Z"
+       }
+      ],
+      "title": "Hurricane Hanna (2020)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Hanna+%282020%29&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Hanna (2020)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Hanna_(2020)/daily/20200722/20200724"
+   },
+   "sha256": "c2bc30a6a59859ebc7908c3786ea89024587e393c4d32eefd4fab8b7d50c43a4",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Hanna_%282020%29/daily/20200722/20200724"
+  },
+  "Tropical Storm Hanna (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Hanna_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020072400",
+      "views": 383
+     }
+    ]
+   },
+   "sha256": "af5ca3e8becbc229490d0b5c37b06ba063244d4a4ca5477cb1e6248174145890",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Hanna_%282020%29/daily/20200722/20200724"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:07Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1377719478,
+      "length": 3627,
+      "ns": 0,
+      "pageid": 1843836,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Hanna",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q7845966"
+      },
+      "title": "List of storms named Hanna",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1376406908,
+      "length": 60218,
+      "ns": 0,
+      "pageid": 64630044,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Hanna",
+       "page_image_free": "Hanna_2020-07-25_2200Z.png",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane",
+       "wikibase_item": "Q97666581"
+      },
+      "title": "Hurricane Hanna (2020)",
+      "touched": "2026-10-27T05:48:56Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Hanna",
+      "to": "List of storms named Hanna"
+     },
+     {
+      "from": "Tropical Storm Hanna (2020)",
+      "to": "Hurricane Hanna (2020)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Hanna+%282020%29%7CHurricane+Hanna%7CTropical+Storm+Hanna+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Hanna (2020)",
+ "titles": {
+  "T1": "Hurricane Hanna (2020)",
+  "T2": "Hurricane Hanna",
+  "T3": "Tropical Storm Hanna (2020)"
+ },
+ "via": [
+  "Tropical Storm Hanna (2020)"
+ ]
+}

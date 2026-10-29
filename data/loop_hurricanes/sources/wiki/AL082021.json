@@ -1,0 +1,171 @@
+{
+ "atcf": "AL082021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20210817020106|1039159220"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 68493831,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1039159051,
+        "timestamp": "2021-08-17T02:00:06Z"
+       }
+      ],
+      "title": "Hurricane Henri"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Henri&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Henri": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Henri",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021081900",
+      "views": 1060
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Henri",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082000",
+      "views": 3259
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Henri",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082100",
+      "views": 6264
+     }
+    ]
+   },
+   "sha256": "281b26bad25d8f96b3392cad65e4dfa81c4e161d4a61f0af3441497eb8c5959c",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Henri/daily/20210819/20210821"
+  },
+  "Hurricane Henri (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Henri_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082100",
+      "views": 8451
+     }
+    ]
+   },
+   "sha256": "8b3c7a8f7a20eaaeac6f9e328d5280be22cb3b09b4757984c85ebc9c920da298",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Henri_%282021%29/daily/20210819/20210821"
+  },
+  "Tropical Storm Henri (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Henri_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021081900",
+      "views": 192
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Henri_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082000",
+      "views": 918
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Henri_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082100",
+      "views": 6694
+     }
+    ]
+   },
+   "sha256": "c84aedfa76ff9fddaee4dad7c31f9571e1b6a536e8fb4746ba5ba26bc6f0a95b",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Henri_%282021%29/daily/20210819/20210821"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:06Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381659878,
+      "length": 63512,
+      "ns": 0,
+      "pageid": 68493831,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Henri (2021)",
+       "page_image_free": "Henri_2021-08-22_0700Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2021",
+       "wikibase_item": "Q108177058"
+      },
+      "title": "Hurricane Henri",
+      "touched": "2026-10-29T01:58:24Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Henri (2021)",
+      "to": "Hurricane Henri"
+     },
+     {
+      "from": "Hurricane Henri (2021)",
+      "to": "Hurricane Henri"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Henri+%282021%29%7CHurricane+Henri%7CTropical+Storm+Henri+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Henri",
+ "titles": {
+  "T1": "Hurricane Henri (2021)",
+  "T2": "Hurricane Henri",
+  "T3": "Tropical Storm Henri (2021)"
+ },
+ "via": [
+  "Hurricane Henri (2021)",
+  "Tropical Storm Henri (2021)"
+ ]
+}

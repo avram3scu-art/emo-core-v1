@@ -1,0 +1,160 @@
+{
+ "atcf": "AL092020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20200730130953|970293532"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 64685188,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 970293275,
+        "timestamp": "2020-07-30T13:08:02Z"
+       }
+      ],
+      "title": "Hurricane Isaias (2020)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Isaias+%282020%29&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Isaias (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Isaias_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020080100",
+      "views": 10
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Isaias_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020080200",
+      "views": 1
+     }
+    ]
+   },
+   "sha256": "370402bdda6dcb9ad56756a05789ca7f9dddfa41609fb89bfdfb3540a53f4e5c",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Isaias_%282020%29/daily/20200801/20200803"
+  },
+  "Tropical Storm Isaias (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Isaias_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020080100",
+      "views": 2
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Isaias_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020080200",
+      "views": 17
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Isaias_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020080300",
+      "views": 42
+     }
+    ]
+   },
+   "sha256": "abd524e8896b0da948a93582aea638e5e1e7ea96af1a3fc951ce798531c42289",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Isaias_%282020%29/daily/20200801/20200803"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:11Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381841958,
+      "length": 181401,
+      "ns": 0,
+      "pageid": 64685188,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Isaias",
+       "page_image_free": "Isaias_2020-08-03_1815Z.jpg",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2020",
+       "wikibase_item": "Q97936607"
+      },
+      "title": "Hurricane Isaias (2020)",
+      "touched": "2026-10-29T01:58:22Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380220406,
+      "length": 694,
+      "ns": 0,
+      "pageid": 84438773,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Isaias",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q141763533"
+      },
+      "title": "List of storms named Isaias",
+      "touched": "2026-10-26T20:17:21Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Isaias (2020)",
+      "to": "Hurricane Isaias (2020)"
+     },
+     {
+      "from": "Hurricane Isaias",
+      "to": "List of storms named Isaias"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Isaias+%282020%29%7CHurricane+Isaias%7CTropical+Storm+Isaias+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Isaias (2020)",
+ "titles": {
+  "T1": "Hurricane Isaias (2020)",
+  "T2": "Hurricane Isaias",
+  "T3": "Tropical Storm Isaias (2020)"
+ },
+ "via": [
+  "Tropical Storm Isaias (2020)"
+ ]
+}

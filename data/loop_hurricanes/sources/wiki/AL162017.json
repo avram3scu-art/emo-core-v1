@@ -1,0 +1,170 @@
+{
+ "atcf": "AL162017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20171005205809|803970392"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 55446943,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 803817316,
+        "timestamp": "2017-10-04T20:40:00Z"
+       }
+      ],
+      "title": "Hurricane Nate"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Nate&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Nate": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nate",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100500",
+      "views": 733
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nate",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100600",
+      "views": 1322
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nate",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100700",
+      "views": 2374
+     }
+    ]
+   },
+   "sha256": "8b74c1832fcec5d92ffe51fde3f801ee4b6251b73e21e1c831ce787faef4bd36",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Nate/daily/20171005/20171007"
+  },
+  "Hurricane Nate (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nate_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100700",
+      "views": 24384
+     }
+    ]
+   },
+   "sha256": "9e1490efa50a2feed129bfe875390dd4c6e07683643410f8b6dc559e98daec97",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Nate_%282017%29/daily/20171005/20171007"
+  },
+  "Tropical Storm Nate (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Nate_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100500",
+      "views": 1575
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Nate_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100600",
+      "views": 13512
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Nate_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017100700",
+      "views": 6180
+     }
+    ]
+   },
+   "sha256": "43b2b0afe24526b9daf895b04242be09194b4c28f0ebbc5007f482f81cfaefd2",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Nate_%282017%29/daily/20171005/20171007"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:14Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373232086,
+      "length": 55921,
+      "ns": 0,
+      "pageid": 55446943,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Nate",
+       "page_image_free": "Nate_2017-10-07_1850Z.jpg",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2017",
+       "wikibase_item": "Q41645765"
+      },
+      "title": "Hurricane Nate",
+      "touched": "2026-10-27T05:48:44Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Nate (2017)",
+      "to": "Hurricane Nate"
+     },
+     {
+      "from": "Hurricane Nate (2017)",
+      "to": "Hurricane Nate"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Nate+%282017%29%7CHurricane+Nate%7CTropical+Storm+Nate+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Nate",
+ "titles": {
+  "T1": "Hurricane Nate (2017)",
+  "T2": "Hurricane Nate",
+  "T3": "Tropical Storm Nate (2017)"
+ },
+ "via": [
+  "Hurricane Nate (2017)",
+  "Tropical Storm Nate (2017)"
+ ]
+}

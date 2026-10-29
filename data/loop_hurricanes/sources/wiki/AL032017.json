@@ -1,0 +1,151 @@
+{
+ "atcf": "AL032017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050510040618|13541739"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1852271,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 13500912,
+        "timestamp": "2005-05-07T05:34:44Z"
+       }
+      ],
+      "title": "List of storms named Cindy"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Cindy&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Cindy": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017061900",
+      "views": 43
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017062000",
+      "views": 569
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017062100",
+      "views": 901
+     }
+    ]
+   },
+   "sha256": "983c90122a6dc6e5420f514b6e9d2ad99940d53a010b88904b9b90ebaa9691de",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Cindy/daily/20170619/20170621"
+  },
+  "List of storms named Cindy": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Cindy/daily/20170619/20170621"
+   },
+   "sha256": "f5970cc6934fe6d8d1b79f5190dd000cfbe582885dd78e1bd4bb03ec4c030f53",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Cindy/daily/20170619/20170621"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:49Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Cindy (2017)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1181104172,
+      "length": 1941,
+      "ns": 0,
+      "pageid": 1852271,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Cindy",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1173994"
+      },
+      "title": "List of storms named Cindy",
+      "touched": "2026-10-26T19:19:50Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373233937,
+      "length": 23823,
+      "ns": 0,
+      "pageid": 54345430,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Cindy (2017)",
+       "page_image_free": "Cindy_2017-06-21_1645Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q30612462"
+      },
+      "title": "Tropical Storm Cindy (2017)",
+      "touched": "2026-10-27T05:48:42Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Cindy",
+      "to": "List of storms named Cindy"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Cindy+%282017%29%7CHurricane+Cindy%7CTropical+Storm+Cindy+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Cindy",
+ "titles": {
+  "T1": "Hurricane Cindy (2017)",
+  "T2": "Hurricane Cindy",
+  "T3": "Tropical Storm Cindy (2017)"
+ },
+ "via": [
+  "Hurricane Cindy"
+ ]
+}

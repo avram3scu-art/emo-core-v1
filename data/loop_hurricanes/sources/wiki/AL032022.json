@@ -1,0 +1,138 @@
+{
+ "atcf": "AL032022",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20100803151614|376950579"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 28245967,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 376950558,
+        "timestamp": "2010-08-03T15:16:05Z"
+       }
+      ],
+      "title": "List of storms named Colin"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Colin&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Colin": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Colin",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022063000",
+      "views": 1
+     }
+    ]
+   },
+   "sha256": "4765890ee4ef4ccbb3493d379984c7a71ef156d134327bfc74ccc88871c0f656",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Colin/daily/20220628/20220630"
+  },
+  "List of storms named Colin": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Colin/daily/20220628/20220630"
+   },
+   "sha256": "ec34cb82288225d401f2080b942d26385dc1d12ae139e7246a8538fa7927141d",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Colin/daily/20220628/20220630"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:26Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Colin (2022)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1260271245,
+      "length": 1048,
+      "ns": 0,
+      "pageid": 28245967,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Colin",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q25113923"
+      },
+      "title": "List of storms named Colin",
+      "touched": "2026-10-26T19:46:04Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381799258,
+      "length": 142051,
+      "ns": 0,
+      "pageid": 57798792,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "2022_Atlantic_hurricane_season_summary.png",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "",
+       "wikibase_item": "Q109716516"
+      },
+      "title": "2022 Atlantic hurricane season",
+      "touched": "2026-10-27T05:48:47Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Colin",
+      "to": "List of storms named Colin"
+     },
+     {
+      "from": "Tropical Storm Colin (2022)",
+      "to": "2022 Atlantic hurricane season",
+      "tofragment": "Tropical Storm Colin"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Colin+%282022%29%7CHurricane+Colin%7CTropical+Storm+Colin+%282022%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Colin",
+ "titles": {
+  "T1": "Hurricane Colin (2022)",
+  "T2": "Hurricane Colin",
+  "T3": "Tropical Storm Colin (2022)"
+ },
+ "via": [
+  "Hurricane Colin"
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "atcf": "AL292020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20201101013125|986467016"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 65730072,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 986434395,
+        "timestamp": "2020-10-31T20:57:23Z"
+       }
+      ],
+      "title": "Hurricane Eta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Eta&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Eta": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Eta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110600",
+      "views": 23447
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Eta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110700",
+      "views": 26466
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Eta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110800",
+      "views": 24820
+     }
+    ]
+   },
+   "sha256": "11e635b0792f4aa047c171843f135ac2d35cb90977f41fc2c675e4c89ff76cc8",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Eta/daily/20201106/20201108"
+  },
+  "Hurricane Eta (2020)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Eta_(2020)/daily/20201106/20201108"
+   },
+   "sha256": "d49e20b8f977d0fdabaeac043813bdd73e43103227e95be9e5db659a23a71e0d",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Eta_%282020%29/daily/20201106/20201108"
+  },
+  "Tropical Storm Eta (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Eta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110600",
+      "views": 21
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Eta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110700",
+      "views": 16
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Eta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020110800",
+      "views": 5
+     }
+    ]
+   },
+   "sha256": "9f39efc0e251bcced7e2aa5b36d7081409e6d81995d61306672111280269be3f",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Eta_%282020%29/daily/20201106/20201108"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:41Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1372010529,
+      "length": 107198,
+      "ns": 0,
+      "pageid": 65730072,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "\u03b7",
+       "page_image_free": "Eta_2020-11-03_0640Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2020",
+       "wikibase_item": "Q101095803"
+      },
+      "title": "Hurricane Eta",
+      "touched": "2026-10-27T05:48:57Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Eta (2020)",
+      "to": "Hurricane Eta"
+     },
+     {
+      "from": "Hurricane Eta (2020)",
+      "to": "Hurricane Eta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Eta+%282020%29%7CHurricane+Eta%7CTropical+Storm+Eta+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Eta",
+ "titles": {
+  "T1": "Hurricane Eta (2020)",
+  "T2": "Hurricane Eta",
+  "T3": "Tropical Storm Eta (2020)"
+ },
+ "via": [
+  "Hurricane Eta (2020)",
+  "Tropical Storm Eta (2020)"
+ ]
+}

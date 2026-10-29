@@ -1,0 +1,179 @@
+{
+ "atcf": "AL092024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20240923151722|1247266638"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 77945659,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1247266332,
+        "timestamp": "2024-09-23T15:15:38Z"
+       }
+      ],
+      "title": "Hurricane Helene"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Helene&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Helene": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Helene",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092400",
+      "views": 99
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Helene",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092500",
+      "views": 719
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Helene",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092600",
+      "views": 1503
+     }
+    ]
+   },
+   "sha256": "6eff55828f7975cf07d88fcbf2359161f9f96e0e610f68582d0aebd7857f0f97",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Helene/daily/20240924/20240926"
+  },
+  "Hurricane Helene (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Helene_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092500",
+      "views": 6820
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Helene_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092600",
+      "views": 30542
+     }
+    ]
+   },
+   "sha256": "c7b64324524f2098c545ce93597147acdaf4c4dbf6701b4cdc9572ddf62ad962",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Helene_%282024%29/daily/20240924/20240926"
+  },
+  "Tropical Storm Helene (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Helene_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092400",
+      "views": 5794
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Helene_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092500",
+      "views": 9595
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Helene_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024092600",
+      "views": 7645
+     }
+    ]
+   },
+   "sha256": "8077119e664599795c155f79c6316288e7c4efa0f8a178cc7894df756791ffb2",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Helene_%282024%29/daily/20240924/20240926"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:22Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1379700598,
+      "length": 248943,
+      "ns": 0,
+      "pageid": 77945659,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Helene (2024)",
+       "page_image_free": "Helene_2024-09-27_0146Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2024",
+       "wikibase_item": "Q130358528"
+      },
+      "title": "Hurricane Helene",
+      "touched": "2026-10-29T01:58:27Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Helene (2024)",
+      "to": "Hurricane Helene"
+     },
+     {
+      "from": "Tropical Storm Helene (2024)",
+      "to": "Hurricane Helene"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Helene+%282024%29%7CHurricane+Helene%7CTropical+Storm+Helene+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Helene",
+ "titles": {
+  "T1": "Hurricane Helene (2024)",
+  "T2": "Hurricane Helene",
+  "T3": "Tropical Storm Helene (2024)"
+ },
+ "via": [
+  "Hurricane Helene (2024)",
+  "Tropical Storm Helene (2024)"
+ ]
+}

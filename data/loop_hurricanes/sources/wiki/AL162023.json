@@ -1,0 +1,174 @@
+{
+ "atcf": "AL162023",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050916190012|23355667"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 2690395,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 23355463,
+        "timestamp": "2005-09-16T18:56:01Z"
+       }
+      ],
+      "title": "List of storms named Ophelia"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Ophelia&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Ophelia": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092000",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092100",
+      "views": 16
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092200",
+      "views": 71
+     }
+    ]
+   },
+   "sha256": "44f6f23fea44316b93d535f9272da517ad230b8b12b9591938094ba2918d6914",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ophelia/daily/20230920/20230922"
+  },
+  "List of storms named Ophelia": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092000",
+      "views": 11
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092100",
+      "views": 65
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Ophelia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023092200",
+      "views": 524
+     }
+    ]
+   },
+   "sha256": "5c663fe1f84966ccd9bb5d0369d79ded604a34419df9aaa1ecb68c853b15509e",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Ophelia/daily/20230920/20230922"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:56Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Ophelia (2023)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1357275143,
+      "length": 2259,
+      "ns": 0,
+      "pageid": 2690395,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Ophelia",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q2581090"
+      },
+      "title": "List of storms named Ophelia",
+      "touched": "2026-10-26T19:21:31Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1379815167,
+      "length": 18544,
+      "ns": 0,
+      "pageid": 74885102,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Ophelia (2023)",
+       "page_image_free": "Ophelia_2023-09-22_2136Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q122754011"
+      },
+      "title": "Tropical Storm Ophelia (2023)",
+      "touched": "2026-10-27T05:49:13Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Ophelia",
+      "to": "List of storms named Ophelia"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Ophelia+%282023%29%7CHurricane+Ophelia%7CTropical+Storm+Ophelia+%282023%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Ophelia",
+ "titles": {
+  "T1": "Hurricane Ophelia (2023)",
+  "T2": "Hurricane Ophelia",
+  "T3": "Tropical Storm Ophelia (2023)"
+ },
+ "via": [
+  "Hurricane Ophelia"
+ ]
+}

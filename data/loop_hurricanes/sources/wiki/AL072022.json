@@ -1,0 +1,141 @@
+{
+ "atcf": "AL072022",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20220915114823|1110428004"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 71760540,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1110427984,
+        "timestamp": "2022-09-15T11:48:09Z"
+       }
+      ],
+      "title": "Hurricane Fiona"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Fiona&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Fiona": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fiona/daily/20220915/20220917"
+   },
+   "sha256": "69d0723f8fd55fe5ba8bdfbb730a136a87214a92c75957ac470585e6fb7d99ec",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fiona/daily/20220915/20220917"
+  },
+  "Hurricane Fiona (2022)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fiona_(2022)/daily/20220915/20220917"
+   },
+   "sha256": "0b7339fa9057923f028c444ae34e530339b0e58888255a6c62df1ff4c9f2bb6a",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fiona_%282022%29/daily/20220915/20220917"
+  },
+  "Tropical Storm Fiona (2022)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Fiona_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022091500",
+      "views": 378
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Fiona_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022091600",
+      "views": 368
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Fiona_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022091700",
+      "views": 510
+     }
+    ]
+   },
+   "sha256": "ea71a5011c2018cab665dc3d74588d685277a37164b76917bc0ad5d662595863",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Fiona_%282022%29/daily/20220915/20220917"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:31Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381120200,
+      "length": 74036,
+      "ns": 0,
+      "pageid": 71760540,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Fiona_2022-09-22_2131Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2022",
+       "wikibase_item": "Q114037431"
+      },
+      "title": "Hurricane Fiona",
+      "touched": "2026-10-29T01:58:25Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Fiona (2022)",
+      "to": "Hurricane Fiona"
+     },
+     {
+      "from": "Hurricane Fiona (2022)",
+      "to": "Hurricane Fiona"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Fiona+%282022%29%7CHurricane+Fiona%7CTropical+Storm+Fiona+%282022%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Fiona",
+ "titles": {
+  "T1": "Hurricane Fiona (2022)",
+  "T2": "Hurricane Fiona",
+  "T3": "Tropical Storm Fiona (2022)"
+ },
+ "via": [
+  "Hurricane Fiona (2022)",
+  "Tropical Storm Fiona (2022)"
+ ]
+}

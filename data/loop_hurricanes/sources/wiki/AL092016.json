@@ -1,0 +1,162 @@
+{
+ "atcf": "AL092016",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20160831190200|737097015"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 51476888,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 737092453,
+        "timestamp": "2016-08-31T18:30:24Z"
+       }
+      ],
+      "title": "Hurricane Hermine"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Hermine&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Hermine": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Hermine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016083000",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Hermine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016083100",
+      "views": 16
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Hermine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016090100",
+      "views": 1266
+     }
+    ]
+   },
+   "sha256": "1d56ca734bbd5f08198303e7e00c8f2d4cb04282e120f022f8770ddc63139367",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Hermine/daily/20160830/20160901"
+  },
+  "Hurricane Hermine (2016)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Hermine_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016090100",
+      "views": 3188
+     }
+    ]
+   },
+   "sha256": "a531e96198424549baec344cd74f141b89cb0e6af1ccb9b131833f0443e137ba",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Hermine_%282016%29/daily/20160830/20160901"
+  },
+  "Tropical Storm Hermine (2016)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Hermine_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016083100",
+      "views": 711
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Hermine_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016090100",
+      "views": 9269
+     }
+    ]
+   },
+   "sha256": "1ec64253f058ba1fef13b2d75b36ecb90fecf3c61a039515a63eedcf99013c7a",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Hermine_%282016%29/daily/20160830/20160901"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:38Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1382316803,
+      "length": 73241,
+      "ns": 0,
+      "pageid": 51476888,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Hermine (2016), Hurricane",
+       "page_image_free": "Hermine_2016-09-01_2300Z.png",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2016",
+       "wikibase_item": "Q26742227"
+      },
+      "title": "Hurricane Hermine",
+      "touched": "2026-10-28T00:25:08Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Hermine (2016)",
+      "to": "Hurricane Hermine"
+     },
+     {
+      "from": "Hurricane Hermine (2016)",
+      "to": "Hurricane Hermine"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Hermine+%282016%29%7CHurricane+Hermine%7CTropical+Storm+Hermine+%282016%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Hermine",
+ "titles": {
+  "T1": "Hurricane Hermine (2016)",
+  "T2": "Hurricane Hermine",
+  "T3": "Tropical Storm Hermine (2016)"
+ },
+ "via": [
+  "Hurricane Hermine (2016)",
+  "Tropical Storm Hermine (2016)"
+ ]
+}

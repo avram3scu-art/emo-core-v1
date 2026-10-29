@@ -1,0 +1,120 @@
+{
+ "atcf": "AL092023",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20231002033216|1178193468"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 74958528,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1178192999,
+        "timestamp": "2023-10-02T03:27:14Z"
+       }
+      ],
+      "title": "Tropical Storm Harold"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Tropical+Storm+Harold&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Tropical Storm Harold": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Harold/daily/20230819/20230821"
+   },
+   "sha256": "38a4326eec77755471dd0055fb89a65b698f280e65c135f226192aab5cf2f343",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Harold/daily/20230819/20230821"
+  },
+  "Tropical Storm Harold (2023)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Harold_(2023)/daily/20230819/20230821"
+   },
+   "sha256": "a56a7f949409331147e2f94e66636ab277a2d3fc0817a4c761ef47945463b482",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Harold_%282023%29/daily/20230819/20230821"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:46Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Harold"
+     },
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Harold (2023)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1276241153,
+      "length": 32640,
+      "ns": 0,
+      "pageid": 74958528,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Harold",
+       "page_image_free": "Harold_2023-08-22_1500Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2023",
+       "wikibase_item": "Q121801292"
+      },
+      "title": "Tropical Storm Harold",
+      "touched": "2026-10-28T12:59:28Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Harold (2023)",
+      "to": "Tropical Storm Harold"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Harold+%282023%29%7CHurricane+Harold%7CTropical+Storm+Harold+%282023%29&format=json&formatversion=2"
+ },
+ "rule": "T3",
+ "target": "Tropical Storm Harold",
+ "titles": {
+  "T1": "Hurricane Harold (2023)",
+  "T2": "Hurricane Harold",
+  "T3": "Tropical Storm Harold (2023)"
+ },
+ "via": [
+  "Tropical Storm Harold (2023)"
+ ]
+}

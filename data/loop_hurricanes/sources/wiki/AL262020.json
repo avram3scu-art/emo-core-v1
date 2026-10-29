@@ -1,0 +1,188 @@
+{
+ "atcf": "AL262020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20201005134932|981975118"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 65502086,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 981974870,
+        "timestamp": "2020-10-05T13:47:23Z"
+       }
+      ],
+      "title": "Hurricane Delta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Delta&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Delta": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100600",
+      "views": 21253
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100700",
+      "views": 17331
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100800",
+      "views": 12131
+     }
+    ]
+   },
+   "sha256": "2a63347254a2d1955ea3253f1a5a9b23534808c849ecfc5672f1bde0f0b175a1",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Delta/daily/20201006/20201008"
+  },
+  "Hurricane Delta (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100600",
+      "views": 6834
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100700",
+      "views": 2905
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100800",
+      "views": 1886
+     }
+    ]
+   },
+   "sha256": "ba2a7976c84d3af954af0715008183bb499176c80ef44a991b232241db4d2774",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Delta_%282020%29/daily/20201006/20201008"
+  },
+  "Tropical Storm Delta (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100600",
+      "views": 3603
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100700",
+      "views": 503
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Delta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020100800",
+      "views": 120
+     }
+    ]
+   },
+   "sha256": "61756f5fc3453513ffca869bcd4e7d755efc946cc676b0c5c195d072b480bee5",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Delta_%282020%29/daily/20201006/20201008"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:30Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1369861675,
+      "length": 58277,
+      "ns": 0,
+      "pageid": 65502086,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Delta",
+       "page_image_free": "Delta_2020-10-08_1920Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2020",
+       "wikibase_item": "Q99980449"
+      },
+      "title": "Hurricane Delta",
+      "touched": "2026-10-27T05:48:57Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Delta (2020)",
+      "to": "Hurricane Delta"
+     },
+     {
+      "from": "Hurricane Delta (2020)",
+      "to": "Hurricane Delta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Delta+%282020%29%7CHurricane+Delta%7CTropical+Storm+Delta+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Delta",
+ "titles": {
+  "T1": "Hurricane Delta (2020)",
+  "T2": "Hurricane Delta",
+  "T3": "Tropical Storm Delta (2020)"
+ },
+ "via": [
+  "Hurricane Delta (2020)",
+  "Tropical Storm Delta (2020)"
+ ]
+}

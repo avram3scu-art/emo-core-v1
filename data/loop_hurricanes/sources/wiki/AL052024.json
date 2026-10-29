@@ -1,0 +1,130 @@
+{
+ "atcf": "AL052024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20240813141423|1240095278"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 77611901,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1240085508,
+        "timestamp": "2024-08-13T12:53:57Z"
+       }
+      ],
+      "title": "Hurricane Ernesto (2024)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Ernesto+%282024%29&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Ernesto (2024)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ernesto_(2024)/daily/20240810/20240812"
+   },
+   "sha256": "ae7ad1b6f0791d6f4c75f5c7cd69a48d098a813105a92a5e0962da33f927d7ae",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ernesto_%282024%29/daily/20240810/20240812"
+  },
+  "Tropical Storm Ernesto (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Ernesto_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024081200",
+      "views": 118
+     }
+    ]
+   },
+   "sha256": "9bf2dec3ee52dfd9a0fe81db3603b89597975f478037b9159b709ac4da684d72",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Ernesto_%282024%29/daily/20240810/20240812"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:12Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1248286135,
+      "length": 1210,
+      "ns": 0,
+      "pageid": 1848264,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Ernesto",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q10286557"
+      },
+      "title": "List of storms named Ernesto",
+      "touched": "2026-10-26T19:19:50Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1369946092,
+      "length": 36074,
+      "ns": 0,
+      "pageid": 77611901,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Ernesto (2024)",
+       "page_image_free": "Ernesto_2024-08-19_1500Z_GeoColor.jpg",
+       "toc": "",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 2 Atlantic hurricane",
+       "wikibase_item": "Q129256608"
+      },
+      "title": "Hurricane Ernesto (2024)",
+      "touched": "2026-10-27T05:49:19Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Ernesto",
+      "to": "List of storms named Ernesto"
+     },
+     {
+      "from": "Tropical Storm Ernesto (2024)",
+      "to": "Hurricane Ernesto (2024)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Ernesto+%282024%29%7CHurricane+Ernesto%7CTropical+Storm+Ernesto+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Ernesto (2024)",
+ "titles": {
+  "T1": "Hurricane Ernesto (2024)",
+  "T2": "Hurricane Ernesto",
+  "T3": "Tropical Storm Ernesto (2024)"
+ },
+ "via": [
+  "Tropical Storm Ernesto (2024)"
+ ]
+}

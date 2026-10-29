@@ -1,0 +1,189 @@
+{
+ "atcf": "AL022024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20240629065121|1231607222"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 77249311,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1231586197,
+        "timestamp": "2024-06-29T03:23:32Z"
+       }
+      ],
+      "title": "Hurricane Beryl"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Beryl&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Beryl": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070500",
+      "views": 47039
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070600",
+      "views": 35859
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070700",
+      "views": 39072
+     }
+    ]
+   },
+   "sha256": "b9af1d2585e777c1b7af5d67b29f93b6f1d3ea67d26cfee98f53fbdcbf73dd80",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Beryl/daily/20240705/20240707"
+  },
+  "Hurricane Beryl (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070500",
+      "views": 3759
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070600",
+      "views": 2430
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070700",
+      "views": 1091
+     }
+    ]
+   },
+   "sha256": "b71064dac9812239585bd0a09b5f6a7ced57570da2ef10ac518a4944e4b9bdfa",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Beryl_%282024%29/daily/20240705/20240707"
+  },
+  "Tropical Storm Beryl (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070500",
+      "views": 16
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070600",
+      "views": 35
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Beryl_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024070700",
+      "views": 14
+     }
+    ]
+   },
+   "sha256": "ad5343ed28191bbd5332bfbc89dc87a29bb424cefa3b1a5220c76267401c9424",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Beryl_%282024%29/daily/20240705/20240707"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:01Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1382506142,
+      "length": 180233,
+      "ns": 0,
+      "pageid": 77249311,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Beryl (2024)",
+       "page_image_free": "Beryl_2024-07-02_1230Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2024",
+       "wikibase_item": "Q126934177"
+      },
+      "title": "Hurricane Beryl",
+      "touched": "2026-10-29T01:05:16Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Beryl (2024)",
+      "to": "Hurricane Beryl"
+     },
+     {
+      "from": "Hurricane Beryl (2024)",
+      "to": "Hurricane Beryl"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Beryl+%282024%29%7CHurricane+Beryl%7CTropical+Storm+Beryl+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Beryl",
+ "titles": {
+  "T1": "Hurricane Beryl (2024)",
+  "T2": "Hurricane Beryl",
+  "T3": "Tropical Storm Beryl (2024)"
+ },
+ "via": [
+  "Hurricane Beryl (2024)",
+  "Tropical Storm Beryl (2024)"
+ ]
+}

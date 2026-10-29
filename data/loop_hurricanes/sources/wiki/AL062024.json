@@ -1,0 +1,162 @@
+{
+ "atcf": "AL062024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20240909224518|1244914701"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 77831456,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1244914317,
+        "timestamp": "2024-09-09T22:42:07Z"
+       }
+      ],
+      "title": "Hurricane Francine"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Francine&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Francine": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Francine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024090800",
+      "views": 6
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Francine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024090900",
+      "views": 31
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Francine",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024091000",
+      "views": 77
+     }
+    ]
+   },
+   "sha256": "78aaff274add9657825a0bb3be774118cff02ea7cf38e8a85857eff3d2331bc0",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Francine/daily/20240908/20240910"
+  },
+  "Hurricane Francine (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Francine_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024091000",
+      "views": 142
+     }
+    ]
+   },
+   "sha256": "dceec1fc3a95670b0d504211464307926233163fa57238c3b479aca59ae34f60",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Francine_%282024%29/daily/20240908/20240910"
+  },
+  "Tropical Storm Francine (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Francine_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024090900",
+      "views": 156
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Francine_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024091000",
+      "views": 519
+     }
+    ]
+   },
+   "sha256": "f953ae6747fa2849996da38af833b3a57f0eb5e4ffa13f35f2616d78e924927b",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Francine_%282024%29/daily/20240908/20240910"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:16Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1379995092,
+      "length": 38117,
+      "ns": 0,
+      "pageid": 77831456,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Francine (2024)",
+       "page_image_free": "Francine_2024-09-11_1908Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 2 Atlantic hurricane in 2024",
+       "wikibase_item": "Q130266758"
+      },
+      "title": "Hurricane Francine",
+      "touched": "2026-10-27T05:49:19Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Francine (2024)",
+      "to": "Hurricane Francine"
+     },
+     {
+      "from": "Tropical Storm Francine (2024)",
+      "to": "Hurricane Francine"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Francine+%282024%29%7CHurricane+Francine%7CTropical+Storm+Francine+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Francine",
+ "titles": {
+  "T1": "Hurricane Francine (2024)",
+  "T2": "Hurricane Francine",
+  "T3": "Tropical Storm Francine (2024)"
+ },
+ "via": [
+  "Hurricane Francine (2024)",
+  "Tropical Storm Francine (2024)"
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "atcf": "AL282020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20201024212740|985250914"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 65670161,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 985250152,
+        "timestamp": "2020-10-24T21:21:30Z"
+       }
+      ],
+      "title": "Hurricane Zeta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Zeta&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Zeta": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Zeta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102500",
+      "views": 35
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Zeta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102600",
+      "views": 2585
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Zeta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102700",
+      "views": 7818
+     }
+    ]
+   },
+   "sha256": "a1559094f9b02e86d8fe7253dc491192562390f4f3182748474bc60cc20d1ec4",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Zeta/daily/20201025/20201027"
+  },
+  "Hurricane Zeta (2020)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Zeta_(2020)/daily/20201025/20201027"
+   },
+   "sha256": "94f91bae79343b30f663f57b582e6d5503d00e72147af99b963fa0f733e28a45",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Zeta_%282020%29/daily/20201025/20201027"
+  },
+  "Tropical Storm Zeta (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Zeta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102500",
+      "views": 2604
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Zeta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102600",
+      "views": 5440
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Zeta_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020102700",
+      "views": 196
+     }
+    ]
+   },
+   "sha256": "74f9fe770bbed3ddbc943f9d1f5a343aa95144a09817a62057b615acdf35e680",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Zeta_%282020%29/daily/20201025/20201027"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:36Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373633315,
+      "length": 55625,
+      "ns": 0,
+      "pageid": 65670161,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "\u03b6",
+       "page_image_free": "Zeta_2020-10-28_2100Z.png",
+       "wikibase-shortdesc": "Category 3 Atlantic hurricane in 2020",
+       "wikibase_item": "Q100935353"
+      },
+      "title": "Hurricane Zeta",
+      "touched": "2026-10-27T05:48:57Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Zeta (2020)",
+      "to": "Hurricane Zeta"
+     },
+     {
+      "from": "Hurricane Zeta (2020)",
+      "to": "Hurricane Zeta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Zeta+%282020%29%7CHurricane+Zeta%7CTropical+Storm+Zeta+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Zeta",
+ "titles": {
+  "T1": "Hurricane Zeta (2020)",
+  "T2": "Hurricane Zeta",
+  "T3": "Tropical Storm Zeta (2020)"
+ },
+ "via": [
+  "Hurricane Zeta (2020)",
+  "Tropical Storm Zeta (2020)"
+ ]
+}

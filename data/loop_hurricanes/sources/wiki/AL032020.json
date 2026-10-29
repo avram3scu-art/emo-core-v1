@@ -1,0 +1,137 @@
+{
+ "atcf": "AL032020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20150520193841|663302873"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 46738773,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 662947707,
+        "timestamp": "2015-05-18T15:29:27Z"
+       }
+      ],
+      "title": "Hurricane Cristobal"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Cristobal&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Cristobal": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cristobal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020060400",
+      "views": 1344
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cristobal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020060500",
+      "views": 1759
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Cristobal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020060600",
+      "views": 2305
+     }
+    ]
+   },
+   "sha256": "6ad5934bc1c8d686bd8f6d3e17ae691c29c9f82d78e085943c59de28a107d3e5",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Cristobal/daily/20200604/20200606"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:00Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Cristobal (2020)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1382103473,
+      "length": 26331,
+      "ns": 0,
+      "pageid": 46738773,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Cristobal (2014), Hurricane",
+       "page_image_free": "Cristobal_2014-08-28_1527Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2014",
+       "wikibase_item": "Q20007242"
+      },
+      "title": "Hurricane Cristobal",
+      "touched": "2026-10-27T05:48:33Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1366051276,
+      "length": 81266,
+      "ns": 0,
+      "pageid": 64154406,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Amanda-Cristobal",
+       "page_image_free": "Collage_of_Tropical_Storms_Amanda_and_Cristobal.jpg",
+       "wikibase-shortdesc": "East Pacific and Atlantic tropical storms in 2020",
+       "wikibase_item": "Q96066288"
+      },
+      "title": "Tropical storms Amanda and Cristobal",
+      "touched": "2026-10-27T05:48:55Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Cristobal (2020)",
+      "to": "Tropical storms Amanda and Cristobal"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Cristobal+%282020%29%7CHurricane+Cristobal%7CTropical+Storm+Cristobal+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Hurricane Cristobal",
+ "titles": {
+  "T1": "Hurricane Cristobal (2020)",
+  "T2": "Hurricane Cristobal",
+  "T3": "Tropical Storm Cristobal (2020)"
+ },
+ "via": []
+}

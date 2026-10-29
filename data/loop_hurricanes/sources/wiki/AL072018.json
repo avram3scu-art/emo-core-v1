@@ -1,0 +1,131 @@
+{
+ "atcf": "AL072018",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20051007200153|25001199"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 2856797,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 25000126,
+        "timestamp": "2005-10-07T19:47:14Z"
+       }
+      ],
+      "title": "Hurricane Gordon"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Gordon&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Gordon": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Gordon",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018083100",
+      "views": 0
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Gordon",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018090100",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Gordon",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018090200",
+      "views": 3
+     }
+    ]
+   },
+   "sha256": "7330998a08d3478be6149af6fca6e48b378a9c6b0c4cf5beaa66b4531277a2a0",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Gordon/daily/20180831/20180902"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:24Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Gordon (2018)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381374607,
+      "length": 67192,
+      "ns": 0,
+      "pageid": 2856797,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Gordon (1994)",
+       "page_image_free": "Gordon_1994-11-18_1445Z.png",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 1994",
+       "wikibase_item": "Q1638593"
+      },
+      "title": "Hurricane Gordon",
+      "touched": "2026-10-28T19:03:43Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1370936627,
+      "length": 29291,
+      "ns": 0,
+      "pageid": 58387271,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Gordon (2018)",
+       "page_image_free": "Gordon_2018-09-04_1905Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q56458547"
+      },
+      "title": "Tropical Storm Gordon (2018)",
+      "touched": "2026-10-27T05:48:48Z"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Gordon+%282018%29%7CHurricane+Gordon%7CTropical+Storm+Gordon+%282018%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Hurricane Gordon",
+ "titles": {
+  "T1": "Hurricane Gordon (2018)",
+  "T2": "Hurricane Gordon",
+  "T3": "Tropical Storm Gordon (2018)"
+ },
+ "via": []
+}

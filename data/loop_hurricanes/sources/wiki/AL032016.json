@@ -1,0 +1,143 @@
+{
+ "atcf": "AL032016",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20100803151614|376950579"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 28245967,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 376950558,
+        "timestamp": "2010-08-03T15:16:05Z"
+       }
+      ],
+      "title": "List of storms named Colin"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Colin&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Colin": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Colin",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016060500",
+      "views": 7
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Colin",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016060600",
+      "views": 17
+     }
+    ]
+   },
+   "sha256": "ef1865187f87db3ee928079a5e120c30cc5190e57354854fadfcacd98bb88209",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Colin/daily/20160604/20160606"
+  },
+  "List of storms named Colin": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Colin/daily/20160604/20160606"
+   },
+   "sha256": "f429b80c174403229412fe444db642250ba243fd33611ecbe7b0b0c4cfb4cb22",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Colin/daily/20160604/20160606"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:33Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Colin (2016)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1260271245,
+      "length": 1048,
+      "ns": 0,
+      "pageid": 28245967,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Colin",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q25113923"
+      },
+      "title": "List of storms named Colin",
+      "touched": "2026-10-26T19:46:04Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1372290209,
+      "length": 36448,
+      "ns": 0,
+      "pageid": 50739529,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Colin (2016)",
+       "page_image_free": "Colin_2016-06-06_1620Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q25346357"
+      },
+      "title": "Tropical Storm Colin (2016)",
+      "touched": "2026-10-27T05:48:38Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Colin",
+      "to": "List of storms named Colin"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Colin+%282016%29%7CHurricane+Colin%7CTropical+Storm+Colin+%282016%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Colin",
+ "titles": {
+  "T1": "Hurricane Colin (2016)",
+  "T2": "Hurricane Colin",
+  "T3": "Tropical Storm Colin (2016)"
+ },
+ "via": [
+  "Hurricane Colin"
+ ]
+}

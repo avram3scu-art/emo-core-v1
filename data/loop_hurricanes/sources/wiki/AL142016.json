@@ -1,0 +1,187 @@
+{
+ "atcf": "AL142016",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20160924205639|741016182"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 51730127,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 741015636,
+        "timestamp": "2016-09-24T20:52:17Z"
+       }
+      ],
+      "title": "Hurricane Matthew"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Matthew&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Matthew": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100500",
+      "views": 83861
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100600",
+      "views": 165766
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100700",
+      "views": 246102
+     }
+    ]
+   },
+   "sha256": "7e9c7fed6dfc13dc175ed4108f4540f4537bf61c6939501f932e91d0ec5b0658",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Matthew/daily/20161005/20161007"
+  },
+  "Hurricane Matthew (2016)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100500",
+      "views": 3070
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100600",
+      "views": 4768
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100700",
+      "views": 6141
+     }
+    ]
+   },
+   "sha256": "7d78d36612a7f69d5713b781b89800ae8f114f0a9c04419692dafbd2561e3d28",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Matthew_%282016%29/daily/20161005/20161007"
+  },
+  "Tropical Storm Matthew (2016)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100500",
+      "views": 6
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100600",
+      "views": 15
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Matthew_(2016)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2016100700",
+      "views": 10
+     }
+    ]
+   },
+   "sha256": "754bd758b3363e030b311da01c9a8a29b026fc77c0f64ae08a5d90c95cebfe83",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Matthew_%282016%29/daily/20161005/20161007"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:43Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1369917157,
+      "length": 138032,
+      "ns": 0,
+      "pageid": 51730127,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Matthew_2016-10-01_0225Z.png",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2016",
+       "wikibase_item": "Q27058656"
+      },
+      "title": "Hurricane Matthew",
+      "touched": "2026-10-29T01:58:18Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Matthew (2016)",
+      "to": "Hurricane Matthew"
+     },
+     {
+      "from": "Hurricane Matthew (2016)",
+      "to": "Hurricane Matthew"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Matthew+%282016%29%7CHurricane+Matthew%7CTropical+Storm+Matthew+%282016%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Matthew",
+ "titles": {
+  "T1": "Hurricane Matthew (2016)",
+  "T2": "Hurricane Matthew",
+  "T3": "Tropical Storm Matthew (2016)"
+ },
+ "via": [
+  "Hurricane Matthew (2016)",
+  "Tropical Storm Matthew (2016)"
+ ]
+}

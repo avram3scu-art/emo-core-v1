@@ -1,0 +1,151 @@
+{
+ "atcf": "AL032021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050922103053|23743013"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1838975,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 17480317,
+        "timestamp": "2005-05-04T07:18:42Z"
+       }
+      ],
+      "title": "List of storms named Claudette"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Claudette&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Claudette": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Claudette",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021061600",
+      "views": 1
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Claudette",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021061700",
+      "views": 4
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Claudette",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021061800",
+      "views": 4
+     }
+    ]
+   },
+   "sha256": "2cec2e86d5dd6a17ecfa2cc690483fcb042be77786a127428a68535640255fc1",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Claudette/daily/20210616/20210618"
+  },
+  "List of storms named Claudette": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Claudette/daily/20210616/20210618"
+   },
+   "sha256": "0a6c4580866c2c87e5b5d5b4b63dceeca01c56aa7569607f803017b38b6eb871",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Claudette/daily/20210616/20210618"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:47Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Claudette (2021)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1159609769,
+      "length": 1293,
+      "ns": 0,
+      "pageid": 1838975,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Claudette",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1177956"
+      },
+      "title": "List of storms named Claudette",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373492547,
+      "length": 62239,
+      "ns": 0,
+      "pageid": 67929194,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Claudette (2021)",
+       "page_image_free": "Claudette_2021-06-21_1740Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q107296818"
+      },
+      "title": "Tropical Storm Claudette (2021)",
+      "touched": "2026-10-27T05:48:59Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Claudette",
+      "to": "List of storms named Claudette"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Claudette+%282021%29%7CHurricane+Claudette%7CTropical+Storm+Claudette+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Claudette",
+ "titles": {
+  "T1": "Hurricane Claudette (2021)",
+  "T2": "Hurricane Claudette",
+  "T3": "Tropical Storm Claudette (2021)"
+ },
+ "via": [
+  "Hurricane Claudette"
+ ]
+}

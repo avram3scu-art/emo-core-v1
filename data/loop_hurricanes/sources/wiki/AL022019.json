@@ -1,0 +1,147 @@
+{
+ "atcf": "AL022019",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20190710160312|905670947"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 61250806,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 905643435,
+        "timestamp": "2019-07-10T11:53:34Z"
+       }
+      ],
+      "title": "Hurricane Barry (2019)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Barry+%282019%29&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Barry (2019)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Barry_(2019)/daily/20190710/20190712"
+   },
+   "sha256": "3906d3ede986469fd422a981f69c0d44df8da646d625d0222fbac9e3657c8b67",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Barry_%282019%29/daily/20190710/20190712"
+  },
+  "Tropical Storm Barry (2019)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Barry_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019071000",
+      "views": 52
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Barry_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019071100",
+      "views": 5284
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Barry_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019071200",
+      "views": 9934
+     }
+    ]
+   },
+   "sha256": "1fff4a7861369ed57e8a946c2bf16bbd09157968b91cf10967791a439a0920d3",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Barry_%282019%29/daily/20190710/20190712"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:38Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1329033545,
+      "length": 1531,
+      "ns": 0,
+      "pageid": 1844030,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Barry",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1178319"
+      },
+      "title": "List of storms named Barry",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1360425655,
+      "length": 72472,
+      "ns": 0,
+      "pageid": 61250806,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Barry (2019), Hurricane",
+       "page_image_free": "Barry_2019-07-13_1650Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane",
+       "wikibase_item": "Q65506262"
+      },
+      "title": "Hurricane Barry (2019)",
+      "touched": "2026-10-28T12:59:16Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Barry",
+      "to": "List of storms named Barry"
+     },
+     {
+      "from": "Tropical Storm Barry (2019)",
+      "to": "Hurricane Barry (2019)"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Barry+%282019%29%7CHurricane+Barry%7CTropical+Storm+Barry+%282019%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Barry (2019)",
+ "titles": {
+  "T1": "Hurricane Barry (2019)",
+  "T2": "Hurricane Barry",
+  "T3": "Tropical Storm Barry (2019)"
+ },
+ "via": [
+  "Tropical Storm Barry (2019)"
+ ]
+}

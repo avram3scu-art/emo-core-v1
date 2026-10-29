@@ -1,0 +1,128 @@
+{
+ "atcf": "AL012015",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20100603014830|365750439"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 27541149,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 365020189,
+        "timestamp": "2010-05-30T13:23:55Z"
+       }
+      ],
+      "title": "2014 Pacific hurricane season"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=2014+Pacific+hurricane+season&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "2014 Pacific hurricane season": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/2014_Pacific_hurricane_season/daily/20150507/20150509"
+   },
+   "sha256": "bb58099de00fa1eb389dcd6925796c221e51e6216b070512b92845092f78ad58",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/2014_Pacific_hurricane_season/daily/20150507/20150509"
+  },
+  "Hurricane Ana": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ana/daily/20150507/20150509"
+   },
+   "sha256": "9cd505d70c838fcd7eca402ec3b5824a3835be476903ac3ceeae11dfeacc85fd",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ana/daily/20150507/20150509"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:24Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Ana (2015)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1375950849,
+      "length": 98420,
+      "ns": 0,
+      "pageid": 27541149,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "2014_Pacific_hurricane_season_summary.png",
+       "wikibase-shortdesc": "",
+       "wikibase_item": "Q15505010"
+      },
+      "title": "2014 Pacific hurricane season",
+      "touched": "2026-10-28T20:34:23Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380469302,
+      "length": 21272,
+      "ns": 0,
+      "pageid": 46666784,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Ana_2015-05-09_1540Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2015",
+       "wikibase_item": "Q20658241"
+      },
+      "title": "Tropical Storm Ana (2015)",
+      "touched": "2026-10-27T05:48:33Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Ana",
+      "to": "2014 Pacific hurricane season",
+      "tofragment": "Hurricane Ana"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Ana+%282015%29%7CHurricane+Ana%7CTropical+Storm+Ana+%282015%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "2014 Pacific hurricane season",
+ "titles": {
+  "T1": "Hurricane Ana (2015)",
+  "T2": "Hurricane Ana",
+  "T3": "Tropical Storm Ana (2015)"
+ },
+ "via": [
+  "Hurricane Ana"
+ ]
+}

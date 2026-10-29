@@ -1,0 +1,152 @@
+{
+ "atcf": "AL042021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050606195715|17480341"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1839002,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 14808010,
+        "timestamp": "2005-05-04T07:25:43Z"
+       }
+      ],
+      "title": "List of storms named Danny"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Danny&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Danny": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Danny",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021062500",
+      "views": 14
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Danny",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021062600",
+      "views": 19
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Danny",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021062700",
+      "views": 17
+     }
+    ]
+   },
+   "sha256": "8554b7a721dd55b7317e47c25656cdbbe0c29b873dfdd1a8676fb22d061b8cef",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Danny/daily/20210625/20210627"
+  },
+  "List of storms named Danny": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Danny/daily/20210625/20210627"
+   },
+   "sha256": "8c6c0f6515e3ea9e03bbad3f5612d46023f05489d52ffc6d032428174fe1d8df",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Danny/daily/20210625/20210627"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:51Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Danny (2021)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1358122383,
+      "length": 1267,
+      "ns": 0,
+      "pageid": 1839002,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Danny",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1178297"
+      },
+      "title": "List of storms named Danny",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1340543715,
+      "length": 23909,
+      "ns": 0,
+      "pageid": 68072185,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Danny (2021)",
+       "page_image_free": "Danny_2021-06-28_1840Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q107395447"
+      },
+      "title": "Tropical Storm Danny (2021)",
+      "touched": "2026-10-27T05:49:00Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Danny",
+      "to": "List of storms named Danny"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Danny+%282021%29%7CHurricane+Danny%7CTropical+Storm+Danny+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Danny",
+ "titles": {
+  "T1": "Hurricane Danny (2021)",
+  "T2": "Hurricane Danny",
+  "T3": "Tropical Storm Danny (2021)"
+ },
+ "via": [
+  "Hurricane Danny"
+ ]
+}

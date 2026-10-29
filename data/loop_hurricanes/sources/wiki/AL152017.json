@@ -1,0 +1,188 @@
+{
+ "atcf": "AL152017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20170916211819|800968543"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 55262011,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 800968132,
+        "timestamp": "2017-09-16T21:14:40Z"
+       }
+      ],
+      "title": "Hurricane Maria"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Maria&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Maria": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091700",
+      "views": 404
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091800",
+      "views": 11496
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091900",
+      "views": 72820
+     }
+    ]
+   },
+   "sha256": "0ada037ab01a5f3392ef0202340deb4fe418eb6ce21c61deb5814ceb5948a26a",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Maria/daily/20170917/20170919"
+  },
+  "Hurricane Maria (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091700",
+      "views": 236
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091800",
+      "views": 3741
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091900",
+      "views": 2827
+     }
+    ]
+   },
+   "sha256": "7040b654339064d68a2d9fa5634ad93984e5802d93d56d0eddd017daca717727",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Maria_%282017%29/daily/20170917/20170919"
+  },
+  "Tropical Storm Maria (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091700",
+      "views": 1145
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091800",
+      "views": 374
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Maria_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017091900",
+      "views": 28
+     }
+    ]
+   },
+   "sha256": "7b93d1db51a5042dab321dbebd82b1b7d7fcf35ab08fb8b75163e76f1093af15",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Maria_%282017%29/daily/20170917/20170919"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:08Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381657584,
+      "length": 233566,
+      "ns": 0,
+      "pageid": 55262011,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Maria",
+       "page_image_free": "Maria_2017-09-20_0238Z_(Coastline-less).jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2017",
+       "wikibase_item": "Q40178187"
+      },
+      "title": "Hurricane Maria",
+      "touched": "2026-10-29T01:58:19Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Maria (2017)",
+      "to": "Hurricane Maria"
+     },
+     {
+      "from": "Hurricane Maria (2017)",
+      "to": "Hurricane Maria"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Maria+%282017%29%7CHurricane+Maria%7CTropical+Storm+Maria+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Maria",
+ "titles": {
+  "T1": "Hurricane Maria (2017)",
+  "T2": "Hurricane Maria",
+  "T3": "Tropical Storm Maria (2017)"
+ },
+ "via": [
+  "Hurricane Maria (2017)",
+  "Tropical Storm Maria (2017)"
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "atcf": "AL142024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20241005145943|1249557234"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 78046814,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1249556542,
+        "timestamp": "2024-10-05T14:55:15Z"
+       }
+      ],
+      "title": "Hurricane Milton"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Milton&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Milton": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100700",
+      "views": 123141
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100800",
+      "views": 218605
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100900",
+      "views": 227525
+     }
+    ]
+   },
+   "sha256": "f1c9d95690ecaac35bc7d0e7208386b1e842509fa6a7dedcf438b91769d610d1",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Milton/daily/20241007/20241009"
+  },
+  "Hurricane Milton (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100700",
+      "views": 8
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100800",
+      "views": 116
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100900",
+      "views": 1036
+     }
+    ]
+   },
+   "sha256": "3d9509ffbf51eb5712891e2696c9710b27446220dcb6651a48b20dbbace27679",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Milton_%282024%29/daily/20241007/20241009"
+  },
+  "Tropical Storm Milton (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100700",
+      "views": 12
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100800",
+      "views": 6
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Milton_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024100900",
+      "views": 10
+     }
+    ]
+   },
+   "sha256": "bb56064b2c8c71fa5a71afd82cd66f1bd8f3f80390bfb8112d66c1fffb6efe14",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Milton_%282024%29/daily/20241007/20241009"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:27Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380294675,
+      "length": 143357,
+      "ns": 0,
+      "pageid": 78046814,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Milton",
+       "page_image_free": "Milton_2024-10-07_1920Z.jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2024",
+       "wikibase_item": "Q130428849"
+      },
+      "title": "Hurricane Milton",
+      "touched": "2026-10-27T05:49:20Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Milton (2024)",
+      "to": "Hurricane Milton"
+     },
+     {
+      "from": "Hurricane Milton (2024)",
+      "to": "Hurricane Milton"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Milton+%282024%29%7CHurricane+Milton%7CTropical+Storm+Milton+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Milton",
+ "titles": {
+  "T1": "Hurricane Milton (2024)",
+  "T2": "Hurricane Milton",
+  "T3": "Tropical Storm Milton (2024)"
+ },
+ "via": [
+  "Hurricane Milton (2024)",
+  "Tropical Storm Milton (2024)"
+ ]
+}

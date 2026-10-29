@@ -1,0 +1,188 @@
+{
+ "atcf": "AL112017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20170904184007|798944339"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 55140572,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 798940404,
+        "timestamp": "2017-09-04T18:13:38Z"
+       }
+      ],
+      "title": "Hurricane Irma"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Irma&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Irma": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090300",
+      "views": 1718
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090400",
+      "views": 2740
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090500",
+      "views": 104283
+     }
+    ]
+   },
+   "sha256": "4dd9b91bf312f9c7df395db15eb5c4918f284a75e38f57ae395bf386f93c9e62",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Irma/daily/20170903/20170905"
+  },
+  "Hurricane Irma (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090300",
+      "views": 2491
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090400",
+      "views": 3821
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090500",
+      "views": 2746
+     }
+    ]
+   },
+   "sha256": "3a441bc457b903b9e7e4cc01cb8c7d216fd3eea26fd633b071b6f406ae76771d",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Irma_%282017%29/daily/20170903/20170905"
+  },
+  "Tropical Storm Irma (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090300",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090400",
+      "views": 7
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Irma_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017090500",
+      "views": 3
+     }
+    ]
+   },
+   "sha256": "ee7cc87aed6192b6ffbe3f81847b38553890b6f024148bbb2a432c6637bcff57",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Irma_%282017%29/daily/20170903/20170905"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:03Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381358983,
+      "length": 223789,
+      "ns": 0,
+      "pageid": 55140572,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Irma (2017)",
+       "page_image_free": "Irma_2017-09-06_1230Z.jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2017",
+       "wikibase_item": "Q38685186"
+      },
+      "title": "Hurricane Irma",
+      "touched": "2026-10-29T01:58:19Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Irma (2017)",
+      "to": "Hurricane Irma"
+     },
+     {
+      "from": "Hurricane Irma (2017)",
+      "to": "Hurricane Irma"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Irma+%282017%29%7CHurricane+Irma%7CTropical+Storm+Irma+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Irma",
+ "titles": {
+  "T1": "Hurricane Irma (2017)",
+  "T2": "Hurricane Irma",
+  "T3": "Tropical Storm Irma (2017)"
+ },
+ "via": [
+  "Hurricane Irma (2017)",
+  "Tropical Storm Irma (2017)"
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "atcf": "AL092022",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20220923112354|1111872208"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 71707957,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1109195716,
+        "timestamp": "2022-09-08T14:25:22Z"
+       }
+      ],
+      "title": "Hurricane Ian"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Ian&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Ian": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ian",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092500",
+      "views": 231
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ian",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092600",
+      "views": 1992
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ian",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092700",
+      "views": 21514
+     }
+    ]
+   },
+   "sha256": "dcb1b4d5a56e76f0c3d3024ca25698f64ed7d68a7f1637231b37790482e7ce1e",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ian/daily/20220925/20220927"
+  },
+  "Hurricane Ian (2022)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ian_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092600",
+      "views": 4292
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ian_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092700",
+      "views": 4031
+     }
+    ]
+   },
+   "sha256": "20971f591fd6298507edd277e1e487c3b12d7d562a2e0465721d82690b36874f",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ian_%282022%29/daily/20220925/20220927"
+  },
+  "Tropical Storm Ian (2022)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Ian_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092500",
+      "views": 2584
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Ian_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092600",
+      "views": 1458
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Ian_(2022)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2022092700",
+      "views": 187
+     }
+    ]
+   },
+   "sha256": "8e4089bf18e964db489d1570bbf77185c3360c5bac0fa46823d2f7ae2261403c",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Ian_%282022%29/daily/20220925/20220927"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:36Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1378847702,
+      "length": 136908,
+      "ns": 0,
+      "pageid": 71707957,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Ian_2022-09-28_1256Z.jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2022",
+       "wikibase_item": "Q114160017"
+      },
+      "title": "Hurricane Ian",
+      "touched": "2026-10-29T01:58:25Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Ian (2022)",
+      "to": "Hurricane Ian"
+     },
+     {
+      "from": "Hurricane Ian (2022)",
+      "to": "Hurricane Ian"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Ian+%282022%29%7CHurricane+Ian%7CTropical+Storm+Ian+%282022%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Ian",
+ "titles": {
+  "T1": "Hurricane Ian (2022)",
+  "T2": "Hurricane Ian",
+  "T3": "Tropical Storm Ian (2022)"
+ },
+ "via": [
+  "Hurricane Ian (2022)",
+  "Tropical Storm Ian (2022)"
+ ]
+}

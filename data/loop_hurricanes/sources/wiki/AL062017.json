@@ -1,0 +1,141 @@
+{
+ "atcf": "AL062017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050509071625|17500363"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 30863451,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 17500361,
+        "timestamp": "2005-05-09T07:16:04Z"
+       }
+      ],
+      "title": "List of storms named Emily"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Emily&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Emily": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Emily",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017072800",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Emily",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017073000",
+      "views": 0
+     }
+    ]
+   },
+   "sha256": "b39fccd59ea2a884641a8240cdbd2902fd6f3e13b219f4063cf0a2c27733228f",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Emily/daily/20170728/20170730"
+  },
+  "List of storms named Emily": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Emily/daily/20170728/20170730"
+   },
+   "sha256": "536f7985589de7c8e3e4ec3db91f0fb94892e3b02c05c790f97bfc3608f50206",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Emily/daily/20170728/20170730"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:53Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Emily (2017)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373205007,
+      "length": 1783,
+      "ns": 0,
+      "pageid": 30863451,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Emily",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q400841"
+      },
+      "title": "List of storms named Emily",
+      "touched": "2026-10-26T19:47:46Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1274694523,
+      "length": 10919,
+      "ns": 0,
+      "pageid": 54714862,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Emily_2017-07-31_1555Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q55636230"
+      },
+      "title": "Tropical Storm Emily (2017)",
+      "touched": "2026-10-27T05:48:43Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Emily",
+      "to": "List of storms named Emily"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Emily+%282017%29%7CHurricane+Emily%7CTropical+Storm+Emily+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Emily",
+ "titles": {
+  "T1": "Hurricane Emily (2017)",
+  "T2": "Hurricane Emily",
+  "T3": "Tropical Storm Emily (2017)"
+ },
+ "via": [
+  "Hurricane Emily"
+ ]
+}

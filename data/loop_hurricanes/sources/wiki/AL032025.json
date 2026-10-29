@@ -1,0 +1,174 @@
+{
+ "atcf": "AL032025",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050505071637|17484691"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 30863102,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 17484689,
+        "timestamp": "2005-05-05T07:15:47Z"
+       }
+      ],
+      "title": "List of storms named Chantal"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Chantal&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Chantal": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070300",
+      "views": 0
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070400",
+      "views": 1
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070500",
+      "views": 4
+     }
+    ]
+   },
+   "sha256": "c3bcf464c8c2dabc9dd861edea57fd73979fab064193a81ce25f0d2d284a9560",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Chantal/daily/20250703/20250705"
+  },
+  "List of storms named Chantal": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070300",
+      "views": 37
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070400",
+      "views": 42
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "List_of_storms_named_Chantal",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2025070500",
+      "views": 259
+     }
+    ]
+   },
+   "sha256": "7c852c8240424484cf380ad7ba5b4e30fed0fd4b35cedf0b472f81d41ee3b0bd",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Chantal/daily/20250703/20250705"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:33Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Chantal (2025)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1348716800,
+      "length": 1226,
+      "ns": 0,
+      "pageid": 30863102,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Chantal",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1181899"
+      },
+      "title": "List of storms named Chantal",
+      "touched": "2026-10-26T19:47:46Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381792195,
+      "length": 32209,
+      "ns": 0,
+      "pageid": 80345486,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Chantal (2025)",
+       "page_image_free": "Chantal_2025-07-05_1950Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2025",
+       "wikibase_item": "Q135216961"
+      },
+      "title": "Tropical Storm Chantal (2025)",
+      "touched": "2026-10-29T01:58:28Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Chantal",
+      "to": "List of storms named Chantal"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Chantal+%282025%29%7CHurricane+Chantal%7CTropical+Storm+Chantal+%282025%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Chantal",
+ "titles": {
+  "T1": "Hurricane Chantal (2025)",
+  "T2": "Hurricane Chantal",
+  "T3": "Tropical Storm Chantal (2025)"
+ },
+ "via": [
+  "Hurricane Chantal"
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "atcf": "AL142018",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20181007221859|862972608"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 58686262,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 862929592,
+        "timestamp": "2018-10-07T16:59:10Z"
+       }
+      ],
+      "title": "Hurricane Michael"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Michael&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Michael": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Michael",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100700",
+      "views": 1662
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Michael",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100800",
+      "views": 10667
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Michael",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100900",
+      "views": 22530
+     }
+    ]
+   },
+   "sha256": "b58ba6beeea25b6fc5b2e25d98879b3374e4d148d4bf0dd1d22e02994db98a36",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Michael/daily/20181007/20181009"
+  },
+  "Hurricane Michael (2018)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Michael_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100800",
+      "views": 10135
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Michael_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100900",
+      "views": 24265
+     }
+    ]
+   },
+   "sha256": "f2614305145740eb3742c684421666bca6659e42c7625788edef4d94aae130b6",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Michael_%282018%29/daily/20181007/20181009"
+  },
+  "Tropical Storm Michael (2018)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Michael_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100700",
+      "views": 945
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Michael_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100800",
+      "views": 5062
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Michael_(2018)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018100900",
+      "views": 266
+     }
+    ]
+   },
+   "sha256": "659734076ee83356936a26c2e4e3c07c028e376ca8a480491cbc72b3f9bc4ed7",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Michael_%282018%29/daily/20181007/20181009"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:33Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1370432675,
+      "length": 125144,
+      "ns": 0,
+      "pageid": 58686262,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Michael",
+       "page_image_free": "Michael_2018-10-10_1732Z.jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2018",
+       "wikibase_item": "Q57082056"
+      },
+      "title": "Hurricane Michael",
+      "touched": "2026-10-29T01:58:20Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Michael (2018)",
+      "to": "Hurricane Michael"
+     },
+     {
+      "from": "Hurricane Michael (2018)",
+      "to": "Hurricane Michael"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Michael+%282018%29%7CHurricane+Michael%7CTropical+Storm+Michael+%282018%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Michael",
+ "titles": {
+  "T1": "Hurricane Michael (2018)",
+  "T2": "Hurricane Michael",
+  "T3": "Tropical Storm Michael (2018)"
+ },
+ "via": [
+  "Hurricane Michael (2018)",
+  "Tropical Storm Michael (2018)"
+ ]
+}

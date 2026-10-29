@@ -1,0 +1,165 @@
+{
+ "atcf": "AL042024",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20240803152120|1238373693"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 77515782,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1238373045,
+        "timestamp": "2024-08-03T15:16:33Z"
+       }
+      ],
+      "title": "Hurricane Debby"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Debby&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Debby": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Debby",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080200",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Debby",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080300",
+      "views": 12
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Debby",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080400",
+      "views": 58
+     }
+    ]
+   },
+   "sha256": "5bf3823180468b0df7a8fad12ec4d206e35f273a4ac71c4fca69a0a561adb5e1",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Debby/daily/20240802/20240804"
+  },
+  "Hurricane Debby (2024)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Debby_(2024)/daily/20240802/20240804"
+   },
+   "sha256": "b70848b1be20e63de5ceefe0a6fe21a80c93276d534e465a215cbb5d75cfe2fc",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Debby_%282024%29/daily/20240802/20240804"
+  },
+  "Tropical Storm Debby (2024)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Debby_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080200",
+      "views": 8
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Debby_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080300",
+      "views": 136
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Debby_(2024)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2024080400",
+      "views": 1083
+     }
+    ]
+   },
+   "sha256": "16c296abd8bbed8f188f9afc85b3ab24d3be72a7ce629c8e4090db447050c845",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Debby_%282024%29/daily/20240802/20240804"
+  }
+ },
+ "pulled_at": "2026-10-29T08:24:06Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1382031521,
+      "length": 82398,
+      "ns": 0,
+      "pageid": 77515782,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Debby (2024)",
+       "page_image_free": "Debby_2024-08-05_0655Z.jpg",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane",
+       "wikibase_item": "Q128430420"
+      },
+      "title": "Hurricane Debby",
+      "touched": "2026-10-27T05:49:18Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Debby (2024)",
+      "to": "Hurricane Debby"
+     },
+     {
+      "from": "Tropical Storm Debby (2024)",
+      "to": "Hurricane Debby"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Debby+%282024%29%7CHurricane+Debby%7CTropical+Storm+Debby+%282024%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Debby",
+ "titles": {
+  "T1": "Hurricane Debby (2024)",
+  "T2": "Hurricane Debby",
+  "T3": "Tropical Storm Debby (2024)"
+ },
+ "via": [
+  "Hurricane Debby (2024)",
+  "Tropical Storm Debby (2024)"
+ ]
+}

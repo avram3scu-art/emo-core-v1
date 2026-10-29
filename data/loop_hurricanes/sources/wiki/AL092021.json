@@ -1,0 +1,161 @@
+{
+ "atcf": "AL092021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20210826230418|1040831369"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 68573407,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1040820428,
+        "timestamp": "2021-08-26T21:36:54Z"
+       }
+      ],
+      "title": "Hurricane Ida"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Ida&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Ida": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ida",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082600",
+      "views": 1713
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ida",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082700",
+      "views": 7307
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ida",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082800",
+      "views": 37738
+     }
+    ]
+   },
+   "sha256": "729f78841debb0d60b9474cd4c84a75247f3df8e73b42861450534866feb5c36",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ida/daily/20210826/20210828"
+  },
+  "Hurricane Ida (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ida_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082700",
+      "views": 2910
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Ida_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021082800",
+      "views": 3346
+     }
+    ]
+   },
+   "sha256": "e3988c0c75f36c0abb97c414aa28e662f927705a70324e5bed8396adb94f122c",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Ida_%282021%29/daily/20210826/20210828"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:11Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381232791,
+      "length": 140485,
+      "ns": 0,
+      "pageid": 57798785,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "2021_Atlantic_hurricane_season_summary.png",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "",
+       "wikibase_item": "Q102376117"
+      },
+      "title": "2021 Atlantic hurricane season",
+      "touched": "2026-10-27T05:48:47Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1378168521,
+      "length": 159783,
+      "ns": 0,
+      "pageid": 68573407,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Ida",
+       "page_image_free": "Ida_2021-08-29_1321Z.jpg",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2021",
+       "wikibase_item": "Q108300283"
+      },
+      "title": "Hurricane Ida",
+      "touched": "2026-10-29T01:58:24Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Ida (2021)",
+      "to": "2021 Atlantic hurricane season",
+      "tofragment": "Hurricane Ida"
+     },
+     {
+      "from": "Hurricane Ida (2021)",
+      "to": "Hurricane Ida"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Ida+%282021%29%7CHurricane+Ida%7CTropical+Storm+Ida+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Ida",
+ "titles": {
+  "T1": "Hurricane Ida (2021)",
+  "T2": "Hurricane Ida",
+  "T3": "Tropical Storm Ida (2021)"
+ },
+ "via": [
+  "Hurricane Ida (2021)"
+ ]
+}

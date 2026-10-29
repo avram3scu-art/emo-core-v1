@@ -1,0 +1,142 @@
+{
+ "atcf": "AL052019",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20190825225427|912485681"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 61598956,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 912335387,
+        "timestamp": "2019-08-24T20:54:15Z"
+       }
+      ],
+      "title": "Hurricane Dorian"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Dorian&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Dorian": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Dorian/daily/20190825/20190827"
+   },
+   "sha256": "c05b451cb8ed278c6e983942565c3e8c8a42a42fb8a61669a3d237c56dadc612",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Dorian/daily/20190825/20190827"
+  },
+  "Hurricane Dorian (2019)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Dorian_(2019)/daily/20190825/20190827"
+   },
+   "sha256": "ab014ab0f3afaae1c5eb31497abb0f2dc9bf59ba05120263a7505f9c17f3b950",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Dorian_%282019%29/daily/20190825/20190827"
+  },
+  "Tropical Storm Dorian (2019)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Dorian_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019082500",
+      "views": 379
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Dorian_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019082600",
+      "views": 1760
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Dorian_(2019)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019082700",
+      "views": 4450
+     }
+    ]
+   },
+   "sha256": "351f86adf2811437d33ea8dac156dbf9aa9c82f2de681e0648badae998c106f4",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Dorian_%282019%29/daily/20190825/20190827"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:43Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381082345,
+      "length": 181550,
+      "ns": 0,
+      "pageid": 61598956,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Dorian (2019), Hurricane",
+       "page_image_free": "Dorian_2019-09-01_1641Z.jpg",
+       "wikibase-shortdesc": "Category 5 Atlantic hurricane in 2019",
+       "wikibase_item": "Q66764432"
+      },
+      "title": "Hurricane Dorian",
+      "touched": "2026-10-29T01:58:21Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Dorian (2019)",
+      "to": "Hurricane Dorian"
+     },
+     {
+      "from": "Hurricane Dorian (2019)",
+      "to": "Hurricane Dorian"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Dorian+%282019%29%7CHurricane+Dorian%7CTropical+Storm+Dorian+%282019%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Dorian",
+ "titles": {
+  "T1": "Hurricane Dorian (2019)",
+  "T2": "Hurricane Dorian",
+  "T3": "Tropical Storm Dorian (2019)"
+ },
+ "via": [
+  "Hurricane Dorian (2019)",
+  "Tropical Storm Dorian (2019)"
+ ]
+}

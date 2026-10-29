@@ -1,0 +1,138 @@
+{
+ "atcf": "AL142021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20210912155615|1043903378"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 68707469,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1043903211,
+        "timestamp": "2021-09-12T15:55:12Z"
+       }
+      ],
+      "title": "Hurricane Nicholas"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Nicholas&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Nicholas": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nicholas",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021091200",
+      "views": 12
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Nicholas",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021091300",
+      "views": 40
+     }
+    ]
+   },
+   "sha256": "67c3d323bb6f21d18c1d740295d401d5bb15e4fb66cc7fbfbeae2bf279211040",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Nicholas/daily/20210911/20210913"
+  },
+  "Hurricane Nicholas (2021)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Nicholas_(2021)/daily/20210911/20210913"
+   },
+   "sha256": "8a902c83040d5b2d61afae67b948d9444edf1f21967bd8c32419c15b26bc265c",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Nicholas_%282021%29/daily/20210911/20210913"
+  },
+  "Tropical Storm Nicholas (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Nicholas_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021091300",
+      "views": 3414
+     }
+    ]
+   },
+   "sha256": "1d70369f0a0623f23e28cfe0630c457159e36731a4e964d2681d995d61fec791",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Nicholas_%282021%29/daily/20210911/20210913"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:21Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1360383481,
+      "length": 28712,
+      "ns": 0,
+      "pageid": 68707469,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Nicholas (2021)",
+       "page_image_free": "Nicholas_2021-09-13_2331Z.png",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2021",
+       "wikibase_item": "Q108467379"
+      },
+      "title": "Hurricane Nicholas",
+      "touched": "2026-10-27T05:49:00Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Nicholas (2021)",
+      "to": "Hurricane Nicholas"
+     },
+     {
+      "from": "Hurricane Nicholas (2021)",
+      "to": "Hurricane Nicholas"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Nicholas+%282021%29%7CHurricane+Nicholas%7CTropical+Storm+Nicholas+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Nicholas",
+ "titles": {
+  "T1": "Hurricane Nicholas (2021)",
+  "T2": "Hurricane Nicholas",
+  "T3": "Tropical Storm Nicholas (2021)"
+ },
+ "via": [
+  "Hurricane Nicholas (2021)",
+  "Tropical Storm Nicholas (2021)"
+ ]
+}

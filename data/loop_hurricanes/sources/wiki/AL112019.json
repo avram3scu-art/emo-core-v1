@@ -1,0 +1,107 @@
+{
+ "atcf": "AL112019",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20250926141521|1313486297"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 81189247,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1313485077,
+        "timestamp": "2025-09-26T14:05:37Z"
+       }
+      ],
+      "title": "Hurricane Imelda"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Imelda&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Imelda": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Imelda/daily/20190914/20190916"
+   },
+   "sha256": "863ba109c9c3632dee8efc656435bf2f1cda3b17ad670bb76930502a2b9194e8",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Imelda/daily/20190914/20190916"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:48Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Imelda (2019)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1373028552,
+      "length": 27049,
+      "ns": 0,
+      "pageid": 61803915,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Imelda (2019), Tropical Storm",
+       "page_image_free": "Imelda_2019-09-17_1945Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2019",
+       "wikibase_item": "Q67975133"
+      },
+      "title": "Tropical Storm Imelda (2019)",
+      "touched": "2026-10-27T05:48:52Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1375763439,
+      "length": 40883,
+      "ns": 0,
+      "pageid": 81189247,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Imelda",
+       "page_image_free": "Imelda_2025-10-01_1740Z.jpg",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2025",
+       "wikibase_item": "Q136396106"
+      },
+      "title": "Hurricane Imelda",
+      "touched": "2026-10-27T05:49:26Z"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Imelda+%282019%29%7CHurricane+Imelda%7CTropical+Storm+Imelda+%282019%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Hurricane Imelda",
+ "titles": {
+  "T1": "Hurricane Imelda (2019)",
+  "T2": "Hurricane Imelda",
+  "T3": "Tropical Storm Imelda (2019)"
+ },
+ "via": []
+}

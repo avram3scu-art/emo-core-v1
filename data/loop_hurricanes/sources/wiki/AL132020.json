@@ -1,0 +1,179 @@
+{
+ "atcf": "AL132020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20200823004616|974431924"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 65026725,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 974175114,
+        "timestamp": "2020-08-21T13:42:49Z"
+       }
+      ],
+      "title": "Hurricane Laura"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Laura&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Laura": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Laura",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082400",
+      "views": 143
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Laura",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082500",
+      "views": 5994
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Laura",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082600",
+      "views": 37723
+     }
+    ]
+   },
+   "sha256": "f75d0aacec70282c0e519a49770e71b0593e0955e86ca61824b21e1295131f8d",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Laura/daily/20200824/20200826"
+  },
+  "Hurricane Laura (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Laura_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082500",
+      "views": 6310
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Laura_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082600",
+      "views": 6769
+     }
+    ]
+   },
+   "sha256": "c182f578dac40595a14fc900373d1112ca042df802681a6889ba0bbb0b001fd3",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Laura_%282020%29/daily/20200824/20200826"
+  },
+  "Tropical Storm Laura (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Laura_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082400",
+      "views": 8740
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Laura_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082500",
+      "views": 5956
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Laura_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020082600",
+      "views": 7472
+     }
+    ]
+   },
+   "sha256": "55839652876fe1670c090a1c5b2cb1bb01a95199e0a5ce87a4945b721a0d27c4",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Laura_%282020%29/daily/20200824/20200826"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:16Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1372705995,
+      "length": 155265,
+      "ns": 0,
+      "pageid": 65026725,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Laura",
+       "page_image_free": "Laura_2020-08-26_2300Z.png",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2020",
+       "wikibase_item": "Q98569267"
+      },
+      "title": "Hurricane Laura",
+      "touched": "2026-10-29T01:58:22Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Laura (2020)",
+      "to": "Hurricane Laura"
+     },
+     {
+      "from": "Hurricane Laura (2020)",
+      "to": "Hurricane Laura"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Laura+%282020%29%7CHurricane+Laura%7CTropical+Storm+Laura+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Laura",
+ "titles": {
+  "T1": "Hurricane Laura (2020)",
+  "T2": "Hurricane Laura",
+  "T3": "Tropical Storm Laura (2020)"
+ },
+ "via": [
+  "Hurricane Laura (2020)",
+  "Tropical Storm Laura (2020)"
+ ]
+}

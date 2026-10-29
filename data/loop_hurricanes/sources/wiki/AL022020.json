@@ -1,0 +1,152 @@
+{
+ "atcf": "AL022020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050510035706|13541224"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1843746,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 13500608,
+        "timestamp": "2005-05-05T05:20:10Z"
+       }
+      ],
+      "title": "List of storms named Bertha"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Bertha&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Bertha": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Bertha",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020052400",
+      "views": 13
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Bertha",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020052500",
+      "views": 18
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Bertha",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020052600",
+      "views": 24
+     }
+    ]
+   },
+   "sha256": "27bdfeb8761d49f9db178ae7882ea2b111bb710c0b08d8b032e71a2337d86a73",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Bertha/daily/20200524/20200526"
+  },
+  "List of storms named Bertha": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Bertha/daily/20200524/20200526"
+   },
+   "sha256": "56c1e760a30fd5cb43ed6e4c88210dd90e57913a8c5fc1e586f86f4a1bbbaf6a",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Bertha/daily/20200524/20200526"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:56Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Bertha (2020)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1372864231,
+      "length": 2496,
+      "ns": 0,
+      "pageid": 1843746,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Bertha",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1217979"
+      },
+      "title": "List of storms named Bertha",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1365443045,
+      "length": 24220,
+      "ns": 0,
+      "pageid": 64107022,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Bertha",
+       "page_image_free": "Bertha_2020-05-27_1600Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q95677575"
+      },
+      "title": "Tropical Storm Bertha (2020)",
+      "touched": "2026-10-27T05:48:55Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Bertha",
+      "to": "List of storms named Bertha"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Bertha+%282020%29%7CHurricane+Bertha%7CTropical+Storm+Bertha+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Bertha",
+ "titles": {
+  "T1": "Hurricane Bertha (2020)",
+  "T2": "Hurricane Bertha",
+  "T3": "Tropical Storm Bertha (2020)"
+ },
+ "via": [
+  "Hurricane Bertha"
+ ]
+}

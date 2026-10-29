@@ -1,0 +1,128 @@
+{
+ "atcf": "AL022015",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20051007020855|24940243"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1838949,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 17480291,
+        "timestamp": "2005-05-04T07:09:52Z"
+       }
+      ],
+      "title": "List of storms named Bill"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Bill&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Bill": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Bill/daily/20150613/20150615"
+   },
+   "sha256": "61406c0f2525bf453bd2c71f184372592bdbf9d54c4f0712dc391341919d5337",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Bill/daily/20150613/20150615"
+  },
+  "List of storms named Bill": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Bill/daily/20150613/20150615"
+   },
+   "sha256": "234521be74af738f42f97898c79c9f3516a30a8bc4f770a777b65efa3648cedf",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Bill/daily/20150613/20150615"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:29Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Bill (2015)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1274549724,
+      "length": 1672,
+      "ns": 0,
+      "pageid": 1838949,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Bill",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q1182107"
+      },
+      "title": "List of storms named Bill",
+      "touched": "2026-10-26T19:19:49Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1314386274,
+      "length": 33597,
+      "ns": 0,
+      "pageid": 46991510,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Bill (2015)",
+       "page_image_free": "Bill_2015-06-16_1955Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2015",
+       "wikibase_item": "Q20313320"
+      },
+      "title": "Tropical Storm Bill (2015)",
+      "touched": "2026-10-27T05:48:33Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Bill",
+      "to": "List of storms named Bill"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Bill+%282015%29%7CHurricane+Bill%7CTropical+Storm+Bill+%282015%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Bill",
+ "titles": {
+  "T1": "Hurricane Bill (2015)",
+  "T2": "Hurricane Bill",
+  "T3": "Tropical Storm Bill (2015)"
+ },
+ "via": [
+  "Hurricane Bill"
+ ]
+}

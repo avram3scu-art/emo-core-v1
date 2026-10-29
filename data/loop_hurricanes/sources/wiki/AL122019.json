@@ -1,0 +1,151 @@
+{
+ "atcf": "AL122019",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050510062109|13546382"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1846798,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 13504304,
+        "timestamp": "2005-05-05T22:24:27Z"
+       }
+      ],
+      "title": "List of storms named Karen"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Karen&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Karen": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Karen",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019092100",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Karen",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019092200",
+      "views": 16
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Karen",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2019092300",
+      "views": 19
+     }
+    ]
+   },
+   "sha256": "604cee205c21a903d63ea66308254b1a45893796cbdb94cfc0dfcb606e07952f",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Karen/daily/20190921/20190923"
+  },
+  "List of storms named Karen": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Karen/daily/20190921/20190923"
+   },
+   "sha256": "58e49cad3f1242b8e1efce9d5e3feef1ead4219ee03f212f5fae725f84977279",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Karen/daily/20190921/20190923"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:51Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Karen (2019)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1350500537,
+      "length": 2400,
+      "ns": 0,
+      "pageid": 1846798,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Karen",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q7846016"
+      },
+      "title": "List of storms named Karen",
+      "touched": "2026-10-26T19:19:50Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1370726376,
+      "length": 31667,
+      "ns": 0,
+      "pageid": 66193993,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "page_image_free": "Karen_2019-09-24_1800Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q68829581"
+      },
+      "title": "Tropical Storm Karen (2019)",
+      "touched": "2026-10-27T05:48:57Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Karen",
+      "to": "List of storms named Karen"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Karen+%282019%29%7CHurricane+Karen%7CTropical+Storm+Karen+%282019%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Karen",
+ "titles": {
+  "T1": "Hurricane Karen (2019)",
+  "T2": "Hurricane Karen",
+  "T3": "Tropical Storm Karen (2019)"
+ },
+ "via": [
+  "Hurricane Karen"
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "atcf": "AL192020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20200912212616|978094574"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 65297670,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 978091994,
+        "timestamp": "2020-09-12T21:05:35Z"
+       }
+      ],
+      "title": "Hurricane Sally"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Sally&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Sally": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Sally",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091400",
+      "views": 8795
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Sally",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091500",
+      "views": 12096
+     }
+    ]
+   },
+   "sha256": "127a2e32b8f6f152e75e81116c896451e155848972fe18f980cff8b122d3f147",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Sally/daily/20200913/20200915"
+  },
+  "Hurricane Sally (2020)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Sally_(2020)/daily/20200913/20200915"
+   },
+   "sha256": "782a52b726fdf79829185b8e11a462413e53cf64b3272bf23c372822360e0421",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Sally_%282020%29/daily/20200913/20200915"
+  },
+  "Tropical Storm Sally (2020)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Sally_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091300",
+      "views": 4944
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Sally_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091400",
+      "views": 5650
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Sally_(2020)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091500",
+      "views": 583
+     }
+    ]
+   },
+   "sha256": "51efa92e32a274c18d51037e3389c7e02f520de2f272de9d0b5098c9072fce04",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Sally_%282020%29/daily/20200913/20200915"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:21Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380645131,
+      "length": 68384,
+      "ns": 0,
+      "pageid": 65297670,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Sally",
+       "page_image_free": "Sally_2020-09-16_0400Z.jpg",
+       "wikibase-shortdesc": "Category 2 Atlantic hurricane in 2020",
+       "wikibase_item": "Q99264168"
+      },
+      "title": "Hurricane Sally",
+      "touched": "2026-10-28T12:59:20Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Sally (2020)",
+      "to": "Hurricane Sally"
+     },
+     {
+      "from": "Hurricane Sally (2020)",
+      "to": "Hurricane Sally"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Sally+%282020%29%7CHurricane+Sally%7CTropical+Storm+Sally+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Sally",
+ "titles": {
+  "T1": "Hurricane Sally (2020)",
+  "T2": "Hurricane Sally",
+  "T3": "Tropical Storm Sally (2020)"
+ },
+ "via": [
+  "Hurricane Sally (2020)",
+  "Tropical Storm Sally (2020)"
+ ]
+}

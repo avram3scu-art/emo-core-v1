@@ -1,0 +1,180 @@
+{
+ "atcf": "AL092017",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20170824175004|797055232"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 55016388,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 797055128,
+        "timestamp": "2017-08-24T17:49:11Z"
+       }
+      ],
+      "title": "Hurricane Harvey"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Harvey&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Harvey": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Harvey",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082300",
+      "views": 1030
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Harvey",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082400",
+      "views": 4508
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Harvey",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082500",
+      "views": 9500
+     }
+    ]
+   },
+   "sha256": "0a0fd37c94a826e750e5b99675e172df3750554bc6861d446f95e7fb753bfc07",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Harvey/daily/20170823/20170825"
+  },
+  "Hurricane Harvey (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Harvey_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082400",
+      "views": 8002
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Harvey_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082500",
+      "views": 56664
+     }
+    ]
+   },
+   "sha256": "fc6e1abdb98685959c43d2b965fdfb3d1f9821c5574a6f576e9b93ffdef62658",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Harvey_%282017%29/daily/20170823/20170825"
+  },
+  "Tropical Storm Harvey (2017)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Harvey_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082300",
+      "views": 609
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Harvey_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082400",
+      "views": 1403
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Harvey_(2017)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2017082500",
+      "views": 269
+     }
+    ]
+   },
+   "sha256": "ddd71e38bc3f708a617815435cbdf13d518069e50d8207cb62a4e3a91b593913",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Harvey_%282017%29/daily/20170823/20170825"
+  }
+ },
+ "pulled_at": "2026-10-29T08:20:57Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1372919679,
+      "length": 129551,
+      "ns": 0,
+      "pageid": 55016388,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Harvey",
+       "page_image_free": "Harvey_2017-08-25_2337Z.jpg",
+       "toc": "",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2017",
+       "wikibase_item": "Q37933184"
+      },
+      "title": "Hurricane Harvey",
+      "touched": "2026-10-29T01:58:19Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Harvey (2017)",
+      "to": "Hurricane Harvey"
+     },
+     {
+      "from": "Hurricane Harvey (2017)",
+      "to": "Hurricane Harvey"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Harvey+%282017%29%7CHurricane+Harvey%7CTropical+Storm+Harvey+%282017%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Harvey",
+ "titles": {
+  "T1": "Hurricane Harvey (2017)",
+  "T2": "Hurricane Harvey",
+  "T3": "Tropical Storm Harvey (2017)"
+ },
+ "via": [
+  "Hurricane Harvey (2017)",
+  "Tropical Storm Harvey (2017)"
+ ]
+}

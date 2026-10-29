@@ -1,0 +1,151 @@
+{
+ "atcf": "AL062021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20081102115917|249172782"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 19621168,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 243182239,
+        "timestamp": "2008-10-05T14:11:57Z"
+       }
+      ],
+      "title": "List of storms named Fred"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Fred&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Fred": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fred",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021081300",
+      "views": 15
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fred",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021081400",
+      "views": 12
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Fred",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021081500",
+      "views": 15
+     }
+    ]
+   },
+   "sha256": "6730b585887b544fe16d9e34170a3f9411e33e5be1056eae3dd0f58eed612202",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Fred/daily/20210813/20210815"
+  },
+  "List of storms named Fred": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Fred/daily/20210813/20210815"
+   },
+   "sha256": "bb9603987bca551ceab2e15d258f907e3bff2a5df2905a2637f33c65650d8a06",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Fred/daily/20210813/20210815"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:01Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Fred (2021)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1299894919,
+      "length": 1521,
+      "ns": 0,
+      "pageid": 19621168,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Fred",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q7845943"
+      },
+      "title": "List of storms named Fred",
+      "touched": "2026-10-26T19:38:27Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1380709425,
+      "length": 46467,
+      "ns": 0,
+      "pageid": 68451200,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Fred (2021)",
+       "page_image_free": "Fred_2021-08-16_1835Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q108133388"
+      },
+      "title": "Tropical Storm Fred (2021)",
+      "touched": "2026-10-27T05:49:00Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Fred",
+      "to": "List of storms named Fred"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Fred+%282021%29%7CHurricane+Fred%7CTropical+Storm+Fred+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Fred",
+ "titles": {
+  "T1": "Hurricane Fred (2021)",
+  "T2": "Hurricane Fred",
+  "T3": "Tropical Storm Fred (2021)"
+ },
+ "via": [
+  "Hurricane Fred"
+ ]
+}

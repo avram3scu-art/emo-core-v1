@@ -1,0 +1,152 @@
+{
+ "atcf": "AL012018",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20050612161017|17488023"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 1848016,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 15070979,
+        "timestamp": "2005-05-06T04:20:45Z"
+       }
+      ],
+      "title": "List of storms named Alberto"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=List+of+storms+named+Alberto&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Alberto": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Alberto",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018052500",
+      "views": 534
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Alberto",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018052600",
+      "views": 570
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Alberto",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2018052700",
+      "views": 798
+     }
+    ]
+   },
+   "sha256": "84d2f091616a4ef1df359763d738f9c2cb30357c696c60f2d735a622b124e10c",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Alberto/daily/20180525/20180527"
+  },
+  "List of storms named Alberto": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Alberto/daily/20180525/20180527"
+   },
+   "sha256": "e9c21a24c41c57974b87e22714771386ef9ae89fe6c942fa58f51cf30300d4fb",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/List_of_storms_named_Alberto/daily/20180525/20180527"
+  }
+ },
+ "pulled_at": "2026-10-29T08:21:20Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Alberto (2018)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1259782841,
+      "length": 1194,
+      "ns": 0,
+      "pageid": 1848016,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Alberto",
+       "expectshortpage": "",
+       "wikibase-shortdesc": "List of storms with the same or similar names",
+       "wikibase_item": "Q445355"
+      },
+      "title": "List of storms named Alberto",
+      "touched": "2026-10-26T19:19:50Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1364607664,
+      "length": 26821,
+      "ns": 0,
+      "pageid": 57512783,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Alberto (2018)",
+       "page_image_free": "Alberto_2018-05-27_1625Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q54258841"
+      },
+      "title": "Tropical Storm Alberto (2018)",
+      "touched": "2026-10-27T05:48:47Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Alberto",
+      "to": "List of storms named Alberto"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Alberto+%282018%29%7CHurricane+Alberto%7CTropical+Storm+Alberto+%282018%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "List of storms named Alberto",
+ "titles": {
+  "T1": "Hurricane Alberto (2018)",
+  "T2": "Hurricane Alberto",
+  "T3": "Tropical Storm Alberto (2018)"
+ },
+ "via": [
+  "Hurricane Alberto"
+ ]
+}

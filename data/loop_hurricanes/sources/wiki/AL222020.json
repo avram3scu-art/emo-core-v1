@@ -1,0 +1,131 @@
+{
+ "atcf": "AL222020",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20051029143516|26793295"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 20849289,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 25947687,
+        "timestamp": "2005-10-19T20:45:30Z"
+       }
+      ],
+      "title": "Hurricane Beta"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Beta&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Beta": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020091900",
+      "views": 1013
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020092000",
+      "views": 640
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Beta",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2020092100",
+      "views": 601
+     }
+    ]
+   },
+   "sha256": "bc3726053a866007a647c9015406dc3911a4c0ec5aba74ebf8167f03ae07aa36",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Beta/daily/20200919/20200921"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:27Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Beta (2020)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1367709967,
+      "length": 55542,
+      "ns": 0,
+      "pageid": 20849289,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Beta (2005)",
+       "page_image_free": "Beta_2005-10-30_0655Z.jpg",
+       "wikibase-badge-Q17437798": "",
+       "wikibase-shortdesc": "Category 3 Atlantic hurricane in 2005",
+       "wikibase_item": "Q2118242"
+      },
+      "title": "Hurricane Beta",
+      "touched": "2026-10-27T05:48:02Z"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1320264301,
+      "length": 23217,
+      "ns": 0,
+      "pageid": 65373192,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "\u03b2 (2005)",
+       "page_image_free": "Beta_2020-09-20_1910Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm",
+       "wikibase_item": "Q99541844"
+      },
+      "title": "Tropical Storm Beta (2020)",
+      "touched": "2026-10-27T05:48:57Z"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Beta+%282020%29%7CHurricane+Beta%7CTropical+Storm+Beta+%282020%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Hurricane Beta",
+ "titles": {
+  "T1": "Hurricane Beta (2020)",
+  "T2": "Hurricane Beta",
+  "T3": "Tropical Storm Beta (2020)"
+ },
+ "via": []
+}

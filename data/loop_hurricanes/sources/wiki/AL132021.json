@@ -1,0 +1,156 @@
+{
+ "atcf": "AL132021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20220614025834|1093026138"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 71008173,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1093022456,
+        "timestamp": "2022-06-14T02:20:23Z"
+       }
+      ],
+      "title": "Tropical Storm Mindy"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Tropical+Storm+Mindy&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Mindy": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Mindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021090600",
+      "views": 3
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Mindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021090800",
+      "views": 15
+     }
+    ]
+   },
+   "sha256": "1f5fc1fefdd68f5ef4e65e55cd399cf5d34c9d615f1b56ced6cbab13c52c8ae8",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Mindy/daily/20210906/20210908"
+  },
+  "Tropical Storm Mindy": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Mindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021090600",
+      "views": 1
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Mindy",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021090800",
+      "views": 158
+     }
+    ]
+   },
+   "sha256": "ea100d8463276b1d2712277bad089c399f835f519e7b2e68884bdbaf3fcee3d6",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Mindy/daily/20210906/20210908"
+  },
+  "Tropical Storm Mindy (2021)": {
+   "response": {
+    "detail": "The date(s) you used are valid, but we either do not have data for those date(s), or the project you asked for is not loaded yet. Please check documentation for more information",
+    "method": "get",
+    "status": 404,
+    "title": "Not Found",
+    "type": "about:blank",
+    "uri": "/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Mindy_(2021)/daily/20210906/20210908"
+   },
+   "sha256": "bf44534744813fa83d6926bd87bde6324421dee3d68d71ce0277536965a2541f",
+   "status": 404,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Mindy_%282021%29/daily/20210906/20210908"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:15Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "missing": true,
+      "ns": 0,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "title": "Hurricane Mindy (2021)"
+     },
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1369879546,
+      "length": 24513,
+      "ns": 0,
+      "pageid": 71008173,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Mindy (2021)",
+       "page_image_free": "Mindy_2021-09-08_2201Z.jpg",
+       "wikibase-shortdesc": "Atlantic tropical storm in 2021",
+       "wikibase_item": "Q108466213"
+      },
+      "title": "Tropical Storm Mindy",
+      "touched": "2026-10-27T05:49:05Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Hurricane Mindy",
+      "to": "Tropical Storm Mindy"
+     },
+     {
+      "from": "Tropical Storm Mindy (2021)",
+      "to": "Tropical Storm Mindy"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Mindy+%282021%29%7CHurricane+Mindy%7CTropical+Storm+Mindy+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T2",
+ "target": "Tropical Storm Mindy",
+ "titles": {
+  "T1": "Hurricane Mindy (2021)",
+  "T2": "Hurricane Mindy",
+  "T3": "Tropical Storm Mindy (2021)"
+ },
+ "via": [
+  "Hurricane Mindy",
+  "Tropical Storm Mindy (2021)"
+ ]
+}

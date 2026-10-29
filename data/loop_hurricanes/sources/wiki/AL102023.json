@@ -1,0 +1,162 @@
+{
+ "atcf": "AL102023",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20230826225955|1172414211"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 74679980,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1172413931,
+        "timestamp": "2023-08-26T22:57:15Z"
+       }
+      ],
+      "title": "Hurricane Idalia"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Idalia&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Idalia": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Idalia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082800",
+      "views": 87
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Idalia",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082900",
+      "views": 16559
+     }
+    ]
+   },
+   "sha256": "c82c232ac49e2ea3f0389e219fbe774bda38505637cfb970662fac911000f42b",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Idalia/daily/20230827/20230829"
+  },
+  "Hurricane Idalia (2023)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Idalia_(2023)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082800",
+      "views": 17
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Idalia_(2023)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082900",
+      "views": 77
+     }
+    ]
+   },
+   "sha256": "b1e1fe388c65c84d2ecd498944a6b2299f719c34ad2f707af68f995d78239efb",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Idalia_%282023%29/daily/20230827/20230829"
+  },
+  "Tropical Storm Idalia (2023)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Idalia_(2023)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082800",
+      "views": 31
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Idalia_(2023)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2023082900",
+      "views": 15
+     }
+    ]
+   },
+   "sha256": "06c89007bcd96adb05b3350af41a0e2fa89c1bc987cfa8fa019262afc8ce0067",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Idalia_%282023%29/daily/20230827/20230829"
+  }
+ },
+ "pulled_at": "2026-10-29T08:23:51Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1381400267,
+      "length": 81348,
+      "ns": 0,
+      "pageid": 74679980,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Idalia",
+       "page_image_free": "Idalia_2023-08-30_0715Z.jpg",
+       "toc": "",
+       "wikibase-shortdesc": "Category 4 Atlantic hurricane in 2023",
+       "wikibase_item": "Q121888637"
+      },
+      "title": "Hurricane Idalia",
+      "touched": "2026-10-29T01:58:26Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Idalia (2023)",
+      "to": "Hurricane Idalia"
+     },
+     {
+      "from": "Hurricane Idalia (2023)",
+      "to": "Hurricane Idalia"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Idalia+%282023%29%7CHurricane+Idalia%7CTropical+Storm+Idalia+%282023%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Idalia",
+ "titles": {
+  "T1": "Hurricane Idalia (2023)",
+  "T2": "Hurricane Idalia",
+  "T3": "Tropical Storm Idalia (2023)"
+ },
+ "via": [
+  "Hurricane Idalia (2023)",
+  "Tropical Storm Idalia (2023)"
+ ]
+}

@@ -1,0 +1,188 @@
+{
+ "atcf": "AL052021",
+ "creation": {
+  "response": {
+   "continue": {
+    "continue": "||",
+    "rvcontinue": "20210630221353|1031304001"
+   },
+   "query": {
+    "pages": [
+     {
+      "ns": 0,
+      "pageid": 68093309,
+      "revisions": [
+       {
+        "parentid": 0,
+        "revid": 1031303338,
+        "timestamp": "2021-06-30T22:08:16Z"
+       }
+      ],
+      "title": "Hurricane Elsa"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvdir=newer&rvlimit=1&rvprop=timestamp%7Cids&titles=Hurricane+Elsa&format=json&formatversion=2"
+ },
+ "pageviews": {
+  "Hurricane Elsa": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070400",
+      "views": 11579
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070500",
+      "views": 11784
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070600",
+      "views": 13122
+     }
+    ]
+   },
+   "sha256": "8aca2995c80b32fec0fa0ed77b40652a38d6431095a6db737f97ea3091a86a53",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Elsa/daily/20210704/20210706"
+  },
+  "Hurricane Elsa (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070400",
+      "views": 67
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070500",
+      "views": 190
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Hurricane_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070600",
+      "views": 45
+     }
+    ]
+   },
+   "sha256": "d3726b6c6e79d5062afcfae4df40589ae73277b7f0c715859d6b140745d55603",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Hurricane_Elsa_%282021%29/daily/20210704/20210706"
+  },
+  "Tropical Storm Elsa (2021)": {
+   "response": {
+    "items": [
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070400",
+      "views": 31
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070500",
+      "views": 59
+     },
+     {
+      "access": "all-access",
+      "agent": "user",
+      "article": "Tropical_Storm_Elsa_(2021)",
+      "granularity": "daily",
+      "project": "en.wikipedia",
+      "timestamp": "2021070600",
+      "views": 92
+     }
+    ]
+   },
+   "sha256": "7f2aaf3e9e295c254dbe6694d15bfd33c34dbf2652f3537e335f3152c8fac2c1",
+   "status": 200,
+   "url": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Tropical_Storm_Elsa_%282021%29/daily/20210704/20210706"
+  }
+ },
+ "pulled_at": "2026-10-29T08:22:56Z",
+ "query": {
+  "response": {
+   "batchcomplete": true,
+   "query": {
+    "pages": [
+     {
+      "contentmodel": "wikitext",
+      "lastrevid": 1369236814,
+      "length": 94174,
+      "ns": 0,
+      "pageid": 68093309,
+      "pagelanguage": "en",
+      "pagelanguagedir": "ltr",
+      "pagelanguagehtmlcode": "en",
+      "pageprops": {
+       "defaultsort": "Elsa",
+       "page_image_free": "Elsa_2021-07-02_1725Z.jpg",
+       "wikibase-shortdesc": "Category 1 Atlantic hurricane in 2021",
+       "wikibase_item": "Q107401804"
+      },
+      "title": "Hurricane Elsa",
+      "touched": "2026-10-27T05:49:00Z"
+     }
+    ],
+    "redirects": [
+     {
+      "from": "Tropical Storm Elsa (2021)",
+      "to": "Hurricane Elsa"
+     },
+     {
+      "from": "Hurricane Elsa (2021)",
+      "to": "Hurricane Elsa"
+     }
+    ]
+   }
+  },
+  "url": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops%7Cinfo&titles=Hurricane+Elsa+%282021%29%7CHurricane+Elsa%7CTropical+Storm+Elsa+%282021%29&format=json&formatversion=2"
+ },
+ "rule": "T1",
+ "target": "Hurricane Elsa",
+ "titles": {
+  "T1": "Hurricane Elsa (2021)",
+  "T2": "Hurricane Elsa",
+  "T3": "Tropical Storm Elsa (2021)"
+ },
+ "via": [
+  "Hurricane Elsa (2021)",
+  "Tropical Storm Elsa (2021)"
+ ]
+}
