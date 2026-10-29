@@ -11,9 +11,9 @@ All pages below were accessed 29 Oct 2026. Pages that could not be opened are li
 | Link | Source | Per-event values | Verdict | Fallback |
 |---|---|---|---|---|
 | Events | HURDAT2 Atlantic (NHC) | yes (six-hourly; landfall flag `L`) | **Feasible** | — |
-| Predict | NHC official forecast error database, individual forecasts (text) | yes (per forecast; aggregate per storm) | **Feasible** (column layout unverified) | annual errors already in repo (`data/nhc_atlantic_official_track_errors_1970_2025.csv`), season-level only |
+| Predict | NHC official forecast error database, individual forecasts (text) | yes (per forecast; aggregate per storm) | **Feasible** | annual errors already in repo (`data/nhc_atlantic_official_track_errors_1970_2025.csv`), season-level only |
 | Attend | Wikimedia pageviews API, per article per day | yes, once a storm→article rule is fixed | **Feasible** from 2015 | — |
-| Decide-act | OpenFEMA Disaster Declarations Summaries v2 | yes (per declaration and designated area) | **Feasible with caveats** (§5) | FEMA Web Disaster Declarations v1 (hurricane code documented) |
+| Decide-act | OpenFEMA Disaster Declarations Summaries v2 | yes (per declaration and designated area) | **Feasible with caveats** (§5) | FEMA Web Disaster Declarations v1 |
 | Outcome | NHC Tropical Cyclone Reports | yes, but in PDF prose/tables | **Infeasible as machine-readable** | (a) HURDAT2 landfall intensity as the severity/outcome proxy; (b) PDF extraction under pre-registered rules with a second check (D11 risk) |
 | Warning times | NHC GIS advisory watches/warnings, per advisory | yes, per advisory | **Feasible** from 2008 (fields unverified) | advisory text archive 1999–2025 (issuance times in text) |
 | Rule-based triggers | 44 CFR 206.35; FEMA pre-landfall policy (2006) | — | **Found**: no automatic federal trigger; one procedural link (§7) | — |
@@ -35,7 +35,9 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 - **Files:** `1970-present_OFCL_v_BCD5_ind_ATL_TI_errors_noTDs.txt` (Atlantic track and intensity, 1970–2025, no depressions); `1989-present_..._ATL_TI_errors.txt` (with depressions); along/cross-track versions; `.zip` copies.
 - **Per event:** yes; files tabulate individual forecasts ("ind").
 - **Computation:** homogeneous with best-track CLIPER5 and Decay-SHIFOR5, subtropical systems included (so forecasts without a CLIPER/SHIFOR pair are excluded).
-- **Fields:** in `Error_Tabulation_File_Format.pdf`, which could not be opened (§9): column layout **unverified**.
+- **Fields** (format description, 10 Jan 2012, supplied by Adrian, `docs/sources/loop_data/NHC_Error_Tabulation_File_Format.pdf`): header lines (basin and period, models verified, e.g. OFCL and the CLIPER5/SHIFOR5 baseline, wind-speed range, subtropical/extratropical flags); then one line per forecast: initial time `dd-mm-yyyy/hh:mm:ss`, `STMID` (ATCF storm ID), equivalent sample size F12–F168, best-track lat, lon and wind at t = 0, then track error (n mi) and intensity error (kt) at 0–168 h for each model (`000hT1`…, `000hI1`…). Missing = −9999.
+- **Serial correlation:** the file gives an equivalent sample size per forecast, assuming full independence only for forecasts ≥ 18 h apart. The H4/H5 nulls in 2.3 must use it or a cluster-by-storm null.
+- **Skill:** the baseline model's errors sit in the same lines, so per-storm skill vs CLIPER5/SHIFOR5 is computable (useful for SMF v2, 2.7).
 - **Update:** coverage ends 2025; annual addition implied, not stated (**unverified**).
 - **Licence:** none stated (as §2).
 
@@ -52,10 +54,11 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 
 - **Dataset:** Disaster Declarations Summaries **v2** (v1 is no longer updated; last update 1 May 2025). API `https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries`; CSV/JSON downloads.
 - **Metadata (OpenFEMA dataset index):** 70,596 records; refresh every 20 minutes; licence field null; citation rules on the OpenFEMA Terms and Conditions page (not opened, **unverified**). data.gov lists the US government-works licence.
-- **Fields (from the v1 page opened in session 2.0, AUDIT §6):** `declarationDate`, `incidentBeginDate`, `incidentEndDate`, `incidentType`, programmes declared; coverage from 1953, county data from 1964. The v2 field list could not be opened (§9): **unverified** that v2 keeps these names.
-- **Hurricane as an incident type:** **partly confirmed.** The FEMA Web Disaster Declarations v1 page lists incident-type codes in `designatedIncidentTypes` with **H = Hurricane**; `incidentType` itself has no enumerated value list on any page opened ("such as fire or flood"). Confirm the exact `incidentType` string when the data are opened (session 2.4, after the protocol).
+- **Fields** (v2 page, last data refresh 29 Oct 2026, supplied by Adrian as PDF, `docs/sources/loop_data/FEMA_Disaster_Declarations_Summaries_v2_page.pdf`): `femaDeclarationString` (e.g. DR-4393-NC), `disasterNumber`, `state`, `declarationType` (major disaster, emergency, fire management), `declarationDate`, `fyDeclared`, `incidentType`, `declarationTitle`, programme flags (`ihProgramDeclared`, `iaProgramDeclared`, `paProgramDeclared`, `hmProgramDeclared`), `incidentBeginDate`, `incidentEndDate`, `disasterCloseoutDate`, `tribalRequest`, `fipsStateCode`, `fipsCountyCode` (000 = whole state), `placeCode`, `designatedArea`, **`declarationRequestNumber`, `declarationRequestDate`**, `lastIAFilingDate`, `incidentId`, `region`, `designatedIncidentTypes`, `lastRefresh`, `hash`, `id`. Coverage from 1953, county from 1964; Tribal Nations included in state data; disaster numbers 3000–3999 are emergencies, 0001–1999 and 4000–4999 major disasters.
+- **New for the loop:** `declarationRequestDate` dates the Governor's request, so the decide link splits into request (state) and declaration (federal) lags; `declarationTitle` and `incidentId` help match storms to declarations.
+- **Hurricane as an incident type:** **confirmed for `designatedIncidentTypes`** in v2: code **H = Hurricane** (also 4 = Tropical Storm, 8 = Tropical Depression, C = Coastal Storm, J = Typhoon). `incidentType` itself has no enumerated value list ("such as fire or flood"): its exact hurricane string stays **unverified** until the data are opened (session 2.4, after the protocol). The protocol should select on `designatedIncidentTypes` containing H, which is documented.
 - **Per event:** one record per declaration and designated area; declaration type distinguishes major disaster (DR) and emergency (EM) (codes stated in v1 docs, AUDIT §6).
-- **Caveats:** raw NEMIS data with some human error; historical records entered manually after 1998; a declaration is a decision, not a delivery; US only; storm→declaration matching must use state, dates and (if present) title (**unverified** field). The Web Declarations v1 page states its last refresh as 10 Oct 2024, while the index shows 29 Oct 2026: conflicting, unresolved.
+- **Caveats:** raw NEMIS data with some human error; historical records entered manually after 1998; a declaration is a decision, not a delivery; US only; storm→declaration matching must use state, dates, `declarationTitle` and `incidentId` (matching rule fixed in 2.3). The Web Declarations v1 page states its last refresh as 10 Oct 2024, while the index shows 29 Oct 2026: conflicting, unresolved.
 
 ## 6. Outcome — Tropical Cyclone Reports
 
@@ -77,9 +80,9 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 ## 8. What session 2.3 must use
 
 1. Event: US landfall (`L`) at `HU` status, 2015–2025 known history; 2027 blind.
-2. Predict: per-storm errors from the individual-forecast file; layout to be confirmed from the format PDF (Adrian can supply it if it stays unreachable).
+2. Predict: per-storm errors from the individual-forecast file (`STMID`, OFCL vs CLIPER5/SHIFOR5); dependence via the file's equivalent sample size or a cluster-by-storm null.
 3. Attend: per-article daily user-agent views; storm→article rule fixed in advance.
-4. Decide-act: DR vs EM split; pre-landfall EM treated as procedure.
+4. Decide-act: select on `designatedIncidentTypes` containing H; DR vs EM split; two lags (landfall→request, request→declaration); pre-landfall EM treated as procedure.
 5. Warnings: earliest watch/warning per storm from the 2008+ GIS advisory files.
 6. Outcome: drop as a link; HURDAT2 intensity as severity control (recommended fallback (a)).
 
@@ -88,6 +91,7 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 - `https://www.fema.gov/about/openfema/disaster-declarations-summaries` (opened in 2.0; not on this session's allowlist).
 - `https://www.fema.gov/openfema-dataset-disaster-declarations-summaries-v2` (allowlist); `https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2` and `https://www.fema.gov/about/openfema/Datasets-disaster-declaration-summaries` (site error).
 - `https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf` (allowlist).
+- Both gaps closed the same day: Adrian supplied the v2 page (as PDF) and the format PDF (29 Oct 2026, 06:05), committed in `docs/sources/loop_data/`. SHA-256: v2 page `81918faa…31c95`, format PDF `b1fdc111…ec37`.
 - Wikimedia API documentation pages opened did not state start date, latency or rate limits.
 
 ## 10. Sources (opened 29 Oct 2026)
@@ -108,4 +112,5 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 - Wikimedia, Analytics API: https://doc.wikimedia.org/analytics-api and https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/
 - Wikitech, AQS: https://wikitech.wikimedia.org/wiki/Data_Platform/AQS
 - Wikimedia pageview dumps readme: https://dumps.wikimedia.org/other/pageviews/readme.html
+- Supplied by Adrian (29 Oct 2026): `docs/sources/loop_data/FEMA_Disaster_Declarations_Summaries_v2_page.pdf` (from https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2), `docs/sources/loop_data/NHC_Error_Tabulation_File_Format.pdf` (from https://www.nhc.noaa.gov/verification/pdfs/Error_Tabulation_File_Format.pdf).
 - Repo: `docs/AUDIT_2026-10-29.md` §6, `docs/UIA_PROTOCOL.md`, `scripts/refresh_open_data.py`.
