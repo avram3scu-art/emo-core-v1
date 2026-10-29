@@ -13,3 +13,5 @@
 > We're sorry we can't help further with this request.
 
 **What it shows:** ECMWF declined to distribute the numerical time series behind its headline-score charts. It does not show a refusal of ECMWF data access in general. The linked Forecast User Guide page was not opened in session 2.1.
+
+**Linked page opened (29 Oct 2026, after session 2.1, at Adrian's question whether the data can be used):** https://confluence.ecmwf.int/display/FUG/Section+6.2.1+ECMWF+headline+scores — definitions of six headline scores (ACC, CRPS, RPSS-D, 1-SEEPS, EFI ROC skill, fraction of large CRPS) and links to the current charts on charts.ecmwf.int; no score values, tables or downloads; no licence statement on the page. Open Charts (CC-BY-4.0 per the reply) not opened. Conclusion: no numerical data are available through the link; only values digitized from the chart images, which would be approximate and must be labelled as such. Claude's recommendation: do not use for now (NHC already covers the predict link).
