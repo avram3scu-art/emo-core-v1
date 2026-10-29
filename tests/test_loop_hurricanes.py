@@ -155,8 +155,13 @@ def test_no_h4_h5_output_exists():
     text = json.dumps(s).lower()
     for word in ("corr", "kendall", "tau", "p_value", "pvalue", "holm", "trend", "slope"):
         assert word not in text
+    # Session 2.5 (LOOP_PROTOCOL §18) allows exactly its registered test script and output in analysis/;
+    # the data folder stays free of any test output.
+    allowed = {"loop_test_2015_2025.py", "loop_test_2015_2025_output.txt"}
     for p in list(DATA.rglob("*")) + list((ROOT / "analysis").glob("loop_*")):
         n = p.name.lower()
+        if p.parent == ROOT / "analysis" and n in allowed:
+            continue
         assert not any(k in n for k in ("h4", "h5", "loop_test", "loop_result")), p
 
 
