@@ -4,12 +4,33 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 09:30):** session 2.4 (loop event table) closed. Next: session 2.5 (loop test, known history). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 09:55):** session 2.5 (loop test, known history) closed. Next: session 2.6 (GWI v2). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (179), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
-- **Failure register:** `docs/FAILURES.md` (11 rows; outcomes chosen by Adrian 29 Oct 05:29).
+- **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.5 (2026-10-29, 09:32–09:55) — hurricane loop test on 2015–2025 (H3, H4, H5; pre-registered on known history)
+
+**Done when met: yes.** Results in `docs/LOOP_PROTOCOL.md` §19 and `docs/RECORD.md`; README row and page section 6 with the evidence class (ab82e09; page rebuilt by run 40843970838, green).
+
+**Done**
+- Session start: weekly run 40817861051 (29 Oct) green. Table check: 52 rows, 0 failures.
+- Run plan §18 and code committed and pushed before any statistic (4087171); the 2.4 test forbidding loop test files narrowed to the two §18 files.
+- H3 **FAIL**: both lags 24/52 (binomial p = 0.756); IQR 8.5 d. H4 **cannot be tested at this size**: guard §15 part 1 fails for all six pairs (9–10 < 15); part 2 FPR 0.046, power 0.42. Sensitivity without list/season attention targets: same count (none of the 14 has lags). H5 **not shown at this size**: Holm p 0.223 / 0.126, power 0.064. All 49 exclusions (29 storms) and the 22 no-candidate storms listed in §19.
+- Diagnosis (F12): unmeasured storms are almost all weak TS without a qualifying DR (22 no candidate, 6 EM only); HU 23/27 vs TS-only 1/25 (exploratory, seen data, no weight).
+
+**Claude's mistakes:** "validated" in §18 (claim check caught it before push; reworded); 2.3's HU+TS choice did not check how many TS get no declaration (diagnosed in §19).
+
+**Decisions (Adrian):** 09:53 "2 a - c yes": F12 repair; blind-arm pair rule and list/season target rule, all as 2.8 amendments for 2027+ only. Point 1 unanswered; Claude's recommendation "no more now" applied.
+
+**Open (each with reason)**
+- Amendments (a)–(c). Reason: scope (session 2.8; prompt updated).
+- Whether no-candidate storms have declarations of other types. Reason: scope; not checked (descriptive only).
+- Weekly run with the 2.3 frozen scripts. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.6 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.4 (2026-10-29, 08:29–09:30) — hurricane loop event table (H3; infrastructure)
 
