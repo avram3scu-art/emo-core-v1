@@ -1,6 +1,6 @@
 # Hurricane loop tests: pre-registration (session 2.3, 29 Oct 2026)
 
-**Power statement (CLAUDE.md "Power before data"; synthetic, §10).** H4, primary event set HU+TS at the planned ~54 storms: false-positive rate ≤ 0.026, power 0.99 at r = 0.5 and 0.79 at r = 0.3. **H5 has power below 0.5** (0.17 at Δ = 1; 0.41 at Δ = 2) and **the 2027-only blind arm has power below 0.5** (0.10–0.32 at r = 0.5): both are run as registered, and a non-significant result reads "not shown at this size". Planned sizes are unverified; power is recomputed at the realized sizes (§8.4).
+**Power statement (CLAUDE.md "Power before data"; synthetic, §14–§15, which supersede §10).** H4 with the amended statistic (§14), primary event set HU+TS at the planned ~54 storms: false-positive rate ≤ 0.006, also under strong season clustering; power 0.80 at r = 0.5 (0.76–0.79 under strong clustering) and 0.39 at r = 0.3. **H5 has power below 0.5** (0.12–0.41) and **the blind arm has power below 0.5** (2027 alone 0.08–0.24; five seasons of 4: 0.49): both are run as registered, and a non-significant result reads "not shown at this size". H4 is not run at all if the guard of §15 fails at the realized sizes. Planned sizes are unverified (§8.4).
 
 Moves H3, H4, H5 (`docs/PLAN.md` §4). Evidence class of this file: **infrastructure** (protocol and synthetic method check). The tests it defines carry the class of their run: 2015–2025 = **pre-registered on known history**; 2027 season = **pre-registered blind**.
 
@@ -165,3 +165,27 @@ Expectation written now: naive > 0.10 at SIG_SEASON ≥ 1.5; within-season ≤ 0
 
 Run: `analysis/loop_power_amend3.py`, output `analysis/loop_power_amend3_output.txt`, seed 2026102926, 2,000 studies per cell, 999 permutations. Cells: (a) the §9 world (Y_SHOCK_SIGN −1, KAPPA 0.5, SIG_SEASON 0.7): H4 designs HU, HU 25% unmatched, HU+TS at r ∈ {0, 0.3, 0.5}, and the blind-arm grid of §9; (b) stress: KAPPA 0.9, SIG_SEASON ∈ {1.5, 2.5}, HU and HU+TS at r = 0 and 0.5. Criteria as §9; the event-set rule of §10 is re-applied to (a).
 Expectation written now: within-season ≤ 0.060 in every cell, stress included; power slightly below §10 (season dummies cost degrees of freedom); HU+TS still ≥ 0.8 at r = 0.5.
+
+## 15. Result of amendment 3, the small-sample guard, and the final design
+
+**Result** (`analysis/loop_power_amend3_output.txt`, 4.5 min). Coupling coefficient for the fe statistic: 0.709 (r = 0.3), 1.173 (r = 0.5).
+
+| Cell | FPR (any, r = 0) | power r = 0.3 | power r = 0.5 |
+|---|---|---|---|
+| HU, §9 world | 0.051 | 0.18 | 0.40 |
+| HU, 25% unmatched | **0.171** | 0.19 | 0.31 |
+| HU+TS, §9 world | 0.006 | 0.39 | **0.80** |
+| HU, stress (KAPPA 0.9, SIG 1.5 / 2.5) | 0.046 / 0.043 | — | 0.42 / 0.42 |
+| HU+TS, stress | 0.004 / 0.005 | — | 0.79 / 0.76 |
+
+"No effect" read on the true pair: HU never; HU+TS 0.045 at r = 0, 0.013 at r = 0.3 (≤ 0.05). Blind arm (frozen slopes, demeaned within blind season): FPR 0.013–0.026; power at r = 0.5: 0.08 (4), 0.24 (6), 0.38 (4,4,4), 0.49 (five seasons of 4).
+
+**Expectations (§14) vs result:** stress now calibrated (held); power lower than §10 (held: season dummies cost degrees of freedom); HU+TS ≥ 0.8 at r = 0.5 held only just (0.804, MC SE 0.009; 0.76–0.79 under stress). **Did not hold:** within-season ≤ 0.060 in every cell: HU with 25% unmatched gives 0.171.
+
+**Diagnosis (exploratory probe, 400 runs, seed 99, recorded in RECORD):** every pair over-rejects mildly (0.055–0.092 uncorrected); the within-season residual degrees of freedom (Σ (n_s − 1) − 5) have median 5 and are sometimes ≤ 0. With so few, residuals are not exchangeable within season.
+
+**Guard (pre-registered now, decided from counts only).** In session 2.5, before any H4 statistic is computed: (1) for each pair, if Σ_s (n_s − 1) − 5 < 15 on its complete cases, that pair is not tested and reads "cannot be tested at this size"; (2) `analysis/loop_power.py` (STAT "fe", Y_SHOCK_SIGN −1) is rerun at the realized season sizes and missingness pattern (counts only); if its family-wise rate at r = 0 exceeds 0.060, H4 is not run and reads "cannot be tested at this size"; its power at r = 0.5 decides FAIL vs "not shown at this size" (§8.4).
+
+**Final design (for 2.4 and 2.5):** event set **HU+TS** (§10 rule re-applied: HU 0.40 < 0.80; HU+TS 0.80); H4 statistic **§14**; nulls, Holm, equivalence, H5 (§6, calibrated in amendment 2: 0.006–0.024) and blind arm (§7 with §14 residuals) as registered; guard above.
+
+**What this shows and does not show.** Shown: the final H4 test holds its rate, including under strong season clustering in the predicted direction, at the planned HU+TS size, and has power about 0.8 only for a strong coupling (r = 0.5). Not shown: that r = 0.5 is realistic (at r = 0.3, power 0.39); that the planned counts are right; robustness to confounds not simulated (state-level triggers, FEMA policy changes over time). §9's and §12's runs did not test clustering at all (Claude's sign error, §13); they stay on record.

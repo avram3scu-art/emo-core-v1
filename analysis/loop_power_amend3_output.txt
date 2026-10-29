@@ -1,0 +1,32 @@
+Loop power amendment 3 (docs/LOOP_PROTOCOL.md §14). Synthetic only; no loop record read.
+seed 2026102926, 2000 studies/cell, 999 permutations, STAT fe, Y_SHOCK_SIGN -1
+coupling coefficient (fe statistic): r=0.3: c=0.709, r=0.5: c=1.173
+
+(a) section 9 world (KAPPA 0.5, SIG_SEASON 0.7): any | true pair | 'no effect' on true pair
+  HU                r=0.0: any 0.051 | true 0.008 | no-effect 0.000
+  HU                r=0.3: any 0.210 | true 0.182 | no-effect 0.000
+  HU                r=0.5: any 0.422 | true 0.404 | no-effect 0.000
+  HU 25% unmatched  r=0.0: any 0.171 | true 0.031 | no-effect 0.000
+  HU 25% unmatched  r=0.3: any 0.312 | true 0.188 | no-effect 0.000
+  HU 25% unmatched  r=0.5: any 0.413 | true 0.311 | no-effect 0.000
+  HU+TS             r=0.0: any 0.006 | true 0.001 | no-effect 0.045
+  HU+TS             r=0.3: any 0.389 | true 0.388 | no-effect 0.013
+  HU+TS             r=0.5: any 0.804 | true 0.804 | no-effect 0.003
+  blind sizes (4,)             r=0.0: 0.013
+  blind sizes (4,)             r=0.5: 0.075
+  blind sizes (6,)             r=0.0: 0.017
+  blind sizes (6,)             r=0.5: 0.237
+  blind sizes (4, 4, 4)        r=0.0: 0.022
+  blind sizes (4, 4, 4)        r=0.5: 0.376
+  blind sizes (4, 4, 4, 4, 4)  r=0.0: 0.026
+  blind sizes (4, 4, 4, 4, 4)  r=0.5: 0.488
+
+(b) stress (KAPPA 0.9): any rejection
+  SIG_SEASON 1.5 HU     r=0.0: any 0.046 | true 0.004
+  SIG_SEASON 1.5 HU     r=0.5: any 0.439 | true 0.420
+  SIG_SEASON 1.5 HU+TS  r=0.0: any 0.004 | true 0.001
+  SIG_SEASON 1.5 HU+TS  r=0.5: any 0.788 | true 0.786
+  SIG_SEASON 2.5 HU     r=0.0: any 0.043 | true 0.004
+  SIG_SEASON 2.5 HU     r=0.5: any 0.443 | true 0.417
+  SIG_SEASON 2.5 HU+TS  r=0.0: any 0.005 | true 0.000
+  SIG_SEASON 2.5 HU+TS  r=0.5: any 0.755 | true 0.755

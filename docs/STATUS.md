@@ -4,12 +4,34 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 06:10):** session 2.2 (hurricane loop data check) closed. Next: session 2.3 (loop protocol). Earlier positions: `docs/SESSION_LOG.md`.
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (154), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Plan position (29 Oct, 08:40):** session 2.3 (hurricane loop pre-registration) closed. Next: session 2.4 (loop event table). Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (166), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (11 rows; outcomes chosen by Adrian 29 Oct 05:29).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.3 (2026-10-29, 07:42–08:40) — hurricane loop pre-registration (H3–H5; infrastructure)
+
+**Done when met: yes.** `docs/LOOP_PROTOCOL.md` committed before any code (ff7d78f); power code and tests committed before each run; power and false-positive rates stated in the opening lines; no loop record opened (stated in the file); CI green (40832270562 and the close).
+
+**Done**
+- Protocol: events (HURDAT2 L), link measures and reading rules (FEMA matching on state, dates, title, incidentId; F = OFCL vs CLIPER5 48-h skill; A = pre-landfall pageviews with a fixed article rule; W = earliest watch/warning lead), controls (V, R64, FEMA region, EMpre, year), triggers (pre-landfall EM controlled by the observed declaration, so robust to the 2006 policy's status), H3/H4/H5 statistics, within-season and season-level nulls, Holm, equivalence ±0.3, blind arm, 2015–2025 known / 2026 excluded / 2027+ blind.
+- Synthetic runs (`analysis/loop_power*.py`, outputs committed; all four added to the weekly frozen runs): final H4 test FPR ≤ 0.006 at HU+TS (also under strong season clustering), power 0.80 at r = 0.5, 0.39 at r = 0.3; HU-only 0.40 → **primary event set HU+TS** (pre-registered rule). H5 power 0.12–0.41; blind 2027 alone 0.08–0.24 (both < 0.5, stated in the file's opening lines).
+- PLAN H5 dated note (adequate power not before ~2030); PLAN 2.4 prompt updated with the 2.3 decisions.
+
+**Claude's mistakes (fixed, recorded):** (1) coupling coefficient r/√(1−r²) gave too small an effect; caught by a smoke check before the committed run. (2) Sign error: the shared season shock in §9 and amendment 1 pushed r against the predicted direction, so neither run tested clustering (§13). Amendment 2 then showed the registered §5 statistic over-rejects under strong clustering (0.10–0.41); replaced before any data by a season fixed-effect statistic (amendment 3, §14), calibrated under stress. (3) Amendment 3 over-rejects at very small n (0.171, HU with 25% unmatched): diagnosed by probe (residual df ~5); a count-only guard pre-registered (§15).
+
+**Review and Adrian's answer (07:59, "1 - yes; 2 - yes"):** stressed-clustering amendment (done; it found errors 2 and 3 above), weekly frozen runs (done), PLAN H5 note (done).
+
+**Open (each with reason)**
+- Planned season sizes are Claude's unverified recollection. Reason: needs data; 2.4 gives realized counts, 2.5 recomputes power (§15 guard).
+- r = 0.5 is an assumed effect size; at r = 0.3 H4 power is 0.39. Reason: no prior estimate exists; Adrian's decision whether to accept a test adequate only for strong coupling.
+- Census boundary file and MediaWiki redirect API unverified. Reason: scope (2.4).
+- Weekly run with the four new frozen scripts not yet observed. Reason: needs time; check at the next weekly run (Mon 2 Nov 2026).
+- State-level triggers and FEMA policy changes over time not simulated or controlled. Reason: needs time (each state differs); stated limit in §4 and §15.
+
+**Next:** session 2.4 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.2 (2026-10-29, 05:52–06:10) — hurricane loop data check (H3–H5, feasibility; infrastructure)
 

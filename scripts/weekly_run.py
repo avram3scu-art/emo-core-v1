@@ -57,6 +57,11 @@ REPRO = [
     ("gwi_calibration", "analysis/gwi_calibration_output.txt", None),
     # He calibration (docs/HE_CALIBRATION_PROTOCOL.md section 6), synthetic, ~3 min; frozen 2026-10-26.
     ("he_calibration", "analysis/he_calibration_output.txt", None),
+    # Hurricane loop power (docs/LOOP_PROTOCOL.md §9-§15), synthetic, ~13 min in all; frozen 2026-10-29.
+    ("loop_power", "analysis/loop_power_output.txt", None),
+    ("loop_power_amend1", "analysis/loop_power_amend1_output.txt", None),
+    ("loop_power_amend2", "analysis/loop_power_amend2_output.txt", None),
+    ("loop_power_amend3", "analysis/loop_power_amend3_output.txt", None),
     # SMF (§7-§13) and synergy (session 8), frozen 2026-10-28 (F5): rerun from committed data,
     # no refetch. The smf_spf/smf_ip recordings carry two openpyxl warning lines ("header or
     # footer") that the weekly run sends to stderr; they are filtered out of the comparison.
