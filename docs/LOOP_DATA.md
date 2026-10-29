@@ -38,6 +38,7 @@ Full four-link coverage (events, predict, attend, decide-act, warnings) is 2015�
 - **Fields** (format description, 10 Jan 2012, supplied by Adrian, `docs/sources/loop_data/NHC_Error_Tabulation_File_Format.pdf`): header lines (basin and period, models verified, e.g. OFCL and the CLIPER5/SHIFOR5 baseline, wind-speed range, subtropical/extratropical flags); then one line per forecast: initial time `dd-mm-yyyy/hh:mm:ss`, `STMID` (ATCF storm ID), equivalent sample size F12–F168, best-track lat, lon and wind at t = 0, then track error (n mi) and intensity error (kt) at 0–168 h for each model (`000hT1`…, `000hI1`…). Missing = −9999.
 - **Serial correlation:** the file gives an equivalent sample size per forecast, assuming full independence only for forecasts ≥ 18 h apart. The H4/H5 nulls in 2.3 must use it or a cluster-by-storm null.
 - **Skill:** the baseline model's errors sit in the same lines, so per-storm skill vs CLIPER5/SHIFOR5 is computable (useful for SMF v2, 2.7).
+- **Correction (29 Oct 2026, session 2.4; Claude's error):** wrong. Header line 2 of the file lists OFCL only and each line has one model's errors; the file is only *homogeneous with* CLIPER5/SHIFOR5. The baseline is taken from the ATCF a-decks (`BCD5`), `docs/LOOP_PROTOCOL.md` §16.
 - **Update:** coverage ends 2025; annual addition implied, not stated (**unverified**).
 - **Licence:** none stated (as §2).
 
