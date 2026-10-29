@@ -1,0 +1,18 @@
+A. 6 synthetic articles x 12 streams, scored year 2026 (365 days):
+   v2 unfiltered:    rate 0.0078 (September 0.0056)
+   v2 filtered:      rate 0.0027 (September 0.0056); target q = 0.005
+B. Calibration rule, 20 articles x 365 days, clustered ignitions (mean run 1.5), 100 reps:
+   all at 0.5q              P(PASS) = 1.000
+   all at q                 P(PASS) = 0.910
+   all at 1.5q              P(PASS) = 0.460
+   all at 2q                P(PASS) = 0.060
+   19 at q, 1 at 5q         P(PASS) = 0.710
+   heterogeneous, mean q    P(PASS) = 0.860
+C. Event test, test article + 20 placebos, 50 reps, 199 permutations; base window hit ~0.015; PASS = both Holm-rejected at 0.05:
+   n= 8  h1=0.0: 0.000; h1=0.3: 0.840; h1=0.5: 0.940; h1=0.7: 1.000
+   n=12  h1=0.0: 0.020; h1=0.3: 0.740; h1=0.5: 1.000; h1=0.7: 1.000
+   n=15  h1=0.0: 0.000; h1=0.3: 0.860; h1=0.5: 1.000; h1=0.7: 1.000
+   n=20  h1=0.0: 0.000; h1=0.3: 0.960; h1=0.5: 1.000; h1=0.7: 1.000
+A2. Shared shocks: 6 synthetic articles, 3 global episodes a year (3-20 days), 49 shock days in 2026; 6 single-article spikes:
+   false-ignition rate unfiltered 0.0962 (shock days 0.7133); filtered 0.0014 (shock days 0.0068); target q = 0.005
+   single-article spikes ignited 1.00, kept by the filter 0.83

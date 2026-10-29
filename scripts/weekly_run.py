@@ -62,6 +62,10 @@ REPRO = [
     ("loop_power_amend1", "analysis/loop_power_amend1_output.txt", None),
     ("loop_power_amend2", "analysis/loop_power_amend2_output.txt", None),
     ("loop_power_amend3", "analysis/loop_power_amend3_output.txt", None),
+    # GWI v2 (docs/GWI_V2_PROTOCOL.md §4, §7, §12): development on committed seen data (~10 s) and
+    # the quick synthetic check (~40 s); frozen 2026-10-29 (session 2.6) until the 2027-11-15 scoring.
+    ("gwi_v2_development", "analysis/gwi_v2_development_output.txt", None),
+    ("gwi_v2_synthetic_quick", "analysis/gwi_v2_synthetic_quick_output.txt", None),
     # SMF (§7-§13) and synergy (session 8), frozen 2026-10-28 (F5): rerun from committed data,
     # no refetch. The smf_spf/smf_ip recordings carry two openpyxl warning lines ("header or
     # footer") that the weekly run sends to stderr; they are filtered out of the comparison.

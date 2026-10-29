@@ -4,12 +4,35 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 09:55):** session 2.5 (loop test, known history) closed. Next: session 2.6 (GWI v2). Earlier positions: `docs/SESSION_LOG.md`.
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (179), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Plan position (29 Oct, 10:35):** session 2.6 (GWI v2, pre-registered prospective test) closed. Next: session 2.7 (SMF v2). GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (189), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.6 (2026-10-29, 09:55–10:35) — GWI v2 (H2; infrastructure; prospective test pre-registered)
+
+**Done when met: yes.** Protocol `docs/GWI_V2_PROTOCOL.md`, code `emo/gwi_v2.py`, scoring `analysis/gwi_v2_prospective.py`, fetch `scripts/fetch_gwi_v2.py` (refuses before 2027-11-15) + `.github/workflows/gwi_v2_fetch.yml`, 10 tests, synthetic checks: 4feca51 and follow-ups. **Scoring date: Mon 15 Nov 2027** (window 1 Nov 2026 – 31 Oct 2027; one scoring, no interim look). Old GWI files and results unchanged.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- v2 method: causal same-weekday level (8 weeks) + seasonal miss at the same time in earlier years (364-day lags, 2–3 years); causal 365-day robust scale; per-stream causal rates; Poisson-binomial tail; common-mode filter (≥ 15 % of the other panel articles igniting within ±1 day); event test on a joint 14-day block-permutation null with H and D = H − placebo, Holm.
+- Development on seen data (exploratory, §4): rule 1 found no α_day (shared excess in Mar–Apr 2020 and late December; September excess of v1.1 gone); rule 2 with the filter: **α_day = 3e-4**.
+- Tests: 20 placebo articles (calibration: 97.5 % block-bootstrap bound ≤ 2q and no article Holm-significant above 2q) and USGS M ≥ 7.0 earthquakes on "Earthquake" (Adrian's choice, 09:58).
+- Synthetic (§7, §12): calibration P(PASS) 0.908 at q, 0.048 at 2q; event test FPR ≤ 0.017, power 0.70–0.96 at hit rate 0.3; A2 shared shocks: filtered false-ignition 0.0008 vs 0.0912 unfiltered, single-article spikes kept 0.90.
+- Source check (run 40848154988; no pageviews, no event in the window): USGS query and columns work; all 21 titles resolve (Fern 11/12 editions).
+- Review (Adrian 10:21, "1 - yes, 2 - yes"): A2 shared-shock scenario added; `gwi_v2_development` and `gwi_v2_synthetic_quick` added to the weekly frozen runs.
+
+**Claude's mistakes (fixed, recorded):** (1) 95 % bootstrap bound over-passed at 2q (0.083–0.10); replaced by 97.5 % before commit. (2) Power figure written into the protocol before the run finished; corrected before commit. (3) v1.1 comparison in synthetic part A was not like-for-like; dropped. (4) A sed edit for 2.12 also changed the 2.8 prompt's hypothesis line; reverted in the close.
+
+**Open (each with reason)**
+- Filter and α tuned on three seen articles after rule 1 failed. Reason: needs time (the prospective calibration tests transfer; 15 Nov 2027).
+- Per-article check detects only gross single-article excess (one article at 5q fails 44 %). Reason: needs time (more days); stated in §9.
+- Scoring run itself. Reason: needs time; 15 Nov 2027, in session 2.12's prompt. The cron token expires 26 Oct 2027 (renew from 19 Oct 2027).
+- Weekly run with the new frozen GWI v2 scripts. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.7 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.5 (2026-10-29, 09:32–09:55) — hurricane loop test on 2015–2025 (H3, H4, H5; pre-registered on known history)
 

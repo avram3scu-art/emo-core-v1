@@ -48,7 +48,7 @@ Plan 2.0 rebuilds the vision from what works. **The emergent mind is defined as 
 | # | Hypothesis | Fails if | Status |
 |---|---|---|---|
 | H1 | Predict: forecast skill improves over time (supports the predict link only; carries no weight on the mind claim) | τ_I = 0 on the domain's forecasts | NHC 2.3–4.0%/yr [exploratory] |
-| H2 | Attend: attention ignites on hazard events beyond calendar and seasonal drivers, with a threshold that transfers | GWI v2 fails its prospective calibration or event test | partial |
+| H2 | Attend: attention ignites on hazard events beyond calendar and seasonal drivers, with a threshold that transfers | GWI v2 fails its prospective calibration or event test | partial. *Note 29 Oct 2026 (session 2.6):* GWI v2 pre-registered (`docs/GWI_V2_PROTOCOL.md`): 20-placebo calibration and M ≥ 7 earthquake event test on 1 Nov 2026 – 31 Oct 2027, scored 15 Nov 2027 |
 | H3 | Decide-act: action follows each event with an event-specific, measurable lag | lags not measurable from official records for most events | ozone/climate, PPE, mpox profiles |
 | H4 | **Coupling beyond procedure**: events with earlier attention or better forecasts get faster action, after controlling for severity, region and every rule-based trigger, and beating the independent-agencies null | no significant association at power ≥ 0.8, or an equivalence bound excludes it | not tested |
 | H5 | **Learning**: action lags shrink across seasons more than intensity mix and forecast gains explain | no significant trend in residual lags at adequate power | not tested. *Note 29 Oct 2026 (session 2.3):* synthetic power 0.12–0.41 with ~9 seasons (`docs/LOOP_PROTOCOL.md` §10); adequate power is not reachable before about 2030, so a non-significant H5 reads "not shown at this size", never FAIL |
@@ -117,7 +117,7 @@ Sessions 2.8, 2.10, 2.12 have fixed dates; 2.11, 2.18 and 2.21 depend on other p
 | 2.9 | UIA 2.0, He test | H4 | result recorded |
 | 2.10 | Ledger scoring (after 31 Dec 2026) | H7 | scores deposited |
 | 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
-| 2.12 | Score 2027 (Dec 2027) | H4, H5, H7 | blind results recorded |
+| 2.12 | Score 2027 (Dec 2027) + GWI v2 scoring | H2, H4, H5, H7 | blind results recorded |
 
 **Phase C: credibility**: 2.13 white paper 2.0; 2.14 software paper; 2.15 release 1.0; 2.16 State of the Mirror 2027; 2.17 briefs.
 
@@ -248,8 +248,8 @@ Done when: agreement result (if a sheet exists) and feasibility note committed.
 ### 2.12 2027 season blind scoring (H4, H5, H7; December 2027)
 
 ```text
-EMO session 2.12: score the 2027 season. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.12 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H4, H5, H7. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.12 task: build the 2027 rows exactly as in 2.4, score the registered predictions and the H4/H5 tests on 2027 only (class: blind), report every condition, and apply repair-don't-drop to any FAIL.
+EMO session 2.12: score the 2027 season. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.12 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H2, H4, H5, H7. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.12 task: build the 2027 rows exactly as in 2.4, score the registered predictions and the H4/H5 tests on 2027 only (class: blind), report every condition, and apply repair-don't-drop to any FAIL. Also (H2): if not done since 15 Nov 2027, run .github/workflows/gwi_v2_fetch.yml, record its result in docs/GWI_V2_PROTOCOL.md §11, README and RECORD (class: pre-registered blind), and apply repair-don't-drop to any FAIL.
 Done when: results committed; README, page and STATUS updated.
 ```
 

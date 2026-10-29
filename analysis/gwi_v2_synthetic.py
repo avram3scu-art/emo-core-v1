@@ -5,6 +5,10 @@ A. Pipeline: false-ignition rate of v2 (alpha_day 3e-4; unfiltered and with the
    seasonality, a December dip, serial correlation and shared factors.
 B. Calibration decision rule (§5): P(PASS) when the true false-ignition rate is q, 2q, ...
 C. Event test (§6): false-positive rate (no event effect) and power by number of events.
+A2. Shared shocks (added at the session 2.6 review): as A, plus global episodes that lift every
+   article for 3-20 days (school closures, holidays) and single-article event spikes; reports
+   the false-ignition rate with and without the common-mode filter and the share of
+   single-article spikes the filter keeps. Own seed, run last, so A-C are unchanged.
 Run from the repository root: python analysis/gwi_v2_synthetic.py [--quick]
 """
 
@@ -75,6 +79,45 @@ def part_a(n_art: int) -> None:
           f" target q = {Q}")
 
 
+def part_a2(n_art: int, seed: int = 2026102902) -> None:
+    rng = np.random.default_rng(seed)
+    days = pd.date_range("2022-01-01", "2026-12-31", freq="D")
+    score = days[days >= "2026-01-01"]
+    common = np.zeros(len(days))
+    for t in range(1, len(days)):
+        common[t] = 0.7 * common[t - 1] + rng.normal(0, 0.03)
+    shock = np.zeros(len(days))
+    for year in range(2022, 2027):
+        for _ in range(3):
+            start = int(rng.integers(0, 345)) + int(np.searchsorted(days, pd.Timestamp(f"{year}-01-01")))
+            shock[start:start + int(rng.integers(3, 21))] = rng.uniform(0.4, 0.9)
+    spike_days = sorted(rng.choice(np.where(days >= "2026-01-15")[0], 10, replace=False))
+    res, spiked = [], []
+    for i in range(n_art):
+        v = synth_article(days, common + rng.uniform(0.5, 1.5) * shock, rng)
+        if i < 10:  # article i gets one own spike on spike_days[i]
+            v.iloc[spike_days[i]] *= 15
+            spiked.append((i, days[spike_days[i]]))
+        r2 = compute_gwi_v2(v, ALPHA_DAY)
+        res.append(r2.ignition.astype(float).where(r2.scored))
+    p2 = pd.DataFrame(dict(enumerate(res))).loc[score]
+    filt = pd.DataFrame({i: (p2[i] == 1) & ~common_mode(p2[i] == 1, p2.drop(columns=i)) for i in p2})
+    own = {(i, d) for i, d in spiked}
+    keep_spike = np.mean([bool(filt.loc[d, i]) for i, d in spiked])
+    hit_spike = np.mean([bool(p2.loc[d, i] == 1) for i, d in spiked])
+    mask = pd.DataFrame(False, index=p2.index, columns=p2.columns)
+    for i, d in own:
+        mask.loc[d, i] = True
+    sh = pd.Series(shock, index=days).loc[score] > 0
+    unf = p2.where(~mask).to_numpy()
+    fil = filt.where(~mask).astype(float).to_numpy()
+    print(f"A2. Shared shocks: {n_art} synthetic articles, 3 global episodes a year (3-20 days), "
+          f"{int(sh.sum())} shock days in 2026; {len(spiked)} single-article spikes:")
+    print(f"   false-ignition rate unfiltered {np.nanmean(unf):.4f} (shock days {np.nanmean(unf[sh.to_numpy()]):.4f});"
+          f" filtered {np.nanmean(fil):.4f} (shock days {np.nanmean(fil[sh.to_numpy()]):.4f}); target q = {Q}")
+    print(f"   single-article spikes ignited {hit_spike:.2f}, kept by the filter {keep_spike:.2f}")
+
+
 # ---------- B, C ----------
 def clustered(T: int, rate: float, rng, cont: float = 0.33) -> np.ndarray:
     a = rate * (1 - cont) / (1 - rate)
@@ -132,3 +175,4 @@ if __name__ == "__main__":
     part_a(6 if QUICK else 20)
     part_b(100 if QUICK else 500)
     part_c(50 if QUICK else 300, 199 if QUICK else 999)
+    part_a2(6 if QUICK else 20)

@@ -13,3 +13,6 @@ C. Event test, test article + 20 placebos, 300 reps, 999 permutations; base wind
    n=12  h1=0.0: 0.000; h1=0.3: 0.863; h1=0.5: 0.993; h1=0.7: 1.000
    n=15  h1=0.0: 0.017; h1=0.3: 0.873; h1=0.5: 0.997; h1=0.7: 1.000
    n=20  h1=0.0: 0.003; h1=0.3: 0.960; h1=0.5: 0.997; h1=0.7: 1.000
+A2. Shared shocks: 20 synthetic articles, 3 global episodes a year (3-20 days), 49 shock days in 2026; 10 single-article spikes:
+   false-ignition rate unfiltered 0.0912 (shock days 0.6762); filtered 0.0008 (shock days 0.0031); target q = 0.005
+   single-article spikes ignited 1.00, kept by the filter 0.90

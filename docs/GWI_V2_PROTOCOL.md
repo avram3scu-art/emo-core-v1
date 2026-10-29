@@ -116,3 +116,9 @@ False-positive rate ≤ 0.017 at every n (nominal 0.05; conservative because bot
 ## 11. Results
 
 (empty until the scoring run)
+
+## 12. Additions after the protocol commit (infrastructure; the test in §1–§9 is unchanged)
+
+Session 2.6 review, Adrian's "1 - yes, 2 - yes" (29 Oct 2026, 10:21):
+- **A2, shared shocks** (`analysis/gwi_v2_synthetic.py`, own seed 2026102902, run after A–C, whose numbers are unchanged): 20 synthetic articles with 3 global episodes a year (3–20 days, all articles lifted) and 10 single-article spikes. False-ignition rate unfiltered 0.0912 (0.6762 on the 49 shock days); **filtered 0.0008** (0.0031 on shock days); target q = 0.005. Single-article spikes ignited 1.00 and were **kept by the filter 0.90**. The filter removes shared shocks and costs about a tenth of single-article ignitions here; synthetic only.
+- **Weekly frozen runs:** `gwi_v2_development` and `gwi_v2_synthetic_quick` (`analysis/gwi_v2_synthetic_quick.py`, the `--quick` run, ~40 s) added to `scripts/weekly_run.py` REPRO; any change to `emo/gwi_v2.py` that alters the method now blocks the weekly commit before the scoring.
