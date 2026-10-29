@@ -45,3 +45,34 @@ Power, strata by n, odds ratio per SD of A: OR 1.5: 0.17 / 0.30 / 0.36 / 0.70; O
 1. A severity measure independent of attention and decision, available for each episode after the fact (candidate, unverified: EFAS or GloFAS discharge reanalysis return period at the notified river; access and licence not checked).
 2. A test that adjusts for it continuously (e.g. permutation of A residuals on severity, or a logistic model with a permutation null within storm clusters), with synthetic FPR ≤ 0.05 under the scenarios of §5 and stated power at N 20–45.
 3. Registration before 31 Dec 2028 and before any data of the period are opened; the §3 definitions stay as fixed here.
+
+## 7. Severity source: verdict (session 2.11c, 29 Oct 2026; documentation only, no data downloaded)
+
+**Verdict: available, with conditions.** A per-episode severity measure that neither attention nor decision can affect exists after the fact: simulated river discharge from the CEMS-Flood historical runs, scored against the published Gumbel flood thresholds.
+
+| item | EFAS historical (primary) | GloFAS historical (fallback) |
+|---|---|---|
+| what | LISFLOOD discharge forced with gridded observed precipitation and temperature | LISFLOOD discharge forced with ERA5 reanalysis |
+| coverage | 1 Jan 1992 to near real time (v5.0) | 1 Jan 1979 to near real time (v4.0, v5.0) |
+| latency | page states both "6 day delay" and "minimum of 1 month lag" (conflict recorded; irrelevant, scoring is after 31 Jan 2029) | intermediate (ERA5T) daily, consolidated monthly; delay in days not stated |
+| grid | 1 arcminute (about 1.5 km) | 0.05° |
+| thresholds | EFAS v5.1 threshold files: return periods 1.5–500 years plus Gumbel μ, σ (L-moments), NetCDF, direct links | GloFAS v4.0 files, same set, fitted to 1979–2022 annual maxima |
+| licence | CEMS-FLOODS datasets licence: free access; reproduction, modification, publication allowed with the notice "Generated using (or Contains modified) Copernicus Emergency Management Service information [year]"; information only, not a warning | same |
+| account | yes: EWDS registration, personal access token, and manual acceptance of the dataset's terms of use on its page | same |
+
+Independence: the discharge is a model run from meteorological inputs; Wikipedia views and CEMS activations do not enter it. The current EFAS forecasts (which trigger notifications) are partner-only; the historical runs are not.
+
+**Conditions and limits (recorded before any design):**
+1. **Account (Adrian's decision):** an EWDS account and token are needed; Claude cannot create them. The fetch will run in GitHub Actions with the token as a secret, after 31 Jan 2029.
+2. **Hazard, not impact:** discharge return period measures the hydrological hazard. Attention and activation respond to impacts (people, damage), which discharge only partly predicts. Any adjustment for it leaves the impact part unadjusted; this is the main validity threat and is simulated as severity measurement error in §8.
+3. **Version drift:** thresholds are published for the current versions only (EFAS v5.1, GloFAS v4.0). The version used must be the one whose threshold files exist when scored; the version string is recorded then.
+4. **Not checked:** whether EWDS allows spatial subsetting of `efas-historical` (data volume); the EFAS FAQ page names historical data among partner downloads, while the licence and dataset page grant free access under registration; that tension is recorded, and the GloFAS fallback is used if EFAS historical proves restricted.
+
+Sources (opened 29 Oct 2026):
+- [EWDS: efas-historical](https://ewds.climate.copernicus.eu/datasets/efas-historical)
+- [EWDS: cems-glofas-historical](https://ewds.climate.copernicus.eu/datasets/cems-glofas-historical)
+- [CEMS Confluence: Auxiliary Data (flood thresholds)](https://confluence.ecmwf.int/display/CEMS/Auxiliary+Data)
+- [CEMS Confluence: FAQ in EFAS](https://confluence.ecmwf.int/spaces/CEMS/pages/293701841/7+FAQ+in+EFAS)
+- [CEMS-FLOODS datasets licence (rev. 1)](https://ewds.climate.copernicus.eu/licences/cems-floods)
+- [EWDS: CDSAPI setup](https://ewds.climate.copernicus.eu/how-to-api)
+- Not usable: https://european-flood.emergency.copernicus.eu/en/node/260 (page body did not render).
