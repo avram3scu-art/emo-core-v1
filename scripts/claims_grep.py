@@ -26,6 +26,8 @@ ORDINAL = re.compile(
 
 # Remaining hits, judged one by one (file, word or phrase in the line) -> justification.
 MANUAL = [
+    ("analysis/loop_forecasts_2027.py", "first covers", "ordinal: earliest HURDAT2 file covering 2027; string is written into the registered ledger (sha256 ea993925), so it is not reworded"),
+    ("analysis/loop_power_2027.py", "first reaches", "ordinal: earliest point the pooled count reaches 12; file committed before its recorded run"),
     ("README.md", "validated recommender", "negation: RDL is not a validated recommender"),
     ("README.md", "live observatory", "states that the superseded documents' live observatory does not exist"),
     ("README.md", "[blind]", "definition of the evidence class"),

@@ -268,14 +268,14 @@ Descriptive (no test): Y_state n 24, min −1, median 1, max 50 days; Y_fed n 24
 
 ## 20. Amendments 7–9 for the 2027+ blind arm (session 2.8, 29 Oct 2026; committed before any 2015–2025 lag value was opened in this session and before any 2027 record exists)
 
-Approved by Adrian in the 2.5 review (29 Oct 2026, 09:53, "2 a - c yes"). **They apply to seasons 2027 and later only; nothing in §2–§19 changes for 2015–2025, and the §19 results stand as recorded.** Evidence class of this section: infrastructure (rules and synthetic method check); the tests it defines are **pre-registered blind**. 2027 rows are built as in §16 with the HURDAT2 file that first covers the season (expected about May of the following year; same timing as `docs/SMF_PROTOCOL.md` §15).
+Approved by Adrian in the 2.5 review (29 Oct 2026, 09:53, "2 a - c yes"). **They apply to seasons 2027 and later only; nothing in §2–§19 changes for 2015–2025, and the §19 results stand as recorded.** Evidence class of this section: infrastructure (rules and synthetic method check); the tests it defines are **pre-registered blind**. 2027 rows are built as in §16 with the earliest HURDAT2 file that covers the season (expected about May of the following year; same timing as `docs/SMF_PROTOCOL.md` §15).
 
 ### 20.1 Amendment 7 (repair of H3, `docs/FAILURES.md` F12)
 
 - **Event set:** HU+TS (§2, §16 build rules 1–3). Reason: F12 showed the TS dilution came from the denominator, not from the matching; with the denominator below, TS storms without a DR no longer count, and a TS storm that does get a DR keeps a measurable lag.
 - **Denominator D:** events with at least one FEMA record of declaration type DR whose type qualifies (§3.1 with amendment 5), `state` = k and `incidentBeginDate` in the §3.1 window, counted **before** the name and ambiguity rules. So an event whose DR cannot be attributed (ambiguous) stays in D as not measured.
 - **Measured:** the event is matched to a DR (§3.1, §16 rule 5) and both Y_state and Y_fed are valid.
-- **H3r test:** exact one-sided binomial test of share measured > 0.5, p < 0.05, and IQR(Y_state) > 0 (as §8.1). **Run once**, in the first scoring session at which the pooled 2027+ D reaches 12 (timing decided from D counts only, which do not depend on whether an event is measured); before that, each season reports "H3r not yet run (D = n)". PASS needs both conditions; otherwise FAIL.
+- **H3r test:** exact one-sided binomial test of share measured > 0.5, p < 0.05, and IQR(Y_state) > 0 (as §8.1). **Run once**, in the earliest scoring session at which the pooled 2027+ D reaches 12 (timing decided from D counts only, which do not depend on whether an event is measured); before that, each season reports "H3r not yet run (D = n)". PASS needs both conditions; otherwise FAIL.
 - **Declaration-rate measure (separate, descriptive, no pass/fail):** share of events with any FEMA declaration (DR or EM, any incident type) with `state` = k and `incidentBeginDate` in the §3.1 window, overall and by status at t0 (HU, TS), with Clopper–Pearson 95% intervals; per season and pooled. It records how often the decide-act link fires, which §8.1 had mixed into measurability.
 - **H4 at this event set:** the storms that enter H4 are those with both lags, which in practice are the HU-landfall storms; the planning reference is §15's HU-only known-history power **0.40 at r = 0.5** (27 storms, six pairs). The blind arm's own power at realistic 2027+ sizes is in §20.4.
 
@@ -303,7 +303,7 @@ Code `analysis/loop_power_2027.py` (imports `analysis/loop_power.py` and `analys
 
 **Evidence class when scored: pre-registered blind** (no 2027 landfall exists on 29 Oct 2026). Ledger `data/loop_forecast_ledger.csv`, fingerprint `data/loop_forecast_ledger.sha256`; deposited as a new version of the forecast-ledger record on Zenodo (DOI 10.5281/zenodo.23507467), with the RDL ledger unchanged. Moves H7 (PLAN §4).
 
-1. **Events:** 2027 events of the HU+TS set (§2, §16 rules 1–3, §3.1 with amendment 5), from the HURDAT2 file that first covers 2027 and OpenFEMA pulled the same day.
+1. **Events:** 2027 events of the HU+TS set (§2, §16 rules 1–3, §3.1 with amendment 5), from the earliest HURDAT2 file that covers 2027 and OpenFEMA pulled the same day.
 2. **Questions (binary, per event):** Q1 the event is matched to a qualifying DR. For events with a matched DR and the lag valid: Q2 Y_state ≤ 0 days; Q3 Y_state ≤ 7; Q4 Y_fed ≤ 1; Q5 Y_fed ≤ 7. Thresholds fixed here before any lag value is opened this session.
 3. **Intensity class:** Q1 by status at t0 (HU, TS). Q2–Q5 by V at t0: major (≥ 96 kt) or not; if either class has fewer than 5 measured 2015–2025 storms, Q2–Q5 use one pooled probability (no conditioning).
 4. **Model ("2015–2025 model"):** p = (k + 0.5)/(n + 1) over the 2015–2025 rows of `data/loop_hurricanes/loop_events.csv` in that class (Jeffreys posterior mean). Code `analysis/loop_forecasts_2027.py`.
