@@ -71,9 +71,12 @@ def api(params: dict[str, str]) -> tuple[str, dict]:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    url, helpj = api({"action": "help", "modules": "main|query|query+info|query+pageprops|query+revisions",
-                      "helpformat": "wikitext"})
-    (OUT / "api_help.json").write_text(json.dumps({"url": url, "accessed": now(), "response": helpj}, indent=1) + "\n")
+    try:  # documentation only: never blocks the data fetch
+        url, helpj = api({"action": "help", "modules": "main|query|query+info|query+pageprops|query+revisions",
+                          "helpformat": "wikitext", "wrap": "1"})
+        (OUT / "api_help.json").write_text(json.dumps({"url": url, "accessed": now(), "response": helpj}, indent=1) + "\n")
+    except RuntimeError as exc:
+        print(f"API help not saved: {exc}", flush=True)
     with open(ROOT / "data" / "loop_hurricanes" / "sources" / "events.csv", newline="") as f:
         events = list(csv.DictReader(f))
     for e in events:
