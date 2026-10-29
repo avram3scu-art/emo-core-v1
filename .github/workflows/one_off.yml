@@ -14,7 +14,7 @@ on:
         description: Which analysis
         required: true
         type: choice
-        options: [smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip, synergy-climate, nhc-pdf]
+        options: [smf-co2-lead12, smf-co2-leads, smf-co2-lead18, smf-elec, smf-spf, smf-ip, synergy-climate, nhc-pdf, gwi-v2-sources]
       commit:
         description: Commit the refetched data and result (overwrites the recorded files)
         type: boolean
@@ -45,6 +45,7 @@ jobs:
                         echo "::notice title=nhc-download::HTTP $code; $(file nhc.pdf 2>&1 | cut -c1-200)"
                         sha256sum nhc.pdf > results/nhc_check/pdf.sha256; python -c "import pdfplumber,sys; p=pdfplumber.open('nhc.pdf'); open('results/nhc_check/nhc_pdf.txt','w').write(chr(12).join(pg.extract_text(layout=True) or '' for pg in p.pages))"
                         head -c 3000 results/nhc_check/nhc_pdf.txt > out.txt; echo "paths=results/nhc_check" >> "$GITHUB_ENV"; paths="" ;;
+            gwi-v2-sources) python scripts/check_gwi_v2_sources.py > out.txt 2>&1 || true; cat out.txt; paths="" ;;
             synergy-climate) f=fetch_synergy_climate; a=synergy_climate; r=synergy_climate; paths="data/sources/synergy_climate" ;;
           esac
           if [ -n "$paths" ]; then
