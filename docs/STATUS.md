@@ -4,12 +4,34 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 13:00):** session 2.11 closed (no coder sheet yet; EU floods feasible pending, heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11b (flood loop: data check and prospective protocol, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 13:05):** session 2.11b closed (C1 pass for prospective use; flood data definitions registered; candidate test rejected on synthetic FPR). Session 2.11 closed (no coder sheet yet; heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11c (flood severity measure and test registration, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.11b (2026-10-29, 12:53–13:05) — flood loop: C1 and prospective protocol (H6, H4; infrastructure)
+
+**Done when met: yes** (second branch: reason recorded). C1 verdict c6fccc1; synthetic code c6fccc1, 8f1b619 (each before its run); protocol 7106794; claim-word justification 0f14497.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- C1 (`docs/SECOND_DOMAIN_FEASIBILITY.md` §2b): EFAS bulletin Table 1 lists each formal notification with forecast and issue date, lead time, river, country (2017, 2019, 2025 opened); alerts since 2007 (ECMWF memo 778). **Pass for a prospective design; not for a 10-year historical test:** criteria changed (> 4000 km² in 2016, > 2000 km² now); bulletin text and table counts disagree (6 vs 4, 37 vs 39), so the table is the source. EU floods feasible.
+- `docs/FLOOD_LOOP_PROTOCOL.md`: data definitions registered for notifications issued 30 Oct 2026–31 Dec 2028 (episodes per country, CEMS activation in [d0+2, d0+30], river pageviews in the country's language). No test registered.
+- Synthetic (`analysis/flood_loop_power.py`): the candidate within-strata rank test (strata by notification count) has FPR 0.034–0.049 when attention is unrelated to severity, but 0.08–0.75 under severity confounding; tertiles of a measured severity 0.05–0.48; power at OR 3 0.29–0.67 for N 20–40. Candidate rejected before any data exist.
+- No flood notification, pageview or activation of the period opened; no lag computed.
+
+**Claude's mistakes:** none found. One claim-word hit (a cited source title) justified in `scripts/claims_grep.py`.
+
+**Review (Adrian 13:03):** point 1 unanswered, Claude's recommendation "no more now" applied; 2a yes (next session 2.11c: severity source and a continuously adjusted test); 2b accepted (2015–2016 bulletins known from search titles only; not needed prospectively).
+
+**Open (each with reason)**
+- Registered flood test. Reason: scope; needs an independent severity measure (2.11c).
+- Severity source (EFAS/GloFAS discharge reanalysis). Reason: scope; unverified, 2.11c.
+- Registration deadline: before any data of the period are opened, at the latest 31 Dec 2028. Reason: needs time.
+
+**Next:** session 2.11c (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.11 (2026-10-29, 12:41–13:00) — DAC agreement and second-domain feasibility (H6 groundwork; infrastructure)
 

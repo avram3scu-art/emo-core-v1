@@ -117,6 +117,8 @@ Sessions 2.8, 2.10, 2.12 and 2.12b have fixed dates (2.12b: when the HURDAT2 fil
 | 2.9 | UIA 2.0, He test | H4 | result recorded |
 | 2.10 | Ledger scoring (after 31 Dec 2026) | H7 | scores deposited |
 | 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
+| 2.11b | Flood loop: C1 and protocol | H6, H4 | C1 verdict; protocol or reason (done: definitions registered, statistic rejected) |
+| 2.11c | Flood loop: severity measure, test registration | H6, H4 | severity-source verdict; registered test with synthetic FPR and power, or reason |
 | 2.12 | GWI v2 scoring (15 Nov 2027) | H2 | blind result recorded |
 | 2.12b | Score the 2027 hurricane season (after HURDAT2 2027, ~May 2028) | H3, H4, H7 | blind results recorded |
 
@@ -255,6 +257,16 @@ Done when: agreement result (if a sheet exists) and feasibility note committed.
 EMO session 2.11b: flood loop, data check and prospective protocol. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.11b in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H6 (and H4 power by pooling). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
 Session 2.11b task: using docs/SECOND_DOMAIN_FEASIBILITY.md (EU floods feasible pending; C1 open), (1) settle C1 from documentation: does the EFAS formal-notification archive reach back 10 years with day-level dates per river and country; (2) if yes, write and commit a prospective flood-loop protocol for events after its commit date: events = EFAS formal notifications in EU states, decide-act = CEMS Rapid Mapping activation by a national authority (no activation is a valid outcome), attend = Wikipedia pageviews, with statistic, pass/fail rule, and synthetic false-positive rate and power at about 10–20 events a year, before any flood lag is computed. Do not compute any lag from data/second_domain/cems_activations_2026-10-29.json (only counts were seen in 2.11).
 Done when: C1 verdict committed, and either the protocol with its synthetic power is committed or the reason it cannot be is recorded.
+```
+
+### 2.11c Flood loop: severity measure and test registration (H6, H4; from 2.11b)
+
+*From the 2.11b review (Adrian 13:03, "2a - yes").*
+
+```text
+EMO session 2.11c: flood loop, severity measure and test registration. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.11c in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H6 (and H4 power by pooling). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.11c task: using docs/FLOOD_LOOP_PROTOCOL.md (data definitions fixed in 2.11b for notifications issued 30 Oct 2026 to 31 Dec 2028; the candidate rank test was rejected, synthetic FPR 0.08-0.75 under severity confounding, §5), (1) check from documentation whether a severity measure independent of attention and decision is available per episode after the fact (candidate: EFAS or GloFAS discharge reanalysis return period at the notified river; access, licence, latency and whether an account is needed); (2) if yes, design a test that adjusts for it continuously (e.g. permutation of A residuals on severity, or a logistic model with a permutation null within storm clusters), commit its code before running it, and show from synthetic data FPR <= 0.05 under every §5 scenario plus power at N 20-45; then register it in the protocol. Do not open any EFAS notification, pageview or CEMS activation of the period, and compute no lag from data/second_domain/cems_activations_2026-10-29.json. The §3 definitions stay unchanged.
+Done when: severity-source verdict committed, and either the registered test with its synthetic FPR and power is committed or the reason it cannot be is recorded.
 ```
 
 ### 2.12 GWI v2 scoring (H2; on or after Mon 15 Nov 2027)
