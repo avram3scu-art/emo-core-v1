@@ -11,6 +11,16 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. For JOSS (not before 19 Apr 2027): verify the code and record it before disclosure point 2 can be written; reply to editors and reviewers without AI. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
 
+## Session 3.0-design (2026-10-29, 18:17–) — strategy and rules 3.0 (no hypothesis moved; proposes H8, H9)
+
+**Request (Adrian, 18:17):** five pillars (credibility, mirror, continuous running, benefit, AI as fifth pillar "to become a substitute for humanity's mind"); upgrade the roadmap; CLAUDE.md 3.0; a new strategy. Six documents attached, committed in `docs/sources/vision/`.
+
+**Done (proposed, not in force):** `docs/STRATEGY_3_0.md` (diagnosis, five pillars tied to code and hypotheses, H8 self-model and H9 benefit, phases C–H, sessions 3.1–3.10, next prompt); `docs/CLAUDE_3_0_PROPOSED.md` (all 2.0 rules kept; [3.0]: five pillars, code first, self-model rules, published data count as opened, continuous earned, benefit earned, paid services on Adrian's decision). `CLAUDE.md` and `docs/PLAN.md` unchanged until Adrian's yes.
+
+**Pushback recorded:** "substitute for humanity's mind" conflicts with the vision documents' own non-oracular, not-a-control-system principle; recommended "the self-model humanity lacks, tested and never in charge". The loss simulation mentioned by Adrian is not in the repository (gap recorded; usable only if supplied, as exploratory).
+
+**Open (each with reason):** adoption of strategy and CLAUDE.md 3.0; pillar 5 wording; the loss simulation file. Reason: Adrian's decision.
+
 ## Session 2.14 (2026-10-29, 16:38–17:10) — JOSS software paper (no hypothesis moved; infrastructure)
 
 **Done when met: yes.** Checklist, draft and review bab4be9; Adrian's answer and close in this commit. Nothing submitted.
