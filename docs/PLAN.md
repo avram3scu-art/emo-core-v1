@@ -119,7 +119,7 @@ Sessions 2.8, 2.10, 2.12 and 2.12b have fixed dates (2.12b: when the HURDAT2 fil
 | 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
 | 2.11b | Flood loop: C1 and protocol | H6, H4 | C1 verdict; protocol or reason (done: definitions registered, statistic rejected) |
 | 2.11c | Flood loop: severity measure, test registration | H6, H4 | severity-source verdict; registered test with synthetic FPR and power, or reason (done: source available with conditions; test rejected, F13)|
-| 2.11d | Flood loop: repair F13 (new estimand) | H6, H4 | registered repaired test with synthetic error rates and power, or reason and retire recommendation |
+| 2.11d | Flood loop: repair F13 (new estimand) | H6, H4 | registered repaired test with synthetic error rates and power, or reason and retire recommendation (done: sensitivity repair failed; flood attention arm retired, F13) |
 | 2.12 | GWI v2 scoring (15 Nov 2027) | H2 | blind result recorded |
 | 2.12b | Score the 2027 hurricane season (after HURDAT2 2027, ~May 2028) | H3, H4, H7 | blind results recorded |
 
@@ -304,7 +304,7 @@ Done when: results committed; README, page and STATUS updated; ledger outcomes d
 
 ```text
 EMO session 2.13: white paper 2.0. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.13 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (reports H1–H7). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.13 task: revise docs/WHITEPAPER_EMO_what_runs_today.md with the loop results to date, fixing every point of docs/REVIEW_S15_WHITEPAPER.md (disclosure point 2 only after my recorded verification; vision tied to H1–H7; one audience and one ask). Every factual statement links to a repo file or is marked [plan]; evidence class on every result. Then a hostile editor-style review.
+Session 2.13 task: revise docs/WHITEPAPER_EMO_what_runs_today.md with the loop results to date (including: H6 not tested in floods, the flood attention arm retired after three synthetic failures, docs/FLOOD_LOOP_PROTOCOL.md §5, §8, §9 and docs/FAILURES.md F13), fixing every point of docs/REVIEW_S15_WHITEPAPER.md (disclosure point 2 only after my recorded verification; vision tied to H1–H7; one audience and one ask). Every factual statement links to a repo file or is marked [plan]; evidence class on every result. Then a hostile editor-style review.
 Done when: draft committed and reviewed; nothing sent out the same day.
 ```
 

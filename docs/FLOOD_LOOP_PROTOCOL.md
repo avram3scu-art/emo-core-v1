@@ -1,6 +1,6 @@
 # Flood loop (EU): data definitions registered; test statistic not yet registrable
 
-**First line (power and validity rule):** no pass/fail test is registered in this file. All three candidate tests failed their synthetic error-rate checks (§5, §8, §9); the F13 repair (§9, sensitivity analysis, 2.11d) also has power below 0.5 at N 20–45 (OR 3: 0.27–0.38). Claude recommends retiring the flood attention arm (`docs/FAILURES.md` F13). A test may be registered only in a later commit, before any flood notification, pageview or activation of the period is opened.
+**First line (power and validity rule):** no pass/fail test is registered in this file. All three candidate tests failed their synthetic error-rate checks (§5, §8, §9); the F13 repair (§9, sensitivity analysis, 2.11d) also has power below 0.5 at N 20–45 (OR 3: 0.27–0.38). **The flood attention arm is retired** (Adrian, 29 Oct 2026 15:15; `docs/FAILURES.md` F13). The §3 definitions stay on record; a lag description (d0 → activation, no attention test) may be registered later, before any data of the period are opened.
 
 Session 2.11b, 29 Oct 2026. Hypotheses: H6 (H4 in a second domain), H4 power by pooling. Class: infrastructure (definitions and synthetic checks). Feasibility: `docs/SECOND_DOMAIN_FEASIBILITY.md` §2b (C1 pass for prospective use).
 

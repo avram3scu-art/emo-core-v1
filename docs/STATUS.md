@@ -4,12 +4,33 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 13:35):** session 2.11c closed (flood severity source available with conditions, EWDS account needed; severity-adjusted test rejected on synthetic FPR; F13, repair chosen). Session 2.11b closed (C1 pass for prospective use; flood data definitions registered; candidate test rejected on synthetic FPR). Session 2.11 closed (no coder sheet yet; heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11d (repair F13 by a new estimand, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
-- **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, repair chosen 29 Oct 13:31).
+- **Plan position (29 Oct, 15:20):** session 2.11d closed (F13 repair by sensitivity analysis failed its synthetic check; flood attention arm retired, Adrian 15:15). Sessions 2.11–2.11c closed (flood definitions registered, source verdict, two tests rejected). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.13 (white paper 2.0). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, repair attempted 2.11d, retired 29 Oct 15:15).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.11d (2026-10-29, 14:39–15:20) — flood loop: repair F13 by a new estimand (H6, H4; infrastructure)
+
+**Done when met: yes** (second branch: reason and retire recommendation in F13). Code e6fad52 (before its run); result 3141439.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- Repair (a): sensitivity analysis on hidden severity error e (SD, as §8); partial covariance of A, Y on M, M²; parametric-bootstrap null with loadings estimated from the data; e* reported; decision fixed before the run: PASS iff p(0.6) ≤ 0.05 (`docs/FLOOD_LOOP_PROTOCOL.md` §9).
+- Synthetic: error rate at e0 = 0.6 0.015–0.135 at N 20–45 (liberal at N 20–30 even without confounding); power OR 2 0.21–0.23, OR 3 0.27–0.38. Information only, e0 = 0.3: OR 3 power 0.33–0.52, error rate to 0.168 when true error 0.6. **Failed; not registered.**
+- Repair (b): the §3 data (one attention value, one binary decision per episode) define no estimand free of severity; no external search (not attempted; scope).
+- No notification, pageview, discharge or activation of the period opened; no lag computed; §3 unchanged.
+
+**Claude's mistakes:** none found in the result. Push waited for the lock install (ruff missing until it finished); no `--no-verify`. The info-only power range was first written 0.33–0.50; corrected to 0.33–0.52 before commit.
+
+**Review (Adrian 15:15):** 1 no more now; 2a **retire** the flood attention arm (F13); 2b noted (one-parameter model assumes impact loads like discharge); 3 none.
+
+**Open (each with reason)**
+- Flood lag description (d0 → activation) protocol. Reason: scope; optional, register before any data of the period, at the latest 31 Dec 2028.
+- EWDS account. Reason: Adrian's decision; needed only if a discharge-based description is registered.
+
+**Next:** session 2.13 (white paper 2.0; prompt in `docs/PLAN.md` §11, updated with the flood result).
 
 ## Session 2.11c (2026-10-29, 13:12–13:35) — flood loop: severity measure and test registration (H6, H4; infrastructure)
 
