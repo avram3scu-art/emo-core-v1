@@ -146,7 +146,7 @@ a weak-link test needs. Measuring it (UIA §6 point 6) comes before choosing n.
 
 ## 10. He direction test on the hurricane loop, 2015–2025 (session 2.9, 29 Oct 2026; pre-registered on known history)
 
-**Power statement:** filled in §10.6 from the synthetic run, before the data are opened.
+**Power statement (synthetic, §10.6; before the data were opened):** within-season FPR 0.037–0.049 (across-all null 0.665–0.779 under a season shock); power at β = 0.5: 0.54–0.75; **at β = 0.3 power is below 0.5 (0.26–0.41)**, so a non-significant result reads "not shown at this size" for any link weaker than β = 0.5.
 
 **Evidence class: pre-registered on known history.** All 52 events of 2015–2025 entered the session 2.5 run (`docs/LOOP_PROTOCOL.md` §19), and their lag summaries (min/median/max) and counts are published there, so no unused loop event remains; 2026 is excluded (LOOP_PROTOCOL §1) and 2027 rows are reserved for session 2.12b and are not used. Why no prospective test now (CLAUDE.md "Prospective first"): the 2027 blind arm is registered (LOOP_PROTOCOL §20–§21) but cannot reach p < 0.05 for one season. Committed before any lag or link value was opened in session 2.9; inputs read before this commit: the table header and `summary.json` season counts.
 
@@ -174,3 +174,14 @@ a weak-link test needs. Measuring it (UIA §6 point 6) comes before choosing n.
 ### 10.5 Synthetic check (code `analysis/he_loop_power.py`, committed before its run; output `analysis/he_loop_power_output.txt`)
 
 Model of §2 at the realized season sizes (§10.2), m = 3, plus a season shock Z_s ~ N(0, 1) added with weight κ to He and to every letter (κ ∈ {0, 1}). Grid β ∈ {0, 0.3, 0.5}, λ ∈ {0, 0.5}; 2,000 studies, 999 permutations, seed 2026102991. Reported: rejection rate of T-D with the within-season null and with the across-all null. Criterion: within-season FPR ≤ 0.060 at β = 0 in every (λ, κ) cell, else the test is not run and reads "cannot be tested". Expectation written now: within-season holds; across-all over-rejects at κ = 1; power at β = 0.5 below the 0.80 of §9 at n = 24, because the three singleton seasons carry no information and within-season pairs are few.
+
+### 10.6 Result of the synthetic check (single run, 29 Oct 2026, Claude's workspace, 7 min; before the data were opened)
+
+| β | λ | κ | within-season | across-all |
+|---|---|---|---|---|
+| 0 | 0 / 0.5 | 0 | 0.045 / 0.045 | 0.044 / 0.054 |
+| 0 | 0 / 0.5 | 1 | 0.049 / 0.037 | **0.779 / 0.665** |
+| 0.3 | 0 / 0.5 | 0 / 1 | 0.412, 0.374 / 0.277, 0.255 | — |
+| 0.5 | 0 / 0.5 | 0 / 1 | 0.754, 0.733 / 0.574, 0.539 | — |
+
+Criterion met (max within-season FPR 0.049 ≤ 0.060): the test is run. Expectations (§10.5): all three held; the across-all null of §3 is unusable here if seasons share a shock (FPR up to 0.78). Power at β = 0.5 is 0.54–0.75, below 0.80, so even a strong link is missed a quarter to nearly half the time.
