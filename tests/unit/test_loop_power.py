@@ -82,3 +82,20 @@ def test_module_reads_no_file():
 def test_protocol_states_no_record_opened():
     text = (ROOT / "docs/LOOP_PROTOCOL.md").read_text()
     assert "No loop record was opened" in text
+
+
+def test_fe_statistic_removes_season_shocks_exactly():
+    lp = _lp()
+    lp.STAT = "fe"
+    d = lp.simulate(np.random.default_rng(6), lp.SIZES_HUTS)
+    rX, rY, s = lp.pair_resid(d, "A", "Ystate")
+    for k in np.unique(s):
+        assert abs(rX[s == k].sum()) < 1e-9 and abs(rY[s == k].sum()) < 1e-9
+
+
+def test_fe_strong_coupling_detected():
+    lp = _lp()
+    lp.STAT = "fe"
+    d = lp.simulate(np.random.default_rng(3), lp.SIZES_HUTS, c=4.0)
+    p, r, _ = lp.h4_pair(d, "A", "Ystate", np.random.default_rng(4), B=199)
+    assert p < 0.01 and r < 0

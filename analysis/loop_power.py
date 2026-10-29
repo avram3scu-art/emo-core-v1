@@ -17,6 +17,7 @@ DELTA_EQ = 0.3
 KAPPA = 0.5          # share of the season shock common to every link and outcome
 SIG_SEASON = 0.7     # SD of season shocks
 P_MISS = 0.10        # each predictor missing at random
+STAT = "rank"       # H4 statistic: "rank" (§5 as registered, recorded run) or "fe" (§14)
 Y_SHOCK_SIGN = 1.0   # sign of the season shock in the lags; -1 mimics coupling (§13); 1 = recorded run
 SIZES_HU = (2, 4, 2, 2, 6, 2, 3, 1, 5)          # planning assumption, unverified
 SIZES_HUTS = tuple(2 * s for s in SIZES_HU)
@@ -94,9 +95,8 @@ def coupling_coef(r):
         for _ in range(30):
             mid = (lo + hi) / 2
             d = simulate(np.random.default_rng(7), (50,) * 400, c=mid)
-            m = ~np.isnan(d["A"]) & ~np.isnan(d["Ystate"])
-            C = controls(d, m)
-            rr = -corr_rows(resid(u(d["A"][m]), C), resid(u(d["Ystate"][m]), C))
+            rX, rY, _ = pair_resid(d, "A", "Ystate")
+            rr = -corr_rows(rX, rY)
             lo, hi = (mid, hi) if rr < r else (lo, mid)
         _COEF[r] = (lo + hi) / 2
     return _COEF[r]
@@ -145,12 +145,26 @@ def corr_rows(a, b):
     return (a * b).sum(-1) / np.sqrt((a * a).sum(-1) * (b * b).sum(-1))
 
 
-def h4_pair(d, x, y, rng, B=PERMS, naive=False, em=True):
-    """Returns (one-sided p, r, n_within)."""
+def season_dummies(season):
+    k = np.unique(season)
+    return (season[:, None] == k[None, 1:]).astype(float)
+
+
+def pair_resid(d, x, y, em=True):
+    """Residuals of the pair on the controls. STAT "rank": mid-ranks on C (pooled, §5).
+    STAT "fe": raw values on C without year plus season fixed effects (§14)."""
     m = ~np.isnan(d[x]) & ~np.isnan(d[y])
     s = d["season"][m]
+    if STAT == "fe":
+        C = np.column_stack([controls(d, m, year=False, em=em), season_dummies(s)])
+        return resid(d[x][m], C), resid(d[y][m], C), s
     C = controls(d, m, em=em)
-    rX, rY = resid(u(d[x][m]), C), resid(u(d[y][m]), C)
+    return resid(u(d[x][m]), C), resid(u(d[y][m]), C), s
+
+
+def h4_pair(d, x, y, rng, B=PERMS, naive=False, em=True):
+    """Returns (one-sided p, r, n_within)."""
+    rX, rY, s = pair_resid(d, x, y, em=em)
     r = corr_rows(rX, rY)
     if naive:
         perm = np.argsort(rng.random((B, len(rX))), axis=1)
@@ -208,6 +222,22 @@ def blind_test(d_known, d_blind, rng, pair=TRUE_PAIR, B=PERMS):
     mb = ~np.isnan(d_blind[x]) & ~np.isnan(d_blind[y])
     if mb.sum() < 2:
         return 1.0
+    if STAT == "fe":
+        sk = d_known["season"][mk]
+        Ck = np.column_stack([controls(d_known, mk, year=False), season_dummies(sk)])
+        nc = controls(d_known, mk, year=False).shape[1]
+        bx = np.linalg.lstsq(Ck, d_known[x][mk], rcond=None)[0][1:nc]
+        by = np.linalg.lstsq(Ck, d_known[y][mk], rcond=None)[0][1:nc]
+        Cb = controls(d_blind, mb, year=False)[:, 1:]
+        sb = d_blind["season"][mb]
+        rX, rY = d_blind[x][mb] - Cb @ bx, d_blind[y][mb] - Cb @ by
+        for k in np.unique(sb):
+            rX[sb == k] -= rX[sb == k].mean()
+            rY[sb == k] -= rY[sb == k].mean()
+        S = -(rX * rY).sum()
+        perm = within_perm(sb, B, rng)
+        null = -(rX[perm] * rY[None, :]).sum(-1)
+        return (1 + (null >= S - 1e-12).sum()) / (B + 1)
     Ck, Cb = controls(d_known, mk), controls(d_blind, mb)
     ux_k, uy_k = u(d_known[x][mk]), u(d_known[y][mk])
     bx = np.linalg.lstsq(Ck, ux_k, rcond=None)[0]

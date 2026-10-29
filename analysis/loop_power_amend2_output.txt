@@ -1,0 +1,9 @@
+Loop power amendment 2 (docs/LOOP_PROTOCOL.md §13). Synthetic only; no loop record read.
+seed 2026102925, 2000 studies/cell, 999 permutations, KAPPA 0.9, Y_SHOCK_SIGN -1.0
+
+SIG_SEASON 0.7 HU    : H4 FPR within 0.038 | naive 0.271 | power r=0.5 within 0.706 | H5 FPR 0.018
+SIG_SEASON 0.7 HU+TS : H4 FPR within 0.009 | naive 0.244 | power r=0.5 within 0.993 | H5 FPR 0.024
+SIG_SEASON 1.5 HU    : H4 FPR within 0.138 | naive 0.713 | power r=0.5 within 0.662 | H5 FPR 0.007
+SIG_SEASON 1.5 HU+TS : H4 FPR within 0.101 | naive 0.842 | power r=0.5 within 0.987 | H5 FPR 0.013
+SIG_SEASON 2.5 HU    : H4 FPR within 0.355 | naive 0.925 | power r=0.5 within 0.700 | H5 FPR 0.009
+SIG_SEASON 2.5 HU+TS : H4 FPR within 0.409 | naive 0.972 | power r=0.5 within 0.988 | H5 FPR 0.006
