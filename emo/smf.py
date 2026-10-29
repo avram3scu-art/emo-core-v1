@@ -212,3 +212,113 @@ def holm(pvalues: list[float]) -> list[float]:
         running = max(running, min(1.0, (m - rank) * pvalues[i]))
         adj[i] = running
     return adj
+
+
+# ---------------------------------------------------------------- SMF v2 (session 2.7)
+#
+# docs/SMF_PROTOCOL.md §14. From v2 the SMF of a forecast product is its *skill against
+# persistence*: is the forecaster's loss smaller than that of a persistence (or
+# climatology-persistence) benchmark, by more than chance, over a pre-registered family of
+# leads/variables (one-sided Diebold–Mariano with the HLN correction, Holm across the family)?
+# The lagged correlation above (compute_smf, v1.2) rewards shared trends rather than skill
+# (audit 2026-10-29, D5); it stays as a descriptive extra (`smf_correlation`) and carries no
+# weight in any verdict. compute_smf itself is frozen so that recorded SMF results reproduce.
+
+SMF_V2_DEFINITION = "skill_vs_persistence_dm_holm_v2"
+
+
+@dataclass
+class SMFSkill:
+    """One test of SMF v2: forecaster vs persistence benchmark on one lead/variable.
+
+    skill      1 - sum(loss_model) / sum(loss_bench) (descriptive; > 0 means the forecaster is better)
+    mean_d     mean loss differential (model - benchmark) over the test units (< 0 favours the model)
+    n          number of forecasts; n_units = number of test units (forecasts, or clusters such as storms)
+    hln, p     Diebold–Mariano statistic with the Harvey–Leybourne–Newbold correction; one-sided p
+    """
+
+    name: str
+    n: int
+    n_units: int
+    lags: int
+    skill: float
+    mean_d: float
+    dm: float
+    hln: float
+    p: float
+    p_holm: float = float("nan")
+    verdict: str = "not scored"
+    extra: dict[str, float] = field(default_factory=dict)
+
+
+def smf_skill(
+    name: str,
+    loss_model: np.ndarray,
+    loss_bench: np.ndarray,
+    lags: int,
+    clusters: np.ndarray | None = None,
+) -> SMFSkill:
+    """SMF v2 test of one forecast product against its persistence benchmark.
+
+    loss_model, loss_bench: per-forecast losses on the same (homogeneous) forecasts, in time order.
+    lags: Newey–West lags of the differential series that is tested (forecast-level, or
+        cluster-level when `clusters` is given).
+    clusters: optional cluster label per forecast (e.g. storm id). Then each cluster's mean
+        differential is one unit (equal weight per cluster), units ordered by first appearance;
+        this is the dependence rule for forecasts that overlap within a cluster.
+    """
+    lm = np.asarray(loss_model, dtype=float)
+    lb = np.asarray(loss_bench, dtype=float)
+    if lm.shape != lb.shape or lm.ndim != 1:
+        raise ValueError("loss_model and loss_bench must be 1-D arrays of equal length")
+    ok = np.isfinite(lm) & np.isfinite(lb)
+    lm, lb = lm[ok], lb[ok]
+    d = lm - lb
+    if clusters is not None:
+        c = np.asarray(clusters)[ok]
+        order: list = []
+        for x in c:
+            if x not in order:
+                order.append(x)
+        d = np.array([d[c == x].mean() for x in order])
+    skill = float(1 - lm.sum() / lb.sum()) if lb.sum() > 0 else float("nan")
+    if len(d) < 3:
+        return SMFSkill(name, len(lm), len(d), lags, skill, float(d.mean()) if len(d) else float("nan"),
+                        float("nan"), float("nan"), float("nan"))
+    r = diebold_mariano(d, np.zeros_like(d), lags)
+    return SMFSkill(name, len(lm), len(d), lags, skill, r["mean_d"], r["dm"], r["hln"], r["p"])
+
+
+def smf_family(tests: list[SMFSkill], alpha: float = 0.05, min_units: int = 0) -> list[SMFSkill]:
+    """Holm over a pre-registered family; returns the tests with p_holm and verdict filled.
+
+    A test with fewer than `min_units` units, or no finite p, is left out of the Holm family and
+    gets the verdict "cannot be tested at this size". PASS = Holm-adjusted p < alpha (which needs
+    mean_d < 0); otherwise FAIL. A FAIL is not evidence of no skill.
+    """
+    fam = [t for t in tests if t.n_units >= min_units and np.isfinite(t.p)]
+    adj = holm([t.p for t in fam]) if fam else []
+    for t, pa in zip(fam, adj, strict=True):
+        t.p_holm = pa
+        t.verdict = "PASS" if pa < alpha and t.mean_d < 0 else "FAIL"
+    for t in tests:
+        if t not in fam:
+            t.verdict = "cannot be tested at this size"
+    return tests
+
+
+def smf_correlation(
+    model: pd.Series,
+    realised: pd.Series,
+    max_lag: int = 0,
+    n_surrogates: int = 199,
+    seed: int = 0,
+) -> SMFResult:
+    """Descriptive extra of SMF v2: lag-corrected correlation of expectation and outcome.
+
+    Same computation as `compute_smf` (v1.2; see its notes and its KPSS guard), with the lag
+    range named for what it is: `max_lag` in samples. Carries no weight in any SMF verdict.
+    """
+    res = compute_smf(model, realised, max_lag_days=max_lag, n_surrogates=n_surrogates, seed=seed)
+    res.metadata = {**res.metadata, "role": "descriptive_extra", "smf_definition": SMF_V2_DEFINITION}
+    return res
