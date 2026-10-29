@@ -1,6 +1,6 @@
 # Hurricane loop tests: pre-registration (session 2.3, 29 Oct 2026)
 
-**Power statement (CLAUDE.md "Power before data").** Filled in §10 from the synthetic run, before any loop record is opened. Until §10 is filled, no test in this file may be run.
+**Power statement (CLAUDE.md "Power before data"; synthetic, §10).** H4, primary event set HU+TS at the planned ~54 storms: false-positive rate ≤ 0.026, power 0.99 at r = 0.5 and 0.79 at r = 0.3. **H5 has power below 0.5** (0.17 at Δ = 1; 0.41 at Δ = 2) and **the 2027-only blind arm has power below 0.5** (0.10–0.32 at r = 0.5): both are run as registered, and a non-significant result reads "not shown at this size". Planned sizes are unverified; power is recomputed at the realized sizes (§8.4).
 
 Moves H3, H4, H5 (`docs/PLAN.md` §4). Evidence class of this file: **infrastructure** (protocol and synthetic method check). The tests it defines carry the class of their run: 2015–2025 = **pre-registered on known history**; 2027 season = **pre-registered blind**.
 
@@ -111,7 +111,27 @@ Committed before it is run. Synthetic data only; the module reads no file.
 
 **Decision rule (fixed now):** primary event set = HU if its H4 power at r = 0.5 is ≥ 0.80; otherwise HU+TS if HU+TS is calibrated and has higher power; otherwise HU, with the power stated in the first line of this file.
 
-(To be filled from `analysis/loop_power_output.txt`.)
+Single run, 29 Oct 2026, in Claude's workspace (not CI). Code `analysis/loop_power.py` (committed e4bb2ab before the run), output `analysis/loop_power_output.txt`. Evidence class: infrastructure (synthetic). Effect size r is the population partial rank correlation of the coupled pair given C (pooled), fixed by bisection on one large synthetic sample: raw coefficient 1.007 for r = 0.3, 1.885 for r = 0.5. (A 100-run smoke check with another seed, before the run, showed that a coefficient r/√(1−r²) gives a much smaller realized r; the calibration was added before the committed run.)
+
+**H4 (6 pairs, Holm, within-season null):**
+
+| Design | n | FPR (r = 0) | power r = 0.3 | power r = 0.5 | "no effect" read at r = 0 / r = 0.3 |
+|---|---|---|---|---|---|
+| HU | 27 | 0.022 | 0.27 | 0.60 | 0.000 / 0.000 |
+| HU, 25% unmatched | ~20 | 0.026 | 0.14 | 0.32 | 0.000 / 0.000 |
+| HU+TS | 54 | 0.004 | 0.79 | **0.99** | 0.035 / 0.015 |
+
+Power counts rejections of the true pair; family-wise rejection is within 0.02 of it. Naive null: 0.024 (HU), 0.005 (HU+TS); EMpre dropped: 0.021, 0.007. All nulls are calibrated (≤ 0.060), and conservative (Holm over six correlated one-sided tests).
+
+**Decision (rule above):** HU power 0.60 < 0.80, HU+TS calibrated with higher power → **primary event set = HU+TS** (§2: status HU or TS at a US landfall; `designatedIncidentTypes` containing H or 4). HU-only is reported as a secondary analysis with no weight.
+
+**H5 (2 outcomes, Holm, 9 seasons):** FPR 0.033 (HU), 0.030 (HU+TS) with severity-mix and forecast-gain trends present (C5 absorbs them). Power at Δ = 1: 0.12 / 0.17; at Δ = 2: 0.26 / 0.41. **Not adequate at any size reachable before 2030**; registered and run, a non-significant result reads "not shown at this size".
+
+**Blind arm (one pair, frozen fit):** FPR 0.016–0.030. Power at r = 0.5: one season of 4: 0.10; of 6: 0.32; three seasons of 4: 0.48; five seasons of 4: 0.68. 0.80 is not reached within five blind seasons of 4 (outside the grid; the pooled run's power is restated each December, §7).
+
+**Expectations (§9) vs result:** held: HU power < 0.8 and HU+TS above it; no "no effect" reading at HU size; H5 < 0.5; 2027-only blind < 0.5. **Did not hold:** the naive null did **not** over-reject (0.024): in this synthetic world the shared season shock is too weak, after the year control and rank residuals, to create false coupling. So the run shows the within-season null is calibrated, but it does **not** show that it is needed; the clustering nuisance is under-stressed. Dropping EMpre also did not over-reject (expected only weakly). The "no effect" reading at the bound r = 0.3 occurs 1.5% of the time (≤ 0.05, as required).
+
+**What this shows and does not show.** It shows the registered tests hold their false-positive rate in a world with severity confounding, nonlinearity, a procedural EM route, trends, skewed tied lags and missing links, and that only the HU+TS set gives H4 adequate power at r = 0.5. It does not show that r = 0.5 is realistic, that the planned sizes are right (unverified counts), or that the within-season null protects against stronger season clustering than simulated.
 
 ## 11. Sources
 

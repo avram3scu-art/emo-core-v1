@@ -1,0 +1,37 @@
+Hurricane loop power (docs/LOOP_PROTOCOL.md §9). Synthetic data only; no loop record read.
+seed 2026102923, 2000 studies/cell, 999 permutations; MC SE of a 5% rate 0.0049
+coupling coefficient for population partial r: r=0.3: c=1.007, r=0.5: c=1.885
+sizes HU (2, 4, 2, 2, 6, 2, 3, 1, 5) (n=27), HU+TS (4, 8, 4, 4, 12, 4, 6, 2, 10) (n=54)
+
+H4 (6 pairs, Holm): family-wise rejection | true pair rejected | 'no effect' read on true pair
+  HU                r=0.0 within-season: any 0.022 | true 0.007 | no-effect 0.000
+  HU                r=0.3 within-season: any 0.284 | true 0.270 | no-effect 0.000
+  HU                r=0.5 within-season: any 0.607 | true 0.601 | no-effect 0.000
+  HU 25% unmatched  r=0.0 within-season: any 0.026 | true 0.004 | no-effect 0.000
+  HU 25% unmatched  r=0.3 within-season: any 0.154 | true 0.135 | no-effect 0.000
+  HU 25% unmatched  r=0.5 within-season: any 0.338 | true 0.322 | no-effect 0.000
+  HU+TS             r=0.0 within-season: any 0.004 | true 0.002 | no-effect 0.035
+  HU+TS             r=0.3 within-season: any 0.785 | true 0.785 | no-effect 0.015
+  HU+TS             r=0.5 within-season: any 0.985 | true 0.985 | no-effect 0.001
+  HU                r=0.0 naive null:    any 0.024
+  HU                r=0.0 EMpre dropped: any 0.021
+  HU+TS             r=0.0 naive null:    any 0.005
+  HU+TS             r=0.0 EMpre dropped: any 0.007
+
+H5 (2 outcomes, Holm; severity-mix and forecast-gain trends present): rejection rate
+  HU     seasons=9 delta=0.0: 0.033
+  HU     seasons=9 delta=1.0: 0.119
+  HU     seasons=9 delta=2.0: 0.264
+  HU+TS  seasons=9 delta=0.0: 0.030
+  HU+TS  seasons=9 delta=1.0: 0.171
+  HU+TS  seasons=9 delta=2.0: 0.409
+
+Blind arm (one pair, frozen HU fit): rejection rate
+  blind sizes (4,)             r=0.0: 0.016
+  blind sizes (4,)             r=0.5: 0.100
+  blind sizes (6,)             r=0.0: 0.030
+  blind sizes (6,)             r=0.5: 0.317
+  blind sizes (4, 4, 4)        r=0.0: 0.029
+  blind sizes (4, 4, 4)        r=0.5: 0.482
+  blind sizes (4, 4, 4, 4, 4)  r=0.0: 0.021
+  blind sizes (4, 4, 4, 4, 4)  r=0.5: 0.681
