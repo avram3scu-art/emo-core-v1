@@ -418,6 +418,13 @@
     "sha256": "c81c6c0fb85da4ef1b194de6737b071208491fc535de075998731a1d32ee04f7",
     "source": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
   },
+  "sources/gis_advisories.csv": {
+    "accessed": "2026-10-29T08:10:32Z",
+    "bytes": 18448,
+    "note": "advisory zips fetched in listing order until one with a TS/hurricane watch or warning (inclusive)",
+    "sha256": "88e2b1a834b7ffb1f2c9a044644fb1419da56c9abf8c4116e5321c87319101cd",
+    "source": "https://www.nhc.noaa.gov/gis/archive_forecast_results.php?id=al{nn}&year={y}"
+  },
   "sources/hurdat2_2015_2025.csv": {
     "accessed": "2026-10-29T07:52:44Z",
     "bytes": 843184,

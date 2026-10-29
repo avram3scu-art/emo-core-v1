@@ -488,8 +488,24 @@ def attention(t0_date: dt.date, series: list[dict[str, int]]) -> tuple[float, in
 # ---------------------------------------------------------------- warnings
 
 
+ZONES = {"AST": -4, "EDT": -4, "EST": -5, "CDT": -5, "CST": -6, "UTC": 0, "GMT": 0}
+
+
 def parse_advdate(s: str) -> dt.datetime | None:
+    """ADVDATE → UTC. Two formats occur: 'yymmdd/hhmm' (UTC, to 2016) and the local issuance
+    string printed on the advisory, e.g. '1100 AM AST Thu Aug 17 2017' (2017 on; §16 rule 7 note)."""
+    s = s.strip()
     try:
-        return dt.datetime.strptime(s.strip(), "%y%m%d/%H%M")
+        return dt.datetime.strptime(s, "%y%m%d/%H%M")
     except ValueError:
+        pass
+    m = re.fullmatch(r"(\d{3,4}) (AM|PM) ([A-Z]{3}) [A-Z][a-z]{2} ([A-Z][a-z]{2}) (\d{1,2}) (\d{4})", s)
+    if not m or m.group(3) not in ZONES:
         return None
+    hhmm = m.group(1).zfill(4)
+    h, mi = int(hhmm[:2]), int(hhmm[2:])
+    if not (1 <= h <= 12):
+        return None
+    h = h % 12 + (12 if m.group(2) == "PM" else 0)
+    local = dt.datetime.strptime(f"{m.group(4)} {m.group(5)} {m.group(6)}", "%b %d %Y").replace(hour=h, minute=mi)
+    return local - dt.timedelta(hours=ZONES[m.group(3)])

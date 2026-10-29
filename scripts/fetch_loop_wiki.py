@@ -55,11 +55,18 @@ def get(url: str) -> tuple[int, bytes]:
 
 def api(params: dict[str, str]) -> tuple[str, dict]:
     url = API + "?" + urllib.parse.urlencode({**params, "format": "json", "formatversion": "2"})
-    st, b = get(url)
-    if st != 200:
-        raise RuntimeError(f"{url}: HTTP {st}")
-    time.sleep(1.0)
-    return url, json.loads(b)
+    for k in range(8):
+        st, b = get(url)
+        time.sleep(1.0)
+        if st == 200:
+            try:
+                return url, json.loads(b)
+            except json.JSONDecodeError:
+                print(f"non-JSON body (try {k + 1}): {b[:200]!r}", flush=True)
+        else:
+            print(f"HTTP {st} (try {k + 1})", flush=True)
+        time.sleep(10 * (k + 1))
+    raise RuntimeError(f"no JSON after retries: {url}")
 
 
 def main() -> None:

@@ -126,6 +126,9 @@ def test_attention_window():
 def test_parse_advdate():
     assert lh.parse_advdate("140701/0300") == dt.datetime(2014, 7, 1, 3, 0)
     assert lh.parse_advdate("1100 AM AST") is None
+    assert lh.parse_advdate("400 PM CDT Mon Jun 19 2017") == dt.datetime(2017, 6, 19, 21, 0)
+    assert lh.parse_advdate("1200 AM EDT Sat Oct 10 2020") == dt.datetime(2020, 10, 10, 4, 0)
+    assert lh.parse_advdate("1100 AM XYZ Thu Aug 17 2017") is None
 
 
 # ------------------------------------------------------------------ committed table
