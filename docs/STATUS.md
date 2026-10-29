@@ -4,12 +4,33 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 10:35):** session 2.6 (GWI v2, pre-registered prospective test) closed. Next: session 2.7 (SMF v2). GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). Earlier positions: `docs/SESSION_LOG.md`.
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (189), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Plan position (29 Oct, 10:50):** session 2.7 (SMF v2, NHC 2026 test pre-registered) closed. Next: session 2.8 (2027 registry). SMF v2 NHC fetch from 1 May 2027 (check in 2.8). GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.7 (2026-10-29, 10:35–10:50) — SMF v2 (H1; definition = infrastructure; NHC 2026 test pre-registered blind)
+
+**Done when met: yes.** Code `emo/smf.py` (v2: `smf_skill`, `smf_family`, `smf_correlation`), `emo/smf_nhc.py`, `scripts/fetch_smf_v2_nhc.py` (refuses before 2027-05-01), `analysis/smf_v2_nhc2026.py`, `analysis/smf_v2_power.py`, 9 tests; protocol `docs/SMF_PROTOCOL.md` §14–§15 (4c36556). Earlier SMF records unchanged: the seven recorded SMF outputs rerun byte-identical; `compute_smf` frozen.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- SMF v2 definition (§14, audit D5): skill vs persistence, one-sided DM-HLN, Holm over a fixed family, cluster units for overlapping forecasts; correlation kept as descriptive extra with the lag argument named in samples (`max_lag`).
+- Feasibility: LOOP_DATA §3 found per-storm OFCL errors machine-readable; benchmark OCD5 from a-decks (LOOP_PROTOCOL §16). Pre-registered (§15): 2026 season, track/intensity × 24/48/72 h, storm means, DM lags 2, Holm α 0.025, ≥ 8 storms.
+- Synthetic (§15.6): family false PASS 0.027–0.045 (ρ ≤ 0.15), 0.066 at ρ = 0.3 (stress, stated limit); power at worst-case Holm level, ρ 0.15, δ 1.0: 0.51 (12 storms), 0.64 (15). `smf_v2_power` added to the weekly frozen runs.
+- Review (Adrian 10:48, "2 - yes"; point 1 unanswered, Claude's recommendation "no more now" applied): check-date reminder added to the 2.8 prompt.
+
+**Claude's mistakes (fixed, recorded):** (1) first design (1 lag, α 0.05) had family false-positive 0.10 at ρ 0.3; changed before any data, both runs in RECORD. (2) Pre-push refused once: the hook's `python3 -m ruff` was not installed in the workspace; installed the locked version, no `--no-verify`.
+
+**Open (each with reason)**
+- Scoring of the 2026 test. Reason: needs time; data from about May 2027 (check in 2.8; "not available" if none by 1 Oct 2027).
+- Between-storm dependence is assumed (ρ 0–0.3), not measured. Reason: needs time (can only be looked at on the 2026 data, descriptive).
+- H1 trend over seasons (τ_I) not tested by SMF v2. Reason: scope.
+- Weekly run with the new frozen `smf_v2_power`. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.8 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.6 (2026-10-29, 09:55–10:35) — GWI v2 (H2; infrastructure; prospective test pre-registered)
 
