@@ -1,0 +1,29 @@
+name: Loop Wikimedia fetch (manual)
+
+# Session 2.4 (docs/LOOP_PROTOCOL.md §3.3, §16 rule 6): fetches the attend link of the
+# hurricane loop (MediaWiki redirect resolution and Wikimedia pageviews) for the events in
+# data/loop_hurricanes/sources/events.csv, and commits data/loop_hurricanes/sources/wiki/.
+# Runs here because Wikimedia rate-limits Claude's workspace (HTTP 429).
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "${{ github.ref_name }}"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11"}
+      - run: pip install -r requirements-lock.txt   # pinned (audit D8, session 2.1)
+      - name: Fetch
+        env: {PYTHONPATH: "."}
+        run: python scripts/fetch_loop_wiki.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/loop_hurricanes/sources/wiki
+          git commit -m "Loop Wikimedia fetch (run ${{ github.run_id }})" || echo "nothing to commit"
+          git push

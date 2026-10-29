@@ -1,0 +1,448 @@
+{
+  "cache/cb_2025_us_state_500k.zip": {
+    "accessed": "2026-10-29T07:52:45Z",
+    "bytes": 3245373,
+    "committed": false,
+    "entities": [
+      "AK",
+      "AL",
+      "AR",
+      "AZ",
+      "CA",
+      "CO",
+      "CT",
+      "DC",
+      "DE",
+      "FL",
+      "GA",
+      "HI",
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "LA",
+      "MA",
+      "MD",
+      "ME",
+      "MI",
+      "MN",
+      "MO",
+      "MS",
+      "MT",
+      "NC",
+      "ND",
+      "NE",
+      "NH",
+      "NJ",
+      "NM",
+      "NV",
+      "NY",
+      "OH",
+      "OK",
+      "OR",
+      "PA",
+      "PR",
+      "RI",
+      "SC",
+      "SD",
+      "TN",
+      "TX",
+      "UT",
+      "VA",
+      "VI",
+      "VT",
+      "WA",
+      "WI",
+      "WV",
+      "WY"
+    ],
+    "prj": "GEOGCS[\"GCS_North_American_1983\",DATUM[\"D_North_American_1983\",SPHEROID[\"GRS_1980\",6378137,298.257222101]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.017453292519943295]]",
+    "sha256": "9cbfe171dad1555e11770c981d8f4db9e687a65c86f5bdae684eeb487e2e9b80",
+    "source": "https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_state_500k.zip"
+  },
+  "sources/adeck_ocd5_tau48.csv": {
+    "bytes": 199579,
+    "files": {
+      "AL012015": {
+        "accessed": "2026-10-29T07:56:34Z",
+        "lines": 18850,
+        "sha256": "7c80e439fb733229ed5c8faa65ad55db28ecc38eb103f82744b204375ee0da69",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2015/aal012015.dat.gz"
+      },
+      "AL012018": {
+        "accessed": "2026-10-29T07:56:48Z",
+        "lines": 39248,
+        "sha256": "43180ff6a205d9f0d14b48d96b6f06a914da46b48f52defdac91cf60f1f598f1",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2018/aal012018.dat.gz"
+      },
+      "AL022015": {
+        "accessed": "2026-10-29T07:56:35Z",
+        "lines": 18660,
+        "sha256": "b1893e6086e3adeb1445561b7cdf0b68f828b2a9f3dc50380e0fbb4ac772ec6a",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2015/aal022015.dat.gz"
+      },
+      "AL022019": {
+        "accessed": "2026-10-29T07:56:53Z",
+        "lines": 51829,
+        "sha256": "1e3f0d3cb52a30d0fa2d340164f332987e78480b785611ddb5d5c3a8cb93651f",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2019/aal022019.dat.gz"
+      },
+      "AL022020": {
+        "accessed": "2026-10-29T07:56:58Z",
+        "lines": 8134,
+        "sha256": "80702c60dddaed6ee25f0e152b1d102ab19f754047965602de617416a48c3cfc",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal022020.dat.gz"
+      },
+      "AL022024": {
+        "accessed": "2026-10-29T07:57:28Z",
+        "lines": 247122,
+        "sha256": "3d3f2bd01eaadda68813903063887c35438be43ddef5cad5a75fd2f508721abb",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal022024.dat.gz"
+      },
+      "AL032016": {
+        "accessed": "2026-10-29T07:56:36Z",
+        "lines": 28553,
+        "sha256": "27032cbaa091a47e9c5c03af5eb31d19a3f2f806a82d264caeb9a07be2bd374f",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2016/aal032016.dat.gz"
+      },
+      "AL032017": {
+        "accessed": "2026-10-29T07:56:40Z",
+        "lines": 31806,
+        "sha256": "8c454684c140f6a98199290a8da2425b7e46a0abf413818377c9dd2d886a983a",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal032017.dat.gz"
+      },
+      "AL032020": {
+        "accessed": "2026-10-29T07:56:59Z",
+        "lines": 100833,
+        "sha256": "581a2d0d08a9ecc860945a38e211b8d35f852a3c93e7765ab4f348d5a49f0146",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal032020.dat.gz"
+      },
+      "AL032021": {
+        "accessed": "2026-10-29T07:57:11Z",
+        "lines": 59037,
+        "sha256": "e3e35886e0373ee68d8f63c0404662a0b75c06ebeeb2752f256e4674c159e8fc",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal032021.dat.gz"
+      },
+      "AL032022": {
+        "accessed": "2026-10-29T07:57:20Z",
+        "lines": 7069,
+        "sha256": "53b6d0d4ed4fd64d3b8d81bc0e877bb4962f702800e415a9b5079c74e7fec445",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2022/aal032022.dat.gz"
+      },
+      "AL032025": {
+        "accessed": "2026-10-29T07:57:36Z",
+        "lines": 41344,
+        "sha256": "7e05c91bdaeff5835a35651c63c31451e6372d85776f86c4be07eb601f5e2c75",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2025/aal032025.dat.gz"
+      },
+      "AL042021": {
+        "accessed": "2026-10-29T07:57:12Z",
+        "lines": 8834,
+        "sha256": "26e17c783cc606bf85cafe0fa07bd410708770d0a36f0eff7b07e8898a00d504",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal042021.dat.gz"
+      },
+      "AL042024": {
+        "accessed": "2026-10-29T07:57:29Z",
+        "lines": 132031,
+        "sha256": "79cfb379a170addb848c569679cf50d3988dac6173a4db69ea042390d89ae396",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal042024.dat.gz"
+      },
+      "AL052019": {
+        "accessed": "2026-10-29T07:56:54Z",
+        "lines": 232467,
+        "sha256": "4ac2ff91838814ce3975c938720613e5cacce6d1b3c896578501cd44a5446a33",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2019/aal052019.dat.gz"
+      },
+      "AL052021": {
+        "accessed": "2026-10-29T07:57:13Z",
+        "lines": 167359,
+        "sha256": "5235b6e9319b32ade6cf220fd700092d970b45d3339023aa202bbd74f388af4e",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal052021.dat.gz"
+      },
+      "AL052024": {
+        "accessed": "2026-10-29T07:57:31Z",
+        "lines": 228029,
+        "sha256": "5c66862524833ce4ca7954ac0452bccd30840b4338d9de5baad9115ab168cbac",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal052024.dat.gz"
+      },
+      "AL062017": {
+        "accessed": "2026-10-29T07:56:41Z",
+        "lines": 17067,
+        "sha256": "eb6996ca41c335497c49cc5fea06f814f96bd5870c719eecc291909e0ee6786a",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal062017.dat.gz"
+      },
+      "AL062018": {
+        "accessed": "2026-10-29T07:56:51Z",
+        "lines": 292156,
+        "sha256": "3845dbb4b2cea2cc5547a684bf1069edec6441ba59611d8395a0526348cc3296",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2018/aal062018.dat.gz"
+      },
+      "AL062020": {
+        "accessed": "2026-10-29T07:57:00Z",
+        "lines": 46663,
+        "sha256": "0c7195f32d52225545d8e5a9737a22c249d423f628cf8739a9aa6235ca521a62",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal062020.dat.gz"
+      },
+      "AL062021": {
+        "accessed": "2026-10-29T07:57:14Z",
+        "lines": 138301,
+        "sha256": "203bca230e757596e87c6ef18b4af616bdd40fee0c2c4c9fca2639a0e7700977",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal062021.dat.gz"
+      },
+      "AL062024": {
+        "accessed": "2026-10-29T07:57:32Z",
+        "lines": 78894,
+        "sha256": "d4bd3dc9cacd718661d3d1dc5f939de69569746b88895f5753590012d65fa661",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal062024.dat.gz"
+      },
+      "AL072018": {
+        "accessed": "2026-10-29T07:56:49Z",
+        "lines": 32982,
+        "sha256": "d9b1690e8166d33c1b4317ae7da5faa5c8e269cc153415ffe4113d2b8008758e",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2018/aal072018.dat.gz"
+      },
+      "AL072022": {
+        "accessed": "2026-10-29T07:57:21Z",
+        "lines": 281077,
+        "sha256": "ebebcecff0645ad3d93c122c9c36ce4947fac9cc374876c929fc39bd9a31fd47",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2022/aal072022.dat.gz"
+      },
+      "AL082020": {
+        "accessed": "2026-10-29T07:57:01Z",
+        "lines": 46717,
+        "sha256": "7ba6c0a28bfbd46be2c42ee6834d5092970137ae18f2d45c3309303a9201bde4",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal082020.dat.gz"
+      },
+      "AL082021": {
+        "accessed": "2026-10-29T07:57:15Z",
+        "lines": 156649,
+        "sha256": "378b6acccb55196c22bba38719552a16058a816ea6e2c6cde739acefd2a58123",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal082021.dat.gz"
+      },
+      "AL092016": {
+        "accessed": "2026-10-29T07:56:37Z",
+        "lines": 198627,
+        "sha256": "67721a17858bb5cfb5e53e80a74e40c7fd7bbde433f9a9f8da4a724ef8dd02bc",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2016/aal092016.dat.gz"
+      },
+      "AL092017": {
+        "accessed": "2026-10-29T07:56:42Z",
+        "lines": 181535,
+        "sha256": "c9e67b6abd3867ee618fd4e83f066e5ebbc1de639c1262ab4202aa20a0392958",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal092017.dat.gz"
+      },
+      "AL092020": {
+        "accessed": "2026-10-29T07:57:02Z",
+        "lines": 158397,
+        "sha256": "68778e0ffe4959c4a847759f7c68ffbbc83863fbc2e8cde66ca190e742874d48",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal092020.dat.gz"
+      },
+      "AL092021": {
+        "accessed": "2026-10-29T07:57:17Z",
+        "lines": 134232,
+        "sha256": "2c0a0dfd7eadf97ce98cae5e8276d8d365d335160791fbf5f9b2a1b6fb60c5ed",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal092021.dat.gz"
+      },
+      "AL092022": {
+        "accessed": "2026-10-29T07:57:23Z",
+        "lines": 210527,
+        "sha256": "e8891870bcc52a6ff2050f1d1c55f30c141aa92b4a0609668bca80b68813f3ff",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2022/aal092022.dat.gz"
+      },
+      "AL092023": {
+        "accessed": "2026-10-29T07:57:25Z",
+        "lines": 15140,
+        "sha256": "7d042f857d554c1c993234bdea610d362df231b1e45de6f5ecf97729e253f47e",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2023/aal092023.dat.gz"
+      },
+      "AL092024": {
+        "accessed": "2026-10-29T07:57:34Z",
+        "lines": 76234,
+        "sha256": "34a949ccdd52c6fd9241bc1f47705f379c05fd5a8d97d8a50bf80c69c6ba0a9b",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal092024.dat.gz"
+      },
+      "AL102023": {
+        "accessed": "2026-10-29T07:57:26Z",
+        "lines": 161060,
+        "sha256": "9a8a83ae3a8e9c8c56415057a9ff72e676ce1e005057bdb1a1fba0b26503a232",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2023/aal102023.dat.gz"
+      },
+      "AL112017": {
+        "accessed": "2026-10-29T07:56:44Z",
+        "lines": 265973,
+        "sha256": "fd53eca8fd2023b01485c3540a047d2500f347cdc5a133f551616f89ee5efbc6",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal112017.dat.gz"
+      },
+      "AL112019": {
+        "accessed": "2026-10-29T07:56:56Z",
+        "lines": 7879,
+        "sha256": "8c5b7a8512034cecf249facfca9b8373fea94987588be2c5664f24703631e3e1",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2019/aal112019.dat.gz"
+      },
+      "AL122019": {
+        "accessed": "2026-10-29T07:56:57Z",
+        "lines": 57385,
+        "sha256": "438ba1ae62d2dc1a4835084cfa9ea24c7c4ef6a4b9ba052672cde0d172b0c34d",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2019/aal122019.dat.gz"
+      },
+      "AL132020": {
+        "accessed": "2026-10-29T07:57:03Z",
+        "lines": 172618,
+        "sha256": "5e6048ddbe37e0afc893cf2b95e07a24188dbd29c94f529b3d0ed784b258bd97",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal132020.dat.gz"
+      },
+      "AL132021": {
+        "accessed": "2026-10-29T07:57:18Z",
+        "lines": 40159,
+        "sha256": "1c3b0987fbfd9cd07c8474fd0ffab7aef8099976191ee231912713a62d769307",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal132021.dat.gz"
+      },
+      "AL142016": {
+        "accessed": "2026-10-29T07:56:39Z",
+        "lines": 272730,
+        "sha256": "4ad8c3c548a5145d5bdf113f04998ba4e89bdef142aca4975e2f91313f6a608e",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2016/aal142016.dat.gz"
+      },
+      "AL142018": {
+        "accessed": "2026-10-29T07:56:52Z",
+        "lines": 58694,
+        "sha256": "9866a041169925dd8db662bf22df8ae0e5d5174fd0d5c8e5a6d8835dd70c8734",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2018/aal142018.dat.gz"
+      },
+      "AL142021": {
+        "accessed": "2026-10-29T07:57:19Z",
+        "lines": 59781,
+        "sha256": "35dfd35f895e32d556eb9c5eea7f4485e1b456636e76f52c467b53a6d97b94c1",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2021/aal142021.dat.gz"
+      },
+      "AL142024": {
+        "accessed": "2026-10-29T07:57:35Z",
+        "lines": 117143,
+        "sha256": "d1dcc2407de373d8674ec39307844303db4ed3d7b69e784a65151c7e5c50dfaa",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2024/aal142024.dat.gz"
+      },
+      "AL152017": {
+        "accessed": "2026-10-29T07:56:46Z",
+        "lines": 259396,
+        "sha256": "7896c239d9e80363af7ade3e95802d8d4e0e15aad9a0bc56239a39e5c633b270",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal152017.dat.gz"
+      },
+      "AL162017": {
+        "accessed": "2026-10-29T07:56:47Z",
+        "lines": 45104,
+        "sha256": "f7ac8dbb2a62d49e2c517c2af5ce62a1872b231740f32d361434047393e87284",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2017/aal162017.dat.gz"
+      },
+      "AL162023": {
+        "accessed": "2026-10-29T07:57:27Z",
+        "lines": 31343,
+        "sha256": "c493b1c6186d61622f787c4390d6d01588b6fec6760b77e43e38991ae3e5e5ee",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2023/aal162023.dat.gz"
+      },
+      "AL172022": {
+        "accessed": "2026-10-29T07:57:24Z",
+        "lines": 63583,
+        "sha256": "29f40ff3ec1f46dd4c9d3131f7a20dad5758157e91c6e82b1c93cb2138fb9c7e",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2022/aal172022.dat.gz"
+      },
+      "AL192020": {
+        "accessed": "2026-10-29T07:57:05Z",
+        "lines": 87986,
+        "sha256": "0089e6659d9c283777ad00da2a4686b023ff499b313a945dd7a15a0636955872",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal192020.dat.gz"
+      },
+      "AL222020": {
+        "accessed": "2026-10-29T07:57:06Z",
+        "lines": 111912,
+        "sha256": "8ad1cc2f7a667f0b58cfd655a419ea5831eae122712e8be9d18f89bcd1ea2232",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal222020.dat.gz"
+      },
+      "AL262020": {
+        "accessed": "2026-10-29T07:57:07Z",
+        "lines": 119970,
+        "sha256": "3f86aca45378245e29b64aefa0415a503196dca956fc21ddf0c1f58e6e76852a",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal262020.dat.gz"
+      },
+      "AL282020": {
+        "accessed": "2026-10-29T07:57:08Z",
+        "lines": 77698,
+        "sha256": "e1432fc2448ee8e3e19e23d0abef03839071cd7f23a2be321cd150654c539d35",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal282020.dat.gz"
+      },
+      "AL292020": {
+        "accessed": "2026-10-29T07:57:10Z",
+        "lines": 214718,
+        "sha256": "547647ebf98de4b4c53d3e064599a973ee82b827fb4bbc9f591ebdcfa36ee96a",
+        "source": "https://ftp.nhc.noaa.gov/atcf/archive/2020/aal292020.dat.gz"
+      }
+    },
+    "note": "every OCD5 TAU-48 line of the event storms' a-decks; line = line in the decompressed a-deck",
+    "sha256": "bf7ff3df6256524cd1becd8eefc5eef9943671f5b3eb82b61e109964e7313782"
+  },
+  "sources/events.csv": {
+    "bytes": 2614,
+    "derived_from": [
+      "sources/landfall_states.csv"
+    ],
+    "note": "event set HU+TS (one row per storm), input of the other fetch steps",
+    "sha256": "562b6a6a5cc0047745a4f655f820acac6c997cc8a4ada6fe0c14c65c0765e636"
+  },
+  "sources/fema_qualifying.csv": {
+    "accessed": "2026-10-29T07:54:07Z",
+    "bytes": 1930651,
+    "note": "DR/EM records with incident begin 2015-01-01..2026-01-10 whose type qualifies for set HU+TS (amendment 5)",
+    "pages": [
+      {
+        "count": 23590,
+        "records": 10000,
+        "sha256": "619f30c29e49bf4c8b6c8ae878d6e527793d43e2bb2397dc3d3386b5c29ed522",
+        "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$filter=incidentBeginDate%20ge%20%272015-01-01T00:00:00.000Z%27%20and%20incidentBeginDate%20le%20%272026-01-10T23:59:59.999Z%27%20and%20(declarationType%20eq%20%27DR%27%20or%20declarationType%20eq%20%27EM%27)&$top=10000&$skip=0&$orderby=id&$inlinecount=allpages"
+      },
+      {
+        "count": 23590,
+        "records": 10000,
+        "sha256": "24bd4adb5792a2cd01d5a7a6b7de9b65b77bbc41fc7d2f1636514deb3821f5b5",
+        "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$filter=incidentBeginDate%20ge%20%272015-01-01T00:00:00.000Z%27%20and%20incidentBeginDate%20le%20%272026-01-10T23:59:59.999Z%27%20and%20(declarationType%20eq%20%27DR%27%20or%20declarationType%20eq%20%27EM%27)&$top=10000&$skip=10000&$orderby=id&$inlinecount=allpages"
+      },
+      {
+        "count": 23590,
+        "records": 3590,
+        "sha256": "14c3f5814d3c25806ca5e6cf9a48687729b7b824fc68766cb36d8d4ba6112a99",
+        "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$filter=incidentBeginDate%20ge%20%272015-01-01T00:00:00.000Z%27%20and%20incidentBeginDate%20le%20%272026-01-10T23:59:59.999Z%27%20and%20(declarationType%20eq%20%27DR%27%20or%20declarationType%20eq%20%27EM%27)&$top=10000&$skip=20000&$orderby=id&$inlinecount=allpages"
+      }
+    ],
+    "records_fetched": 23590,
+    "records_kept": 6410,
+    "sha256": "c81c6c0fb85da4ef1b194de6737b071208491fc535de075998731a1d32ee04f7",
+    "source": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
+  },
+  "sources/hurdat2_2015_2025.csv": {
+    "accessed": "2026-10-29T07:52:44Z",
+    "bytes": 843184,
+    "full_file_lines": 57512,
+    "full_file_sha256": "75202780ce56c8458f16fbef5fb8a026b99b00878dbb95c458211b3e6ef125b4",
+    "note": "all header and data lines of storms with ATCF year 2015-2025; line = line number in the full file",
+    "sha256": "a9db6bb4b039100d1237fa6d2b9ee8da77216cc38bac7bb8c817dc7833aafa81",
+    "source": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt"
+  },
+  "sources/landfall_states.csv": {
+    "bytes": 11178,
+    "derived_from": [
+      "sources/hurdat2_2015_2025.csv",
+      "cache/cb_2025_us_state_500k.zip"
+    ],
+    "note": "every HURDAT2 L record of 2015-2025; state '' = not within 50 km of a US entity",
+    "sha256": "c597602f93870e742eb5dd8acaf85e245a3d4a73f82e1e9964d6fd9338ebebf4"
+  },
+  "sources/nhc_errors_events.csv": {
+    "accessed": "2026-10-29T07:53:04Z",
+    "bytes": 321881,
+    "full_file_lines": 13289,
+    "full_file_sha256": "733acad5f090c92035129fb7f18bbe9a45adf1165566e620d37924cea0b38948",
+    "note": "header lines 1-12 and every line whose STMID is an event storm",
+    "sha256": "e160ec919d831a3b05f17c6466a193722e4f4a2aaac793b33561add4e34b5f53",
+    "source": "https://www.nhc.noaa.gov/verification/errors/1970-present_OFCL_v_BCD5_ind_ATL_TI_errors_noTDs.txt"
+  }
+}
