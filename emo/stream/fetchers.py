@@ -126,13 +126,15 @@ CEMS_URL = ("https://rapidmapping.emergency.copernicus.eu/backend/dashboard-api/
 
 def fetch_cems(http: Http, today: dt.date) -> list:
     recs: list = []
-    url, params = CEMS_URL, {"limit": 100}
+    url: str = CEMS_URL
+    params: dict | None = {"limit": 100}
     for _ in range(MAX_PAGES):
         data, at = http.get_json(url, params)
         recs += _stamp(data.get("results") or [], at)
-        url, params = data.get("next"), None
-        if not url:
+        nxt = data.get("next")
+        if not nxt:
             break
+        url, params = nxt, None
     return apply_e1(recs)            # E1: dropped in memory, before anything is written
 
 
@@ -142,13 +144,15 @@ GO_BASE = "https://goadmin.ifrc.org/api/v2/"
 
 def _go_pages(http: Http, endpoint: str, params: dict) -> list:
     out: list = []
-    url, p = GO_BASE + endpoint + "/", {**params, "limit": 100, "format": "json"}
+    url: str = GO_BASE + endpoint + "/"
+    p: dict | None = {**params, "limit": 100, "format": "json"}
     for _ in range(MAX_PAGES):
         data, at = http.get_json(url, p)
         out += _stamp(data.get("results") or [], at)
-        url, p = data.get("next"), None
-        if not url:
+        nxt = data.get("next")
+        if not nxt:
             break
+        url, p = nxt, None
     return out
 
 
