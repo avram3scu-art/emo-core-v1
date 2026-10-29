@@ -4,12 +4,34 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 05:40):** session 2.1 (clean ground) closed. Next: session 2.2 (hurricane loop data check). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 06:10):** session 2.2 (hurricane loop data check) closed. Next: session 2.3 (loop protocol). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (154), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (11 rows; outcomes chosen by Adrian 29 Oct 05:29).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.2 (2026-10-29, 05:52–06:10) — hurricane loop data check (H3–H5, feasibility; infrastructure)
+
+**Done when met: yes.** `docs/LOOP_DATA.md` committed (64d391f, update after review); no data record opened (stated in the file); CI 40820610819 and 40821523231 green.
+
+**Done**
+- Documentation of every loop link opened and recorded (fields, coverage, licence, update, access, caveats, per-event values): HURDAT2, NHC individual-forecast error files, TCRs, NHC GIS watches/warnings, OpenFEMA Disaster Declarations Summaries v2, Wikimedia pageviews, 44 CFR 206.35, FEMA 2006 pre-landfall policy.
+- Verdicts: events, predict, attend, warning times (GIS per advisory, 2008+) feasible; decide-act feasible with caveats; outcome infeasible as machine-readable (TCRs are PDFs): fallback HURDAT2 landfall intensity as severity control.
+- Triggers: no automatic federal trigger (44 CFR 206.35, Governor request); FEMA 2006 pre-landfall policy ties EM declarations to an NWS threat projection plus evacuation orders (current status unverified): forecast→EM timing is procedure, not coupling.
+- Review point 1 (Adrian supplied the two unreachable documents, 06:05; committed in `docs/sources/loop_data/`): error file is one line per forecast with OFCL and CLIPER5/SHIFOR5 errors and an equivalent sample size (18 h independence); Hurricane = code H in `designatedIncidentTypes` (v2); new field `declarationRequestDate` splits decide-act into request and declaration lags.
+
+**Claude's slip (fixed):** first push refused by the hook for the word "first" in LOOP_DATA.md; reworded.
+
+**Review and Adrian's answer (06:00–06:08):** (1) more now: get the two unreachable pages, recommended; Adrian supplied them, done. (2) Change: write the H4 test to exclude pre-landfall EM declarations, so it holds whether or not the 2006 policy is still in force; carried into the 2.3 prompt. (3) Nothing else left to improve; Adrian: "Close".
+
+**Open (each with reason)**
+- Exact `incidentType` hurricane string. Reason: needs data; confirmed when records are opened in 2.4 (2.3 selects on code H instead).
+- Whether the 2006 pre-landfall policy is still in force; state-level emergency triggers. Reason: needs time (each state differs); the 2.3 design is robust to both.
+- Pageviews API start date, latency, rate limits not on pages opened. Reason: not attempted further; the repo pipeline already uses the API from July 2015.
+- Outcome link (deaths, damage) not machine-readable. Reason: source format; fallback chosen in LOOP_DATA §6.
+
+**Next:** session 2.3 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.1 (2026-10-29, 05:22–05:40) — clean ground (infrastructure; no hypothesis moved)
 
