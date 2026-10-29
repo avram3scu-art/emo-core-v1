@@ -1,10 +1,62 @@
-# EMO 2.0: from prototype to a testable emergent mind
+# EMO 3.0: build the mirror, let it earn its claims
 
 29 Oct 2026 · Adrian N. Avramescu, Independent researcher, Antwerp
 
-**Read this before every session (Adrian and Claude).** It is the roadmap of record. Rules: `CLAUDE.md` 2.0. Where we are now: `docs/STATUS.md`. History: `docs/SESSION_LOG.md`. Written by Claude on Adrian's decisions of 29 Oct 2026 (04:33, 04:57). A reading copy for the phone, `docs/PLAN.docx`, is made from this file with `pandoc docs/PLAN.md -o docs/PLAN.docx` and is regenerated in every commit that changes this file; if they differ, this file wins. It keeps the structure of plan 1, "EMO: from prototype to planetary program" (21 Oct 2026; committed in `docs/sources/plan/`, text in `docs/archive/PLAN_1.md`). Basis: `docs/AUDIT_2026-10-29.md`; review: `docs/REVIEW_2_0_DRAFTS.md`.
+**Plan 3.0 (Adrian's yes, 29 Oct 2026 18:26).** Strategy and reasons: `docs/STRATEGY_3_0.md`; vision sources: `docs/sources/vision/`. Plan 3.0 adds §0 (pillars, H8, H9, phases C–H, sessions 3.1–3.10) and keeps the 2.0 text below, which stays in force where §0 does not change it. Old phases C and D become F and G.
+
+**Read this before every session (Adrian and Claude).** It is the roadmap of record. Rules: `CLAUDE.md` 3.0. Where we are now: `docs/STATUS.md`. History: `docs/SESSION_LOG.md`. Written by Claude on Adrian's decisions of 29 Oct 2026 (04:33, 04:57). A reading copy for the phone, `docs/PLAN.docx`, is made from this file with `pandoc docs/PLAN.md -o docs/PLAN.docx` and is regenerated in every commit that changes this file; if they differ, this file wins. It keeps the structure of plan 1, "EMO: from prototype to planetary program" (21 Oct 2026; committed in `docs/sources/plan/`, text in `docs/archive/PLAN_1.md`). Basis: `docs/AUDIT_2026-10-29.md`; review: `docs/REVIEW_2_0_DRAFTS.md`.
 
 EMO tests one idea: that humanity's response to a hazard behaves like a mind, a loop whose links are coupled and learn. The route runs through tests that can fail, in a domain that repeats every year, before reports, partners or money.
+
+## 0. Plan 3.0 (29 Oct 2026)
+
+### 0.1 The five pillars, each tied to something that can run and something that can fail
+
+| Pillar (Adrian's document) | What it becomes in code | What can fail | Hypothesis |
+|---|---|---|---|
+| 1. Credibility (plan 1) | Every claim on the public page points to a file; release DOI; failure register | claims drift from code | rules, not a test |
+| 2. Mirror (*Why Humanity Needs a Mirror*) | One public loop card per hazard event: warning, attention, decision, delivery, lag so far, and the knowing→doing stage | stages not measurable from records | H3 (extended) |
+| 3. Continuous running (*Why EMO Must Run Continuously*) | Daily jobs append events and update cards; the page shows last successful run | jobs fail or need hands | rules: the word "continuous" is earned by unattended running (CLAUDE 3.0) |
+| 4. Benefit (*Who may benefit*) | Registered test: do faster loops go with smaller losses, beyond severity? First user pilot | no association, or no loss data | **H9 (new)** |
+| 5. AI (*What if humanity is already a mind*) | The **species self-model**: before each outcome, an AI writes (a) what humanity will do and (b) what a coherent whole that knows what humanity knows would do; (a) is scored, (b) is shown beside reality | (a) no better than a non-AI baseline | **H8 (new)** |
+
+Adrian's mirror essay already maps onto the loop: latency = DAC lags; learning = H5; alignment (promise vs budget) = SMF; consistency (parts reinforcing or opposing) = counter-measures between levels in DAC. The six stages of *What if humanity is already a mind* (warning not recognised; recognised, not transmitted; reached decision-makers, no budget; funded, fragmented; coordinated, then collapsed; learned) become the stage field of each loop card.
+
+### 0.2 Hypotheses added (H1–H7 unchanged)
+
+| # | Hypothesis | Fails if | Status |
+|---|---|---|---|
+| H8 | Self-model: AI forecasts of response outcomes, committed before the outcome, beat both a naive base rate and a simple statistical model (Brier score) | not better than the statistical model after the pre-registered number of resolved events | not built; protocol and power in 3.5 |
+| H9 | Benefit: events whose loop runs faster (shorter warning → decision lag) have smaller losses than severity explains | no association at adequate power, or no usable loss data (then "cannot be tested", not FAIL) | not built; feasibility in 3.7 |
+
+### 0.3 Roadmap 3.0
+
+No phase starts on the calendar; each starts when its gate is met. Dated sessions of plan 2.0 keep their dates.
+
+| Phase | Sessions | Gate to the next |
+|---|---|---|
+| A, B (plan 2.0) | 2.1–2.12b | unchanged; dated sessions run on their dates |
+| **C. The mirror runs** | 3.1–3.4 | daily jobs have run unattended for 14 days; cards public |
+| **D. The self-model** | 3.5–3.6 | H8 protocol registered; ≥ 10 AI forecasts committed before outcomes |
+| **E. Benefit and reach** | 3.7–3.8 | H9 verdict on feasibility; one country coherence profile feasibility note |
+| **F. Credibility, as by-products** | 3.9 release, 2.16 report, 2.17 briefs, JOSS (≥ 19 Apr 2027), white paper share | release DOI resolves |
+| **G. Partners and money** | 2.18–2.22 | a partner's written reply |
+| **H. First user pilot** | 3.10 | one institution uses one card or profile, in writing |
+
+| # | Session | Hypothesis | Done when |
+|---|---|---|---|
+| 3.1 | Global event stream: data check (documentation only: alerts, attention, activations, losses; licences, latency, coverage) | H3, H6, H8 | `docs/STREAM_DATA.md` with a verdict per source; no records opened |
+| 3.2 | Daily ingestion: append-only event log from the chosen sources, daily Action, manifest with checksums | infrastructure | three consecutive daily runs commit without help |
+| 3.3 | Loop card protocol: fields, the six knowing→doing stages defined from records, "not yet" vs "missing", synthetic checks; registered before any card is public | H3 | protocol and tests committed; no card published |
+| 3.4 | Mirror page: one card per event, stage, lag so far, last run; rebuilt daily | infrastructure | page updates on its own for 14 days (checked in a later session) |
+| 3.5 | Self-model protocol (pillar 5): the two outputs, ledger format, baselines (base rate, logistic), Brier scoring, contamination and circularity rules, power from synthetic data | H8 | protocol and power committed before any forecast |
+| 3.6 | Self-model ledger: first AI forecasts committed with hashes before outcomes; Adrian decides in-session vs scheduled (API cost) | H8 | ≥ 10 forecasts committed; scoring script tested on synthetic outcomes |
+| 3.7 | Benefit feasibility: loss data per event (documentation only); Adrian's earlier simulation committed as exploratory if supplied | H9 | protocol registered, or the reason it cannot be tested |
+| 3.8 | Coherence profile pilot design (*Who may benefit*): one country, the four mirror dimensions as a profile from public records | H3, H6 | feasibility note and coding rules, or reason |
+| 3.9 | Release 1.0 (was 2.15), now including the mirror | infrastructure | release DOI resolves |
+| 3.10 | First user pilot: one crisis or early-warning body, one card or profile they use | H9 | a written reply |
+
+Plan 2.0 sessions 2.13 (white paper, shared only after Adrian's verification), 2.14 (JOSS, resubmit check after 19 Apr 2027), 2.16, 2.17 and 2.18–2.22 stay, moved behind the mirror. The dated sessions 2.8 (2027 registry, before 1 June 2027), 2.10 (after 31 Dec 2026), 2.12 (15 Nov 2027) and 2.12b (about May 2028) keep priority on their dates.
 
 ## 1. Where each pillar stands (29 Oct 2026)
 
@@ -298,7 +350,19 @@ Session 2.12b task: if a HURDAT2 file covering 2027 exists (if none by 1 Oct 202
 Done when: results committed; README, page and STATUS updated; ledger outcomes deposited.
 ```
 
-### Phase C: credibility
+### Phase C (3.0): the mirror runs
+
+### 3.1 Global event stream: data check (H3, H6, H8; documentation only)
+
+```text
+EMO session 3.1: global event stream, data check. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md, docs/STRATEGY_3_0.md and the entry for session 3.1 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none directly (data check for H3, H6, H8). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 3.1 task: choose the high-frequency global hazard stream for the mirror and the self-model. From documentation only (no event records opened), check for each candidate link: warning or alert (e.g. USGS earthquake feeds and PAGER, GDACS alerts), attention (Wikipedia pageviews), decision (Copernicus EMS rapid mapping activations, IFRC GO emergency appeals and DREF), delivery or money (OCHA FTS, IFRC appeal funding), losses (EM-DAT or others): what it records, licence and terms, access (account, key, cost), update latency, coverage, and how events can be linked across sources. Every candidate named here is unverified until opened. Keep the registered flood test (docs/FLOOD_LOOP_PROTOCOL.md §3, §10, §11) and the 2027 hurricane registry unchanged; say whether any chosen source overlaps them.
+Done when: docs/STREAM_DATA.md gives a verdict per source (use, use with conditions, reject), the expected number of linked events per month, and a recommended stream; no event record opened; record, STATUS and next prompt committed.
+```
+
+Prompts for 3.2–3.10 are written at the close of the session before each, from §0.3.
+
+### Phase F (was C): credibility, as by-products
 
 ### 2.13 White paper 2.0 (credibility; after 2.5)
 
@@ -340,7 +404,7 @@ Session 2.17 task: three one-page briefs for (a) research partners, (b) crisis a
 Done when: three briefs committed in docs/briefs/.
 ```
 
-### Phase D: partners and money
+### Phase G (was D): partners and money
 
 ### 2.18 First partner (partners)
 

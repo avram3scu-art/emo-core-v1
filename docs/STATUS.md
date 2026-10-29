@@ -4,7 +4,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 17:10):** session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 18:30):** plan 3.0 and CLAUDE.md 3.0 in force (Adrian 18:26; `docs/STRATEGY_3_0.md`). Next: session 3.1 (global event stream, data check). Dated sessions 2.8, 2.10, 2.12, 2.12b keep their dates. Earlier (17:10): session 2.14 closed: JOSS checklist, draft `paper/paper.md` and review (`docs/REVIEW_2_14_JOSS.md`: not eligible now; earliest after 19 Apr 2027). Next: 2.15 (release 1.0). Earlier: session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
@@ -15,11 +15,15 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Request (Adrian, 18:17):** five pillars (credibility, mirror, continuous running, benefit, AI as fifth pillar "to become a substitute for humanity's mind"); upgrade the roadmap; CLAUDE.md 3.0; a new strategy. Six documents attached, committed in `docs/sources/vision/`.
 
-**Done (proposed, not in force):** `docs/STRATEGY_3_0.md` (diagnosis, five pillars tied to code and hypotheses, H8 self-model and H9 benefit, phases C–H, sessions 3.1–3.10, next prompt); `docs/CLAUDE_3_0_PROPOSED.md` (all 2.0 rules kept; [3.0]: five pillars, code first, self-model rules, published data count as opened, continuous earned, benefit earned, paid services on Adrian's decision). `CLAUDE.md` and `docs/PLAN.md` unchanged until Adrian's yes.
+**Decision (Adrian, 18:26, "Yes"):** strategy 3.0 and CLAUDE.md 3.0 adopted, with the pillar 5 wording "the self-model humanity lacks, tested and never in charge". CLAUDE.md 2.0 archived in `docs/archive/CLAUDE_2.md`; roadmap merged into `docs/PLAN.md` §0 (old phases C, D renamed F, G); `docs/PLAN.docx` regenerated. Loss simulation: not supplied (open).
+
+**Done (drafted before the yes):** `docs/STRATEGY_3_0.md` (diagnosis, five pillars tied to code and hypotheses, H8 self-model and H9 benefit, phases C–H, sessions 3.1–3.10, next prompt); `docs/CLAUDE_3_0_PROPOSED.md` (all 2.0 rules kept; [3.0]: five pillars, code first, self-model rules, published data count as opened, continuous earned, benefit earned, paid services on Adrian's decision). `CLAUDE.md` and `docs/PLAN.md` unchanged until Adrian's yes.
 
 **Pushback recorded:** "substitute for humanity's mind" conflicts with the vision documents' own non-oracular, not-a-control-system principle; recommended "the self-model humanity lacks, tested and never in charge". The loss simulation mentioned by Adrian is not in the repository (gap recorded; usable only if supplied, as exploratory).
 
-**Open (each with reason):** adoption of strategy and CLAUDE.md 3.0; pillar 5 wording; the loss simulation file. Reason: Adrian's decision.
+**Open (each with reason):** the loss simulation file. Reason: Adrian's decision/action (needed for 3.7; otherwise H9 starts from documentation only).
+
+**Next:** session 3.1 (global event stream, data check; prompt in `docs/PLAN.md` §11).
 
 ## Session 2.14 (2026-10-29, 16:38–17:10) — JOSS software paper (no hypothesis moved; infrastructure)
 

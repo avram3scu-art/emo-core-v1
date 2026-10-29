@@ -1,6 +1,6 @@
 # EMO 3.0 strategy: build the mirror, let it earn its claims
 
-29 Oct 2026, session 3.0-design. **Proposed, awaiting Adrian's yes.** Basis: Adrian's six vision documents (`docs/sources/vision/`, plan 1 in `docs/sources/plan/`), his request of 29 Oct 18:17, and the repository as it stands (`docs/STATUS.md`, `docs/PLAN.md` 2.0, `docs/REVIEW_2_14_JOSS.md`). Rules proposed with it: `docs/CLAUDE_3_0_PROPOSED.md`.
+29 Oct 2026, session 3.0-design. **Adopted (Adrian's yes, 29 Oct 2026 18:26), including the pillar 5 wording of §4.1.** Basis: Adrian's six vision documents (`docs/sources/vision/`, plan 1 in `docs/sources/plan/`), his request of 29 Oct 18:17, and the repository as it stands (`docs/STATUS.md`, `docs/PLAN.md` 2.0, `docs/REVIEW_2_14_JOSS.md`). Rules: `CLAUDE.md` 3.0.
 
 ## 1. Diagnosis
 
@@ -81,7 +81,7 @@ Plan 2.0 sessions 2.13 (white paper, shared only after Adrian's verification), 2
 
 Opened in this session: the six documents in `docs/sources/vision/` and `docs/sources/plan/` (attached by Adrian, 29 Oct 2026), and repository files named above. No external source was opened for this strategy; every data source in §6 is checked in session 3.1 before use.
 
-## 8. Next session prompt (3.1, after Adrian's yes)
+## 8. Next session prompt (3.1)
 
 ```text
 EMO session 3.1: global event stream, data check. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md, docs/STRATEGY_3_0.md and the entry for session 3.1 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none directly (data check for H3, H6, H8). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.

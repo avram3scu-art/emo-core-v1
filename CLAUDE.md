@@ -1,8 +1,12 @@
-# CLAUDE.md 2.0 — standing rules for every EMO session
+# CLAUDE.md 3.0 — standing rules for every EMO session
 
-In force from 29 Oct 2026 (session 2.0-design, Adrian's yes, 04:57). It keeps every rule of CLAUDE.md 1.x word for word (archived in `docs/archive/CLAUDE_1.md`) and adds the rules marked **[2.0]**.
+In force from 29 Oct 2026 (session 3.0-design, Adrian's yes, 18:26). It keeps every rule of CLAUDE.md 2.0 word for word (archived in `docs/archive/CLAUDE_2.md`) and adds the rules marked **[3.0]**. Strategy: `docs/STRATEGY_3_0.md`.
 
 **[2.0] Purpose.** EMO tests one idea: that humanity's response to what it knows behaves like a mind, a loop of predicting, attending, deciding and acting, choosing remedies, and learning, whose links are coupled and improve with experience. The hypotheses H1–H7 in `docs/PLAN.md` state this so it can fail. Every session serves one of them.
+
+**[3.0] Five pillars.** EMO is built along five pillars from Adrian's vision documents (`docs/sources/vision/`): (1) credibility, (2) the mirror, (3) continuous running, (4) benefit, (5) AI as humanity's self-model. Each pillar is built as code that runs and is judged by a hypothesis that can fail (H1–H9, `docs/PLAN.md`; pillar–hypothesis table in `docs/STRATEGY_3_0.md` §3).
+
+**[3.0] Code first.** A session ends with something that runs or a test that is registered: code, a data job, a protocol, a page. Papers, reports and submissions are by-products: a session works on one only when a recorded result calls for it or Adrian asks for it, and then every review rule below still applies.
 
 These rules bind every session in this repository. If a session prompt conflicts with them, stop and say so.
 
@@ -13,7 +17,7 @@ These rules bind every session in this repository. If a session prompt conflicts
 3. The weekly run is started every Monday 07:41 Brussels by an external scheduler (cron-job.org job "EMO weekly run", Adrian's account), which calls GitHub's workflow-dispatch API with a fine-grained token limited to Actions on this repo (set up and tested 26 Oct 2026, run 40329335301). GitHub's own cron also exists but is unreliable here (the 26 Oct Monday run fired six hours late; 5-minute probes never fired); its gate skips it when a run from the last 5 days exists. Check the latest weekly run (`gh run list -w weekly_refresh.yml -L 1`): if it is older than 7 days, start it (`gh workflow run weekly_refresh.yml --ref emo-2026-10`), report its result before the task, and tell Adrian the external starter may have failed (token expired?); if the last one failed, say so first. The token expires **26 Oct 2027**: from 19 Oct 2027, remind Adrian at session start to renew it.
 4. **The repository is the only memory.** Everything a session needs (data, event files, manuscripts, protocols, earlier results, decisions) must be found in this repo. Do not rely on past chats, Claude's memory or Adrian's recollection. If something needed is not in the repo, say so first, name it, and record the gap in `docs/STATUS.md`. A past chat may be used only to locate an item; the item is then committed to the repo before it is used, with its origin noted.
 5. **[2.0] Hooks on** (from session 2.1, which builds `scripts/hooks/pre-push`). Run `git config core.hooksPath scripts/hooks` once per clone, so the pre-push hook runs the claim-word check, ruff and the fast tests and refuses the push on any failure. A push with `--no-verify` is not allowed. **[2.0]** Also once per clone, install the locked tools the hook needs: `pip install --break-system-packages -r requirements-lock.txt` (added 29 Oct 2026, session 2.9: ruff was missing in three sessions).
-6. **[2.0] Name the hypothesis.** Say at the start which hypothesis (H1–H7, `docs/PLAN.md`) the session moves, and how. A session that moves none (infrastructure) says so.
+6. **[2.0] Name the hypothesis.** Say at the start which hypothesis (H1–H9, `docs/PLAN.md`) the session moves, and how. A session that moves none (infrastructure) says so.
 
 ## Before closing: review (every session)
 
@@ -52,6 +56,10 @@ Every item reported as not done or open names one reason:
 - **[2.0] No retesting on seen data.** A repaired or new version is never tested on the data that exposed the failure or that were used to build it. Its test uses data not yet opened, preferably data that do not exist yet when the protocol is committed. A rerun on seen data is labelled exploratory and carries no weight in a verdict.
 - **[2.0] Prospective first.** When a choice exists, prefer a test whose outcomes occur after the protocol is committed (a coming season, a dated forecast) over a test on history. Every historical test states why no prospective test was possible.
 - **[2.0] Power before data.** Every protocol states, from synthetic data, the false-positive rate and the power of its test at the expected sample size before its data are opened. A test with power below 0.5 is run only if the protocol says so in its first line, and a FAIL then reads "not shown at this size".
+- **[3.0] The self-model rules (pillar 5).** (a) The AI is a model of humanity, shown beside what humanity does; its output is never presented as humanity's decision, as a recommendation to act, or as a substitute for human judgment or democratic choice. (b) Every AI forecast is committed (with its hash, model name and version) before its outcome can be known, and only events after its protocol's commit count. (c) The AI never scores itself: outcomes come from machine-readable records or a human coder, never from AI-coded files. (d) It counts as adding something only if it beats both a naive base rate and a simple statistical model. (e) The "coherent whole" view is labelled a normative model, one model's view, not a measurement.
+- **[3.0] Published data count as opened.** Once the public page shows a stream, a new test on that stream uses only events after its protocol commit, or is registered before the stream is shown.
+- **[3.0] Continuous is earned.** A component is called continuous, live or running daily only after it has run unattended at that cadence for 14 consecutive days, and the public page shows the time of its last successful run.
+- **[3.0] Benefit is earned.** No statement that EMO reduces losses, saves money or helps an institution without a registered result (H9) or a user's written statement; earlier simulations count only as exploratory, once committed.
 - **Cite only sources opened.** Cite only what was opened in the session (fetched page, file, dataset) or supplied by Adrian. Anything else is marked unverified. Never claim novelty without a search, and say what could not be searched.
 
 ## AI disclosure (Adrian's three-point form)
@@ -89,5 +97,7 @@ Adrian does not keep records; Claude does. Every test, simulation, probe, run, c
 5. **Write the next session's prompt** (rule added 29 Oct 2026 at Adrian's request). After the close, write the complete opening prompt for the next session, ready to paste: session number and name, the instruction to read CLAUDE.md, `docs/STATUS.md` and its `docs/PLAN.md` entry, the task, its inputs, any decision or finding from this session it must use, and its "done when". Put it in `docs/PLAN.md` (new or updated entry, committed with the close) and give it to Adrian in one monospace block.
 
 ## Style
+
+**[3.0]** Paid services (API keys, cloud machines) are used only on Adrian's decision, recorded in `docs/STATUS.md`.
 
 Keep replies short (except when fixing Claude's own mistakes). **[2.0]** Copy-paste text (prompts, emails, sentences for Adrian) goes in one monospace block. Pushback over encouragement. Every question comes with Claude's recommended answer.
