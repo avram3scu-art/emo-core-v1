@@ -249,6 +249,14 @@ Session 2.11 task: when a coder's sheet returns, compute the pre-registered agre
 Done when: agreement result (if a sheet exists) and feasibility note committed.
 ```
 
+### 2.11b Flood loop: data check and prospective protocol (H6, H4; from 2.11)
+
+```text
+EMO session 2.11b: flood loop, data check and prospective protocol. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.11b in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H6 (and H4 power by pooling). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.11b task: using docs/SECOND_DOMAIN_FEASIBILITY.md (EU floods feasible pending; C1 open), (1) settle C1 from documentation: does the EFAS formal-notification archive reach back 10 years with day-level dates per river and country; (2) if yes, write and commit a prospective flood-loop protocol for events after its commit date: events = EFAS formal notifications in EU states, decide-act = CEMS Rapid Mapping activation by a national authority (no activation is a valid outcome), attend = Wikipedia pageviews, with statistic, pass/fail rule, and synthetic false-positive rate and power at about 10–20 events a year, before any flood lag is computed. Do not compute any lag from data/second_domain/cems_activations_2026-10-29.json (only counts were seen in 2.11).
+Done when: C1 verdict committed, and either the protocol with its synthetic power is committed or the reason it cannot be is recorded.
+```
+
 ### 2.12 GWI v2 scoring (H2; on or after Mon 15 Nov 2027)
 
 *Split in session 2.8 (Adrian 11:11, "2 - yes"): the 2027 hurricane rows need the HURDAT2 file covering 2027 (about May 2028), so the loop scoring moved to 2.12b.*

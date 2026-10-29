@@ -4,12 +4,30 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 12:20):** session 2.9 (UIA 2.0, He test) closed; session 2.10 started early (12:06) and stopped: no forecast resolved yet. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.10 (ledger scoring) **on or after 1 Jan 2027**, prompt unchanged. SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 13:00):** session 2.11 closed (no coder sheet yet; EU floods feasible pending, heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11b (flood loop: data check and prospective protocol, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.11 (2026-10-29, 12:41–13:00) — DAC agreement and second-domain feasibility (H6 groundwork; infrastructure)
+
+**Done when met: yes.** Criteria committed before searching (66ab6c2); findings dec5494; follow-up in this close.
+
+**Done**
+- DAC agreement: no returned coder sheet (`docs/double_coding/coding_sheet.csv` header only); not computed.
+- `docs/SECOND_DOMAIN_FEASIBILITY.md`: EU floods **feasible pending**: C2 (EFAS dated notifications) and C4 (CEMS activations by national authorities, public API) pass; C5 pass after Adrian's yes (12:45): EU flood activations 16/19/8/10 in 2023–2026; C1 unverified (EM-DAT admits entries by emergency declaration, so not independent; EFAS archive length unverified). EU heatwaves **infeasible** (no dated event catalogue or decision archive found).
+- Design consequence (for a protocol session): events from EFAS formal notifications, decide-act from CEMS activation, "no activation" a valid outcome; prospective.
+
+**Claude's mistakes:** none found. Weakness: the EUSF interventions list was not opened (allowlist); the Monty count (224) conflicts with CEMS's own figure (> 1,000) and was not used.
+
+**Open (each with reason)**
+- DAC agreement. Reason: needs time (Adrian's invitation and a returned sheet).
+- C1 for floods (independent event list, EFAS archive ≥ 10 years). Reason: scope; first step of 2.11b.
+- CEMS 2012–2022 legacy activations not counted. Reason: scope; not needed for a prospective test.
+
+**Next:** session 2.11b (prompt in `docs/PLAN.md` §11). If Adrian prefers another next session, the 2.11b entry stays for later.
 
 ## Session 2.10, early attempt (2026-10-29, 12:06–12:20) — ledger scoring (H7; not moved)
 

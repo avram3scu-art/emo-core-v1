@@ -20,7 +20,7 @@ Candidates, in this order: (A) floods in the EU; (B) heatwaves in the EU.
 
 All sources were opened 29 Oct 2026 (WebFetch), documentation only. No record was counted.
 
-### (A) Floods in the EU — verdict: **feasible pending** (C1, C5 unverified; one design risk)
+### (A) Floods in the EU — verdict: **feasible pending** (C1 unverified; one design risk). C5 settled in §2a
 
 - **C1 Events: unverified.** CEMS Rapid Mapping activations carry an event onset (`eventTime`, distinct from `activationTime`), country and hazard, from 2012, through a public JSON API with no authentication [S1]. That covers only events that someone activated, so it cannot be the event set (see risk). No independent dated flood catalogue was opened (EM-DAT not opened: unverified).
 - **C2 Predict: pass.** EFAS bulletins list each notification with type (formal/informal/flash flood), forecast date, issue date, lead time, river or region, and country. Feb–Mar 2019 had 9 flood and 185 flash-flood notifications [S2]. The web notification archive did not render for the fetch tool [S3]; the bulletins are the usable archive.
@@ -39,6 +39,12 @@ All sources were opened 29 Oct 2026 (WebFetch), documentation only. No record wa
 
 EU floods are the only candidate. Two items must be checked before any loop protocol for floods: (1) the yearly count of EU flood CEMS activations (C5), and (2) an independent dated event list (C1). This check does not move H6 itself; it only says whether H6 can be tested in floods.
 
+## 2a. Follow-up (Adrian's yes, 12:45): C5 and C1
+
+- **C5 Size: pass.** The CEMS public API (`scripts/fetch_cems_activations.py`; raw list `data/second_domain/cems_activations_2026-10-29.json`, SHA-256 50dfef4c5cf963b72ac6e805343fdd913a31a02c147e49ab21db7af6a48c0bcd) returns 268 activations, EMSR656–EMSR935, activated 2023–2026. 90 are floods. Flood activations naming an EU member state, by activation year: 2023 16, 2024 19, 2025 8, 2026 10 (to 29 Oct). That is above 5 a year and four or more times the hurricane rate. The API holds only 2023 onward; older activations (2012–2022) are on legacy pages and were not counted. Only counts were computed: no lag (event → activation) was looked at, so no flood lag value has been seen.
+- **C1 Events: still unverified.** EM-DAT's entry criteria are at least 10 deaths, or at least 100 affected, or a call for international assistance or an emergency declaration; one is enough [S10]. So some EM-DAT entries exist because of a decision, and EM-DAT is not independent of decide-act unless the decision-only entries are dropped. Whether each entry carries a day-level start date was not shown. The best independent candidate is EFAS formal notifications (dated, per river and country [S2]); their archive length (≥ 10 years) is not verified.
+- **Consequence for design:** a flood loop is best run prospectively. Events are defined by EFAS formal notifications (forecast first, so every event has a predict record), and CEMS activation by a national authority is the decide-act record, with "no activation" a valid outcome. This choice belongs to a protocol session, not here.
+
 ## 3. Sources (opened 29 Oct 2026)
 
 - [S1] IFRC Monty STAC extension, CEMS Rapid Mapping source: https://ifrcgo.org/monty-stac-extension/model/sources/CEMS/ (reports "224 activations as of 2026-07" for its own ingest; this does not match [S8] and is not used as a count)
@@ -50,4 +56,8 @@ EU floods are the only candidate. Two items must be checked before any loop prot
 - [S7] Commission newsroom, 27 Aug 2024 (six 2023 flood cases): https://ec.europa.eu/regional_policy/whats-new/newsroom/27-08-2024-commission-proposes-to-deliver-over-eur1-billion-to-help-italy-slovenia-austria-greece-and-france-recover-from-natural-disasters_en
 - [S8] CEMS mapping statistics page: https://mapping.emergency.copernicus.eu/stats/
 - [S9] Climate-ADAPT, heat-health warning systems: https://climate-adapt.eea.europa.eu/en/observatory/policy/national-policies/heat-health-action-plans/national-and-sub-national-warning-systems/
+- [S10] EM-DAT entry criteria: https://doc.emdat.be/docs/protocols/entry-criteria/
+- [S11] CEMS, how to harvest emergency response data (API endpoints): https://mapping.emergency.copernicus.eu/about/how-to-harvest-cems-mapping-data/emergency-response-data/
+- [S12] CEMS public API list endpoint, fetched in full: https://rapidmapping.emergency.copernicus.eu/backend/dashboard-api/public-activations-info/
+- Not opened (failed or blocked): CEMS 2023 activations PDF on Wikimedia (not found); the activations web page (no list rendered); the EUSF interventions list PDF on ec.europa.eu (allowlist).
 - Not opened (blocked by the allowlist): the EUSF interventions list PDF on ec.europa.eu.
