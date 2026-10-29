@@ -136,3 +136,12 @@ Power counts rejections of the true pair; family-wise rejection is within 0.02 o
 ## 11. Sources
 
 All opened in session 2.2 and listed with URLs and access dates in `docs/LOOP_DATA.md` §10; none opened in session 2.3. The Census Bureau boundary file (§2) and the MediaWiki redirect API (§3.3) are named here for 2.4 and are **unverified**.
+
+## 12. Amendment 1 (pre-registered 29 Oct 2026, before its run): stressed season clustering
+
+Why: §10 showed the within-season null calibrated but not needed (the naive null did not over-reject). This checks both under strong season clustering. Synthetic only; no change to §2–§8 or to `analysis/loop_power.py`; code `analysis/loop_power_amend1.py` imports its functions unchanged and sets the season-shock parameters; output `analysis/loop_power_amend1_output.txt`; seed 2026102924; 2,000 studies per cell, 999 permutations.
+
+- Cells: KAPPA = 0.9 (shared share of the season shock); SIG_SEASON ∈ {1.5, 2.5}; designs HU and HU+TS; r = 0 (H4) and Δ = 0 (H5, with the §9 trends).
+- Reported: H4 family-wise rate for the within-season and naive nulls; H5 rate.
+- Criteria (as §9): calibrated if ≤ 0.060.
+- Expectation written now: within-season ≤ 0.060 in every cell; naive > 0.10 at SIG_SEASON = 2.5 for both designs; H5 ≤ 0.060 (season is its unit).
