@@ -117,6 +117,12 @@ def test_resolve_target_rules():
     assert lh.resolve_target(q3, titles)[0] is None
 
 
+def test_target_kind():
+    assert lh.target_kind("List of storms named Bill") == "list"
+    assert lh.target_kind("2015 Atlantic hurricane season") == "season"
+    assert lh.target_kind("Hurricane Ida") == "storm"
+
+
 def test_attention_window():
     s = [{"20200907": 10, "20200908": 20, "20200909": 30, "20200910": 1000}]
     a, tot = lh.attention(dt.date(2020, 9, 10), s)
@@ -152,3 +158,28 @@ def test_no_h4_h5_output_exists():
     for p in list(DATA.rglob("*")) + list((ROOT / "analysis").glob("loop_*")):
         n = p.name.lower()
         assert not any(k in n for k in ("h4", "h5", "loop_test", "loop_result")), p
+
+
+@pytest.mark.skipif(not (DATA / "loop_events.csv").exists(), reason="table not built")
+def test_validator_catches_planted_errors(tmp_path, monkeypatch):
+    import shutil
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import validate_loop_table as v
+
+    d = tmp_path / "loop_hurricanes"
+    shutil.copytree(DATA, d)
+    monkeypatch.setattr(v, "DATA", d)
+    monkeypatch.setattr(v.blt, "DATA", d)
+    monkeypatch.setattr(v.blt, "SRC", d / "sources")
+    assert v.check_manifest() == [] and v.check_trace() == []
+    # 1. a changed table value is caught by the rebuild and the trace
+    t = (d / "loop_events.csv").read_text().splitlines()
+    head = t[0].split(",")
+    row = t[1].split(",")
+    row[head.index("ev_V_kt")] = str(int(row[head.index("ev_V_kt")]) + 5)
+    (d / "loop_events.csv").write_text("\n".join([t[0], ",".join(row), *t[2:]]) + "\n")
+    assert v.check_rebuild() and v.check_trace()
+    # 2. a changed source extract is caught by its checksum
+    p = d / "sources" / "fema_qualifying.csv"
+    p.write_text(p.read_text().replace("Hurricane", "Hurricane ", 1))
+    assert any("sha256 mismatch" in e for e in v.check_manifest())

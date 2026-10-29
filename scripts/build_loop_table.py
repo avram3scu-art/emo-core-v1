@@ -38,7 +38,7 @@ COLUMNS = [
     # predict
     "pr_F", "pr_F_intensity", "pr_n_lines", "pr_ess48",
     # attend
-    "at_target", "at_rule", "at_via", "at_created_utc", "at_views_3d", "at_A", "at_wiki_file",
+    "at_target", "at_target_kind", "at_rule", "at_via", "at_created_utc", "at_views_3d", "at_A", "at_wiki_file",
     # warnings
     "wn_advisory_file", "wn_issued_utc", "wn_codes", "wn_W_hours",
     # exclusions
@@ -170,6 +170,7 @@ def build() -> dict[str, object]:
                 pages = w["creation"]["response"]["query"]["pages"]
                 revs = pages[0].get("revisions") or []
                 row["at_target"], row["at_rule"], row["at_via"] = target, rule, ";".join(via) or None
+                row["at_target_kind"] = lh.target_kind(target)
                 row["at_created_utc"] = revs[0]["timestamp"] if revs else None
                 series = [lh.views_by_day(w["pageviews"][t]["response"]) for t in [target, *via]]
                 a_val, tot = lh.attention(d0, series)

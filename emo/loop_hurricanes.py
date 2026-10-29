@@ -475,6 +475,15 @@ def resolve_target(query: dict, titles: dict[str, str]) -> tuple[str | None, str
     return target, rule, sorted(set(via))
 
 
+def target_kind(title: str) -> str:
+    """Descriptive flag (no weight in §3.3's A): storm article, list of same-named storms, or season article."""
+    if title.startswith("List of"):
+        return "list"
+    if "hurricane season" in title.lower():
+        return "season"
+    return "storm"
+
+
 def views_by_day(pv_json: dict) -> dict[str, int]:
     return {it["timestamp"][:8]: int(it["views"]) for it in pv_json.get("items", [])}
 

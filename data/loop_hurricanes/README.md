@@ -26,7 +26,7 @@ Protocol: `docs/LOOP_PROTOCOL.md` §2–§3, amendments 4–6 and build rules (�
 - **ev_** event: ATCF id, name, season, t0 (UTC), landfall entity k, HURDAT2 line of t0, status, V (kt), minimum pressure (mb; sensitivity only), R64 (n mi; −999 or TS → 0, flag), distance to the entity (km; 0 = inside), number of qualifying US landfalls, HU-only flag with its own t0 and entity (secondary set; its FEMA matching would use code H only: `dc_dr_type_hu_only`).
 - **dc_** decide-act: match status and rule (title / window), chosen DR (number, dates, region), Y_state = request − date(t0), Y_fed = declaration − request (days), number of DRs matched, EM numbers and dates, EMpre, `incidentType` strings of the matched records, type route (code / fallback, amendment 5), DR/EM `incidentId` differ flag.
 - **pr_** predict: F (track skill vs OCD5, amendments 4 and 6), intensity skill (for session 2.7; enters no test), lines used, summed 48-h equivalent sample size.
-- **at_** attend: target article, rule (T1/T2/T3), candidate titles redirecting to it, creation time, views over the three UTC days before date(t0), A = log10(1 + views), wiki file.
+- **at_** attend: target article, its kind (storm / list / season; descriptive flag: §3.3 accepts a non-disambiguation list or season page as T2 target), rule (T1/T2/T3), candidate titles redirecting to it, creation time, views over the three UTC days before date(t0), A = log10(1 + views), wiki file.
 - **wn_** warnings: advisory file, issuance (`ADVDATE`, UTC), `TCWW` codes, W = t0 − issuance (hours).
 - **exclusions**: `link:reason` list; reasons below.
 

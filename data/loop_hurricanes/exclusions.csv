@@ -1,0 +1,50 @@
+atcf,link,reason,text
+AL012015,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL012015,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL022015,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL022015,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL032016,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL032016,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL032017,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL032017,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL062017,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL062017,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL162017,decide,no_dr,matched records include no major disaster (DR)
+AL012018,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL012018,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL072018,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL072018,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL052019,decide,no_dr,matched records include no major disaster (DR)
+AL112019,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL112019,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL122019,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL022020,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL022020,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL032020,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL062020,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL062020,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL082020,decide,no_dr,matched records include no major disaster (DR)
+AL082020,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL222020,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL292020,decide,no_dr,matched records include no major disaster (DR)
+AL032021,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL032021,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL042021,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL042021,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL052021,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL062021,decide,no_dr,matched records include no major disaster (DR)
+AL062021,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL082021,decide,no_dr,matched records include no major disaster (DR)
+AL132021,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL132021,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL142021,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL142021,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL032022,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL032022,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL092023,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL092023,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL162023,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL162023,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
+AL062024,predict,f_ess_lt2,summed 48-h equivalent sample size < 2
+AL032025,decide,no_candidate,no FEMA DR/EM record of a qualifying type in state k within the date window
+AL032025,predict,f_no_lines,no error-file line with initial time < t0 and 48-h OFCL and OCD5 errors
