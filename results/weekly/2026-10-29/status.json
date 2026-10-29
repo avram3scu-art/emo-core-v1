@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-29",
+  "ok": true,
+  "commit_allowed": true,
+  "problems": [],
+  "ledger_ok": true,
+  "reproducibility": {
+    "rdl_backtest_run": true,
+    "rdl_backtest_heldout": true,
+    "rdl_v03_development": true,
+    "rdl_v03_heldout": true,
+    "gwi_hurricanes": true,
+    "gwi_calibration": true,
+    "he_calibration": true,
+    "smf_steo": true,
+    "smf_steo_leads": true,
+    "smf_steo_h18": true,
+    "smf_steo_elec": true,
+    "smf_spf": true,
+    "smf_ip": true,
+    "smf_dm": true,
+    "synergy_climate": true
+  },
+  "analyses": {
+    "dac_ozone": "unchanged since 2026-10-28",
+    "dac_compare_ozone_climate": "unchanged since 2026-10-28",
+    "organismality_plane": "unchanged since 2026-10-28",
+    "information_time_nhc": "changed since 2026-10-28",
+    "score_forecast_ledger": "unchanged since 2026-10-28"
+  },
+  "previous": "2026-10-28"
+}
