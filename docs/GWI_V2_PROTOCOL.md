@@ -111,6 +111,7 @@ False-positive rate ≤ 0.017 at every n (nominal 0.05; conservative because bot
 - USGS, "Global earthquake numbers on par for 2015", https://www.usgs.gov/news/global-earthquake-numbers-par-2015 (about 18 M ≥ 7.0 a year since about 1900; 19 in 2015).
 - ComCat query form (`/fdsnws/event/1/query`, parameters starttime, endtime, minmagnitude, format=csv): from https://dev.to/ronin13/earthquake-data-has-a-free-json-api-every-quake-on-earth-no-key-required-hch; the official page https://earthquake.usgs.gov/fdsnws/event/1/ could not be fetched here, so `eventtype`, `orderby=time-asc` and the CSV columns `time`, `mag` are **unverified** until the scoring run (it fails loudly if they differ).
 - Wikimedia pageviews and langlinks APIs: as `docs/GWI_PROTOCOL.md` §3.
+- **Verified after the protocol commit** (one-off run 40848154988, `scripts/check_gwi_v2_sources.py`; no pageviews, no event in the window): the ComCat query of `scripts/fetch_gwi_v2.py`, run on 2025, returns CSV with columns `time`, `mag` (16 rows, all M ≥ 7.0; outside the test, no weight); all 21 titles resolve with redirects followed ("Mitochondrion" → "Mitochondria"); 12/12 editions each, except "Fern" 11/12. The two "unverified" items above are thereby checked.
 
 ## 11. Results
 
