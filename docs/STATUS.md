@@ -25,7 +25,7 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 **Request not adopted, pending Adrian's decision (04:57):** Adrian asked to make Claude an official co-author. Claude declined to write it as a rule: it conflicts with CLAUDE.md's disclosure rule ("AI as a tool, not an author"), most journals bar AI authorship because an author must approve and answer for the work (Wiley rule recorded in `docs/REVIEW_F10_DECISION_OR_SUPPLY.md`; other publishers not checked this session), and a co-owner of the vision is a weaker tester of it. Recommended instead: a named contributions line, "Adrian N. Avramescu (concept, decisions, verification). Claude (Anthropic) contributed code, data coding, analysis and drafting under the author's direction", next to the three-point disclosure. Reason open: Adrian's decision.
 
 **Open (each with reason)**
-- Credit line above. Reason: Adrian's decision.
+- ~~Credit line above.~~ **Decided (Adrian, 29 Oct 05:15, "Yes"):** contributions line adopted, in CLAUDE.md (AI disclosure); README gets it in session 2.1.
 - Pre-push hook, lock file, README, FAILURES.md, τ_I fix. Reason: scope; session 2.1.
 - Unverified loop sources (per-storm NHC verification, TCR outcomes, warning times, FEMA hurricane incident type, rule-based triggers). Reason: scope; session 2.2.
 

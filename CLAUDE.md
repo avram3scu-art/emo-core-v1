@@ -64,6 +64,10 @@ Use this wording in papers, grant applications and releases:
 
 Do not add "no AI tool is listed as an author". Manuscripts carry "Adrian N. Avramescu" under the title.
 
+**[2.0] Contributions line** (Adrian's yes, 29 Oct 2026 05:15). Claude is credited by name for its role, not as an author. Next to the disclosure, in the README, release notes, papers and grant applications:
+
+> Contributions: Adrian N. Avramescu (concept, decisions, verification). Claude (Anthropic) contributed code, data coding, analysis and drafting under the author's direction.
+
 ## Recording (every session, as the work happens)
 
 Adrian does not keep records; Claude does. Every test, simulation, probe, run, conversion, fetch and failed attempt is recorded in the repo in the same session, never only in the chat or Claude's workspace:
