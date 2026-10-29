@@ -310,3 +310,25 @@ Code `analysis/loop_power_2027.py` (imports `analysis/loop_power.py` and `analys
 5. **Scoring rule (fixed now):** Brier score per resolved forecast. Deciding baseline: the same estimator pooled over classes (it tests whether conditioning on intensity adds skill); also reported, no weight: the ledger's constant 0.5. Skill = mean Brier(baseline) − mean Brier(forecast). Significance: one-sided sign-flip permutation of per-event summed differences (event = unit, so the up to five forecasts of one event are not counted as independent), exact enumeration if 2^n ≤ 65,536, else 9,999 random flips, seed 2027; p < 0.05 → "beats baseline"; otherwise "not shown". Synthetic false-positive rate and power at the expected 2027 size are computed after the probabilities (they need them) and recorded with them. H7's overall reading still needs ≥ 20 resolved forecasts (PLAN §4).
 6. **Resolution:** in the session that builds the 2027 rows; if no HURDAT2 file covers 2027 by 1 Oct 2028, the forecasts are void ("not available"). A 2027 season with no qualifying landfall resolves zero forecasts, recorded.
 7. **Limits stated now:** these forecasts test whether 2015–2025 response regularities transfer to 2027; they are not a test of coupling or learning. Q1 mainly encodes that hurricanes get DRs and tropical storms rarely do.
+
+### 20.5 Result of the §20.4 check (single run, 29 Oct 2026, Claude's workspace)
+
+Code committed before the run (71381f3); output `analysis/loop_power_2027_output.txt` (3.8 min). Evidence class: infrastructure (synthetic). Coupling coefficients 0.711 (r = 0.3), 1.177 (r = 0.5).
+
+| Blind design | blind lags | FPR (r = 0) | power r = 0.5 | power r = 0.3 |
+|---|---|---|---|---|
+| 2027 alone, 2 lags (m = 2, K = 1) | 2 | 0.000 | 0.000 | 0.000 |
+| m = 2, K = 3 | 6 | 0.000 | 0.000 | 0.000 |
+| m = 2, K = 5 | 10 | 0.017 | 0.152 | 0.087 |
+| m = 2, K = 10 | 20 | 0.015 | 0.375 | 0.203 |
+| m = 4, K = 1 / 3 / 5 / 10 | 4 / 12 / 20 / 40 | 0.017–0.024 | 0.126 / 0.445 / 0.567 / 0.704 | — |
+| amendment 9, q = 0.25, m = 2, K = 5 / 10 | — | 0.001 / 0.015 | 0.018 / 0.204 | — |
+| stress (KAPPA 0.9, SIG 1.5), m = 2, K = 1 / 5 / 10 | — | 0.000 / 0.015 / 0.021 | — | — |
+
+§7 schedule as registered (a test each December, 10 blind seasons, m = 2): any rejection 0.051. H3r at D = 12: PASS needs ≥ 10 measured; exact rate 0.019 at share 0.5; power 0.25 / 0.56 / 0.89 / 0.98 at 0.7 / 0.8 / 0.9 / 0.95. With season clustering (ICC 0.2): 0.055 at 0.5; power 0.66 / 0.91 / 0.98 at 0.8 / 0.9 / 0.95.
+
+**Expectations (§20.4) vs result.** Held: calibrated in every cell (≤ 0.024; H3r ≤ 0.055); power at r = 0.5 below 0.2 for 2027 alone and below 0.8 at K = 5, m = 2. **Did not hold:** §7's December schedule did not inflate the rate (0.051 ≤ 0.060), because early looks cannot reject at all (below).
+
+**Why power is 0 at K ≤ 3, m = 2.** With two measured storms in a season, the within-season permutation has two arrangements per season, so the smallest attainable p is about 2^−K: above 0.05 until K = 5. This is a property of the registered null, not a Monte Carlo accident. **Reading (fact, not a new rule):** when the blind seasons give fewer than 20 distinct within-season arrangements of the complete cases (∏ n_s! < 20), the blind test cannot reach p < 0.05 and its result reads "cannot be tested at this size".
+
+**What this shows.** The blind arm on A → Y_state holds its false-positive rate, including under strong clustering and storm-article missingness, but at realistic sizes (about 2 measured storms per season) its power at r = 0.5 is 0.15 after five seasons and 0.38 after ten; 0.8 is not reached within ten blind seasons at m = 2, and only near 0.7 at m = 4. Amendment 9 costs power when it removes lag storms (0.20 vs 0.38 at K = 10, q = 0.25); in 2015–2025 it would have removed none (§19). H3r is adequately powered (≥ 0.89) if at least 90% of DR events are measurable, and is expected to be run when pooled D reaches 12 (about five seasons at 2–3 DR events per season). **The hurricane blind arm cannot decide H4 within a decade at the realized declaration rate**; H6 (a second domain) or pooling across domains is the only route to adequate power.

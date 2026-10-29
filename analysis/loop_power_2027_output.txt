@@ -1,0 +1,24 @@
+Loop 2027+ blind arm and H3r (docs/LOOP_PROTOCOL.md §20.4). Synthetic; counts only.
+seed 2026102940, 2000 studies/cell, 999 permutations, STAT fe, Y_SHOCK_SIGN -1, pair ('A', 'Ystate'); coupling coef r=0.3 0.711, r=0.5 1.177; MC SE of 5% 0.0049
+known history: sizes (2, 3, 6, 4, 4, 11, 8, 4, 3, 6, 1); lags (0, 2, 3, 2, 1, 5, 1, 3, 1, 6, 0)
+Blind arm (amendment 8), q = 0 (no A missing among lag storms)
+  m=2 K= 1 (blind lags  2): FPR 0.000 | power r=0.5 0.000 | power r=0.3 0.000
+  m=2 K= 3 (blind lags  6): FPR 0.000 | power r=0.5 0.000 | power r=0.3 0.000
+  m=2 K= 5 (blind lags 10): FPR 0.017 | power r=0.5 0.152 | power r=0.3 0.087
+  m=2 K=10 (blind lags 20): FPR 0.015 | power r=0.5 0.375 | power r=0.3 0.203
+  m=4 K= 1 (blind lags  4): FPR 0.022 | power r=0.5 0.126
+  m=4 K= 3 (blind lags 12): FPR 0.024 | power r=0.5 0.445
+  m=4 K= 5 (blind lags 20): FPR 0.017 | power r=0.5 0.567
+  m=4 K=10 (blind lags 40): FPR 0.023 | power r=0.5 0.704
+Amendment 9: A missing among lag storms, q = 0.25, severity-dependent; m = 2
+  K= 1: FPR 0.000 | power r=0.5 0.000
+  K= 3: FPR 0.000 | power r=0.5 0.000
+  K= 5: FPR 0.001 | power r=0.5 0.018
+  K=10: FPR 0.015 | power r=0.5 0.204
+Stress (KAPPA 0.9, SIG_SEASON 1.5), m = 2, r = 0
+  K= 1: FPR 0.000
+  K= 5: FPR 0.015
+  K=10: FPR 0.021
+§7 schedule as registered (test each December, 10 blind seasons, m = 2, r = 0): any rejection 0.051
+H3r (amendment 7), D = 12: PASS needs >= 10 measured; exact rejection by true share: 0.5: 0.019, 0.7: 0.253, 0.8: 0.558, 0.9: 0.889, 0.95: 0.980
+H3r with season clustering (ICC 0.2, seasons of 2-3, run at pooled D >= 12; 20,000 runs): 0.5: 0.055, 0.8: 0.655, 0.9: 0.910, 0.95: 0.978
