@@ -1,0 +1,8 @@
+row_id,sublayer,reading,date_status,date_earliest,date_latest,source_wording,good,end_point,pairs_with,source_file,quote,description,notes
+t0,validation,,exact,2031-02-20,2031-02-20,,,,,training release,"WHO's declaration of an emergency on 20 February 2031",WHO emergency declaration,day stated
+order_new,firm_order,,exact,2031-03-03,2031-03-03,,Zanovir,member states,,training release,"has today signed a contract with Fictipharm for 200,000 courses",New contract,"""today"" in a release dated 3 March 2031"
+order_earlier,firm_order,,upper_bound,,2031-03-03,"the 50,000 courses purchased under the earlier contract",Zanovir,member states,,training release,"purchased under the earlier contract",Earlier contract,no day given; earlier than the new contract so the additional-purchase rule gives no lower bound
+delivery_pt,delivery,,upper_bound,,2031-03-03,"An initial 20,000 courses of the earlier contract have arrived in Portugal",Zanovir,member states,order_earlier,training release,"have arrived in Portugal",Earliest arrival in a member state,the release links the delivery to the earlier contract
+delivery_new,context,,,,,,Zanovir,,,training release,"Delivery of the new courses will start in April",Announced delivery,announced not arrived: never a delivery
+agency_proposal,context,,,,,,,,,training release,"proposes a regulation creating a permanent stockpile agency",Proposal,a proposal binds no one; the agency does not exist yet
+funding,dedicated_funding,,missing,,,,,,,training release,,No earmarked funding shown,
