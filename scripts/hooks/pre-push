@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# EMO pre-push hook (CLAUDE.md 2.0, "Hooks on"; audit 2026-10-29 D9; session 2.1).
+# Install once per clone:   git config core.hooksPath scripts/hooks
+# Refuses the push unless, on the committed state being pushed:
+#   1. the working tree has no uncommitted changes to tracked files (so the checks see what is pushed),
+#   2. scripts/claims_grep.py reports unjustified=0, and its report docs/F2_CLAIMS_GREP.md is committed,
+#   3. ruff passes (same two commands as CI),
+#   4. the test suite passes (pytest -q; ~20 s; slow reruns live in the weekly run, not in pytest).
+# Python: `git config emo.python <path>` if set, else .venv/bin/python, else python3.
+# Pushing with --no-verify is not allowed (CLAUDE.md).
+set -u
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+py="$(git config --get emo.python || true)"
+[ -z "$py" ] && [ -x .venv/bin/python ] && py=.venv/bin/python
+[ -z "$py" ] && py=python3
+
+fail() { echo "pre-push: REFUSED: $*" >&2; exit 1; }
+
+# Only pushes of the current HEAD can be checked here.
+head_sha="$(git rev-parse HEAD)"
+while read -r _local_ref local_sha _remote_ref _remote_sha; do
+  [ "$local_sha" = "0000000000000000000000000000000000000000" ] && continue   # branch deletion
+  [ "$local_sha" = "$head_sha" ] || fail "pushing $local_sha, which is not HEAD ($head_sha); check out what you push"
+done
+
+git diff --quiet HEAD -- || fail "uncommitted changes to tracked files; commit or stash them first"
+
+echo "pre-push: claim-word check" >&2
+PYTHONPATH=. "$py" scripts/claims_grep.py >&2 || fail "claims_grep: unjustified claim words (see above)"
+git diff --quiet HEAD -- docs/F2_CLAIMS_GREP.md \
+  || fail "docs/F2_CLAIMS_GREP.md changed when regenerated; commit it"
+
+echo "pre-push: ruff" >&2
+"$py" -m ruff check . >&2 || fail "ruff check ."
+"$py" -m ruff check --isolated --select F --target-version py311 analysis >&2 || fail "ruff (analysis/, pyflakes rules)"
+
+echo "pre-push: tests" >&2
+PYTHONPATH=. "$py" -m pytest -q >&2 || fail "pytest"
+
+echo "pre-push: all checks passed" >&2
+exit 0

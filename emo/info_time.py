@@ -58,7 +58,7 @@ def _time_axis(index: pd.Index) -> tuple[np.ndarray, str]:
 
     Numeric index (e.g. years): the index values, so a missing year leaves a gap
     instead of shrinking the time axis; slope is per index unit. DatetimeIndex:
-    decimal years since the first observation; slope is per year. Any other index
+    decimal years from the start of the series; slope is per year. Any other index
     (e.g. strings): fall back to equally spaced steps; slope is per step.
     """
     if isinstance(index, pd.DatetimeIndex):
