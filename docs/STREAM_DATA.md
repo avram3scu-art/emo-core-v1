@@ -154,4 +154,4 @@ Code `emo/stream/` (fetchers, exclusions, store, counts), `scripts/stream_daily.
 - **Manifest** `data/stream/MANIFEST.jsonl`: run times, SHA-256 of ciphertext and plaintext, per-source SHA-256, a yes/no "had records" flag (from stream-0.2; an empty source is an error `EmptyResponse`), error class, and every request with status, start and end time (latency). No record counts or sizes (so nothing reveals what E1 removed).
 - **Append-only:** `scripts/stream_daily.py verify` refuses a commit that changes an existing log file or an earlier manifest line.
 - **Monthly counts** (`scripts/stream_daily.py counts`, `emo/stream/counts.py`): events per source and linked events by explicit keys only (CEMS `gdacsId`; GLIDE between GDACS and GO events with an appeal). CEMS activations in any EU27 country are left out of every count. No outcome field is read. Infrastructure.
-- **Storage estimate:** not measured yet; read from the first runs' file sizes in 3.3.
+- **Storage:** 348,928 bytes a run (~127 MB a year); decision in 3.3: no trim, review above 400 MB (`docs/LOOP_CARD_PROTOCOL.md` §12).
