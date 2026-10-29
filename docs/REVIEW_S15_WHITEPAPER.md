@@ -4,14 +4,14 @@ Reviewer: Claude, 29 Oct 2026, of `docs/WHITEPAPER_EMO_what_runs_today.md` as co
 
 ## Verdict
 
-**Not ready to share.** Fit to stand in the repository as an honest status document once points 1–3 are fixed. As a white paper meant to persuade a funder or partner, it would very likely fail (judgement, not data): it proves the project is honest, not that it is worth funding.
+**Not fit to share yet.** Fit to stand in the repository as an honest status document once points 1–3 are fixed. As a white paper meant to persuade a funder or partner, it would very likely fail (judgement, not data): it proves the project is honest, not that it is worth funding.
 
 ## Checks done in the session
 
 - Every relative link in the draft resolves to a file in the repo (script check, 29 Oct).
 - Claim-word check: `unjustified=0` after seven rewordings.
 - Numbers checked against their files: mpox lags (−39, −25, −1; +22, +36, +60 with early t0), Belgian delivery t0 + 46 and FFP2 56 d (reading A), GWI 14/21 vs 9/275 and p = 2.3e-13, RDL v0.2/v0.3 held-out results, synergy and GWI-calibration FAILs, He false-positive rates, a_UIA audit.
-- **Error found and fixed in the draft:** τ_I was first written "3–4% a year", copied from README; the weekly output gives 2.3% at 12 h and 3.0–4.0% at 24–120 h. README carries the same error (point 3).
+- **Error found and fixed in the draft:** τ_I was initially written "3–4% a year", copied from README; the weekly output gives 2.3% at 12 h and 3.0–4.0% at 24–120 h. README carries the same error (point 3).
 
 ## Points, most serious first
 
