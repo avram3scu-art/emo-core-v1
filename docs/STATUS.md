@@ -4,12 +4,34 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 10:50):** session 2.7 (SMF v2, NHC 2026 test pre-registered) closed. Next: session 2.8 (2027 registry). SMF v2 NHC fetch from 1 May 2027 (check in 2.8). GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 11:15):** session 2.8 (2027 registry) closed; Zenodo version 2 of the ledger pending (Adrian). Next: session 2.9 (UIA 2.0, He test). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
-- **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+- **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.8 (2026-10-29, 10:50–11:15) — 2027 registry (H4, H7; amendments = infrastructure; forecasts pre-registered blind)
+
+**Done when met: no, one step left.** Ledger entries committed (b5b9a9b); Zenodo deposit pending. Reason: Adrian's decision/action (his Zenodo account; Claude has no access); deadline 1 June 2027.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green. SMF v2 NHC check: before 1 May 2027, nothing done (§15 rule 8).
+- Amendments 7–9 for 2027+ only (`docs/LOOP_PROTOCOL.md` §20, f59a7c6, committed before any lag value was opened this session): (a) H3r on storms with a DR candidate, run once at pooled D ≥ 12, plus a declaration-rate measure; event set HU+TS; (b) blind pair A → Y_state by stated reasons, no lag value; (c) list/season attention targets rejected.
+- Synthetic (§20.5, code 71381f3 before its run): blind arm FPR ≤ 0.024 incl. stress and missingness; power at r = 0.5 with ~2 measured storms per season: 0 for 2027 alone (p < 0.05 unattainable), 0.15 after 5 seasons, 0.38 after 10; §7 December schedule 0.051; H3r FPR 0.019 (0.055 clustered), power 0.89 at a 90% measurable share.
+- Forecasts (§21; rules committed first, fit after): 10 entries L2027-01…10 (Q1 DR by HU/TS; Q2–Q5 lag thresholds by V ≥ 96 kt), Jeffreys fit on 2015–2025; Brier vs pooled baseline, sign-flip test: FPR 0.004, power 0.234. Ledger SHA-256 ea99392562e35811faadeffd148bd6fcfb4598324f43524af17295705d1596ca; rebuild byte-identical.
+- Review (Adrian 11:11, "2 - yes to all three"; point 1 unanswered, Claude's recommendation "no more now" applied): 2.12 split into 2.12 (GWI v2, 15 Nov 2027) and 2.12b (2027 hurricane scoring after HURDAT2 2027); PLAN H4 and H7 notes; README row updated; 2.9 prompt notes that no unused 2015–2025 event remains.
+
+**Claude's mistakes (fixed, recorded):** (1) ruff not installed in the workspace (as in 2.7); installed the locked version before the push. (2) Five ordinal "first" claim-word hits; protocol reworded, the two registered code files justified in `scripts/claims_grep.py` rather than edited (rewording the forecast script would have changed the ledger hash on rebuild).
+
+**Open (each with reason)**
+- Zenodo version 2. Reason: Adrian's decision/action; before 1 June 2027.
+- H4 in the hurricane domain cannot be decided before about 2036. Reason: needs time / scope (H6, session 2.11).
+- The "fewer than 20 within-season arrangements → cannot be tested" reading (§20.5) is a stated consequence of the registered null, written by Claude; Adrian accepted the review without objection.
+- H5 not moved by this session. Reason: scope (no blind H5 test is registered; §6 is known history).
+- Weekly run with the 2.6–2.8 frozen scripts. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.9 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.7 (2026-10-29, 10:35–10:50) — SMF v2 (H1; definition = infrastructure; NHC 2026 test pre-registered blind)
 

@@ -50,10 +50,10 @@ Plan 2.0 rebuilds the vision from what works. **The emergent mind is defined as 
 | H1 | Predict: forecast skill improves over time (supports the predict link only; carries no weight on the mind claim) | τ_I = 0 on the domain's forecasts | NHC 2.3–4.0%/yr [exploratory] *Note 29 Oct 2026 (session 2.7):* SMF v2 (skill vs persistence, DM, Holm) is the SMF definition; one-season test of OFCL vs OCD5 on 2026 storms pre-registered (`docs/SMF_PROTOCOL.md` §15), scored after 1 May 2027 |
 | H2 | Attend: attention ignites on hazard events beyond calendar and seasonal drivers, with a threshold that transfers | GWI v2 fails its prospective calibration or event test | partial. *Note 29 Oct 2026 (session 2.6):* GWI v2 pre-registered (`docs/GWI_V2_PROTOCOL.md`): 20-placebo calibration and M ≥ 7 earthquake event test on 1 Nov 2026 – 31 Oct 2027, scored 15 Nov 2027 |
 | H3 | Decide-act: action follows each event with an event-specific, measurable lag | lags not measurable from official records for most events | ozone/climate, PPE, mpox profiles |
-| H4 | **Coupling beyond procedure**: events with earlier attention or better forecasts get faster action, after controlling for severity, region and every rule-based trigger, and beating the independent-agencies null | no significant association at power ≥ 0.8, or an equivalence bound excludes it | not tested |
+| H4 | **Coupling beyond procedure**: events with earlier attention or better forecasts get faster action, after controlling for severity, region and every rule-based trigger, and beating the independent-agencies null | no significant association at power ≥ 0.8, or an equivalence bound excludes it | not tested. *Note 29 Oct 2026 (session 2.8):* 2015–2025 cannot test it (guard §15); the hurricane blind arm (A → Y_state, `docs/LOOP_PROTOCOL.md` §20.5) has power 0.15 after 5 blind seasons and 0.38 after 10 at about 2 measured storms per season, and cannot reject at all before about 5 seasons; H4 cannot be decided in this domain before about 2036, so a second domain (H6) or pooling across domains is the only route to adequate power |
 | H5 | **Learning**: action lags shrink across seasons more than intensity mix and forecast gains explain | no significant trend in residual lags at adequate power | not tested. *Note 29 Oct 2026 (session 2.3):* synthetic power 0.12–0.41 with ~9 seasons (`docs/LOOP_PROTOCOL.md` §10); adequate power is not reachable before about 2030, so a non-significant H5 reads "not shown at this size", never FAIL |
 | H6 | Generality: H4–H5 hold in a second hazard or region | they fail there | not tested |
-| H7 | Choose: registered forecasts of response outcomes beat a naive baseline (Brier score) | no better than baseline after ≥ 20 resolved forecasts | 5 forecasts, unscored |
+| H7 | Choose: registered forecasts of response outcomes beat a naive baseline (Brier score) | no better than baseline after ≥ 20 resolved forecasts | 5 forecasts, unscored. *Note 29 Oct 2026 (session 2.8):* 10 hurricane-loop forecasts for 2027 registered (`docs/LOOP_PROTOCOL.md` §21), scored in 2.12b |
 
 **Falsification, stated now.** If H4 and H5 both fail at adequate power in the hurricane domain, EMO reports publicly that the links are not shown to be coupled or learning there, and that the "mind" reading is unsupported for that domain. EMO then remains a set of response measurements, which is still useful, but the claim is withdrawn for that domain.
 
@@ -89,11 +89,11 @@ No phase starts on the calendar; each starts when its gate is met.
 | Phase | Sessions | Gate to enter the next phase |
 |---|---|---|
 | A. Clean ground, loop design | 2.1–2.4 | loop event table built under a committed protocol; README true |
-| B. The loop on the record | 2.5–2.12 | at least one H4/H5 result recorded (pass or fail) and GWI v2 pre-registered; 2027 registry deposited before 1 June 2027 |
+| B. The loop on the record | 2.5–2.12b | at least one H4/H5 result recorded (pass or fail) and GWI v2 pre-registered; 2027 registry deposited before 1 June 2027 |
 | C. Credibility | 2.13–2.17 | release DOI resolves; report reproducible |
 | D. Partners and money | 2.18–2.22 | a partner's written reply |
 
-Sessions 2.8, 2.10, 2.12 have fixed dates; 2.11, 2.18 and 2.21 depend on other people's replies.
+Sessions 2.8, 2.10, 2.12 and 2.12b have fixed dates (2.12b: when the HURDAT2 file covering 2027 exists, about May 2028); 2.11, 2.18 and 2.21 depend on other people's replies.
 
 ## 9. Session by session
 
@@ -117,9 +117,10 @@ Sessions 2.8, 2.10, 2.12 have fixed dates; 2.11, 2.18 and 2.21 depend on other p
 | 2.9 | UIA 2.0, He test | H4 | result recorded |
 | 2.10 | Ledger scoring (after 31 Dec 2026) | H7 | scores deposited |
 | 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
-| 2.12 | Score 2027 (Dec 2027) + GWI v2 scoring | H2, H4, H5, H7 | blind results recorded |
+| 2.12 | GWI v2 scoring (15 Nov 2027) | H2 | blind result recorded |
+| 2.12b | Score the 2027 hurricane season (after HURDAT2 2027, ~May 2028) | H3, H4, H7 | blind results recorded |
 
-**Phase C: credibility**: 2.13 white paper 2.0; 2.14 software paper; 2.15 release 1.0; 2.16 State of the Mirror 2027; 2.17 briefs.
+**Phase C: credibility**: 2.13 white paper 2.0; 2.14 software paper; 2.15 release 1.0; 2.16 State of the Mirror 2027 (after 2.12b); 2.17 briefs.
 
 **Phase D: partners and money**: 2.18 first partner; 2.19 legal home; 2.20 first grant; 2.21 consortium role; 2.22 paid layer, yes or no.
 
@@ -226,7 +227,7 @@ Done when: ledger entries committed and deposited before 1 June 2027.
 
 ```text
 EMO session 2.9: UIA 2.0 loop profile and He direction test. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.9 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H4. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.9 task: define UIA 2.0 as the per-event profile of the loop links (docs/UIA_PROTOCOL.md §2.0, never a weighted sum); pre-register the He direction test (permutation test T-D, docs/HE_CALIBRATION_PROTOCOL.md) on loop events not yet used in 2.5 if any remain, else label known history; run once.
+Session 2.9 task: define UIA 2.0 as the per-event profile of the loop links (docs/UIA_PROTOCOL.md §2.0, never a weighted sum); pre-register the He direction test (permutation test T-D, docs/HE_CALIBRATION_PROTOCOL.md) on loop events not yet used in 2.5 if any remain, else label known history; run once. Use this 2.8 finding: all 52 events of 2015–2025 entered the 2.5 run (docs/LOOP_PROTOCOL.md §19), so none remains unused and the He test is labelled pre-registered on known history; 2027 rows are reserved for 2.12b and must not be used.
 Done when: protocol, result and evidence class committed.
 ```
 
@@ -246,12 +247,22 @@ Session 2.11 task: when a coder's sheet returns, compute the pre-registered agre
 Done when: agreement result (if a sheet exists) and feasibility note committed.
 ```
 
-### 2.12 2027 season blind scoring (H4, H5, H7; December 2027)
+### 2.12 GWI v2 scoring (H2; on or after Mon 15 Nov 2027)
+
+*Split in session 2.8 (Adrian 11:11, "2 - yes"): the 2027 hurricane rows need the HURDAT2 file covering 2027 (about May 2028), so the loop scoring moved to 2.12b.*
 
 ```text
-EMO session 2.12: score the 2027 season. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.12 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H2, H4, H5, H7. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.12 task: build the 2027 rows exactly as in 2.4, score the registered predictions and the H4/H5 tests on 2027 only (class: blind), report every condition, and apply repair-don't-drop to any FAIL. Also (H2): if not done since 15 Nov 2027, run .github/workflows/gwi_v2_fetch.yml, record its result in docs/GWI_V2_PROTOCOL.md §11, README and RECORD (class: pre-registered blind), and apply repair-don't-drop to any FAIL.
-Done when: results committed; README, page and STATUS updated.
+EMO session 2.12: GWI v2 prospective scoring. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.12 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H2. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.12 task: if not done since 15 Nov 2027, run .github/workflows/gwi_v2_fetch.yml once, score as docs/GWI_V2_PROTOCOL.md registers (one scoring, no interim look), record the result in §11, README and RECORD (class: pre-registered blind), and apply repair-don't-drop to any FAIL. Session-start reminder: the cron-job.org token expires 26 Oct 2027; if not yet renewed, say so first.
+Done when: result committed; README, page and STATUS updated.
+```
+
+### 2.12b Score the 2027 hurricane season (H3, H4, H7; when the HURDAT2 file covering 2027 exists, about May 2028)
+
+```text
+EMO session 2.12b: score the 2027 hurricane season. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.12b in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H3, H4, H7. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.12b task: if a HURDAT2 file covering 2027 exists (if none by 1 Oct 2028, record the 2027 forecasts as void per docs/LOOP_PROTOCOL.md §21 rule 6 and stop), build the 2027 rows exactly as in 2.4 (§16) with amendments 7–9 (§20; amendment 9 rejects list/season attention targets), OpenFEMA pulled the same day. Then, class pre-registered blind, report: (1) the declaration-rate measure (§20.1, Clopper-Pearson); (2) H3r only if the pooled 2027+ DR-candidate count D ≥ 12, else "H3r not yet run (D = n)"; (3) the blind H4 pair A → Y_state (§20.2, §7 with §14 residuals): if the blind seasons give fewer than 20 within-season arrangements of the complete cases, "cannot be tested at this size" (§20.5), else the one-sided permutation p with its §20.5 power; (4) score the ten ledger forecasts L2027-01…10 (data/loop_forecast_ledger.csv; check its SHA-256 against data/loop_forecast_ledger.sha256 and the Zenodo version first) by §21 rule 5 (Brier vs the pooled baseline, sign-flip test; power 0.23, so non-significant reads "not shown at this size"), outcomes with sources opened, and add a Zenodo version. Apply repair-don't-drop to any FAIL.
+Done when: results committed; README, page and STATUS updated; ledger outcomes deposited.
 ```
 
 ### Phase C: credibility
