@@ -1,0 +1,69 @@
+name: Stream daily
+
+# Session 3.2 (docs/STREAM_DATA.md §6, §10): fetch GDACS, USGS ComCat/PAGER, CEMS Rapid
+# Mapping (with exclusion E1) and IFRC GO events and appeals once a day; write one
+# encrypted run under data/stream/log/ and append data/stream/MANIFEST.jsonl. No pageviews
+# (E2) and no OpenFEMA (E3): the host guard in emo/stream/exclusions.py refuses them.
+# The log is encrypted with the EMO_STREAM_KEY secret (set by Adrian) and is never shown
+# on any page before the 3.3 protocol. Without the secret the run fails and writes nothing.
+on:
+  schedule:
+    - cron: "17 4 * * *"    # daily 04:17 UTC
+    - cron: "47 11 * * *"   # backup, skipped if today's run is already committed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stream-daily
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "${{ github.ref_name }}"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: "pip", cache-dependency-path: requirements-lock.txt}
+      - run: pip install -r requirements-lock.txt
+      - name: Gate (backup schedule only)
+        id: gate
+        run: |
+          if [ "${{ github.event.schedule }}" = "47 11 * * *" ] && python scripts/stream_daily.py ran-today; then
+            echo "go=false" >> "$GITHUB_OUTPUT"; echo "::notice::skipped: today's run exists"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Fetch and write encrypted run
+        id: run
+        if: steps.gate.outputs.go == 'true'
+        env:
+          EMO_STREAM_KEY: ${{ secrets.EMO_STREAM_KEY }}
+          PYTHONPATH: .
+        run: |
+          set +e
+          python scripts/stream_daily.py run
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ "$code" = "0" ] || [ "$code" = "2" ]
+      - name: Verify append-only and commit
+        if: steps.gate.outputs.go == 'true'
+        env: {PYTHONPATH: "."}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/stream
+          python scripts/stream_daily.py verify
+          git commit -m "Stream daily run (run ${{ github.run_id }})"
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase origin "${{ github.ref_name }}" && git push; then ok=1; break; fi
+            sleep 10
+          done
+          [ "$ok" = "1" ]
+      - name: Report source errors
+        if: steps.run.outputs.code == '2'
+        run: echo "::error::one or more sources failed; see the run step and MANIFEST.jsonl" && exit 1
