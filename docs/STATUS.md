@@ -4,12 +4,38 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 08:40):** session 2.3 (hurricane loop pre-registration) closed. Next: session 2.4 (loop event table). Earlier positions: `docs/SESSION_LOG.md`.
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (166), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
+- **Plan position (29 Oct, 09:30):** session 2.4 (loop event table) closed. Next: session 2.5 (loop test, known history). Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (179), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (11 rows; outcomes chosen by Adrian 29 Oct 05:29).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.4 (2026-10-29, 08:29–09:30) — hurricane loop event table (H3; infrastructure)
+
+**Done when met: yes.** Table, fetch scripts and tests committed (bd020d4); CI green (40842143995); no H4/H5 output (enforced by `tests/test_loop_hurricanes.py`).
+
+**Done**
+- Session start: weekly run 40817861051 (29 Oct) green.
+- Documentation opened first (`docs/LOOP_PROTOCOL.md` §17): Census cartographic boundary files (GENZ2025, 1:500k), MediaWiki API:Query (archived copy; mediawiki.org and en.wikipedia rate-limit Claude's workspace, HTTP 429), NHC GIS FGDC metadata, ATCF README and NRL a/b-deck format.
+- Three amendments, each committed before the data it concerns were used (§16): **4** (8bae2de) F baseline from ATCF a-decks, because the NHC error file holds OFCL only; **5** (fbfe1c2) FEMA type fallback to `incidentType` when `designatedIncidentTypes` is null (null on 98% of 2000–2014 records); **6** (bad0332) baseline OCD5 for all storms (BCD5 absent 2018–2025). Implementation note: ADVDATE is a local-time string from 2017 (checked against an advisory text), parsed with fixed offsets.
+- `data/loop_hurricanes/`: 52 events (HU+TS, 27 HU), one row each, column groups ev_/dc_/pr_/at_/wn_; exclusions, matched FEMA records, forecast lines, summary (counts only). Non-missing: Y_state 24, Y_fed 24, F 31, A 52, W 52, EMpre 30. `incidentType` of matched records: "Hurricane", "Tropical Storm" (2.2 open item closed).
+- Code: `emo/loop_hurricanes.py`, `scripts/fetch_loop_hurricanes.py`, `scripts/fetch_loop_wiki.py` + `.github/workflows/loop_wiki_fetch.yml` (run 40841363625), `scripts/build_loop_table.py`, `scripts/validate_loop_table.py` (SHA-256 of sources, byte-identical rebuild, every value traced to its source row: 0 failures; planted errors caught).
+
+**Claude's mistakes (fixed, recorded):** (1) 2.2 claim that CLIPER5 errors sit in the error file (wrong; amendment 4). (2) Amendment 4 checked on 2014 only (BCD5 stops in 2017; amendment 6). (3) `action=help` without `wrap=1`: two failed Wikimedia runs (40840258308, 40840445348).
+
+**Decisions (Adrian):** 08:41 "BCD5 from ATCF" (amendment 4); 08:47 "Fallback on null" (amendment 5); 08:55 "OCD5, all years" (amendment 6); 09:28 review "2 - yes" (point 1 unanswered; Claude's recommendation "no more now" applied).
+
+**Review points carried into the 2.5 prompt:** sensitivity without the 14 list/season attention targets (no weight); descriptive list of the 22 storms without a qualifying FEMA candidate; rule changes only as amendments for the blind arm (2.8).
+
+**Open (each with reason)**
+- §3.3 accepts list/season pages as T2 target (14/52). Reason: scope; cannot change for 2015–2025 (§8.3); amendment for the 2027 arm in 2.8.
+- Declarations typed "Severe Storm"/"Flood" for some storms fail the type rule. Reason: scope; descriptive list in 2.5.
+- Realized lag sizes (24) far below the planned 54. Reason: needs time (2.5 applies the §15 guard).
+- Census zip (10 MB) not committed; landfall states cannot be recomputed in CI. Reason: Adrian's decision if wanted (size); its SHA-256 is in MANIFEST and the fetch script rebuilds it.
+- Weekly run with the 2.3 frozen scripts. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.5 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.3 (2026-10-29, 07:42–08:40) — hurricane loop pre-registration (H3–H5; infrastructure)
 

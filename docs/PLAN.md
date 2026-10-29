@@ -110,7 +110,7 @@ Sessions 2.8, 2.10, 2.12 have fixed dates; 2.11, 2.18 and 2.21 depend on other p
 
 | # | Session | Hypothesis | Done when |
 |---|---|---|---|
-| 2.5 | Loop test 2015–2025 | H4, H5 | result recorded [known history] |
+| 2.5 | Loop test 2015–2025 | H3, H4, H5 | result recorded [known history] |
 | 2.6 | GWI v2 | H2 | protocol, code, synthetic checks; prospective scoring date |
 | 2.7 | SMF v2 | H1 | code, tests, protocol |
 | 2.8 | 2027 registry | H4, H5, H7 | deposited before 1 June 2027 |
@@ -188,11 +188,12 @@ Use these 2.3 decisions (docs/LOOP_PROTOCOL.md §14–§15): (1) primary event s
 Done when: table, fetch scripts and tests committed; CI green; no H4/H5 output exists.
 ```
 
-### 2.5 Hurricane loop: first test (H4, H5; known history; ~1 h)
+### 2.5 Hurricane loop: first test (H3, H4, H5; known history; ~1 h)
 
 ```text
-EMO session 2.5: loop test on 2015–2025. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.5 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H4, H5. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.5 task: run the pre-registered H4 and H5 tests once on the 2015–2025 table (class: known history); report every condition with its significance test; diagnose any FAIL under the repair-don't-drop rule.
+EMO session 2.5: loop test on 2015–2025. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.5 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H3, H4, H5. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.5 task: run the pre-registered tests once on the 2015–2025 table data/loop_hurricanes/loop_events.csv (class: known history), exactly as docs/LOOP_PROTOCOL.md §5–§8 with §14–§16 (amendments 3–6): first run scripts/validate_loop_table.py; then H3 (§8.1); then the §15 guard from data/loop_hurricanes/summary.json counts only (per-pair Σ(n_s−1)−5 ≥ 15; analysis/loop_power.py rerun with STAT "fe", Y_SHOCK_SIGN −1 at the realized season sizes and missingness) before any H4 statistic; then H4 and H5 only where the guard allows; report every condition with its significance test; list every exclusion from data/loop_hurricanes/exclusions.csv; diagnose any FAIL under the repair-don't-drop rule.
+Use these 2.4 findings: (1) 52 events (27 HU), both lags measured for only 24, so the guard will likely bind; report "cannot be tested at this size" where it does. (2) 14 of 52 attention targets are list or season pages (column at_target_kind): A stays as registered; add one sensitivity without them, labelled no weight. (3) 22 storms have no FEMA candidate of a qualifying type (some storms' declarations are typed "Severe Storm"/"Flood"): list them descriptively, no rule change. (4) F uses OCD5 as baseline (amendment 6); W parses the local ADVDATE format from 2017 (§16 rule 7 note). (5) Any rule change found needed becomes an amendment for the blind arm (session 2.8), never applied to 2015–2025.
 Done when: result committed in LOOP_PROTOCOL.md §results and RECORD; README and page updated with the evidence class.
 ```
 
