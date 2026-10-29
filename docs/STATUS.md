@@ -4,12 +4,32 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 11:15):** session 2.8 (2027 registry) closed; Zenodo version 2 of the ledger pending (Adrian). Next: session 2.9 (UIA 2.0, He test). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 12:05):** session 2.9 (UIA 2.0, He test) closed; Zenodo version 2 of the ledger pending (Adrian). Next: session 2.10 (ledger scoring, after 31 Dec 2026). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.9 (2026-10-29, 11:17–12:05) — UIA 2.0 and the He direction test (H4; definition = infrastructure; test pre-registered on known history)
+
+**Done when met: yes.** Protocol `docs/UIA_PROTOCOL.md` §2.0 and `docs/HE_CALIBRATION_PROTOCOL.md` §10 (aa35b59, before any lag or link value was opened); code bbc42f4; synthetic e2f463f; result aa7f782.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- UIA 2.0 = per-event profile (F, A, W, Y_state, Y_fed; He = −(Y_state + Y_fed)), never summed; `emo/uia2.py`, `data/uia2_hurricanes_profile.csv` (52 rows), 2 tests.
+- He test: T-D, m = 3, null within season (changed from §3's across-all null, which gave FPR 0.67–0.78 under a season shock); synthetic within-season FPR ≤ 0.049, power β 0.5 0.54–0.75, β 0.3 0.26–0.41.
+- Result (23 cases, 9 seasons): **PASS**, T-D +0.220, p = 0.0116 [pre-registered on known history]. Led by A (τ +0.46) and W (+0.20); F +0.00. τ(He, V) +0.49, τ(A, V) +0.37: severity not controlled, so an association, not coupling beyond procedure; H4 status unchanged.
+- Review (Adrian 11:58, "Yes" to all): (a) severity-adjusted He test for 2027 added to the 2.12b prompt; (b) `he_loop_test` added to the weekly frozen runs (rerun byte-identical); (c) the null change and the single-He choice recorded here; (d) CLAUDE.md start step 5: install `requirements-lock.txt` once per clone.
+
+**Claude's mistakes (fixed, recorded):** (1) ruff missing in the workspace again; locked version installed before push; rule (d) added. (2) Two ordinal "first" claim-word hits; UIA line reworded, the pre-registered §10.2 line justified in `scripts/claims_grep.py`.
+
+**Open (each with reason)**
+- Severity-controlled He test. Reason: scope / no retesting on seen data; registered for 2027 in 2.12b (about May 2028), power low for one season.
+- He = total lag chosen on known history (lag summaries public). Reason: stated limit; cannot be undone on 2015–2025.
+- Weekly run with the new frozen `he_loop_test`. Reason: needs time; check Mon 2 Nov 2026.
+
+**Next:** session 2.10 (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.8 (2026-10-29, 10:50–11:15) — 2027 registry (H4, H7; amendments = infrastructure; forecasts pre-registered blind)
 
