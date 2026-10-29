@@ -118,7 +118,8 @@ Sessions 2.8, 2.10, 2.12 and 2.12b have fixed dates (2.12b: when the HURDAT2 fil
 | 2.10 | Ledger scoring (after 31 Dec 2026) | H7 | scores deposited |
 | 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
 | 2.11b | Flood loop: C1 and protocol | H6, H4 | C1 verdict; protocol or reason (done: definitions registered, statistic rejected) |
-| 2.11c | Flood loop: severity measure, test registration | H6, H4 | severity-source verdict; registered test with synthetic FPR and power, or reason |
+| 2.11c | Flood loop: severity measure, test registration | H6, H4 | severity-source verdict; registered test with synthetic FPR and power, or reason (done: source available with conditions; test rejected, F13)|
+| 2.11d | Flood loop: repair F13 (new estimand) | H6, H4 | registered repaired test with synthetic error rates and power, or reason and retire recommendation |
 | 2.12 | GWI v2 scoring (15 Nov 2027) | H2 | blind result recorded |
 | 2.12b | Score the 2027 hurricane season (after HURDAT2 2027, ~May 2028) | H3, H4, H7 | blind results recorded |
 
@@ -267,6 +268,16 @@ Done when: C1 verdict committed, and either the protocol with its synthetic powe
 EMO session 2.11c: flood loop, severity measure and test registration. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.11c in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H6 (and H4 power by pooling). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
 Session 2.11c task: using docs/FLOOD_LOOP_PROTOCOL.md (data definitions fixed in 2.11b for notifications issued 30 Oct 2026 to 31 Dec 2028; the candidate rank test was rejected, synthetic FPR 0.08-0.75 under severity confounding, §5), (1) check from documentation whether a severity measure independent of attention and decision is available per episode after the fact (candidate: EFAS or GloFAS discharge reanalysis return period at the notified river; access, licence, latency and whether an account is needed); (2) if yes, design a test that adjusts for it continuously (e.g. permutation of A residuals on severity, or a logistic model with a permutation null within storm clusters), commit its code before running it, and show from synthetic data FPR <= 0.05 under every §5 scenario plus power at N 20-45; then register it in the protocol. Do not open any EFAS notification, pageview or CEMS activation of the period, and compute no lag from data/second_domain/cems_activations_2026-10-29.json. The §3 definitions stay unchanged.
 Done when: severity-source verdict committed, and either the registered test with its synthetic FPR and power is committed or the reason it cannot be is recorded.
+```
+
+### 2.11d Flood loop: repair F13 by changing the estimand (H6, H4; from 2.11c)
+
+*From the 2.11c review (Adrian 13:31, "2 repair").*
+
+```text
+EMO session 2.11d: flood loop, repair F13 by changing the estimand. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.11d in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H6 (and H4 power by pooling). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.11d task: using docs/FLOOD_LOOP_PROTOCOL.md (§3 definitions fixed for notifications issued 30 Oct 2026 to 31 Dec 2028; severity source verdict §7: EFAS/GloFAS historical discharge with Gumbel thresholds, EWDS account needed; both candidate tests rejected on synthetic FPR, §5 and §8; F13 repair chosen by Adrian 29 Oct 13:31), design a repaired test whose claim does not need FPR control under unmeasured impact confounding: (a) a pre-registered sensitivity analysis that reports how large a hidden confounder (in SD of severity error, as in §8) would have to be to explain an observed association, with the decision threshold fixed now, or (b) another estimand that the decision cannot follow from severity alone, if documentation shows one. Commit code before running it; show from synthetic data its FPR (or its error rate at the fixed threshold) under every §5 and §8 scenario and its power at N 20-45; if the power is below 0.5, say so in the protocol's first line. Register it in the protocol, or record why no repair is possible and recommend retire. Do not open any EFAS notification, pageview, discharge or CEMS activation of the period, and compute no lag from data/second_domain/cems_activations_2026-10-29.json. The §3 definitions stay unchanged.
+Done when: a repaired test with its synthetic error rates and power is registered and committed, or the reason no repair is possible is recorded with a retire recommendation in docs/FAILURES.md F13.
 ```
 
 ### 2.12 GWI v2 scoring (H2; on or after Mon 15 Nov 2027)

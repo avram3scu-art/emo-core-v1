@@ -4,12 +4,34 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 13:05):** session 2.11b closed (C1 pass for prospective use; flood data definitions registered; candidate test rejected on synthetic FPR). Session 2.11 closed (no coder sheet yet; heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11c (flood severity measure and test registration, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 13:35):** session 2.11c closed (flood severity source available with conditions, EWDS account needed; severity-adjusted test rejected on synthetic FPR; F13, repair chosen). Session 2.11b closed (C1 pass for prospective use; flood data definitions registered; candidate test rejected on synthetic FPR). Session 2.11 closed (no coder sheet yet; heatwaves infeasible). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.11d (repair F13 by a new estimand, H6). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
-- **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
+- **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, repair chosen 29 Oct 13:31).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.11c (2026-10-29, 13:12–13:35) — flood loop: severity measure and test registration (H6, H4; infrastructure)
+
+**Done when met: yes** (second branch: reason recorded). Severity verdict 14715e6; test code 66a89f0, 60c0e89 (before its run); result 9b1f33d.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- Severity source (`docs/FLOOD_LOOP_PROTOCOL.md` §7): **available with conditions.** EFAS historical (v5.0, 1992–, 1 arcmin, observed forcing) or GloFAS historical (1979–, 0.05°, ERA5) discharge, scored with Gumbel threshold files (EFAS v5.1, GloFAS v4.0); CEMS-FLOODS licence, free with attribution; EWDS account, token and licence acceptance needed. Latency stated as both 6 days and ≥ 1 month (recorded; irrelevant after 31 Jan 2029). Discharge measures hazard, not impact.
+- Severity-adjusted Freedman–Lane test (§8): FPR 0.046–0.064 with exact severity, 0.044–0.094 at error 0.3 SD (N 20–45), up to 0.19 at 0.6; adding ln n no help; power OR 2 0.23–0.40, OR 3 0.32–0.57 at N 20–45. **Rejected; no test registered.** Row F13 in `docs/FAILURES.md`.
+- No notification, pageview, discharge or activation of the period opened; no lag computed; §3 unchanged.
+
+**Claude's mistakes:** the first test function was named `test_p`, so pytest collected it and the pre-push hook refused; renamed before any run (60c0e89). ruff missing at first push (lock install still running); installed, no `--no-verify`.
+
+**Review (Adrian 13:31):** 1 no more now; 2 repair F13 by a new estimand (2.11d); 3 noted (0.3 SD error is an assumption; EWDS subsetting and the EFAS FAQ partner wording unverified).
+
+**Open (each with reason)**
+- Registered flood test. Reason: scope; repair in 2.11d.
+- EWDS account and token. Reason: Adrian's decision; needed only for scoring after 31 Jan 2029.
+- EWDS spatial subsetting; FAQ partner-only wording. Reason: scope; check when the fetch script is written.
+- Registration deadline: before any data of the period are opened, at the latest 31 Dec 2028. Reason: needs time.
+
+**Next:** session 2.11d (prompt in `docs/PLAN.md` §11).
 
 ## Session 2.11b (2026-10-29, 12:53–13:05) — flood loop: C1 and prospective protocol (H6, H4; infrastructure)
 
