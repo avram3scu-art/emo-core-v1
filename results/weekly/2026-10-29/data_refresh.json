@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-29T04:28:17Z",
+  "run_at": "2026-10-29T08:42:06Z",
   "sources": [
     {
       "file": "owid_annual_co2_emissions.csv",
@@ -10,7 +10,7 @@
       "changed": false,
       "rows": 29384,
       "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -22,7 +22,7 @@
       "changed": false,
       "rows": 5642,
       "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -34,7 +34,7 @@
       "changed": false,
       "rows": 2114,
       "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -46,7 +46,7 @@
       "changed": false,
       "rows": 7561,
       "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-20 (initial download)"
     },
     {
@@ -55,10 +55,10 @@
       "source": "https://api.openalex.org/works?filter=countries_distinct_count:>1,type:article&group_by=publication_year",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "32e5c6c5e8f49b13abb0f282e0b5c0619db8b040008972b80ffc8148bb35f3a0",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -67,10 +67,10 @@
       "source": "https://api.openalex.org/works?filter=countries_distinct_count:>0,type:article&group_by=publication_year",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "ad499290fd75a0d8ae07f2741c4c0e25269dda9e96b9f02f9d61f9c5dbea34c5",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -79,10 +79,10 @@
       "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>1,type:article&group_by=publication_year",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "4e9fd94db389d9da651a69f62f2349fa76d032710a09ac71f4e6c08fac9648ab",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -91,10 +91,10 @@
       "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>0,type:article&group_by=publication_year",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "61049a880ed3d1f85a0786bbcaae941a9398dfaa937c3ea7cc1a466b4b4a3834",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -103,10 +103,10 @@
       "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2020,type:article&group_by=authorships.countries",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "c0a4e7356ae74a5ee867cf075c2c54beacfeade64dac58b483c72b52198626a4",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -115,10 +115,10 @@
       "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
       "kind": "openalex",
       "status": "ok",
-      "changed": true,
+      "changed": false,
       "rows": 200,
       "sha256": "d2dc236df8b343e2604c5b73cc436af0383197749467766bf954acb710e69984",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-29T04:28:17Z"
     },
     {
@@ -130,7 +130,7 @@
       "changed": false,
       "rows": 1988,
       "sha256": "75202780ce56c8458f16fbef5fb8a026b99b00878dbb95c458211b3e6ef125b4",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-23T09:17:51Z"
     },
     {
@@ -142,7 +142,7 @@
       "changed": false,
       "rows": 89136,
       "sha256": "cb40fda4dcb178424b537dc48011d3b532e7822e34bd872f24dd65ceef3b7eb2",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-23T09:17:51Z"
     },
     {
@@ -154,7 +154,7 @@
       "changed": false,
       "rows": 104289,
       "sha256": "6189e773baa6ecd432cf1ce4fc21a23b417ff97ad473e77e3a5971ec719dbdb3",
-      "downloaded_at": "2026-10-29T04:28:17Z",
+      "downloaded_at": "2026-10-29T08:42:06Z",
       "last_changed_at": "2026-10-26T08:34:56Z"
     }
   ]
