@@ -26,6 +26,7 @@ ORDINAL = re.compile(
 
 # Remaining hits, judged one by one (file, word or phrase in the line) -> justification.
 MANUAL = [
+    ("docs/SECOND_DOMAIN_FEASIBILITY.md", "Memorandum 778", "title and URL of a cited ECMWF source, not a claim about EMO"),
     ("docs/HE_CALIBRATION_PROTOCOL.md", "checked first by", "ordering: table check before the run; pre-registered §10.2, not reworded after the data were opened"),
     ("analysis/loop_forecasts_2027.py", "first covers", "ordinal: earliest HURDAT2 file covering 2027; string is written into the registered ledger (sha256 ea993925), so it is not reworded"),
     ("analysis/loop_power_2027.py", "first reaches", "ordinal: earliest point the pooled count reaches 12; file committed before its recorded run"),
