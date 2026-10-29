@@ -4,14 +4,14 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 15:20):** session 2.11d closed (F13 repair by sensitivity analysis failed its synthetic check; flood attention arm retired, Adrian 15:15). Sessions 2.11–2.11c closed (flood definitions registered, source verdict, two tests rejected). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.13 (white paper 2.0). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 15:20):** session 2.11d closed (F13 sensitivity repair failed; attention arm retired 15:15 and replaced 15:50 by a news-pressure test, §10, power < 0.5; lag measurability test §11 registered). Sessions 2.11–2.11c closed (flood definitions registered, source verdict, two tests rejected). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.13 (white paper 2.0). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
-- **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, repair attempted 2.11d, retired 29 Oct 15:15).
+- **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
 
-## Session 2.11d extension (2026-10-29, 15:21–16:30) — option (b), lag protocol (H4, H3 in floods; on Adrian's request 15:21)
+## Session 2.11d extension (2026-10-29, 15:21–15:55) — option (b), lag protocol (H4, H3 in floods; on Adrian's request 15:21)
 
 **Done**
 - Option (b) found: competing news pressure on d0 (language Wikipedia top-10, flood titles excluded) cannot follow flood severity. Test registered (`docs/FLOOD_LOOP_PROTOCOL.md` §10): error rate 0.034–0.052 under every §5/§8 scenario plus seasonal confounding; power 0.06–0.34 at N 20–45 (stated in the first line). Code 8250325 before its run.
@@ -21,7 +21,13 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Claude's mistakes:** the lag script ran once before its commit (ruff refused the commit, the chained command still ran it); no data are read and it is exact, rerun after the commit identical; recorded in §11 and RECORD. Wait loops matched their own command lines and hung; stopped.
 
-**Open:** confirm *replace* for F13 (news-pressure arm) or withdraw §10 before any data (Adrian's decision).
+**Review (Adrian 15:50):** 1 yes, F13 *replace* by the news-pressure arm (§10); 2 no double bootstrap; 3 no more now.
+
+**Open (each with reason)**
+- Scoring of §10 and §11. Reason: needs time; after 31 Jan 2029.
+- Pageviews top endpoint URL and list length. Reason: scope; verify when the fetch script is written.
+
+**Next:** session 2.13 (white paper 2.0).
 
 ## Session 2.11d (2026-10-29, 14:39–15:20) — flood loop: repair F13 by a new estimand (H6, H4; infrastructure)
 
