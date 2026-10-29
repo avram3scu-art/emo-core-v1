@@ -4,12 +4,35 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 15:20):** session 2.11d closed (F13 sensitivity repair failed; attention arm retired 15:15 and replaced 15:50 by a news-pressure test, §10, power < 0.5; lag measurability test §11 registered). Sessions 2.11–2.11c closed (flood definitions registered, source verdict, two tests rejected). Session 2.10 started early and stopped; run it on or after 1 Jan 2027, prompt unchanged. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.13 (white paper 2.0). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
+- **Plan position (29 Oct, 16:20):** session 2.13 closed: white paper revised and reviewed (`docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; disclosure point 2 withheld until Adrian's verification is recorded). Earlier: 2.11d (F13 attention arm retired, replaced by news pressure §10, power < 0.5; lag test §11). Session 2.10 reruns on or after 1 Jan 2027. Zenodo version 2 of the ledger pending (Adrian; also the PLAN §8 gate to Phase C). Next: session 2.14 (software paper). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (2.12). 2027 hurricane scoring: 2.12b (about May 2028).
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (200), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (13 rows; F12 hurricane H3, repair chosen 29 Oct 09:53; F13 flood attention test, retired and replaced 29 Oct 15:50).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.13 (2026-10-29, 16:05–16:20) — white paper 2.0 (no hypothesis moved; report of H1–H7; infrastructure)
+
+**Done when met: yes.** Draft and review 2a23719, a2ffcac, 5a6e90b; improvements and close in this commit. Nothing sent out.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- `docs/WHITEPAPER_EMO_what_runs_today.md` revised: hypothesis, independent-agencies null and H1–H7 table (no result supports the "mind" reading; H4 not decidable in hurricanes before about 2036); results by loop link incl. hurricane loop (§19), He test, 2027 registry, flood loop (§5, §8–§11, F13); failures F1–F13; scoring calendar; one audience (researchers evaluating disaster response / early warning) and one ask (second coder for mpox; mpox results withheld; volunteer told not to open the repo, contact via ORCID); every fact linked to a file or [plan]; class on every result.
+- S15 review points: 2, 3, 4, 5, 6 fixed; 1 open (below); 7 needs time (2.15); 8 unchanged. README test count 154 → 200 (CI 40895686707).
+- Hostile review `docs/REVIEW_2_13_WHITEPAPER.md`: not fit to share; central claim untestable at current power; ask conflicted with double-coding blindness; Phase C gate not met.
+- Improvements (Adrian 16:14, "both"): ask routed to the invitation (no repo links in the ask); "[blind, registered]" → "class on scoring: pre-registered blind" (13 places).
+
+**Claude's mistakes (fixed):** five claim-word hits in the draft and one in the review, reworded before push (pre-push refused once; no `--no-verify`); the review pointed to a RECORD list that did not exist yet, added (5a6e90b).
+
+**Review (Adrian 16:14):** 1 not answered, Claude's recommendation "no more now" applied; 2 yes to both improvements; 3 (verification on a later day) not answered.
+
+**Open (each with reason)**
+- Disclosure point 2 and the "verification" in the contributions line. Reason: Adrian's decision/action (read the draft on a later day, reply "verified"; Claude then records it and restores point 2).
+- Sharing the paper. Reason: Adrian's decision; not before the verification and the Zenodo version 2 deposit.
+- Links pinned to a tagged release. Reason: needs time (session 2.15).
+- Zenodo deposit date 20 Oct 2026 not checked against the DOI page. Reason: not attempted (scope; check in 2.15).
+
+**Next:** session 2.14 (software paper; prompt in `docs/PLAN.md` §11, unchanged).
 
 ## Session 2.11d extension (2026-10-29, 15:21–15:55) — option (b), lag protocol (H4, H3 in floods; on Adrian's request 15:21)
 

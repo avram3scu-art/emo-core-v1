@@ -40,3 +40,8 @@ Reviewer: Claude, 29 Oct 2026, of `docs/WHITEPAPER_EMO_what_runs_today.md` as re
 ## Venue and chance
 
 No journal fits. Realistic use: the repository's status paper and later the public page or a release note. Sent to a research group in its present form: low chance of engagement beyond the coder ask (judgement). Earliest sharing: after the author's recorded verification, the Zenodo version 2 deposit, and not the same day as this review.
+
+## Improvements made after this review (Adrian's yes, 16:14)
+
+- Point 3: the ask now tells a volunteer not to open the repository and to write via ORCID for the invitation and packet, which are sent on their own.
+- Point 5: "[blind, registered]" replaced by "class on scoring: pre-registered blind" (13 places), so every item uses one of the four `CLAUDE.md` classes.
