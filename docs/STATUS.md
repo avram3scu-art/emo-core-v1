@@ -2,13 +2,37 @@
 
 Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESSION_LOG.md`.
 
-## Current state (28 Oct 2026)
+## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 03:41):** session 11 closed (double-coding protocol committed; agreement waits for a volunteer's sheet). Next by `docs/PLAN.md`: 12 is gated (needs 24 coded DAC cases), 13 waits for data, 14 after 31 Dec 2026; session 15 (honest white paper) is the next runnable one, Adrian's choice. Earlier: sessions 10 and 10b closed. Earlier: fix sessions before session 10. Done: F1–F9 (PPE case recoded and compared; manuscript data-only revision with tracked changes: `docs/MANUSCRIPT_F9_CHANGES.md`). Next: session 10 (mpox, `docs/PLAN.md`). Manuscript waits for Adrian's three steps (record his check of the coded dates; accept/reject the F9–F13 tracked changes; check JCCM's guidelines), then a correction session and a new review; optional F15 (US FPDS and Spanish audit check for a second paired case); Adrian checks the coded dates himself in parallel; then session 10 (mpox, `docs/PLAN.md`). Session 10 (mpox) after them (`docs/FIX_PLAN.md`).
-- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (118), mypy, ruff, claim-word check.
+- **Plan position (29 Oct, 04:35):** session 15 closed (white-paper draft and hostile review committed; not fit to share yet). Next: session 2.0-design (full code audit, then drafts of CLAUDE.md 2.0 and PLAN 2.0 for Adrian's approval; old files replaced only after his yes), then a README fix. 12–14 stay gated. Earlier positions: `docs/SESSION_LOG.md`.
+- **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (149), mypy, ruff, claim-word check.
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 15 (2026-10-29, 03:46–04:35) — honest white paper "EMO: what runs today"
+
+**Done when met: yes.** Draft and review committed (19ec23f, 95f06a3); CI 40808780667 (149 tests). Nothing sent out.
+
+**Done**
+- `docs/WHITEPAPER_EMO_what_runs_today.md` (~2,050 words): vision kept as [plan]; every factual statement links to a repo file (all links resolve, checked by script); evidence class on every result; a_UIA removed (retired in session 5); failures table: RDL v0.2, v0.3, v0.4 not run, synergy, GWI calibration, SMF withdrawals, a_UIA, He Option A, superseded documents, lost DAC files, Futures desk rejection. Author line per the prompt.
+- `docs/REVIEW_S15_WHITEPAPER.md`: verdict not fit to share yet. Blockers: AI disclosure point 2 untrue until Adrian verifies the draft (Claude drafted it and coded every DAC file); vision not connected to any result; README contradicts the paper. Also: thin positive evidence, no audience or ask, ECMWF line sourced to README only, relative links.
+- No test, no data opened (synthesis of committed files), so nothing to pre-register.
+
+**Claude's mistakes (fixed, recorded in `docs/RECORD.md`)**
+- τ_I "3–4%/yr" copied from README; output shows 2.3% (12 h), 3.0–4.0% (24–120 h). Corrected before commit.
+- 19ec23f pushed with claims_grep at unjustified=2 (CI 40808758979 failed); fixed in 95f06a3. Cause: the push command did not stop on the count. Proposed fix: pre-push hook (2.0 design).
+
+**Open (each with reason)**
+- README false/stale lines (PPE "not in this repository", 91 tests, τ_I 3–4%). Reason: scope; a short fix session after 2.0 design (Adrian's yes, 04:33).
+- Adrian's verification of the draft (disclosure point 2). Reason: Adrian's decision/action.
+- ECMWF refusal has no primary record in the repo. Reason: needs Adrian (supply the message) or mark unverified.
+
+**Review and Adrian's answer:** more now: recommended no; change: README fix next. Adrian then asked for a new plan to make the Emergent Mind vision workable (CLAUDE.md 2.0). Claude proposed: define the emergent mind operationally as a response loop (predict τ_I/SMF, attend GWI, decide-act DAC, choose RDL, learn across repeated events), UIA as the loop's profile, Atlantic hurricanes as the first full-loop domain (large n, prospective blind tests each season; action-record dataset not yet opened, unverified), and rules: improve-before-close (reformulated from Adrian's), repair-don't-drop, no retesting on seen data, prospective first, each session names its hypothesis, pre-push hook.
+
+**Decision (Adrian, 29 Oct 04:33, "Yes to all three"):** (1) close session 15; (2) next session = 2.0 design: full code audit, then drafts of CLAUDE.md 2.0 and PLAN 2.0, old files replaced only after Adrian's yes; (3) adopt the response-loop definition and hurricanes as the first full-loop domain, as the basis of PLAN 2.0.
+
+**Next:** session 2.0-design (prompt in `docs/PLAN.md`).
 
 ## Session 11 (2026-10-29, 03:32–03:41) — prepare independent double coding
 

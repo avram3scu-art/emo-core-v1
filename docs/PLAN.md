@@ -304,6 +304,14 @@ Start from WHITEPAPER_EMO_v1_Why_EMO_Must_Run_Continuously and the README status
 Done when: draft committed and reviewed; nothing sent out the same day.
 ```
 
+### Session 2.0-design: audit and drafts of CLAUDE.md 2.0 and PLAN 2.0 (added 29 Oct 2026, Adrian's yes at the session 15 close)
+
+```text
+Session 2.0-design task: full code audit, then drafts of CLAUDE.md 2.0 and PLAN 2.0.
+Read CLAUDE.md, docs/STATUS.md (session 15 decision) and this entry. (1) Audit every module, analysis, script, test and workflow: what each does, whether it is used, defects, and improvements or new tools, written to docs/AUDIT_2026-10-29.md. (2) Draft docs/CLAUDE_2_0_DRAFT.md: keep every current rule; add improve-before-close, repair-don't-drop (diagnosis plus repair/replace/retire), no retesting on seen data, prospective first, each session names the hypothesis it moves, a pre-push hook for the claim check. (3) Draft docs/PLAN_2_0_DRAFT.md: the Emergent Mind as a measurable response loop (predict, attend, decide-act, choose, learn), its hypotheses H1..Hn, the four pillars rebuilt on it, Atlantic hurricanes as the first full-loop domain (check data availability before relying on it), session-by-session prompts with opening and closing prompts. Do not replace CLAUDE.md or PLAN.md; give an editor-style review of both drafts.
+Done when: audit and both drafts committed and reviewed; nothing replaced without Adrian's yes.
+```
+
 ### Session 16: software paper
 
 ```text
