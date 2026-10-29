@@ -46,6 +46,19 @@ git config core.hooksPath scripts/hooks  # pre-push: claim-word check, ruff, fas
 pytest -q
 ```
 
+Example: validate a DAC event file and compute its profile (`docs/DAC_STANDARD.md`).
+
+```python
+from emo.dac_standard import load_event_file, validate_event_file, compute_profile
+
+data = load_event_file("docs/dac_event_file_example.json")
+validate_event_file(data)          # raises DACStandardError listing every error
+profile = compute_profile(data)    # per-sublayer lags from t0; no composite score
+print(profile["case_id"], profile["missing"], profile["censored"])
+```
+
+Contributing, reporting issues and support: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## AI disclosure
 
 This repository was built with AI assistance. (1) All inputs were the author's own text, code and publicly available reference literature and data. (2) All AI-assisted outputs were verified by the author. (3) All scientific claims and interpretations are the author's own.
