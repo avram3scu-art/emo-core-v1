@@ -1,0 +1,7 @@
+Loop power amendment 1 (docs/LOOP_PROTOCOL.md §12). Synthetic only; no loop record read.
+seed 2026102924, 2000 studies/cell, 999 permutations, KAPPA 0.9
+
+SIG_SEASON 1.5 HU    : H4 within-season 0.004 | H4 naive 0.001 | H5 0.040
+SIG_SEASON 1.5 HU+TS : H4 within-season 0.002 | H4 naive 0.000 | H5 0.059
+SIG_SEASON 2.5 HU    : H4 within-season 0.000 | H4 naive 0.001 | H5 0.047
+SIG_SEASON 2.5 HU+TS : H4 within-season 0.000 | H4 naive 0.000 | H5 0.055

@@ -17,6 +17,7 @@ DELTA_EQ = 0.3
 KAPPA = 0.5          # share of the season shock common to every link and outcome
 SIG_SEASON = 0.7     # SD of season shocks
 P_MISS = 0.10        # each predictor missing at random
+Y_SHOCK_SIGN = 1.0   # sign of the season shock in the lags; -1 mimics coupling (§13); 1 = recorded run
 SIZES_HU = (2, 4, 2, 2, 6, 2, 3, 1, 5)          # planning assumption, unverified
 SIZES_HUTS = tuple(2 * s for s in SIZES_HU)
 PRED = ("F", "W", "A")
@@ -67,7 +68,7 @@ def simulate(rng, sizes, r=0.0, delta=0.0, gamma_f=0.0, p_drop=0.0, pair=TRUE_PA
     trend = -delta * season / max(K - 1, 1)
     Y = {}
     for k, base, em_eff in (("Ystate", 1.0, -0.6), ("Yfed", 3.0, -0.3)):
-        y = -0.4 * V + quad + reg + shock() + em_eff * em - gamma_f * zF + trend + skew_noise(rng, n)
+        y = -0.4 * V + quad + reg + Y_SHOCK_SIGN * shock() + em_eff * em - gamma_f * zF + trend + skew_noise(rng, n)
         if pair[1] == k:
             y = y - c * idio[pair[0]]
         Y[k] = np.round(base + 2 * y)

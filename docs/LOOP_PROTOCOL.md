@@ -145,3 +145,12 @@ Why: §10 showed the within-season null calibrated but not needed (the naive nul
 - Reported: H4 family-wise rate for the within-season and naive nulls; H5 rate.
 - Criteria (as §9): calibrated if ≤ 0.060.
 - Expectation written now: within-season ≤ 0.060 in every cell; naive > 0.10 at SIG_SEASON = 2.5 for both designs; H5 ≤ 0.060 (season is its unit).
+
+## 13. Result of amendment 1, Claude's design error, and amendment 2 (pre-registered before its run)
+
+**Amendment 1 result** (`analysis/loop_power_amend1_output.txt`, 2 min): H4 within-season 0.000–0.004, naive 0.000–0.001, H5 0.040–0.059. Expectation "naive > 0.10" did not hold.
+
+**Diagnosis (Claude's error, in §9 and §12).** The shared season shock entered links and lags with the same sign, so it pushed r positive, opposite to the predicted (negative) direction; a one-sided test cannot be fooled by it. Neither run tested the clustering nuisance against the H4 test. The §10 false-positive rates stand as computed but say nothing about clustering in the predicted direction.
+
+**Amendment 2.** Same as amendment 1, with the season shock entering the lags with sign −1 (a season with more attention, warning lead or skill also has shorter lags: the confound that mimics coupling). Implemented by a module constant `Y_SHOCK_SIGN` in `analysis/loop_power.py` (default 1 leaves the recorded run unchanged); code `analysis/loop_power_amend2.py`, output `analysis/loop_power_amend2_output.txt`, seed 2026102925. Cells: KAPPA 0.9; SIG_SEASON ∈ {0.7, 1.5, 2.5}; HU and HU+TS; H4 within-season and naive at r = 0; H4 within-season power at r = 0.5 (coefficient from §10, which was found with sign +1); H5 at Δ = 0.
+Expectation written now: naive > 0.10 at SIG_SEASON ≥ 1.5; within-season ≤ 0.060 in every cell; H5 > 0.060 at large SIG_SEASON is possible (a season-mean trend test cannot separate a run of season shocks from a trend), which would be recorded as a limit of H5.
