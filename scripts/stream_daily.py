@@ -36,13 +36,16 @@ def run(root: Path = ROOT) -> int:
         http = Http()
         try:
             recs, err = fetch(http, today), None
+            if not recs:                   # every source has records in any 7-day window
+                err = "EmptyResponse"
+                failed.append(name)
         except Exception as e:             # keep the other sources
             recs, err = [], f"{type(e).__name__}"
             failed.append(name)
         sources[name] = {"records": recs, "requests": http.log, "error": err}
         print(f"{name}: {'ok' if err is None else 'error ' + err}")
     meta = {"run_id": run_id, "started": started.isoformat(),
-            "ended": dt.datetime.now(dt.UTC).isoformat(), "code_version": "stream-0.1"}
+            "ended": dt.datetime.now(dt.UTC).isoformat(), "code_version": "stream-0.2"}
     line = store.write_run(root, meta, sources)
     print(f"wrote {line['file']} sha256 {line['sha256_cipher']}")
     return 2 if failed else 0

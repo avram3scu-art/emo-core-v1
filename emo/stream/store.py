@@ -8,7 +8,8 @@ Layout (all under data/stream/):
                             and the passphrase in the EMO_STREAM_KEY secret.
   MANIFEST.jsonl            one line per run, only appended: run id and times, file,
                             SHA-256 of ciphertext and plaintext, per source the SHA-256 of
-                            its canonical JSON, error class, and every request (URL,
+                            its canonical JSON, whether it had any record (yes/no), error
+                            class, and every request (URL,
                             status, start, end; for latency). No record counts or sizes.
 
 Decrypt (any machine with openssl, e.g. Termux):
@@ -80,6 +81,7 @@ def write_run(root: Path, run: dict, sources: dict) -> dict:
         "sha256_cipher": sha256(cipher),
         "sha256_plain_gz": sha256(plain),
         "sources": {name: {"sha256_records": sha256(canonical(s["records"])),
+                           "has_records": bool(s["records"]),
                            "error": s["error"], "requests": s["requests"]}
                     for name, s in sources.items()},
     }

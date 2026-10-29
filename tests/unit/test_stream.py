@@ -244,3 +244,18 @@ def test_cli_ran_today(tmp_path):
     today = dt.datetime.now(dt.UTC).strftime("%Y-%m-%d")
     (d / "MANIFEST.jsonl").write_text(json.dumps({"run_id": today + "T041700Z"}) + "\n")
     assert sd.ran_today(tmp_path) == 0
+
+
+@needs_openssl
+def test_empty_source_is_flagged(tmp_path, monkeypatch):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("sd2", "scripts/stream_daily.py")
+    sd = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(sd)
+    monkeypatch.setenv(store.KEY_ENV, "k")
+    monkeypatch.setattr(sd, "FETCHERS", {"a": lambda h, d: [{"x": 1}], "b": lambda h, d: []})
+    assert sd.run(tmp_path) == 2
+    line = json.loads((tmp_path / "data/stream/MANIFEST.jsonl").read_text())
+    assert line["sources"]["a"]["has_records"] and line["sources"]["a"]["error"] is None
+    assert not line["sources"]["b"]["has_records"]
+    assert line["sources"]["b"]["error"] == "EmptyResponse"
