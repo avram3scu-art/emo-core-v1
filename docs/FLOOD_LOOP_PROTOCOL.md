@@ -1,6 +1,6 @@
 # Flood loop (EU): data definitions registered; test statistic not yet registrable
 
-**First line (power and validity rule):** no pass/fail test is registered in this file. All three candidate tests failed their synthetic error-rate checks (§5, §8, §9); the F13 repair (§9, sensitivity analysis, 2.11d) also has power below 0.5 at N 20–45 (OR 3: 0.27–0.38). **The flood attention arm is retired** (Adrian, 29 Oct 2026 15:15; `docs/FAILURES.md` F13). The §3 definitions stay on record; a lag description (d0 → activation, no attention test) may be registered later, before any data of the period are opened.
+**First line (power and validity rule):** two tests are registered here, both with power below 0.5 at the expected size, so a FAIL reads "not shown at this size": (1) §10, news pressure → activation (H4 in floods, replaces the retired attention arm; error rate 0.034–0.052, power 0.06–0.34 at N 20–45); (2) §11, lag measurability (H3 in floods; wrong-pass rate ≤ 0.033, power 0.47–0.91 at N 20–45 if 90% of lags are measurable, 0.25–0.65 if 80%). The attention-residual tests (§4, §8, §9) failed their synthetic checks and the attention arm A → Y is retired (Adrian, 29 Oct 2026 15:15; `docs/FAILURES.md` F13). Both registered tests are scored once, after 31 Jan 2029.
 
 Session 2.11b, 29 Oct 2026. Hypotheses: H6 (H4 in a second domain), H4 power by pooling. Class: infrastructure (definitions and synthetic checks). Feasibility: `docs/SECOND_DOMAIN_FEASIBILITY.md` §2b (C1 pass for prospective use).
 
@@ -122,3 +122,36 @@ Information only (e0 = 0.3, not a registered decision): error rate 0.038–0.120
 4. Option (b) (an estimand the decision cannot follow from severity alone): none is defined by the §3 data, which give one attention value and one binary decision per episode, with no ordering of attention and decision inside an episode beyond the d0/d0+1 exclusion. No external documentation was searched for one (not attempted; scope).
 
 **Consequence:** no repaired test meets the requirement (error rate ≤ 0.05 at the fixed threshold under every §5/§8 scenario, useful power at N 20–45). Claude recommends **retire** of the flood attention arm (H4 in floods); floods may still serve H3-type lag description (d0 → activation), which needs no attention test. §3 unchanged; no data of the period opened; no lag computed.
+
+## 10. Option (b): news pressure → activation (session 2.11d-ext) — registered
+
+Class when scored: pre-registered blind. Hypothesis: H4 in floods (H6). Code `analysis/flood_loop_newspressure_power.py` (committed before its run: 8250325); output `analysis/flood_loop_newspressure_power_output.txt`.
+
+**Why this estimand.** Competing news is set by other events, so flood severity cannot cause it, and a news-pressure → activation association needs no severity measure. The route is documented: disasters that coincide with other newsworthy events (e.g. the Olympic Games) get less coverage and less relief ([News Droughts, News Floods, and U.S. Disaster Relief](https://hats.arizona.edu/node/301), abstract page opened 29 Oct 2026; the page names no authors; attribution to Eisensee and Strömberg, QJE 2007, is unverified).
+
+**Data (fixed now; fetched after 31 Jan 2029, with the pageviews of §3).**
+- Daily top-articles list of the country's language Wikipedia (the §3 language map), all access, from the Wikimedia pageviews "top" endpoint (documented as `top_articles(project, platform, start)` in [pageviews R client manual](https://ironholds.r-universe.dev/pageviews/doc/manual.html), opened 29 Oct 2026; the endpoint URL and list length are unverified and are recorded at fetch time).
+- Exclusions: the Main Page; any title with a namespace prefix (text before ":" that is a namespace of that wiki) or starting with "Special"; any title on the episode matching sheet (§3); any title containing, case-insensitive, a flood stem of its language: de hochwasser, überschwemm, flut; nl overstrom, hoogwater; fr inondation, crue; it alluvion, inondazion, esondazion; es inundaci, riada; pt inunda, cheia; pl powód, powodz; cs, sk povod; sl, hr poplav; hu árvíz; ro inunda; bg наводн; el πλημμ; sv översvämn; da oversvømm; fi tulva; et üleujut; lv plūd; lt potvyn; en (IE, MT) flood.
+- NP_day = sum of views of the 10 highest-ranked remaining titles. Episode NP = ln(mean NP_day on d0, d0 + 1) − ln(median NP_day over d0 − 29 … d0 − 2).
+- Season of d0: DJF, MAM, JJA, SON. Cluster: episodes (any country) chained while their d0 are at most 3 days apart.
+- Episodes are the §3 episodes with Y defined; episodes with an activation on d0 or d0 + 1 are left out (as in §3). Y as §3.
+
+**Statistic and decision.** x_c = mean NP of cluster c, centred within season; r_c = sum over c of (Y − season mean of Y); T = −Σ x_c r_c. One-sided p from 9999 permutations of x across clusters within season (synthetic checks used 999). PASS iff p ≤ 0.05 ("activation falls with competing news pressure"); otherwise "not shown at this size". A remaining flood title in the top 10 would raise NP with severity and push T the other way, so the leak makes the test conservative.
+
+**Synthetic (2000 replications; power 1000).** Error rate, no news effect, under every §5/§8 scenario plus seasonal confounding (severity error does not enter: no severity measure is used): N 20 0.034–0.047; N 30 0.039–0.052; N 40 0.044–0.048; N 45 0.041–0.048; N 100 0.041–0.048. Power (N 20 / 30 / 40 / 45 / 100): via attention, OR 3 per SD of A and news lowering A by 0.6: 0.10 / 0.12 / 0.14 / 0.17 / 0.27; OR 2, by 0.3: 0.06 / 0.06 / 0.08 / 0.09 / 0.11; direct news effect OR 0.5 per SD of NP: 0.15 / 0.26 / 0.28 / 0.34 / 0.65. Episode-level variant (information only, not registered): error rate up to 0.065 at N 45, power slightly higher.
+
+**Limits.** Very low power: at N 20–45 only a large direct effect has a chance. A PASS shows that decisions respond to the news environment, not that attention to this flood caused the activation (news pressure could also act through officials' workload). The test pools naturally with other domains for H4.
+
+## 11. Lag description and measurability (H3 in floods; session 2.11d-ext) — registered
+
+Class when scored: pre-registered blind. Code `analysis/flood_lag_power.py` (committed 53fe445; a first run happened before its commit, by a command-chain error; the script reads no data, is exact, and the rerun after the commit gave identical output); output `analysis/flood_lag_power_output.txt`.
+
+**Data (fixed now).** §3 episodes and activations, from the CEMS public API fields `activationTime`, `eventTime`, `category`, `countries` (field names from `scripts/fetch_cems_activations.py`; no record of the period read). K = episodes with an activation assigned in [d0, d0 + 30] (d0 and d0 + 1 included here). A lag is **measurable** when `activationTime` and `eventTime` are both present and the `eventTime` date lies in [d0 − 3, d0 + 30] (the activation answers this flood, not an earlier one). Lag L = activation date − d0, in days.
+
+**Decision.** M = measurable lags. PASS iff K ≥ 5 and the exact one-sided 95% Clopper–Pearson lower bound of M/K > 0.5; FAIL iff K ≥ 5 and the one-sided 95% upper bound < 0.5; otherwise "not shown at this size".
+
+**Description (no decision).** Activation share K / episodes with Clopper–Pearson 95%; L median, interquartile range and exact 95% CI of the median (order statistics); the same for `eventTime` → `activationTime`; count of activations on d0 or d0 + 1; by country where K ≥ 3.
+
+**Exact error rate and power (no simulation).** At a true measurable share of 0.5, wrong PASS 0.016–0.029 (activation share 0.3) and 0.023–0.033 (share 0.5) at N 20–45. Power at activation share 0.3 (N 20 / 30 / 40 / 45): q 0.8 0.25 / 0.43 / 0.59 / 0.65; q 0.9 0.47 / 0.73 / 0.87 / 0.91; q 1.0 0.76 / 0.97 / 1.00 / 1.00. At share 0.5, q 0.8 0.49 / 0.71 / 0.84 / 0.88.
+
+**Limit.** The pass condition is weak: an activation after a formal notification will usually answer that flood, so a PASS shows only that the lag is measurable from official records (H3's falsifier), not that it is short or improving (H5, which needs several seasons).

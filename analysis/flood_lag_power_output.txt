@@ -1,0 +1,14 @@
+activation share of episodes 0.3
+  q 0.5: N20 pass 0.016 fail 0.016  N30 pass 0.022 fail 0.022  N40 pass 0.027 fail 0.027  N45 pass 0.029 fail 0.029
+  q 0.7: N20 pass 0.118 fail 0.001  N30 pass 0.204 fail 0.001  N40 pass 0.294 fail 0.000  N45 pass 0.336 fail 0.000
+  q 0.8: N20 pass 0.251 fail 0.000  N30 pass 0.431 fail 0.000  N40 pass 0.587 fail 0.000  N45 pass 0.653 fail 0.000
+  q 0.9: N20 pass 0.468 fail 0.000  N30 pass 0.726 fail 0.000  N40 pass 0.870 fail 0.000  N45 pass 0.913 fail 0.000
+  q 1.0: N20 pass 0.762 fail 0.000  N30 pass 0.970 fail 0.000  N40 pass 0.997 fail 0.000  N45 pass 0.999 fail 0.000
+  q 0.3 (wrong-pass check): N20 pass 0.001 fail 0.118  N30 pass 0.001 fail 0.204  N40 pass 0.000 fail 0.294  N45 pass 0.000 fail 0.336
+activation share of episodes 0.5
+  q 0.5: N20 pass 0.023 fail 0.023  N30 pass 0.030 fail 0.030  N40 pass 0.033 fail 0.033  N45 pass 0.033 fail 0.033
+  q 0.7: N20 pass 0.233 fail 0.001  N30 pass 0.377 fail 0.000  N40 pass 0.489 fail 0.000  N45 pass 0.536 fail 0.000
+  q 0.8: N20 pass 0.488 fail 0.000  N30 pass 0.714 fail 0.000  N40 pass 0.842 fail 0.000  N45 pass 0.882 fail 0.000
+  q 0.9: N20 pass 0.794 fail 0.000  N30 pass 0.950 fail 0.000  N40 pass 0.989 fail 0.000  N45 pass 0.995 fail 0.000
+  q 1.0: N20 pass 0.994 fail 0.000  N30 pass 1.000 fail 0.000  N40 pass 1.000 fail 0.000  N45 pass 1.000 fail 0.000
+  q 0.3 (wrong-pass check): N20 pass 0.001 fail 0.233  N30 pass 0.000 fail 0.377  N40 pass 0.000 fail 0.489  N45 pass 0.000 fail 0.536

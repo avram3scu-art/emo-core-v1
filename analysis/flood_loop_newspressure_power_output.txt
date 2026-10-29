@@ -1,0 +1,25 @@
+reps 2000, permutations 999, alpha 0.05 one-sided, base 0.3; no A or M used
+== cluster-level (REGISTERED)
+Error rate (no NP effect, beta 0) under the §5/§8 scenarios (severity error irrelevant: no M):
+  A independent of severity (lam 0, g 1): N20 0.047  N30 0.044  N40 0.048  N45 0.048  N100 0.045
+  A and Y both rise with severity (lam 0.6, g 1): N20 0.035  N30 0.039  N40 0.047  N45 0.043  N100 0.048
+  strong confounding (lam 1.0, g 2): N20 0.034  N30 0.052  N40 0.046  N45 0.042  N100 0.048
+  storm shock on A (beta_shock 0.5): N20 0.042  N30 0.043  N40 0.046  N45 0.048  N100 0.041
+  season shifts severity and NP (strong confounding + season 1.0): N20 0.034  N30 0.041  N40 0.044  N45 0.041  N100 0.045
+Power (lam 0.6, g 1):
+  OR 2 per SD of A, kappa -0.3: N20 0.055  N30 0.058  N40 0.084  N45 0.094  N100 0.106
+  OR 3 per SD of A, kappa -0.3: N20 0.058  N30 0.089  N40 0.100  N45 0.094  N100 0.144
+  OR 3 per SD of A, kappa -0.6: N20 0.095  N30 0.124  N40 0.143  N45 0.165  N100 0.273
+  direct NP effect on Y, OR 0.5 per SD NP: N20 0.150  N30 0.257  N40 0.280  N45 0.343  N100 0.647
+== episode-level (information)
+Error rate (no NP effect, beta 0) under the §5/§8 scenarios (severity error irrelevant: no M):
+  A independent of severity (lam 0, g 1): N20 0.044  N30 0.050  N40 0.057  N45 0.065  N100 0.064
+  A and Y both rise with severity (lam 0.6, g 1): N20 0.044  N30 0.051  N40 0.051  N45 0.048  N100 0.051
+  strong confounding (lam 1.0, g 2): N20 0.043  N30 0.043  N40 0.052  N45 0.055  N100 0.052
+  storm shock on A (beta_shock 0.5): N20 0.050  N30 0.059  N40 0.054  N45 0.053  N100 0.054
+  season shifts severity and NP (strong confounding + season 1.0): N20 0.036  N30 0.048  N40 0.058  N45 0.049  N100 0.047
+Power (lam 0.6, g 1):
+  OR 2 per SD of A, kappa -0.3: N20 0.056  N30 0.091  N40 0.105  N45 0.099  N100 0.126
+  OR 3 per SD of A, kappa -0.3: N20 0.059  N30 0.086  N40 0.113  N45 0.115  N100 0.165
+  OR 3 per SD of A, kappa -0.6: N20 0.108  N30 0.187  N40 0.164  N45 0.221  N100 0.378
+  direct NP effect on Y, OR 0.5 per SD NP: N20 0.210  N30 0.317  N40 0.414  N45 0.426  N100 0.741

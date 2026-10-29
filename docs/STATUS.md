@@ -11,6 +11,18 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
 
+## Session 2.11d extension (2026-10-29, 15:21–16:30) — option (b), lag protocol (H4, H3 in floods; on Adrian's request 15:21)
+
+**Done**
+- Option (b) found: competing news pressure on d0 (language Wikipedia top-10, flood titles excluded) cannot follow flood severity. Test registered (`docs/FLOOD_LOOP_PROTOCOL.md` §10): error rate 0.034–0.052 under every §5/§8 scenario plus seasonal confounding; power 0.06–0.34 at N 20–45 (stated in the first line). Code 8250325 before its run.
+- Lag description and measurability (H3 in floods) registered (§11): wrong PASS ≤ 0.033, power 0.47–0.91 if 90% of lags are measurable (N 20–45). Code 53fe445.
+- Double bootstrap of §9: not done. Reason: Adrian's decision pending (Claude recommended skipping it: it can only lower power, already ≤ 0.38).
+- No data of the period opened; no lag computed; §3 unchanged.
+
+**Claude's mistakes:** the lag script ran once before its commit (ruff refused the commit, the chained command still ran it); no data are read and it is exact, rerun after the commit identical; recorded in §11 and RECORD. Wait loops matched their own command lines and hung; stopped.
+
+**Open:** confirm *replace* for F13 (news-pressure arm) or withdraw §10 before any data (Adrian's decision).
+
 ## Session 2.11d (2026-10-29, 14:39–15:20) — flood loop: repair F13 by a new estimand (H6, H4; infrastructure)
 
 **Done when met: yes** (second branch: reason and retire recommendation in F13). Code e6fad52 (before its run); result 3141439.
