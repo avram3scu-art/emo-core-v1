@@ -1,0 +1,24 @@
+adjust M, M^2; reps 2000, permutations 999, alpha 0.05 one-sided, 20% of A missing, base 0.3
+FPR (beta 0), severity measurement error 0.0 SD
+  A independent of severity (lam 0, g 1): N20 0.058  N30 0.058  N40 0.056  N45 0.054  N100 0.056
+  A and Y both rise with severity (lam 0.6, g 1): N20 0.064  N30 0.053  N40 0.057  N45 0.048  N100 0.055
+  strong confounding (lam 1.0, g 2): N20 0.059  N30 0.046  N40 0.055  N45 0.051  N100 0.053
+  storm shock on A (beta_shock 0.5): N20 0.053  N30 0.050  N40 0.048  N45 0.049  N100 0.044
+FPR (beta 0), severity measurement error 0.3 SD
+  A independent of severity (lam 0, g 1): N20 0.064  N30 0.058  N40 0.068  N45 0.044  N100 0.058
+  A and Y both rise with severity (lam 0.6, g 1): N20 0.062  N30 0.065  N40 0.053  N45 0.073  N100 0.072
+  strong confounding (lam 1.0, g 2): N20 0.070  N30 0.086  N40 0.084  N45 0.094  N100 0.115
+  storm shock on A (beta_shock 0.5): N20 0.072  N30 0.070  N40 0.071  N45 0.064  N100 0.077
+FPR (beta 0), severity measurement error 0.6 SD
+  A independent of severity (lam 0, g 1): N20 0.052  N30 0.057  N40 0.062  N45 0.047  N100 0.050
+  A and Y both rise with severity (lam 0.6, g 1): N20 0.080  N30 0.083  N40 0.101  N45 0.097  N100 0.131
+  strong confounding (lam 1.0, g 2): N20 0.115  N30 0.160  N40 0.172  N45 0.194  N100 0.311
+  storm shock on A (beta_shock 0.5): N20 0.083  N30 0.112  N40 0.129  N45 0.113  N100 0.173
+Power (lam 0.6, g 1, error 0.3): rows = log odds ratio per SD of A
+  beta 0.4 (OR 1.5): N20 0.132  N30 0.193  N40 0.224  N45 0.218  N100 0.363
+  beta 0.7 (OR 2.0): N20 0.227  N30 0.274  N40 0.349  N45 0.399  N100 0.641
+  beta 1.1 (OR 3.0): N20 0.317  N30 0.425  N40 0.507  N45 0.572  N100 0.859
+
+real	2m43.210s
+user	2m40.296s
+sys	0m0.127s

@@ -1,6 +1,6 @@
 # Flood loop (EU): data definitions registered; test statistic not yet registrable
 
-**First line (power and validity rule):** no pass/fail test is registered in this file. The candidate test below failed its synthetic false-positive check (§5), so it must not be run. A test is registered only in a later commit, before any flood notification, pageview or activation of the period is opened.
+**First line (power and validity rule):** no pass/fail test is registered in this file. Both candidate tests failed their synthetic false-positive checks (§5, §8), so neither may be run. A test is registered only in a later commit, before any flood notification, pageview or activation of the period is opened.
 
 Session 2.11b, 29 Oct 2026. Hypotheses: H6 (H4 in a second domain), H4 power by pooling. Class: infrastructure (definitions and synthetic checks). Feasibility: `docs/SECOND_DOMAIN_FEASIBILITY.md` §2b (C1 pass for prospective use).
 
@@ -76,3 +76,25 @@ Sources (opened 29 Oct 2026):
 - [CEMS-FLOODS datasets licence (rev. 1)](https://ewds.climate.copernicus.eu/licences/cems-floods)
 - [EWDS: CDSAPI setup](https://ewds.climate.copernicus.eu/how-to-api)
 - Not usable: https://european-flood.emergency.copernicus.eu/en/node/260 (page body did not render).
+
+## 8. Severity-adjusted candidate: synthetic check (session 2.11c) — rejected, not registered
+
+Code `analysis/flood_loop_severity_test.py` (committed before its run: 66a89f0, 60c0e89); outputs `analysis/flood_loop_severity_test_output.txt`, `..._output_with_n.txt`. Same data model as §5, plus measured severity M = true severity + error (M stands for the Gumbel reduced variate of discharge, §7). Statistic: Freedman–Lane covariance of A residualised on [1, M, M²] with Y − p̂(M) (logistic), one-sided, 999 permutations; variant also adjusts for ln n. 2000 replications (Monte Carlo SE about 0.005 at 0.05).
+
+| FPR, β = 0, adjust M, M² | N 20 | N 30 | N 40 | N 45 | N 100 |
+|---|---|---|---|---|---|
+| error 0: four §5 scenarios (range) | 0.053–0.064 | 0.046–0.058 | 0.048–0.057 | 0.048–0.054 | 0.044–0.056 |
+| error 0.3 SD: A unrelated | 0.064 | 0.058 | 0.068 | 0.044 | 0.058 |
+| error 0.3: both rise with severity | 0.062 | 0.065 | 0.053 | 0.073 | 0.072 |
+| error 0.3: strong confounding | 0.070 | 0.086 | 0.084 | 0.094 | 0.115 |
+| error 0.3: storm shock | 0.072 | 0.070 | 0.071 | 0.064 | 0.077 |
+| error 0.6: range | 0.052–0.115 | 0.057–0.160 | 0.062–0.172 | 0.047–0.194 | 0.050–0.311 |
+
+Adding ln n changes nothing material (error 0.3: 0.049–0.100 at N 20–45). Power (error 0.3, OR per SD of A 1.5 / 2 / 3): N 20 0.13 / 0.23 / 0.32; N 45 0.22 / 0.40 / 0.57; N 100 0.36 / 0.64 / 0.86.
+
+**Diagnosis.**
+1. Even with severity measured without error, FPR is 0.05–0.06 at N 20–30: the plug-in logistic fit makes the permutation null slightly liberal at these sizes.
+2. With error 0.3 SD, residual confounding pushes FPR to 0.06–0.09 at N 20–45 and grows with N (0.115 at N 100). This is not a defect of this statistic: no adjustment for a confounder measured with unknown error controls FPR when attention and activation both depend on the true value. Discharge measures hazard, not impact (§7 condition 2), so the realistic error is likely at least 0.3 SD.
+3. Power is below 0.5 at OR ≤ 2 for every N ≤ 45.
+
+**Consequence:** the requirement of §6 (FPR ≤ 0.05 under every §5 scenario, at N 20–45) cannot be met by an observational adjustment at this sample size with this severity measure. No test is registered. The §3 definitions are unchanged; the period's data stay unopened; the registration deadline (31 Dec 2028) still stands for any repaired design.
