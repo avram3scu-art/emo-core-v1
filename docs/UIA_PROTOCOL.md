@@ -150,3 +150,23 @@ everything necessary to EMO") applies the calibration's proposal:
 6. **New requirement for the pre-registration:** measure and report the shared trend among letters
    (e.g. correlation of each letter with the case's warning year), because it is the factor that
    costs most power.
+
+## 2.0 UIA 2.0: the per-event profile of the loop links (session 2.9, 29 Oct 2026)
+
+Evidence class of this section: **infrastructure** (a definition). Committed before any lag or link value of `data/loop_hurricanes/loop_events.csv` was opened in session 2.9 (only its header and the season counts in `summary.json`, already reported in `docs/LOOP_PROTOCOL.md` §19, were read). Moves H4 (`docs/PLAN.md` §4) by fixing the measure the He direction test uses.
+
+**Definition.** For each event e of a loop domain, UIA 2.0 is the profile of its measured links, reported side by side, one column per link, **never summed, weighted or averaged into a score**:
+
+| Link (PLAN §3) | Hurricane measure (LOOP_PROTOCOL §3) | Column | Predicted sign vs He |
+|---|---|---|---|
+| Predict | F, 48-h track skill vs CLIPER5/OCD5 before t0 | `pr_F` | + |
+| Attend | A, log10 pre-landfall views (3 days before t0) | `at_A` | + |
+| Warn (part of decide-act, before t0) | W, earliest watch/warning lead (h) | `wn_W_hours` | + |
+| Decide-act (state) | Y_state, DR request − t0 (days) | `dc_Y_state_days` | (outcome) |
+| Decide-act (federal) | Y_fed, DR declaration − request (days) | `dc_Y_fed_days` | (outcome) |
+| Choose | registered forecasts (LOOP_PROTOCOL §21) | ledger, per season | not per event |
+| Learn | season trend of residual lags (H5) | per season | not per event |
+
+**He (emergent capacity) of an event** = −(Y_state + Y_fed) = −(date of the DR declaration − date(t0)), in days: the landfall→federal-declaration lag, sign-flipped so that higher He = faster response. It is the hurricane analogue of the DAC warning→delivery lag (§2). Missing if either lag is missing.
+
+**Rules (§2 kept):** no circularity (no letter contains a lag); every letter dated before t0 (F: forecasts with initial time < t0; A: the three days before t0; W: lead before t0); a letter not measured for an event is "not measured", never imputed; the §2 letters I (synergy), C, E and D have no per-event hurricane measure and are "not measured" in this domain. Code: `emo/uia2.py` builds the profile table (column selection plus He); output `data/uia2_hurricanes_profile.csv`. a_UIA stays retired (§4).

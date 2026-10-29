@@ -143,3 +143,34 @@ not with one.
 
 **Consequence:** the shared trend among letters, not the number of letters, decides how many cases
 a weak-link test needs. Measuring it (UIA §6 point 6) comes before choosing n.
+
+## 10. He direction test on the hurricane loop, 2015–2025 (session 2.9, 29 Oct 2026; pre-registered on known history)
+
+**Power statement:** filled in §10.6 from the synthetic run, before the data are opened.
+
+**Evidence class: pre-registered on known history.** All 52 events of 2015–2025 entered the session 2.5 run (`docs/LOOP_PROTOCOL.md` §19), and their lag summaries (min/median/max) and counts are published there, so no unused loop event remains; 2026 is excluded (LOOP_PROTOCOL §1) and 2027 rows are reserved for session 2.12b and are not used. Why no prospective test now (CLAUDE.md "Prospective first"): the 2027 blind arm is registered (LOOP_PROTOCOL §20–§21) but cannot reach p < 0.05 for one season. Committed before any lag or link value was opened in session 2.9; inputs read before this commit: the table header and `summary.json` season counts.
+
+### 10.1 What it tests, and what it cannot
+
+- **Prediction (UIA §2.0):** events whose predict, attend and warn links are stronger have higher He (faster landfall→DR declaration).
+- **It does not test H4 as stated.** H4 is "coupling beyond procedure": it needs controls for severity, region and triggers (LOOP_PROTOCOL §4–§5), and on 2015–2025 those controls cannot be fitted (guard §15: 9–10 within-season degrees of freedom < 15). T-D has no controls. A PASS here shows only an **unconditional association** within seasons, which severity alone could produce (stronger storms draw more attention, longer warning leads and faster declarations); it never reads as coupling beyond procedure, and H4's status stays "cannot be tested at this size" in this domain on 2015–2025.
+
+### 10.2 Data and cases
+
+`data/loop_hurricanes/loop_events.csv` (checked first by `scripts/validate_loop_table.py`: 52 rows, 0 failures required), rows with `ev_season` in 2015–2025 (asserted). Cases: rows with `dc_Y_state_days`, `dc_Y_fed_days`, `pr_F`, `at_A`, `wn_W_hours` all present. Expected from the counts: 23 cases in 9 seasons, sizes 2016:2, 2017:3, 2018:2, 2019:1, 2020:5, 2021:1, 2022:3, 2023:1, 2024:5. Letters m = 3 (F, A, W), predicted sign + for all; He as UIA §2.0.
+
+### 10.3 Statistic and null
+
+- **T-D** (§3): mean over the three letters of Kendall τ-a between letter and He (sign of pairwise differences; ties count 0), as in `analysis/he_calibration.py`.
+- **Null: He permuted within season** (letters kept together; seasons with one case stay fixed). Change from §3, where He is permuted across all cases: CLAUDE.md requires a null that respects clustering, and a shock shared by a season's lags and letters (a busy year, an administration) would make the across-all null over-reject (checked in §10.5). 9,999 permutations, seed 2026102990; one-sided p = (1 + #{T_perm ≥ T_obs − 1e-12}) / 10,000. **α = 0.05.**
+
+### 10.4 Reading rules
+
+- **PASS:** p < 0.05 → "He direction shown within seasons on known history (unconditional association; not coupling beyond procedure)".
+- **Not significant:** "He direction not shown"; if §10.6 power at β = 0.5 is < 0.5, "not shown at this size". No "no effect" reading (no equivalence bound is fixed).
+- **Descriptive, no weight in any verdict:** per-letter τ; the shared trend among letters (UIA §6 point 6): Kendall τ of each letter and of He with season year, and the mean pairwise τ among the letters; severity: τ of each letter and of He with V (`ev_V_kt`); the across-all-cases permutation p (the §3 null), to show what the season stratification does.
+- No step here is changed after the data are opened.
+
+### 10.5 Synthetic check (code `analysis/he_loop_power.py`, committed before its run; output `analysis/he_loop_power_output.txt`)
+
+Model of §2 at the realized season sizes (§10.2), m = 3, plus a season shock Z_s ~ N(0, 1) added with weight κ to He and to every letter (κ ∈ {0, 1}). Grid β ∈ {0, 0.3, 0.5}, λ ∈ {0, 0.5}; 2,000 studies, 999 permutations, seed 2026102991. Reported: rejection rate of T-D with the within-season null and with the across-all null. Criterion: within-season FPR ≤ 0.060 at β = 0 in every (λ, κ) cell, else the test is not run and reads "cannot be tested". Expectation written now: within-season holds; across-all over-rejects at κ = 1; power at β = 0.5 below the 0.80 of §9 at n = 24, because the three singleton seasons carry no information and within-season pairs are few.
