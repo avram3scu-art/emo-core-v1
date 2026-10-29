@@ -70,6 +70,7 @@ Adrian does not keep records; Claude does. Every test, simulation, probe, run, c
 2. Append one row to `docs/SESSION_LOG.md`: date | session | task | done when met (yes/no) | key commit | note.
 3. If a rule changed, update this file. Commit and push.
 4. Report in six lines: done; not done (each with its reason); result; could still do or improve; next session; anything Adrian must do.
+5. **Write the next session's prompt** (rule added 29 Oct 2026 at Adrian's request). After the close, write the complete opening prompt for the next session, ready to paste: session number and name, the instruction to read CLAUDE.md, `docs/STATUS.md` and its `docs/PLAN.md` entry, the task, its inputs, any decision or finding from this session it must use, and its "done when". Put it in `docs/PLAN.md` (new or updated entry, committed with the close) and give it to Adrian in one monospace block.
 
 ## Style
 

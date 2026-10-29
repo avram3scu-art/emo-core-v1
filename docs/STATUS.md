@@ -34,6 +34,8 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 **Next:** session 2.0-design (prompt in `docs/PLAN.md`).
 
+**Rule added (Adrian, 29 Oct 04:38):** after every session close, Claude writes the next session's full prompt, commits it in `docs/PLAN.md` and gives it to Adrian in a monospace block (CLAUDE.md, Closing routine step 5).
+
 ## Session 11 (2026-10-29, 03:32–03:41) — prepare independent double coding
 
 **Done when met: yes.** Protocol, packet and invitation committed (97d7f07); CI 40807395513 (149 tests, claim-word check 0 unjustified).
