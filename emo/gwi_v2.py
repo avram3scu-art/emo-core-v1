@@ -138,9 +138,31 @@ def compute_gwi_v2(views: pd.DataFrame, alpha_day: float, min_streams: int = 8) 
     return GWI2Result(z, exc & usable, count, tail, ign.fillna(False), scored)
 
 
+COMMON_FRAC = 0.15
+COMMON_HALF = 1
+
+
+def common_mode(ign: pd.Series, panel: pd.DataFrame, frac: float = COMMON_FRAC,
+                half: int = COMMON_HALF) -> pd.Series:
+    """True on days when at least `frac` of the panel articles (scored that day) ignite
+    within +-`half` days. panel: days x articles of 1/0 (NaN = unscored); it must not
+    contain the article being filtered (leave it out). Global shocks that move every
+    topic (e.g. school closures) are not attention to a specific hazard.
+    """
+    pan = panel.reindex(ign.index)
+    near = pan.rolling(2 * half + 1, center=True, min_periods=1).max()
+    share = near.mean(axis=1, skipna=True)
+    return (share >= frac).fillna(False)
+
+
+def filtered_ignition(ign: pd.Series, panel: pd.DataFrame) -> pd.Series:
+    """Ignitions that are not common-mode (protocol §3.4)."""
+    return ign & ~common_mode(ign, panel)
+
+
 # ---------- calibration test (protocol §5) ----------
 
-def block_bootstrap_upper(ign: pd.DataFrame, block: int = 14, n_boot: int = 4000, level: float = 0.95,
+def block_bootstrap_upper(ign: pd.DataFrame, block: int = 14, n_boot: int = 4000, level: float = 0.975,
                           seed: int = 0) -> tuple[float, float]:
     """Pooled false-ignition rate and its one-sided upper bound.
 

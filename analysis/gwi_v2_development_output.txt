@@ -1,0 +1,18 @@
+EXPLORATORY, seen data. q = 0.005 ; scored days 2018-01-01 .. 2026-10-18
+alpha_day=1e-02: Photosynthesis 78/2864=0.0272 (Sep 3); Prime number 55/2864=0.0192 (Sep 4); Pythagorean theorem 42/2864=0.0147 (Sep 0)
+alpha_day=3e-03: Photosynthesis 61/2864=0.0213 (Sep 3); Prime number 32/2864=0.0112 (Sep 3); Pythagorean theorem 30/2864=0.0105 (Sep 0)
+alpha_day=1e-03: Photosynthesis 53/2864=0.0185 (Sep 3); Prime number 21/2864=0.0073 (Sep 2); Pythagorean theorem 24/2864=0.0084 (Sep 0)
+alpha_day=3e-04: Photosynthesis 35/2864=0.0122 (Sep 2); Prime number 14/2864=0.0049 (Sep 1); Pythagorean theorem 17/2864=0.0059 (Sep 0)
+alpha_day=1e-04: Photosynthesis 27/2864=0.0094 (Sep 2); Prime number 12/2864=0.0042 (Sep 1); Pythagorean theorem 16/2864=0.0056 (Sep 0)
+alpha_day=3e-05: Photosynthesis 21/2864=0.0073 (Sep 2); Prime number 9/2864=0.0031 (Sep 1); Pythagorean theorem 9/2864=0.0031 (Sep 0)
+alpha_day=1e-05: Photosynthesis 17/2864=0.0059 (Sep 2); Prime number 7/2864=0.0024 (Sep 1); Pythagorean theorem 7/2864=0.0024 (Sep 0)
+Rule 1 (no filter): alpha_day = None
+filtered, alpha_day=1e-02: Photosynthesis 32/2864=0.0112; Prime number 26/2864=0.0091; Pythagorean theorem 11/2864=0.0038
+filtered, alpha_day=3e-03: Photosynthesis 19/2864=0.0066; Prime number 11/2864=0.0038; Pythagorean theorem 4/2864=0.0014
+filtered, alpha_day=1e-03: Photosynthesis 20/2864=0.0070; Prime number 3/2864=0.0010; Pythagorean theorem 4/2864=0.0014
+filtered, alpha_day=3e-04: Photosynthesis 13/2864=0.0045; Prime number 1/2864=0.0003; Pythagorean theorem 2/2864=0.0007  <= q all
+filtered, alpha_day=1e-04: Photosynthesis 10/2864=0.0035; Prime number 2/2864=0.0007; Pythagorean theorem 2/2864=0.0007  <= q all
+filtered, alpha_day=3e-05: Photosynthesis 10/2864=0.0035; Prime number 4/2864=0.0014; Pythagorean theorem 1/2864=0.0003  <= q all
+filtered, alpha_day=1e-05: Photosynthesis 8/2864=0.0028; Prime number 2/2864=0.0007; Pythagorean theorem 1/2864=0.0003  <= q all
+Rule 2 (common-mode filter): CHOSEN alpha_day = 0.0003
+[no weight] Tropical cyclone v2: events hit 10/16; Jun-Nov control windows 5/410; all-days ignition rate 0.0236

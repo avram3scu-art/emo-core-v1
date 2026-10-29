@@ -2,8 +2,12 @@
 
 docs/GWI_V2_PROTOCOL.md §4: chooses alpha_day on pageviews already opened in sessions 6
 and the calibration session (Photosynthesis, Prime number, Pythagorean theorem; scored days
-2018-01-01 .. 2026-10-18). Rule fixed before this run: alpha_day = the largest value in
+2018-01-01 .. 2026-10-18). Rule fixed before the first run: alpha_day = the largest value in
 ALPHAS whose false-ignition rate is <= q = 0.005 on every development placebo article.
+First run (commit 4a1c3b7): no value qualified; excess ignitions were shared across the
+three articles (Mar-Apr 2020, late December). Second rule, after that diagnosis: the same,
+with each article's ignitions filtered by the common-mode rule (emo.gwi_v2.common_mode,
+leave-one-out over the other development articles). Both are printed.
 Also reports, without weight, the session-6 hurricane contrast with the v2 rule.
 Run from the repository root: python analysis/gwi_v2_development.py
 """
@@ -19,7 +23,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from emo.gwi_v2 import compute_gwi_v2, window_hits  # noqa: E402
+from emo.gwi_v2 import common_mode, compute_gwi_v2, window_hits  # noqa: E402
 
 PV6 = ROOT / "data/sources/wikipedia_pageviews_gwi/wikipedia_pageviews_gwi.csv"
 PVC = ROOT / "data/sources/wikipedia_pageviews_gwi_calibration/wikipedia_pageviews_gwi_calibration.csv"
@@ -63,7 +67,22 @@ def main() -> int:
               + ("  <= q all" if ok else ""))
         if ok and chosen is None:
             chosen = al
-    print("CHOSEN alpha_day =", chosen)
+    print("Rule 1 (no filter): alpha_day =", chosen)
+    chosen = None
+    for al in ALPHAS:
+        ig = pd.DataFrame({a: ((r.tail_p < al) & r.scored).astype(float).where(r.scored)
+                           for a, r in res.items()}).loc[SCORE[0]:SCORE[1]]
+        row = []
+        for a in ig:
+            keep = (ig[a] == 1) & ~common_mode(ig[a] == 1, ig.drop(columns=a))
+            n = int(ig[a].notna().sum())
+            row.append((a, int(keep.sum()), n, keep.sum() / max(n, 1)))
+        ok = all(x[3] <= Q for x in row)
+        print(f"filtered, alpha_day={al:.0e}: " + "; ".join(f"{a} {k}/{n}={rt:.4f}" for a, k, n, rt in row)
+              + ("  <= q all" if ok else ""))
+        if ok and chosen is None:
+            chosen = al
+    print("Rule 2 (common-mode filter): CHOSEN alpha_day =", chosen)
     if chosen is None:
         return 1
     # no-weight check: session-6 hurricane contrast with v2
