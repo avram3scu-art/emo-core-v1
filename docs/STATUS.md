@@ -29,7 +29,9 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - Pre-push hook, lock file, README, FAILURES.md, τ_I fix. Reason: scope; session 2.1.
 - Unverified loop sources (per-storm NHC verification, TCR outcomes, warning times, FEMA hurricane incident type, rule-based triggers). Reason: scope; session 2.2.
 
-**Next:** session 2.1 (prompt in `docs/PLAN.md` §6).
+**Next:** session 2.1 (prompt in `docs/PLAN.md` §11).
+
+**Plan restructured (Adrian, 29 Oct 05:12, between sessions):** Adrian supplied plan 1 as a .docx (committed, `docs/sources/plan/`, sha256 301c9281…) and asked for a roadmap in its structure for both to read before every session; sessions run in separate windows. `docs/PLAN.md` rewritten in that structure with the 2.0 content unchanged (pillar table, what must hold, loop, H1–H7, domain, pillars, who benefits, phases and gates, session tables, opening and closing blocks, prompts 2.1–2.22, funding ladder, pushback, sources); old sessions 16–24 carried as 2.14–2.22 and the white paper revision as 2.13. Reading copy `docs/PLAN.docx` (pandoc; regenerated with every PLAN.md change).
 
 ## Session 15 (2026-10-29, 03:46–04:35) — honest white paper "EMO: what runs today"
 

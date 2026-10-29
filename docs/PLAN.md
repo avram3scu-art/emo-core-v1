@@ -1,8 +1,31 @@
-# EMO plan 2.0
+# EMO 2.0: from prototype to a testable emergent mind
 
-Adrian N. Avramescu, Independent researcher, Antwerp. In force from 29 Oct 2026 (session 2.0-design, Adrian's yes, 04:57); written by Claude on Adrian's decision of 29 Oct 04:33 (`docs/STATUS.md`, session 15). Plan 1 is archived in `docs/archive/PLAN_1.md`. Basis: `docs/AUDIT_2026-10-29.md`; review: `docs/REVIEW_2_0_DRAFTS.md`.
+29 Oct 2026 · Adrian N. Avramescu, Independent researcher, Antwerp
 
-## 1. The idea, made testable
+**Read this before every session (Adrian and Claude).** It is the roadmap of record. Rules: `CLAUDE.md` 2.0. Where we are now: `docs/STATUS.md`. History: `docs/SESSION_LOG.md`. Written by Claude on Adrian's decisions of 29 Oct 2026 (04:33, 04:57). A reading copy for the phone, `docs/PLAN.docx`, is made from this file with `pandoc docs/PLAN.md -o docs/PLAN.docx` and is regenerated in every commit that changes this file; if they differ, this file wins. It keeps the structure of plan 1, "EMO: from prototype to planetary program" (21 Oct 2026; committed in `docs/sources/plan/`, text in `docs/archive/PLAN_1.md`). Basis: `docs/AUDIT_2026-10-29.md`; review: `docs/REVIEW_2_0_DRAFTS.md`.
+
+EMO tests one idea: that humanity's response to a hazard behaves like a mind, a loop whose links are coupled and learn. The route runs through tests that can fail, in a domain that repeats every year, before reports, partners or money.
+
+## 1. Where each pillar stands (29 Oct 2026)
+
+| Pillar | Works on real data today | Not yet working | Evidence |
+|---|---|---|---|
+| DAC (decide-act link) | Ozone vs climate lags [exploratory]; PPE 5 countries + EU recoded from primary sources [known history]; mpox EU [known history] | Every file coded by Claude; no human recode yet | `data/dac_*`, `docs/DAC_*.md`, `docs/DOUBLE_CODING.md` |
+| EMO metrics (predict, attend) | τ_I on NHC errors 2.3–4.0 %/yr [exploratory]; GWI event test PASS [blind]; SMF 6 of 12 [known history] | GWI calibration FAIL; synergy FAIL; GWI and SMF need repair (audit D2–D5) | `docs/GWI_*.md`, `docs/SMF_PROTOCOL.md`, `docs/SYNERGY_PROTOCOL.md` |
+| RDL (choose link) | Forecast ledger, 5 forecasts on Zenodo [blind], unscored | v0.2, v0.3 FAIL [known history]; v0.4 waits for OSP/IRD data | `docs/RDL_*.md` |
+| UIA (loop profile) | none scored | a_UIA retired; loop profile defined in this plan, not built | `docs/UIA_PROTOCOL.md` |
+| Learn link | none | not built | this plan, H5 |
+| Running | Weekly run every Monday (external scheduler); CI with claim-word check; 149 tests | no hook, no lock file (audit D8, D9) | `.github/workflows/` |
+
+## 2. What must hold before anyone outside sees EMO
+
+1. **Claims match code**, with one evidence class on every result.
+2. **Profiles, not one gauge.**
+3. **Every test can fail**, is pre-registered with its power, and failures stay on record and are repaired, replaced or retired.
+4. **Prospective tests first**; a fix is never tested on data already seen.
+5. **Name what exists** (`docs/RELATED_WORK.md`); no novelty without a search.
+
+## 3. The idea, made testable
 
 Version 1 tried to measure a "mind" with quantities defined from the top down (a_UIA, synergy, organismality). Those failed or could not be computed (`docs/UIA_PROTOCOL.md`, `docs/SYNERGY_PROTOCOL.md`). The parts that worked are close to dated, concrete events: forecast skill, attention spikes, warning-to-delivery lags.
 
@@ -20,7 +43,7 @@ Plan 2.0 rebuilds the vision from what works. **The emergent mind is defined as 
 
 **Null model: independent agencies.** Each link responds to the hazard's severity on its own, with no influence from the other links beyond formal procedure (rule-based triggers, such as a warning that by rule starts a declaration). The mind reading is supported only where the loop beats this null: H4 and H5 must show coupling or learning that severity and formal procedure do not explain.
 
-## 2. Hypotheses
+## 4. Hypotheses
 
 | # | Hypothesis | Fails if | Status |
 |---|---|---|---|
@@ -34,7 +57,7 @@ Plan 2.0 rebuilds the vision from what works. **The emergent mind is defined as 
 
 **Falsification, stated now.** If H4 and H5 both fail at adequate power in the hurricane domain, EMO reports publicly that the links are not shown to be coupled or learning there, and that the "mind" reading is unsupported for that domain. EMO then remains a set of response measurements, which is still useful, but the claim is withdrawn for that domain.
 
-## 3. The engine domain: Atlantic hurricanes
+## 5. The engine domain: Atlantic hurricanes
 
 Why: the loop repeats several times a season, so n grows every year and a coming season gives true blind tests. Two links are already in the repository. Data (from `docs/AUDIT_2026-10-29.md` §6; documentation only, no records opened):
 
@@ -46,7 +69,7 @@ Why: the loop repeats several times a season, so n grows every year and a coming
 
 Limits: US only; a declaration is a decision, not a delivery; full four-link coverage starts in 2015 (about ten seasons). Every past season is **known history** (Claude's training and public knowledge); only seasons after a protocol's commit date are blind. The 2027 season (June–November) is the first blind loop test.
 
-## 4. The four pillars, rebuilt
+## 6. The four pillars, rebuilt
 
 - **EMO** (observatory): the weekly run gains the loop event table and writes JSON results; a seasonal run scores the registry.
 - **UIA 2.0**: the loop profile (predict, attend, act, choose, learn), per event and per season; the He direction test runs on loop events (24 needed, about ten seasons provide them).
@@ -55,11 +78,56 @@ Limits: US only; a declaration is a decision, not a delivery; full four-link cov
 
 Repairs: GWI v2 (causal per-article seasonal baseline, Poisson-binomial, block-permutation null), SMF v2 (skill vs persistence as the definition), τ_I time-index fix; synergy parked unless a loop test needs it (`docs/AUDIT_2026-10-29.md` §3).
 
-## 5. How every session runs
+## 7. Who benefits, and who would pay
 
-Rules: `CLAUDE.md` (2.0 after Adrian's yes). Every session has one task, names its hypothesis, pre-registers any test, records everything, runs the review (including improve-before-close), and ends with the next session's prompt.
+Carried from plan 1 unchanged in substance; no new sources opened. Order of use: research partners (methods, validation, a host, a second coder), crisis and early-warning bodies (loop profiles per event; possible pilots), ministries (where delay sits; pilot contracts only), multilaterals (funders of methods if EMO adds what existing indicators lack), investors and rating agencies (later, only if a paid layer is decided), civil society and media (the public mirror; legitimacy, not money), philanthropy (main funder of the public layer). Two kinds of EMO follow: an open public mirror, and possibly, later, paid services that must not compromise it (decision in 2.22).
 
-**Opening prompt (template)**
+## 8. Roadmap: four phases, four gates
+
+No phase starts on the calendar; each starts when its gate is met.
+
+| Phase | Sessions | Gate to enter the next phase |
+|---|---|---|
+| A. Clean ground, loop design | 2.1–2.4 | loop event table built under a committed protocol; README true |
+| B. The loop on the record | 2.5–2.12 | at least one H4/H5 result recorded (pass or fail) and GWI v2 pre-registered; 2027 registry deposited before 1 June 2027 |
+| C. Credibility | 2.13–2.17 | release DOI resolves; report reproducible |
+| D. Partners and money | 2.18–2.22 | a partner's written reply |
+
+Sessions 2.8, 2.10, 2.12 have fixed dates; 2.11, 2.18 and 2.21 depend on other people's replies.
+
+## 9. Session by session
+
+**Phase A: clean ground, loop design**
+
+| # | Session | Hypothesis | Done when |
+|---|---|---|---|
+| 2.1 | Clean ground | infrastructure | README, hook, lock file, τ_I fix, FAILURES.md committed; CI and weekly run green |
+| 2.2 | Loop data check | H3–H5 | `docs/LOOP_DATA.md` with a verdict per link; no record opened |
+| 2.3 | Loop protocol | H3–H5 | protocol, power code, tests committed; nothing opened |
+| 2.4 | Loop event table | H3 | table, fetch scripts, tests; no H4/H5 output |
+
+**Phase B: the loop on the record**
+
+| # | Session | Hypothesis | Done when |
+|---|---|---|---|
+| 2.5 | Loop test 2015–2025 | H4, H5 | result recorded [known history] |
+| 2.6 | GWI v2 | H2 | protocol, code, synthetic checks; prospective scoring date |
+| 2.7 | SMF v2 | H1 | code, tests, protocol |
+| 2.8 | 2027 registry | H4, H5, H7 | deposited before 1 June 2027 |
+| 2.9 | UIA 2.0, He test | H4 | result recorded |
+| 2.10 | Ledger scoring (after 31 Dec 2026) | H7 | scores deposited |
+| 2.11 | DAC agreement, second hazard | H3, H6 | agreement (if a sheet returned) and feasibility note |
+| 2.12 | Score 2027 (Dec 2027) | H4, H5, H7 | blind results recorded |
+
+**Phase C: credibility**: 2.13 white paper 2.0; 2.14 software paper; 2.15 release 1.0; 2.16 State of the Mirror 2027; 2.17 briefs.
+
+**Phase D: partners and money**: 2.18 first partner; 2.19 legal home; 2.20 first grant; 2.21 consortium role; 2.22 paid layer, yes or no.
+
+## 10. How every session starts and ends
+
+Every session is a new conversation with avram3scu-art/emo-core-v1 as its repository. Paste the session's prompt (§11, or the one Claude gave at the last close); at the end paste the closing block, so the work is recorded in the repo, not only in the chat.
+
+**Opening block (template; each prompt in §11 is already complete):**
 
 ```text
 EMO session <N>: <name>. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session <N> in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: <H#>. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
@@ -68,15 +136,15 @@ Inputs: <files, decisions>
 Done when: <condition>
 ```
 
-**Closing prompt (template)**
+**Closing block (paste at the end, every session):**
 
 ```text
-Close session <N>. Run the review (more now, change or improve, improve before close) with your recommendation on each point; then the closing routine of CLAUDE.md, the seven-line report, and the full prompt for the next session in one block.
+Close the session. Run the review (more now, change or improve, improve before close) with your recommendation on each point and wait for my answer. Then the closing routine of CLAUDE.md: record check, STATUS, SESSION_LOG, commit and push; the seven-line report (done, not done with reasons, result, hypothesis moved, could still do or improve, next session, anything I must do); and the full prompt for the next session in one block, also committed in docs/PLAN.md.
 ```
 
-## 6. Sessions
+## 11. Session prompts
 
-Old sessions 12–14 and 16–24 (`docs/archive/PLAN_1.md`) are kept, re-sequenced below. Times are rough.
+### Phase A and B
 
 ### 2.1 Clean ground (infrastructure; ~1 h)
 
@@ -99,7 +167,7 @@ Done when: LOOP_DATA.md committed; no data record opened (stated in the file).
 
 ```text
 EMO session 2.3: loop protocol. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.3 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H3, H4, H5. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
-Session 2.3 task: pre-register the loop tests in docs/LOOP_PROTOCOL.md before any loop record is opened: event definition from HURDAT2 (e.g. US landfall at hurricane strength), each link's measure and its reading rules, the H4 coupling statistic and the H5 learning statistic, controls (severity measures named in advance, region, year, every rule-based trigger found in 2.2), the independent-agencies null model (PLAN §1) that H4 and H5 must beat, a null that respects clustering by season, Holm correction, equivalence bounds for any "no effect" reading, and power and false-positive rate from synthetic data (code in analysis/, tests). Split: 2015–2025 = known history; the 2027 season = blind.
+Session 2.3 task: pre-register the loop tests in docs/LOOP_PROTOCOL.md before any loop record is opened: event definition from HURDAT2 (e.g. US landfall at hurricane strength), each link's measure and its reading rules, the H4 coupling statistic and the H5 learning statistic, controls (severity measures named in advance, region, year, every rule-based trigger found in 2.2), the independent-agencies null model (PLAN §3) that H4 and H5 must beat, a null that respects clustering by season, Holm correction, equivalence bounds for any "no effect" reading, and power and false-positive rate from synthetic data (code in analysis/, tests). Split: 2015–2025 = known history; the 2027 season = blind.
 Done when: protocol, synthetic power code and tests committed; power stated; nothing opened.
 ```
 
@@ -175,13 +243,115 @@ Session 2.12 task: build the 2027 rows exactly as in 2.4, score the registered p
 Done when: results committed; README, page and STATUS updated.
 ```
 
-### 2.13 onward: credibility, partners, money (old sessions 15–24, after 2.5)
+### Phase C: credibility
 
-The white paper is revised from the session 15 review once loop results exist; then the software paper (old 16), release 1.0 (old 17), State of the Mirror (old 18), briefs (old 19), first partner (old 20), legal home (old 21), first grant (old 22), consortium role (old 23), paid layer (old 24). Their prompts in `docs/archive/PLAN_1.md` are kept unchanged, with "Hypothesis moved" added.
+### 2.13 White paper 2.0 (credibility; after 2.5)
 
-## 7. Where Claude pushes back
+```text
+EMO session 2.13: white paper 2.0. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.13 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (reports H1–H7). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.13 task: revise docs/WHITEPAPER_EMO_what_runs_today.md with the loop results to date, fixing every point of docs/REVIEW_S15_WHITEPAPER.md (disclosure point 2 only after my recorded verification; vision tied to H1–H7; one audience and one ask). Every factual statement links to a repo file or is marked [plan]; evidence class on every result. Then a hostile editor-style review.
+Done when: draft committed and reviewed; nothing sent out the same day.
+```
+
+### 2.14 Software paper (credibility)
+
+```text
+EMO session 2.14: software paper. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.14 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.14 task: prepare a Journal of Open Source Software submission. First open JOSS's current submission requirements and AI usage policy and check EMO against each, listing gaps. Fix small gaps; list large ones. Draft paper.md (summary, statement of need, related work from docs/RELATED_WORK.md, AI usage disclosure in my three-point form, contributions line as decided in STATUS). Give an editor-style review with a realistic verdict.
+Done when: checklist and draft committed; submission waits at least one day after the review.
+```
+
+### 2.15 Release 1.0 (credibility)
+
+```text
+EMO session 2.15: release 1.0. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.15 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none (infrastructure). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.15 task: tag and archive release 1.0. Add CITATION.cff (Adrian N. Avramescu, ORCID 0009-0005-1393-5264), a CHANGELOG, and check that the Zenodo-GitHub integration is on for avram3scu-art/emo-core-v1. Make sure tests pass, then create the v1.0.0 release with notes stating what works and what does not.
+Done when: the Zenodo DOI for the release resolves.
+```
+
+### 2.16 State of the Mirror 2027 (credibility; after 2.12)
+
+```text
+EMO session 2.16: state of the mirror 2027. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.16 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H1–H7 (report). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.16 task: write reports/state_of_the_mirror_2027.md from the weekly-run data and the 2027 season: what each loop link shows, H1–H7 status with evidence classes, what failed and why, what EMO cannot yet see. Every figure produced by a script in the repo and reproducible from the release. Under 3,000 words.
+Done when: every figure regenerates from the repo.
+```
+
+### 2.17 One-page briefs (credibility)
+
+```text
+EMO session 2.17: one-page briefs. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.17 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.17 task: three one-page briefs for (a) research partners, (b) crisis and early-warning bodies, (c) funders: what EMO measures today, one result each would care about, what we ask of them, what EMO does not claim. Every claim traceable to the report or repo. No Substack or Zenodo portfolio links.
+Done when: three briefs committed in docs/briefs/.
+```
+
+### Phase D: partners and money
+
+### 2.18 First partner (partners)
+
+```text
+EMO session 2.18: first partner. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.18 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.18 task: approach the first partner. Draft a short email to the Earth System Governance Project network (I was previously invited as a Fellow) with the honest status: what runs, the release DOI, the annual report, the failures, and one concrete ask (methods feedback, a co-author, a second coder, or hosting). No exaggeration, no portfolio links. Give me two variants; I choose and send.
+Done when: email sent by me; reply and contact recorded in STATUS when it arrives.
+```
+
+### 2.19 Legal home (partners)
+
+```text
+EMO session 2.19: legal home. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.19 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.19 task: decide where EMO legally lives. Compare, with sources opened: a Belgian non-profit (VZW/ASBL) founded by me, hosting by a partner institution, or staying an individual open-source project. For each: cost, time, who can receive grants, governance, fit with EMO's openness. Recommend one; I decide.
+Done when: decision recorded in docs/GOVERNANCE.md.
+```
+
+### 2.20 First grant (money)
+
+```text
+EMO session 2.20: first grant. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.20 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.20 task: one small grant application. Open the current NLnet calls (and up to two other open-source or public-good funders you find and verify). Check eligibility, deadline and AI policy (NLnet asked for prompts and logs from AI-assisted work as of 21 Oct 2026; recheck). Draft the application for a concrete technical deliverable (e.g. the loop event table and its weekly run, or the DAC standard and validator), with full AI disclosure. Editor-style review before I submit; never the same day.
+Done when: application ready for my submission.
+```
+
+### 2.21 Consortium role (partners; needs 2.18)
+
+```text
+EMO session 2.21: consortium role. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.21 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.21 task: EMO as a work package in a partner's bid. With the partner from 2.18: find a current Horizon Europe or comparable call that fits, open its text, draft a one-page work-package description (objectives, deliverables, months, cost) for EMO's part. Only what EMO can do by then.
+Done when: partner agrees in writing to include it.
+```
+
+### 2.22 Paid layer, yes or no (money)
+
+```text
+EMO session 2.22: paid layer, yes or no. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.22 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: none. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+Session 2.22 task: decide whether EMO gets a paid service. Set out, with evidence: possible paying users, existing competitors, cost to build, and the risk to EMO's open, non-oracular public layer. Case for and against; I decide. Investor material only if the answer is yes and at least one real user has asked for it.
+Done when: decision and its rules recorded in docs/GOVERNANCE.md.
+```
+
+## 12. Funding ladder
+
+Carried from plan 1 (facts as checked on 21 Oct 2026; not reopened). Money follows evidence.
+
+| Rung | Source | Size | Needs first | Status of the fact |
+|---|---|---|---|---|
+| 0 | Our time; free public-repository tools | none | — | Known |
+| 1 | NLnet open calls | €5,000–50,000 first grant; individuals may apply | clear technical deliverable; AI disclosure with prompts and logs | Verified on nlnet.nl on 21 Oct 2026; recheck in 2.20 |
+| 2 | Pilot with a crisis or early-warning body | to be found | a loop profile they can use | Unverified |
+| 3 | Philanthropy for public-good indicators | to be found | release, report, partner | Unverified |
+| 4 | Partner-hosted research grants (e.g. Horizon Europe) | large, shared | a partner leading the bid | Unverified for EMO |
+| 5 | Investors | depends | paying users, a legal entity | Only if 2.22 says yes |
+
+## 13. Where Claude pushes back, and the risks
 
 - The hurricane loop is US-specific and decision-based; it can support the "mind" reading only for one hazard in one country. H6 is required before any general claim.
 - Ten seasons is a small n for coupling with controls; power may stay below 0.8 until several blind seasons accumulate. The plan is slow by design.
 - Attention and action share a driver (storm severity); H4 can be confounded even with controls. The protocol must say what result would count as coupling beyond severity.
 - None of this needs new grand theory. If a new tool is needed, it is built only when a pre-registered test shows the old one cannot answer the question.
+- **Investors come last**, and "all institutions" is a direction, not a plan: indicators reach institutions one at a time, through a host others trust (plan 1).
+- **One mind.** Every coded file so far is Claude's; the second coder (2.11) and machine-readable records (2.4) are the checks that EMO is not shaped by one mind, human or AI.
+- **Speed.** The blind test needs the 2027 season; the plan is slow by design and holds only if each session meets its "done when".
+
+## 14. Sources
+
+- FEMA, OpenFEMA Disaster Declarations Summaries (documentation page), https://www.fema.gov/about/openfema/disaster-declarations-summaries , opened 29 Oct 2026 (session 2.0-design).
+- Plan 1 sources (NLnet, JOSS, UNEP SDG 17.14.1, World Bank Sovereign ESG portal, Zenodo ledger DOI 10.5281/zenodo.23507467): opened for plan 1 on or before 21 Oct 2026; not reopened in this session.
+- Repository: avram3scu-art/emo-core-v1, branch emo-2026-10.
