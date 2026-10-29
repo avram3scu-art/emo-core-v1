@@ -46,7 +46,7 @@ def perm_p(a, y, s, rng, b=B):
     return (1 + np.sum(tp >= t0 - 1e-12)) / (1 + b)
 
 
-def simulate(n, beta, rng, lam=0.6, g=1.0, rho=0.6, beta_shock=0.0, base=0.3):
+def simulate(n, beta, rng, lam=0.6, g=1.0, rho=0.6, beta_shock=0.0, base=0.3, sev_err=None):
     sizes = []
     while sum(sizes) < n:
         sizes.append(rng.geometric(1 / 1.5))
@@ -60,7 +60,12 @@ def simulate(n, beta, rng, lam=0.6, g=1.0, rho=0.6, beta_shock=0.0, base=0.3):
     off = np.log(base / (1 - base)) - np.log(np.mean(np.exp(lin)))
     y = (rng.random(n) < 1 / (1 + np.exp(-(off + lin)))).astype(int)
     keep = rng.random(n) >= 0.2
-    return a[keep], y[keep], stratum(notes[keep])
+    if sev_err is None:
+        return a[keep], y[keep], stratum(notes[keep])
+    # variant (added before its run): strata = tertiles of a measured severity, e.g. a
+    # discharge return period, with error sev_err SD; notification count not used
+    m = (sev + sev_err * rng.normal(size=n))[keep]
+    return a[keep], y[keep], np.digitize(m, np.quantile(m, [1 / 3, 2 / 3]))
 
 
 def rate(n, beta, **kw):
@@ -88,6 +93,13 @@ def main():
     print("Power (lam 0.6, g 1): rows = beta per SD of A, i.e. log odds ratio")
     for beta in [0.4, 0.7, 1.1]:
         print(f"  beta {beta} (OR {np.exp(beta):.1f}): " + "  ".join(f"N{n} {rate(n, beta):.3f}" for n in ns))
+
+    print("Variant: strata = tertiles of a measured severity (error SD shown), lam 0.6, g 1")
+    for err in [0.3, 0.6]:
+        print(f"  FPR err {err}: " + "  ".join(f"N{n} {rate(n, 0.0, sev_err=err):.3f}" for n in ns))
+        print(f"  FPR err {err}, strong (lam 1, g 2): " + "  ".join(
+            f"N{n} {rate(n, 0.0, lam=1.0, g=2.0, sev_err=err):.3f}" for n in ns))
+        print(f"  power err {err}, OR 2.0: " + "  ".join(f"N{n} {rate(n, 0.7, sev_err=err):.3f}" for n in ns))
 
 
 if __name__ == "__main__":
