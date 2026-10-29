@@ -4,12 +4,29 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 
 ## Current state (29 Oct 2026)
 
-- **Plan position (29 Oct, 12:05):** session 2.9 (UIA 2.0, He test) closed; Zenodo version 2 of the ledger pending (Adrian). Next: session 2.10 (ledger scoring, after 31 Dec 2026). SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
+- **Plan position (29 Oct, 12:20):** session 2.9 (UIA 2.0, He test) closed; session 2.10 started early (12:06) and stopped: no forecast resolved yet. Zenodo version 2 of the ledger pending (Adrian). Next: session 2.10 (ledger scoring) **on or after 1 Jan 2027**, prompt unchanged. SMF v2 NHC fetch from 1 May 2027. GWI v2 scoring: Mon 15 Nov 2027 (session 2.12). 2027 hurricane scoring: session 2.12b, when the HURDAT2 file covering 2027 exists (about May 2028). Earlier positions: `docs/SESSION_LOG.md`.
 - **Runs:** weekly run every Monday 07:41 Brussels via cron-job.org (token expires 26 Oct 2027). CI: tests (198), mypy, ruff, claim-word check. CI, weekly run and one-off workflow install the exact versions in `requirements-lock.txt`. Pre-push hook `scripts/hooks/pre-push` (claim-word check, ruff, tests); install per clone: `git config core.hooksPath scripts/hooks`.
 - **Failure register:** `docs/FAILURES.md` (12 rows; F12 hurricane H3, repair chosen 29 Oct 09:53).
 - **Results on record:** README table, each with its evidence class; every test and run in `docs/RECORD.md`; sessions 1–8 in `docs/STATUS_ARCHIVE.md`.
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
+
+## Session 2.10, early attempt (2026-10-29, 12:06–12:20) — ledger scoring (H7; not moved)
+
+**Done when met: no.** Reason: needs time. The PLAN entry says "after 31 Dec 2026"; the earliest RDL forecast (F001, IMO Net-Zero Framework) resolves 31 Dec 2026; F003 31 May 2027; F002, F004 2027-12-31; F005 2028-12-31. The loop ledger L2027-01…10 resolves with the HURDAT2 file covering 2027 (session 2.12b). `analysis/score_forecast_ledger.py` allows outcomes only after each resolve_by date, so nothing could be scored.
+
+**Done**
+- Session start: weekly run 40843970838 (29 Oct) green.
+- Resolve_by dates read; no outcome looked up or opened; `data/rdl_forecast_outcomes.csv` not created (correct).
+- Decision (Adrian 12:19, "1 - Yes", on Claude's recommendation): stop; rerun 2.10 with its unchanged prompt on or after 1 Jan 2027; the RDL v0.2/v0.3 docstring freeze stays in that session (not split off).
+
+**Open (each with reason)**
+- Score F001 and later forecasts; new Zenodo version with scores. Reason: needs time; from 1 Jan 2027.
+- RDL v0.2/v0.3 docstring freeze. Reason: Adrian's decision (kept in 2.10).
+
+**Lesson:** a session prompt carrying a date gate should be checked against today's date before it is pasted; the PLAN entry now says so.
+
+**Next:** session 2.10 on or after 1 Jan 2027 (prompt in `docs/PLAN.md` §11, unchanged).
 
 ## Session 2.9 (2026-10-29, 11:17–12:05) — UIA 2.0 and the He direction test (H4; definition = infrastructure; test pre-registered on known history)
 

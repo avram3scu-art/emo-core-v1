@@ -233,6 +233,8 @@ Done when: protocol, result and evidence class committed.
 
 ### 2.10 RDL 2.0 and the ledger (H7; after 31 Dec 2026; was session 14)
 
+**Do not paste before 1 Jan 2027.** Started early on 29 Oct 2026 and stopped: no forecast had resolved (record in `docs/STATUS.md`, session 2.10 early attempt). Earliest resolve_by: F001, 31 Dec 2026.
+
 ```text
 EMO session 2.10: forecast ledger scoring. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md, docs/STATUS.md and the entry for session 2.10 in docs/PLAN.md, and follow them. One task only this session: the one below. Hypothesis moved: H7. Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register any test before opening its data. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
 Session 2.10 task: score every resolved ledger forecast with analysis/score_forecast_ledger.py (Brier vs 0.5 baseline), record outcomes with sources opened, add a new Zenodo version; mark RDL v0.2/v0.3 code frozen in its docstrings. RDL v0.4 runs only when OSP/IRD data arrive (was session 13).
