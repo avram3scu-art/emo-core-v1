@@ -49,6 +49,7 @@ API_SETTINGS = {"model": MODEL, "max_tokens": MAX_TOKENS, "temperature": "omitte
                 "model does not accept it)", "thinking": "default (adaptive)",
                 "effort": "default", "tools": "none", "anthropic_version": API_VERSION}
 ACCOUNT_ERRORS = {401, 402, 403}
+ACCOUNT_TYPES = {"authentication_error", "permission_error", "billing_error"}
 RETRY_STATUS = {408, 429, 500, 502, 503, 504, 529}
 
 INDEX_FIELDS = ("ledger_run_id", "run_utc", "stream_runs", "status", "n_forecasts",
@@ -134,7 +135,7 @@ def call_model(system: str, user: str, api_key: str, timeout: int = 120) -> dict
                     "response_id": obj.get("id"), "response_text": text,
                     "error": None if text else f"no text (stop_reason {obj.get('stop_reason')})"}
         except urllib.error.HTTPError as e:
-            if e.code in ACCOUNT_ERRORS:
+            if e.code in ACCOUNT_ERRORS or _account_body(e):
                 return {"kind": "account", "model_returned": None, "response_id": None,
                         "response_text": None, "error": f"HTTP {e.code}"}
             err = f"HTTP {e.code}"
@@ -145,6 +146,18 @@ def call_model(system: str, user: str, api_key: str, timeout: int = 120) -> dict
         time.sleep(10 * (attempt + 1))
     return {"kind": "failed", "model_returned": None, "response_id": None,
             "response_text": None, "error": err}
+
+
+def _account_body(e) -> bool:
+    """An account-level refusal sent with another status (e.g. 400 'credit balance too
+    low'): the model was not asked. Reads only the error type and message of the reply."""
+    try:
+        err = json.loads(e.read() or b"{}").get("error") or {}
+    except (ValueError, AttributeError, OSError):
+        return False
+    msg = str(err.get("message", "")).lower()
+    return (err.get("type") in ACCOUNT_TYPES or "credit balance" in msg
+            or "billing" in msg)
 
 
 def coherent_whole(text: str | None) -> str | None:

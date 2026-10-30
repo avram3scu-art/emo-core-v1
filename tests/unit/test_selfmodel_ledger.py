@@ -286,3 +286,23 @@ def test_mirror_page_shows_counts_only(tmp_path, monkeypatch):
          "forecasts_total": "7"}.get(k, "") for k in L.INDEX_FIELDS) + "\n")
     html = bs.selfmodel_section()
     assert "<b>7</b>" in html and "2026-11-02T09:00:00+00:00" in html
+
+
+def test_call_model_classifies_account_errors_without_network(monkeypatch):
+    import io
+    import urllib.error
+
+    def raise_(code, body):
+        def f(req, timeout=0):
+            raise urllib.error.HTTPError(L.API_URL, code, "x", {}, io.BytesIO(body))
+        return f
+    monkeypatch.setattr(L.time, "sleep", lambda s: None)
+    low = json.dumps({"type": "error", "error": {"type": "invalid_request_error",
+                      "message": "Your credit balance is too low"}}).encode()
+    monkeypatch.setattr(L.urllib.request, "urlopen", raise_(400, low))
+    assert L.call_model("s", "u", "k")["kind"] == "account"
+    monkeypatch.setattr(L.urllib.request, "urlopen", raise_(401, b"{}"))
+    assert L.call_model("s", "u", "k")["kind"] == "account"
+    other = json.dumps({"error": {"type": "overloaded_error", "message": "busy"}}).encode()
+    monkeypatch.setattr(L.urllib.request, "urlopen", raise_(529, other))
+    assert L.call_model("s", "u", "k")["kind"] == "failed"
