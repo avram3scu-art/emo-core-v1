@@ -388,7 +388,24 @@ Session 3.4 task: (1) Field-presence check (LOOP_CARD_PROTOCOL §10, deadline 30
 Done when: hook fixed; field-presence aggregate committed and any amendment registered before 30 Nov 2026; card job and page committed and run once by the Action; record, STATUS and next prompt committed.
 ```
 
-Prompts for 3.5–3.10 are written at the close of the session before each, from §0.3.
+### 3.4b Field-name amendment (infrastructure; dated: on or after 16 Nov 2026, before 30 Nov 2026)
+
+```text
+EMO session 3.4b: field-name amendment. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (session 3.4), docs/FIELD_PRESENCE_CHECK.md, docs/LOOP_CARD_PROTOCOL.md (§3, §10, §11) and this entry in docs/PLAN.md, and follow them. One task only. Hypothesis moved: none (infrastructure; protects the registered H3 stream test). Run only on or after 16 Nov 2026 and finish before 30 Nov 2026. Claude never holds EMO_STREAM_KEY and opens no record. Keep replies short; I am on a limited weekly allowance.
+Task: (1) Build a country-name → ISO3 table for CEMS (ISO 3166 English short names, from a source opened in the session and cited), committed before it is applied, without opening a record; add a "parses with the table" share for CEMS countries to emo/stream/presence.py (register this addition in FIELD_PRESENCE_CHECK.md first). (2) Re-run .github/workflows/field_presence.yml; read the committed aggregate by the §3 rule of FIELD_PRESENCE_CHECK.md (3.4 found: CEMS countries are names; CEMS subCategory, GO appeal dtype_name absent and GDACS glide empty, no replacement key; GDACS search and GO events had < 20 records). (3) Write the single dated amendment in LOOP_CARD_PROTOCOL §10 (the CEMS table plus any rename the rule calls for; nothing else changes) and apply it in emo/stream/cards.py with synthetic tests. If GDACS search or GO events are still < 20, say so in the amendment and leave their names as documented. (4) Mirror page: label that cards with onsets before the stream began (Oct 2026) come from running appeals; README: replace "no daily ingestion" with what runs now (no "continuous" before 14 unattended days).
+Done when: table, aggregate and amendment committed before 30 Nov 2026; mirror job green after the change; page label and README fixed; record, STATUS and next prompt committed.
+```
+
+### 3.5 Self-model protocol and power (H8)
+
+```text
+EMO session 3.5: self-model protocol and power. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (decision 30 Oct 07:57 on the AI layer; session 3.4), docs/STRATEGY_3_0.md (§3, §4.1, §5), docs/LOOP_CARD_PROTOCOL.md and the entry for session 3.5 in docs/PLAN.md, and follow them. One task only. Hypothesis moved: H8 (protocol and power registered; no forecast made). Stop when its "done when" is met, or tell me plainly why it cannot be met. Pre-register before any data are opened. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+First, if today is on or after 3 Nov 2026: check that Stream daily ran unattended on 31 Oct, 1 Nov and 2 Nov (gh run list -w stream_daily.yml; event and starter per run; no manual start) and that Mirror daily followed each; report it, then record it as the 3.2 done-when check. If before 3 Nov, say it waits.
+Task: write docs/SELF_MODEL_PROTOCOL.md: what the AI forecasts (per open card, from the §11-permitted card state only: e.g. whether a decision or money rung is reached within its window), the forecast ledger format (hash, model name and version, commit before the outcome), the two baselines (naive base rate; a simple statistical model such as logistic on hazard and stage so far), Brier scoring by code against IFRC/CEMS records only, contamination and circularity rules (no E1-protected record sent; the AI never scores itself; only events after the protocol commit count), and power from synthetic data at the expected number of forecasts. Constraints from 30 Oct: EMO calls the model; paid-service choice stays mine in 3.6. The mirror page shows counts only; 3.4b (field amendment) runs separately on or after 16 Nov.
+Done when: protocol, synthetic power and tests committed before any forecast; record, STATUS and next prompt committed.
+```
+
+Prompts for 3.6–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
 
