@@ -19,6 +19,8 @@ Adrian's "Yes" to Claude's recommendation: order stays 3.4 (cards) → 3.5 (self
 
 **Fixed (08:24):** Adrian found "EMO stream daily" inactive (and four inactive copies of "EMO weekly run"); he activated it and ran test calls on both jobs (HTTP 204 each). The stream test started run 41019712174 (07:22 UTC; all four sources has_records true, error null), so 30 Oct is a manual start: the unattended three-day check of 3.2 now covers **31 Oct, 1 Nov, 2 Nov** (checked at the start of 3.4, on or after 3 Nov). The weekly test started an extra weekly run 41019817339. Open: delete the four inactive copies (Adrian's decision; Claude recommends yes).
 
+**08:34:** Adrian deleted the inactive copies; cron-job.org now holds "EMO stream daily" and "EMO weekly run", both active. 3.4 may start now: only its 3.2 check waits for 3 Nov, so that check moves to the first session on or after 3 Nov (3.4 prompt updated; hook fix added).
+
 ## Session 3.3 (2026-10-29, 20:11–20:30) — loop card protocol (H3: stream test pre-registered; no card published)
 
 **Done when met: partly.** Protocol, synthetic tests and power registered (1d39fe8, before any log record was opened; Claude does not hold the key). The 3.2 run check could not be done: the session ran on 29 Oct, before 30 Oct – 1 Nov (needs time; moved to the start of 3.4). No card published.
