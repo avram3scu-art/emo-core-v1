@@ -11,6 +11,12 @@ Updated at the close of every session. Plan: `docs/PLAN.md`. History: `docs/SESS
 - **Open A items (audits 26b, 27 Oct):** PPE case: closed in F8 (six files in the repo, compared; one type-(c) error corrected, no manuscript error found, four manuscript sources unnamed). SMF deciding condition tested in F5 (6 of 12 passes survive).
 - **Adrian must do:** upload the four ledger files (`data/loop_forecast_ledger.csv` + `.sha256`, `data/rdl_forecast_ledger.csv` + `.sha256`) as a new version of Zenodo record 10.5281/zenodo.23507467, before 1 June 2027, and send Claude the new version DOI. Also send the session 11 invitation (`docs/double_coding/invitation.md`) with the packet zip; forward any returned sheet unchanged. For JOSS (not before 19 Apr 2027): verify the code and record it before disclosure point 2 can be written; reply to editors and reviewers without AI. Otherwise nothing now (manuscript steps deferred: no submission planned, 28 Oct).
 
+## Decision (2026-10-30, 07:57) — AI layer order (pillar 5, H8)
+
+Adrian's "Yes" to Claude's recommendation: order stays 3.4 (cards) → 3.5 (self-model protocol and power) → 3.6 (ledger). For 3.6 Claude recommends a scheduled run through the Anthropic API with Haiku 5.5 and a $5 monthly spending cap (unattended; estimated ~$0.05/month at ~30 forecasts, from a third-party price page, unverified at Anthropic); the paid-service choice itself stays Adrian's decision in 3.6. Constraints for 3.5: EMO calls the model (not contained in EMO); forecasts hashed and committed before outcomes; scoring by code against IFRC/CEMS records only; E1-protected records never sent to the API.
+
+**Finding (07:57):** no Stream daily run on 30 Oct so far: GitHub cron 04:17 UTC did not fire and the cron-job.org starter (07:13 Brussels = 06:13 UTC) produced no dispatch (`gh run list -w stream_daily.yml`: last run 29 Oct 19:06 UTC). Not started by hand (that would void the unattended check); the 11:47 UTC backup is the remaining starter today. Adrian to check the cron-job.org job's execution history.
+
 ## Session 3.3 (2026-10-29, 20:11–20:30) — loop card protocol (H3: stream test pre-registered; no card published)
 
 **Done when met: partly.** Protocol, synthetic tests and power registered (1d39fe8, before any log record was opened; Claude does not hold the key). The 3.2 run check could not be done: the session ran on 29 Oct, before 30 Oct – 1 Nov (needs time; moved to the start of 3.4). No card published.
