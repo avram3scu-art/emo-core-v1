@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# EMO pre-commit hook (session 3.4). Installed with the same `git config core.hooksPath scripts/hooks`.
+# Regenerates docs/F2_CLAIMS_GREP.md and stages it, so every commit carries a current claim-word
+# report and the pre-push comparison does not refuse a push for a stale report (29-30 Oct 2026).
+# It does not refuse a commit for unjustified words: the pre-push hook and CI do that.
+set -u
+cd "$(git rev-parse --show-toplevel)" || exit 1
+py="$(git config --get emo.python || true)"
+[ -z "$py" ] && [ -x .venv/bin/python ] && py=.venv/bin/python
+[ -z "$py" ] && py=python3
+PYTHONPATH=. "$py" scripts/claims_grep.py >/dev/null || true
+git add docs/F2_CLAIMS_GREP.md
+exit 0

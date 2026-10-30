@@ -3,7 +3,8 @@
 # Install once per clone:   git config core.hooksPath scripts/hooks
 # Refuses the push unless, on the committed state being pushed:
 #   1. the working tree has no uncommitted changes to tracked files (so the checks see what is pushed),
-#   2. scripts/claims_grep.py reports unjustified=0, and its report docs/F2_CLAIMS_GREP.md is committed,
+#   2. scripts/claims_grep.py reports unjustified=0, and the committed docs/F2_CLAIMS_GREP.md matches a
+#      regeneration written to a temporary file (the working tree is never changed; session 3.4),
 #   3. ruff passes (same two commands as CI),
 #   4. the test suite passes (pytest -q; ~20 s; slow reruns run in the weekly run, not in pytest).
 # Python: `git config emo.python <path>` if set, else .venv/bin/python, else python3.
@@ -27,9 +28,13 @@ done
 git diff --quiet HEAD -- || fail "uncommitted changes to tracked files; commit or stash them first"
 
 echo "pre-push: claim-word check" >&2
-PYTHONPATH=. "$py" scripts/claims_grep.py >&2 || fail "claims_grep: unjustified claim words (see above)"
-git diff --quiet HEAD -- docs/F2_CLAIMS_GREP.md \
-  || fail "docs/F2_CLAIMS_GREP.md changed when regenerated; commit it"
+# Session 3.4: the report is regenerated into a temporary file and compared with the committed
+# one, so this hook never leaves docs/F2_CLAIMS_GREP.md modified. The pre-commit hook keeps the
+# committed report in sync, so a mismatch here should not occur.
+tmp="$(mktemp)"; trap 'rm -f "$tmp"' EXIT
+PYTHONPATH=. "$py" scripts/claims_grep.py --out "$tmp" >&2 || fail "claims_grep: unjustified claim words (see above)"
+git show HEAD:docs/F2_CLAIMS_GREP.md 2>/dev/null | cmp -s - "$tmp" \
+  || fail "committed docs/F2_CLAIMS_GREP.md is stale; run: python scripts/claims_grep.py && git add docs/F2_CLAIMS_GREP.md && git commit --amend --no-edit (working tree not changed)"
 
 echo "pre-push: ruff" >&2
 "$py" -m ruff check . >&2 || fail "ruff check ."
