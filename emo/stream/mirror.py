@@ -54,22 +54,32 @@ def source_gaps(lines: list[dict], today: dt.date) -> dict[str, set[dt.date]]:
 
 
 def build_cards(runs: list[dict], now: dt.datetime, gaps: dict) -> tuple[list[dict], list[dict]]:
+    cards, edges, _ = build_cards_with_components(runs, now, gaps)
+    return cards, edges
+
+
+def build_cards_with_components(runs: list[dict], now: dt.datetime, gaps: dict):
+    """As build_cards, plus each card's node component and earliest-seen time (session 3.6:
+    the H8 caller needs them to match a card across runs and for its earliest-seen rule)."""
     nodes = build_nodes(runs)
     comps, edges = join(nodes)
     pop = card_population(comps, nodes)
     initial = [build_card(c, nodes, now, gaps) for c in pop]
     order = sorted(range(len(pop)), key=lambda i: initial[i]["onset"] or "9999")
     prior: dict = {}
-    cards = []
+    cards, extra = [], []
     for i in order:                          # §7 "learned": earlier closed cards only
         c = build_card(pop[i], nodes, now, gaps, prior_lags=dict(prior))
         cards.append(c)
+        seen = [nodes[k]["earliest_seen"] for k in pop[i] if nodes[k]["earliest_seen"]]
+        extra.append({"component": sorted("|".join(map(str, k)) for k in pop[i]),
+                      "first_seen": min(seen) if seen else None})
         if c["closed"] and c["lag_onset_decision_days"] is not None and c["hazard"]:
             for iso in c["iso3"]:
                 k = (iso, c["hazard"])
                 prior[k] = min(prior.get(k, c["lag_onset_decision_days"]),
                                c["lag_onset_decision_days"])
-    return cards, edges
+    return cards, edges, extra
 
 
 def edge_counts(edges: list[dict]) -> dict[str, int]:

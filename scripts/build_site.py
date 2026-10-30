@@ -303,7 +303,28 @@ def mirror_page(head: str) -> str:
             + rrows + "</table>\n<p class=\"meta\">W warning, R recognition, D decision, B money, C coordination, A attention "
             "(no pageviews yet: no source). \"Not yet\" is never a stop; \"missing\" is never absent.</p>\n"
             "<h2>Links by join rule</h2>\n<table><tr><th>rule</th><th>count</th></tr>" + erows + "</table>\n"
-            "</body></html>\n")
+            + selfmodel_section() + "</body></html>\n")
+
+
+def selfmodel_section() -> str:
+    """Session 3.6: H8 ledger counts only (SELF_MODEL_PROTOCOL §8.7): forecasts committed and
+    the last ledger run. No forecast value, card or date of a single event."""
+    f = ROOT / "data/selfmodel/ledger_index.csv"
+    head = ("<h2>Self-model forecasts (H8)</h2>\n<p class=\"meta\">AI forecasts of whether a decision or money is "
+            "recorded within its window, committed before the outcome (" + link("docs/SELF_MODEL_PROTOCOL.md", "protocol")
+            + "). A model of humanity shown beside what humanity does: not a recommendation and not a measurement. "
+            "Counts only; no forecast is public before the single scoring. Evidence class of the ledger: infrastructure.</p>\n")
+    if not f.exists():
+        return head + "<p>No ledger run yet.</p>\n"
+    import csv
+    rows = list(csv.DictReader(f.open()))
+    if not rows:
+        return head + "<p>No ledger run yet.</p>\n"
+    last = rows[-1]
+    return (head + f"<p>Forecasts committed: <b>{esc(last['forecasts_total'])}</b> · last ledger run: "
+            f"<b>{esc(last['run_utc'])}</b> (UTC), status {esc(last['status'])} · "
+            + link("data/selfmodel/ledger_index.csv", "index") + " · "
+            + link(".github/workflows/selfmodel_daily.yml", "job") + "</p>\n")
 
 
 # Pre-registered tests: (name, protocol, recorded result file). Recorded files are the

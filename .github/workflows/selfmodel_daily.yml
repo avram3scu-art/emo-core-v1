@@ -1,0 +1,92 @@
+name: Self-model daily
+
+# Session 3.6 (docs/SELF_MODEL_PROTOCOL.md §2-§5, §8). After each Mirror daily run:
+# one ledger run per new stream run. Decrypts the stream log inside this Action, builds the
+# cards, writes H8 forecasts (one stateless Messages API call per eligible card and target)
+# into an encrypted ledger file and one public line of data/selfmodel/ledger_index.csv
+# (counts and hashes only). Without the ANTHROPIC_API_KEY secret it still runs and records
+# eligible cards as missed ("no key"); no forecast. Then rebuilds and deploys the page.
+# The script prints only counts (public logs).
+on:
+  workflow_run:
+    workflows: ["Mirror daily"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: stream-commit
+  cancel-in-progress: false
+
+jobs:
+  ledger:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    outputs:
+      ok: ${{ steps.commit.outputs.ok }}
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "emo-2026-10"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11", cache: "pip", cache-dependency-path: requirements-lock.txt}
+      - run: pip install -r requirements-lock.txt
+      - name: Forecast caller (ledger run)
+        env:
+          EMO_STREAM_KEY: ${{ secrets.EMO_STREAM_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONPATH: .
+        run: python scripts/selfmodel_daily.py run
+      - name: Verify index against encrypted files
+        env:
+          EMO_STREAM_KEY: ${{ secrets.EMO_STREAM_KEY }}
+          PYTHONPATH: .
+        run: python scripts/selfmodel_daily.py verify
+      - name: Commit only the new ledger file and the index line
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/selfmodel
+          if git diff --cached --quiet; then echo "nothing new"; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          bad=$(git diff --cached --name-status | grep -v -E '^A	data/selfmodel/ledger/[^/]+\.json\.gz\.enc$' | grep -v -E '^[AM]	data/selfmodel/ledger_index\.csv$' || true)
+          [ -z "$bad" ] || { echo "::error::unexpected change"; exit 1; }
+          if git cat-file -e HEAD:data/selfmodel/ledger_index.csv 2>/dev/null; then
+            git show HEAD:data/selfmodel/ledger_index.csv > /tmp/old.csv
+            git show :data/selfmodel/ledger_index.csv > /tmp/new.csv
+            cmp -s /tmp/old.csv <(head -c "$(stat -c %s /tmp/old.csv)" /tmp/new.csv) || { echo "::error::index not append-only"; exit 1; }
+          fi
+          git commit -m "Self-model ledger run (run ${{ github.run_id }})"
+          ok=0
+          for i in 1 2 3; do
+            if git pull --rebase origin emo-2026-10 && git push; then ok=1; break; fi
+            sleep 10
+          done
+          [ "$ok" = "1" ] && echo "ok=true" >> "$GITHUB_OUTPUT"
+          [ "$ok" = "1" ]
+
+  pages:
+    needs: ledger
+    if: needs.ledger.outputs.ok == 'true'
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with: {ref: "emo-2026-10"}
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.11"}
+      - name: Build page
+        run: python scripts/build_site.py --out site
+      - uses: actions/configure-pages@v6
+        with: {enablement: true}
+      - uses: actions/upload-pages-artifact@v5
+        with: {path: site, include-hidden-files: true}
+      - name: Deploy page
+        id: deploy
+        uses: actions/deploy-pages@v5
