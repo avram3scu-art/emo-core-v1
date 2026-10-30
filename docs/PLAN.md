@@ -28,7 +28,7 @@ Adrian's mirror essay already maps onto the loop: latency = DAC lags; learning =
 
 | # | Hypothesis | Fails if | Status |
 |---|---|---|---|
-| H8 | Self-model: AI forecasts of response outcomes, committed before the outcome, beat both a naive base rate and a simple statistical model (Brier score) | not better than the statistical model after the pre-registered number of resolved events | not built; protocol and power in 3.5 |
+| H8 | Self-model: AI forecasts of response outcomes, committed before the outcome, beat both a naive base rate and a simple statistical model (Brier score) | not better than the statistical model after the pre-registered number of resolved events | protocol and power registered 30 Oct 2026 (3.5, `docs/SELF_MODEL_PROTOCOL.md`); ledger in 3.6 |
 | H9 | Benefit: events whose loop runs faster (shorter warning → decision lag) have smaller losses than severity explains | no association at adequate power, or no usable loss data (then "cannot be tested", not FAIL) | not built; feasibility in 3.7 |
 
 ### 0.3 Roadmap 3.0
@@ -405,7 +405,17 @@ Task: write docs/SELF_MODEL_PROTOCOL.md: what the AI forecasts (per open card, f
 Done when: protocol, synthetic power and tests committed before any forecast; record, STATUS and next prompt committed.
 ```
 
-Prompts for 3.6–3.10 are written at the close of the session before each, from §0.3.
+### 3.6 Self-model ledger (H8)
+
+```text
+EMO session 3.6: self-model ledger. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (session 3.5; decision 30 Oct 07:57 on the AI layer), docs/SELF_MODEL_PROTOCOL.md (all of it; registered d306482) and the entry for session 3.6 in docs/PLAN.md, and follow them. One task only. Hypothesis moved: H8 (forecasts committed before outcomes; nothing scored). Stop when its "done when" is met, or tell me plainly why it cannot be met. Do not change the registered protocol except by a dated §9 amendment made before any forecast. Cite only sources you opened. Keep replies short; I am on a limited weekly allowance.
+First, if today is on or after 3 Nov 2026 and the 3.2 check is not yet recorded: check that Stream daily ran unattended on 31 Oct, 1 Nov and 2 Nov (gh run list -w stream_daily.yml; event and starter per run; no manual start) and that Mirror daily followed each; report it and record it as the 3.2 done-when check.
+Then ask me the paid-service decision, with your recommendation: in-session forecasting is not compliant (3.5 finding: you would see per-event card state and hold no key), so the choice is the Anthropic API called inside the Action (recommended earlier: Haiku 5.5, $5 monthly cap; check current model names and prices on Anthropic's own pages before recommending) or no H8 forecasts. I add the API key as a repository secret myself; you never see it.
+Task (on my yes): build the forecast caller as a daily Action after Mirror daily, using only emo/selfmodel/protocol.py: training-row replay (each earlier non-EU27 card as at its own earliest eligible run, outcome known before the forecast time), baselines, payload and fixed prompt h8-v1, one call per eligible (card, target), encrypted ledger per run under data/selfmodel/ledger/ (emo/stream/store.py), public run-level data/selfmodel/ledger_index.csv, forecast count and last ledger run on the mirror page (counts only); a scoring script that refuses before may_score() is true, tested end to end on synthetic cards and outcomes; a dry run with a stub model on synthetic cards. Decide nothing about ISO3 unless I ask (kept in 3.5).
+Done when: caller, ledger, index and scoring script committed with synthetic tests; first real run green; ≥ 10 forecasts committed before their outcomes (if fewer eligible cards exist yet, say so, and the count is checked in a later session: needs time); record, STATUS and next prompt committed.
+```
+
+Prompts for 3.7–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
 
