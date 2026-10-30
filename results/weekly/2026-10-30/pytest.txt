@@ -1,0 +1,11 @@
+........................................................................ [ 26%]
+........................................................................ [ 52%]
+........................................................................ [ 79%]
+.........................................................                [100%]
+=============================== warnings summary ===============================
+tests/unit/test_gwi_v2.py: 36 warnings
+  tests/unit/test_gwi_v2.py:30: Pandas4Warning: DatetimeIndex.dayofweek is deprecated and will be removed in a future version. Use DatetimeIndex.day_of_week instead.
+    y = 7 + wk[days.dayofweek] + step + rng.normal(0, 0.1, len(days))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+273 passed, 36 warnings in 15.21s

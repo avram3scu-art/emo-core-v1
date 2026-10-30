@@ -1,0 +1,161 @@
+{
+  "run_at": "2026-10-30T07:24:17Z",
+  "sources": [
+    {
+      "file": "owid_annual_co2_emissions.csv",
+      "path": "data/sources/owid_annual_co2_emissions/owid_annual_co2_emissions.csv",
+      "source": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv?v=1&csvType=full&useColumnShortNames=false",
+      "kind": "owid",
+      "status": "ok",
+      "changed": false,
+      "rows": 29384,
+      "sha256": "3343aa2c0adddd1f9857b2b889057dcc377a61f1dc23bfcd5ab17963338bd9f8",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-20 (initial download)"
+    },
+    {
+      "file": "owid_ozone_depleting_substance_consumption.csv",
+      "path": "data/sources/owid_ozone_depleting_substance_consumption/owid_ozone_depleting_substance_consumption.csv",
+      "source": "https://ourworldindata.org/grapher/ozone-depleting-substance-consumption.csv?v=1&csvType=full&useColumnShortNames=false",
+      "kind": "owid",
+      "status": "ok",
+      "changed": false,
+      "rows": 5642,
+      "sha256": "df9f2a673165de6bc852184e7698a14f1e13e0f28ea1b5b191a430e2e55e8d9d",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-20 (initial download)"
+    },
+    {
+      "file": "owid_foreign_aid_share_of_gni.csv",
+      "path": "data/sources/owid_foreign_aid_share_of_gni/owid_foreign_aid_share_of_gni.csv",
+      "source": "https://ourworldindata.org/grapher/foreign-aid-given-as-a-share-of-national-income.csv?v=1&csvType=full&useColumnShortNames=false",
+      "kind": "owid",
+      "status": "ok",
+      "changed": false,
+      "rows": 2114,
+      "sha256": "839060f23ea84754e1a12c65d5b3d98f6d5de4e35cc24e91600ca11cc10c0a90",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-20 (initial download)"
+    },
+    {
+      "file": "owid_ucdp_death_rate_armed_conflicts.csv",
+      "path": "data/sources/owid_ucdp_death_rate_armed_conflicts/owid_ucdp_death_rate_armed_conflicts.csv",
+      "source": "https://ourworldindata.org/grapher/death-rate-in-armed-conflicts.csv?v=1&csvType=full&useColumnShortNames=false",
+      "kind": "owid",
+      "status": "ok",
+      "changed": false,
+      "rows": 7561,
+      "sha256": "b591595cb743d26db5ea567cd5f2db649c59840d55e409263e8726b867c62eff",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-20 (initial download)"
+    },
+    {
+      "file": "openalex_articles_multicountry_by_year.json",
+      "path": "data/sources/openalex_articles_multicountry_by_year/openalex_articles_multicountry_by_year.json",
+      "source": "https://api.openalex.org/works?filter=countries_distinct_count:>1,type:article&group_by=publication_year",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "42744ccd7ab7babb72946b777493951b4539482db9dcad19d26ddba86f709eb4",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "openalex_articles_anycountry_by_year.json",
+      "path": "data/sources/openalex_articles_anycountry_by_year/openalex_articles_anycountry_by_year.json",
+      "source": "https://api.openalex.org/works?filter=countries_distinct_count:>0,type:article&group_by=publication_year",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "738cfb665249b46557a223aedad683763213d2ad41def6166c7701ffda29a273",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "openalex_articles_multicountry_by_year_excl_CN_ID.json",
+      "path": "data/sources/openalex_articles_multicountry_by_year_excl_CN_ID/openalex_articles_multicountry_by_year_excl_CN_ID.json",
+      "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>1,type:article&group_by=publication_year",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "f11057a74f4238854f1d82a57a0aceb126f50d9b554397a5578971aa2ce61e9e",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "openalex_articles_anycountry_by_year_excl_CN_ID.json",
+      "path": "data/sources/openalex_articles_anycountry_by_year_excl_CN_ID/openalex_articles_anycountry_by_year_excl_CN_ID.json",
+      "source": "https://api.openalex.org/works?filter=authorships.countries:!CN,authorships.countries:!ID,countries_distinct_count:>0,type:article&group_by=publication_year",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "abc670f9404eac4060decc1e0abee58c2b105a4eb1e5c7855ae55e79a971d13f",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "openalex_single_country_2020_by_country.json",
+      "path": "data/sources/openalex_single_country_2020_by_country/openalex_single_country_2020_by_country.json",
+      "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2020,type:article&group_by=authorships.countries",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "d68b877f3451e78a50428589498daeb9b536fca73707b5a325081d49ddc081a2",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "openalex_single_country_2025_by_country.json",
+      "path": "data/sources/openalex_single_country_2025_by_country/openalex_single_country_2025_by_country.json",
+      "source": "https://api.openalex.org/works?filter=countries_distinct_count:1,publication_year:2025,type:article&group_by=authorships.countries",
+      "kind": "openalex",
+      "status": "ok",
+      "changed": false,
+      "rows": 200,
+      "sha256": "0f7c0e456c4ba02aed01416ece7e6cc32b9781cc07ba67d848d4e7684c111fce",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-29T19:01:17Z"
+    },
+    {
+      "file": "hurdat2_atlantic.txt",
+      "path": "data/sources/hurdat2_atlantic/hurdat2_atlantic.txt",
+      "source": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2025-092326.txt",
+      "kind": "hurdat2",
+      "status": "ok",
+      "changed": false,
+      "rows": 1988,
+      "sha256": "75202780ce56c8458f16fbef5fb8a026b99b00878dbb95c458211b3e6ef125b4",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-23T09:17:51Z"
+    },
+    {
+      "file": "wikipedia_pageviews_gwi.csv",
+      "path": "data/sources/wikipedia_pageviews_gwi/wikipedia_pageviews_gwi.csv",
+      "source": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/<lang>.wikipedia/all-access/user/<title>/daily/<start>/<end> (20151101-20251231) ; titles via https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllimit=500&format=json&formatversion=2&titles=<en title>",
+      "kind": "wikipedia_pageviews",
+      "status": "ok",
+      "changed": false,
+      "rows": 89136,
+      "sha256": "cb40fda4dcb178424b537dc48011d3b532e7822e34bd872f24dd65ceef3b7eb2",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-23T09:17:51Z"
+    },
+    {
+      "file": "wikipedia_pageviews_gwi_calibration.csv",
+      "path": "data/sources/wikipedia_pageviews_gwi_calibration/wikipedia_pageviews_gwi_calibration.csv",
+      "source": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/<lang>.wikipedia/all-access/user/<title>/daily/<start>/<end> (Photosynthesis 20251101-20261018; Mitochondrion 20151101-20261018; Pythagorean theorem 20151101-20261018; Prime number 20151101-20261018) ; titles via https://en.wikipedia.org/w/api.php?action=query&prop=langlinks&lllimit=500&format=json&formatversion=2&titles=<en title>",
+      "kind": "wikipedia_pageviews",
+      "status": "ok",
+      "changed": false,
+      "rows": 104289,
+      "sha256": "6189e773baa6ecd432cf1ce4fc21a23b417ff97ad473e77e3a5971ec719dbdb3",
+      "downloaded_at": "2026-10-30T07:24:17Z",
+      "last_changed_at": "2026-10-26T08:34:56Z"
+    }
+  ]
+}
