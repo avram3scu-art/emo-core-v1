@@ -269,7 +269,7 @@ def mirror_page(head: str) -> str:
              "The daily jobs started 29-30 Oct 2026; under the project's rules they are not called continuous before 14 unattended days. "
              "Evidence class: infrastructure.</p>\n")
     if a is None:
-        return top + rules + "<p>Not built yet: the card job has not committed its first aggregate.</p></body></html>\n"
+        return top + rules + "<p>Not built yet: the card job has not committed an aggregate yet.</p></body></html>\n"
     agg = a["safe_aggregate"]
     stage_rows: dict = {}
     rung_rows: dict = {}
