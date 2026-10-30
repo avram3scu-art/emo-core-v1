@@ -415,6 +415,16 @@ Task (on my yes): build the forecast caller as a daily Action after Mirror daily
 Done when: caller, ledger, index and scoring script committed with synthetic tests; first real run green; ≥ 10 forecasts committed before their outcomes (if fewer eligible cards exist yet, say so, and the count is checked in a later session: needs time); record, STATUS and next prompt committed.
 ```
 
+### 3.6b Self-model ledger: first run with the API key (H8)
+
+```text
+EMO session 3.6b: self-model ledger, first run with the API key. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (session 3.6), docs/SELF_MODEL_PROTOCOL.md and the entry for session 3.6b in docs/PLAN.md, and follow them. One task only. Hypothesis moved: H8 (forecasts committed before outcomes; nothing scored). Keep replies short; I am on a limited weekly allowance.
+First (today is on or after 3 Nov 2026): check that Stream daily ran unattended on 31 Oct, 1 Nov and 2 Nov (gh run list -w stream_daily.yml; event and starter per run; no manual start) and that Mirror daily and Self-model daily followed each; report it and record it as the 3.2 done-when check.
+Then guide me, one step at a time on "Next", through the key steps left from 3.6: (3) set a $5 monthly spend limit in the Console (the default tier limit is $500); (4) buy $5 of credits (I pay; not before then); (5) create the key "EMO H8" and add it as repository secret ANTHROPIC_API_KEY. You never see the key.
+Task: start Self-model daily once by hand only after the key is in (gh workflow run selfmodel_daily.yml --ref emo-2026-10; it writes nothing if no new stream run exists, so start it after a Stream daily run of the day). Check from the public index only (never the encrypted ledger): status, n_forecasts, n_ai_unusable, n_missed, model_returned = claude-haiku-5-5, digest verified. Report how many eligible cards were recorded as missed ("no key") between 31 Oct and the key (lost for H8, by the 3.6 rule). If n_ai_unusable > 0 on the first keyed run, diagnose from the Action log (error class only) before the next run.
+Done when: one keyed run green with model_returned recorded and no account error, or the reason it cannot be stated; ≥ 10 forecasts committed before their outcomes, or the count so far and the date of the next check (needs time); record, STATUS and next prompt committed.
+```
+
 Prompts for 3.7–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
