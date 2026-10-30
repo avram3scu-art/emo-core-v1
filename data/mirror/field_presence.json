@@ -1,0 +1,334 @@
+{
+ "built_at": "2026-10-30T07:45:14+00:00",
+ "evidence_class": "infrastructure",
+ "groups": {
+  "cems": {
+   "fields": {
+    "activationTime": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "category": {
+     "parses": 0.75,
+     "present": 1.0
+    },
+    "code": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "countries": {
+     "parses": 0.1,
+     "present": 1.0
+    },
+    "eventTime": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "gdacsId": {
+     "parses": 0.5,
+     "present": 0.5
+    },
+    "subCategory": {
+     "parses": 0.0,
+     "present": 0.0
+    }
+   },
+   "key_names": {
+    "activationTime": 1.0,
+    "category": 1.0,
+    "centroid": 1.0,
+    "closed": 1.0,
+    "code": 1.0,
+    "countries": 1.0,
+    "eventTime": 1.0,
+    "gdacsId": 1.0,
+    "lastUpdate": 1.0,
+    "n_aois": 1.0,
+    "n_products": 1.0,
+    "name": 1.0
+   }
+  },
+  "gdacs/events4app": {
+   "fields": {
+    "coords": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.affectedcountries": {
+     "parses": 0.85,
+     "present": 0.85
+    },
+    "p.alertlevel": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.eventid": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.eventtype": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.fromdate": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.glide": {
+     "parses": 0.0,
+     "present": 0.0
+    },
+    "p.iso3": {
+     "parses": 0.85,
+     "present": 0.85
+    },
+    "p.todate": {
+     "parses": 1.0,
+     "present": 1.0
+    }
+   },
+   "key_names": {
+    "bbox": 1.0,
+    "geometry": 1.0,
+    "properties": 1.0,
+    "properties.Class": 1.0,
+    "properties.affectedcountries": 1.0,
+    "properties.alertlevel": 1.0,
+    "properties.alertscore": 1.0,
+    "properties.country": 1.0,
+    "properties.datemodified": 1.0,
+    "properties.description": 1.0,
+    "properties.episodealertlevel": 1.0,
+    "properties.episodealertscore": 1.0,
+    "properties.episodeid": 1.0,
+    "properties.eventid": 1.0,
+    "properties.eventname": 1.0,
+    "properties.eventtype": 1.0,
+    "properties.fromdate": 1.0,
+    "properties.glide": 1.0,
+    "properties.htmldescription": 1.0,
+    "properties.icon": 1.0,
+    "properties.iconoverall": 1.0,
+    "properties.iscurrent": 1.0,
+    "properties.iso3": 1.0,
+    "properties.istemporary": 1.0,
+    "properties.name": 1.0,
+    "properties.polygonlabel": 1.0,
+    "properties.severitydata": 1.0,
+    "properties.source": 1.0,
+    "properties.sourceid": 1.0,
+    "properties.todate": 1.0,
+    "properties.url": 1.0,
+    "type": 1.0
+   }
+  },
+  "gdacs/search": "n<20",
+  "ifrc_go/appeal": {
+   "fields": {
+    "amount_funded": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "amount_requested": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "atype": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "country": {
+     "parses": 0.95,
+     "present": 1.0
+    },
+    "created_at": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "dtype": {
+     "parses": 0.55,
+     "present": 1.0
+    },
+    "dtype_name": {
+     "parses": 0.0,
+     "present": 0.0
+    },
+    "end_date": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "event": {
+     "parses": 0.65,
+     "present": 0.65
+    },
+    "id": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "start_date": {
+     "parses": 1.0,
+     "present": 1.0
+    }
+   },
+   "key_names": {
+    "aid": 1.0,
+    "amount_funded": 1.0,
+    "amount_requested": 1.0,
+    "atype": 1.0,
+    "atype_display": 1.0,
+    "code": 1.0,
+    "country": 1.0,
+    "created_at": 1.0,
+    "dtype": 1.0,
+    "end_date": 1.0,
+    "event": 1.0,
+    "event_details": 1.0,
+    "modified_at": 1.0,
+    "name": 1.0,
+    "needs_confirmation": 1.0,
+    "num_beneficiaries": 1.0,
+    "real_data_update": 1.0,
+    "region": 1.0,
+    "sector": 1.0,
+    "start_date": 1.0,
+    "status": 1.0,
+    "status_display": 1.0
+   }
+  },
+  "ifrc_go/event": "n<20",
+  "usgs/comcat": {
+   "fields": {
+    "coords": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "id": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.alert": {
+     "parses": 0.15,
+     "present": 0.15
+    },
+    "p.time": {
+     "parses": 1.0,
+     "present": 1.0
+    }
+   },
+   "key_names": {
+    "geometry": 1.0,
+    "properties": 1.0,
+    "properties.alert": 1.0,
+    "properties.cdi": 1.0,
+    "properties.code": 1.0,
+    "properties.detail": 1.0,
+    "properties.dmin": 1.0,
+    "properties.felt": 1.0,
+    "properties.gap": 1.0,
+    "properties.ids": 1.0,
+    "properties.mag": 1.0,
+    "properties.magType": 1.0,
+    "properties.mmi": 1.0,
+    "properties.net": 1.0,
+    "properties.nst": 1.0,
+    "properties.place": 1.0,
+    "properties.rms": 1.0,
+    "properties.sig": 1.0,
+    "properties.sources": 1.0,
+    "properties.status": 1.0,
+    "properties.time": 1.0,
+    "properties.title": 1.0,
+    "properties.tsunami": 1.0,
+    "properties.type": 1.0,
+    "properties.types": 1.0,
+    "properties.updated": 1.0,
+    "properties.url": 1.0,
+    "type": 1.0
+   }
+  },
+  "usgs/detail": {
+   "fields": {
+    "id": {
+     "parses": 1.0,
+     "present": 1.0
+    },
+    "p.alert": {
+     "parses": 1.0,
+     "present": 1.0
+    }
+   },
+   "key_names": {
+    "geometry": 1.0,
+    "properties": 1.0,
+    "properties.alert": 1.0,
+    "properties.cdi": 1.0,
+    "properties.code": 1.0,
+    "properties.dmin": 1.0,
+    "properties.felt": 1.0,
+    "properties.gap": 1.0,
+    "properties.ids": 1.0,
+    "properties.mag": 1.0,
+    "properties.magType": 1.0,
+    "properties.mmi": 1.0,
+    "properties.net": 1.0,
+    "properties.nst": 1.0,
+    "properties.place": 1.0,
+    "properties.products": 1.0,
+    "properties.rms": 1.0,
+    "properties.sig": 1.0,
+    "properties.sources": 1.0,
+    "properties.status": 1.0,
+    "properties.time": 1.0,
+    "properties.title": 1.0,
+    "properties.tsunami": 1.0,
+    "properties.type": 1.0,
+    "properties.types": 1.0,
+    "properties.updated": 1.0,
+    "properties.url": 1.0,
+    "type": 1.0
+   }
+  }
+ },
+ "protocol": "docs/FIELD_PRESENCE_CHECK.md",
+ "runs_read": [
+  "2026-10-29T181655Z",
+  "2026-10-29T182203Z",
+  "2026-10-30T072308Z"
+ ],
+ "verdicts": {
+  "cems:activationTime": "reads",
+  "cems:category": "reads",
+  "cems:code": "reads",
+  "cems:countries": "names: CEMS table",
+  "cems:eventTime": "reads",
+  "cems:gdacsId": "reads",
+  "cems:subCategory": "wrong name",
+  "gdacs/events4app:coords": "reads",
+  "gdacs/events4app:p.affectedcountries": "reads",
+  "gdacs/events4app:p.alertlevel": "reads",
+  "gdacs/events4app:p.eventid": "reads",
+  "gdacs/events4app:p.eventtype": "reads",
+  "gdacs/events4app:p.fromdate": "reads",
+  "gdacs/events4app:p.glide": "wrong name",
+  "gdacs/events4app:p.iso3": "reads",
+  "gdacs/events4app:p.todate": "reads",
+  "ifrc_go/appeal:amount_funded": "reads",
+  "ifrc_go/appeal:amount_requested": "reads",
+  "ifrc_go/appeal:atype": "reads",
+  "ifrc_go/appeal:country": "reads",
+  "ifrc_go/appeal:created_at": "reads",
+  "ifrc_go/appeal:dtype": "reads",
+  "ifrc_go/appeal:dtype_name": "wrong name",
+  "ifrc_go/appeal:end_date": "reads",
+  "ifrc_go/appeal:event": "reads",
+  "ifrc_go/appeal:id": "reads",
+  "ifrc_go/appeal:start_date": "reads",
+  "usgs/comcat:coords": "reads",
+  "usgs/comcat:id": "reads",
+  "usgs/comcat:p.alert": "recorded, not changed",
+  "usgs/comcat:p.time": "reads",
+  "usgs/detail:id": "reads",
+  "usgs/detail:p.alert": "reads"
+ },
+ "version": "presence-0.1"
+}
