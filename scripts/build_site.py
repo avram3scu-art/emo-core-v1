@@ -13,6 +13,7 @@ import csv
 import html
 import json
 import os
+import re
 import shutil
 import subprocess
 from datetime import UTC, datetime
@@ -27,7 +28,8 @@ DOI = "10.5281/zenodo.23507467"
 NHC_SOURCE = "https://www.nhc.noaa.gov/verification/pdfs/1970-present_OFCL_ATL_annual_trk_errors_noTDs.pdf"
 
 NOT_MEASURED = [
-    ("Continuous observation", "Only a weekly batch run exists (this page). No stream, no dashboard, no real-time ingestion."),
+    ("Continuous observation", "A weekly batch run (this page); a daily hazard-stream ingestion and card job started 29-30 Oct 2026 and are not called continuous before 14 unattended days. "
+                               "The mirror page shows counts only; no per-event card is public."),
     ("Attention streams", "Wikipedia pageviews are fetched only for fixed article sets used in GWI tests; GDELT has never been ingested."),
     ("UIA (interface density)", "The a_UIA scalar is retired; UIA is redefined as the He profile and is not yet scored."),
     ("GWI levels", "GWI timing passed on hurricane landfalls (decided by its significance condition only; its placebo condition was invalid), but its threshold failed cross-article calibration, so no GWI level is a measurement."),
@@ -160,7 +162,8 @@ this page is rebuilt by {link('.github/workflows/weekly_refresh.yml', 'the weekl
 
 <h2>What EMO does not yet measure</h2>
 <ul class="warn">{nm}</ul>
-<p class="meta">Status by pillar: {link('README.md', 'README')} · current state: {link('docs/STATUS.md', 'STATUS')}.</p>
+<p class="meta">Status by pillar: {link('README.md', 'README')} · current state: {link('docs/STATUS.md', 'STATUS')} ·
+<a href="mirror.html">mirror page</a> (hazard response loop, counts only).</p>
 
 <h2>1. Organismality plane, 1989–2025</h2>
 <p>x: share of articles with authors from more than one country (OpenAlex, excluding papers with Chinese or Indonesian authors);
@@ -241,10 +244,66 @@ H4 cannot be tested at this size (too few measured storms per season). H5 not sh
 </body></html>
 """
     (out / "index.html").write_text(page)
+    (out / "mirror.html").write_text(mirror_page(page[:page.index("</style>") + 8]))
     (out / ".nojekyll").write_text("")
     (out / "results.json").write_text(json.dumps(
         results_json(run, rel, status, man, sha, built, rows, ledger_hash, read), indent=1) + "\n")
     return out / "index.html"
+
+
+STAGES = ["0 no warning or response record", "1 warning not recognised", "2 recognised, not transmitted",
+          "3 reached decision-makers, no budget", "4 funded, fragmented", "5 coordinated", "6 learned"]
+
+
+def mirror_page(head: str) -> str:
+    """Session 3.4: mirror page skeleton from data/mirror/aggregates.json (LOOP_CARD_PROTOCOL
+    §11 counts only). Copies numbers; computes only row and column groupings of them."""
+    f = ROOT / "data/mirror/aggregates.json"
+    a = json.loads(f.read_text()) if f.exists() else None
+    head = re.sub(r"<title>.*?</title>", "<title>EMO mirror</title>", head)
+    top = (head + "</head><body>\n<h1>EMO mirror — hazard response loop</h1>\n"
+           "<p>Adrian N. Avramescu, independent researcher, Antwerp. <a href=\"index.html\">Weekly page</a>.</p>\n")
+    rules = ("<p class=\"warn\">Counts only. One card per joined event (warning, recognition, decision, money, coordination; "
+             + link("docs/LOOP_CARD_PROTOCOL.md", "protocol") + "). <b>No per-event card is published</b> until written reuse terms "
+             "from GDACS (EC legal notice) and IFRC GO are recorded. Copernicus EMS activations in EU27 countries are never used. "
+             "The daily jobs started 29-30 Oct 2026; under the project's rules they are not called continuous before 14 unattended days. "
+             "Evidence class: infrastructure.</p>\n")
+    if a is None:
+        return top + rules + "<p>Not built yet: the card job has not committed its first aggregate.</p></body></html>\n"
+    agg = a["safe_aggregate"]
+    stage_rows: dict = {}
+    rung_rows: dict = {}
+    for k, n in agg.items():
+        m, h, x = k.split("|", 2)
+        if x.startswith("stage"):
+            stage_rows.setdefault((m, h), {})[int(x[5:])] = n
+        else:
+            rung, st = x.split("=", 1)
+            rung_rows.setdefault((rung, st), 0)
+            rung_rows[(rung, st)] += n
+    srows = "".join(f"<tr><td>{esc(m)}</td><td>{esc(h)}</td>" + "".join(
+        f"<td>{v.get(i, '')}</td>" for i in range(7)) + f"<td>{sum(v.values())}</td></tr>"
+        for (m, h), v in sorted(stage_rows.items()))
+    rungs = sorted({r for r, _ in rung_rows})
+    sts = ["present", "not yet", "absent", "missing", "no source", "withheld"]
+    rrows = "".join(f"<tr><td>{esc(r)}</td>" + "".join(f"<td>{rung_rows.get((r, s), '')}</td>" for s in sts)
+                    + "</tr>" for r in rungs)
+    erows = "".join(f"<tr><td>{esc(k)}</td><td>{v}</td></tr>" for k, v in a["edge_rule_counts"].items())
+    lost = ", ".join(f"{esc(k)} {v}" for k, v in a["source_days_lost"].items())
+    return (top + rules +
+            f"<p class=\"meta\">Last successful card run: <b>{esc(a['built_at'])}</b> (UTC) · last ingestion run read: "
+            f"{esc(a['last_ingestion_run'])} · source-days lost since the stream began: {lost} · "
+            + link(".github/workflows/mirror_daily.yml", "card job") + " · " + link("data/mirror/aggregates.json", "numbers")
+            + " · code " + link("emo/stream/cards.py") + ", " + link("emo/stream/mirror.py") + "</p>\n"
+            "<h2>Cards by onset month, hazard and stage reached so far</h2>\n<table><tr><th>month</th><th>hazard</th>"
+            + "".join(f"<th title=\"{esc(t)}\">{t[0]}</th>" for t in STAGES) + "<th>all</th></tr>" + srows + "</table>\n"
+            "<p class=\"meta\">Stages: " + "; ".join(esc(t) for t in STAGES) + ". An open card reads \"so far\". "
+            "The stage is a label, not a score.</p>\n"
+            "<h2>Rung status, all cards</h2>\n<table><tr><th>rung</th>" + "".join(f"<th>{s}</th>" for s in sts) + "</tr>"
+            + rrows + "</table>\n<p class=\"meta\">W warning, R recognition, D decision, B money, C coordination, A attention "
+            "(no pageviews yet: no source). \"Not yet\" is never a stop; \"missing\" is never absent.</p>\n"
+            "<h2>Links by join rule</h2>\n<table><tr><th>rule</th><th>count</th></tr>" + erows + "</table>\n"
+            "</body></html>\n")
 
 
 # Pre-registered tests: (name, protocol, recorded result file). Recorded files are the
