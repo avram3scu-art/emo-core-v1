@@ -57,8 +57,8 @@ def build_cards(runs: list[dict], now: dt.datetime, gaps: dict) -> tuple[list[di
     nodes = build_nodes(runs)
     comps, edges = join(nodes)
     pop = card_population(comps, nodes)
-    first = [build_card(c, nodes, now, gaps) for c in pop]
-    order = sorted(range(len(pop)), key=lambda i: first[i]["onset"] or "9999")
+    initial = [build_card(c, nodes, now, gaps) for c in pop]
+    order = sorted(range(len(pop)), key=lambda i: initial[i]["onset"] or "9999")
     prior: dict = {}
     cards = []
     for i in order:                          # §7 "learned": earlier closed cards only
