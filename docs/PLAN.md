@@ -425,6 +425,14 @@ Task: start Self-model daily once by hand only after the key is in (gh workflow 
 Done when: one keyed run green with model_returned recorded and no account error, or the reason it cannot be stated; ≥ 10 forecasts committed before their outcomes, or the count so far and the date of the next check (needs time); record, STATUS and next prompt committed.
 ```
 
+### 3.7 Benefit feasibility (H9)
+
+```text
+EMO session 3.7: benefit feasibility. Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (session 3.6), docs/STRATEGY_3_0.md (pillar 4 and H9), docs/STREAM_DATA.md (EM-DAT and OCHA FTS verdicts) and the entries for H9 and session 3.7 in docs/PLAN.md, and follow them. One task only. Hypothesis moved: H9 (feasibility only; no test data opened). Keep replies short; I am on a limited weekly allowance.
+Task: write docs/BENEFIT_FEASIBILITY.md: which public sources give losses or harm per event that could later be linked to loop cards (e.g. EM-DAT offline, DesInventar, IFRC GO field reports and appeal documents, national loss databases, insured-loss reports): documentation pages only, no records; per source: coverage, delay, licence (redistribution, derivatives), how it would join a card, and its independence from the response it would judge. Then a verdict: can H9 ("EMO reduces losses or helps an institution") be tested prospectively, and how (registered result or a user's written statement), or why not. If I attach an earlier simulation of benefit, commit it unchanged as exploratory with its origin. Do not open any stream record, aggregate, or loss record. 3.6b (API key) runs separately on or after 3 Nov.
+Done when: docs/BENEFIT_FEASIBILITY.md with a verdict per source and an overall verdict (protocol to register in 3.7b, or the reason H9 cannot be tested), every source opened listed with URL and date; record, STATUS and next prompt committed.
+```
+
 Prompts for 3.7–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
