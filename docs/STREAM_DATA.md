@@ -155,3 +155,9 @@ Code `emo/stream/` (fetchers, exclusions, store, counts), `scripts/stream_daily.
 - **Append-only:** `scripts/stream_daily.py verify` refuses a commit that changes an existing log file or an earlier manifest line.
 - **Monthly counts** (`scripts/stream_daily.py counts`, `emo/stream/counts.py`): events per source and linked events by explicit keys only (CEMS `gdacsId`; GLIDE between GDACS and GO events with an appeal). CEMS activations in any EU27 country are left out of every count. No outcome field is read. Infrastructure.
 - **Storage:** 348,928 bytes a run (~127 MB a year); decision in 3.3: no trim, review above 400 MB (`docs/LOOP_CARD_PROTOCOL.md` §12).
+
+## 11. Reuse terms checked (30 Oct 2026, after session 3.4, at Adrian's request)
+
+- GDACS terms of use page (https://gdacs.org/About/termofuse.aspx) and PDF (https://www.gdacs.org/documents/2025/GDACS_Terms_of_use_Mar_25.pdf), opened 30 Oct 2026: disclaimer only ("as is", confirm before decisions, not a substitute for official warnings, no liability); **no reuse licence or attribution rule**. The page footer's "Copyright" link points to the European Commission legal notice (https://commission.europa.eu/legal-notice_en#copyright-notice; not reachable here, unverified). Contact: https://gdacs.org/About/contactus.aspx.
+- IFRC disclaimer (https://www.ifrc.org/disclaimer), opened 30 Oct 2026: site content copyright IFRC, all rights reserved; text reuse needs prior permission from the IFRC; no open licence named; contact addresses not readable on the page. No GO-specific terms page found (two searches).
+- Consequence: per-event cards stay unpublished until Adrian holds written answers from both (requests drafted 30 Oct 2026).
