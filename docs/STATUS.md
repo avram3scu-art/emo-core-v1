@@ -17,6 +17,8 @@ Adrian's "Yes" to Claude's recommendation: order stays 3.4 (cards) → 3.5 (self
 
 **Finding (07:57):** no Stream daily run on 30 Oct so far: GitHub cron 04:17 UTC did not fire and the cron-job.org starter (07:13 Brussels = 06:13 UTC) produced no dispatch (`gh run list -w stream_daily.yml`: last run 29 Oct 19:06 UTC). Not started by hand (that would void the unattended check); the 11:47 UTC backup is the remaining starter today. Adrian to check the cron-job.org job's execution history.
 
+**Fixed (08:24):** Adrian found "EMO stream daily" inactive (and four inactive copies of "EMO weekly run"); he activated it and ran test calls on both jobs (HTTP 204 each). The stream test started run 41019712174 (07:22 UTC; all four sources has_records true, error null), so 30 Oct is a manual start: the unattended three-day check of 3.2 now covers **31 Oct, 1 Nov, 2 Nov** (checked at the start of 3.4, on or after 3 Nov). The weekly test started an extra weekly run 41019817339. Open: delete the four inactive copies (Adrian's decision; Claude recommends yes).
+
 ## Session 3.3 (2026-10-29, 20:11–20:30) — loop card protocol (H3: stream test pre-registered; no card published)
 
 **Done when met: partly.** Protocol, synthetic tests and power registered (1d39fe8, before any log record was opened; Claude does not hold the key). The 3.2 run check could not be done: the session ran on 29 Oct, before 30 Oct – 1 Nov (needs time; moved to the start of 3.4). No card published.
