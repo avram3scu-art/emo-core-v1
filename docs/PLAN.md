@@ -433,6 +433,16 @@ Task: write docs/BENEFIT_FEASIBILITY.md: which public sources give losses or har
 Done when: docs/BENEFIT_FEASIBILITY.md with a verdict per source and an overall verdict (protocol to register in 3.7b, or the reason H9 cannot be tested), every source opened listed with URL and date; record, STATUS and next prompt committed.
 ```
 
+### 3.7b Benefit protocol or "cannot be tested" (H9)
+
+```text
+EMO session 3.7b: benefit protocol (H9). Repository: avram3scu-art/emo-core-v1 (branch emo-2026-10). Before anything else, read CLAUDE.md (3.0), docs/STATUS.md (session 3.7), docs/BENEFIT_FEASIBILITY.md (§2.1 conditions C1–C4, §3 draft) and the entry for session 3.7b in docs/PLAN.md, and follow them. One task only. Hypothesis moved: H9 (protocol and power, or the reason it cannot be tested; no loss record opened). Keep replies short; I am on a limited weekly allowance.
+Step 1: draft, in one monospace block, my written message to CRED (EM-DAT) asking: (C1) may an unaffiliated individual researcher use the free non-commercial access for research; (C2) may results be published as aggregate statistics only (a coefficient, its interval, n, counts by stratum; never a per-event value), with citation. No repository link. I send it; wait for my "sent". If CRED's reply is already in hand, commit it unchanged first.
+Step 2 (only if C1 and C2 are answered yes in writing, committed unchanged): write and commit docs/BENEFIT_PROTOCOL.md from the §3 draft: population (closed TC and FL cards, non-EU27, anchored, with a decision record, onset after this commit to 31 Dec 2027), exposure (warning → decision lag, else onset → decision), outcomes (EM-DAT deaths; affected as second outcome, corrected), severity covariates chosen from documented GDACS fields only, the EM-DAT ↔ card join rule (GLIDE, else F2), statistic, clustered null, equivalence bound, score date (on or after 1 Apr 2028), what may leave, the stated bias against H9; with false-positive rate and power from synthetic data at the expected n (first line says so if power < 0.5) and tests. No EM-DAT file is downloaded in this session.
+If no answer by the end of the session: record H9 as "waiting for CRED" with the date of the next check; if CRED says no to C1 or C2: record "H9 cannot be tested (no usable loss data)" with the reason in docs/BENEFIT_FEASIBILITY.md and FAILURES only if a test had been registered (none is).
+Done when: message to CRED drafted and sent (or reply committed); and either the protocol with power and tests committed, or the reason it cannot be registered yet, with the next check date; record, STATUS and next prompt committed.
+```
+
 Prompts for 3.7–3.10 are written at the close of the session before each, from §0.3.
 
 ### Phase F (was C): credibility, as by-products
