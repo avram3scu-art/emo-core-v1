@@ -1,13 +1,13 @@
 {
- "built_at": "2026-11-02T22:23:08+00:00",
+ "built_at": "2026-11-03T06:14:49+00:00",
  "edge_rule_counts": {
-  "F1_eq_time_distance": 103,
-  "F2_iso3_hazard_window": 1,
-  "K3_event_id": 6
+  "F1_eq_time_distance": 114,
+  "F2_iso3_hazard_window": 2,
+  "K3_event_id": 7
  },
  "evidence_class": "infrastructure",
- "ingestion_runs_read": 6,
- "last_ingestion_run": "2026-11-02T061342Z",
+ "ingestion_runs_read": 7,
+ "last_ingestion_run": "2026-11-03T061334Z",
  "note": "Counts only (LOOP_CARD_PROTOCOL \u00a711). No per-event card is published until written reuse terms from GDACS (EC legal notice) and IFRC GO are recorded.",
  "safe_aggregate": {
   "2003-05|None|A=no source": 1,
@@ -729,7 +729,14 @@
   "2026-10|TC|D=not yet": 1,
   "2026-10|TC|R=present": 1,
   "2026-10|TC|W=present": 1,
-  "2026-10|TC|stage2": 1
+  "2026-10|TC|stage2": 1,
+  "2026-11|TC|A=no source": 1,
+  "2026-11|TC|B=not yet": 1,
+  "2026-11|TC|C=not yet": 1,
+  "2026-11|TC|D=not yet": 1,
+  "2026-11|TC|R=present": 1,
+  "2026-11|TC|W=present": 1,
+  "2026-11|TC|stage2": 1
  },
  "source_days_lost": {
   "cems": 0,
