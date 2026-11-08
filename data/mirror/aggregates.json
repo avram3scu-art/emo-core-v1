@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-08T17:15:47+00:00",
+ "built_at": "2026-11-08T18:24:25+00:00",
  "edge_rule_counts": {
   "F1_eq_time_distance": 162,
   "F2_iso3_hazard_window": 2,
@@ -718,7 +718,8 @@
   "2026-10|EQ|C=not yet": 3,
   "2026-10|EQ|D=not yet": 1,
   "2026-10|EQ|D=present": 2,
-  "2026-10|EQ|R=not yet": 3,
+  "2026-10|EQ|R=absent": 1,
+  "2026-10|EQ|R=not yet": 2,
   "2026-10|EQ|W=no source": 2,
   "2026-10|EQ|W=present": 1,
   "2026-10|EQ|stage1": 1,
