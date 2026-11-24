@@ -1,5 +1,5 @@
 {
- "built_at": "2026-11-23T22:56:11+00:00",
+ "built_at": "2026-11-24T01:02:16+00:00",
  "edge_rule_counts": {
   "F1_eq_time_distance": 386,
   "F2_iso3_hazard_window": 9,
@@ -772,10 +772,10 @@
   "2026-11|TC|stage2": 1
  },
  "source_days_lost": {
-  "cems": 0,
-  "gdacs": 0,
-  "ifrc_go": 0,
-  "usgs": 0
+  "cems": 1,
+  "gdacs": 1,
+  "ifrc_go": 1,
+  "usgs": 1
  },
  "version": "mirror-0.1"
 }
